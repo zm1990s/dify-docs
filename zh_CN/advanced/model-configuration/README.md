@@ -78,6 +78,7 @@ Dify 使用了 [PKCS1_OAEP](https://pycryptodome.readthedocs.io/en/latest/src/ci
 
 * [Hugging Face](hugging-face.md)。
 * [Replicate](replicate.md)。
+* [Xinference](xinference.md)。
 
 
 
