@@ -1,6 +1,8 @@
 # Connecting to Xinference Local Deployed Models
 
-[Xorbits inference](https://github.com/xorbitsai/inference)is a powerful and versatile library designed to serve language, speech recognition, and multimodal models, and can even be used on laptops. It supports various models compatible with GGML, such as chatglm, baichuan, whisper, vicuna, orca, etc.
+> WIP 🚧
+
+[Xorbits inference](https://github.com/xorbitsai/inference) is a powerful and versatile library designed to serve language, speech recognition, and multimodal models, and can even be used on laptops. It supports various models compatible with GGML, such as chatglm, baichuan, whisper, vicuna, orca, etc.
 And Dify supports connecting to Xinference deployed large language model inference and embedding capabilities locally.
 
 ## Deploy Xinference
