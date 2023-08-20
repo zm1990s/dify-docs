@@ -45,6 +45,7 @@
 * [Model Configuration](advanced/model-configuration/README.md)
   * [Hugging Face](advanced/model-configuration/hugging-face.md)
   * [Replicate](advanced/model-configuration/replicate.md)
+  * [Xinference](advanced/model-configuration/xinference.md)
 * [More Integration](advanced/more-integration.md)
 
 ## use cases

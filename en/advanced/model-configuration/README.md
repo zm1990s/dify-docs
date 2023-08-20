@@ -75,6 +75,7 @@ There are many third-party models on hosting type providers. Access models need 
 
 * [Hugging Face](hugging-face.md).
 * [Replicate](replicate.md).
+* [Xinference](xinference.md).
 
 ### Use model
 
