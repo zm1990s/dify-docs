@@ -7,6 +7,8 @@ Dify 目前已支持主流的模型供应商，例如 OpenAI 的 GPT 系列。�
 * Anthropic
 * Hugging Face Hub
 * Replicate
+* Xinference
+* OpenLLM
 * 讯飞星火
 * 文心一言
 * 通义千问
@@ -79,6 +81,7 @@ Dify 使用了 [PKCS1_OAEP](https://pycryptodome.readthedocs.io/en/latest/src/ci
 * [Hugging Face](hugging-face.md)。
 * [Replicate](replicate.md)。
 * [Xinference](xinference.md)。
+* [OpenLLM](openllm.md)。
 
 
 

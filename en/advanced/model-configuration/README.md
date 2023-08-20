@@ -7,6 +7,8 @@ Dify currently supports major model providers such as OpenAI's GPT series. Here 
 * Anthropic
 * Hugging Face Hub
 * Replicate
+* Xinference
+* OpenLLM
 * iFLYTEK SPARK
 * WENXINYIYAN
 * TONGYI
@@ -76,6 +78,7 @@ There are many third-party models on hosting type providers. Access models need 
 * [Hugging Face](hugging-face.md).
 * [Replicate](replicate.md).
 * [Xinference](xinference.md).
+* [OpenLLM](openllm.md).
 
 ### Use model
 

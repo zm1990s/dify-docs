@@ -1,6 +1,6 @@
 # 接入 Xinference 部署的本地模型
 
-> WIP 🚧
+> 🚧 WIP
 
 [Xorbits inference](https://github.com/xorbitsai/inference) 是一个强大且通用的分布式推理框架，旨在为大型语言模型、语音识别模型和多模态模型提供服务，甚至可以在笔记本电脑上使用。它支持多种与GGML兼容的模型,如 chatglm, baichuan, whisper, vicuna, orca 等。
 Dify 支持以本地部署的方式接入 Xinference 部署的大型语言模型推理和 embedding 能力。
