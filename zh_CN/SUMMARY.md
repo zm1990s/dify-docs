@@ -45,6 +45,7 @@
   * [接入 Hugging Face 上的开源模型](advanced/model-configuration/hugging-face.md)
   * [接入 Replicate 上的开源模型](advanced/model-configuration/replicate.md)
   * [接入 Xinference 部署的本地模型](advanced/model-configuration/xinference.md)
+  * [接入 OpenLLM 部署的本地模型](advanced/model-configuration/openllm.md)
 * [更多集成](advanced/more-integration.md)
 
 ## 使用案例 <a href="#use-cases" id="use-cases"></a>

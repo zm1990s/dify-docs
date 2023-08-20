@@ -46,6 +46,7 @@
   * [Hugging Face](advanced/model-configuration/hugging-face.md)
   * [Replicate](advanced/model-configuration/replicate.md)
   * [Xinference](advanced/model-configuration/xinference.md)
+  * [OpenLLM](advanced/model-configuration/openllm.md)
 * [More Integration](advanced/more-integration.md)
 
 ## use cases
