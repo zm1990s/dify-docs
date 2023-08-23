@@ -1,7 +1,5 @@
 # Connecting to OpenLLM Local Deployed Models
 
-> 🚧 WIP
-
 With [OpenLLM](https://github.com/bentoml/OpenLLM), you can run inference with any open-source large-language models, deploy to the cloud or on-premises, and build powerful AI apps.
 And Dify supports connecting to OpenLLM deployed large language model's inference capabilities locally.
 
