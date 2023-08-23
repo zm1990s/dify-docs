@@ -1,7 +1,5 @@
 # 接入 OpenLLM 部署的本地模型
 
-> 🚧 WIP
-
 使用 [OpenLLM](https://github.com/bentoml/OpenLLM), 您可以针对任何开源大型语言模型进行推理,部署到云端或本地,并构建强大的 AI 应用程序。
 Dify 支持以本地部署的方式接入 OpenLLM 部署的大型语言模型的推理能力。
 
