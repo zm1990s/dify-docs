@@ -23,6 +23,7 @@ There are two ways to deploy Xinference, namely [local deployment](https://githu
     ```
 
     Xinference will start a worker locally by default, with the endpoint: `http://127.0.0.1:9997`, and the default port is `9997`.
+    By default, access is limited to the local machine only, but it can be configured with `-H 0.0.0.0` to allow access from any non-local client.
     To modify the host or port, you can refer to xinference's help information: `xinference --help`.
 
 3. Create and deploy the model

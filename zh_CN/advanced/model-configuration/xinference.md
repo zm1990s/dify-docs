@@ -23,7 +23,8 @@ Dify 支持以本地部署的方式接入 Xinference 部署的大型语言模型
     ```
    
     Xinference 默认会在本地启动一个 worker，端点为：`http://127.0.0.1:9997`，端口默认为 `9997`。
-    如需修改 host 或 port，可查看 xinference 的帮助信息：`xinference --help`。
+    默认只可本机访问，可配置 `-H 0.0.0.0`，非本地客户端可任意访问。
+    如需进一步修改 host 或 port，可查看 xinference 的帮助信息：`xinference --help`。
 
 3. 创建并部署模型
     
