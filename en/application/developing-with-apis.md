@@ -34,7 +34,7 @@ You can find the API documentation and example requests for this application in 
 For example, here is a sample call  an API for text generation:
 
 ```
-curl --location --request POST 'https://api.dify.dev/v1/completion-messages' \
+curl --location --request POST 'https://api.dify.ai/v1/completion-messages' \
 --header 'Authorization: Bearer ENTER-YOUR-SECRET-KEY' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -56,7 +56,7 @@ You can find the API documentation and example requests for this application in 
 For example, here is a sample call an API for chat-messages:
 
 ```
-curl --location --request POST 'https://api.dify.dev/v1/chat-messages' \
+curl --location --request POST 'https://api.dify.ai/v1/chat-messages' \
 --header 'Authorization: Bearer ENTER-YOUR-SECRET-KEY' \
 --header 'Content-Type: application/json' \
 --data-raw '{
