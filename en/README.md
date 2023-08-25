@@ -55,7 +55,7 @@ A: You choose a model provider such as OpenAI. Our cloud version has a built-in 
 A: Yes, if you create a conversational application, it has built-in session saving capabilities, supported in both generated web apps and APIs.
 
 **Q: What's the difference between LLMOps and MLOps?**
-A: In the past, MLOps allowed developers to train models from scratch, while LLMOps developed AI-native applications based on powerful models such as GPT-4. You can refer to this article.
+A: In the past, MLOps allowed developers to train models from scratch, while LLMOps developed AI-native applications based on powerful models such as GPT-4. You can refer to this [article](https://blog.dify.ai/unleashing-the-power-of-llm-embeddings-with-datasets-revolutionizing-mlops/).
 
 **Q: What interface languages are provided?**
 A: English and Chinese are currently supported. You can contribute language packs for us.
