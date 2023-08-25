@@ -34,7 +34,7 @@ Dify 基于“**后端即服务**”理念为所有应用提供了 API，为 AI 
 例如，创建文本补全信息的 API 的调用示例：
 
 ```
-curl --location --request POST 'https://api.dify.dev/v1/completion-messages' \
+curl --location --request POST 'https://api.dify.ai/v1/completion-messages' \
 --header 'Authorization: Bearer ENTER-YOUR-SECRET-KEY' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -55,7 +55,7 @@ curl --location --request POST 'https://api.dify.dev/v1/completion-messages' \
 例如，发送对话信息的 API的调用示例：
 
 ```
-curl --location --request POST 'https://api.dify.dev/v1/chat-messages' \
+curl --location --request POST 'https://api.dify.ai/v1/chat-messages' \
 --header 'Authorization: Bearer ENTER-YOUR-SECRET-KEY' \
 --header 'Content-Type: application/json' \
 --data-raw '{
