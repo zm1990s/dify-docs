@@ -48,6 +48,7 @@
   * [Replicate](advanced/model-configuration/replicate.md)
   * [Xinference](advanced/model-configuration/xinference.md)
   * [OpenLLM](advanced/model-configuration/openllm.md)
+  * [LocalAI](advanced/model-configuration/localai.md)
 * [More Integration](advanced/more-integration.md)
 
 ## use cases
