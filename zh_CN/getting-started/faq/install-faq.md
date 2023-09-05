@@ -148,4 +148,8 @@ FileNotFoundError: File not found
 
 ### 11. 本地部署版如何解决数据集文档上传的大小限制和数量限制。
 
-答：可参考官网环境变量说明文档去配置：https://docs.dify.ai/v/zh-hans/getting-started/install-self-hosted/environments
+答：可参考官网[环境变量说明文档](https://docs.dify.ai/v/zh-hans/getting-started/install-self-hosted/environments)去配置。
+
+### 12. 本地部署版如何通过邮箱邀请成员？
+
+本地部署版，邀请成员可通过邮箱邀请，输入邮箱邀请后，页面显示邀请链接，复制邀请链接转发给用户，用户打开链接通过邮箱登录设置密码即可登录到你的空间内。
