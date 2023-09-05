@@ -22,8 +22,6 @@ The logs currently do not include interaction records from the Prompt debugging 
 These annotations will be used for model fine-tuning in future versions of Dify to improve model accuracy and response style. The current preview version only supports annotations.
 {% endhint %}
 
-<mark style="background-color:red;">\[Image]</mark>
-
 Clicking on a log entry will open the log details panel on the right side of the interface. In this panel, operators can annotate an interaction:
 
 * Give a thumbs up for well-performing messages
