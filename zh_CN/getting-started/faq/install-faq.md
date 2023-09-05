@@ -1,7 +1,5 @@
 # 本地部署相关
 
-
-
 ### 1. 本地部署初始化后，密码错误如何重置？
 
 若使用 docker compose 方式部署，可执行以下命令进行重置
@@ -66,7 +64,7 @@ FileNotFoundError: File not found
 
 *   本地调试（默认策略）
 
-    开发模式同域策略。  支持 HTTP/HTTPS 协议，但需要保证前端页面和接口同域。
+    开发模式同域策略。 支持 HTTP/HTTPS 协议，但需要保证前端页面和接口同域。
 
     <pre><code><strong>WEB_API_CORS_ALLOW_ORIGINS: '*'
     </strong>CONSOLE_CORS_ALLOW_ORIGINS: '*'
@@ -76,7 +74,7 @@ FileNotFoundError: File not found
     </code></pre>
 *   跨域策略（请勿应在生产）
 
-    服务端与 web 客户端跨域，服务端必须为 https。  由于 SameSite=None 必须配合 Secure=true，因此服务端必须为 `https` 协议才能实现跨域访问，可以用在服务端在远程并且提供 `https` 协议支持，或者本地单独启动服务端和前端项目（localhost，但不同端口，实测可用，虽然提示 warning）。
+    服务端与 web 客户端跨域，服务端必须为 https。 由于 SameSite=None 必须配合 Secure=true，因此服务端必须为 `https` 协议才能实现跨域访问，可以用在服务端在远程并且提供 `https` 协议支持，或者本地单独启动服务端和前端项目（localhost，但不同端口，实测可用，虽然提示 warning）。
 
     ```
     WEB_API_CORS_ALLOW_ORIGINS: 'https://your-domain-for-web-app'
@@ -87,7 +85,7 @@ FileNotFoundError: File not found
     ```
 *   生产策略
 
-    严格模式。  由于部分第三方集成需要支持回调并带着 cookie 信息，因此不能使用最高的 Strict 策略，因此需要严格限制 CORS 域名，以及设置 cookie 策略为 SameSite=Lax, Secure=true。
+    严格模式。 由于部分第三方集成需要支持回调并带着 cookie 信息，因此不能使用最高的 Strict 策略，因此需要严格限制 CORS 域名，以及设置 cookie 策略为 SameSite=Lax, Secure=true。
 
     ```
     WEB_API_CORS_ALLOW_ORIGINS: 'https://your-domain-for-web-app'
@@ -105,17 +103,17 @@ FileNotFoundError: File not found
 
 这可能是由于切换了域名/网址，导致前端和服务端跨域，请将 `docker-compose.yml` 中所有的以下配置项改为新的域名：
 
-`CONSOLE_API_URL:` 控制台 API 的后端 URL。
-`CONSOLE_WEB_URL:` 控制台网页的前端 URL。
-`SERVICE_API_URL:` 服务 API 的 URL。
-`APP_API_URL:` WebApp API 的后端 URL。
-`APP_WEB_URL:` WebApp 的 URL。
+`CONSOLE_API_URL:` 控制台 API 的后端 URL。 `CONSOLE_WEB_URL:` 控制台网页的前端 URL。 `SERVICE_API_URL:` 服务 API 的 URL。 `APP_API_URL:` WebApp API 的后端 URL。 `APP_WEB_URL:` WebApp 的 URL。
 
 更多信息，请查看：[环境变量](../install-self-hosted/environments.md)
 
 ### 5. 部署后如何升级版本？
 
 如果你是通过镜像启动，请重新拉取最新镜像完成升级。 如果你是通过源码启动，请拉取最新代码，然后启动，完成升级。
+
+源码部署更新时，需要进入 api 目录下，执行以下命令将数据库结构迁移至最新版本：
+
+`flask db upgrade`&#x20;
 
 ### 6. 使用 Notion 导入时如何配置环境变量
 
@@ -131,3 +129,23 @@ FileNotFoundError: File not found
 2. **`NOTION_CLIENT_SECRET`** ： Notion OAuth 客户端密钥（用于公共集成类型）。
 3. **`NOTION_CLIENT_ID`** ： OAuth 客户端ID（用于公共集成类型）。
 4. **`NOTION_INTERNAL_SECRET`** ： Notion 内部集成密钥，如果 `NOTION_INTEGRATION_TYPE` 的值为 **internal**，则需要配置此变量。
+
+### 7. 本地部署版，如何更改空间的名称？
+
+答：在数据库 `tenants` 表里修改。
+
+### 8. 想修改访问应用的域名，在哪里修改？
+
+答：在 `docker_compose.yal` 里面找到 APP\_WEB\_URL 配置域名。
+
+### 9. 如果发生数据库迁移，需要备份哪些东西？
+
+答：需要备份数据库、配置的存储以及向量数据库数据，若为 docker compose 方式部署，可直接备份 `dify/docker/volumes` 目录下所有数据内容。
+
+### 10. 为什么 Docker 部署 Dify，本地启动 OpenLLM 用 127.0.0.1 却无法访问本地的端口？
+
+答：127.0.0.1 是容器内部地址， Dify 配置的服务器地址需要宿主机局域网 IP 地址。
+
+### 11. 本地部署版如何解决数据集文档上传的大小限制和数量限制。
+
+答：可参考官网环境变量说明文档去配置：https://docs.dify.ai/v/zh-hans/getting-started/install-self-hosted/environments
