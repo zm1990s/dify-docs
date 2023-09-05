@@ -20,13 +20,11 @@ Click the "Create Application" button on the homepage to create an application. 
 
 #### Step 2: Compose the Application
 
-After the application is successfully created, it will automatically redirect to the application overview page. Click on the left-hand menu: “**Prompt Eng.**”  to compose the application.
+After the application is successfully created, it will automatically redirect to the application overview page. Click on the left-hand menu: “**Prompt Eng.**” to compose the application.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
-
-
-**2.1 Fill in  Prompts**
+**2.1 Fill in Prompts**
 
 Prompts are used to give a series of instructions and constraints to the AI response. Form variables can be inserted, such as `{{input}}`. The value of variables in the prompts will be replaced with the value filled in by the user.
 
@@ -38,8 +36,6 @@ The prompt we are filling in here is:
 
 ![](<../../.gitbook/assets/image (38).png>)
 
-
-
 For a better experience, we will add an opening dialogue: `"Hello, {{name}}. I'm your interviewer, Bob. Are you ready?"`
 
 To add the opening dialogue, click the "Add Feature" button in the upper left corner, and enable the "Conversation remarkers" feature:
@@ -50,15 +46,11 @@ And then edit the opening remarks:
 
 ![](<../../.gitbook/assets/image (15).png>)
 
-
-
 **2.2 Adding Context**
 
 If an application wants to generate content based on private contextual conversations, it can use our [dataset](../../advanced/datasets/) feature. Click the "Add" button in the context to add a dataset.
 
 ![](<../../.gitbook/assets/image (9).png>)
-
-
 
 **2.3 Debugging**
 
@@ -72,8 +64,6 @@ If the results are not satisfactory, you can adjust the prompts and model parame
 
 We support the GPT-4 model.
 
-
-
 **2.4 Publish**
 
 After debugging the application, click the **"Publish"** button in the upper right corner to save the current settings.
@@ -83,7 +73,5 @@ After debugging the application, click the **"Publish"** button in the upper rig
 On the overview page, you can find the sharing address of the application. Click the "Preview" button to preview the shared application. Click the "Share" button to get the sharing link address. Click the "Settings" button to set the shared application information.
 
 <figure><img src="../../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
-
-
 
 If you want to customize the application that you share, you can Fork our open source [WebApp template](https://github.com/langgenius/webapp-conversation). Based on the template, you can modify the application to meet your specific needs and style requirements.

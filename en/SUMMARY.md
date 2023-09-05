@@ -40,7 +40,6 @@
 
 * [Datasets\&Index](advanced/datasets/README.md)
   * [Sync from Notion](advanced/datasets/sync-from-notion.md)
-  * [Dataset of QA model](advanced/datasets/dataset-of-qa-model.md)
 * [Plugins](advanced/ai-plugins.md)
 * [Based on WebApp Template](advanced/based-on-frontend-templates.md)
 * [Model Configuration](advanced/model-configuration/README.md)
