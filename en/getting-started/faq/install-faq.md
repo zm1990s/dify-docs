@@ -2,9 +2,7 @@
 
 ### 1. How to reset the password if the local deployment initialization fails with an incorrect password?
 
-If deployed using docker compose, you can execute the following command to reset the password:
-`docker exec -it docker-api-1 flask reset-password`
-Enter the account email and twice new passwords, and it will be reset.
+If deployed using docker compose, you can execute the following command to reset the password: `docker exec -it docker-api-1 flask reset-password` Enter the account email and twice new passwords, and it will be reset.
 
 ### 2. How to resolve File not found error in the log when deploying locally?
 
@@ -42,8 +40,7 @@ This may be due to switching the domain name/website, causing cross-domain betwe
 
 **CORS cross-domain configuration**
 
-`CONSOLE_CORS_ALLOW_ORIGINS` Console CORS cross-domain policy, default to `*`, which allows access from all domain names.
-`WEB_API_CORS_ALLOW_ORIGINS` WebAPP CORS cross-domain strategy, default to `*`, which allows access from all domain names.
+`CONSOLE_CORS_ALLOW_ORIGINS` Console CORS cross-domain policy, default to `*`, which allows access from all domain names. `WEB_API_CORS_ALLOW_ORIGINS` WebAPP CORS cross-domain strategy, default to `*`, which allows access from all domain names.
 
 **Cookie policy configuration**
 
@@ -58,8 +55,8 @@ The cookie policy is divided into three configurations `HttpOnly`, `SameSite` an
 **Recommended Configuration**
 
 According to the configuration description, we recommend the following configuration in these three scenarios:
-1.  Local debug (default policy)
-Development mode same domain policy. Support HTTP / HTTPS protocol, but need to ensure that the front-end page and interface are under the same domain.
+
+1. Local debug (default policy) Development mode same domain policy. Support HTTP / HTTPS protocol, but need to ensure that the front-end page and interface are under the same domain.
 
 ```
 WEB_API_CORS_ALLOW_ORIGINS:''
@@ -69,8 +66,7 @@ COOKIE_SAMESITE: 'Lax'
 COOKIE_SECURE: 'false'
 ```
 
-2. Cross-Domain Policy (do not use in production)
-Cross-domain between server and web client, server must be HTTPS. Since SameSite=None must be coupled with Secure=true, the server must be in the `HTTPS` protocol in order to cross-domain access, which can be used in the server remotely and provide `HTTPS` protocol support, or local start-up server and front-end project (localhost, but different ports, tested available, although prompt warning).
+2. Cross-Domain Policy (do not use in production) Cross-domain between server and web client, server must be HTTPS. Since SameSite=None must be coupled with Secure=true, the server must be in the `HTTPS` protocol in order to cross-domain access, which can be used in the server remotely and provide `HTTPS` protocol support, or local start-up server and front-end project (localhost, but different ports, tested available, although prompt warning).
 
 ```
 WEB_API_CORS_ALLOW_ORIGINS: 'https://your-domain-for-web-app'
@@ -80,8 +76,7 @@ COOKIE_SAMESITE: 'None'
 COOKIE_SECURE: 'true'
 ```
 
-3.Production Policy
-Strict Mode. Due to the need to support callbacks and cookies for some third-party integration, it is not possible to use the highest Strict policy, so it is necessary to strictly limit the CORS domain name and set the cookie policy to SameSite=Lax, Secure=true.
+3.Production Policy Strict Mode. Due to the need to support callbacks and cookies for some third-party integration, it is not possible to use the highest Strict policy, so it is necessary to strictly limit the CORS domain name and set the cookie policy to SameSite=Lax, Secure=true.
 
 ```
 WEB_API_CORS_ALLOW_ORIGINS: 'https://your-domain-for-web-app'
@@ -91,17 +86,11 @@ COOKIE_SAMESITE: 'Lax'
 COOKIE_SECURE: 'true'
 ```
 
-Unavailable scenarios 
-When the front end and back end are cross-domain and the server-side is http protocol, no Cookie policy can support this scenario. Please adjust the back end to HTTPS protocol or set to the same domain.
+Unavailable scenarios When the front end and back end are cross-domain and the server-side is http protocol, no Cookie policy can support this scenario. Please adjust the back end to HTTPS protocol or set to the same domain.
 
 ### 4. After starting, the page keeps loading and checking the request prompts CORS error?
 
-This may be because the domain name/URL has been switched, resulting in cross-domain between the front end and the back end. Please change all the following configuration items in `docker-compose.yml` to the new domain name: 
-`CONSOLE_API_URL:` The backend URL of the console API.
-`CONSOLE_WEB_URL:` The front-end URL of the console web.
-`SERVICE_API_URL:` Service API Url
-`APP_API_URL:` WebApp API backend Url.
-`APP_WEB_URL:` WebApp Url.
+This may be because the domain name/URL has been switched, resulting in cross-domain between the front end and the back end. Please change all the following configuration items in `docker-compose.yml` to the new domain name: `CONSOLE_API_URL:` The backend URL of the console API. `CONSOLE_WEB_URL:` The front-end URL of the console web. `SERVICE_API_URL:` Service API Url `APP_API_URL:` WebApp API backend Url. `APP_WEB_URL:` WebApp Url.
 
 For more information, please check out: [Environments](../install-self-hosted/environments.md)
 
@@ -117,9 +106,35 @@ A: [https://www.notion.so/my-integrations](https://www.notion.so/my-integrations
 
 **Q: Which environment variables need to be configured？**
 
-A:  Please set below configuration when doing the privatized deployment
+A: Please set below configuration when doing the privatized deployment
 
 1. **`NOTION_INTEGRATION_TYPE`** : The value should configrate as (**public/internal**). Since the Redirect address of Notion’s Oauth only supports https, if it is deployed locally, please use Notion’s internal integration
-2. **`NOTION_CLIENT_SECRET`** : Notion OAuth client secret  (userd for public  integration type)
-3. **`NOTION_CLIENT_ID`** : OAuth client ID (userd for public  integration type)
+2. **`NOTION_CLIENT_SECRET`** : Notion OAuth client secret (userd for public integration type)
+3. **`NOTION_CLIENT_ID`** : OAuth client ID (userd for public integration type)
 4. **`NOTION_INTERNAL_SECRET`** : Notion Internal Integration Secret, If the value of `NOTION_INTEGRATION_TYPE` is **internal** ,you need to configure this variable.
+
+### 7. How to change the name of the space in the local deployment version?
+
+Modify in the `tenants` table in the database.
+
+### 8. Where can I modify the domain name for accessing the application?
+
+Find the configuration domain name APP\_WEB\_URL in `docker_compose. yal`.
+
+### 9. If database migration is required, what things need to be backed up?
+
+The database, configured storage, and vector database data need to be backed up. If deployed in Docker Compose mode, all data content in the `dify/Docker/volumes` directory can be directly backed up.
+
+### 10. Why is Docker deploying Dify and starting OpenLLM locally using 127.0.0.1, but unable to access the local port?
+
+`127.0.0.1` is the internal address of the container, and the server address configured by Dify requires the host LAN IP address.
+
+### 11. How to solve the size and quantity limitations for uploading dataset documents in the local deployment version？
+
+You can refer to the official website environment variable description document to configure:&#x20;
+
+[Environments](../install-self-hosted/environments.md)
+
+### 12. How does the local deployment edition invite members through email?
+
+Local deployment edition, members can be invited through email. After entering the email invitation, the page displays the invitation link, copies the invitation link, and forwards it to users. Your team members can open the link and log in to your space by setting a password through email login.
