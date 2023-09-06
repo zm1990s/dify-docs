@@ -6,8 +6,8 @@ Dify 支持 OpenAI 的自定义 API 域名能力，支持任何兼容 OpenAI  �
 
 ### **2. 如何选择基础模型？**
 
-* gpt-3.5-turbo gpt-3.5-turbo 是 gpt-3 模型系列的升级版，它比 gpt-3 更强大，可以处理更复杂的任务。 它在理解长文本和跨文档推理方面有重大提高。 gpt-3.5 turbo 可以产生更连贯和更具说服力的文本。它在摘要、翻译和创意写作方面也有很大提高。 擅长：**长文本理解、跨文档推理、摘要、翻译、创意写作**
-* gpt-4 gpt-4 是最新最强大的 Transformer 语言模型。它拥有预训练的参数量增至约 200 亿，这使其在所有语言任务上都达到了最高水平，特别是在需要深入理解和生成长、复杂响应的任务上。gpt-4 可以处理人类语言的所有方面，包括理解抽象概念和跨页面的推理。gpt-4 是第一个真正的通用语言理解系统，它可以胜任人工智能领域内的任何自然语言处理任务。擅长： **所有 NLP 任务，语言理解，长文本生成，跨文档推理，抽象概念理解**具体可参考：https://platform.openai.com/docs/models/overview
+* gpt-3.5-turbo gpt-3.5-turbo 是 gpt-3 模型系列的升级版，它比 gpt-3 更强大，可以处理更复杂的任务。 它在理解长文本和跨文档推理方面有重大提高。 gpt-3.5 turbo 可以产生更连贯和更具说服力的文本。它在摘要、翻译和创意写作方面也有很大提高。 擅长：**长文本理解、跨文档推理、摘要、翻译、创意写作。**
+* gpt-4 gpt-4 是最新最强大的 Transformer 语言模型。它拥有预训练的参数量增至约 200 亿，这使其在所有语言任务上都达到了最高水平，特别是在需要深入理解和生成长、复杂响应的任务上。gpt-4 可以处理人类语言的所有方面，包括理解抽象概念和跨页面的推理。gpt-4 是第一个真正的通用语言理解系统，它可以胜任人工智能领域内的任何自然语言处理任务。擅长： **所有 NLP 任务，语言理解，长文本生成，跨文档推理，抽象概念理解**具体可参考[文档](https://platform.openai.com/docs/models/overview)。
 
 ### **3. 为什么建议 max\_tokens 设置小一点？**
 
@@ -45,7 +45,7 @@ Dify 支持 OpenAI 的自定义 API 域名能力，支持任何兼容 OpenAI  �
 
 ### 7. 填写 OpenAI key，校验失败报错提示：“**校验失败： You exceeded your current quota， please check your plan and billing details。**”是什么原因？
 
-说明 OpenAI key 的账号没费用了，请前往 OpenAI 充值。
+说明你的 OpenAI key 的账号没费用了，请前往 OpenAI 充值。
 
 ### 8. 使用 OpenAI 的 key 在应用里对话，有如下报错提示，是什么原因？
 
@@ -65,7 +65,7 @@ Rate limit reached for default-gpt-3.5-turboin organization org-wDrZCxxxxxxxxxis
 
 ### 9. 用户自部署后，智聊不可使用，报错如下：**Unrecognized request argument supplied:functions**，该怎么解决？
 
-答：首先检查前后端版本是否是最新版且前后端版本保持一致；其次检查 Azure 平台里是否部署了模型；其中 gpt-35-turbo 模型版本得是 0613。（因为 0613 之前的版本不支持智聊的 function call，所以无法用）
+首先请检查前后端版本是否是最新版且前后端版本保持一致；其次，该错误有可能是因为您使用了 Azure OpenAI 的 key，但没有成功部署模型，请检查您使用的 Azure OpenAI 里是否部署了模型；其中 gpt-3.5-turbo 模型版本必须是 0613 以上版本。（因为 0613 之前的版本不支持 智聊 所使用的 function call 能力，所以无法使用）
 
 ### 10. 设置 OpenAI Key 时，报错如下，是什么原因？
 
@@ -108,11 +108,11 @@ Query or prefix prompt is too long, you can reduce the preix prompt, or shrink t
 
 ### 16. 数据集文档上传的大小限制有哪些？
 
-目前数据集文档上传单个文档最大是 15MB，总文档数量限制 100 个。
+目前数据集文档上传单个文档最大是 15MB，总文档数量限制 100 个。如您本地部署版本需要调整修改该限制，请参考[文档](https://docs.dify.ai/v/zh-hans/getting-started/faq/install-faq#11.-ben-di-bu-shu-ban-ru-he-jie-jue-shu-ju-ji-wen-dang-shang-chuan-de-da-xiao-xian-zhi-he-shu-liang)。
 
 ### 17. 为什么选择了 Claude 模型，还是会消耗 OpenAI 的费用？
 
-因为 Claude 不支持 Embedding 操作，因此 Embedding 过程以及其他对话生成，下一个问题建议等默认都是用的 OpenAI 的 key，因此还是会消耗 OpenAI 的额度。也可以在**设置-模型供应商**里设置其他默认推理模型和 Embedding 模型。
+因为 Claude 不支持 Embedding 模型，因此 Embedding 过程以及其他对话生成，下一个问题建议等默认都是用的 OpenAI 的 key，因此还是会消耗 OpenAI 的额度。也可以在**设置-模型供应商**里设置其他默认推理模型和 Embedding 模型。
 
 ### 18. 有什么方式能控制更多地使用上下文数据而不是模型自身生成能力吗？
 

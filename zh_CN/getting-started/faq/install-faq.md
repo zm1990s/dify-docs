@@ -115,15 +115,9 @@ FileNotFoundError: File not found
 
 `flask db upgrade`&#x20;
 
-### 6. 使用 Notion 导入时如何配置环境变量
+### 6. 使用 Notion 导入时如何配置环境变量？
 
-**问： Notion 的集成配置地址是什么？**
-
-答： [https://www.notion.so/my-integrations](https://www.notion.so/my-integrations)
-
-**问： 需要配置哪些环境变量？**
-
-答： 进行私有化部署时，请设置以下配置：
+&#x20;[**Notion 的集成配置地址**](https://www.notion.so/my-integrations)**。**进行私有化部署时，请设置以下配置：
 
 1. **`NOTION_INTEGRATION_TYPE`** ：该值应配置为（**public/internal**）。由于 Notion 的 Oauth 重定向地址仅支持 https，如果在本地部署，请使用 Notion 的内部集成。
 2. **`NOTION_CLIENT_SECRET`** ： Notion OAuth 客户端密钥（用于公共集成类型）。
@@ -132,23 +126,23 @@ FileNotFoundError: File not found
 
 ### 7. 本地部署版，如何更改空间的名称？
 
-答：在数据库 `tenants` 表里修改。
+在数据库 `tenants` 表里修改。
 
 ### 8. 想修改访问应用的域名，在哪里修改？
 
-答：在 `docker_compose.yal` 里面找到 APP\_WEB\_URL 配置域名。
+在 `docker_compose.yal` 里面找到 APP\_WEB\_URL 配置域名。
 
 ### 9. 如果发生数据库迁移，需要备份哪些东西？
 
-答：需要备份数据库、配置的存储以及向量数据库数据，若为 docker compose 方式部署，可直接备份 `dify/docker/volumes` 目录下所有数据内容。
+需要备份数据库、配置的存储以及向量数据库数据，若为 docker compose 方式部署，可直接备份 `dify/docker/volumes` 目录下所有数据内容。
 
 ### 10. 为什么 Docker 部署 Dify，本地启动 OpenLLM 用 127.0.0.1 却无法访问本地的端口？
 
-答：127.0.0.1 是容器内部地址， Dify 配置的服务器地址需要宿主机局域网 IP 地址。
+127.0.0.1 是容器内部地址， Dify 配置的服务器地址需要宿主机局域网 IP 地址。
 
 ### 11. 本地部署版如何解决数据集文档上传的大小限制和数量限制。
 
-答：可参考官网[环境变量说明文档](https://docs.dify.ai/v/zh-hans/getting-started/install-self-hosted/environments)去配置。
+可参考官网[环境变量说明文档](https://docs.dify.ai/v/zh-hans/getting-started/install-self-hosted/environments)去配置。
 
 ### 12. 本地部署版如何通过邮箱邀请成员？
 
