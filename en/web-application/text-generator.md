@@ -47,6 +47,8 @@ Click the Download Template button to download the template. Edit the template, 
 
 If you need to export the generated content, you can click the download "button" in the upper right corner to export as a `csv` file.
 
+**Note:** The encoding of the uploaded `csv` file must be `Unicode` encoding. Otherwise, the result will fail. Solution: When exporting to a `csv` file with Excel, WPS, etc., select `Unicode` for encoding.
+
 ### Save run results
 
 Click the "Save" button below the generated results to save the running results. In the "Saved" tab, you can see all saved content.
