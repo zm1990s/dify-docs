@@ -24,7 +24,7 @@ Finally, experiments and evaluations are still needed to determine the most suit
 
 We use [cosine similarity](https://en.wikipedia.org/wiki/Cosine\_similarity). The choice of distance function is usually irrelevant. OpenAI embeddings are normalized to length 1, which means:
 
-•Using the dot product to calculate cosine similarity can be slightly faster&#x20;
+•Using the dot product to calculate cosine similarity can be slightly faster
 
 •Cosine similarity and Euclidean distance will lead to the same ranking
 
@@ -35,8 +35,6 @@ Since the dot product calculation is faster than other similarity metrics (such 
 ### 5. **When filling in the OpenAI key, the error "Validation failed: You exceeded your current quota, please check your plan and billing details" occurs. What is causing this error?**
 
 This error indicates that the OpenAI key account balance has been used up. Please top up the OpenAI account at openai.com. Refer to [OpenAI ](https://openai.com/pricing)for details on their plans and billing.
-
-
 
 ### 6. When using OpenAI's key for dialogue in the application, there is an error prompt as follows. **What is the cause?**
 
@@ -72,7 +70,7 @@ This error occurs because each model has different valid ranges for its paramete
 Query or prefix prompt is too long, you can reduce the preix prompt, or shrink the max token, or switch to a llm with a larger token limit size
 ```
 
-You can lower the value of "Max token" in the parameter settings of the Prompt Eng.&#x20;
+You can lower the value of "Max token" in the parameter settings of the Prompt Eng.
 
 ### 10. What are the default models in Dify, and can open-source LLMs be used?
 
@@ -91,7 +89,7 @@ There are two potential solutions if the error "Invalid token" appears:
 
 ### 13. What are the size limits for uploading dataset documents?
 
-The maximum size for a single document upload is currently 15MB. There is also a limit of 100 total documents. These limits can be adjusted if you are using a local deployment. Refer to the documentation for details on changing the limits.
+The maximum size for a single document upload is currently 15MB. There is also a limit of 100 total documents. These limits can be adjusted if you are using a local deployment. Refer to the [documentation](install-faq.md#11.-how-to-solve-the-size-and-quantity-limitations-for-uploading-dataset-documents-in-the-local-depl) for details on changing the limits.
 
 ### 14. Why does Claude still consume OpenAI credits when using the Claude model?
 
@@ -113,16 +111,13 @@ ChatGPT Plus and OpenAI's GPT-4 model API are two separate products with separat
 
 Dify supports using the listed providers as an Embedding model provider, simply select the `Embedding` type in the configuration box.
 
-- Azure
-- LocalAI
-- MiniMax
-- OpenAI
-- Replicate
-- XInference
+* Azure
+* LocalAI
+* MiniMax
+* OpenAI
+* Replicate
+* XInference
 
 ### 19. How can I set my own created app as an app template?
 
 The ability to set your own created app as a template is currently not supported. The existing templates are provided by Dify officially for cloud version users' reference. If you are using the cloud version, you can add apps to your workspace or customize them to make your own after modifications. If you are using the community version and need to create more app templates for your team, you may consult our business team to obtain paid technical support: [business@dify.ai](mailto:business@dify.ai)
-
-
-

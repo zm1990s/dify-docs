@@ -98,6 +98,10 @@ For more information, please check out: [Environments](../install-self-hosted/en
 
 If you start up through images, please pull the latest images to complete the upgrade. If you start up through source code, please pull the latest code and then start up to complete the upgrade.
 
+When deploying and updating local source code, you need to enter the API directory and execute the following command to migrate the database structure to the latest version:
+
+`flask db upgrade`&#x20;
+
 ### 6.How to configure the environment variables when use Notion import
 
 **Q: What is the Notion's Integration configuration address?**
