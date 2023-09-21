@@ -7,6 +7,7 @@
 * 对话开场白。
 * 下一步问题建议。
 * 语音转文字。
+* 引用和归属
 
 ### 对话前填写的变量
 
@@ -48,3 +49,8 @@ _请注意确保你使用的设备环境已经授权使用麦克风。_
 
 <figure><img src="../.gitbook/assets/image (79).png" alt=""><figcaption></figcaption></figure>
 
+### 引用和归属
+
+若在应用编排时开启了「引用和归属」功能，则对话返回时，会自动展示引用的数据集文档来源。
+
+<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption><p>引用和归属</p></figcaption></figure>
