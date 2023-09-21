@@ -6,6 +6,7 @@ Conversational applications use a question-and-answer model to maintain a dialog
 * Conversation remarks.
 * Follow-up.
 * Speech to text.
+* Citations and Attributions
 
 ### Variables filled in before the dialog
 
@@ -46,3 +47,9 @@ If the "Speech to Text" function is enabled during application programming, you 
 _Please make sure that the device environment you are using is authorized to use the microphone._
 
 <figure><img src="../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+
+### Citations and Attributions
+
+If the "Quotations and Attribution" feature is enabled during the application arrangement, the dialogue returns will automatically show the quoted dataset document sources.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>

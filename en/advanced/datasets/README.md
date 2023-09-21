@@ -4,7 +4,7 @@ Most language models use outdated training data and have length limitations for 
 
 Dify' dataset feature allows developers (and even non-technical users) to easily manage datasets and automatically integrate them into AI applications. All you need to do is prepare text content, such as:
 
-* Long text content (TXT, Markdown, JSONL, or even PDF files)
+* Long text content (TXT, Markdown, DOCX, HTML, JSONL, or even PDF files)
 * Structured data (CSV, Excel, etc.)
 
 Additionally, we are gradually supporting syncing data from various data sources to datasets, including:
@@ -36,8 +36,7 @@ When multiple datasets are referenced in an application, AI uses the description
 
 The key to writing a good dataset description is to clearly describe the content and characteristics of the dataset. **It is recommended that the dataset description begin with this: `Useful only when the question you want to answer is about the following: specific description`**. Here is an example of a real estate dataset description:
 
-> Useful only when the question you want to answer is about the following: global real estate market data from 2010 to 2020. This data includes information such as the average housing price, property sales volume, and housing types for each city. In addition, this dataset also includes some economic indicators such as GDP and unemployment rate, as well as some social indicators such as population and education level. These indicators can help analyze the trends and influencing factors of the real estate market. 
-> With this data, we can understand the development trends of the global real estate market, analyze the changes in housing prices in various cities, and understand the impact of economic and social factors on the real estate market.
+> Useful only when the question you want to answer is about the following: global real estate market data from 2010 to 2020. This data includes information such as the average housing price, property sales volume, and housing types for each city. In addition, this dataset also includes some economic indicators such as GDP and unemployment rate, as well as some social indicators such as population and education level. These indicators can help analyze the trends and influencing factors of the real estate market. With this data, we can understand the development trends of the global real estate market, analyze the changes in housing prices in various cities, and understand the impact of economic and social factors on the real estate market.
 
 ### Create a dataset
 
@@ -77,11 +76,16 @@ Modify Documents For technical reasons, if developers make the following changes
 1. Adjust segmentation and cleaning settings
 2. Re-upload the file
 
-Dify support customizing the segmented and cleaned text by adding, deleting, and editing  paragraphs. You can dynamically adjust your segmentation to make your dataset more accurate. Click **Document -->  paragraph --> Edit** in the dataset to modify  paragraphs content. Click **Document -->  paragraph --> Add new segment** to manually add new  paragraph.
+Dify support customizing the segmented and cleaned text by adding, deleting, and editing paragraphs. You can dynamically adjust your segmentation to make your dataset more accurate. Click **Document --> paragraph --> Edit** in the dataset to modify paragraphs content and custom keywords. Click **Document --> paragraph --> Add  segment --> Add a segment** to manually add new paragraph. Or click **Document --> paragraph --> Add  segment --> Batch add** to batch add new paragraph.
 
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Edit</p></figcaption></figure>
 
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>add</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/add-new-segment.png" alt=""><figcaption><p><strong>Add new segment</strong></p></figcaption></figure>
+### Disabling and Archiving of Documents
+
+* **Disable, cancel disable**: The dataset supports disabling documents or segments that you temporarily do not want indexed. In the dataset's document list, click the Disable button and the document will be disabled. You can also click the Disable button in the document details to disable the entire document or a segment. Disabled documents will not be indexed. To cancel the disable, click Enable on a disabled document.
+* **Archive, Unarchive:** Some unused old document data can be archived if you don't want to delete it. After archiving, the data can only be viewed or deleted, not edited. In the document list of the dataset, click the Archive button to archive the document. Documents can also be archived in the document details page. Archived documents will not be indexed. Archived documents can also be unarchived by clicking the Unarchive button.
 
 ### Maintain Datasets via API
 
@@ -112,26 +116,19 @@ Once the dataset is ready, it needs to be integrated into the application. When 
 
 A: If your PDF parsing appears garbled under certain formatted contents, you could consider converting the PDF to Markdown format, which currently offers higher accuracy, or you could reduce the use of images, tables, and other formatted content in the PDF. We are researching ways to optimize the experience of using PDFs.
 
-**Q: How does the consumption mechanism of context work?**
-A: With a dataset added, each query will consume segmented content (currently embedding two segments) + question + prompt + chat history combined. However, it will not exceed model limitations, such as 4096.
+**Q: How does the consumption mechanism of context work?** A: With a dataset added, each query will consume segmented content (currently embedding two segments) + question + prompt + chat history combined. However, it will not exceed model limitations, such as 4096.
 
-**Q: Where does the embedded dataset appear when asking questions?**
-A: It will be embedded as context before the question.
+**Q: Where does the embedded dataset appear when asking questions?** A: It will be embedded as context before the question.
 
-**Q: Is there any priority between the added dataset and OpenAI's answers?**
-A: The dataset serves as context and is used together with questions for LLM to understand and answer; there is no priority relationship.
+**Q: Is there any priority between the added dataset and OpenAI's answers?** A: The dataset serves as context and is used together with questions for LLM to understand and answer; there is no priority relationship.
 
-**Q: Why can I hit in test but not in application?**
-A: You can troubleshoot issues by following these steps:
+**Q: Why can I hit in test but not in application?** A: You can troubleshoot issues by following these steps:
 
 1. Make sure you have added text on the prompt page and clicked on the save button in the top right corner.
 2. Test whether it responds normally in the prompt debugging interface.
 3. Try again in a new WebApp session window.
-4. Optimize your data format and quality. For practice reference, visit [https://github.com/langgenius/dify/issues/90](https://github.com/langgenius/dify/issues/90)
-   If none of these steps solve your problem, please join our community for help.
+4. Optimize your data format and quality. For practice reference, visit [https://github.com/langgenius/dify/issues/90](https://github.com/langgenius/dify/issues/90) If none of these steps solve your problem, please join our community for help.
 
-**Q: Will APIs related to hit testing be opened up so that dify can access knowledge bases and implement dialogue generation using custom models?**
-A: We plan to open up Webhooks later on; however, there are no current plans for this feature. You can achieve your requirements by connecting to any vector database.
+**Q: Will APIs related to hit testing be opened up so that dify can access knowledge bases and implement dialogue generation using custom models?** A: We plan to open up Webhooks later on; however, there are no current plans for this feature. You can achieve your requirements by connecting to any vector database.
 
-**Q: How do I add multiple datasets?**
-A: Due to short-term performance considerations, we currently only support one dataset. If you have multiple sets of data, you can upload them within the same dataset for use.
+**Q: How do I add multiple datasets?** A: Due to short-term performance considerations, we currently only support one dataset. If you have multiple sets of data, you can upload them within the same dataset for use.
