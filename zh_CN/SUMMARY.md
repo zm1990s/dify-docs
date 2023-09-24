@@ -25,7 +25,7 @@
 * [基于 APIs 开发](application/developing-with-apis.md)
 * [日志与标注](application/logs.md)
 
-## Web 应用 <a href="#web-application" id="we-b"></a>
+## Web 应用 <a href="#we-b" id="we-b"></a>
 
 * [概览](web-application/overview.md)
 * [文本生成型应用](web-application/text-generator.md)
@@ -57,8 +57,9 @@
 * [零代码，使用 Dify 两分钟接入企业微信](use-cases/integrate-with-wecom-using-dify.md)
 * [构建一个 Notion AI 助手](use-cases/build-an-notion-ai-assistant.md)
 * [如何在几分钟内创建一个带有业务数据的官网 AI 智能客服](use-cases/create-an-ai-chatbot-with-business-data-in-minutes.md)
+* [使用全套开源工具构建 LLM 应用实战：在 Dify 调用 Baichuan 开源模型能力](use-cases/shi-yong-quan-tao-kai-yuan-gong-ju-gou-jian-llm-ying-yong-shi-zhan-zai-dify-tiao-yong-baichuan-kai-y.md)
 
-## 社区  <a href="#community" id="community"></a>
+## 社区 <a href="#community" id="community"></a>
 
 * [寻求支持](community/support.md)
 * [开源协议](community/open-source.md)
