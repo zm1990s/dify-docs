@@ -206,21 +206,23 @@ Used to set the front-end cross-domain access policy.
 
 For detailed configuration, please refer to: [Cross-domain/identity related guide](https://avytux375gg.feishu.cn/wiki/HyX3wdF1YiejX3k3U2CcTcmQnjg)
 
-#### Cookie Policy Configuration
+#### ~~Cookie Policy Configuration~~
 
-Used to set the browser policy for session cookies used for identity verification.
+⚠️ This configuration is no longer valid since v0.3.24.  
 
-*   COOKIE_HTTPONLY
+~~Used to set the browser policy for session cookies used for identity verification.~~
 
-    Cookie HttpOnly configuration, default is true.
-*   COOKIE_SAMESITE
+*   ~~COOKIE_HTTPONLY~~
 
-    Cookie SameSite configuration, default is Lax.
-*   COOKIE_SECURE
+    ~~Cookie HttpOnly configuration, default is true.~~
+*   ~~COOKIE_SAMESITE~~
 
-    Cookie Secure configuration, default is false.
+    ~~Cookie SameSite configuration, default is Lax.~~
+*   ~~COOKIE_SECURE~~
 
-For detailed configuration, please refer to: [Cross-domain/identity related guide](https://avytux375gg.feishu.cn/wiki/HyX3wdF1YiejX3k3U2CcTcmQnjg)
+    ~~Cookie Secure configuration, default is false.~~
+
+~~For detailed configuration, please refer to: [Cross-domain/identity related guide](https://avytux375gg.feishu.cn/wiki/HyX3wdF1YiejX3k3U2CcTcmQnjg)~~
 
 #### File Storage Configuration
 
