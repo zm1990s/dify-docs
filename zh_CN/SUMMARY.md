@@ -1,4 +1,4 @@
-# Table of contents
+  # Table of contents
 
 ## 入门 <a href="#getting-started" id="getting-started"></a>
 
