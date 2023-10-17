@@ -1,4 +1,4 @@
-  # Table of contents
+# Table of contents
 
 ## 入门 <a href="#getting-started" id="getting-started"></a>
 
@@ -38,6 +38,8 @@
 
 ## 进阶使用 <a href="#advanced" id="advanced"></a>
 
+* [提示词编排高级模式](advanced/prompt-engineering/README.md)
+  * [提示词初始模版参考](advanced/prompt-engineering/prompt-engineering-template.md)
 * [数据集管理](advanced/datasets/README.md)
   * [从 Notion 导入数据](advanced/datasets/sync-from-notion.md)
   * [通过 API 维护数据集](advanced/datasets/maintain-dataset-via-api.md)
