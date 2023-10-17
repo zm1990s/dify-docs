@@ -51,7 +51,7 @@
 
 ## 两种模式对比
 
-<table><thead><tr><th>对比维度</th><th width="145">简单模式</th><th>高级模式</th></tr></thead><tbody><tr><td>内置提示词可见性</td><td>封装不可见</td><td>开放可见</td></tr><tr><td>有无自动编排</td><td>可用</td><td>不可用</td></tr><tr><td>文本补全模型和聊天模型选择有无区别</td><td>无</td><td>文本补全模型和聊天模型选择后有编排区别</td></tr><tr><td>变量插入</td><td>有</td><td>有</td></tr><tr><td>内容块校验</td><td>无</td><td>有</td></tr><tr><td>SYSTEM / USER / ASSISTANT <br>三种消息类型编排</td><td>无</td><td>有</td></tr><tr><td>上下文参数设置</td><td>可设置</td><td>可设置</td></tr><tr><td>查看 PROMPT LOG</td><td>可查看历史对话日志</td><td>可查看完整提示词日志</td></tr><tr><td>停止序列 Stop_Sequences 参数设置</td><td>无</td><td>可设置</td></tr></tbody></table>
+<table><thead><tr><th width="333">对比维度</th><th width="197">简单模式</th><th>高级模式</th></tr></thead><tbody><tr><td>内置提示词可见性</td><td>封装不可见</td><td>开放可见</td></tr><tr><td>有无自动编排</td><td>可用</td><td>不可用</td></tr><tr><td>文本补全模型和聊天模型选择有无区别</td><td>无</td><td>文本补全模型和聊天模型选择后有编排区别</td></tr><tr><td>变量插入</td><td>有</td><td>有</td></tr><tr><td>内容块校验</td><td>无</td><td>有</td></tr><tr><td>SYSTEM / USER / ASSISTANT <br>三种消息类型编排</td><td>无</td><td>有</td></tr><tr><td>上下文参数设置</td><td>可设置</td><td>可设置</td></tr><tr><td>查看 PROMPT LOG</td><td>可查看完整提示词日志</td><td>可查看完整提示词日志</td></tr><tr><td>停止序列 Stop_Sequences 参数设置</td><td>无</td><td>可设置</td></tr></tbody></table>
 
 ## 操作说明
 
