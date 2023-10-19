@@ -125,11 +125,11 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 
 *   HTTP\_PROXY
 
-    HTTP 代理地址，用于解决国内无法访问 OpenAI, HuggingFace 的问题.
+    HTTP 代理地址，用于解决国内无法访问 OpenAI、HuggingFace 的问题。
 
 *   HTTPS\_PROXY
 
-    HTTPS 代理地址，用于解决国内无法访问 OpenAI, HuggingFace 的问题.
+    HTTPS 代理地址，用于解决国内无法访问 OpenAI、HuggingFace 的问题。
 
 #### 数据库配置
 
