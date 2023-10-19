@@ -1,12 +1,12 @@
-# 提示词编排高级模式
+# 提示词编排专家模式
 
 ## 功能介绍
 
-目前在 Dify 创建应用的编排默认为**简单模式**，这很适合想要快速创建应用的非技术人员，比如你想创建一个企业知识库 Chatbot 或者文章摘要生成器，利用简单模式编排对话前提示词，添加变量，添加上下文等简易步骤即可发布一个完整的应用（可参考👉[conversation-application.md](../../application/prompt-engineering/conversation-application.md "mention")[text-generation-application.md](../../application/prompt-engineering/text-generation-application.md "mention")）。
+目前在 Dify 创建应用的编排默认为**简易模式**，这很适合想要快速创建应用的非技术人员，比如你想创建一个企业知识库 Chatbot 或者文章摘要生成器，利用**简易模式**编排对话前提示词，添加变量，添加上下文等简易步骤即可发布一个完整的应用（可参考👉[conversation-application.md](../../application/prompt-engineering/conversation-application.md "mention")[text-generation-application.md](../../application/prompt-engineering/text-generation-application.md "mention")）。
 
-而如果你是一个熟练掌握使用 **OpenAI** 的 **Playground** 的技术人员，正想创建一个学习导师应用，需要在提示词中针对不同的教学模块位置嵌入不同的上下文和变量，就可以选择**高级模式。**在此模式下你可以自由地编写完整的提示词，包括修改内置的提示词，调整上下文和聊天历史内容在提示词中的位置，设定必要参数等**。**如果你对 Chat 和 Complete 两种模型不陌生，现在**高级模式**可以快速切换 Chat 和Complete 模型以满足你的需要，并且都适用于对话型应用和文本生成型应用。
+而如果你是一个熟练掌握使用 **OpenAI** 的 **Playground** 的技术人员，正想创建一个学习导师应用，需要在提示词中针对不同的教学模块位置嵌入不同的上下文和变量，就可以选择**专家模式。**在此模式下你可以自由地编写完整的提示词，包括修改内置的提示词，调整上下文和聊天历史内容在提示词中的位置，设定必要参数等**。**如果你对 Chat 和 Complete 两种模型不陌生，现在**专家模式**可以快速切换 Chat 和Complete 模型以满足你的需要，并且都适用于对话型应用和文本生成型应用。
 
-在你开始尝试新模式前，你需要知道**高级模式下**的必要元素：
+在你开始尝试新模式前，你需要知道**专家模式**下的必要元素：
 
 *   **文本补全模型** ![](../../.gitbook/assets/screenshot-20231017-092613.png)
 
@@ -30,7 +30,7 @@
     是指特定的单词、短语或字符，用于向 LLM 发出停止生成文本的信号。
 
 
-*   **高级模式提示词中的内容块**
+*   **专家模式提示词中的内容块**
 
     *   <img src="../../.gitbook/assets/3.png" alt="" data-size="line">
 
@@ -45,35 +45,35 @@
 
 *   **初始模版**
 
-    在高级模式下，正式编排之前，提示词框会给到一个初始模版，我们可以直接修改初始模版来对 LLM有更加定制化的要求。不同类型应用的不同类型模式下有所区别。
+    在**专家模式**下，正式编排之前，提示词框会给到一个初始模版，我们可以直接修改初始模版来对 LLM有更加定制化的要求。注意：不同类型应用的不同类型模式下有所区别。
 
     具体请参考👉[prompt-engineering-template.md](prompt-engineering-template.md "mention")
 
 ## 两种模式对比
 
-<table><thead><tr><th width="333">对比维度</th><th width="197">简单模式</th><th>高级模式</th></tr></thead><tbody><tr><td>内置提示词可见性</td><td>封装不可见</td><td>开放可见</td></tr><tr><td>有无自动编排</td><td>可用</td><td>不可用</td></tr><tr><td>文本补全模型和聊天模型选择有无区别</td><td>无</td><td>文本补全模型和聊天模型选择后有编排区别</td></tr><tr><td>变量插入</td><td>有</td><td>有</td></tr><tr><td>内容块校验</td><td>无</td><td>有</td></tr><tr><td>SYSTEM / USER / ASSISTANT <br>三种消息类型编排</td><td>无</td><td>有</td></tr><tr><td>上下文参数设置</td><td>可设置</td><td>可设置</td></tr><tr><td>查看 PROMPT LOG</td><td>可查看完整提示词日志</td><td>可查看完整提示词日志</td></tr><tr><td>停止序列 Stop_Sequences 参数设置</td><td>无</td><td>可设置</td></tr></tbody></table>
+<table><thead><tr><th width="333">对比维度</th><th width="197">简易模式</th><th>专家模式</th></tr></thead><tbody><tr><td>内置提示词可见性</td><td>封装不可见</td><td>开放可见</td></tr><tr><td>有无自动编排</td><td>可用</td><td>不可用</td></tr><tr><td>文本补全模型和聊天模型选择有无区别</td><td>无</td><td>文本补全模型和聊天模型选择后有编排区别</td></tr><tr><td>变量插入</td><td>有</td><td>有</td></tr><tr><td>内容块校验</td><td>无</td><td>有</td></tr><tr><td>SYSTEM / USER / ASSISTANT <br>三种消息类型编排</td><td>无</td><td>有</td></tr><tr><td>上下文参数设置</td><td>可设置</td><td>可设置</td></tr><tr><td>查看 PROMPT LOG</td><td>可查看完整提示词日志</td><td>可查看完整提示词日志</td></tr><tr><td>停止序列 Stop_Sequences 参数设置</td><td>无</td><td>可设置</td></tr></tbody></table>
 
 ## 操作说明
 
-### 1. 如何进入高级模式
+### 1. 如何进入专家模式
 
-&#x20; 创建应用后，在提示词编排页可以切换至高级模式，在高级模式下可以编辑完整的应用提示词。
+&#x20; 创建应用后，在提示词编排页可以切换至**专家模式**，在此模式下可以编辑完整的应用提示词。
 
-<figure><img src="../../.gitbook/assets/6.png" alt=""><figcaption><p>高级模式入口</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/专家模式.png" alt=""><figcaption><p>专家模式入口</p></figcaption></figure>
 
 {% hint style="warning" %}
-在高级模式下修改提示词并发布应用后，将无法返回至简单模式。
+在**专家模式**下修改提示词并发布应用后，将无法返回至**简易模式**。
 {% endhint %}
 
 ### 2. 修改插入上下文参数
 
-在简单模式和高级模式下，都可以对插入上下文的参数进行修改，参数包含了 **TopK** 和 **Score 阈值**。
+在**简易模式**和**专家模式**下，都可以对插入上下文的参数进行修改，参数包含了 **TopK** 和 **Score 阈值**。
 
 {% hint style="warning" %}
-需要注意的是，我们只有先上传了上下文，在高级模式下才会呈现包含 \{{#context#\}} 的内置提示词
+需要注意的是，我们只有先上传了上下文，在**专家模式**下才会呈现包含 \{{#context#\}} 的内置提示词
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/上下文参数.png" alt=""><figcaption><p>上下文参数设置</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/参数设置.png" alt=""><figcaption><p>上下文参数设置</p></figcaption></figure>
 
 **TopK：值范围为整数 1～10**
 
@@ -85,9 +85,9 @@
 
 ### 3. 设置**停止序列 Stop\_Sequences**
 
-我们不期望 LLM 生成多余的内容，所以需要设置指特定的单词、短语或字符(默认设置为 “Human:” )，告诉 LLM 停止生成文本。
+我们不期望 LLM 生成多余的内容，所以需要设置指特定的单词、短语或字符(默认设置为 `Human:`)，告知 LLM 停止生成文本。
 
-比如你在提示词中写了 Few-Shot:
+比如你在提示词中写了 _Few-Shot_:
 
 ```
 Human1: 天是什么颜色
@@ -103,7 +103,7 @@ Human1: 土是什么颜色
 Assistant1: 
 ```
 
-那么在模型参数里的“停止序列 Stop\_Sequences” ，输入 “Human1:” ，并按下 Tab 键。
+那么在模型参数里的 `停止序列 Stop_Sequences`，输入 `Human1:`，并按下 "Tab" 键。
 
 这样 LLM 在回复的时候只会回复一句：
 
@@ -115,12 +115,13 @@ Assistant1: 土是黄色的
 
 ### 4. 快捷插入变量和内容块
 
-在高级模式下，你可以在文本编辑器中输入“`/`”，快捷调出内容块来插入提示词中。内容块分为：`上下文`、`变量`、`会话历史`、`查询内容`。你也可以通过输入“`{`”，快捷插入已创建过的变量列表。
+在**专家模式**下，你可以在文本编辑器中输入“`/`”，快捷调出内容块来插入提示词中。内容块分为：`上下文`、`变量`、`会话历史`、`查询内容`。你也可以通过输入“`{`”，快捷插入已创建过的变量列表。\
 
-<figure><img src="../../.gitbook/assets/8.png" alt=""><figcaption><p>插入变量和内容块</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/快捷键.png" alt=""><figcaption><p>快捷键 “/”</p></figcaption></figure>
 
 {% hint style="warning" %}
-除“`变量`”以外的其他内容块不可重复插入。在不同应用和模型下，可插入的内容块会根据不同的提示词模板结构有所区别。
+除“`变量`”以外的其他内容块不可重复插入。在不同应用和模型下，可插入的内容块会根据不同的提示词模板结构有所区别，`会话历史`、`查询内容` 仅在对话型应用的文本补全模型中可用。
 {% endhint %}
 
 ### 5. 输入对话前提示词
@@ -154,13 +155,13 @@ And answer according to the language English.
 
 ### 6. 调试日志
 
-编排调试时不仅可以查看用户的输入和 LLM 的回复。在高级模式下，点击发送消息左上角图标，可以看到完整的提示词，方便开发者确认输入变量内容、上下文、聊天记录和查询内容是否符合预期。日志列表的相关说明请查看日志文档 👉 ： [logs.md](../../application/logs.md "mention")
+编排调试时不仅可以查看用户的输入和 LLM 的回复。在**专家模式**下，点击发送消息左上角图标，可以看到完整的提示词，方便开发者确认输入变量内容、上下文、聊天记录和查询内容是否符合预期。日志列表的相关说明请查看日志文档 👉 ： [logs.md](../../application/logs.md "mention")
 
 #### 6.1 **查看调试日志**
 
 在调试预览界面，用户与 AI 产生对话之后，将鼠标指针移动到任意的用户会话，即可在左上角看到“日志”标志按钮，点击即可查看提示词日志。
 
-<figure><img src="../../.gitbook/assets/10.png" alt=""><figcaption><p>查看提示词日志入口</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/日志.png" alt=""><figcaption><p>调试日志入口</p></figcaption></figure>
 
 在日志中，我们可以清晰的查看到：
 
