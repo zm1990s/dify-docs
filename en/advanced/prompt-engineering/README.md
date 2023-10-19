@@ -1,10 +1,10 @@
-# Advanced Mode for Prompt Engineering
+# Expert Mode for Prompt Engineering
 
-## Feature Introduction
+Currently, the orchestration for creating apps in Dify is set to **Basic Mode** by default. This is ideal for non-tech-savvy individuals who want to quickly make an app. For example, if you want to create a corporate knowledge-base ChatBot or an article summary Generator, you can use the **Basic Mode** to design `Pre-prompt` words, add `Query`, integrate `Context`, and other straightforward steps to launch a complete app. For more head to 👉 [text-generation-application.md](../../application/prompt-engineering/text-generation-application.md "mention") and [conversation-application.md](../../application/prompt-engineering/conversation-application.md "mention").
 
-Currently, the orchestration for creating apps in Dify is set to **Simple Mode** by default. This is ideal for non-tech-savvy individuals who want to quickly make an app. For example, if you want to create a corporate knowledge-base ChatBot or an article summary Generator, you can use the **Simple Mode** to design `Pre-prompt` words, add `Query`, integrate `Context`, and other straightforward steps to launch a complete app. For more head to 👉 [text-generation-application.md](../../application/prompt-engineering/text-generation-application.md "mention") and [conversation-application.md](../../application/prompt-engineering/conversation-application.md "mention").
+💡However, you surely want to design prompts in a more customized manner if you're a developer who has conducted in-depth research on prompts, then you should opt for the **Expert Mode**. In this mode, you are granted permission to customize comprehensive prompts rather than using the pre-packaged prompts from Dify. You can modify the built-in prompts, rearrange the placement of `Context` and `History` , set necessary parameters, and more. If you're familiar with the OpenAI's Playground, you can get up to speed with this mode more quickly.
 
-However, you surely want to design prompts in a more customized manner if you're a developer who has conducted in-depth research on prompts, then you should opt for the **Advanced Mode**. In this mode, you are granted permission to customize comprehensive prompts rather than using the pre-packaged prompts from Dify. You can modify the built-in prompts, rearrange the placement of `Context` and `History` , set necessary parameters, and more. If you're familiar with the OpenAI's Playground, you can get up to speed with this mode more quickly.
+***
 
 Well, before you try the new mode, you should be aware of some essential elements in it:
 
@@ -12,8 +12,7 @@ Well, before you try the new mode, you should be aware of some essential element
 
     When choosing a model, if you see "COMPLETE" on the right side of the model name, it indicates a Text completion model e.g. <img src="../../.gitbook/assets/screenshot-20231017-092613.png" alt="" data-size="line">
 
-    This type of model accepts a freeform text string and generates a text completion, attempting to match any context or pattern you provide. For example, if you write the prompt `As René Descartes said, "I think, therefore"`, it's highly likely that the model will return `"I am."` as the completion.
-
+    This type of model accepts a freeform text string and generates a text completion, attempting to match any context or pattern you provide. For example, if you write the prompt `As René Descartes said, "I think, therefore"`, it's highly likely that the model will return `"I am."` as the completion.\
 
 *   **Chat**
 
@@ -29,14 +28,11 @@ Well, before you try the new mode, you should be aware of some essential element
         User messages provide requests or comments for the AI assistant to respond to.
     *   `ASSISTANT`
 
-        Assistant messages store previous assistant responses, but they can also be written by you to provide examples of desired behavior.
-
+        Assistant messages store previous assistant responses, but they can also be written by you to provide examples of desired behavior.\
 
 *   **Stop\_Sequences**
 
-    Stop\_Sequences refers to specific words, phrases, or characters used to send a signal to LLM to stop generating text.
-
-
+    Stop\_Sequences refers to specific words, phrases, or characters used to send a signal to LLM to stop generating text.\
 
 *   **Blocks**
 
@@ -54,8 +50,7 @@ Well, before you try the new mode, you should be aware of some essential element
 
     <img src="../../.gitbook/assets/history (1).png" alt="" data-size="line">
 
-    The conversation history is only available in the Text completion model  of conversational applications. When engaging in multiple conversations in dialogue applications, Dify will assemble and concatenate the historical dialogue records according to built-in rules and replace the 'Conversation History' variable. The `Human` and `Assistant` prefixes can be modified by clicking on the `...` after "Conversation History".
-
+    The conversation history is only available in the Text completion model  of conversational applications. When engaging in multiple conversations in dialogue applications, Dify will assemble and concatenate the historical dialogue records according to built-in rules and replace the 'Conversation History' variable. The `Human` and `Assistant` prefixes can be modified by clicking on the `...` after "Conversation History".\
 
 *   #### **Prompt Template**
 
@@ -63,27 +58,29 @@ Well, before you try the new mode, you should be aware of some essential element
 
     For more head to 👉 [prompt-template.md](prompt-template.md "mention")
 
+***
+
 ## Comparison of the two modes
 
-<table><thead><tr><th width="333">Comparison Dimension</th><th width="197">Simple Mode </th><th>Advanced Mode</th></tr></thead><tbody><tr><td>Visibility of Built-in Prompts</td><td>Invisible</td><td>Visible</td></tr><tr><td>Automatic Design</td><td>Available</td><td>Disabled</td></tr><tr><td>Variable Insertion</td><td>Available</td><td>Available</td></tr><tr><td>Block Validation</td><td>Disabled</td><td>Available</td></tr><tr><td>SYSTEM / USER / ASSISTANT </td><td>Invisible</td><td>Visible</td></tr><tr><td>Context parameter settings</td><td>Available</td><td>Available</td></tr><tr><td>PROMPT LOG</td><td>Available</td><td>Available</td></tr><tr><td>Stop_Sequences </td><td>Disabled</td><td>Available</td></tr></tbody></table>
+<table><thead><tr><th width="333">Comparison Dimension</th><th width="197">Basic Mode </th><th>Expert Mode</th></tr></thead><tbody><tr><td>Visibility of Built-in Prompts</td><td>Invisible</td><td>Visible</td></tr><tr><td>Automatic Design</td><td>Available</td><td>Disabled</td></tr><tr><td>Variable Insertion</td><td>Available</td><td>Available</td></tr><tr><td>Block Validation</td><td>Disabled</td><td>Available</td></tr><tr><td>SYSTEM / USER / ASSISTANT </td><td>Invisible</td><td>Visible</td></tr><tr><td>Context parameter settings</td><td>Available</td><td>Available</td></tr><tr><td>PROMPT LOG</td><td>Available</td><td>Available</td></tr><tr><td>Stop_Sequences </td><td>Disabled</td><td>Available</td></tr></tbody></table>
 
 ## Operation Guide
 
-### 1. How to enter the Advanced Mode
+### 1. How to enter the Expert Mode
 
-After creating an application, you can switch to the **Advanced Mode** on the prompt design page.&#x20;
+After creating an application, you can switch to the **Expert Mode** on the prompt design page.&#x20;
 
-<figure><img src="../../.gitbook/assets/iphone.png" alt=""><figcaption><p>Entrance of the <strong>Advanced Mode</strong> </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/000.png" alt=""><figcaption><p>Access to the <strong>Expert Mode</strong></p></figcaption></figure>
 
 {% hint style="warning" %}
-After modifying the prompts in the Advanced Mode and publishing the application, you will not be able to revert back to the Simple Mode.
+After modifying the prompts in the **Expert Mode** and publishing the application, you will not be able to revert back to the **Basic Mode**.
 {% endhint %}
 
 ### 2. Modify Context parameters
 
 In both two modes, you can modify the parameters for the inserting context, which includes **TopK** and **Score Threshold**.
 
-<figure><img src="../../.gitbook/assets/top k.png" alt=""><figcaption><p>Context parameters</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Context parameters.png" alt=""><figcaption><p>Context parameters</p></figcaption></figure>
 
 {% hint style="warning" %}
 Please note that only after uploading the context, the built-in prompts containing <img src="../../.gitbook/assets/Context.png" alt="" data-size="line"> will be displayed on the prompt design page.
@@ -128,7 +125,7 @@ Because LLM stops generating content before the next `Human1:`.
 
 You can enter "/" in the text editor to quickly bring up Blocks to insert into the prompt.
 
-<figure><img src="../../.gitbook/assets/344.png" alt=""><figcaption><p>shortcut "/"</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/shortcut.png" alt=""><figcaption><p>shortcut "/"</p></figcaption></figure>
 
 {% hint style="warning" %}
 Except for `Variables`, other Blocks cannot be inserted repeatedly. In different applications and models, the Blocks that can be inserted will vary based on different prompt template structures.
@@ -169,9 +166,9 @@ During debugging, you can not only check the user's input and LLM's responses bu
 
 #### 6.1 Access to the Prompt Log
 
-In the debugging preview interface, after engaging in a conversation with the AI, simply move the mouse pointer over any user session, and you will see the "Log" icon button in the upper-left corner. Click on it to view the prompt log.
+In the debugging preview interface, after engaging in a conversation with the AI, simply move the mouse pointer over any user session, and you will see the "Log" icon button in the upper-left corner. Click on it to view the Prompt Log.
 
-<figure><img src="../../.gitbook/assets/log.png" alt=""><figcaption><p>Access to the Prompt Log</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Access to the Prompt Log (1).png" alt=""><figcaption><p>Access to the Prompt Log</p></figcaption></figure>
 
 In the Prompt Log, we can clearly see:
 

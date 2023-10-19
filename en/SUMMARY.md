@@ -38,8 +38,8 @@
 
 ## Advanced
 
-* [Advanced Mode for Prompt Engineering](advanced/advanced-mode-for-prompt-engineering/README.md)
-  * [Prompt Template](advanced/advanced-mode-for-prompt-engineering/prompt-template.md)
+* [Expert Mode for Prompt Engineering](advanced/prompt-engineering/README.md)
+  * [Prompt Template](advanced/prompt-engineering/prompt-template.md)
 * [Datasets\&Index](advanced/datasets/README.md)
   * [Sync from Notion](advanced/datasets/sync-from-notion.md)
   * [Maintain Datasets Via Api](advanced/datasets/maintain-dataset-via-api.md)
