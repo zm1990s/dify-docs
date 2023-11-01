@@ -95,7 +95,9 @@ conda activate dify
 
     To consume asynchronous tasks from the queue, such as dataset file import and dataset document updates, follow these steps to start the Worker service on Linux or macOS:
 
-    `celery -A app.celery worker -P gevent -c 1 -Q dataset,generation,mail --loglevel INFO`
+    ```
+    celery -A app.celery worker -P gevent -c 1 -Q dataset,generation,mail --loglevel INFO
+    ```
 
     If you are using a Windows system to start the Worker service, please use the following command instead:
 
