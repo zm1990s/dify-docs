@@ -69,7 +69,7 @@ conda activate dify
 
     Perform database migration to the latest version:
 
-    <pre><code><strong>flask db upgrade6. Start the API server:
+    <pre><code><strong>flask db upgrade
     </strong></code></pre>
 
 
