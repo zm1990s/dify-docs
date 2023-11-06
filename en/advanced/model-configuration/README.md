@@ -22,7 +22,6 @@ Based on technology developments and user needs, we will continue adding support
 We provide trial quotas for different models for Dify cloud service users. Please set up your own model provider before the trial quota runs out, otherwise it may impact normal use of your application.
 
 * **OpenAI hosted model trial:** We provide 500 free call credits for you to try out GPT3.5-turbo, GPT3.5-turbo-16k, text-davinci-003 models.
-* **Anthropic Claude hosted model trial:** We provide 1000 free call credits for you to try out Claude-instant-1, Claude2 models.
 
 ### Model type
 
@@ -51,8 +50,6 @@ There are two types of model suppliers:
 
 The different types of model suppliers are accessed slightly differently in Dify.
 
-
-
 ### Model suppliers that access their own models
 
 After importing the supplier of its own model, Dify will automatically import all the models under the supplier.
@@ -64,11 +61,11 @@ Set the API key of the corresponding model provider in Dify to access the model 
 * iFLYTEK SPARK：[https://www.xfyun.cn/solutions/xinghuoAPI](https://www.xfyun.cn/solutions/xinghuoAPI)
 * MINIMAX：[https://api.minimax.chat/user-center/basic-information/interface-key](https://api.minimax.chat/user-center/basic-information/interface-key)
 * WENXINYIYAN：[https://console.bce.baidu.com/qianfan/ais/console/applicationConsole/application](https://console.bce.baidu.com/qianfan/ais/console/applicationConsole/application)
-* TONGYI：[https://dashscope.console.aliyun.com/api-key_management?spm=a2c4g.11186623.0.0.3bbc424dxZms9k](https://dashscope.console.aliyun.com/api-key_management?spm=a2c4g.11186623.0.0.3bbc424dxZms9k)
-* ChatGLM: This model provider does not provide official services. But self-deployment is supported ([deployment docs](https://github.com/THUDM/ChatGLM2-6B/blob/main/README_EN.md#environment-setup)).
+* TONGYI：[https://dashscope.console.aliyun.com/api-key\_management?spm=a2c4g.11186623.0.0.3bbc424dxZms9k](https://dashscope.console.aliyun.com/api-key\_management?spm=a2c4g.11186623.0.0.3bbc424dxZms9k)
+* ChatGLM: This model provider does not provide official services. But self-deployment is supported ([deployment docs](https://github.com/THUDM/ChatGLM2-6B/blob/main/README\_EN.md#environment-setup)).
 
 {% hint style="info" %}
-Dify uses [PKCS1_OAEP](https://pycryptodome.readthedocs.io/en/latest/src/cipher/oaep.html) to encrypt and store user-managed API keys, and each tenant uses an independent key pair for encryption to ensure that your API keys are not leaked.
+Dify uses [PKCS1\_OAEP](https://pycryptodome.readthedocs.io/en/latest/src/cipher/oaep.html) to encrypt and store user-managed API keys, and each tenant uses an independent key pair for encryption to ensure that your API keys are not leaked.
 {% endhint %}
 
 ### Model suppliers that access hosted models

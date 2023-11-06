@@ -52,7 +52,7 @@
   * [OpenLLM](advanced/model-configuration/openllm.md)
   * [LocalAI](advanced/model-configuration/localai.md)
 * [More Integration](advanced/more-integration.md)
-* [API-based Extension](advanced/api-based-extension.md)
+* [API-based Extension](advanced/api\_based\_extension.md)
 
 ## use cases
 
