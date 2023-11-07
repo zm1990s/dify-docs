@@ -1,6 +1,6 @@
 # 外部数据工具扩展
 
-在创建 AI 应用时，开发者可以通过 API 扩展的方式实现使用外部工具获取额外数据组装至 Prompt 中作为 LLM 额外信息。具体的实操过程可以参考 [wai-bu-shu-ju-gong-ju.md](../../../application/prompt-engineering/wai-bu-shu-ju-gong-ju.md "mention")。
+在创建 AI 应用时，开发者可以通过 API 扩展的方式实现使用外部工具获取额外数据组装至 Prompt 中作为 LLM 额外信息。具体的实操过程可以参考 [external\_data\_tool.md](../../../application/prompt-engineering/external\_data\_tool.md "mention")。
 
 ### 前置条件
 
