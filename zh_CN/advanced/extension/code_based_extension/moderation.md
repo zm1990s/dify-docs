@@ -13,7 +13,10 @@
 3. 添加实现类
 4. 预览前端界面
 5. 调试扩展
-6. ### 初始化目录
+
+
+
+1. ### 初始化目录
 
 新增自定义类型 `Cloud Service`，需要在 `api/core/moderation` 目录下新建相关的目录和文件。
 
@@ -205,7 +208,7 @@ class CloudServiceModeration(Moderation):
 
 按照上面步骤执行，运行服务即可见新增的自定义类型。![](https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=OTcxZjhjYWQ0Y2FhODI4NmU3ZGQ5NmY1OWE3M2UzMmJfMFJ1M1dzbG5semNQcjA5NjgyWjhUcGdPdDlYREtBWUxfVG9rZW46Q1JPS2I3bFU0b0NQY2l4YVlhUGNVSTNNblJkXzE2OTkzNjQ1MzQ6MTY5OTM2ODEzNF9WNA)
 
-5. #### 调试扩展
+5. ### 调试扩展
 
 至此，即可在 Dify 应用编排界面选择自定义的 `Cloud Service` 内容审查扩展类型进行调试。\
 
