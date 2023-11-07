@@ -55,10 +55,12 @@
   * [接入 LocalAI 部署的本地模型](advanced/model-configuration/localai.md)
 * [更多集成](advanced/more-integration.md)
 * [扩展](advanced/extension/README.md)
-  * [API-based 扩展](advanced/extension/api\_based\_extension/README.md)
-    * [外部数据工具扩展](advanced/extension/api\_based\_extension/external\_data\_tool.md)
-    * [敏感内容审查扩展](advanced/extension/api\_based\_extension/moderation.md)
-  * [Code-based 扩展](advanced/extension/code\_based\_extension.md)
+  * [API 扩展](advanced/extension/api\_based\_extension/README.md)
+    * [外部数据工具](advanced/extension/api\_based\_extension/external\_data\_tool.md)
+    * [敏感内容审查](advanced/extension/api\_based\_extension/moderation.md)
+  * [代码扩展](advanced/extension/code\_based\_extension/README.md)
+    * [外部数据工具](advanced/extension/code\_based\_extension/external\_data\_tool.md)
+    * [敏感内容审查](advanced/extension/code\_based\_extension/moderation.md)
 
 ## 使用案例 <a href="#use-cases" id="use-cases"></a>
 

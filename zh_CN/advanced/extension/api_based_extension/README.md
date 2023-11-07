@@ -1,4 +1,4 @@
-# API-based 扩展
+# API 扩展
 
 开发者可通过 API 扩展模块能力，当前支持以下模块扩展：
 
@@ -11,7 +11,7 @@
 
 <figure><img src="../../../.gitbook/assets/api_based_01.png" alt=""><figcaption><p>基于 API 扩展</p></figcaption></figure>
 
-### [API 规范](https://github.com/langgenius/dify-docs/diffs/2?branch=main\&name=main\&qualified\_name=refs%2Fheads%2Fmain\&sha1=fb07d2bea301bd6388c393d5f3d8a80386c4dfdb\&sha2=a72d056812efe42f153d649085811e5b49ee131e\&short\_path=e2d7adb\&unchanged=expanded\&w=false#api-%E8%A7%84%E8%8C%83) <a href="#usercontentapi-gui-fan" id="usercontentapi-gui-fan"></a>
+### API 规范 <a href="#usercontentapi-gui-fan" id="usercontentapi-gui-fan"></a>
 
 Dify 将会以以下规范调用您的接口：
 
@@ -19,14 +19,14 @@ Dify 将会以以下规范调用您的接口：
 POST {Your-API-Endpoint}
 ```
 
-#### [Header](https://github.com/langgenius/dify-docs/diffs/2?branch=main\&name=main\&qualified\_name=refs%2Fheads%2Fmain\&sha1=fb07d2bea301bd6388c393d5f3d8a80386c4dfdb\&sha2=a72d056812efe42f153d649085811e5b49ee131e\&short\_path=e2d7adb\&unchanged=expanded\&w=false#header) <a href="#user-content-header" id="user-content-header"></a>
+#### Header <a href="#user-content-header" id="user-content-header"></a>
 
 | Header          | Value             | Desc                                                                  |
 | --------------- | ----------------- | --------------------------------------------------------------------- |
 | `Content-Type`  | application/json  | 请求内容为 JSON 格式。                                                        |
 | `Authorization` | Bearer {api\_key} | API Key 以 Token 令牌的方式传输，您需要解析该 `api_key` 并确认是否和提供的 API Key 一致，保证接口安全。 |
 
-#### [Request Body](https://github.com/langgenius/dify-docs/diffs/2?branch=main\&name=main\&qualified\_name=refs%2Fheads%2Fmain\&sha1=fb07d2bea301bd6388c393d5f3d8a80386c4dfdb\&sha2=a72d056812efe42f153d649085811e5b49ee131e\&short\_path=e2d7adb\&unchanged=expanded\&w=false#request-body) <a href="#user-content-request-body" id="user-content-request-body"></a>
+#### Request Body <a href="#user-content-request-body" id="user-content-request-body"></a>
 
 ```
 {
@@ -37,7 +37,7 @@ POST {Your-API-Endpoint}
 }
 ```
 
-#### [API 返回](https://github.com/langgenius/dify-docs/diffs/2?branch=main\&name=main\&qualified\_name=refs%2Fheads%2Fmain\&sha1=fb07d2bea301bd6388c393d5f3d8a80386c4dfdb\&sha2=a72d056812efe42f153d649085811e5b49ee131e\&short\_path=e2d7adb\&unchanged=expanded\&w=false#api-%E8%BF%94%E5%9B%9E) <a href="#usercontentapi-fan-hui" id="usercontentapi-fan-hui"></a>
+#### API 返回 <a href="#usercontentapi-fan-hui" id="usercontentapi-fan-hui"></a>
 
 ```
 {
@@ -45,20 +45,20 @@ POST {Your-API-Endpoint}
 }
 ```
 
-### [校验](https://github.com/langgenius/dify-docs/diffs/2?branch=main\&name=main\&qualified\_name=refs%2Fheads%2Fmain\&sha1=fb07d2bea301bd6388c393d5f3d8a80386c4dfdb\&sha2=a72d056812efe42f153d649085811e5b49ee131e\&short\_path=e2d7adb\&unchanged=expanded\&w=false#%E6%A0%A1%E9%AA%8C) <a href="#usercontent-xiao-yan" id="usercontent-xiao-yan"></a>
+### 校验 <a href="#usercontent-xiao-yan" id="usercontent-xiao-yan"></a>
 
 在 Dify 配置 API-based Extension 时，Dify 将会发送一个请求至 API Endpoint，以检验 API 的可用性。
 
 当 API Endpoint 接收到 `point=ping` 时，接口应返回 `result=pong`，具体如下：
 
-#### [Header](https://github.com/langgenius/dify-docs/diffs/2?branch=main\&name=main\&qualified\_name=refs%2Fheads%2Fmain\&sha1=fb07d2bea301bd6388c393d5f3d8a80386c4dfdb\&sha2=a72d056812efe42f153d649085811e5b49ee131e\&short\_path=e2d7adb\&unchanged=expanded\&w=false#header-1) <a href="#user-content-header-1" id="user-content-header-1"></a>
+#### Header <a href="#user-content-header-1" id="user-content-header-1"></a>
 
 ```
 Content-Type: application/json
 Authorization: Bearer {api_key}
 ```
 
-#### [Request Body](https://github.com/langgenius/dify-docs/diffs/2?branch=main\&name=main\&qualified\_name=refs%2Fheads%2Fmain\&sha1=fb07d2bea301bd6388c393d5f3d8a80386c4dfdb\&sha2=a72d056812efe42f153d649085811e5b49ee131e\&short\_path=e2d7adb\&unchanged=expanded\&w=false#request-body-1) <a href="#user-content-request-body-1" id="user-content-request-body-1"></a>
+#### Request Body <a href="#user-content-request-body-1" id="user-content-request-body-1"></a>
 
 ```
 {
@@ -66,7 +66,7 @@ Authorization: Bearer {api_key}
 }
 ```
 
-#### [API 期望返回](https://github.com/langgenius/dify-docs/diffs/2?branch=main\&name=main\&qualified\_name=refs%2Fheads%2Fmain\&sha1=fb07d2bea301bd6388c393d5f3d8a80386c4dfdb\&sha2=a72d056812efe42f153d649085811e5b49ee131e\&short\_path=e2d7adb\&unchanged=expanded\&w=false#api-%E6%9C%9F%E6%9C%9B%E8%BF%94%E5%9B%9E) <a href="#usercontentapi-qi-wang-fan-hui" id="usercontentapi-qi-wang-fan-hui"></a>
+#### API 期望返回 <a href="#usercontentapi-qi-wang-fan-hui" id="usercontentapi-qi-wang-fan-hui"></a>
 
 ```
 {
@@ -74,24 +74,24 @@ Authorization: Bearer {api_key}
 }
 ```
 
-### [范例](https://github.com/langgenius/dify-docs/diffs/2?branch=main\&name=main\&qualified\_name=refs%2Fheads%2Fmain\&sha1=fb07d2bea301bd6388c393d5f3d8a80386c4dfdb\&sha2=a72d056812efe42f153d649085811e5b49ee131e\&short\_path=e2d7adb\&unchanged=expanded\&w=false#%E8%8C%83%E4%BE%8B) <a href="#usercontent-fan-li" id="usercontent-fan-li"></a>
+### 范例 <a href="#usercontent-fan-li" id="usercontent-fan-li"></a>
 
 此处以外部数据工具为例，场景为根据地区获取外部天气信息作为上下文。
 
-#### [API 范例](https://github.com/langgenius/dify-docs/diffs/2?branch=main\&name=main\&qualified\_name=refs%2Fheads%2Fmain\&sha1=fb07d2bea301bd6388c393d5f3d8a80386c4dfdb\&sha2=a72d056812efe42f153d649085811e5b49ee131e\&short\_path=e2d7adb\&unchanged=expanded\&w=false#api-%E8%8C%83%E4%BE%8B) <a href="#usercontentapi-fan-li" id="usercontentapi-fan-li"></a>
+#### API 范例 <a href="#usercontentapi-fan-li" id="usercontentapi-fan-li"></a>
 
 ```
 POST https://fake-domain.com/api/dify/receive
 ```
 
-[**Header**](https://github.com/langgenius/dify-docs/diffs/2?branch=main\&name=main\&qualified\_name=refs%2Fheads%2Fmain\&sha1=fb07d2bea301bd6388c393d5f3d8a80386c4dfdb\&sha2=a72d056812efe42f153d649085811e5b49ee131e\&short\_path=e2d7adb\&unchanged=expanded\&w=false#header-2)
+**Header**
 
 ```
 Content-Type: application/json
 Authorization: Bearer 123456
 ```
 
-[**Request Body**](https://github.com/langgenius/dify-docs/diffs/2?branch=main\&name=main\&qualified\_name=refs%2Fheads%2Fmain\&sha1=fb07d2bea301bd6388c393d5f3d8a80386c4dfdb\&sha2=a72d056812efe42f153d649085811e5b49ee131e\&short\_path=e2d7adb\&unchanged=expanded\&w=false#request-body-2)
+**Request Body**
 
 ```
 {
@@ -107,7 +107,7 @@ Authorization: Bearer 123456
 }
 ```
 
-[**API 返回**](https://github.com/langgenius/dify-docs/diffs/2?branch=main\&name=main\&qualified\_name=refs%2Fheads%2Fmain\&sha1=fb07d2bea301bd6388c393d5f3d8a80386c4dfdb\&sha2=a72d056812efe42f153d649085811e5b49ee131e\&short\_path=e2d7adb\&unchanged=expanded\&w=false#api-%E8%BF%94%E5%9B%9E-1)
+**API 返回**
 
 ```
 {
@@ -115,7 +115,7 @@ Authorization: Bearer 123456
 }
 ```
 
-#### [代码范例](https://github.com/langgenius/dify-docs/diffs/2?branch=main\&name=main\&qualified\_name=refs%2Fheads%2Fmain\&sha1=fb07d2bea301bd6388c393d5f3d8a80386c4dfdb\&sha2=a72d056812efe42f153d649085811e5b49ee131e\&short\_path=e2d7adb\&unchanged=expanded\&w=false#%E4%BB%A3%E7%A0%81%E8%8C%83%E4%BE%8B) <a href="#usercontent-dai-ma-fan-li" id="usercontent-dai-ma-fan-li"></a>
+#### 代码范例 <a href="#usercontent-dai-ma-fan-li" id="usercontent-dai-ma-fan-li"></a>
 
 代码基于 Python FastAPI 框架。
 
@@ -190,16 +190,15 @@ Authorization: Bearer 123456
     ```
 3.  启动 API 服务，默认端口为 8000，API 完整地址为：`http://127.0.0.1:8000/api/dify/receive`，配置的 API Key 为 `123456`。
 
-    ```
-    uvicorn main:app --reload
-    ```
+    <pre><code><strong>uvicorn main:app --reload
+    </strong></code></pre>
 4. 在 Dify 配置该 API。
 
-[![](https://github.com/langgenius/dify-docs/raw/main/zh\_CN/.gitbook/assets/api\_based\_01.png)](../../../.gitbook/assets/api\_based\_01.png)
+<figure><img src="https://github.com/langgenius/dify-docs/raw/main/zh_CN/.gitbook/assets/api_based_01.png" alt=""><figcaption><p>配置 API </p></figcaption></figure>
 
 5. 在 App 中选择该 API 扩展。
 
-[![](https://github.com/langgenius/dify-docs/raw/main/zh\_CN/.gitbook/assets/api\_based\_02.png)](../../../.gitbook/assets/api\_based\_02.png)
+<figure><img src="https://github.com/langgenius/dify-docs/raw/main/zh_CN/.gitbook/assets/api_based_02.png" alt=""><figcaption><p>选择扩展</p></figcaption></figure>
 
 App 调试时，Dify 将请求配置的 API，并发送以下内容（范例）：
 
@@ -224,3 +223,37 @@ API 返回为：
     "result": "City: London\nTemperature: 10°C\nRealFeel®: 8°C\nAir Quality: Poor\nWind Direction: ENE\nWind Speed: 8 km/h\nWind Gusts: 14 km/h\nPrecipitation: Light rain"
 }
 ```
+
+### 本地调试
+
+由于 Dify 云端版无法访问内网 API 服务，为了方便本地调试 API 服务，可以使用 [Ngrok](https://ngrok.com) 将 API 服务的端点暴露到公网，实现云端调试本地代码。操作步骤：
+
+1.  进入 [https://ngrok.com](https://ngrok.com) 官网，注册并下载 Ngrok 文件。
+
+
+
+    <figure><img src="../../../.gitbook/assets/download.png" alt=""><figcaption><p>Download</p></figcaption></figure>
+2. 下载完成后，进入下载目录，根据下方说明解压压缩包，并执行说明中的初始化脚本。
+   * ```Shell
+     $ unzip /path/to/ngrok.zip
+     $ ./ngrok config add-authtoken 你的Token
+     ```
+3. 查看本地 API 服务的端口：
+
+<figure><img src="../../../.gitbook/assets/8000.png" alt=""><figcaption><p>查看端口</p></figcaption></figure>
+
+并运行以下命令启动：
+
+*   ```Shell
+    $ ./ngrok http 端口号
+    ```
+
+    启动成功的样例如下：
+
+<figure><img src="../../../.gitbook/assets/ngrock.png" alt=""><figcaption><p>Ngrok 启动</p></figcaption></figure>
+
+4. 我们找到 Forwarding 中，如上图：`https://177e-159-223-41-52.ngrok-free.app`（此为示例域名，请替换为自己的）即为公网域名。
+
+* 按照上述的范例，我们把本地已经启动的服务端点暴露出去，将代码范例接口：`http://127.0.0.1:8000/api/dify/receive` 替换为 `https://177e-159-223-41-52.ngrok-free.app/api/dify/receive`
+
+此 API 端点即可公网访问。至此，我们即可在 Dify 配置该 API 端点进行本地调试代码，配置步骤请参考 [external\_data\_tool.md](../../../application/prompt-engineering/external\_data\_tool.md "mention")。

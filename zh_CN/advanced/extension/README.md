@@ -4,4 +4,4 @@
 
 [api\_based\_extension](api\_based\_extension/ "mention")
 
-[code\_based\_extension.md](code\_based\_extension.md "mention")
+[code\_based\_extension](code\_based\_extension/ "mention")
