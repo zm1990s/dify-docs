@@ -22,6 +22,7 @@
 * [Prompt Engineering](application/prompt-engineering/README.md)
   * [Text Generator](application/prompt-engineering/text-generation-application.md)
   * [Conversation Application](application/prompt-engineering/conversation-application.md)
+  * [External-data-tool](application/prompt-engineering/external\_data\_tool.md)
 * [Developing with APIs](application/developing-with-apis.md)
 * [Logs & Annotations](application/logs.md)
 
@@ -52,7 +53,11 @@
   * [OpenLLM](advanced/model-configuration/openllm.md)
   * [LocalAI](advanced/model-configuration/localai.md)
 * [More Integration](advanced/more-integration.md)
-* [API-based Extension](advanced/api\_based\_extension.md)
+* [Extension](advanced/extension/README.md)
+  * [API-based Extension](advanced/extension/api\_based\_extension/README.md)
+    * [External\_data\_tool](advanced/extension/api\_based\_extension/external\_data\_tool.md)
+    * [Moderation](advanced/extension/api\_based\_extension/moderation.md)
+  * [Code-based Extension](advanced/extension/code-based-extension.md)
 
 ## use cases
 
