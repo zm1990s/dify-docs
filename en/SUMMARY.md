@@ -23,6 +23,7 @@
   * [Text Generator](application/prompt-engineering/text-generation-application.md)
   * [Conversation Application](application/prompt-engineering/conversation-application.md)
   * [External-data-tool](application/prompt-engineering/external\_data\_tool.md)
+  * [Moderation](application/prompt-engineering/moderation\_tool.md)
 * [Developing with APIs](application/developing-with-apis.md)
 * [Logs & Annotations](application/logs.md)
 
@@ -56,7 +57,7 @@
 * [Extension](advanced/extension/README.md)
   * [API-based Extension](advanced/extension/api\_based\_extension/README.md)
     * [External\_data\_tool](advanced/extension/api\_based\_extension/external\_data\_tool.md)
-    * [Moderation](advanced/extension/api\_based\_extension/moderation.md)
+    * [Moderation Extension](advanced/extension/api\_based\_extension/moderation-extension.md)
   * [Code-based Extension](advanced/extension/code-based-extension.md)
 
 ## use cases
