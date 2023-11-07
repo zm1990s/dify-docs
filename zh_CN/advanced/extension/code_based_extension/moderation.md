@@ -206,7 +206,7 @@ class CloudServiceModeration(Moderation):
 
 4. ### 预览前端界面
 
-按照上面步骤执行，运行服务即可见新增的自定义类型。![](https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=OTcxZjhjYWQ0Y2FhODI4NmU3ZGQ5NmY1OWE3M2UzMmJfMFJ1M1dzbG5semNQcjA5NjgyWjhUcGdPdDlYREtBWUxfVG9rZW46Q1JPS2I3bFU0b0NQY2l4YVlhUGNVSTNNblJkXzE2OTkzNjQ1MzQ6MTY5OTM2ODEzNF9WNA)
+按照上面步骤执行，运行服务即可见新增的自定义类型。
 
 5. ### 调试扩展
 
