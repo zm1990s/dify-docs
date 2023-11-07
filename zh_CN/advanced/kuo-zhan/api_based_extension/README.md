@@ -9,7 +9,7 @@
 
 除了需要开发对应的模块能力，还需要遵照以下规范，以便 Dify 正确调用 API。
 
-<figure><img src="../../.gitbook/assets/api_based_01.png" alt=""><figcaption><p>基于 API 扩展</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/api_based_01.png" alt=""><figcaption><p>基于 API 扩展</p></figcaption></figure>
 
 ### [API 规范](https://github.com/langgenius/dify-docs/diffs/2?branch=main\&name=main\&qualified\_name=refs%2Fheads%2Fmain\&sha1=fb07d2bea301bd6388c393d5f3d8a80386c4dfdb\&sha2=a72d056812efe42f153d649085811e5b49ee131e\&short\_path=e2d7adb\&unchanged=expanded\&w=false#api-%E8%A7%84%E8%8C%83) <a href="#usercontentapi-gui-fan" id="usercontentapi-gui-fan"></a>
 
@@ -195,11 +195,11 @@ Authorization: Bearer 123456
     ```
 4. 在 Dify 配置该 API。
 
-[![](https://github.com/langgenius/dify-docs/raw/main/zh\_CN/.gitbook/assets/api\_based\_01.png)](../../.gitbook/assets/api\_based\_01.png)
+[![](https://github.com/langgenius/dify-docs/raw/main/zh\_CN/.gitbook/assets/api\_based\_01.png)](../../../.gitbook/assets/api\_based\_01.png)
 
 5. 在 App 中选择该 API 扩展。
 
-[![](https://github.com/langgenius/dify-docs/raw/main/zh\_CN/.gitbook/assets/api\_based\_02.png)](../../.gitbook/assets/api\_based\_02.png)
+[![](https://github.com/langgenius/dify-docs/raw/main/zh\_CN/.gitbook/assets/api\_based\_02.png)](../../../.gitbook/assets/api\_based\_02.png)
 
 App 调试时，Dify 将请求配置的 API，并发送以下内容（范例）：
 

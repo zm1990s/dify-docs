@@ -22,6 +22,8 @@
 * [设计提示词&编排应用](application/prompt-engineering/README.md)
   * [文本生成型应用](application/prompt-engineering/text-generation-application.md)
   * [对话型应用](application/prompt-engineering/conversation-application.md)
+  * [外部数据工具](application/prompt-engineering/wai-bu-shu-ju-gong-ju.md)
+  * [敏感内容审查](application/prompt-engineering/min-gan-nei-rong-shen-cha.md)
 * [基于 APIs 开发](application/developing-with-apis.md)
 * [日志与标注](application/logs.md)
 
@@ -52,9 +54,11 @@
   * [接入 OpenLLM 部署的本地模型](advanced/model-configuration/openllm.md)
   * [接入 LocalAI 部署的本地模型](advanced/model-configuration/localai.md)
 * [更多集成](advanced/more-integration.md)
-* [API-based 扩展](advanced/api\_based\_extension/README.md)
-  * [外部数据工具](advanced/api\_based\_extension/wai-bu-shu-ju-gong-ju.md)
-  * [敏感内容审查](advanced/api\_based\_extension/min-gan-nei-rong-shen-cha.md)
+* [扩展](advanced/kuo-zhan/README.md)
+  * [API-based 扩展](advanced/kuo-zhan/api\_based\_extension/README.md)
+    * [外部数据工具扩展](advanced/kuo-zhan/api\_based\_extension/external\_data\_tool.md)
+    * [敏感内容审查扩展](advanced/kuo-zhan/api\_based\_extension/moderation.md)
+  * [Code-based 扩展](advanced/kuo-zhan/codebased-kuo-zhan.md)
 
 ## 使用案例 <a href="#use-cases" id="use-cases"></a>
 
