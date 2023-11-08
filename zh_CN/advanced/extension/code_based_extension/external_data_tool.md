@@ -75,7 +75,9 @@
 
 `weather_search.py` 代码模版，你可以在这里实现具体的业务逻辑。
 
-> 注意：类变量 name 为自定义类型名称，需要跟目录和文件名保持一致，而且唯一。
+{% hint style="warning" %}
+注意：类变量 name 为自定义类型名称，需要跟目录和文件名保持一致，而且唯一。
+{% endhint %}
 
 ```python
 from typing import Optional
