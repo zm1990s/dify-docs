@@ -54,7 +54,7 @@
   * [接入 OpenLLM 部署的本地模型](advanced/model-configuration/openllm.md)
   * [接入 LocalAI 部署的本地模型](advanced/model-configuration/localai.md)
 * [更多集成](advanced/more-integration.md)
-* [扩展](advanced/extension/README.md)
+* [扩展外部能力](advanced/extension/README.md)
   * [API 扩展](advanced/extension/api\_based\_extension/README.md)
     * [外部数据工具](advanced/extension/api\_based\_extension/external\_data\_tool.md)
     * [敏感内容审查](advanced/extension/api\_based\_extension/moderation.md)

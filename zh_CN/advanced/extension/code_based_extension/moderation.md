@@ -1,12 +1,10 @@
 # 敏感内容审查
 
-## **内容审查扩展**
-
-除了系统内置的内容审查类型，Dify 也支持用户扩展自定义实现，该方法适用于私有部署的用户定制开发，如果您愿意将扩展功能贡献给我们的话，非常欢迎给 Dify 提交 PR。
+除了系统内置的内容审查类型，Dify 也支持用户扩展自定义的内容审查规则，该方法适用于私有部署的开发者定制开发。比如企业内部客服，规定用户在查询的时候以及客服回复的时候，除了不可以输入暴力，性和非法行为等相关词语，也不能出现企业自己规定的禁词或违反内部制定的审查逻辑，那么开发者可以在私有部署的 Dify 代码层扩展自定义内容审查规则。
 
 ## 快速开始
 
-这里以一个 `Cloud Service` 内容审查扩展为例：大致步骤如下：
+这里以一个 `Cloud Service` 内容审查扩展为例，步骤如下：
 
 1. 初始化目录
 2. 添加前端组件定义文件
@@ -14,9 +12,7 @@
 4. 预览前端界面
 5. 调试扩展
 
-
-
-1. ### 初始化目录
+### 1. 初始化目录
 
 新增自定义类型 `Cloud Service`，需要在 `api/core/moderation` 目录下新建相关的目录和文件。
 
@@ -31,11 +27,11 @@
                 └── schema.json
 ```
 
-2. ### 添加前端组件规范
+### 2.添加前端组件规范
 
-* `schema.json`，这里定义了前端组件规范，详细见 [.](./ "mention")
+* `schema.json`，这里定义了前端组件规范，详细见 [.](./ "mention") 。
 
-```JSON
+```json
 {
     "label": {
         "en-US": "Cloud Service",
@@ -103,13 +99,15 @@
 }
 ```
 
-3. ### 添加实现类
+### 3. 添加实现类
 
 `cloud_service.py` 代码模版，你可以在这里实现具体的业务逻辑。
 
-> 注意：类变量 name 为自定义类型名称，需要跟目录和文件名保持一致，而且唯一。
+{% hint style="warning" %}
+注意：类变量 name 为自定义类型名称，需要跟目录和文件名保持一致，而且唯一。
+{% endhint %}
 
-```Python
+```python
 from core.moderation.base import Moderation, ModerationAction, ModerationInputsResult, ModerationOutputsResult
 
 class CloudServiceModeration(Moderation):
@@ -204,22 +202,20 @@ class CloudServiceModeration(Moderation):
         return False
 ```
 
-4. ### 预览前端界面
+### 4. 预览前端界面
 
 按照上面步骤执行，运行服务即可见新增的自定义类型。
 
-5. ### 调试扩展
+<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=ZmRiMDI5YTU3NGY5M2JmNmY0N2Y0NmEwMGIwNGI0N2VfOGRrVE5GV25BT3laRnVxYlhLMUFYRWZWbm9NVkp3YXJfVG9rZW46Q1JPS2I3bFU0b0NQY2l4YVlhUGNVSTNNblJkXzE2OTk0NTExMTc6MTY5OTQ1NDcxN19WNA" alt=""><figcaption><p>Cloud Service</p></figcaption></figure>
+
+### 5. 调试扩展
 
 至此，即可在 Dify 应用编排界面选择自定义的 `Cloud Service` 内容审查扩展类型进行调试。\
 
 
-## 前端组件规范
-
-* 请参考 [.](./ "mention")
-
 ## 实现类模版
 
-```Python
+```python
 from core.moderation.base import Moderation, ModerationAction, ModerationInputsResult, ModerationOutputsResult
 
 class CloudServiceModeration(Moderation):
@@ -316,6 +312,6 @@ class CloudServiceModeration(Moderation):
       * `direct_output`直接输出预设回复
       * `overrided`覆写传入变量值
     * `preset_response` 预设回复（仅当 action=direct\_output 返回）
-    * `text` 覆写的 LLM 回答内容。（仅当 action=overrided 返回）
+    * `text` 覆写的 LLM 回答内容（仅当 action=overrided 返回）。
 
 \
