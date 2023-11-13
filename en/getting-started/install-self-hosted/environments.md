@@ -271,7 +271,7 @@ Used to store uploaded data set files, team/tenant encryption keys, and other fi
 
   Number of files that can be uploaded per tenant, default 100.
 
-#### Multi-modal Model Configuration
+#### Multi-modal Configuration
 
 *   MULTIMODAL_SEND_IMAGE_FORMAT
 
