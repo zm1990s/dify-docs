@@ -135,7 +135,7 @@ Authorization: Bearer 123456
 
     class InputData(BaseModel):
         point: str
-        params: dict
+        params: dict = {}
 
 
     @app.post("/api/dify/receive")
@@ -190,7 +190,7 @@ Authorization: Bearer 123456
     ```
 3.  启动 API 服务，默认端口为 8000，API 完整地址为：`http://127.0.0.1:8000/api/dify/receive`，配置的 API Key 为 `123456`。
 
-    <pre><code><strong>uvicorn main:app --reload
+    <pre><code><strong>uvicorn main:app --reload --host 0.0.0.0
     </strong></code></pre>
 4. 在 Dify 配置该 API。
 
