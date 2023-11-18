@@ -12,7 +12,7 @@
 
 以下是 N 选 1 召回模式的技术流程图：
 
-<figure><img src="../../.gitbook/assets/image (123).png" alt=""><figcaption><p>N 选 1 召回</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (126).png" alt=""><figcaption><p>N 选 1 召回</p></figcaption></figure>
 
 因此，在查询数据集过多，或者数据集描述差异较小时，该模式的保证召回的效果会受到影响。该模式更适用于数据集数量较少的应用。
 
@@ -27,9 +27,9 @@
 
 以下是多路召回模式的技术流程图：
 
-<figure><img src="../../.gitbook/assets/image (124).png" alt=""><figcaption><p>多路召回</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>多路召回</p></figcaption></figure>
 
-由于多路召回模式不依赖于模型的推理能力或数据集描述，该模式在多数据集检索时能够获得质量更高的召回效果。因此，当创建的知识库问答应用关联了多个数据集时，我们推荐将召回模式配置为多路召回。\
+由于多路召回模式不依赖于模型的推理能力或数据集描述，该模式在多数据集检索时能够获得质量更高的召回效果，除此之外加入 Rerank 步骤也能有效改进文档召回效果。因此，当创建的知识库问答应用关联了多个数据集时，我们更推荐将召回模式配置为多路召回。\
 \
 \
 \
