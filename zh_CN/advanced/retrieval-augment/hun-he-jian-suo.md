@@ -27,7 +27,7 @@ RAG 检索环节中的主流方法是向量检索，即语义相关度匹配的�
 
 * 精确匹配（如产品名称、姓名、产品编号）
 * 少量字符的匹配（通过少量字符进行向量检索时效果非常不好，但很多用户恰恰习惯只输入几个关键词）
-* 倾向低频词汇的匹配（代表自然语言的普遍特性：出现频率较低的词语更重要，因为低频词汇往往承载了语言中的重要意义，比如“你想跟我去喝咖啡吗？”这句话中的分词，“喝”“咖啡”会比“你”“想”“吗”在句子中承载更重要的含义）
+* 倾向低频词汇的匹配（低频词汇往往承载了语言中的重要意义，比如“你想跟我去喝咖啡吗？”这句话中的分词，“喝”“咖啡”会比“你”“想”“吗”在句子中承载更重要的含义）
 
 \
 对于大多数文本搜索的情景，首要的是确保潜在最相关结果能够出现在候选结果中。向量检索和关键词检索在检索领域各有其优势。混合搜索正是结合了这两种搜索技术的优点，同时弥补了两方的缺点。\
@@ -35,7 +35,7 @@ RAG 检索环节中的主流方法是向量检索，即语义相关度匹配的�
 
 在混合检索中，你需要在数据库中提前建立向量索引和关键词索引，在用户问题输入时，分别通过两种检索器在文档中检索出最相关的文本。
 
-<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=Nzk3NjcxNGNiYWMwN2RhOGRhMzA2ZmI5ZTM2ZWZlMzVfRTZmSVoxVURqSnc2QTh0TUM0dG9qaDhxV0JWcW43d2hfVG9rZW46VjVTUWJmY2E2b0s3U014N0s5RGNyUE5SbjFkXzE3MDAyMTcxMDk6MTcwMDIyMDcwOV9WNA" alt=""><figcaption><p>混合检索</p></figcaption></figure>
+<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=OTYwNzBlZGZhYzk0OGY1NGE5NGY4YTlmNjY5Yjk3NzZfZDJuUXBZWkJhMnZxN05yRUNOR0YydFpza3RFa09HUGhfVG9rZW46VjVTUWJmY2E2b0s3U014N0s5RGNyUE5SbjFkXzE3MDAzMTcxMzc6MTcwMDMyMDczN19WNA" alt=""><figcaption><p>混合检索</p></figcaption></figure>
 
 “混合检索”实际上并没有明确的定义，本文以向量检索和关键词检索的组合为示例。如果我们使用其他搜索算法的组合，也可以被称为“混合检索”。比如，我们可以将用于检索实体关系的知识图谱技术与向量检索技术结合。\
 
@@ -43,11 +43,11 @@ RAG 检索环节中的主流方法是向量检索，即语义相关度匹配的�
 不同的检索系统各自擅长寻找文本（段落、语句、词汇）之间不同的细微联系，这包括了精确关系、语义关系、主题关系、结构关系、实体关系、时间关系、事件关系等。可以说没有任何一种检索模式能够适用全部的情景。**混合检索通过多个检索系统的组合，实现了多个检索技术之间的互补。**\
 
 
-### **语义检索**
+### **向量检索**
 
 定义：通过生成查询嵌入并查询与其向量表示最相似的文本分段。
 
-<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=MTFhMjZjZDIzOWUwZTAxZjhhNTczYWE4MDI4Y2QxMDdfRXA0Mkw4bGNZeHV1dW10dEFNUzBtQnBvb1dRMU1hb05fVG9rZW46QUdOcGI4azk4b0gwNk94NzZQSmN3Q2NpblFoXzE3MDAyMTcxMDk6MTcwMDIyMDcwOV9WNA" alt=""><figcaption><p>语义检索设置</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (116).png" alt="" width="563"><figcaption><p>向量检索设置</p></figcaption></figure>
 
 **TopK：**用于筛选与用户问题相似度最高的文本片段。系统同时会根据选用模型上下文窗口大小动态调整片段数量。系统默认值为 3 。
 
@@ -60,7 +60,7 @@ RAG 检索环节中的主流方法是向量检索，即语义相关度匹配的�
 
 定义：索引文档中的所有词汇，从而允许用户查询任意词汇，并返回包含这些词汇的文本片段。
 
-<figure><img src="../../.gitbook/assets/image (113).png" alt="" width="375"><figcaption><p>全文检索设置</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (122).png" alt="" width="563"><figcaption><p>全文检索设置</p></figcaption></figure>
 
 **TopK：**用于筛选与用户问题相似度最高的文本片段。系统同时会根据选用模型上下文窗口大小动态调整片段数量。系统默认值为 3 。
 
@@ -71,7 +71,7 @@ RAG 检索环节中的主流方法是向量检索，即语义相关度匹配的�
 
 同时执行全文检索和向量检索，并应用重排序步骤，从两类查询结果中选择匹配用户问题的最佳结果，需配置 Rerank 模型 API。
 
-<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=MTk3ZGY2ZTFlODI3YjViMGJkMTk3NWRlZTE0ZWJkZTZfcFRBenRvRkxPcWFWaU5OdWdaQTRINkdQNmlVOUhYNzRfVG9rZW46SmRzQmJjNTZQbzlac2R4NGRIQmNvSE9LbkVoXzE3MDAyMTcxMDk6MTcwMDIyMDcwOV9WNA" alt="" width="375"><figcaption><p>混合检索设置</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (118).png" alt="" width="563"><figcaption><p>混合检索设置</p></figcaption></figure>
 
 **TopK：**用于筛选与用户问题相似度最高的文本片段。系统同时会根据选用模型上下文窗口大小动态调整片段数量。系统默认值为 3 。
 
@@ -82,16 +82,18 @@ RAG 检索环节中的主流方法是向量检索，即语义相关度匹配的�
 
 通过进入“数据集->创建数据集”页面并在检索设置中设置不同的检索模式：
 
-<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=ODFmYzc1YzNiNjJjMGM2Yzc5MTNjNTIxNWM2NzgwNTlfemh0ZHJxSzl5T1lXQUlhR2VRSU9JSWN4TG5zeVB5aHNfVG9rZW46VmVnTmJZd2NKb0EwUWJ4bWtKMmMxbjVBblJjXzE3MDAyMTcxMDk6MTcwMDIyMDcwOV9WNA" alt=""><figcaption><p>创建数据集时设置检索模式</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (119).png" alt=""><figcaption><p>创建数据集时设置检索模式</p></figcaption></figure>
 
 ### 数据集设置中修改检索模式
 
 通过进入“数据集->选择数据集->设置”页面中可以对已创建的数据集修改不同的检索模式。
 
-<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=OTY4YjkyZTdmMmYwZjgxNTI3MjJkM2NjMWQ4NTdhNzZfZk1yZjF5RXZwRUkzbXNkVnREZUNuZGZSb2JsQzBTYTVfVG9rZW46RG1SYmJsOWx3bzV6SGR4Wko0VGNHM0JobnNiXzE3MDAyMTcxMDk6MTcwMDIyMDcwOV9WNA" alt=""><figcaption><p>数据集设置中修改检索模式</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (120).png" alt=""><figcaption><p>数据集设置中修改检索模式</p></figcaption></figure>
+
+
 
 ### 提示词编排中修改检索模式
 
 通过进入“提示词编排->上下文->选择数据集->设置”页面中可以在创建应用时修改不同的检索模式。
 
-<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTNlZDA3MTFiY2M0ZWU4YzgzMzllMjExM2U0MzdiYjBfb2Jmbk42UEhrenR3RnBTZ2NHNnltdXpJajBxSnFCN2lfVG9rZW46UVY0ZGJIUzlTb0sxR3p4ZDRXa2NuOXdpbmRNXzE3MDAyMTcxMDk6MTcwMDIyMDcwOV9WNA" alt=""><figcaption><p>提示词编排中修改检索模式</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (121).png" alt=""><figcaption><p>提示词编排中修改检索模式</p></figcaption></figure>
