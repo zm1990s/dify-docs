@@ -29,7 +29,7 @@ RAG 检索环节中的主流方法是向量检索，即语义相关度匹配的�
 
 在混合检索中，你需要在数据库中提前建立向量索引和关键词索引，在用户问题输入时，分别通过两种检索器在文档中检索出最相关的文本。
 
-<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=OTYwNzBlZGZhYzk0OGY1NGE5NGY4YTlmNjY5Yjk3NzZfZDJuUXBZWkJhMnZxN05yRUNOR0YydFpza3RFa09HUGhfVG9rZW46VjVTUWJmY2E2b0s3U014N0s5RGNyUE5SbjFkXzE3MDAzMTcxMzc6MTcwMDMyMDczN19WNA" alt=""><figcaption><p>混合检索</p></figcaption></figure>
+<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjAwN2MwZGYxNTFkNzNkNzA4MDRmNWI3YTVlZjJhMmJfUEVlTmtxZ3Q4VjYyaHl5R3RtZ2xIRnE5Z0xDUldxalBfVG9rZW46VjVTUWJmY2E2b0s3U014N0s5RGNyUE5SbjFkXzE3MDAzMjEwNzg6MTcwMDMyNDY3OF9WNA" alt="" width="563"><figcaption><p>混合检索</p></figcaption></figure>
 
 “混合检索”实际上并没有明确的定义，本文以向量检索和关键词检索的组合为示例。如果我们使用其他搜索算法的组合，也可以被称为“混合检索”。比如，我们可以将用于检索实体关系的知识图谱技术与向量检索技术结合。
 
