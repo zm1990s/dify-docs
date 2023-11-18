@@ -2,7 +2,7 @@
 
 当用户构建知识库问答类的 AI 应用时，如果在应用内关联了多个数据集，Dify 在检索时支持两种召回模式：N选1召回模式和多路召回模式。
 
-<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=MGJlNTMxZWM1ZjdjZjBjZGY0Y2ZhNDc5Y2QzNTIwOWJfYU5nR2ZMV25VREpUZ1k1eG0yVEljVGk0NTMxTnY1NFpfVG9rZW46TWd1dmJDNzJyb1pCVXR4bmZXTmMzM2ZHbjBlXzE3MDAyMjA0MTQ6MTcwMDIyNDAxNF9WNA" alt=""><figcaption><p>召回模式设置</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (125).png" alt=""><figcaption><p>召回模式设置</p></figcaption></figure>
 
 ### N选1召回模式
 
@@ -10,11 +10,13 @@
 
 在用户上传数据集时，系统将自动为数据集创建一个摘要式的描述。为了在该模式下获得最佳的召回效果，你可以在“数据集->设置->数据集描述”中查看到系统默认创建的摘要描述，并检查该内容是否可以清晰的概括数据集的内容。
 
-以下是N选1召回模式的技术流程图：
+以下是 N 选 1 召回模式的技术流程图：
 
-<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTcyMTE4MjhmYjdiMDg5YTdjOGE3MjFjOWQ1MWRlMmRfd2l3bE11U3V5TExNdzMzRHVjRjlSUTFXbTRqSEJNaHdfVG9rZW46SXpWM2JVSUVQb2JUcEl4Z3dMcWNPMU5UbkVlXzE3MDAyMjA0MTQ6MTcwMDIyNDAxNF9WNA" alt=""><figcaption><p>N 选 1 召回</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (123).png" alt=""><figcaption><p>N 选 1 召回</p></figcaption></figure>
 
-因此，在查询数据集过多，或者数据集描述差异较小时，该模式的保证召回的效果会受到影响。该模式更适用于数据集数量较少的应用。OpenAI Function Call 已支持多个工具调用，Dify 将在后续版本中改进该模式为 “N选M召回” 。\
+因此，在查询数据集过多，或者数据集描述差异较小时，该模式的保证召回的效果会受到影响。该模式更适用于数据集数量较少的应用。
+
+提示：OpenAI Function Call 已支持多个工具调用，Dify 将在后续版本中升级该模式为 “N选M召回” 。\
 
 
 ### 多路召回模式
@@ -25,7 +27,7 @@
 
 以下是多路召回模式的技术流程图：
 
-<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=ODg4ZDgzODEwMmMwYmQ5ZjE1MzE5MDM4ZTY5ODdhOGVfMTBkNmpza0RoSTMzQ1hwSkE5N1JsOXc4c05HZ3JHWlBfVG9rZW46TGk2YmJOek0xb3RVTUx4aUdKbWNkOG5Obk5lXzE3MDAyMjA0MTQ6MTcwMDIyNDAxNF9WNA" alt=""><figcaption><p>多路召回</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (124).png" alt=""><figcaption><p>多路召回</p></figcaption></figure>
 
 由于多路召回模式不依赖于模型的推理能力或数据集描述，该模式在多数据集检索时能够获得质量更高的召回效果。因此，当创建的知识库问答应用关联了多个数据集时，我们推荐将召回模式配置为多路召回。\
 \
