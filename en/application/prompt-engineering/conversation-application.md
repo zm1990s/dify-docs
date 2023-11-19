@@ -22,7 +22,7 @@ Click the "Create Application" button on the homepage to create an application. 
 
 After the application is successfully created, it will automatically redirect to the application overview page. Click on the left-hand menu: “**Prompt Eng.**” to compose the application.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **2.1 Fill in Prompts**
 

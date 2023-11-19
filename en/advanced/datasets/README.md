@@ -80,7 +80,7 @@ Dify support customizing the segmented and cleaned text by adding, deleting, and
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Edit</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>add</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>add</p></figcaption></figure>
 
 ### Disabling and Archiving of Documents
 
