@@ -6,7 +6,7 @@
 
 **重排序模型通过将候选文档列表与用户问题语义匹配度进行重新排序，从而改进语义排序的结果**。其原理是计算用户问题与给定的每个候选文档之间的相关性分数，并返回按相关性从高到低排序的文档列表。常见的 Rerank 模型如：Cohere rerank、bge-reranker 等。
 
-<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=NTQwYjAxMDAyZmU4MGU1Y2JlYzY0NWFhNDExOGVjYThfb21ZM2lrbHlZM0NPeTJZTWxWbzhhYUNhamRSdU1LTHJfVG9rZW46R0xlOWJDTktXb1B0Z0h4MHNVRWNpT2xGbkNoXzE3MDAzMTk5MDQ6MTcwMDMyMzUwNF9WNA" alt=""><figcaption><p>混合检索+重排序</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (128).png" alt=""><figcaption><p>混合检索+重排序</p></figcaption></figure>
 
 在大多数情况下，在重排序之前会有一次前置检索，这是由于计算查询与数百万个文档之间的相关性得分将会非常低效。所以，**重排序一般都放在搜索流程的最后阶段，非常适合用于合并和排序来自不同检索系统的结果**。
 
@@ -53,7 +53,3 @@ Dify 目前已支持 Cohere Rerank 模型，通过进入“模型供应商-> Coh
 关于多路召回模式的说明：[🔗](zhao-hui-mo-shi.md#duo-lu-zhao-hui-mo-shi)
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>数据集多路召回模式中设置 Rerank 模型</p></figcaption></figure>
-
-
-
-<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDk3ZTI3MDk3NGE5NzczNTU1ZDI5YzViYTFhMTZkOWFfV0tOQWNIbUlFY25xS3lxT2VESUpQMXB5WVh0QWFCaHpfVG9rZW46RmpJY2JmZTRBb0ppcXV4bG5lTWNyZlRUbjVnXzE3MDAyMTc1NTA6MTcwMDIyMTE1MF9WNA" alt=""><figcaption><p>在数据集多路召回模式中设置 Rerank 模型</p></figcaption></figure>
