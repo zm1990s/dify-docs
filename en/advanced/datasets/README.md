@@ -78,9 +78,9 @@ Modify Documents For technical reasons, if developers make the following changes
 
 Dify support customizing the segmented and cleaned text by adding, deleting, and editing paragraphs. You can dynamically adjust your segmentation to make your dataset more accurate. Click **Document --> paragraph --> Edit** in the dataset to modify paragraphs content and custom keywords. Click **Document --> paragraph --> Add  segment --> Add a segment** to manually add new paragraph. Or click **Document --> paragraph --> Add  segment --> Batch add** to batch add new paragraph.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Edit</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Edit</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>add</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>add</p></figcaption></figure>
 
 ### Disabling and Archiving of Documents
 

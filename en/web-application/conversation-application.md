@@ -52,4 +52,4 @@ _Please make sure that the device environment you are using is authorized to use
 
 If the "Quotations and Attribution" feature is enabled during the application arrangement, the dialogue returns will automatically show the quoted dataset document sources.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>

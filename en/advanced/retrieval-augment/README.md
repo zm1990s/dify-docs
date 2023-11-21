@@ -8,7 +8,7 @@ Developers can utilize this technology to cost-effectively build AI-powered cust
 
 In the diagram below, when a user asks, "Who is the President of the United States?", the system doesn't directly relay the question to the large model for an answer. Instead, it first conducts a vector search in a knowledge base (like Wikipedia, as shown in the diagram) for the user's query. It finds relevant content through semantic similarity matching (for instance, "Biden is the current 46th President of the United States…"), and then provides the user's question along with the found knowledge to the large model. This enables the model to have sufficient and complete knowledge to answer the question, thereby yielding a more reliable response.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Basic Architecture of RAG</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Basic Architecture of RAG</p></figcaption></figure>
 
 ## Why is this necessary?&#x20;
 

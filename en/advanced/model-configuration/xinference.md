@@ -45,30 +45,21 @@ There are two ways to deploy Xinference, namely [local deployment](https://githu
     Xinference will start a worker locally by default, with the endpoint: `http://127.0.0.1:9997`, and the default port is `9997`. By default, access is limited to the local machine only, but it can be configured with `-H 0.0.0.0` to allow access from any non-local client. To modify the host or port, you can refer to xinference's help information: `xinference-local --help`.
 3.  Create and deploy the model
 
-    Visit `http://127.0.0.1:9997`, select the model and specification you need to deploy, and click `Create` to create and deploy the model, as shown below:
+    Visit `http://127.0.0.1:9997`, select the model and specification you need to deploy,  as shown below:
 
-    <figure><img src="../../.gitbook/assets/xinference-webpage.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
     As different models have different compatibility on different hardware platforms, please refer to [Xinference built-in models](https://inference.readthedocs.io/en/latest/models/builtin/index.html) to ensure the created model supports the current hardware platform.
 4.  Obtain the model UID
 
-    Return to the command line interface and enter:
-
-    ```bash
-    $ xinference-local list
-    UID                                   Type    Name         Format      Size (in billions)  Quantization
-    ------------------------------------  ------  -----------  --------  --------------------  --------------
-    a9e4d530-3f4b-11ee-a9b9-e6608f0bd69a  LLM     vicuna-v1.3  ggmlv3                       7  q2_K
-    ```
-
-    The first column is the model UID created in step 3, such as `a9e4d530-3f4b-11ee-a9b9-e6608f0bd69a` above.
+    Copy model ID from `Running Models`  page, such as: `2c886330-8849-11ee-9518-43b0b8f40bea`
 5.  After the model is deployed, connect the deployed model in Dify.
 
     In `Settings > Model Providers > Xinference`, enter:
 
     * Model name: `vicuna-v1.3`
     * Server URL: `http://127.0.0.1:9997`
-    * Model UID: `a9e4d530-3f4b-11ee-a9b9-e6608f0bd69a`
+    * Model UID: `2c886330-8849-11ee-9518-43b0b8f40bea`
 
     Click "Save" to use the model in the dify application.
 
