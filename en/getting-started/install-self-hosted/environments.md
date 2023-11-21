@@ -355,7 +355,7 @@ Only available for cloud version, used for model hosting configuration.
 
 #### Others
 
-* INVITE\_EXPIRY\_HOURS: Member invitation link valid time (hours)
+* INVITE\_EXPIRY\_HOURS: Member invitation link valid time (hours), Default: 72.
 
 ***
 
