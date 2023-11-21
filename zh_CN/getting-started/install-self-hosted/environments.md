@@ -349,6 +349,10 @@ Notion 集成配置，变量可通过申请 Notion integration 获取：[https:/
 * STRIPE\_API\_KEY：Stripe 的 API 密钥
 * STRIPE\_WEBHOOK\_SECRET：Stripe 的 Webhook 密钥
 
+#### 其他
+
+* INVITE\_EXPIRY\_HOURS：成员邀请链接有效时间（小时）
+
 ***
 
 ### Web 前端
