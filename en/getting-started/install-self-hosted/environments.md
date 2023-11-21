@@ -353,6 +353,10 @@ Only available for cloud version, used for model hosting configuration.
 * STRIPE_API_KEY: Stripe's API key
 * STRIPE_WEBHOOK_SECRET: Stripe's Webhook secret
 
+#### Others
+
+* INVITE\_EXPIRY\_HOURS: Member invitation link valid time (hours)
+
 ***
 
 ### Web Frontend
