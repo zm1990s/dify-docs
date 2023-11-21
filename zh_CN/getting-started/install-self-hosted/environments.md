@@ -351,7 +351,7 @@ Notion 集成配置，变量可通过申请 Notion integration 获取：[https:/
 
 #### 其他
 
-* INVITE\_EXPIRY\_HOURS：成员邀请链接有效时间（小时）
+* INVITE\_EXPIRY\_HOURS：成员邀请链接有效时间（小时），默认：72。
 
 ***
 
