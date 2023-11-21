@@ -45,30 +45,21 @@ docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' 容
     Xinference 默认会在本地启动一个 worker，端点为：`http://127.0.0.1:9997`，端口默认为 `9997`。 默认只可本机访问，可配置 `-H 0.0.0.0`，非本地客户端可任意访问。 如需进一步修改 host 或 port，可查看 xinference 的帮助信息：`xinference-local --help`。
 3.  创建并部署模型
 
-    进入 `http://127.0.0.1:9997` 选择需要部署的模型和规格，点击 `Create` 即可创建并部署模型，如下图所示：
+    进入 `http://127.0.0.1:9997` 选择需要部署的模型和规格进行部署，如下图所示：
 
-    <figure><img src="../../.gitbook/assets/xinference-webpage.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
     由于不同模型在不同硬件平台兼容性不同，请查看 [Xinference 内置模型](https://inference.readthedocs.io/en/latest/models/builtin/index.html) 确定创建的模型是否支持当前硬件平台。
 4.  获取模型 UID
 
-    回到命令行界面，输入：
-
-    ```bash
-    $ xinference-local list
-    UID                                   Type    Name         Format      Size (in billions)  Quantization
-    ------------------------------------  ------  -----------  --------  --------------------  --------------
-    a9e4d530-3f4b-11ee-a9b9-e6608f0bd69a  LLM     vicuna-v1.3  ggmlv3                       7  q2_K
-    ```
-
-    第一列即为第 3 步创建的模型 UID，如上面为 `a9e4d530-3f4b-11ee-a9b9-e6608f0bd69a`。
+    从上图所在页面获取对应模型的 ID，如：`2c886330-8849-11ee-9518-43b0b8f40bea`
 5.  模型部署完毕，在 Dify 中使用接入模型
 
     在 `设置 > 模型供应商 > Xinference` 中填入：
 
     * 模型名称：`vicuna-v1.3`
     * 服务器 URL：`http://127.0.0.1:9997`
-    * 模型 UID：`a9e4d530-3f4b-11ee-a9b9-e6608f0bd69a`
+    * 模型 UID：`2c886330-8849-11ee-9518-43b0b8f40bea`
 
     "保存" 后即可在应用中使用该模型。
 
