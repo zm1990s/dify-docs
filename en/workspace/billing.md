@@ -24,7 +24,7 @@ We offer a free plan for all users to test your AI app ideas, including 200 Open
 
 <table><thead><tr><th width="148">Metric</th><th width="237">Sandbox</th><th>Professional </th><th>Team</th></tr></thead><tbody><tr><td>pricing</td><td>Free</td><td>$59/month</td><td>$159/month</td></tr><tr><td><strong>Model Providers</strong></td><td>OpenAI,Anthropic,Azure OpenAI,Llama2,Hugging Face,Replicate</td><td>OpenAI,Anthropic,Azure OpenAI, Llama2,Hugging Face,Replicate</td><td>OpenAI,Anthropic,Azure OpenAI, Llama2,Hugging Face,Replicate</td></tr><tr><td><strong>Team Members</strong></td><td>1</td><td>3</td><td>Unlimited</td></tr><tr><td><strong>Apps</strong></td><td>10</td><td>50</td><td>Unlimited</td></tr><tr><td><strong>Vector Storage</strong></td><td>10MB</td><td>200MB</td><td>1GB</td></tr><tr><td><strong>Document Processing Priority</strong></td><td>Standard</td><td>Priority</td><td>Priority</td></tr><tr><td><strong>Logo Change</strong></td><td>/</td><td>/</td><td>√</td></tr><tr><td><strong>Fine-Tuning</strong></td><td>/</td><td>√(Coming soon)</td><td>√(Coming soon)</td></tr><tr><td><strong>Logs History</strong></td><td>30 days</td><td>Unlimited</td><td>Unlimited</td></tr></tbody></table>
 
-Check out the [pricing page ](https://dify.ai/pricing)to learn more。
+Check out the [pricing page ](https://dify.ai/pricing)to learn more.
 
 ## Monitor Resource Usage
 
