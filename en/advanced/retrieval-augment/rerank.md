@@ -12,9 +12,9 @@ In most cases, there is an initial search before rerank because calculating the 
 
 However, rerank is not only applicable to merging results from different search systems. Even in a single search mode, introducing a rerank step can effectively improve the recall of documents, such as adding semantic rerank after keyword search.
 
-In practice, apart from normalizing results from multiple queries, we usually limit the number of text segments passed to the large model before providing the relevant text segments (i.e., TopK, which can be set in the rerank model parameters). This is done because the input window of the large model has size limitations (generally 4K, 8K, 16K, 128K Token counts), and you need to select an appropriate segmentation strategy and TopK value based on the size limitation of the chosen model's input window.
+In practice, apart from normalizing results from multiple queries, we usually limit the number of text chunks passed to the large model before providing the relevant text chunks (i.e., TopK, which can be set in the rerank model parameters). This is done because the input window of the large model has size limitations (generally 4K, 8K, 16K, 128K Token counts), and you need to select an appropriate segmentation strategy and TopK value based on the size limitation of the chosen model's input window.
 
-It should be noted that even if the model's context window is sufficiently large, too many recalled segments may introduce content with lower relevance, thus degrading the quality of the answer. Therefore, the TopK parameter for rerank is not necessarily better when larger.
+It should be noted that even if the model's context window is sufficiently large, too many recalled chunks may introduce content with lower relevance, thus degrading the quality of the answer. Therefore, the TopK parameter for rerank is not necessarily better when larger.
 
 Rerank is not a substitute for search technology but an auxiliary tool to enhance existing search systems. **Its greatest advantage is that it not only offers a simple and low-complexity method to improve search results but also allows users to integrate semantic relevance into existing search systems without the need for significant infrastructure modifications.**
 
@@ -22,11 +22,11 @@ Rerank is not a substitute for search technology but an auxiliary tool to enhanc
 
 Visit [https://cohere.com/rerank](https://cohere.com/rerank), register on the page, and apply for usage rights for the Rerank model to obtain the API key.
 
-## Setting the Rerank Model in Dataset Search Mode&#x20;
+## Setting the Rerank Model in Knowledge Search Mode&#x20;
 
-Access the Rerank settings by navigating to “Datasets -> Create Dataset -> Retrieval Settings”. Besides setting Rerank during dataset creation, you can also modify the Rerank configuration in the settings of an already created dataset, and change the Rerank configuration in the dataset recall mode settings of application arrangement.
+Access the Rerank settings by navigating to “Knowledge -> Create Knowledge -> Retrieval Settings”. Besides setting Rerank during knowledge creation, you can also modify the Rerank configuration in the settings of an already created knowledge base, and change the Rerank configuration in the knowledge recall mode settings of application arrangement.
 
-<figure><img src="../../.gitbook/assets/screenshot-20231119-191016.png" alt=""><figcaption><p>Setting the Rerank Model in Dataset Search Mode </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/screenshot-20231119-191016.png" alt=""><figcaption><p>Setting the Rerank Model in Knowledge Search Mode </p></figcaption></figure>
 
 **TopK:** Used to set the number of relevant documents returned after Rerank.&#x20;
 

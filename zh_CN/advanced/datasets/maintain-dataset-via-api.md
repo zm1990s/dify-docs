@@ -13,7 +13,7 @@
 
 进入数据集页面，你可以在左侧的导航中切换至 **API** 页面。在该页面中你可以查看 Dify 提供的数据集 API 文档，并可以在 **API 密钥** 中管理可访问数据集 API 的凭据。
 
-<figure><img src="../../.gitbook/assets/dataset-api-token.png" alt=""><figcaption><p>Dataset API Document</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/dataset-api-token.png" alt=""><figcaption><p>Knowledge API Document</p></figcaption></figure>
 
 ### API 调用示例
 
@@ -127,7 +127,7 @@ curl --location --request GET 'https://api.dify.ai/v1/datasets/{dataset_id}/docu
 curl 'https://api.dify.ai/v1/datasets/aac47674-31a8-4f12-aab2-9603964c4789/documents/2034e0c1-1b75-4532-849e-24e72666595b/segment' \
   --header 'Authorization: Bearer {api_key}' \
   --header 'Content-Type: application/json' \
-  --data-raw $'"segments":[
+  --data-raw $'"chunks":[
   {"content":"Dify means Do it for you",
   "keywords":["Dify","Do"]
   }

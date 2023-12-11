@@ -37,23 +37,23 @@ Different search systems each excel at uncovering various subtle connections wit
 
 ## Vector Search&#x20;
 
-Definition: Vector Search involves generating query embeddings and then searching for text segments that most closely match these embeddings in terms of vector representation.
+Definition: Vector Search involves generating query embeddings and then searching for text chunks that most closely match these embeddings in terms of vector representation.
 
 <figure><img src="../../.gitbook/assets/screenshot-20231119-174228.png" alt=""><figcaption><p>Settings for Vector Search</p></figcaption></figure>
 
-**TopK:** This setting is used to filter text segments that have the highest similarity to the user's query. The system also dynamically adjusts the number of segments based on the context window size of the selected model. The default value for this setting is 3.
+**TopK:** This setting is used to filter text chunks that have the highest similarity to the user's query. The system also dynamically adjusts the number of chunks based on the context window size of the selected model. The default value for this setting is 3.
 
-**Score Threshold:** This setting is used to establish a similarity threshold for the selection of text segments. It means that only text segments exceeding the set score are recalled. By default, this setting is turned off, meaning that the system does not filter the similarity values of the recalled text segments. When activated, the default value is set to 0.5.
+**Score Threshold:** This setting is used to establish a similarity threshold for the selection of text chunks. It means that only text chunks exceeding the set score are recalled. By default, this setting is turned off, meaning that the system does not filter the similarity values of the recalled text chunks. When activated, the default value is set to 0.5.
 
 **Rerank Model:** After configuring the Rerank model's API key on the "Model Provider" page, you can enable the "Rerank Model" in the search settings. The system then performs a semantic re-ranking of the document results that have been recalled after semantic search, optimizing the order of these results. Once the Rerank model is set up, the TopK and Score threshold settings are only effective in the Rerank step.
 
 ## Full-Text Search&#x20;
 
-Definition: Full-Text Search involves indexing all the words in a document, enabling users to query any term and retrieve text segments that contain these terms.
+Definition: Full-Text Search involves indexing all the words in a document, enabling users to query any term and retrieve text chunks that contain these terms.
 
 <figure><img src="../../.gitbook/assets/screenshot-20231119-174610.png" alt=""><figcaption><p>Settings for Full-Text Search</p></figcaption></figure>
 
-**TopK:** This setting is utilized to select text segments that most closely match the user's query in terms of similarity. The system also dynamically adjusts the number of segments based on the context window size of the chosen model. The default value for TopK is set at 3.
+**TopK:** This setting is utilized to select text chunks that most closely match the user's query in terms of similarity. The system also dynamically adjusts the number of chunks based on the context window size of the chosen model. The default value for TopK is set at 3.
 
 **Rerank Model:** After configuring the API key for the Rerank model on the "Model Provider" page, you can activate the "Rerank Model" in the search settings. The system will then perform a semantic re-ranking of the document results retrieved through full-text search, optimizing the order of these results. Once the Rerank model is configured, the TopK and any Score threshold settings will only be effective during the Rerank step.
 
@@ -63,18 +63,18 @@ Hybrid Search operates by concurrently executing Full-Text Search and Vector Sea
 
 <figure><img src="../../.gitbook/assets/screenshot-20231119-175216.png" alt=""><figcaption><p>Settings for Hybrid Search</p></figcaption></figure>
 
-**TopK:** This setting is used for filtering text segments that have the highest similarity to the user's query. The system will dynamically adjust the number of segments based on the context window size of the model in use. The default value for TopK is set at 3.
+**TopK:** This setting is used for filtering text chunks that have the highest similarity to the user's query. The system will dynamically adjust the number of chunks based on the context window size of the model in use. The default value for TopK is set at 3.
 
 **Rerank Model:** After configuring the Rerank model's API key on the "Model Supplier" page, you can enable the "Rerank Model" in the search settings. The system will perform a semantic re-ranking of the document results retrieved through hybrid search, thereby optimizing the order of these results. Once the Rerank model is set up, the TopK and any Score threshold settings are only applicable during the Rerank step.
 
-## Setting the Search Mode When Creating a Dataset&#x20;
+## Setting the Search Mode When Creating a Knowledge&#x20;
 
-To set the search mode when creating a dataset, navigate to the "Datasets -> Create Dataset" page. There, you can configure different search modes in the retrieval settings section.
+To set the search mode when creating a knowledge base, navigate to the "Knowledge -> Create Knowledge" page. There, you can configure different search modes in the retrieval settings section.
 
-<figure><img src="../../.gitbook/assets/screenshot-20231119-175958.png" alt=""><figcaption><p>Setting the Search Mode When Creating a Dataset</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/screenshot-20231119-175958.png" alt=""><figcaption><p>Setting the Search Mode When Creating a Knowledge base</p></figcaption></figure>
 
 ## Modifying the Search Mode in Prompt Engineering
 
-You can modify the search mode during application creation by navigating to the "Prompt Engineering -> Context -> Select Dataset -> Settings" page. This allows for adjustments to different search modes within the prompt arrangement phase.
+You can modify the search mode during application creation by navigating to the "Prompt Engineering -> Context -> Select Knowledge -> Settings" page. This allows for adjustments to different search modes within the prompt arrangement phase.
 
 <figure><img src="../../.gitbook/assets/screenshot-20231119-182704.png" alt=""><figcaption><p>Modifying the Search Mode in Prompt Engineering</p></figcaption></figure>

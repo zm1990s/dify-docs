@@ -38,7 +38,7 @@ Well, before you try the new mode, you should be aware of some essential element
 
     <img src="../../.gitbook/assets/Context.png" alt="" data-size="line">
 
-    When users input a query, the app processes the query as search criteria for the dataset. The organized results from the search then replace the variable `Context`, allowing the LLM to reference the content for its response.
+    When users input a query, the app processes the query as search criteria for the knowledge. The organized results from the search then replace the variable `Context`, allowing the LLM to reference the content for its response.
 
 
 
@@ -93,7 +93,7 @@ It is used to filter the text fragments with the highest similarity to the user'
 
 **Score Threshold:** The value is a floating-point number from 0 to 1, with two decimal places.
 
-It is used to set the similarity threshold for text segment selection, i.e., it only recalls text segments that exceed the set score. By default, the system turns this setting off, meaning there's no filtering based on the similarity value of the recalled text segments. When activated, the default value is 0.7. We recommend keeping this setting deactivated by default. If you have more stringent reply requirements, you can set a higher value, though it's not advisable to set it excessively high.
+It is used to set the similarity threshold for text segment selection, i.e., it only recalls text chunks that exceed the set score. By default, the system turns this setting off, meaning there's no filtering based on the similarity value of the recalled text chunks. When activated, the default value is 0.7. We recommend keeping this setting deactivated by default. If you have more stringent reply requirements, you can set a higher value, though it's not advisable to set it excessively high.
 
 ### 3. **Stop\_Sequences**
 

@@ -1,20 +1,20 @@
-# Maintain Datasets via API
+# Maintain Knowledge via API
 
-> Authentication, invocation method and application Service API remain consistent. The difference is that a dataset API token can operate on all datasets.
+> Authentication, invocation method and application Service API remain consistent. The difference is that a knowledge API token can operate on all knowledge bases.
 
-### Benefits of Using the Dataset API
-* Sync your data systems to Dify datasets to create powerful workflows.
-* Provide dataset list and document list APIs as well as detail query interfaces, to facilitate building your own data management page.
+### Benefits of Using the Knowledge API
+* Sync your data systems to Dify knowledge to create powerful workflows.
+* Provide knowledge list and document list APIs as well as detail query interfaces, to facilitate building your own data management page.
 * Support both plain text and file uploads/updates documents, as well as batch additions and modifications, to simplify your sync process.
 * Reduce manual document handling and syncing time, improving visibility of Dify's software and services.
 
 ### How to use
 
-Please go to the dataset page, you can switch tap to the API page in the navigation on the left side. On this page, you can view the API documentation provided by Dify and manage credentials for accessing the Dataset API.
+Please go to the knowledge page, you can switch tap to the API page in the navigation on the left side. On this page, you can view the API documentation provided by Dify and manage credentials for accessing the Knowledge API.
 
-<figure><img src="../../.gitbook/assets/dataset-api-token.png" alt=""><figcaption><p>Dataset API Document</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/dataset-api-token.png" alt=""><figcaption><p>Knowledge API Document</p></figcaption></figure>
 
-## **Create Empty Dataset**
+## **Create Empty Knowledge**
 
 **`POST /datasets`**
 
@@ -30,7 +30,7 @@ curl --location --request POST 'https://api.dify.ai/v1/datasets' \
 
 ```
 
-#### **List of Datasets**
+#### **List of Knowledge**
 
 
 ```
@@ -143,9 +143,9 @@ curl 'https://api.dify.ai/v1/datasets/aac47674-31a8-4f12-aab2-9603964c4789/docum
 - `document_indexing`，document is in indexing status
 - `provider_not_initialize`， Embedding model is not configured
 - `not_found`，document not exist
-- `dataset_name_duplicate` ，have existing dataset name
+- `dataset_name_duplicate` ，have existing knowledge name
 - `provider_quota_exceeded`，The model quota has exceeded the limit
-- `dataset_not_initialized`，The dataset has not been initialized
+- `dataset_not_initialized`，The knowledge has not been initialized
 - `unsupported_file_type`，Unsupported file type
     - support file type：txt, markdown, md, pdf, html, htm, xlsx, docx, csv
 - `too_many_files`，The number of files is too large, and only single file upload is temporarily supported
