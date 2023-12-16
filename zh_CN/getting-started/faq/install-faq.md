@@ -155,3 +155,7 @@ Can't load tokenizer for 'gpt2'. If you were trying to load it from 'https://hug
 ```
 
 可参考官网[环境变量说明文档](https://docs.dify.ai/v/zh-hans/getting-started/install-self-hosted/environments)去配置。以及相关 [Issue](https://github.com/langgenius/dify/issues/1261)。
+
+### 14. 本地部署 80 端口被占用应该如何解决？
+
+本地部署 80 端口被占用，可通过停止占用 80 端口的服务，或者修改 docker-compose.yaml 里面的端口映射，将 80 端口映射到其他端口。通常 Apache 和 Nginx 会占用这个端口，可通过停止这两个服务来解决。

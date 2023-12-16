@@ -142,3 +142,7 @@ You can refer to the official website environment variable description document 
 ### 12. How does the local deployment edition invite members through email?
 
 Local deployment edition, members can be invited through email. After entering the email invitation, the page displays the invitation link, copies the invitation link, and forwards it to users. Your team members can open the link and log in to your space by setting a password through email login.
+
+### 13. How to solve listen tcp4 0.0.0.0:80: bind: address already in use?
+
+This is because the port is occupied. You can use the `netstat -tunlp | grep 80` command to view the process that occupies the port, and then kill the process. For example, the apache and nginx processes occupy the port, you can use the `service apache2 stop` and `service nginx stop` commands to stop the process.
