@@ -49,6 +49,7 @@
 * [数据集管理](advanced/datasets/README.md)
   * [从 Notion 导入数据](advanced/datasets/sync-from-notion.md)
   * [通过 API 维护数据集](advanced/datasets/maintain-dataset-via-api.md)
+* [标注回复](advanced/biao-zhu-hui-fu.md)
 * [插件](advanced/ai-plugins.md)
 * [基于前端模版再开发](advanced/based-on-frontend-templates.md)
 * [模型配置](advanced/model-configuration/README.md)
