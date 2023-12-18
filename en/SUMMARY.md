@@ -49,6 +49,7 @@
 * [Knowledge\&Index](advanced/datasets/README.md)
   * [Sync from Notion](advanced/datasets/sync-from-notion.md)
   * [Maintain Knowledge Via Api](advanced/datasets/maintain-dataset-via-api.md)
+* [Annotated Reply](advanced/annotated-responses.md)
 * [Plugins](advanced/ai-plugins/README.md)
   * [Based on WebApp Template](advanced/ai-plugins/based-on-frontend-templates.md)
 * [Model Configuration](advanced/model-configuration/README.md)
