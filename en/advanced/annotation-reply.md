@@ -1,13 +1,13 @@
-# Annotated Reply
+# Annotation Reply
 
 ## Feature Overview
 
-The Annotated Reply feature offers tailored, high-quality replies for various applications, achieved through manual annotation.
+The Annotation Reply feature offers tailored, high-quality replies for various applications, achieved through manual annotation.
 
 #### Key Uses:
 
 1. **Specialized Replies for Specific Sectors:** This is particularly valuable in customer service or knowledge bases within business, government, etc. It allows for precise answers to specific questions by annotating replies, such as setting "standard annotations" for some or marking others as "unanswerable."
-2. **Quick Adaptation for Prototypes:** Utilizing Annotated Reply can significantly improve reply quality in the rapid development of prototype products, enhancing customer satisfaction.
+2. **Quick Adaptation for Prototypes:** Utilizing Annotation Reply can significantly improve reply quality in the rapid development of prototype products, enhancing customer satisfaction.
 
 #### How It Works:
 
@@ -17,15 +17,15 @@ The feature provides an alternative system for enhancing retrieval, skipping the
 2. When similar questions are asked again, the system identifies matching annotated questions.
 3. If a match is found, the annotated answer is returned directly, bypassing LLM or RAG processes.
 4. Without a match, the query follows the standard LLM or RAG process.
-5. Deactivating Annotated Reply ceases matching replies from the annotations.
+5. Deactivating Annotation Reply ceases matching replies from the annotations.
 
 ## Activation
 
-Navigate to “Build Apps -> Add Feature” to enable the Annotated Reply feature.
+Navigate to “Build Apps -> Add Feature” to enable the Annotation Reply feature.
 
 <figure><img src="../.gitbook/assets/screenshot-20231218-172146 (1).png" alt=""><figcaption></figcaption></figure>
 
-Start by setting the parameters for Annotated Reply. These include the Score threshold and the Embedding model.
+Start by setting the parameters for Annotation Reply. These include the Score threshold and the Embedding model.
 
 * **Score Threshold:** Sets the minimum similarity score for an annotation to be considered a match and recalled.
 * **Embedding Model:** Used for converting annotated text into vectors. Changing the model leads to re-creation of embeddings.
@@ -50,7 +50,7 @@ When a user repeats a query, the system uses the relevant saved annotation for a
 
 ## Enabling Annotations in System Logs
 
-Turn on the Annotated Reply feature under “Build Apps -> Logs and Annotations -> Annotations.”
+Turn on the Annotation Reply feature under “Build Apps -> Logs and Annotations -> Annotations.”
 
 <figure><img src="../.gitbook/assets/screenshot-20231218-180233.png" alt=""><figcaption></figcaption></figure>
 
