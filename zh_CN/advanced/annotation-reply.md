@@ -19,6 +19,8 @@
 4. 如果没有找到匹配项，则问题继续常规流程（传递至 LLM 或 RAG）；
 5. 关闭标注回复功能后，系统将一直不再继续从标注内匹配回复。
 
+<figure><img src="../.gitbook/assets/image (130).png" alt="" width="563"><figcaption><p>标注回复流程</p></figcaption></figure>
+
 ### 提示词编排中开启标注回复
 
 通过进入“应用构建->添加功能”开启标注回复开关：
