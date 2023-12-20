@@ -19,6 +19,8 @@ The feature provides an alternative system for enhancing retrieval, skipping the
 4. Without a match, the query follows the standard LLM or RAG process.
 5. Deactivating Annotation Reply ceases matching replies from the annotations.
 
+<figure><img src="../.gitbook/assets/image.png" alt="" width="563"><figcaption><p>Annotation Reply Process</p></figcaption></figure>
+
 ## Activation
 
 Navigate to “Build Apps -> Add Feature” to enable the Annotation Reply feature.

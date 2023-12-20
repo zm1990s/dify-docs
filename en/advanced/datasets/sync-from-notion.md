@@ -43,13 +43,11 @@ Click the " **New integration** " button, the type is Internal by default (canno
 
 Once the integration is created, you can update its settings as needed under the **Capabilities** tab and click the "**Show**" button under **Secrets** and then copy the Secrets.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Copy it and back to the Dify source code , in the **.env** file configuration related environment variables, environment variables as follows:
 
-**NOTION\_INTEGRATION\_TYPE** = internal
-or
-**NOTION\_INTEGRATION\_TYPE** = public
+**NOTION\_INTEGRATION\_TYPE** = internal or **NOTION\_INTEGRATION\_TYPE** = public
 
 **NOTION\_INTERNAL\_SECRET**=you-internal-secret
 
@@ -67,9 +65,9 @@ After your integration has been successfully made public in your [integration’
 
 Back to the Dify source code , in the **.env** file configuration related environment variables , environment variables as follows:
 
-**NOTION\_INTEGRATION\_TYPE**=public&#x20;
+**NOTION\_INTEGRATION\_TYPE**=public
 
-**NOTION\_CLIENT\_SECRET**=you-client-secret&#x20;
+**NOTION\_CLIENT\_SECRET**=you-client-secret
 
 **NOTION\_CLIENT\_ID**=you-client-id
 
