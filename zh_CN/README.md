@@ -28,8 +28,8 @@ Dify 一词源自 Define + Modify，意指定义并且持续的改进你的 AI �
 
 ### 下一步行动
 
-* 阅读[**快速开始**](application/creating-an-application.md)
-* 了解如何[**自部署 Dify 到服务器**](getting-started/install-self-hosted/)上
+* 阅读[**快速开始**](application/creating-an-application.md)**，**速览 Dify 的应用构建流程
+* 了解如何[**自部署 Dify 到服务器**](getting-started/install-self-hosted/)上，并[**接入开源模型**](advanced/model-configuration/)
 * 了解 Dify 的**特性清单**和 **Roadmap**
 * 在 [**GitHub**](https://github.com/langgenius/dify) 上为我们点亮一颗星，并阅读我们的**贡献指南**
 
