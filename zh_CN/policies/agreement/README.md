@@ -1,13 +1,5 @@
 # 用户协议
 
-{% content-ref url="terms-of-service.md" %}
-[terms-of-service.md](terms-of-service.md)
-{% endcontent-ref %}
-
-{% content-ref url="privacy-policy.md" %}
-[privacy-policy.md](privacy-policy.md)
-{% endcontent-ref %}
-
 ### 关于数据安全
 
 我们非常重视您的数据安全，并正在推进获得 SOC2 和 ISO27001 认证。

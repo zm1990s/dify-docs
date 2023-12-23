@@ -12,7 +12,7 @@
 
 ## 手册 <a href="#guides" id="guides"></a>
 
-* [应用构建](guides/application-design/README.md)
+* [应用构建及提示词](guides/application-design/README.md)
   * [创建应用](guides/application-design/creating-an-application.md)
   * [提示词编排](guides/application-design/prompt-engineering/README.md)
     * [文本生成型应用](guides/application-design/prompt-engineering/text-generation-application.md)
@@ -28,7 +28,7 @@
     * [代码扩展](guides/application-design/extension/code\_based\_extension/README.md)
       * [外部数据工具](guides/application-design/extension/code\_based\_extension/external\_data\_tool.md)
       * [敏感内容审查](guides/application-design/extension/code\_based\_extension/moderation.md)
-* [发布应用](guides/application-publishing/README.md)
+* [应用发布](guides/application-publishing/README.md)
   * [发布为公开 Web 站点](guides/application-publishing/launch-your-webapp-quickly/README.md)
     * [Web 应用的设置](guides/application-publishing/launch-your-webapp-quickly/web-app-settings.md)
     * [文本生成型应用](guides/application-publishing/launch-your-webapp-quickly/text-generator.md)
@@ -46,7 +46,7 @@
   * [通过 API 维护数据集](guides/knowledge-base/maintain-dataset-via-api.md)
   * [外部数据工具](guides/knowledge-base/external\_data\_tool.md)
 * [日志与标注](guides/logs.md)
-* [工作空间](guides/workspace/README.md)
+* [团队协同](guides/workspace/README.md)
   * [邀请与管理成员](guides/workspace/invite-and-manage-members.md)
   * [发现](guides/workspace/app/README.md)
     * [智聊](guides/workspace/app/chat.md)
@@ -54,10 +54,6 @@
 ## 社区 <a href="#community" id="community"></a>
 
 * [寻求支持](community/support.md)
-* [开源协议](community/open-source.md)
-* [用户协议](community/agreement/README.md)
-  * [服务协议](community/agreement/terms-of-service.md)
-  * [隐私条款](community/agreement/privacy-policy.md)
 
 ## 阅读更多 <a href="#learn-more" id="learn-more"></a>
 
@@ -77,4 +73,10 @@
 * [常见问题](learn-more/faq/README.md)
   * [本地部署相关](learn-more/faq/install-faq.md)
   * [LLM 配置与使用](learn-more/faq/llms-use-faq.md)
-  * [API 使用](learn-more/faq/api-use-faq.md)
+
+## 政策 <a href="#policies" id="policies"></a>
+
+* [开源许可证](policies/open-source.md)
+* [用户协议](policies/agreement/README.md)
+  * [服务条款](https://dify.ai/terms)
+  * [隐私政策](https://dify.ai/privacy)
