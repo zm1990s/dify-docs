@@ -54,6 +54,7 @@
 ## 社区 <a href="#community" id="community"></a>
 
 * [寻求支持](community/support.md)
+* [成为贡献者](community/contribution.md)
 
 ## 阅读更多 <a href="#learn-more" id="learn-more"></a>
 
