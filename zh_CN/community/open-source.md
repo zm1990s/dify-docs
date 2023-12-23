@@ -14,4 +14,6 @@ Dify 项目在 Apache License 2.0 许可下开源，同时包含以下附加条�
    * 生产者有权将开源协议调整为更严格或更宽松的形式。
    * 可用于商业目的，例如 Dify 的云业务。
 
-除此之外，所有其他权利和限制均遵循 Apache License 2.0。如果你需要更多详细信息，可以参考 Apache License 2.0 的完整版本。本产品的交互设计受到外观专利保护。© 2023 LangGenius, Inc.
+除此之外，所有其他权利和限制均遵循 Apache License 2.0。如果你需要更多详细信息，可以参考 Apache License 2.0 的完整版本。本产品的交互设计受到外观专利保护。
+
+© 2023 LangGenius, Inc.

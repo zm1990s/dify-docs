@@ -1,6 +1,6 @@
 # 欢迎使用 Dify
 
-**Dify** 是一款开源的大语言模型(LLM) 应用开发平台。它融合了后端即服务（Backend as Service）和 [LLMOps](getting-started/what-is-llmops.md) 的理念，使开发者可以快速搭建生产级的生成式 AI 应用。即使你是非技术人员，也能参与到 AI 应用的定义和数据运营过程中。
+**Dify** 是一款开源的大语言模型(LLM) 应用开发平台。它融合了后端即服务（Backend as Service）和 [LLMOps](learn-more/extended-reading/what-is-llmops.md) 的理念，使开发者可以快速搭建生产级的生成式 AI 应用。即使你是非技术人员，也能参与到 AI 应用的定义和数据运营过程中。
 
 由于 Dify 内置了构建 LLM 应用所需的关键技术栈，包括对数百个模型的支持、直观的 Prompt 编排界面、高质量的 RAG 引擎以及灵活的 Agent 框架，并同时提供了一套易用的界面和 API。这为开发者节省了许多重复造轮子的时间，使其可以专注在创新和业务需求上。
 
@@ -28,8 +28,8 @@ Dify 一词源自 Define + Modify，意指定义并且持续的改进你的 AI �
 
 ### 下一步行动
 
-* 阅读[**快速开始**](application/creating-an-application.md)**，**速览 Dify 的应用构建流程
-* 了解如何[**自部署 Dify 到服务器**](getting-started/install-self-hosted/)上，并[**接入开源模型**](advanced/model-configuration/)
+* 阅读[**快速开始**](guides/application-design/creating-an-application.md)**，**速览 Dify 的应用构建流程
+* 了解如何[**自部署 Dify 到服务器**](getting-started/install-self-hosted/)上，并[**接入开源模型**](guides/model-configuration/)
 * 了解 Dify 的**特性清单**和 **Roadmap**
 * 在 [**GitHub**](https://github.com/langgenius/dify) 上为我们点亮一颗星，并阅读我们的**贡献指南**
 
