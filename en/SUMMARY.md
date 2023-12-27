@@ -3,6 +3,7 @@
 ## Getting Started
 
 * [Welcome to Dify!](README.md)
+  * [Specifications and Technical Features](getting-started/readme/specifications-and-technical-features.md)
 * [Cloud](getting-started/cloud.md)
 * [Install(Self hosted)](getting-started/install-self-hosted/README.md)
   * [Docker Compose Deployment](getting-started/install-self-hosted/docker-compose.md)
