@@ -22,14 +22,13 @@ Dify classifies models into 4 types, each for different uses:
 4.  **Speech-to-Text Models:** Convert spoken words to text in conversational applications.
 
     > Provider: OpenAI.
-
-1. System Reasoning Model. In the created application, this type of model is used. Smart chat, dialogue name generation, and next question suggestions also use reasoning models.
-2. Embedding Model. In the knowledge, this type of model is used to embedding segmented documents. In applications that use data sets, this type of model is also used to process user questions as Embedding.
-3. Speech-to-Text model. In conversational applications, this type of model is used to convert speech to text.
+5. System Reasoning Model. In the created application, this type of model is used. Smart chat, dialogue name generation, and next question suggestions also use reasoning models.
+6. Embedding Model. In the knowledge, this type of model is used to embedding segmented documents. In applications that use data sets, this type of model is also used to process user questions as Embedding.
+7. Speech-to-Text model. In conversational applications, this type of model is used to convert speech to text.
 
 Dify plans to add more LLM providers as technology and user needs evolve.
 
-## Hosted Model Trial Service&#x20;
+## Hosted Model Trial Service
 
 Dify offers trial quotas for cloud service users to experiment with different models. Set up your model provider before the trial ends to ensure uninterrupted application use.
 
@@ -39,13 +38,13 @@ Dify offers trial quotas for cloud service users to experiment with different mo
 
 Dify automatically selects the default model based on usage. Configure this in `Settings > Model Provider`.
 
-<figure><img src="../../.gitbook/assets/spaces_CdDIVDY6AtAz028MFT4d_uploads_git-blob-db1690fa587d6135e70621a88aa6650ac4e4015a_image (15).webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-default-models.png" alt=""><figcaption></figcaption></figure>
 
-## Model Integration Settings&#x20;
+## Model Integration Settings
 
 Choose your model in Dify's `Settings > Model Provider`.
 
-<figure><img src="../../.gitbook/assets/spaces_CdDIVDY6AtAz028MFT4d_uploads_git-blob-97bdd290e257e10a5bfa723d02eea8fd0b159a9d_image (16).webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image-20231210143654461.png" alt=""><figcaption></figcaption></figure>
 
 Model providers fall into two categories:
 
@@ -69,8 +68,8 @@ Specific integration methods are not detailed here.
 * [Xinference](https://docs.dify.ai/advanced/model-configuration/xinference)
 * [OpenLLM](https://docs.dify.ai/advanced/model-configuration/openllm)
 
-## Using Models&#x20;
+## Using Models
 
 Once configured, these models are ready for application use.
 
-<figure><img src="../../.gitbook/assets/spaces_CdDIVDY6AtAz028MFT4d_uploads_git-blob-c1d474492bf80233df65284bdd8413f17930ae70_image.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/choice-model-in-app.png" alt=""><figcaption></figcaption></figure>
