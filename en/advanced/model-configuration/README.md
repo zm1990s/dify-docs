@@ -22,9 +22,6 @@ Dify classifies models into 4 types, each for different uses:
 4.  **Speech-to-Text Models:** Convert spoken words to text in conversational applications.
 
     > Provider: OpenAI.
-5. System Reasoning Model. In the created application, this type of model is used. Smart chat, dialogue name generation, and next question suggestions also use reasoning models.
-6. Embedding Model. In the knowledge, this type of model is used to embedding segmented documents. In applications that use data sets, this type of model is also used to process user questions as Embedding.
-7. Speech-to-Text model. In conversational applications, this type of model is used to convert speech to text.
 
 Dify plans to add more LLM providers as technology and user needs evolve.
 
