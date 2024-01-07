@@ -61,8 +61,9 @@
   * [LocalAI](advanced/model-configuration/localai.md)
 * [More Integration](advanced/more-integration.md)
 * [Extension](advanced/extension/README.md)
-  * [API-based Extension](advanced/extension/api\_based\_extension/README.md)
+  * [API Based Extension](advanced/extension/api\_based\_extension/README.md)
     * [External\_data\_tool](advanced/extension/api\_based\_extension/external\_data\_tool.md)
+    * [Deploy to Cloudflare Workers](advanced/extension/api\_based\_extension/cloudflare\_workers.md)
     * [Moderation Extension](advanced/extension/api\_based\_extension/moderation-extension.md)
   * [Code-based Extension](advanced/extension/code-based-extension.md)
 
