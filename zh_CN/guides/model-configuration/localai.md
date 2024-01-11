@@ -72,6 +72,7 @@ Dify 支持以本地部署的方式接入 LocalAI 部署的大型语言模型推
    - Embedding 模型：`all-MiniLM-L6-v2`
 
      对外访问名称：`text-embedding-ada-002`（该名称可自定义，在 `models/embeddings.yaml` 中配置。
+    >  使用 Dify Docker 部署方式的需要注意网络配置，确保 Dify 容器可以访问到 Xinference 的端点，Dify 容器内部无法访问到 localhost，需要使用宿主机 IP 地址。
 
 5. LocalAI API 服务部署完毕，在 Dify 中使用接入模型
 
@@ -97,7 +98,7 @@ Dify 支持以本地部署的方式接入 LocalAI 部署的大型语言模型推
 
    - 服务器 URL：http://127.0.0.1:8080
 
-     若 Dify 为 docker 部署，请填入 host 域名：`http://<your-LocalAI-endpoint-domain>:8080`，可填写局域网 IP 地址，如：`http://192.168.1.100:8080`
+     > 若 Dify 为 docker 部署，请填入 host 域名：`http://<your-LocalAI-endpoint-domain>:8080`，可填写局域网 IP 地址，如：`http://192.168.1.100:8080`
 
    "保存" 后即可在应用中使用该模型。
 

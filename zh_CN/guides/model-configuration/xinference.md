@@ -4,9 +4,6 @@
 
 ## 部署 Xinference
 
-### 使用前注意事项
-
-
 ### 开始部署
 
 部署 Xinference 有两种方式，分别为[本地部署](https://github.com/xorbitsai/inference/blob/main/README\_zh\_CN.md#%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2)和[分布式部署](https://github.com/xorbitsai/inference/blob/main/README\_zh\_CN.md#%E5%88%86%E5%B8%83%E5%BC%8F%E9%83%A8%E7%BD%B2)，以下以本地部署为例。
@@ -26,6 +23,8 @@
     ```
 
     Xinference 默认会在本地启动一个 worker，端点为：`http://127.0.0.1:9997`，端口默认为 `9997`。 默认只可本机访问，可配置 `-H 0.0.0.0`，非本地客户端可任意访问。 如需进一步修改 host 或 port，可查看 xinference 的帮助信息：`xinference-local --help`。
+    >  使用 Dify Docker 部署方式的需要注意网络配置，确保 Dify 容器可以访问到 Xinference 的端点，Dify 容器内部无法访问到 localhost，需要使用宿主机 IP 地址。
+
 3.  创建并部署模型
 
     进入 `http://127.0.0.1:9997` 选择需要部署的模型和规格进行部署，如下图所示：
@@ -41,7 +40,7 @@
     在 `设置 > 模型供应商 > Xinference` 中填入：
 
     * 模型名称：`vicuna-v1.3`
-    * 服务器 URL：`http://127.0.0.1:9997`
+    * 服务器 URL：`http://<Machine_IP>:9997` **替换成您的机器 IP 地址**
     * 模型 UID：`2c886330-8849-11ee-9518-43b0b8f40bea`
 
     "保存" 后即可在应用中使用该模型。
