@@ -39,17 +39,17 @@ Dify supports integrating LLM and Text Embedding capabilities of large language 
    
      For local source code deployment, use `http://localhost:11434`.
 
-   - Model Type: Chat
+   - Model Type: `Chat`
 
-   - Model Context Length: 4096
+   - Model Context Length: `4096`
    
      The maximum context length of the model. If unsure, use the default value of 4096.
    
-   - Maximum Token Limit: 4096
+   - Maximum Token Limit: `4096`
    
      The maximum number of tokens returned by the model. If there are no specific requirements for the model, this can be consistent with the model context length.
 
-   - Support for Vision: Yes
+   - Support for Vision: `Yes`
    
      Check this option if the model supports image understanding (multimodal), like `llava`.
 
