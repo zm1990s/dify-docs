@@ -57,4 +57,4 @@ Dify 支持接入 Ollama 部署的大型语言模型推理和 embedding 能力�
 
    Embedding 模型接入方式与 LLM 类似，只需将模型类型改为 Text Embedding 即可。
 
-如需获取 Ollama 更多信息，请参考：https://github.com/jmorganca/ollama
+如需获取 Ollama 更多信息，请参考：[https://github.com/jmorganca/ollama](https://github.com/jmorganca/ollama)
