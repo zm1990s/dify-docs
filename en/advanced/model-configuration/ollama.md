@@ -34,7 +34,9 @@ Dify supports integrating LLM and Text Embedding capabilities of large language 
    - Base URL: `http://<your-ollama-endpoint-domain>:11434`
    
      Enter the base URL where the Ollama service is accessible.
+   
      If Dify is deployed using docker, consider using the local network IP address, e.g., `http://192.168.1.100:11434` or the docker host machine IP address, e.g., `http://172.17.0.1:11434`.
+   
      For local source code deployment, use `http://localhost:11434`.
 
    - Model Type: Chat
