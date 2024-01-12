@@ -20,6 +20,7 @@ Dify 支持接入 Ollama 部署的大型语言模型推理和 embedding 能力�
     ```
 
     启动成功后，ollama 在本地 11434 端口启动了一个 API 服务，可通过 `http://localhost:11434` 访问。
+
     其他模型可访问 [Ollama Models](https://ollama.ai/library) 了解详情。
 
 3. 在 Dify 中接入 Ollama

@@ -20,6 +20,7 @@ Dify supports integrating LLM and Text Embedding capabilities of large language 
     ```
 
     After successful launch, Ollama starts an API service on local port 11434, which can be accessed at `http://localhost:11434`.
+
     For other models, visit [Ollama Models](https://ollama.ai/library) for more details.
 
 3. Integrate Ollama in Dify
