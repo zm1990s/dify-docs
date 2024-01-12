@@ -26,7 +26,7 @@ Dify supports integrating LLM and Text Embedding capabilities of large language 
 
    In `Settings > Model Providers > Ollama`, fill in:
 
-   ![ollama-config-en.png](../../.gitbook/assets/ollama-config-en.png)
+   ![](../../.gitbook/assets/ollama-config-en.png)
 
    - Model Name: `llava`
    

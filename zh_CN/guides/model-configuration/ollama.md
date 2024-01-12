@@ -26,7 +26,7 @@ Dify 支持接入 Ollama 部署的大型语言模型推理和 embedding 能力�
 
    在 `设置 > 模型供应商 > Ollama` 中填入：
 
-   ![ollama-config-zh.png](../../.gitbook/assets/ollama-config-zh.png)
+   ![](../../.gitbook/assets/ollama-config-zh.png)
 
    - 模型名称：`llava`
    
