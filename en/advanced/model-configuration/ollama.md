@@ -57,4 +57,10 @@ Dify supports integrating LLM and Text Embedding capabilities of large language 
 
    The integration method for Embedding models is similar to LLM, just change the model type to Text Embedding.
 
+4. Use Ollama Models
+
+    ![](../../.gitbook/assets/ollama-use-model-en.png)
+
+    Enter `Prompt Eng.` page of the App that needs to be configured, select the `llava` model under the Ollama provider, and use it after configuring the model parameters.
+
 For more information on Ollama, please refer to: [https://github.com/jmorganca/ollama](https://github.com/jmorganca/ollama)
