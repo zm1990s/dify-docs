@@ -59,6 +59,7 @@
   * [Xinference](advanced/model-configuration/xinference.md)
   * [OpenLLM](advanced/model-configuration/openllm.md)
   * [LocalAI](advanced/model-configuration/localai.md)
+  * [Ollama](advanced/model-configuration/ollama.md)
 * [More Integration](advanced/more-integration.md)
 * [Extension](advanced/extension/README.md)
   * [API Based Extension](advanced/extension/api\_based\_extension/README.md)
