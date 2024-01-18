@@ -37,8 +37,7 @@ WebApp URL，用于**给前端**展示 WebAPP API Base URL，传空则为同域�
 
 #### FILES\_URL
 
-文件预览或下载 URL 前缀，用于将文件预览或下载 URL 给前端展示或作为多模态模型输入；
-为了防止他人伪造，图片预览 URL 是带有签名的，并且有 5 分钟过期时间。
+文件预览或下载 URL 前缀，用于将文件预览或下载 URL 给前端展示或作为多模态模型输入； 为了防止他人伪造，图片预览 URL 是带有签名的，并且有 5 分钟过期时间。
 
 ***
 
@@ -119,11 +118,9 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 *   CELERY\_WORKER\_AMOUNT
 
     Celery worker 数量，默认为 1，按需设置。
-
 *   HTTP\_PROXY
 
     HTTP 代理地址，用于解决国内无法访问 OpenAI、HuggingFace 的问题。
-
 *   HTTPS\_PROXY
 
     HTTPS 代理地址，用于解决国内无法访问 OpenAI、HuggingFace 的问题。
@@ -207,13 +204,13 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 
 *   VECTOR\_STORE
 
-    - **可使用的枚举类型包括：**
-        - `weaviate`
-        - `qdrant`
-        - `milvus`
-        - `zilliz` 与 `milvus` 一致
-        - `pinecone` (暂未开放)
+    **可使用的枚举类型包括：**
 
+    * `weaviate`
+    * `qdrant`
+    * `milvus`
+    * `zilliz` 与 `milvus` 一致
+    * `pinecone` (暂未开放)
 *   WEAVIATE\_ENDPOINT
 
     Weaviate 端点地址，如：`http://weaviate:8080`。
@@ -254,28 +251,37 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 
     Milvus 是否使用 SSL 连接，默认 false。
 
-#### 数据集配置
+#### 知识库配置
 
-*   UPLOAD_FILE_SIZE_LIMIT
+*   UPLOAD\_FILE\_SIZE\_LIMIT
 
     上传文件大小限制，默认 15M。
-*   UPLOAD_FILE_BATCH_LIMIT
+*   UPLOAD\_FILE\_BATCH\_LIMIT
 
     每次上传文件数上限，默认 5 个。
+*   TENANT\_DOCUMENT\_COUNT
 
-*   TENANT_DOCUMENT_COUNT
+    团队可上传文件数限制，默认 100。
+*   ETL\_TYPE
 
-    租户可上传文件数，默认 100。
+    **可使用的枚举类型包括：**
+
+    *   dify
+
+        Dify 自研文件 Extract 方案
+    *   Unstructured
+
+        Unstructured.io 文件 Extract 方案
+*   UNSTRUCTURED\_API\_URL
+
+    Unstructured API 路径，当 ETL\_TYPE 为 Unstructured 需要配置。
 
 #### 多模态模型配置
 
-*   MULTIMODAL_SEND_IMAGE_FORMAT
+*   MULTIMODAL\_SEND\_IMAGE\_FORMAT
 
-    多模态模型输入时，发送图片的格式，默认为 `base64`，可选 `url`。
-    `url` 模式下，调用的延迟会比 `base64` 模式下低，一般建议使用兼容更好的 `base64` 模式。
-    若配置为 `url`，则需要将 `FILES_URL` 配置为外部可访问的地址，以便多模态模型可以访问到图片。
-
-*   UPLOAD_IMAGE_FILE_SIZE_LIMIT
+    多模态模型输入时，发送图片的格式，默认为 `base64`，可选 `url`。 `url` 模式下，调用的延迟会比 `base64` 模式下低，一般建议使用兼容更好的 `base64` 模式。 若配置为 `url`，则需要将 `FILES_URL` 配置为外部可访问的地址，以便多模态模型可以访问到图片。
+*   UPLOAD\_IMAGE\_FILE\_SIZE\_LIMIT
 
     上传图片文件大小限制，默认 10M。
 
@@ -311,6 +317,9 @@ Notion 集成配置，变量可通过申请 Notion integration 获取：[https:/
 *   RESEND\_API\_KEY
 
     Resend 邮件提供商 API-Key，可前往 [API-Key](https://resend.com/api-keys) 获取。
+*   RESEND\_API\_URL
+
+    Resend 邮件提供商 API URL。
 
 #### 第三方授权设置
 
@@ -325,10 +334,10 @@ Notion 集成配置，变量可通过申请 Notion integration 获取：[https:/
 
 仅云端版可用，用于模型托管配置。
 
-* HOSTED\_OPENAI\_ENABLED：启用 OpenAI 托管服务，默认 False
 * HOSTED\_OPENAI\_API\_KEY：OpenAI 托管服务的 API 密钥
 * HOSTED\_OPENAI\_API\_BASE：OpenAI 托管服务的 API 基础地址，默认为空，即使用：`https://api.openai.com/v1`
 * HOSTED\_OPENAI\_API\_ORGANIZATION：OpenAI 托管服务的组织 ID，默认为空
+* HOSTED\_OPENAI\_TRIAL\_ENABLED：启用 OpenAI 托管试用服务，默认 False
 * HOSTED\_OPENAI\_QUOTA\_LIMIT：OpenAI 托管服务的默认试用配额（单位：调用次数），默认 200 次调用
 * HOSTED\_OPENAI\_PAID\_ENABLED：启用 OpenAI 托管付费服务，默认 False
 * HOSTED\_OPENAI\_PAID\_STRIPE\_PRICE\_ID：OpenAI 托管付费服务的 Stripe 价格 ID
@@ -337,10 +346,10 @@ Notion 集成配置，变量可通过申请 Notion integration 获取：[https:/
 * HOSTED\_AZURE\_OPENAI\_API\_KEY：Azure OpenAI 托管服务的 API 密钥
 * HOSTED\_AZURE\_OPENAI\_API\_BASE：Azure OpenAI 托管服务的 API 基础地址
 * HOSTED\_AZURE\_OPENAI\_QUOTA\_LIMIT：Azure OpenAI 托管服务的默认试用配额（单位：调用次数）
-* HOSTED\_ANTHROPIC\_ENABLED：启用 Anthropic 托管服务，默认 False
 * HOSTED\_ANTHROPIC\_API\_BASE：Anthropic 托管服务的 API 基础地址，默认为空
 * HOSTED\_ANTHROPIC\_API\_KEY：Anthropic 托管服务的 API 密钥
-* HOSTED\_ANTHROPIC\_QUOTA\_LIMIT：Anthropic 托管服务的默认试用配额（单位：tokens），默认 600,000 tokens
+* HOSTED\_ANTHROPIC\_TRIAL\_ENABLED：启用 Anthropic 托管试用服务，默认 False
+* HOSTED\_ANTHROPIC\_QUOTA\_LIMIT：Anthropic 托管服务的默认试用配额（单位：tokens）
 * HOSTED\_ANTHROPIC\_PAID\_ENABLED：启用 Anthropic 托管付费服务，默认 False
 * HOSTED\_ANTHROPIC\_PAID\_STRIPE\_PRICE\_ID：Anthropic 托管付费服务的 Stripe 价格 ID
 * HOSTED\_ANTHROPIC\_PAID\_INCREASE\_QUOTA：Anthropic 托管付费服务的配额增加数量
@@ -360,7 +369,6 @@ Notion 集成配置，变量可通过申请 Notion integration 获取：[https:/
 #### SENTRY\_DSN
 
 Sentry DSN 地址，默认为空，为空时则所有监控信息均不上报 Sentry。
-
 
 ## 已废弃
 
@@ -384,7 +392,7 @@ WebApp Url，用于声明**前端** API 后端地址，传空则为同域。范�
 
 #### Session 配置
 
->⚠️ 该配置从 0.3.24 版本起废弃。（将于 0.4.0 彻底移除）
+> ⚠️ 该配置从 0.3.24 版本起废弃。（将于 0.4.0 彻底移除）
 
 仅 API 服务使用，用于验证接口身份。
 
@@ -404,7 +412,7 @@ WebApp Url，用于声明**前端** API 后端地址，传空则为同域。范�
 
 #### Cookie 策略配置
 
->⚠️ 该配置从 0.3.24 版本起废弃。  （将于 0.4.0 彻底移除）
+> ⚠️ 该配置从 0.3.24 版本起废弃。 （将于 0.4.0 彻底移除）
 
 用于设置身份校验的 Session Cookie 浏览器策略。
 
