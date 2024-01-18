@@ -276,6 +276,8 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 
     Unstructured API 路径，当 ETL\_TYPE 为 Unstructured 需要配置。
 
+    如：`http://unstructured:8000/general/v0/general`
+
 #### 多模态模型配置
 
 *   MULTIMODAL\_SEND\_IMAGE\_FORMAT
@@ -355,8 +357,6 @@ Notion 集成配置，变量可通过申请 Notion integration 获取：[https:/
 * HOSTED\_ANTHROPIC\_PAID\_INCREASE\_QUOTA：Anthropic 托管付费服务的配额增加数量
 * HOSTED\_ANTHROPIC\_PAID\_MIN\_QUANTITY：Anthropic 托管付费服务的最小购买份数
 * HOSTED\_ANTHROPIC\_PAID\_MAX\_QUANTITY：Anthropic 托管付费服务的最大购买份数
-* STRIPE\_API\_KEY：Stripe 的 API 密钥
-* STRIPE\_WEBHOOK\_SECRET：Stripe 的 Webhook 密钥
 
 #### 其他
 
@@ -374,25 +374,25 @@ Sentry DSN 地址，默认为空，为空时则所有监控信息均不上报 Se
 
 #### CONSOLE\_URL
 
-> 修改于 0.3.8，将于 0.4.0 废弃，替代为：`CONSOLE_API_URL` 和 `CONSOLE_WEB_URL`。
+> ⚠️ 修改于 0.3.8，于 0.4.9 废弃，替代为：`CONSOLE_API_URL` 和 `CONSOLE_WEB_URL`。
 
 控制台 URL，用于拼接授权回调、控制台前端地址，以及 CORS 配置使用，传空则为同域。范例：`https://console.dify.ai`。
 
 #### API\_URL
 
-> 修改于 0.3.8，将于 0.4.0 废弃，替代为 `SERVICE_API_URL`。
+> ⚠️ 修改于 0.3.8，于 0.4.9 废弃，替代为 `SERVICE_API_URL`。
 
 API Url，用于**给前端**展示 Service API Base Url，传空则为同域。范例：`https://api.dify.ai`
 
 #### APP\_URL
 
-> 修改于 0.3.8，将于 0.4.0 废弃，替代为 `APP_API_URL` 和 `APP_WEB_URL`。
+> ⚠️ 修改于 0.3.8，于 0.4.9 废弃，替代为 `APP_API_URL` 和 `APP_WEB_URL`。
 
 WebApp Url，用于声明**前端** API 后端地址，传空则为同域。范例：`https://app.dify.ai`
 
 #### Session 配置
 
-> ⚠️ 该配置从 0.3.24 版本起废弃。（将于 0.4.0 彻底移除）
+> ⚠️ 该配置从 0.3.24 版本起废弃。
 
 仅 API 服务使用，用于验证接口身份。
 
@@ -412,7 +412,7 @@ WebApp Url，用于声明**前端** API 后端地址，传空则为同域。范�
 
 #### Cookie 策略配置
 
-> ⚠️ 该配置从 0.3.24 版本起废弃。 （将于 0.4.0 彻底移除）
+> ⚠️ 该配置从 0.3.24 版本起废弃。
 
 用于设置身份校验的 Session Cookie 浏览器策略。
 
