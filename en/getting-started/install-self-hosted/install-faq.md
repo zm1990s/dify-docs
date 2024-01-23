@@ -1,4 +1,4 @@
-# Install FAQ
+# FAQ
 
 ### 1. How to reset the password if the local deployment initialization fails with an incorrect password?
 
@@ -92,7 +92,7 @@ Unavailable scenarios When the front end and back end are cross-domain and the s
 
 This may be because the domain name/URL has been switched, resulting in cross-domain between the front end and the back end. Please change all the following configuration items in `docker-compose.yml` to the new domain name: `CONSOLE_API_URL:` The backend URL of the console API. `CONSOLE_WEB_URL:` The front-end URL of the console web. `SERVICE_API_URL:` Service API Url `APP_API_URL:` WebApp API backend Url. `APP_WEB_URL:` WebApp Url.
 
-For more information, please check out: [Environments](../install-self-hosted/environments.md)
+For more information, please check out: [Environments](environments.md)
 
 ### 5. How to upgrade version after deployment?
 
@@ -100,7 +100,7 @@ If you start up through images, please pull the latest images to complete the up
 
 When deploying and updating local source code, you need to enter the API directory and execute the following command to migrate the database structure to the latest version:
 
-`flask db upgrade`&#x20;
+`flask db upgrade`
 
 ### 6.How to configure the environment variables when use Notion import
 
@@ -135,9 +135,9 @@ The database, configured storage, and vector database data need to be backed up.
 
 ### 11. How to solve the size and quantity limitations for uploading knowledge documents in the local deployment version？
 
-You can refer to the official website environment variable description document to configure:&#x20;
+You can refer to the official website environment variable description document to configure:
 
-[Environments](../install-self-hosted/environments.md)
+[Environments](environments.md)
 
 ### 12. How does the local deployment edition invite members through email?
 
@@ -146,3 +146,40 @@ Local deployment edition, members can be invited through email. After entering t
 ### 13. How to solve listen tcp4 0.0.0.0:80: bind: address already in use?
 
 This is because the port is occupied. You can use the `netstat -tunlp | grep 80` command to view the process that occupies the port, and then kill the process. For example, the apache and nginx processes occupy the port, you can use the `service apache2 stop` and `service nginx stop` commands to stop the process.
+
+### 15. What to do if this error occurs in text-to-speech?&#x20;
+
+```
+[openai] Error: ffmpeg is not installed
+```
+
+Since OpenAI TTS has implemented audio stream segmentation, ffmpeg needs to be installed for normal use when deploying the source code. Here are the detailed steps:&#x20;
+
+**Windows:**&#x20;
+
+1. Visit the [FFmpeg official website](https://ffmpeg.org/download.html) and download the precompiled Windows shared library.&#x20;
+2. Download and unzip the FFmpeg folder, which will generate a folder similar to "ffmpeg-20200715-51db0a4-win64-static".&#x20;
+3. Move the unzipped folder to a location of your choice, for example, C:\Program Files.&#x20;
+4. Add the absolute path of the FFmpeg bin directory to the system environment variables.&#x20;
+5. Open the command prompt and enter "ffmpeg -version" to see if the FFmpeg version information is displayed, indicating successful installation.&#x20;
+
+**Ubuntu:**&#x20;
+
+1. Open the terminal.&#x20;
+2. Enter the following commands to install FFmpeg: `sudo apt-get update`, then enter `sudo apt-get install ffmpeg`.&#x20;
+3. Enter "ffmpeg -version" to check if it has been successfully installed.&#x20;
+
+**CentOS:**&#x20;
+
+1. First, you need to enable the EPEL repository. In the terminal, enter: `sudo yum install epel-release`&#x20;
+2. Then, enter: `sudo rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm`&#x20;
+3. Update the yum package, enter: `sudo yum update`&#x20;
+4. Finally, install FFmpeg, enter: `sudo yum install ffmpeg ffmpeg-devel`&#x20;
+5. Enter "ffmpeg -version" to check if it has been successfully installed.&#x20;
+
+**Mac OS X:**&#x20;
+
+1. Open the terminal.&#x20;
+2. If you haven't installed Homebrew yet, you can install it by entering the following command in the terminal: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`&#x20;
+3. Install FFmpeg with Homebrew, enter: `brew install ffmpeg`&#x20;
+4. Enter "ffmpeg -version" to check if it has been successfully installed.
