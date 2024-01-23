@@ -147,7 +147,7 @@ Local deployment edition, members can be invited through email. After entering t
 
 This is because the port is occupied. You can use the `netstat -tunlp | grep 80` command to view the process that occupies the port, and then kill the process. For example, the apache and nginx processes occupy the port, you can use the `service apache2 stop` and `service nginx stop` commands to stop the process.
 
-### 15. What to do if this error occurs in text-to-speech?&#x20;
+### 14. What to do if this error occurs in text-to-speech?&#x20;
 
 ```
 [openai] Error: ffmpeg is not installed
