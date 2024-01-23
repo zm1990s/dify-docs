@@ -8,6 +8,8 @@
 | Linux platforms            | <p>Docker 19.03 or later<br>Docker Compose 1.25.1 or later</p> | 请参阅[安装 Docker](https://docs.docker.com/engine/install/) 和[安装 Docker Compose](https://docs.docker.com/compose/install/) 以获取更多信息。                                                      |
 | Windows with WSL 2 enabled | Docker Desktop                                                 | 我们建议将源代码和其他数据绑定到 Linux 容器中时，将其存储在 Linux 文件系统中，而不是 Windows 文件系统中。有关更多信息，请参阅[使用 WSL 2 后端在 Windows 上安装 Docker Desktop](https://docs.docker.com/desktop/windows/install/#wsl-2-backend)。 |
 
+> 若需要使用 OpenAI TTS，需要在系统中安装 FFmpeg 才可正常使用，详情可参考：[Link](https://docs.dify.ai/v/zh-hans/learn-more/faq/install-faq#id-15.-wen-ben-zhuan-yu-yin-yu-dao-zhe-ge-cuo-wu-zen-me-ban)。
+
 Clone Dify 代码：
 
 ```Bash
@@ -89,7 +91,7 @@ conda activate dify
     ```
 7.  启动 Worker 服务
 
-    用于消费一步队列任务，如数据集文件导入、更新数据集文档等异步操作。  Linux / MacOS 启动：
+    用于消费一步队列任务，如数据集文件导入、更新数据集文档等异步操作。 Linux / MacOS 启动：
 
     ```
     celery -A app.celery worker -P gevent -c 1 -Q dataset,generation,mail --loglevel INFO
