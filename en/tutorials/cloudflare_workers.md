@@ -1,4 +1,4 @@
-# Deploying API Extension to Cloudflare Workers
+# Expose API Extension on public Internet using Cloudflare Workers
 
 ## Getting Started
 
@@ -43,19 +43,12 @@ npm run deploy
 
 After successful deployment, you will get a public internet address, which you can add in Dify as an API Endpoint. Please note not to miss the `endpoint` path.
 
-<figure><img src="../../../.gitbook/assets/api_extension_edit.png" alt="">
-<figcaption><p>
-Adding API Endpoint in Dify
-</p></figcaption>
-</figure>
+<figure><img src="../.gitbook/assets/api_extension_edit.png" alt=""><figcaption><p>Adding API Endpoint in Dify</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/app_tools_edit.png" alt="">
-<figcaption><p>
-Adding API Tool in the App edit page
-</p></figcaption>
-</figure>
+<figure><img src="../.gitbook/assets/app_tools_edit.png" alt=""><figcaption><p>Adding API Tool in the App edit page</p></figcaption></figure>
 
 ## Other Logic TL;DR
+
 ### About Bearer Auth
 
 ```typescript
@@ -91,8 +84,7 @@ const schema = z.object({
 });
 ```
 
-We use `zod` to define the types of parameters. You can use `zValidator` in `src/index.ts` for parameter validation. Get validated parameters through ` const { point, params } = c.req.valid("json");`. Our point has only two values, so we use `z.union` for definition.
-`params` is an optional parameter, defined with `z.optional`. It includes a `inputs` parameter, a `Record<string, any>` type representing an object with string keys and any values. This type can represent any object. You can get the `count` parameter in `src/index.ts` using `params?.inputs?.count`.
+We use `zod` to define the types of parameters. You can use `zValidator` in `src/index.ts` for parameter validation. Get validated parameters through `const { point, params } = c.req.valid("json");`. Our point has only two values, so we use `z.union` for definition. `params` is an optional parameter, defined with `z.optional`. It includes a `inputs` parameter, a `Record<string, any>` type representing an object with string keys and any values. This type can represent any object. You can get the `count` parameter in `src/index.ts` using `params?.inputs?.count`.
 
 ### Accessing Logs of Cloudflare Workers
 
@@ -102,6 +94,6 @@ wrangler tail
 
 ## Reference Content
 
-- [Cloudflare Workers](https://workers.cloudflare.com/)
-- [Cloudflare Workers CLI](https://developers.cloudflare.com/workers/cli-wrangler/install-update)
-- [Example GitHub Repository](https://github.com/crazywoola/dify-extension-workers)
+* [Cloudflare Workers](https://workers.cloudflare.com/)
+* [Cloudflare Workers CLI](https://developers.cloudflare.com/workers/cli-wrangler/install-update)
+* [Example GitHub Repository](https://github.com/crazywoola/dify-extension-workers)

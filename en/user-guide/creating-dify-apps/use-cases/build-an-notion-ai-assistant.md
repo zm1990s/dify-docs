@@ -1,4 +1,4 @@
-# How to Build an Notion AI Assistant Based on Your Own Notes?
+# Notion AI Assistant Based on Your Own Notes
 
 ### Intro[​](https://wsyfin.com/notion-dify#intro) <a href="#intro" id="intro"></a>
 
@@ -26,7 +26,7 @@ The process to train a Notion AI assistant is relatively straightforward. Just f
 4. Start training.
 5. Create your own AI application.
 
-#### 1. Login to dify[​](https://wsyfin.com/notion-dify#1-login-to-dify) <a href="#1-login-to-dify" id="1-login-to-dify"></a>
+#### 1. Login to dify[​](https://wsyfin.com/notion-dify#1-login-to-dify) <a href="#id-1-login-to-dify" id="id-1-login-to-dify"></a>
 
 Click [here](https://dify.ai/) to login to Dify. You can conveniently log in using your GitHub or Google account.
 
@@ -58,7 +58,7 @@ Select the pages you want to synchronize with Dify, and press the "Allow access"
 
 <figure><img src="https://pan.wsyfin.com/f/M8Xtz/connect-with-notion-4.png" alt=""><figcaption></figcaption></figure>
 
-#### 4. Start training[​](https://wsyfin.com/notion-dify#4-start-training) <a href="#4-start-training" id="4-start-training"></a>
+#### 4. Start training[​](https://wsyfin.com/notion-dify#4-start-training) <a href="#id-4-start-training" id="id-4-start-training"></a>
 
 Specifying the pages for AI need to study, enabling it to comprehend the content within this section of Notion. Then click the "next" button.
 
@@ -72,7 +72,7 @@ Enjoy your coffee while waiting for the training process to complete.
 
 ![train-3](https://pan.wsyfin.com/f/PN9F3/train-3.png)
 
-#### 5. Create Your AI application[​](https://wsyfin.com/notion-dify#5-create-your-ai-application) <a href="#5-create-your-own-ai-application" id="5-create-your-own-ai-application"></a>
+#### 5. Create Your AI application[​](https://wsyfin.com/notion-dify#5-create-your-ai-application) <a href="#id-5-create-your-own-ai-application" id="id-5-create-your-own-ai-application"></a>
 
 You must create an AI application and link it with the knowledge you've recently created.
 
@@ -90,11 +90,11 @@ For example, if your Notion notes focus on problem-solving in software developme
 
 _I want you to act as an IT Expert in my Notion workspace, using your knowledge of computer science, network infrastructure, Notion notes, and IT security to solve the problems_.
 
-<figure><img src="../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
 It's recommended to initially enable the AI to actively furnish the users with a starter sentence, providing a clue as to what they can ask. Furthermore, activating the 'Speech to Text' feature can allow users to interact with your AI assistant using their voice.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Finally, Click the "Publish" button on the top right of the page. Now you can click the public URL in the "Overview" section to converse with your personalized AI assistant!
 
@@ -110,19 +110,19 @@ Click the "API Reference" button on the page of Overview page. You can refer to 
 
 ![using-api-1](https://pan.wsyfin.com/f/wp0Cy/using-api-1.png)
 
-#### 1. Generate API Secret Key[​](https://wsyfin.com/notion-dify#1-generate-api-secret-key) <a href="#1-generate-api-secret-key" id="1-generate-api-secret-key"></a>
+#### 1. Generate API Secret Key[​](https://wsyfin.com/notion-dify#1-generate-api-secret-key) <a href="#id-1-generate-api-secret-key" id="id-1-generate-api-secret-key"></a>
 
 For sercurity reason, it's recommened to create new API secret key to access your AI application.
 
 ![using-api-2](https://pan.wsyfin.com/f/xk2Fx/using-api-2.png)
 
-#### 2. Retrieve Conversation ID[​](https://wsyfin.com/notion-dify#2-retrieve-conversation-id) <a href="#2-retrieve-conversation-id" id="2-retrieve-conversation-id"></a>
+#### 2. Retrieve Conversation ID[​](https://wsyfin.com/notion-dify#2-retrieve-conversation-id) <a href="#id-2-retrieve-conversation-id" id="id-2-retrieve-conversation-id"></a>
 
 After chatting with your AI application, you can retrieve the session ID from the "Logs & Ann." pages.
 
 ![using-api-3](https://pan.wsyfin.com/f/yPXHL/using-api-3.png)
 
-#### 3. Invoke API[​](https://wsyfin.com/notion-dify#3-invoke-api) <a href="#3-invoke-api" id="3-invoke-api"></a>
+#### 3. Invoke API[​](https://wsyfin.com/notion-dify#3-invoke-api) <a href="#id-3-invoke-api" id="id-3-invoke-api"></a>
 
 You can run the example request code on the API document to invoke your AI application in terminal.
 

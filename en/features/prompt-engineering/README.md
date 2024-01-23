@@ -1,6 +1,6 @@
-# Expert Mode for Prompt Engineering
+# Prompting Expert Mode
 
-Currently, the orchestration for creating apps in Dify is set to **Basic Mode** by default. This is ideal for non-tech-savvy individuals who want to quickly make an app. For example, if you want to create a corporate knowledge-base ChatBot or an article summary Generator, you can use the **Basic Mode** to design `Pre-prompt` words, add `Query`, integrate `Context`, and other straightforward steps to launch a complete app. For more head to 👉 [text-generation-application.md](../../application/prompt-engineering/text-generation-application.md "mention") and [conversation-application.md](../../application/prompt-engineering/conversation-application.md "mention").
+Currently, the orchestration for creating apps in Dify is set to **Basic Mode** by default. This is ideal for non-tech-savvy individuals who want to quickly make an app. For example, if you want to create a corporate knowledge-base ChatBot or an article summary Generator, you can use the **Basic Mode** to design `Pre-prompt` words, add `Query`, integrate `Context`, and other straightforward steps to launch a complete app. For more head to 👉 [text-generation-application.md](../../user-guide/creating-dify-apps/prompt-engineering/text-generation-application.md "mention") and [conversation-application.md](../../user-guide/creating-dify-apps/prompt-engineering/conversation-application.md "mention").
 
 💡However, you surely want to design prompts in a more customized manner if you're a developer who has conducted in-depth research on prompts, then you should opt for the **Expert Mode**. In this mode, you are granted permission to customize comprehensive prompts rather than using the pre-packaged prompts from Dify. You can modify the built-in prompts, rearrange the placement of `Context` and `History` , set necessary parameters, and more. If you're familiar with the OpenAI's Playground, you can get up to speed with this mode more quickly.
 
@@ -12,8 +12,7 @@ Well, before you try the new mode, you should be aware of some essential element
 
     When choosing a model, if you see "COMPLETE" on the right side of the model name, it indicates a Text completion model e.g. <img src="../../.gitbook/assets/screenshot-20231017-092613.png" alt="" data-size="line">
 
-    This type of model accepts a freeform text string and generates a text completion, attempting to match any context or pattern you provide. For example, if you write the prompt `As René Descartes said, "I think, therefore"`, it's highly likely that the model will return `"I am."` as the completion.\
-
+    This type of model accepts a freeform text string and generates a text completion, attempting to match any context or pattern you provide. For example, if you write the prompt `As René Descartes said, "I think, therefore"`, it's highly likely that the model will return `"I am."` as the completion.\\
 *   **Chat**
 
     When choosing a model, if you see "CHAT" on the right side of the model name, it indicates a Chat completions model e.g. <img src="../../.gitbook/assets/screenshot-20231017-092957.png" alt="" data-size="line">
@@ -28,31 +27,24 @@ Well, before you try the new mode, you should be aware of some essential element
         User messages provide requests or comments for the AI assistant to respond to.
     *   `ASSISTANT`
 
-        Assistant messages store previous assistant responses, but they can also be written by you to provide examples of desired behavior.\
-
+        Assistant messages store previous assistant responses, but they can also be written by you to provide examples of desired behavior.\\
 *   **Stop\_Sequences**
 
-    Stop\_Sequences refers to specific words, phrases, or characters used to send a signal to LLM to stop generating text.\
-
+    Stop\_Sequences refers to specific words, phrases, or characters used to send a signal to LLM to stop generating text.\\
 *   **Blocks**
 
     <img src="../../.gitbook/assets/Context.png" alt="" data-size="line">
 
     When users input a query, the app processes the query as search criteria for the knowledge. The organized results from the search then replace the variable `Context`, allowing the LLM to reference the content for its response.
 
-
-
     <img src="../../.gitbook/assets/QUERY.png" alt="" data-size="line">
 
     The query content is only available in the Text completion models of conversational applications. The content entered by the user during the conversation will replace this variable, initiating a new turn of dialogue.
 
-
-
     <img src="../../.gitbook/assets/history (1).png" alt="" data-size="line">
 
-    The conversation history is only available in the Text completion model  of conversational applications. When engaging in multiple conversations in dialogue applications, Dify will assemble and concatenate the historical dialogue records according to built-in rules and replace the 'Conversation History' variable. The `Human` and `Assistant` prefixes can be modified by clicking on the `...` after "Conversation History".\
-
-*   #### **Prompt Template**
+    The conversation history is only available in the Text completion model of conversational applications. When engaging in multiple conversations in dialogue applications, Dify will assemble and concatenate the historical dialogue records according to built-in rules and replace the 'Conversation History' variable. The `Human` and `Assistant` prefixes can be modified by clicking on the `...` after "Conversation History".\\
+*   **Prompt Template**
 
     In this mode, before formal orchestration, an initial template is provided in the prompt box. We can directly modify this template to have more customized requirements for LLM. Different types of applications have variations in different modes.
 
@@ -62,13 +54,13 @@ Well, before you try the new mode, you should be aware of some essential element
 
 ## Comparison of the two modes
 
-<table><thead><tr><th width="333">Comparison Dimension</th><th width="197">Basic Mode </th><th>Expert Mode</th></tr></thead><tbody><tr><td>Visibility of Built-in Prompts</td><td>Invisible</td><td>Visible</td></tr><tr><td>Automatic Design</td><td>Available</td><td>Disabled</td></tr><tr><td>Variable Insertion</td><td>Available</td><td>Available</td></tr><tr><td>Block Validation</td><td>Disabled</td><td>Available</td></tr><tr><td>SYSTEM / USER / ASSISTANT </td><td>Invisible</td><td>Visible</td></tr><tr><td>Context parameter settings</td><td>Available</td><td>Available</td></tr><tr><td>PROMPT LOG</td><td>Available</td><td>Available</td></tr><tr><td>Stop_Sequences </td><td>Disabled</td><td>Available</td></tr></tbody></table>
+<table><thead><tr><th width="333">Comparison Dimension</th><th width="197">Basic Mode</th><th>Expert Mode</th></tr></thead><tbody><tr><td>Visibility of Built-in Prompts</td><td>Invisible</td><td>Visible</td></tr><tr><td>Automatic Design</td><td>Available</td><td>Disabled</td></tr><tr><td>Variable Insertion</td><td>Available</td><td>Available</td></tr><tr><td>Block Validation</td><td>Disabled</td><td>Available</td></tr><tr><td>SYSTEM / USER / ASSISTANT</td><td>Invisible</td><td>Visible</td></tr><tr><td>Context parameter settings</td><td>Available</td><td>Available</td></tr><tr><td>PROMPT LOG</td><td>Available</td><td>Available</td></tr><tr><td>Stop_Sequences</td><td>Disabled</td><td>Available</td></tr></tbody></table>
 
 ## Operation Guide
 
 ### 1. How to enter the Expert Mode
 
-After creating an application, you can switch to the **Expert Mode** on the prompt design page.&#x20;
+After creating an application, you can switch to the **Expert Mode** on the prompt design page.
 
 <figure><img src="../../.gitbook/assets/000.png" alt=""><figcaption><p>Access to the <strong>Expert Mode</strong></p></figcaption></figure>
 
@@ -88,8 +80,7 @@ Please note that only after uploading the context, the built-in prompts containi
 
 **TopK:** The value is an integer from 1 to 10.
 
-It is used to filter the text fragments with the highest similarity to the user's query. The system will also dynamically adjust the number of fragments based on the context window size of the selected model. The default system value is 2. This value is recommended to be set between 2 and 5, because we expect to get answers that match the embedded context more closely.\
-
+It is used to filter the text fragments with the highest similarity to the user's query. The system will also dynamically adjust the number of fragments based on the context window size of the selected model. The default system value is 2. This value is recommended to be set between 2 and 5, because we expect to get answers that match the embedded context more closely.\\
 
 **Score Threshold:** The value is a floating-point number from 0 to 1, with two decimal places.
 
@@ -121,7 +112,7 @@ The soil is yellow.
 
 Because LLM stops generating content before the next `Human1:`.
 
-### 4.Use  "/"  to insert Variables and Blocks
+### 4.Use "/" to insert Variables and Blocks
 
 You can enter "/" in the text editor to quickly bring up Blocks to insert into the prompt.
 
@@ -184,7 +175,6 @@ From the log, we can view the complete prompts that have been assembled by the s
 
 In the initial application's main interface, you can find "Logs & Ann." in the left-side navigation bar. Clicking on it will allow you to view the complete logs. In the "Logs & Ann." main interface, you can click on any conversation log entry. In the right-side dialog box that appears, simply move the mouse pointer over the conversation and then click the "Log" button to check the Prompt Log.
 
-For more head to 👉 [logs.md](../../application/logs.md "mention") .
+For more head to 👉 [logs.md](../logs.md "mention") .
 
 <figure><img src="../../.gitbook/assets/33333.png" alt=""><figcaption><p>Logs &#x26; Ann.</p></figcaption></figure>
-

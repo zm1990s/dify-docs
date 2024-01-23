@@ -1,10 +1,10 @@
-# Chat
+# Further Chat App Settings
 
 Chat in explore is a conversational application used to explore the boundaries of Dify's capabilities.
 
 When we talk to large natural language models, we often encounter situations where the answers are outdated or invalid. This is due to the old training data of the large model and the lack of networking capabilities. Based on the large model, Chat uses agents to capabilities and some tools endow the large model with the ability of online real-time query.
 
-<figure><img src="../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
 
 Chat supports the use of plugins and knowledge.
 
@@ -32,15 +32,15 @@ Currently we support the following plugins:
 
 We can choose the plugins needed for this conversation before the conversation starts.
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 If you use the Google search plugin, you need to configure the SerpAPI key.
 
-<figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
 Configured entry:
 
-<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 ### Use knowledge
 
@@ -48,10 +48,10 @@ Chat supports knowledge. After selecting the knowledge, the questions asked by t
 
 We can select the knowledge needed for this conversation before the conversation starts.
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 ### The process of thinking
 
 The thinking process refers to the process of the model using plugins and knowledge. We can see the thought process in each answer.
 
-<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>

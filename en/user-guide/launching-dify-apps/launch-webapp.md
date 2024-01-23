@@ -1,4 +1,4 @@
-# Launch the WebApp quickly
+# Quickstart
 
 One of the benefits of creating AI applications with Dify is that you can launch a user-friendly Web application in just a few minutes, based on your Prompt orchestration.
 
@@ -9,7 +9,7 @@ One of the benefits of creating AI applications with Dify is that you can launch
 
 In the application overview page, you can find a card for the AI site (WebApp). Simply enable WebApp access to get a shareable link for your users.
 
-<figure><img src="../.gitbook/assets/share your App.png" alt=""><figcaption><p>Share your WebApp</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/share your App.png" alt=""><figcaption><p>Share your WebApp</p></figcaption></figure>
 
 We provide a sleek WebApp interface for both of the following applications:
 
@@ -31,16 +31,15 @@ Click the settings button on the WebApp card to configure some options for the A
 
 Dify supports embedding your AI application into your business website. With this capability, you can create AI customer service and business knowledge Q\&A applications with business data on your official website within minutes. Click the embed button on the WebApp card, copy the embed code, and paste it into the desired location on your website.
 
-* For iframe tag:
+*   For iframe tag:
 
-     Copy the iframe code and paste it into the tags (such as `<div>`, `<section>`, etc.) on your website used to display the AI application.
+    Copy the iframe code and paste it into the tags (such as `<div>`, `<section>`, etc.) on your website used to display the AI application.
+*   For script tag:
 
-* For script tag:
+    Copy the script code and paste it into the `<head>` or `<body>` tags on your website.
 
-     Copy the script code and paste it into the `<head>` or `<body>` tags on your website.
-
-<figure><img src="../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
 
 For example, if you paste the script code into the section of your official website, you will get an AI chatbot on your website:
 
-<figure><img src="../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>

@@ -1,4 +1,4 @@
-# LLMs-use-FAQ
+# FAQ
 
 ### 1. How to choose a basic model?
 
@@ -89,7 +89,7 @@ There are two potential solutions if the error "Invalid token" appears:
 
 ### 13. What are the size limits for uploading knowledge documents?
 
-The maximum size for a single document upload is currently 15MB. There is also a limit of 100 total documents. These limits can be adjusted if you are using a local deployment. Refer to the [documentation](install-faq.md#11.-how-to-solve-the-size-and-quantity-limitations-for-uploading-dataset-documents-in-the-local-depl) for details on changing the limits.
+The maximum size for a single document upload is currently 15MB. There is also a limit of 100 total documents. These limits can be adjusted if you are using a local deployment. Refer to the [documentation](../../getting-started/install-self-hosted/install-faq.md#11.-how-to-solve-the-size-and-quantity-limitations-for-uploading-dataset-documents-in-the-local-depl) for details on changing the limits.
 
 ### 14. Why does Claude still consume OpenAI credits when using the Claude model?
 
