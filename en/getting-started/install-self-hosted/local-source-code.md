@@ -8,6 +8,8 @@
 | Linux platforms            | <p>Docker 19.03 or later<br>Docker Compose 1.25.1 or later</p> | Please refer to the [Docker installation guide](https://docs.docker.com/engine/install/) and [the Docker Compose installation guide](https://docs.docker.com/compose/install/) for more information on how to install Docker and Docker Compose, respectively.                                                                            |
 | Windows with WSL 2 enabled | <p>Docker Desktop<br></p>                                      | We recommend storing the source code and other data that is bound to Linux containers in the Linux file system rather than the Windows file system. For more information, please refer to the [Docker Desktop installation guide for using the WSL 2 backend on Windows.](https://docs.docker.com/desktop/windows/install/#wsl-2-backend) |
 
+> If you need to use OpenAI TTS, `FFmpeg` must be installed on the system for it to function properly. For more details, refer to: [Link](https://docs.dify.ai/getting-started/install-self-hosted/install-faq#id-14.-what-to-do-if-this-error-occurs-in-text-to-speech).
+
 ### Clone Dify
 
 ```Bash
@@ -55,7 +57,7 @@ conda activate dify
     ```
     cp .env.example .env
     ```
-3.  Generate a random secret key and replace the value of SECRET_KEY in the .env file:
+3.  Generate a random secret key and replace the value of SECRET\_KEY in the .env file:
 
     ```
     openssl rand -base64 42
@@ -71,8 +73,6 @@ conda activate dify
 
     <pre><code><strong>flask db upgrade
     </strong></code></pre>
-
-
 6.  Start the API server:
 
     ```
