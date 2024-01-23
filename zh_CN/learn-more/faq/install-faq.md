@@ -159,3 +159,40 @@ Can't load tokenizer for 'gpt2'. If you were trying to load it from 'https://hug
 ### 14. 本地部署 80 端口被占用应该如何解决？
 
 本地部署 80 端口被占用，可通过停止占用 80 端口的服务，或者修改 docker-compose.yaml 里面的端口映射，将 80 端口映射到其他端口。通常 Apache 和 Nginx 会占用这个端口，可通过停止这两个服务来解决。
+
+### 15. 文本转语音遇到这个错误怎么办？
+
+```
+[openai] Error: ffmpeg is not installed
+```
+
+由于 OpenAI TTS 实现了音频流分段，源码部署时需要安装 ffmpeg 才可正常使用，详细步骤：
+
+**Windows:**
+
+1. 访问 [FFmpeg 官方网站](https://ffmpeg.org/download.html)，下载已经编译好的 Windows shared 库。
+2. 下载并解压 FFmpeg 文件夹，它会生成一个类似于 "ffmpeg-20200715-51db0a4-win64-static" 的文件夹。
+3. 将解压后的文件夹移动到你想要的位置，例如 C:\Program Files\。
+4. 将 FFmpeg 的 bin 目录所在的绝对路径添加到系统环境变量中。
+5. 打开命令提示符，输入"ffmpeg -version"，如果能看到 FFmpeg 的版本信息，那么说明安装成功。
+
+**Ubuntu:**
+
+1. 打开终端。
+2. 输入以下命令来安装 FFmpeg：`sudo apt-get update`，然后输入`sudo apt-get install ffmpeg`。
+3. 输入"ffmpeg -version" 来检查是否安装成功。
+
+**CentOS:**
+
+1. 首先，你需要启用EPEL存储库。在终端中输入：`sudo yum install epel-release`
+2. 然后，输入：`sudo rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm`
+3. 更新 yum 包，输入：`sudo yum update`
+4. 最后，安装 FFmpeg，输入：`sudo yum install ffmpeg ffmpeg-devel`
+5. 输入"ffmpeg -version" 来检查是否安装成功。
+
+**Mac OS X:**
+
+1. 打开终端。
+2. 如果你还没有安装 Homebrew，你可以通过在终端中输入以下命令来安装：`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+3. 使用 Homebrew 安装 FFmpeg，输入：`brew install ffmpeg`
+4. 输入 "ffmpeg -version" 来检查是否安装成功。
