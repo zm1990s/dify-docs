@@ -19,6 +19,7 @@
   * [Quickstart](user-guide/creating-dify-apps/creating-an-application.md)
   * [Overview](user-guide/creating-dify-apps/overview.md)
   * [Setting Prompts](user-guide/creating-dify-apps/prompt-engineering/README.md)
+    * [Agent Assistant](user-guide/creating-dify-apps/prompt-engineering/agent-assistant.md)
     * [Chat App](user-guide/creating-dify-apps/prompt-engineering/conversation-application.md)
     * [Text Generator](user-guide/creating-dify-apps/prompt-engineering/text-generation-application.md)
   * [FAQ](user-guide/creating-dify-apps/llms-use-faq.md)
