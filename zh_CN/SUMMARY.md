@@ -17,7 +17,7 @@
   * [创建应用](guides/application-design/creating-an-application.md)
   * [提示词编排](guides/application-design/prompt-engineering/README.md)
     * [基础助手](guides/application-design/prompt-engineering/conversation-application.md)
-    * [智能助手（Agent）](guides/application-design/prompt-engineering/zhi-neng-zhu-shou-agent.md)
+    * [智能助手（Agent）](guides/application-design/prompt-engineering/agent-assistant.md)
     * [文本生成型应用](guides/application-design/prompt-engineering/text-generation-application.md)
     * [提示词编排专家模式](guides/application-design/prompt-engineering/prompt-engineering-1/README.md)
       * [提示词初始模版参考](guides/application-design/prompt-engineering/prompt-engineering-1/prompt-engineering-template.md)
