@@ -38,7 +38,7 @@ Dify 支持 OpenAI 的自定义 API 域名能力，支持任何兼容 OpenAI 的
 
 我们联合大模型厂商向中国用户提供一定的 token 体验额度。通过 Dify \*\*设置 --> 模型供应商 --> 显示更多模型供应商。\*\*在智谱·AI、讯飞星火或 MiniMax 图标处点击【免费获取】，如果你在英文界面看不到领取入口，请将产品语言切换成为中文：
 
-* **智谱·AI： 免费领取 1000 万 token，**点击【免费领取】，只需输入手机号及验证码，即可到账额度，不限制是否注册过智谱·AI。
+* \*\*智谱·AI： 免费领取 1000 万 token，\*\*点击【免费领取】，只需输入手机号及验证码，即可到账额度，不限制是否注册过智谱·AI。
 * **讯飞星火 （V1.5 模型、V2.0 模型）：免费领取 600 万token，V1.5 模型、V2.0 模型各 300 万 token，额度不互通**，需要从 Dify 的入口进入，完成讯飞星火开放平台的注册（仅限未注册过讯飞星火的手机号），返回 Dify 静候 5 分钟，刷新页面即可在 Dify 页面体现可用额度。
 * **MiniMax：免费领取 100 万 token**，只需点击【免费领取】即可到账额度，无需手动注册流程，不限制是否注册过 MiniMax 账号。
 
@@ -125,7 +125,7 @@ Query or prefix prompt is too long, you can reduce the preix prompt, or shrink t
 
 如下方表格示例，仅需保留第二行的表头，首行（表格1）为多余表头，需删掉。
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 20 买了 ChatGPT plus，为什么在 dify 里还不能使用 GPT4？
 

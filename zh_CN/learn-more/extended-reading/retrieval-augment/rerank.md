@@ -18,8 +18,7 @@
 
 重排序并不是搜索技术的替代品，而是一种用于增强现有检索系统的辅助工具。**它最大的优势是不仅提供了一种简单且低复杂度的方法来改善搜索结果，允许用户将语义相关性纳入现有的搜索系统中，而且无需进行重大的基础设施修改。**
 
-以 Cohere Rerank 为例，你只需要注册账户和申请 API ，接入只需要两行代码。另外，他们也提供了多语言模型，也就是说你可以将不同语言的文本查询结果进行一次性排序。\
-
+以 Cohere Rerank 为例，你只需要注册账户和申请 API ，接入只需要两行代码。另外，他们也提供了多语言模型，也就是说你可以将不同语言的文本查询结果进行一次性排序。\\
 
 ### 如何配置 Rerank 模型？
 
@@ -39,12 +38,11 @@ Dify 目前已支持 Cohere Rerank 模型，通过进入“模型供应商-> Coh
 
 通过进入“数据集->创建数据集->检索设置”页面并在添加 Rerank 设置。除了在创建数据集可以设置 Rerank ，你也可以在已创建的数据集设置内更改 Rerank 配置，在应用编排的数据集召回模式设置中更改 Rerank 配置。
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt="" width="563"><figcaption><p>数据集检索模式中设置 Rerank 模型</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="563"><figcaption><p>数据集检索模式中设置 Rerank 模型</p></figcaption></figure>
 
-**TopK：**用于设置 Rerank 后返回相关文档的数量。
+\*\*TopK：\*\*用于设置 Rerank 后返回相关文档的数量。
 
-**Score 阈值：**用于设置 Rerank 后返回相关文档的最低分值。设置 Rerank 模型后，TopK 和 Score 阈值设置仅在 Rerank 步骤生效。\
-
+\*\*Score 阈值：\*\*用于设置 Rerank 后返回相关文档的最低分值。设置 Rerank 模型后，TopK 和 Score 阈值设置仅在 Rerank 步骤生效。\\
 
 ### 数据集多路召回模式中设置 Rerank 模型
 
@@ -52,4 +50,4 @@ Dify 目前已支持 Cohere Rerank 模型，通过进入“模型供应商-> Coh
 
 关于多路召回模式的说明：🔗
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>数据集多路召回模式中设置 Rerank 模型</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>数据集多路召回模式中设置 Rerank 模型</p></figcaption></figure>

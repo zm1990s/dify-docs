@@ -2,7 +2,7 @@
 
 Dify 支持 Text-Generation 和 Embeddings，以下是与之对应的 Hugging Face 模型类型：
 
-* Text-Generation：[text-generation](https://huggingface.co/models?pipeline\_tag=text-generation\&sort=trending)，[text2text-generation](https://huggingface.co/models?pipeline\_tag=text2text-generation\&sort=trending)&#x20;
+* Text-Generation：[text-generation](https://huggingface.co/models?pipeline\_tag=text-generation\&sort=trending)，[text2text-generation](https://huggingface.co/models?pipeline\_tag=text2text-generation\&sort=trending)
 * Embeddings：[feature-extraction](https://huggingface.co/models?pipeline\_tag=feature-extraction\&sort=trending)
 
 具体步骤如下：
@@ -11,7 +11,7 @@ Dify 支持 Text-Generation 和 Embeddings，以下是与之对应的 Hugging Fa
 2. 设置 Hugging Face 的 API key([获取地址](https://huggingface.co/settings/tokens))。
 3. 进入 [Hugging Face 模型列表页](https://huggingface.co/models)，选择对应的模型类型。
 
-<figure><img src="../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Dify 支持用两种方式接入 Hugging Face 上的模型：
 
@@ -24,11 +24,11 @@ Dify 支持用两种方式接入 Hugging Face 上的模型：
 
 模型详情页右侧有包含 Hosted inference API 的 区域才支持 Hosted inference API 。如下图所：
 
-<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 在模型详情页，可以获得模型的名称。
 
-<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 2 在 Dify 中使用接入模型
 
@@ -44,17 +44,17 @@ API Token 为文章开头设置的 API Key。模型名字为上一步获得的�
 
 模型详情页右侧的 `Deploy` 按钮下有 Inference Endpoints 选项的模型才支持 Inference Endpoint。如下图所示：
 
-<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 2 部署模型
 
 点击模型的部署按钮，选择 Inference Endpoint 选项。如果之前没绑过银行卡的，会需要绑卡。按流程走即可。绑过卡后，会出现下面的界面：按需求修改配置，点击左下角的 Create Endpoint 来创建 Inference Endpoint。
 
-<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 模型部署好后，就可以看到 Endpoint URL。
 
-<figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 3 在 Dify 中使用接入模型
 

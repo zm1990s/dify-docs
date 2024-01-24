@@ -1,4 +1,4 @@
-# 对话型应用
+# 助手型应用
 
 对话型应用采用一问一答模式与用户持续对话。
 
@@ -16,13 +16,13 @@
 
 在首页点击 “创建应用” 按钮创建应用。填上应用名称，应用类型选择**对话型应用**。
 
-<figure><img src="../../../.gitbook/assets/image (43).png" alt=""><figcaption><p>创建应用</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 #### 第 2 步 编排应用
 
 应用成功后会自动跳转到应用概览页。点击左侧菜单：**提示词编排** 来编排应用。
 
-<figure><img src="../../../.gitbook/assets/image (29).png" alt=""><figcaption><p>编排应用</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 **2.1 填写提示词**
 
