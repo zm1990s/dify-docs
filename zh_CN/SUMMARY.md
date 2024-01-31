@@ -49,7 +49,7 @@
   * [从 Notion 导入数据](guides/knowledge-base/sync-from-notion.md)
   * [通过 API 维护数据集](guides/knowledge-base/maintain-dataset-via-api.md)
   * [外部数据工具](guides/knowledge-base/external\_data\_tool.md)
-* [工具](guides/gong-ju.md)
+* [工具](guides/tools.md)
 * [日志与标注](guides/logs.md)
 * [团队协同](guides/workspace/README.md)
   * [邀请与管理成员](guides/workspace/invite-and-manage-members.md)
