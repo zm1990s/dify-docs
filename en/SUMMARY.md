@@ -4,6 +4,7 @@
 
 * [Welcome to Dify!](README.md)
   * [Technical Spec](getting-started/readme/specifications-and-technical-features.md)
+  * [Model Providers](getting-started/readme/model-providers.md)
 * [Using Dify Cloud](getting-started/cloud.md)
 * [Install (Self hosted)](getting-started/install-self-hosted/README.md)
   * [Docker Compose Deployment](getting-started/install-self-hosted/docker-compose.md)
