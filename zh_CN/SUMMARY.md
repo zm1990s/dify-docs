@@ -4,6 +4,7 @@
 
 * [欢迎使用 Dify](README.md)
   * [特性与技术规格](getting-started/readme/features-and-specifications.md)
+  * [模型供应商列表](getting-started/readme/mo-xing-gong-ying-shang-lie-biao.md)
 * [使用云服务](getting-started/cloud.md)
 * [部署社区版](getting-started/install-self-hosted/README.md)
   * [Docker Compose 部署](getting-started/install-self-hosted/docker-compose.md)
