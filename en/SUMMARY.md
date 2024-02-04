@@ -68,6 +68,7 @@
 
 ## Tutorials
 
+* [Quick Tool Integration](tutorials/quick-tool-integration.md)
 * [Expose API Extension on public Internet using Cloudflare Workers](tutorials/cloudflare\_workers.md)
 * [Connecting with Different Models](tutorials/model-configuration/README.md)
   * [Hugging Face](tutorials/model-configuration/hugging-face.md)
