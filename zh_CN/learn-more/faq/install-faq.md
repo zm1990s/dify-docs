@@ -196,3 +196,17 @@ Can't load tokenizer for 'gpt2'. If you were trying to load it from 'https://hug
 2. 如果你还没有安装 Homebrew，你可以通过在终端中输入以下命令来安装：`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 3. 使用 Homebrew 安装 FFmpeg，输入：`brew install ffmpeg`
 4. 输入 "ffmpeg -version" 来检查是否安装成功。
+
+### 16. 本地部署时，如果遇到 Nginx 配置文件挂载失败，如何解决？
+
+```
+Error response from daemon: failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: error mounting "/run/desktop/mnt/host/d/Documents/docker/nginx/nginx.conf" to rootfs at "/etc/nginx/nginx.conf": mount /run/desktop/mnt/host/d/Documents/docker/nginx/nginx.conf:/etc/nginx/nginx.conf (via /proc/self/fd/9), flags: 0x5000: not a directory: unknown: Are you trying to mount a directory onto a file (or vice-versa)? Check if the specified host path exists and is the expected type
+```
+
+请下载完整的项目，进入 docker 执行 `docker-compose up -d` 即可。
+
+```
+git clone https://github.com/langgenius/dify.git
+cd dify/docker
+docker compose up -d
+```
