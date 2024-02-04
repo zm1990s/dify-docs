@@ -1,14 +1,14 @@
 # 高级接入工具
 
-在开始高级接入之前，请确保你已经阅读过快速接入，并对Dify的工具接入流程有了基本的了解。
+在开始高级接入之前，请确保你已经阅读过[快速接入](https://docs.dify.ai/v/zh-hans/guides/tools/quick-tool-integration)，并对Dify的工具接入流程有了基本的了解。
 
 ### 工具接口
 
-我们在`Tool`类中定义了一系列快捷方法，用于帮助开发者快速构较为复杂的工具
+我们在`Tool`类中定义了一系列快捷方法，用于帮助开发者快速构较为复杂的工具。
 
 #### 消息返回
 
-Dify支持`文本` `链接` `图片` `文件BLOB` 等多种消息类型，你可以通过以下几个接口返回不同类型的消息给LLM和用户。
+Dify支持`文本` `链接` `图片` `文件BLOB` 等多种消息类型，你可以通过以下几个接口返回不同类型的消息给 LLM 和用户。
 
 注意，在下面的接口中的部分参数将在后面的章节中介绍。
 
@@ -54,11 +54,11 @@ Dify支持`文本` `链接` `图片` `文件BLOB` 等多种消息类型，你可
         """
 ```
 
-**文件BLOB**
+**文件 BLOB**
 
-如果你需要返回文件的原始数据，如图片、音频、视频、PPT、Word、Excel等，可以使用以下接口。
+如果你需要返回文件的原始数据，如图片、音频、视频、PPT、Word、Excel 等，可以使用以下接口。
 
-* `blob` 文件的原始数据，bytes类型
+* `blob` 文件的原始数据，bytes 类型
 * `meta` 文件的元数据，如果你知道该文件的类型，最好传递一个`mime_type`，否则Dify将使用`octet/stream`作为默认类型
 
 ```python
@@ -75,14 +75,14 @@ Dify支持`文本` `链接` `图片` `文件BLOB` 等多种消息类型，你可
 
 在大模型应用中，我们有两种常见的需求：
 
-* 先将很长的文本进行提前总结，然后再将总结内容传递给LLM，以防止原文本过长导致LLM无法处理
-* 工具获取到的内容是一个链接，需要爬取网页信息后再返回给LLM
+* 先将很长的文本进行提前总结，然后再将总结内容传递给 LLM，以防止原文本过长导致 LLM 无法处理
+* 工具获取到的内容是一个链接，需要爬取网页信息后再返回给 LLM
 
 为了帮助开发者快速实现这两种需求，我们提供了以下两个快捷工具。
 
 **文本总结工具**
 
-该工具需要传入user\_id和需要进行总结的文本，返回一个总结后的文本，Dify会使用当前工作空间的默认模型对长文本进行总结。
+该工具需要传入 user\_id 和需要进行总结的文本，返回一个总结后的文本，Dify 会使用当前工作空间的默认模型对长文本进行总结。
 
 ```python
     def summary(self, user_id: str, content: str) -> str:
@@ -97,7 +97,7 @@ Dify支持`文本` `链接` `图片` `文件BLOB` 等多种消息类型，你可
 
 **网页爬取工具**
 
-该工具需要传入需要爬取的网页链接和一个user\_agent（可为空），返回一个包含该网页信息的字符串，其中`user_agent`是可选参数，可以用来识别工具，如果不传递，Dify将使用默认的`user_agent`。
+该工具需要传入需要爬取的网页链接和一个 user\_agent（可为空），返回一个包含该网页信息的字符串，其中`user_agent`是可选参数，可以用来识别工具，如果不传递，Dify将使用默认的`user_agent`。
 
 ```python
     def get_url(self, url: str, user_agent: str = None) -> str:
@@ -112,12 +112,12 @@ Dify支持`文本` `链接` `图片` `文件BLOB` 等多种消息类型，你可
 
 下面，我们以`DallE3`和`Vectorizer.AI`为例，介绍如何使用变量池。
 
-* `DallE3`是一个图片生成工具，它可以根据文本生成图片，在这里，我们将让`DallE3`生成一个咖啡厅的Logo
+* `DallE3`是一个图片生成工具，它可以根据文本生成图片，在这里，我们将让`DallE3`生成一个咖啡厅的 Logo。
 * `Vectorizer.AI`是一个矢量图转换工具，它可以将图片转换为矢量图，使得图片可以无限放大而不失真，在这里，我们将`DallE3`生成的PNG图标转换为矢量图，从而可以真正被设计师使用。
 
 **DallE3**
 
-首先我们使用DallE3，在创建完图片以后，我们将图片保存到变量池中，代码如下
+首先我们使用 DallE3，在创建完图片以后，我们将图片保存到变量池中，代码如下
 
 ```python
 from typing import Any, Dict, List, Union
@@ -154,7 +154,7 @@ class DallE3Tool(BuiltinTool):
 
         result = []
         for image in response.data:
-            # 将所有图片通过save_as参数保存到变量池中，变量名为self.VARIABLE_KEY.IMAGE.value，如果如果后续有新的图片生成，那么将会覆盖之前的图片
+            # 将所有图片通过 save_as 参数保存到变量池中，变量名为 self.VARIABLE_KEY.IMAGE.value，如果如果后续有新的图片生成，那么将会覆盖之前的图片
             result.append(self.create_blob_message(blob=b64decode(image.b64_json), 
                                                    meta={ 'mime_type': 'image/png' },
                                                     save_as=self.VARIABLE_KEY.IMAGE.value))
@@ -166,7 +166,7 @@ class DallE3Tool(BuiltinTool):
 
 **Vectorizer.AI**
 
-接下来我们使用Vectorizer.AI，将DallE3生成的PNG图标转换为矢量图，我们先来过一遍我们在这里定义的函数，代码如下
+接下来我们使用 Vectorizer.AI，将 DallE3 生成的PNG图标转换为矢量图，我们先来过一遍我们在这里定义的函数，代码如下
 
 ```python
 from core.tools.tool.builtin_tool import BuiltinTool
@@ -187,13 +187,13 @@ class VectorizerTool(BuiltinTool):
     
     def get_runtime_parameters(self) -> List[ToolParamter]:
         """
-        重写工具参数列表，我们可以根据当前变量池里的实际情况来动态生成参数列表，从而LLM可以根据参数列表来生成表单
+        重写工具参数列表，我们可以根据当前变量池里的实际情况来动态生成参数列表，从而 LLM 可以根据参数列表来生成表单
         """
         
     
     def is_tool_avaliable(self) -> bool:
         """
-        当前工具是否可用，如果当前变量池中没有图片，那么我们就不需要展示这个工具，这里返回False即可
+        当前工具是否可用，如果当前变量池中没有图片，那么我们就不需要展示这个工具，这里返回 False 即可
         """     
 ```
 
@@ -220,12 +220,12 @@ class VectorizerTool(BuiltinTool):
         if not api_key_name or not api_key_value:
             raise ToolProviderCredentialValidationError('Please input api key name and value')
 
-        # 获取image_id，image_id的定义可以在get_runtime_parameters中找到
+        # 获取 image_id，image_id 的定义可以在 get_runtime_parameters 中找到
         image_id = tool_paramters.get('image_id', '')
         if not image_id:
             return self.create_text_message('Please input image id')
 
-        # 从变量池中获取到之前DallE生成的图片
+        # 从变量池中获取到之前 DallE 生成的图片
         image_binary = self.get_variable_file(self.VARIABLE_KEY.IMAGE)
         if not image_binary:
             return self.create_text_message('Image not found, please request user to generate image firstly.')
@@ -252,7 +252,7 @@ class VectorizerTool(BuiltinTool):
         """
         override the runtime parameters
         """
-        # 这里，我们重写了工具参数列表，定义了image_id，并设置了它的选项列表为当前变量池中的所有图片，这里的配置与yaml中的配置是一致的
+        # 这里，我们重写了工具参数列表，定义了 image_id，并设置了它的选项列表为当前变量池中的所有图片，这里的配置与 yaml 中的配置是一致的
         return [
             ToolParamter.get_simple_instance(
                 name='image_id',
@@ -266,7 +266,7 @@ class VectorizerTool(BuiltinTool):
         ]
     
     def is_tool_avaliable(self) -> bool:
-        # 只有当变量池中有图片时，LLM才需要使用这个工具
+        # 只有当变量池中有图片时，LLM 才需要使用这个工具
         return len(self.list_default_image_variables()) > 0
 ```
 
