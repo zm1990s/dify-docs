@@ -125,7 +125,7 @@ model_credential_schema:
 
 **自定义模型供应商**
 
-当供应商为Xinference等自定义模型供应商时，可跳过该步骤，仅创建一个空的`XinferenceProvider`类即可，并实现一个空的`validate_provider_credentials`方法，该方法并不会被实际使用，仅用作避免抽象类无法实例化。
+当供应商为 Xinference 等自定义模型供应商时，可跳过该步骤，仅创建一个空的`XinferenceProvider`类即可，并实现一个空的`validate_provider_credentials`方法，该方法并不会被实际使用，仅用作避免抽象类无法实例化。
 
 ```python
 class XinferenceProvider(Provider):
@@ -154,11 +154,11 @@ def validate_provider_credentials(self, credentials: dict) -> None:
 
 **增加模型**
 
-**增加预定义模型 👈🏻**
+[**增加预定义模型** ](https://docs.dify.ai/v/zh-hans/guides/model-configuration/predefined-model)**👈🏻**
 
 对于预定义模型，我们可以通过简单定义一个 yaml，并通过实现调用代码来接入。
 
-**增加自定义模型 👈🏻**
+[**增加自定义模型**](https://docs.dify.ai/v/zh-hans/guides/model-configuration/customizable-model) **👈🏻**
 
 对于自定义模型，我们只需要实现调用代码即可接入，但是它需要处理的参数可能会更加复杂。
 

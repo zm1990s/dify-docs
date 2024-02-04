@@ -1,4 +1,4 @@
-# 自定义预定义模型接入
+# 自定义模型接入
 
 ### 介绍
 
@@ -6,13 +6,13 @@
 
 需要注意的是，对于自定义模型，每一个模型的接入都需要填写一个完整的供应商凭据。
 
-而不同于预定义模型，自定义供应商接入时永远会拥有如下两个参数，不需要在供应商yaml中定义。
+而不同于预定义模型，自定义供应商接入时永远会拥有如下两个参数，不需要在供应商 yaml 中定义。
 
 <figure><img src="../../.gitbook/assets/Feb 4,2.png" alt=""><figcaption></figcaption></figure>
 
 在前文中，我们已经知道了供应商无需实现`validate_provider_credential`，Runtime会自行根据用户在此选择的模型类型和模型名称调用对应的模型层的`validate_credentials`来进行验证。
 
-#### 编写供应商yaml
+#### 编写供应商 yaml
 
 我们首先要确定，接入的这个供应商支持哪些类型的模型。
 
@@ -51,7 +51,7 @@ provider_credential_schema:
   credential_form_schemas:
 ```
 
-随后，我们需要思考在Xinference中定义一个模型需要哪些凭据
+随后，我们需要思考在 Xinference 中定义一个模型需要哪些凭据
 
 * 它支持三种不同的模型，因此，我们需要有`model_type`来指定这个模型的类型，它有三种类型，所以我们这么编写
 
@@ -91,7 +91,7 @@ provider_credential_schema:
       en_US: Input model name
 ```
 
-* 填写Xinference本地部署的地址
+* 填写 Xinference 本地部署的地址
 
 ```yaml
   - variable: server_url
@@ -105,17 +105,17 @@ provider_credential_schema:
       en_US: Enter the url of your Xinference, for example https://example.com/xxx
 ```
 
-* 每个模型都有唯一的model\_uid，因此需要在这里定义
+* 每个模型都有唯一的 model\_uid，因此需要在这里定义
 
 ```yaml
   - variable: model_uid
     label:
-      zh_Hans: 模型UID
+      zh_Hans: 模型 UID
       en_US: Model uid
     type: text-input
     required: true
     placeholder:
-      zh_Hans: 在此输入您的Model UID
+      zh_Hans: 在此输入您的 Model UID
       en_US: Enter the model uid
 ```
 
@@ -200,13 +200,13 @@ provider_credential_schema:
         :return:
         """
     ```
-*   模型参数Schema
+*   模型参数 Schema
 
-    与自定义类型不同，由于没有在yaml文件中定义一个模型支持哪些参数，因此，我们需要动态时间模型参数的Schema。
+    与自定义类型不同，由于没有在 yaml 文件中定义一个模型支持哪些参数，因此，我们需要动态时间模型参数的Schema。
 
     如Xinference支持`max_tokens` `temperature` `top_p` 这三个模型参数。
 
-    但是有的供应商根据不同的模型支持不同的参数，如供应商`OpenLLM`支持`top_k`，但是并不是这个供应商提供的所有模型都支持`top_k`，我们这里举例A模型支持`top_k`，B模型不支持`top_k`，那么我们需要在这里动态生成模型参数的Schema，如下所示：
+    但是有的供应商根据不同的模型支持不同的参数，如供应商`OpenLLM`支持`top_k`，但是并不是这个供应商提供的所有模型都支持`top_k`，我们这里举例 A 模型支持`top_k`，B模型不支持`top_k`，那么我们需要在这里动态生成模型参数的 Schema，如下所示：
 
     ```python
     def get_customizable_model_schema(self, model: str, credentials: dict) -> AIModelEntity | None:
@@ -297,4 +297,4 @@ provider_credential_schema:
         """
     ```
 
-接口方法说明见：Interfaces，具体实现可参考：[llm.py](https://github.com/langgenius/dify-runtime/blob/main/lib/model\_providers/anthropic/llm/llm.py)。
+接口方法说明见：[Interfaces](https://github.com/langgenius/dify/blob/main/api/core/model\_runtime/docs/zh\_Hans/interfaces.md)，具体实现可参考：[llm.py](https://github.com/langgenius/dify-runtime/blob/main/lib/model\_providers/anthropic/llm/llm.py)。
