@@ -86,7 +86,5 @@
 
 ## User Agreement
 
-* [Terms of Service](user-agreement/terms-of-service.md)
 * [Open-Source License](user-agreement/open-source.md)
 * [Data Security](user-agreement/data-security.md)
-* [Privacy Policy](user-agreement/privacy-policy.md)
