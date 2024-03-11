@@ -65,8 +65,6 @@ Dify 支持接入 Ollama 部署的大型语言模型推理和 embedding 能力�
 
 如需获取 Ollama 更多信息，请参考：[https://github.com/jmorganca/ollama](https://github.com/jmorganca/ollama)
 
-以下是上述内容的中文翻译：
-
 ### 在Linux上设置环境变量
 
 如果Ollama作为systemd服务运行，应该使用`systemctl`设置环境变量：
@@ -103,7 +101,6 @@ Dify 支持接入 Ollama 部署的大型语言模型推理和 embedding 能力�
 
 5. 在一个新的终端窗口运行`ollama`
 
-
-## 如何在我的网络上暴露Ollama？
+### 如何在我的网络上暴露Ollama？
 
 Ollama默认绑定127.0.0.1端口11434。通过`OLLAMA_HOST`环境变量更改绑定地址。
