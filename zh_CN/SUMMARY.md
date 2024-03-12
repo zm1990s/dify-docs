@@ -49,6 +49,8 @@
   * [接入 OpenLLM 部署的本地模型](guides/model-configuration/openllm.md)
   * [接入 LocalAI 部署的本地模型](guides/model-configuration/localai.md)
   * [接入 Ollama 部署的本地模型](guides/model-configuration/ollama.md)
+* [工具配置](guides/tools/tool-configuration/README.md)
+  * [StableDiffusion](guides/tools/tool-configuration/stable-diffusion.md)
 * [知识库](guides/knowledge-base/README.md)
   * [从 Notion 导入数据](guides/knowledge-base/sync-from-notion.md)
   * [通过 API 维护数据集](guides/knowledge-base/maintain-dataset-via-api.md)

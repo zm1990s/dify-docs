@@ -79,6 +79,8 @@
   * [LocalAI](tutorials/model-configuration/localai.md)
   * [Ollama](tutorials/model-configuration/ollama.md)
 * [Vector Database Migrate Tool](tutorials/vector-database-migrate-tool.md)
+* [Connecting with Different Tools](tutorials/tool-configuration/README.md)
+  * [Stable Diffusion](tutorials/tool-configuration/stable-diffusion.md)
 
 ## Community
 
