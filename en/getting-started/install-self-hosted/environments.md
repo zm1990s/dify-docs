@@ -195,6 +195,10 @@ Used to store uploaded data set files, team/tenant encryption keys, and other fi
     *   s3
 
         S3 object storage, if this option is selected, the following S3\_ prefixed configurations need to be set.
+    *  azure-blob
+
+        Azure Blob object storage, if this option is selected, the following AZURE\_BLOB\_ prefixed configurations need to be set.
+
 *   STORAGE\_LOCAL\_PATH
 
     Default is storage, that is, it is stored in the storage directory of the current directory.
@@ -205,7 +209,10 @@ Used to store uploaded data set files, team/tenant encryption keys, and other fi
 * S3\_ACCESS\_KEY: S3 Access Key
 * S3\_SECRET\_KEY: S3 Secret Key
 * S3\_REGION: S3 region information, such as: us-east-1
-
+* AZURE_BLOB_ACCOUNT_NAME: your-account-name eg, 'difyai'
+* AZURE_BLOB_ACCOUNT_KEY: your-account-key eg, 'difyai'
+* AZURE_BLOB_CONTAINER_NAME: your-container-name eg, 'difyai-container'
+* AZURE_BLOB_ACCOUNT_URL: 'https://<your_account_name>.blob.core.windows.net'
 #### Vector Database Configuration
 
 * VECTOR\_STORE

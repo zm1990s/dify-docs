@@ -185,12 +185,16 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 
     存储设施类型
 
-    *   local（默认）
+    * local（默认）
 
         本地文件存储，若选择此项则需要设置下方 `STORAGE_LOCAL_PATH` 配置。
-    *   s3
+    * s3
 
         S3 对象存储，若选择此项则需要设置下方 S3\_ 开头的配置。
+
+    * azure-blob
+
+        Azure Blob 存储，若选择此项则需要设置下方 AZURE\_BLOB\_ 开头的配置。
 *   STORAGE\_LOCAL\_PATH
 
     默认为 storage，即存储在当前目录的 storage 目录下。若使用 docker 或 docker-compose 进行部署，请务必将两个容器中 `/app/api/storage` 目录挂载到同一个本机目录，否则可能会出现文件找不到的报错。
@@ -199,6 +203,10 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 * S3\_ACCESS\_KEY：S3 Access Key
 * S3\_SECRET\_KEY：S3 Secret Key
 * S3\_REGION：S3 地域信息，如：us-east-1
+* AZURE_BLOB_ACCOUNT_NAME: your-account-name 如 'difyai'
+* AZURE_BLOB_ACCOUNT_KEY: your-account-key 如 'difyai'
+* AZURE_BLOB_CONTAINER_NAME: your-container-name 如 'difyai-container'
+* AZURE_BLOB_ACCOUNT_URL: 'https://<your_account_name>.blob.core.windows.net'
 
 #### 向量数据库配置
 
