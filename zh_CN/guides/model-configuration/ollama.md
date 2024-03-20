@@ -63,7 +63,17 @@ Dify 支持接入 Ollama 部署的大型语言模型推理和 embedding 能力�
 
    进入需要配置的 App 提示词编排页面，选择 Ollama 供应商下的 `llava` 模型，配置模型参数后即可使用。
 
-如需获取 Ollama 更多信息，请参考：[https://github.com/jmorganca/ollama](https://github.com/jmorganca/ollama)
+## FAQ
+
+### ⚠️ If you are using docker to deploy Dify and Ollama, you may encounter the following error:
+
+```
+httpconnectionpool(host=127.0.0.1, port=11434): max retries exceeded with url:/cpi/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8562812c20>: fail to establish a new connection:[Errno 111] Connection refused'))
+
+httpconnectionpool(host=localhost, port=11434): max retries exceeded with url:/cpi/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8562812c20>: fail to establish a new connection:[Errno 111] Connection refused'))
+```
+
+这个错误是因为 Docker 容器无法访问 Ollama 服务。localhost 通常指的是容器本身，而不是主机或其他容器。要解决此问题，您需要将 Ollama 服务暴露给网络。
 
 ### 在Linux上设置环境变量
 
@@ -104,3 +114,11 @@ Dify 支持接入 Ollama 部署的大型语言模型推理和 embedding 能力�
 ### 如何在我的网络上暴露Ollama？
 
 Ollama默认绑定127.0.0.1端口11434。通过`OLLAMA_HOST`环境变量更改绑定地址。
+
+## 如需获取 Ollama 更多信息，请参考
+
+For more information on Ollama, please refer to: 
+
+- [Ollama](https://github.com/jmorganca/ollama)
+- [Ollama FAQ](https://github.com/ollama/ollama/blob/main/docs/faq.md)
+

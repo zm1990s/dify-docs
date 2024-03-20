@@ -63,11 +63,17 @@ Dify supports integrating LLM and Text Embedding capabilities of large language 
 
     Enter `Prompt Eng.` page of the App that needs to be configured, select the `llava` model under the Ollama provider, and use it after configuring the model parameters.
 
-For more information on Ollama, please refer to: [https://github.com/jmorganca/ollama](https://github.com/jmorganca/ollama)
-
 ## FAQ
 
-For more information on Ollama, please refer to: [Ollama FAQ](https://github.com/ollama/ollama/blob/main/docs/faq.md)
+### ⚠️ If you are using docker to deploy Dify and Ollama, you may encounter the following error:
+
+```
+httpconnectionpool(host=127.0.0.1, port=11434): max retries exceeded with url:/cpi/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8562812c20>: fail to establish a new connection:[Errno 111] Connection refused'))
+
+httpconnectionpool(host=localhost, port=11434): max retries exceeded with url:/cpi/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8562812c20>: fail to establish a new connection:[Errno 111] Connection refused'))
+```
+
+This error occurs because the Ollama service is not accessible from the docker container. `localhost` usually refers to the container itself, not the host machine or other containers. To resolve this issue, you need to expose the Ollama service to the network.
 
 ### Setting environment variables on Mac
 
@@ -121,3 +127,10 @@ On windows, Ollama inherits your user and system environment variables.
 ## How can I expose Ollama on my network?
 
 Ollama binds 127.0.0.1 port 11434 by default. Change the bind address with the `OLLAMA_HOST` environment variable.
+
+## More Information
+
+For more information on Ollama, please refer to: 
+
+- [Ollama](https://github.com/jmorganca/ollama)
+- [Ollama FAQ](https://github.com/ollama/ollama/blob/main/docs/faq.md)
