@@ -35,7 +35,7 @@ Click the "Run Batch" tab to enter the batch run page.
 
 Click the Download Template button to download the template. Edit the template, fill in the content, and save as a `.csv` file.
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Step 3 Upload the file and run
 
@@ -49,7 +49,7 @@ If you need to export the generated content, you can click the download "button"
 
 Click the "Save" button below the generated results to save the running results. In the "Saved" tab, you can see all saved content.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Generate more similar results
 

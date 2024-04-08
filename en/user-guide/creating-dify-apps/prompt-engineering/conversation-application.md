@@ -22,7 +22,7 @@ Click the "Create Application" button on the homepage to create an application. 
 
 After the application is successfully created, it will automatically redirect to the application overview page. Click on the left-hand menu: “**Prompt Eng.**” to compose the application.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **2.1 Fill in Prompts**
 
@@ -44,19 +44,19 @@ To add the opening dialogue, click the "Add Feature" button in the upper left co
 
 And then edit the opening remarks:
 
-![](<../../../.gitbook/assets/image (15).png>)
+![](<../../../.gitbook/assets/image (15) (1).png>)
 
 **2.2 Adding Context**
 
 If an application wants to generate content based on private contextual conversations, it can use our [knowledge](../../../features/datasets/) feature. Click the "Add" button in the context to add a knowledge base.
 
-![](<../../../.gitbook/assets/image (9).png>)
+![](<../../../.gitbook/assets/image (9) (1).png>)
 
 **2.3 Debugging**
 
 We fill in the user input on the right side and debug the input content.
 
-![](<../../../.gitbook/assets/image (11).png>)
+![](<../../../.gitbook/assets/image (11) (1).png>)
 
 If the results are not satisfactory, you can adjust the prompts and model parameters. Click on the model name in the upper right corner to set the parameters of the model:
 

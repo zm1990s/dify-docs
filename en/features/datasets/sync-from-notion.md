@@ -39,11 +39,11 @@ Create an integration in your [integration's settings](https://www.notion.so/my-
 
 Click the " **New integration** " button, the type is Internal by default (cannot be modified), select the associated space, enter the name and upload the logo, and click "**Submit**" to create the integration successfully.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Once the integration is created, you can update its settings as needed under the **Capabilities** tab and click the "**Show**" button under **Secrets** and then copy the Secrets.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Copy it and back to the Dify source code , in the **.env** file configuration related environment variables, environment variables as follows:
 
@@ -57,11 +57,11 @@ Copy it and back to the Dify source code , in the **.env** file configuration re
 
 To toggle the switch to public settings, you need to **fill in additional information in the Organization Information** form below, including your company name, website, and Retargeting URL, and click the "Submit" button.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 After your integration has been successfully made public in your [integration’s settings page](https://www.notion.so/my-integrations), you will be able to access the integration’s secrets in the Secrets tab.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Back to the Dify source code , in the **.env** file configuration related environment variables , environment variables as follows:
 
