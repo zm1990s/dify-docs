@@ -30,13 +30,13 @@ Prompts are used to give a series of instructions and constraints to the AI resp
 
 The prompt we are filling in here is: `Translate the content to: {{language}}. The content is as follows:`
 
-![](<../../../.gitbook/assets/image (7) (1).png>)
+![](<../../../.gitbook/assets/image (7) (1) (1).png>)
 
 **2.2 Adding Context**
 
 If the application wants to generate content based on private contextual conversations, our [knowledge](../../../features/datasets/) feature can be used. Click the "Add" button in the context to add a knowledge base.
 
-![](<../../../.gitbook/assets/image (12) (1).png>)
+![](<../../../.gitbook/assets/image (12) (1) (1).png>)
 
 **2.3 Adding Future: Generate more like this**
 

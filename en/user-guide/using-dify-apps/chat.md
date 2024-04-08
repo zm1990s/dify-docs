@@ -32,7 +32,7 @@ Currently we support the following plugins:
 
 We can choose the plugins needed for this conversation before the conversation starts.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 If you use the Google search plugin, you need to configure the SerpAPI key.
 
@@ -48,7 +48,7 @@ Chat supports knowledge. After selecting the knowledge, the questions asked by t
 
 We can select the knowledge needed for this conversation before the conversation starts.
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### The process of thinking
 

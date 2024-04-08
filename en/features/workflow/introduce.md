@@ -9,11 +9,11 @@ Workflow reduces system complexity by breaking complex tasks into smaller steps 
 
 To address the complexity of user intent recognition in natural language inputs, Chatflow provides problem understanding nodes, such as question classification, question rewriting, sub-question splitting, etc. In addition, it will also provide LLM with the ability to interact with the external environment, i.e., tool invocation capability, such as online search, mathematical calculation, weather query, drawing, etc.
 
-<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 To solve complex business logic in automation and batch processing scenarios, Workflow provides a wealth of logic nodes, such as code nodes, IF/ELSE nodes, merge nodes, template conversion nodes, etc. In addition, it will also provide the ability to trigger by time and event, facilitating the construction of automated processes.
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Common Cases
 

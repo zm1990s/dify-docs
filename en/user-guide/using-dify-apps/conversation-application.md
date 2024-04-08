@@ -16,7 +16,7 @@ If you have the requirement to fill in variables when you apply the layout, you 
 
 Fill in the necessary content and click the "Start Chat" button to start chatting.
 
-<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Move to the AI's answer, you can copy the content of the conversation, and give the answer "like" and "dislike".
 
@@ -52,4 +52,4 @@ _Please make sure that the device environment you are using is authorized to use
 
 If the "Quotations and Attribution" feature is enabled during the application arrangement, the dialogue returns will automatically show the quoted knowledge document sources.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

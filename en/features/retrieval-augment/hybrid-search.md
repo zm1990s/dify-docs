@@ -29,7 +29,7 @@ In most text search scenarios, it's crucial to ensure that the most relevant res
 
 In Hybrid Search, vector and keyword indices are pre-established in the database. Upon user query input, the system searches for the most relevant text in documents using both search methods.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Hybrid Search</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Hybrid Search</p></figcaption></figure>
 
 "Hybrid Search" doesn't have a definitive definition; this article exemplifies it as a combination of Vector Search and Keyword Search. However, the term can also apply to other combinations of search algorithms. For instance, we could combine knowledge graph technology, used for retrieving entity relationships, with Vector Search.
 
