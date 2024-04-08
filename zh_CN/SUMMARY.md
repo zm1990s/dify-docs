@@ -50,7 +50,7 @@
   * [接入 LocalAI 部署的本地模型](guides/model-configuration/localai.md)
   * [接入 Ollama 部署的本地模型](guides/model-configuration/ollama.md)
 * [工作流](guides/workflow/README.md)
-  * [基本概念](guides/workflow/concept.md)
+  * [基本介绍](guides/workflow/introduce.md)
   * [节点说明](guides/workflow/node/README.md)
     * [开始](guides/workflow/node/start.md)
     * [结束](guides/workflow/node/end.md)
