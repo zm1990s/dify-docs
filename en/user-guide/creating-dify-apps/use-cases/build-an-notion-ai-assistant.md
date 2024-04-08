@@ -94,7 +94,7 @@ _I want you to act as an IT Expert in my Notion workspace, using your knowledge 
 
 It's recommended to initially enable the AI to actively furnish the users with a starter sentence, providing a clue as to what they can ask. Furthermore, activating the 'Speech to Text' feature can allow users to interact with your AI assistant using their voice.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Finally, Click the "Publish" button on the top right of the page. Now you can click the public URL in the "Overview" section to converse with your personalized AI assistant!
 

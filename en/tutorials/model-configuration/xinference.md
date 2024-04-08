@@ -27,18 +27,18 @@ There are two ways to deploy Xinference, namely [local deployment](https://githu
     ```
 
     Xinference will start a worker locally by default, with the endpoint: `http://127.0.0.1:9997`, and the default port is `9997`. By default, access is limited to the local machine only, but it can be configured with `-H 0.0.0.0` to allow access from any non-local client. To modify the host or port, you can refer to xinference's help information: `xinference-local --help`.
+
     > If you use the Dify Docker deployment method, you need to pay attention to the network configuration to ensure that the Dify container can access the endpoint of Xinference. The Dify container cannot access localhost inside, and you need to use the host IP address.
-    
 3.  Create and deploy the model
 
-    Visit `http://127.0.0.1:9997`, select the model and specification you need to deploy,  as shown below:
+    Visit `http://127.0.0.1:9997`, select the model and specification you need to deploy, as shown below:
 
-    <figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     As different models have different compatibility on different hardware platforms, please refer to [Xinference built-in models](https://inference.readthedocs.io/en/latest/models/builtin/index.html) to ensure the created model supports the current hardware platform.
 4.  Obtain the model UID
 
-    Copy model ID from `Running Models`  page, such as: `2c886330-8849-11ee-9518-43b0b8f40bea`
+    Copy model ID from `Running Models` page, such as: `2c886330-8849-11ee-9518-43b0b8f40bea`
 5.  After the model is deployed, connect the deployed model in Dify.
 
     In `Settings > Model Providers > Xinference`, enter:

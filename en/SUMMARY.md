@@ -43,6 +43,7 @@
   * [Prompt Template](features/prompt-engineering/prompt-template.md)
 * [Workflow](features/workflow/README.md)
   * [Introduce](features/workflow/introduce.md)
+  * [Key Concept](features/workflow/key-concept.md)
   * [Node](features/workflow/node/README.md)
     * [Start](features/workflow/node/start.md)
     * [End](features/workflow/node/end.md)

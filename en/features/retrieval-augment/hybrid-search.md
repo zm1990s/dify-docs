@@ -29,13 +29,13 @@ In most text search scenarios, it's crucial to ensure that the most relevant res
 
 In Hybrid Search, vector and keyword indices are pre-established in the database. Upon user query input, the system searches for the most relevant text in documents using both search methods.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Hybrid Search</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Hybrid Search</p></figcaption></figure>
 
 "Hybrid Search" doesn't have a definitive definition; this article exemplifies it as a combination of Vector Search and Keyword Search. However, the term can also apply to other combinations of search algorithms. For instance, we could combine knowledge graph technology, used for retrieving entity relationships, with Vector Search.
 
 Different search systems each excel at uncovering various subtle connections within texts (paragraphs, sentences, words), including precise relationships, semantic relationships, thematic relationships, structural relationships, entity relationships, temporal relationships, and event relationships. It's safe to say that no single search mode is suitable for all scenarios. **Hybrid Search, by integrating multiple search systems, achieves a complementarity among various search technologies.**
 
-## Vector Search&#x20;
+## Vector Search
 
 Definition: Vector Search involves generating query embeddings and then searching for text chunks that most closely match these embeddings in terms of vector representation.
 
@@ -47,7 +47,7 @@ Definition: Vector Search involves generating query embeddings and then searchin
 
 **Rerank Model:** After configuring the Rerank model's API key on the "Model Provider" page, you can enable the "Rerank Model" in the search settings. The system then performs a semantic re-ranking of the document results that have been recalled after semantic search, optimizing the order of these results. Once the Rerank model is set up, the TopK and Score threshold settings are only effective in the Rerank step.
 
-## Full-Text Search&#x20;
+## Full-Text Search
 
 Definition: Full-Text Search involves indexing all the words in a document, enabling users to query any term and retrieve text chunks that contain these terms.
 
@@ -67,7 +67,7 @@ Hybrid Search operates by concurrently executing Full-Text Search and Vector Sea
 
 **Rerank Model:** After configuring the Rerank model's API key on the "Model Supplier" page, you can enable the "Rerank Model" in the search settings. The system will perform a semantic re-ranking of the document results retrieved through hybrid search, thereby optimizing the order of these results. Once the Rerank model is set up, the TopK and any Score threshold settings are only applicable during the Rerank step.
 
-## Setting the Search Mode When Creating a Knowledge&#x20;
+## Setting the Search Mode When Creating a Knowledge
 
 To set the search mode when creating a knowledge base, navigate to the "Knowledge -> Create Knowledge" page. There, you can configure different search modes in the retrieval settings section.
 
