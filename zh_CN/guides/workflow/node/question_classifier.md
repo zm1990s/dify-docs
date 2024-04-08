@@ -2,7 +2,7 @@
 
 问题分类器定义用户问题的分类条件，LLM 能够根据分类描述定义对话的进展方式。如图所示，在一个典型的客服机器人场景中，问题分类器可以作为知识库检索的前置步骤，对用户意图进行识别，分类处理后能够有效提高知识库的召回效果。
 
-<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=MzY2NmM5MzljOGEyMTNkZDg3YWE5YTgwZjI4MDgyZTVfbkc2b1NJS0FpcEE4TXhOeTAxdlI4UHhkajRYQzFRRFlfVG9rZW46R01IN2JEd3NCb2R0ZHd4aEl2NWNwNXpibnhiXzE3MTI1ODI1MDc6MTcxMjU4NjEwN19WNA" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=MTAzNTA2OGVlM2M3YzBkZGNkNzU5YzhiYzY4YjY0MGVfRkZvaEpPbktYaFd3V0kwRXdPSEE4Y3FWNDdqdTdTOEVfVG9rZW46R01IN2JEd3NCb2R0ZHd4aEl2NWNwNXpibnhiXzE3MTI1ODY1NDU6MTcxMjU5MDE0NV9WNA" alt=""><figcaption></figcaption></figure>
 
 配置问题分类器节点主要包含三个部分：
 

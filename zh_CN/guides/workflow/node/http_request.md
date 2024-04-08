@@ -1,2 +1,9 @@
 # HTTP 请求
 
+HTTP请求节点是一个强大的工具，它让你能够向指定的网络地址发送定制化的HTTP请求，实现与各种外部服务的互联互通。无论是GET、POST还是其他常见的HTTP方法，都可以通过这个节点实现。你可以精确控制请求的各个方面，包括URL、请求头、查询参数、请求体内容以及认证信息。&#x20;
+
+<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTcwMzBkYWFkMTg3YzM4YTZhNzYwNTNhNWJiMzdhZDFfeHhXUkt5MFlpbmJ2a3VtRGNLdzZtVHF4T3JnMGhFS1pfVG9rZW46WGJwOGJuQ0pJb245TFN4aUtXUmNuUktFblVjXzE3MTI1ODY2MzU6MTcxMjU5MDIzNV9WNA" alt="" width="375"><figcaption></figcaption></figure>
+
+这个节点的一个实用特性是能够根据场景需要，在请求的不同部分动态插入变量。比如在处理客户支持请求时，你可以将用户名或客户ID等变量嵌入到请求中，以定制化自动回复信息或获取特定客户的相关信息。
+
+HTTP请求的返回值包括响应体、状态码、响应头和文件。值得注意的是，如果响应中包含了文件（目前仅支持图片类型），这个节点能够自动将文件保存下来，供流程后续步骤使用。这样的设计不仅提高了处理效率，也使得处理带有文件的响应变得简单直接。

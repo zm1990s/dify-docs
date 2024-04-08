@@ -6,7 +6,7 @@ description: LLM
 
 调用大语言模型回答问题或者对自然语言进行处理。你可以在 LLM 节点中选择合适的模型，编写提示词，设置提示词中引用的上下文，配置记忆开关、设置记忆窗口的大小等。
 
-<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=MDUxNGRkNDdkZjYwNmZkNGY1ZTNiYTAwOGFkMjEzOGVfZFhqR29ibjZKZVExeHVqa0poYk5wTHhOOVpMSjVNUnVfVG9rZW46Wlo4YWJTUjlUb29YU014b200bGNZUzZkbmlmXzE3MTI1ODE3NzI6MTcxMjU4NTM3Ml9WNA" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=MjRjMDI1NDE1MDE2MjUzYjc1N2RlYzVhOWZjNGViMTdfbUlHMkdod0VLdXFWbFozNFdNNDAwYXJvd2xjQTRrb0lfVG9rZW46Wlo4YWJTUjlUb29YU014b200bGNZUzZkbmlmXzE3MTI1ODYzODk6MTcxMjU4OTk4OV9WNA" alt=""><figcaption></figcaption></figure>
 
 配置 LLM 节点主要包括两个部分：
 
@@ -17,7 +17,7 @@ description: LLM
 
 在选择适合任务的模型之前，你需要在「系统设置—模型供应商」内完成模型配置。具体配置方式可以参考[模型配置说明](https://docs.dify.ai/v/zh-hans/guides/model-configuration)。选择好模型后可以对模型参数进行配置。
 
-<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2QzOGJlZjA2ODY2YTBhMjNhOGY1OTI0ZGFmYTlkZDVfbmViRmtDck5DdFBoZGQ2aHE1R3JrNVJjWEJsc0hJdGZfVG9rZW46VWpUemJFZkN3b1lyWnV4MkExY2N3YzRlblRjXzE3MTI1ODE3NzI6MTcxMjU4NTM3Ml9WNA" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTZlZjM5ZjliOTYxNThkNWEyNDZlNmEzYTg2MzhkZjRfaHRRc2FRd0hPYXRFOUJuMkVDRUdTT0lXb2tmUDJOUkRfVG9rZW46VWpUemJFZkN3b1lyWnV4MkExY2N3YzRlblRjXzE3MTI1ODY0MDY6MTcxMjU5MDAwNl9WNA" alt=""><figcaption></figcaption></figure>
 
 #### **编写提示词**
 
@@ -25,7 +25,7 @@ description: LLM
 
 以知识库问答情景为例，在「上下文」中关联知识库检索节点的「结果」变量后，在提示词中插入「上下文」特殊变量即可将从知识库从检索到的文本内容作为模型输入的上下文背景信息。
 
-<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=NmU5NDQ2YzE3ODVkNTMyOGEwZjJlNjY4NzU5OThkYmFfR3F4TU02THJLTldBM2g5REFuWkQxS2w3ZjBzVW5Da21fVG9rZW46Uk5HOWJDb1NJb0dtRlZ4dnBuS2NKNk53blRnXzE3MTI1ODE3NzI6MTcxMjU4NTM3Ml9WNA" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=YjUyZmEyOTUzNjA3MDhjMmExNmRlODVjZGNiYWI5YzVfTm1DSmNGM0JYaDBJRG5ZUHpnaUY2S1kyMm81RU00aHNfVG9rZW46Uk5HOWJDb1NJb0dtRlZ4dnBuS2NKNk53blRnXzE3MTI1ODY0Mzc6MTcxMjU5MDAzN19WNA" alt=""><figcaption></figcaption></figure>
 
 在提示词编辑器中，你可以通过输入“/”或者“{”呼出变量插入菜单，将特殊变量块或者前置流程节点中的变量插入到提示词中作为上下文内容。
 
@@ -33,7 +33,7 @@ description: LLM
 
 如果选择补全型模型，系统预置了提示词模板用于实现对话型应用，你可以自定义提示词的内容，在提示词合适的位置内输入“/”或者“{”插入特殊变量块：「会话历史」「上下文」来实现更丰富的会话功能。
 
-<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=MDUxMGFhZjAyOTExZjkxYjgwM2Y2MTUwZDRlZDQ4OTRfSUlJbFFkR0JIOXFodVRGZENsUjRLYVdSVXl2QW9yZUFfVG9rZW46UEUxSmJXdDZRb1pHU2N4cmFMRmNWR1BNbnFiXzE3MTI1ODE3NzI6MTcxMjU4NTM3Ml9WNA" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=YmQwNDkwNDBmZjM1MjQwN2FkOTZjZmQ1NDllYmIxMDRfa0l0anQ2TEk3aVhkMjlCMnhmV1loZE5xT1d4ak5Od3hfVG9rZW46UEUxSmJXdDZRb1pHU2N4cmFMRmNWR1BNbnFiXzE3MTI1ODY0NjU6MTcxMjU5MDA2NV9WNA" alt=""><figcaption></figcaption></figure>
 
 #### **记忆开关设置**
 
