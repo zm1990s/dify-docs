@@ -1,6 +1,6 @@
 # 知识检索
 
-知识库检索节点用于从知识库中查询与用户问题相关的文本内容。
+知识库检索节点用于从 Dify 知识库中查询与用户问题相关的文本内容，可作为后续 LLM 的上下文进行回答。
 
 <figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=NmJmZTY0NDUzOGZkYTFmOTQ5YTcwZWRiMzhiODY5MDNfeVhsVTZPTkhaZzZjR3ZZcWt6bldoQ1g2Y0ljc1N0eUdfVG9rZW46QmFFOWJzMXJEb2tWWjl4YUZBUWM5dU5nbnhkXzE3MTI1ODY0OTI6MTcxMjU5MDA5Ml9WNA" alt=""><figcaption></figcaption></figure>
 

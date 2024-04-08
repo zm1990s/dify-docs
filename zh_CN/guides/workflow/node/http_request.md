@@ -1,6 +1,8 @@
 # HTTP 请求
 
-HTTP请求节点是一个强大的工具，它让你能够向指定的网络地址发送定制化的HTTP请求，实现与各种外部服务的互联互通。无论是GET、POST还是其他常见的HTTP方法，都可以通过这个节点实现。你可以精确控制请求的各个方面，包括URL、请求头、查询参数、请求体内容以及认证信息。&#x20;
+HTTP 请求可请求任意可访问的 URL 获取 status\_code, body, headers, files(当前仅支持图片)，适用于获取外部检索结果、webhook、生成图片等情景。
+
+它让你能够向指定的网络地址发送定制化的 HTTP 请求，实现与各种外部服务的互联互通。无论是 GET、POST 还是其他常见的HTTP方法，都可以通过这个节点实现。你可以精确控制请求的各个方面，包括URL、请求头、查询参数、请求体内容以及认证信息。&#x20;
 
 <figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTcwMzBkYWFkMTg3YzM4YTZhNzYwNTNhNWJiMzdhZDFfeHhXUkt5MFlpbmJ2a3VtRGNLdzZtVHF4T3JnMGhFS1pfVG9rZW46WGJwOGJuQ0pJb245TFN4aUtXUmNuUktFblVjXzE3MTI1ODY2MzU6MTcxMjU5MDIzNV9WNA" alt="" width="375"><figcaption></figcaption></figure>
 
