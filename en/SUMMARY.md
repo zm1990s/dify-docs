@@ -42,7 +42,7 @@
 * [Prompting Expert Mode](features/prompt-engineering/README.md)
   * [Prompt Template](features/prompt-engineering/prompt-template.md)
 * [Workflow](features/workflow/README.md)
-  * [Concept](features/workflow/concept.md)
+  * [Introduce](features/workflow/introduce.md)
   * [Node](features/workflow/node/README.md)
     * [Start](features/workflow/node/start.md)
     * [End](features/workflow/node/end.md)
