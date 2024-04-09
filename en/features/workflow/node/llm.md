@@ -31,8 +31,14 @@ If you opt for a completion model, the system provides preset prompt templates f
 
 <figure><img src="../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
-**Memory Toggle Settings** In conversational applications (Chatflow), the LLM node defaults to enabling system memory settings. In multi-turn dialogues, the system stores historical dialogue messages and passes them into the model. In workflow applications (Workflow), system memory is turned off by default, and no memory setting options are provided.
+**Memory Toggle Settings**&#x20;
 
-**Memory Window Settings** If the memory window setting is off, the system dynamically passes historical dialogue messages according to the model's context window. With the memory window setting on, you can configure the number of historical dialogue messages to pass based on your needs.
+In conversational applications (Chatflow), the LLM node defaults to enabling system memory settings. In multi-turn dialogues, the system stores historical dialogue messages and passes them into the model. In workflow applications (Workflow), system memory is turned off by default, and no memory setting options are provided.
 
-**Dialogue Role Name Settings** Due to differences in model training phases, different models adhere to role name commands to varying degrees, such as Human/Assistant, Human/AI, 人类/助手, etc. To adapt to the prompt response effects of multiple models, the system allows setting dialogue role names, modifying the role prefix in conversation history.
+**Memory Window Settings**&#x20;
+
+If the memory window setting is off, the system dynamically passes historical dialogue messages according to the model's context window. With the memory window setting on, you can configure the number of historical dialogue messages to pass based on your needs.
+
+**Dialogue Role Name Settings**&#x20;
+
+Due to differences in model training phases, different models adhere to role name commands to varying degrees, such as Human/Assistant, Human/AI, 人类/助手, etc. To adapt to the prompt response effects of multiple models, the system allows setting dialogue role names, modifying the role prefix in conversation history.
