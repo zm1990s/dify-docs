@@ -11,7 +11,7 @@ Configuring an LLM node primarily involves two steps:
 
 **Model Configuration**&#x20;
 
-Before selecting a model suitable for your task, you must complete the model configuration in "System Settings—Model Provider". The specific configuration method can be referenced in the [model configuration instructions](https://docs.dify.ai/v/zh-hans/guides/model-configuration). After selecting a model, you can configure its parameters.
+Before selecting a model suitable for your task, you must complete the model configuration in "System Settings—Model Provider". The specific configuration method can be referenced in the [model configuration instructions](https://docs.dify.ai/tutorials/model-configuration#model-integration-settings). After selecting a model, you can configure its parameters.
 
 <figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
