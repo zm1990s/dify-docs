@@ -10,7 +10,7 @@
 
 示例1：输出纯文本
 
-<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=YjA0YmM5YTRhODUxZTAzYzc5ODA0NjgxOWNkYjFkOTlfQkJ5ekVUQ0NzNFFucUVzN2xVYkExazhXMmVIRnhPemNfVG9rZW46UDNCRWJ2NEl6b3J2Y1V4dzFLVmNuUzFrbnBqXzE3MTI1ODYzNjU6MTcxMjU4OTk2NV9WNA" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/output (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 示例2：输出图片+LLM回复
 

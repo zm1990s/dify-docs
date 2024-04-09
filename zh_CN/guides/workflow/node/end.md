@@ -6,8 +6,8 @@
 
 **单路执行示例：**
 
-<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=ODc1MDQ3OWMzOWI3NjkzNTVkZjc3ZTJiNDNkMmYzOTZfQ0phYk5QWG5yOTZiUFVJUXBtOTZMazFtbVdhVE0xQ0ZfVG9rZW46QVVqcmJmWElHb1pVdUJ4cnBET2NjRHFpbmhjXzE3MTI1ODU1ODY6MTcxMjU4OTE4Nl9WNA" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/output (5).png" alt=""><figcaption></figcaption></figure>
 
 **多路执行示例：**
 
-<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=MTc2MTYzOTIxNWVmNWJjNzU3YmViNmUzODY2NGM2M2NfOVR4a0k0Y3ZQYUJJempuMTl4Rm5oQnl0YVRLWWlQVTFfVG9rZW46UkRPdGI2Yngwb01wdGJ4WlBrWWM4dW15bmdpXzE3MTI1ODU2MDE6MTcxMjU4OTIwMV9WNA" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/output (1) (3).png" alt=""><figcaption></figcaption></figure>

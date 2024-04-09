@@ -42,8 +42,8 @@
 
 Chatflow 入口：
 
-<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=ODM3ZGU4MDk2YWVhMzU5YjI5MzhjODJkM2NjMmVjMDdfYVBlbEtpQk95ZUFkOGVqY0NWR1ZFZXI2Q2ZiQzA5Y1pfVG9rZW46Uks4bmJ6T3Npb1JtU3J4TlJSZmNFdE1Xbm5mXzE3MTI1ODU0ODk6MTcxMjU4OTA4OV9WNA" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/output.png" alt=""><figcaption></figcaption></figure>
 
 Workflow 入口：
 
-<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=M2ZlNTgyNTRmNzI2MDI3Njg4OTMzNjZjODkzNTc5MDhfWDUyRGFVSlR4RUFHc1l3Rk1DZmRnUXRRcldQd0xzMXVfVG9rZW46SEhlWGJyM0s0b1FkNTd4OTFSa2NJNU5jbjVwXzE3MTI1ODU1MTI6MTcxMjU4OTExMl9WNA" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/output (4).png" alt=""><figcaption></figcaption></figure>
