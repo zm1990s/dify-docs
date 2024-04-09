@@ -44,7 +44,7 @@
 * [Workflow](features/workflow/README.md)
   * [Introduce](features/workflow/introduce.md)
   * [Key Concept](features/workflow/key-concept.md)
-  * [Node](features/workflow/node/README.md)
+  * [Nodes](features/workflow/node/README.md)
     * [Start](features/workflow/node/start.md)
     * [End](features/workflow/node/end.md)
     * [Answer](features/workflow/node/answer.md)
