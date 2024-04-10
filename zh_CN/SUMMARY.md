@@ -98,7 +98,6 @@
 * [应用案例](learn-more/use-cases/README.md)
   * [如何训练出专属于“你”的问答机器人？](learn-more/use-cases/train-a-qa-chatbot-that-belongs-to-you.md)
   * [教你十几分钟不用代码创建 Midjourney 提示词机器人](learn-more/use-cases/create-a-midjoureny-prompt-word-robot-with-zero-code.md)
-  * [零代码，使用 Dify 两分钟接入企业微信](learn-more/use-cases/integrate-with-wecom-using-dify.md)
   * [构建一个 Notion AI 助手](learn-more/use-cases/build-an-notion-ai-assistant.md)
   * [如何在几分钟内创建一个带有业务数据的官网 AI 智能客服](learn-more/use-cases/create-an-ai-chatbot-with-business-data-in-minutes.md)
   * [使用全套开源工具构建 LLM 应用实战：在 Dify 调用 Baichuan 开源模型能力](learn-more/use-cases/practical-implementation-of-building-llm-applications-using-a-full-set-of-open-source-tools.md)
