@@ -202,3 +202,12 @@ VECTOR_STORE: weaviate
 ```
 flask vdb-migrarte # or docker exec -it docker-api-1 flask vdb-migrarte
 ```
+
+### 16. Why is SYS_ADMIN permission needed?**
+
+#### **Why does the sandbox service need SYS_ADMIN permission?**
+
+The sandbox service is based on `Seccomp` for sandbox isolation, but also, Docker is based on `Seccomp` for resource isolation. In Docker, Linux Seccomp BPF is disabled by default, which prevents the use of `Seccomp` in containers, so SYS_ADMIN permission is required to enable `Seccomp`.
+
+#### **How does the sandbox service ensure security?**
+As for the security of the sandbox service, we disabled all `file system`, `network`, `IPC`, `PID`, `user`, `mount`, `UTS`, and system access capabilities of all processes in the sandbox to ensure that malicious code is not executed. At the same time, we also isolate the files and network in the container to ensure that even if the code is executed, it cannot harm the system.
