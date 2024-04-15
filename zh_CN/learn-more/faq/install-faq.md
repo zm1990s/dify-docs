@@ -228,3 +228,11 @@ VECTOR_STORE: weaviate
 ```
 flask vdb-migrarte # or docker exec -it docker-api-1 flask vdb-migrarte
 ```
+
+### 18. 为什么Sandbox需要SYS_ADMIN权限？
+
+#### 为什么需要SYS_ADMIN权限？
+Sandbox基于`Seccomp`进行沙箱隔离，而Docker也是基于`Seccomp`进行资源隔离，并且，在Docker中，Linux Seccomp BPF是被默认禁用的，导致无法在容器中使用`Seccomp`，因此，需要SYS_ADMIN权限来启用`Seccomp`。
+
+#### 安全性问题
+至于安全性问题，我们禁用了Sandbox中所有进程的文件、网络、IPC、PID、用户、mount、UTS、系统访问等能力，以确保恶意代码不会被执行，同时，我们还额外隔离了容器中的文件和网络，以确保在即使代码被执行，也无法对系统造成危害。

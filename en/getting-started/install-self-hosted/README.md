@@ -68,6 +68,11 @@ The Dify Self hosted Edition, which is the open-source on [GitHub](https://githu
 
     ![](<../../.gitbook/assets/image (33).png>)
 
+*   **Why is SYS_ADMIN permission needed?**
+        The sandbox service is based on `Seccomp` for sandbox isolation, but also, Docker is based on `Seccomp` for resource isolation. In Docker, Linux Seccomp BPF is disabled by default, which prevents the use of `Seccomp` in containers, so SYS_ADMIN permission is required to enable `Seccomp`.
+
+        As for the security of the sandbox service, we disabled all `file system`, `network`, `IPC`, `PID`, `user`, `mount`, `UTS`, and system access capabilities of all processes in the sandbox to ensure that malicious code is not executed. At the same time, we also isolate the files and network in the container to ensure that even if the code is executed, it cannot harm the system.
+
 ### Contributing
 
 To ensure proper review, all code contributions - including those from contributors with direct commit access - must be submitted via pull requests and approved by the core development team prior to being merged.
