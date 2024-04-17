@@ -70,3 +70,7 @@ docker compose down
 docker compose pull
 docker compose up -d
 ```
+
+### Access Dify
+
+Finally, access [http://loacalhost/install](http://loacalhost/install) to use the deployed Dify.

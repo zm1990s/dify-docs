@@ -1,10 +1,10 @@
-# Docker Compose 部署
+# Docker Compose Deployment
 
-### 前置条件
+### Prerequisites
 
-| 操作系统                       | 软件                                                             | 说明                                                                                                                                                                                   |
+| Operating System            | Software                                                             | Description                                                                                                                                                                                   |
 | -------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| macOS 10.14 or later       | Docker Desktop                                                 | 将 Docker 虚拟机（VM）设置为使用至少 2 个虚拟 CPU（vCPU）和 8 GB 的初始内存。否则，安装可能会失败。有关更多信息，请参阅[在 Mac 上安装 Docker Desktop](https://docs.docker.com/desktop/mac/install/)。                                   |
+| macOS 10.14 or later       | Docker Desktop                                                 | Set the Docker Virtual Machine (VM) to use at least 2 virtual CPUs (vCPU) and 8 GB of initial memory. Otherwise, the installation may fail. For more information, see [Install Docker Desktop on Mac](https://docs.docker.com/desktop/mac/install/).                                   |
 | Linux platforms            | <p>Docker 19.03 or later<br>Docker Compose 1.25.1 or later</p> | 请参阅[安装 Docker](https://docs.docker.com/engine/install/) 和[安装 Docker Compose](https://docs.docker.com/compose/install/) 以获取更多信息。                                                      |
 | Windows with WSL 2 enabled | <p>Docker Desktop<br></p>                                      | 我们建议将源代码和其他数据绑定到 Linux 容器中时，将其存储在 Linux 文件系统中，而不是 Windows 文件系统中。有关更多信息，请参阅[使用 WSL 2 后端在 Windows 上安装 Docker Desktop](https://docs.docker.com/desktop/windows/install/#wsl-2-backend)。 |
 
@@ -64,9 +64,7 @@ docker-worker-1     langgenius/dify-api:0.3.2          "/entrypoint.sh"         
 进入 dify 源代码的 docker 目录，按顺序执行以下命令：
 
 ```bash
-cd dify/docker
+/installcd dify/docker
 git pull origin main
 docker compose down
-docker compose pull
-docker compose up -d
-```
+do### 访问 Difyll在浏览器中输入 `http://localhost` 访问 Dify。
