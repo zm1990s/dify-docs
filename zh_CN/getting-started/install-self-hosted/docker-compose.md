@@ -64,7 +64,12 @@ docker-worker-1     langgenius/dify-api:0.3.2          "/entrypoint.sh"         
 进入 dify 源代码的 docker 目录，按顺序执行以下命令：
 
 ```bash
-/installcd dify/docker
+cd dify/docker
 git pull origin main
 docker compose down
-do### 访问 Difyll在浏览器中输入 `http://localhost` 访问 Dify。
+docker compose pull
+docker compose up -d
+```
+### Access Dify
+
+访问 Difyll在浏览器中输入 `http://localhost` 访问 Dify。
