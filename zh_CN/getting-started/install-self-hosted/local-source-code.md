@@ -178,7 +178,7 @@ Web 前端服务启动需要用到 [Node.js v18.x (LTS)](http://nodejs.org) 、[
     ```
     # For production release, change this to PRODUCTION
     NEXT_PUBLIC_DEPLOY_ENV=DEVELOPMENT
-    # The deployment edition, SELF_HOSTED or CLOUD
+    # The deployment edition, SELF_HOSTED
     NEXT_PUBLIC_EDITION=SELF_HOSTED
     # The base URL of console application, refers to the Console base URL of WEB service if console domain is
     # different from api or web app domain.

@@ -2,19 +2,6 @@
 
 ### 公共变量
 
-#### EDITION
-
-部署的版本类型：
-
-* `SELF_HOSTED`：自部署版本
-  * 仅支持单团队/租户模式
-  * 只能使用邮箱和密码方式登录
-  * 无试用托管 OpenAI API-Key 功能
-* `CLOUD`：云端版本
-  * 支持多团队/租户模式
-  * 无法使用邮箱和密码方式登录，仅支持 GitHub、Google 授权登录。
-  * 有 200 次试用托管 OpenAI API-Key 功能
-
 #### CONSOLE\_API\_URL
 
 控制台 API 后端 URL，用于拼接授权回调，传空则为同域。范例：`https://api.console.dify.ai`。
@@ -89,10 +76,6 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 
 是否开启检查版本策略，若设置为 false，则不调用 `https://updates.dify.ai` 进行版本检查。由于目前国内无法直接访问基于 CloudFlare Worker 的版本接口，设置该变量为空，可以屏蔽该接口调用。
 
-#### OPENAI\_API\_BASE
-
-用于更改 OpenAI 基础地址，默认为 https://api.openai.com/v1。 在国内无法访问 OpenAI，替换国内镜像地址，或者本地模型提供 OpenAI 兼容 API 时，可替换使用。
-
 #### 容器启动相关配置
 
 仅在使用 docker 镜像或者 docker-compose 启动时有效。
@@ -120,7 +103,7 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
     Celery worker 数量，默认为 1，按需设置。
 *   HTTP\_PROXY
 
-    HTTP 代理地址，用于解决国内无法访问 OpenAI、HuggingFace 的问题。注意，若代理部署在宿主机(例如```http://127.0.0.1:7890```)，此处代理地址应当和接入本地模型时一样，使用docker容器内部的宿主机地址（例如```http://192.168.1.100:7890```或```http://172.17.0.1:7890```）。
+    HTTP 代理地址，用于解决国内无法访问 OpenAI、HuggingFace 的问题。注意，若代理部署在宿主机(例如`http://127.0.0.1:7890`)，此处代理地址应当和接入本地模型时一样，使用docker容器内部的宿主机地址（例如`http://192.168.1.100:7890`或`http://172.17.0.1:7890`）。
 *   HTTPS\_PROXY
 
     HTTPS 代理地址，用于解决国内无法访问 OpenAI、HuggingFace 的问题。同上。
@@ -185,14 +168,13 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 
     存储设施类型
 
-    * local（默认）
+    *   local（默认）
 
         本地文件存储，若选择此项则需要设置下方 `STORAGE_LOCAL_PATH` 配置。
-    * s3
+    *   s3
 
         S3 对象存储，若选择此项则需要设置下方 S3\_ 开头的配置。
-
-    * azure-blob
+    *   azure-blob
 
         Azure Blob 存储，若选择此项则需要设置下方 AZURE\_BLOB\_ 开头的配置。
 *   STORAGE\_LOCAL\_PATH
@@ -203,10 +185,10 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 * S3\_ACCESS\_KEY：S3 Access Key
 * S3\_SECRET\_KEY：S3 Secret Key
 * S3\_REGION：S3 地域信息，如：us-east-1
-* AZURE_BLOB_ACCOUNT_NAME: your-account-name 如 'difyai'
-* AZURE_BLOB_ACCOUNT_KEY: your-account-key 如 'difyai'
-* AZURE_BLOB_CONTAINER_NAME: your-container-name 如 'difyai-container'
-* AZURE_BLOB_ACCOUNT_URL: 'https://<your_account_name>.blob.core.windows.net'
+* AZURE\_BLOB\_ACCOUNT\_NAME: your-account-name 如 'difyai'
+* AZURE\_BLOB\_ACCOUNT\_KEY: your-account-key 如 'difyai'
+* AZURE\_BLOB\_CONTAINER\_NAME: your-container-name 如 'difyai-container'
+* AZURE\_BLOB\_ACCOUNT\_URL: 'https://\<your\_account\_name>.blob.core.windows.net'
 
 #### 向量数据库配置
 
@@ -255,7 +237,7 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 *   MILVUS\_PASSWORD
 
     Milvus 密码配置，默认为空。
-*   MILVUS_SECURE
+*   MILVUS\_SECURE
 
     Milvus 是否使用 SSL 连接，默认 false。
 
@@ -267,9 +249,6 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 *   UPLOAD\_FILE\_BATCH\_LIMIT
 
     每次上传文件数上限，默认 5 个。
-*   TENANT\_DOCUMENT\_COUNT
-
-    团队可上传文件数限制，默认 100。
 *   ETL\_TYPE
 
     **可使用的枚举类型包括：**
@@ -317,60 +296,26 @@ Notion 集成配置，变量可通过申请 Notion integration 获取：[https:/
 * NOTION\_CLIENT\_SECRET
 
 #### 邮件相关配置
-*   MAIL_TYPE
-    * resend
-        *   MAIL_DEFAULT_SEND_FROM  
-          发件人的电子邮件名称，例如：no-reply [no-reply@dify.ai](mailto:no-reply@dify.ai)，非必需。
-        *   RESEND_API_KEY  
-          用于 Resend 邮件提供程序的 API 密钥，可以从 API 密钥获取。
-    * smtp
-        *   SMTP_SERVER  
-          SMTP 服务器地址
-        *   SMTP_PORT  
-            SMTP 服务器端口号
-        *   SMTP_USERNAME  
-            SMTP 用户名
-        *   SMTP_PASSWORD  
-            SMTP 密码
-        *   SMTP_USE_TLS  
-            是否使用 TLS，默认为 false
-        *   MAIL_DEFAULT_SEND_FROM  
-            发件人的电子邮件名称，例如：no-reply [no-reply@dify.ai](mailto:no-reply@dify.ai)，非必需。
 
-#### 第三方授权设置
-
-仅云端版可用。
-
-* GITHUB\_CLIENT\_ID：GitHub 授权登录 Client ID
-* GITHUB\_CLIENT\_SECRET：GitHub 授权登录 Client Secret
-* GOOGLE\_CLIENT\_ID：Google 授权登录 Client ID
-* GOOGLE\_CLIENT\_SECRET：Google 授权登录 Client Secret
-
-#### 平台托管模型相关配置
-
-仅云端版可用，用于模型托管配置。
-
-* HOSTED\_OPENAI\_API\_KEY：OpenAI 托管服务的 API 密钥
-* HOSTED\_OPENAI\_API\_BASE：OpenAI 托管服务的 API 基础地址，默认为空，即使用：`https://api.openai.com/v1`
-* HOSTED\_OPENAI\_API\_ORGANIZATION：OpenAI 托管服务的组织 ID，默认为空
-* HOSTED\_OPENAI\_TRIAL\_ENABLED：启用 OpenAI 托管试用服务，默认 False
-* HOSTED\_OPENAI\_QUOTA\_LIMIT：OpenAI 托管服务的默认试用配额（单位：调用次数），默认 200 次调用
-* HOSTED\_OPENAI\_PAID\_ENABLED：启用 OpenAI 托管付费服务，默认 False
-* HOSTED\_OPENAI\_PAID\_STRIPE\_PRICE\_ID：OpenAI 托管付费服务的 Stripe 价格 ID
-* HOSTED\_OPENAI\_PAID\_INCREASE\_QUOTA：OpenAI 托管付费服务的支付后，增加配额数量
-* HOSTED\_AZURE\_OPENAI\_ENABLED：启用 Azure OpenAI 托管服务，默认 False
-* HOSTED\_AZURE\_OPENAI\_API\_KEY：Azure OpenAI 托管服务的 API 密钥
-* HOSTED\_AZURE\_OPENAI\_API\_BASE：Azure OpenAI 托管服务的 API 基础地址
-* HOSTED\_AZURE\_OPENAI\_QUOTA\_LIMIT：Azure OpenAI 托管服务的默认试用配额（单位：调用次数）
-* HOSTED\_ANTHROPIC\_API\_BASE：Anthropic 托管服务的 API 基础地址，默认为空
-* HOSTED\_ANTHROPIC\_API\_KEY：Anthropic 托管服务的 API 密钥
-* HOSTED\_ANTHROPIC\_TRIAL\_ENABLED：启用 Anthropic 托管试用服务，默认 False
-* HOSTED\_ANTHROPIC\_QUOTA\_LIMIT：Anthropic 托管服务的默认试用配额（单位：tokens）
-* HOSTED\_ANTHROPIC\_PAID\_ENABLED：启用 Anthropic 托管付费服务，默认 False
-* HOSTED\_ANTHROPIC\_PAID\_STRIPE\_PRICE\_ID：Anthropic 托管付费服务的 Stripe 价格 ID
-* HOSTED\_ANTHROPIC\_PAID\_INCREASE\_QUOTA：Anthropic 托管付费服务的配额增加数量
-* HOSTED\_ANTHROPIC\_PAID\_MIN\_QUANTITY：Anthropic 托管付费服务的最小购买份数
-* HOSTED\_ANTHROPIC\_PAID\_MAX\_QUANTITY：Anthropic 托管付费服务的最大购买份数
+* MAIL\_TYPE
+  * resend
+    * MAIL\_DEFAULT\_SEND\_FROM\
+      发件人的电子邮件名称，例如：no-reply [no-reply@dify.ai](mailto:no-reply@dify.ai)，非必需。
+    * RESEND\_API\_KEY\
+      用于 Resend 邮件提供程序的 API 密钥，可以从 API 密钥获取。
+  * smtp
+    * SMTP\_SERVER\
+      SMTP 服务器地址
+    * SMTP\_PORT\
+      SMTP 服务器端口号
+    * SMTP\_USERNAME\
+      SMTP 用户名
+    * SMTP\_PASSWORD\
+      SMTP 密码
+    * SMTP\_USE\_TLS\
+      是否使用 TLS，默认为 false
+    * MAIL\_DEFAULT\_SEND\_FROM\
+      发件人的电子邮件名称，例如：no-reply [no-reply@dify.ai](mailto:no-reply@dify.ai)，非必需。
 
 #### 其他
 
