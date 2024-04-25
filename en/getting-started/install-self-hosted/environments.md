@@ -2,19 +2,6 @@
 
 ### Common Variables
 
-#### EDITION
-
-Deployment version.
-
-* `SELF_HOSTED`: Self-hosted version
-  * Only supports single team/tenant mode
-  * Can only use email and password to log in
-  * No trial hosted OpenAI API-Key feature
-* `CLOUD`: Cloud version
-  * Supports multi-team/tenant mode
-  * Unable to log in using email and password, only supports GitHub, Google authorization login.
-  * Has 200 trials hosted OpenAI API-Key feature
-
 #### CONSOLE\_API\_URL
 
 The backend URL of the console API, used to concatenate the authorization callback. If empty, it is the same domain. Example: `https://api.console.dify.ai`
@@ -195,10 +182,9 @@ Used to store uploaded data set files, team/tenant encryption keys, and other fi
     *   s3
 
         S3 object storage, if this option is selected, the following S3\_ prefixed configurations need to be set.
-    *  azure-blob
+    *   azure-blob
 
         Azure Blob object storage, if this option is selected, the following AZURE\_BLOB\_ prefixed configurations need to be set.
-
 *   STORAGE\_LOCAL\_PATH
 
     Default is storage, that is, it is stored in the storage directory of the current directory.
@@ -209,10 +195,11 @@ Used to store uploaded data set files, team/tenant encryption keys, and other fi
 * S3\_ACCESS\_KEY: S3 Access Key
 * S3\_SECRET\_KEY: S3 Secret Key
 * S3\_REGION: S3 region information, such as: us-east-1
-* AZURE_BLOB_ACCOUNT_NAME: your-account-name eg, 'difyai'
-* AZURE_BLOB_ACCOUNT_KEY: your-account-key eg, 'difyai'
-* AZURE_BLOB_CONTAINER_NAME: your-container-name eg, 'difyai-container'
-* AZURE_BLOB_ACCOUNT_URL: 'https://<your_account_name>.blob.core.windows.net'
+* AZURE\_BLOB\_ACCOUNT\_NAME: your-account-name eg, 'difyai'
+* AZURE\_BLOB\_ACCOUNT\_KEY: your-account-key eg, 'difyai'
+* AZURE\_BLOB\_CONTAINER\_NAME: your-container-name eg, 'difyai-container'
+* AZURE\_BLOB\_ACCOUNT\_URL: 'https://\<your\_account\_name>.blob.core.windows.net'
+
 #### Vector Database Configuration
 
 * VECTOR\_STORE
@@ -260,7 +247,7 @@ Used to store uploaded data set files, team/tenant encryption keys, and other fi
 *   MILVUS\_PASSWORD
 
     Milvus password configuration, default is empty.
-*   MILVUS_SECURE
+*   MILVUS\_SECURE
 
     Whether Milvus uses SSL connection, default is false.
 
@@ -272,22 +259,19 @@ Used to store uploaded data set files, team/tenant encryption keys, and other fi
 *   UPLOAD\_FILE\_BATCH\_LIMIT
 
     The maximum number of files that can be uploaded at a time, default 5.
-*   TENANT\_DOCUMENT\_COUNT:
+*   ETL\_TYPE
 
-    Number of files that can be uploaded per tenant, default 100.
-*   ETL\_TYPE&#x20;
+    **Available enumeration types include:**
 
-    **Available enumeration types include:**&#x20;
+    *   dify
 
-    *   dify&#x20;
+        Dify's proprietary file extraction scheme
+    *   Unstructured
 
-        Dify's proprietary file extraction scheme&#x20;
-    *   Unstructured&#x20;
+        Unstructured.io file extraction scheme
+*   UNSTRUCTURED\_API\_URL
 
-        Unstructured.io file extraction scheme&#x20;
-*   UNSTRUCTURED\_API\_URL&#x20;
-
-    Unstructured API path, needs to be configured when ETL\_TYPE is Unstructured.&#x20;
+    Unstructured API path, needs to be configured when ETL\_TYPE is Unstructured.
 
     For example: `http://unstructured:8000/general/v0/general`
 
@@ -318,74 +302,32 @@ Used for application monitoring and error log tracking.
 
 Notion integration configuration variables can be obtained by applying for Notion integration: [https://www.notion.so/my-integrations](https://www.notion.so/my-integrations)
 
-* NOTION_INTEGRATION_TYPE: Configure as "public" or "internal". Since Notion's OAuth redirect URL only supports HTTPS, if deploying locally, please use Notion's internal integration.
-* NOTION_CLIENT_SECRET: Notion OAuth client secret (used for public integration type)
-* NOTION_CLIENT_ID: OAuth client ID (used for public integration type) 
-* NOTION_INTERNAL_SECRET: Notion internal integration secret. If the value of `NOTION_INTEGRATION_TYPE` is "internal", you need to configure this variable.
+* NOTION\_INTEGRATION\_TYPE: Configure as "public" or "internal". Since Notion's OAuth redirect URL only supports HTTPS, if deploying locally, please use Notion's internal integration.
+* NOTION\_CLIENT\_SECRET: Notion OAuth client secret (used for public integration type)
+* NOTION\_CLIENT\_ID: OAuth client ID (used for public integration type)
+* NOTION\_INTERNAL\_SECRET: Notion internal integration secret. If the value of `NOTION_INTEGRATION_TYPE` is "internal", you need to configure this variable.
 
 #### Mail related configuration
 
-*   MAIL_TYPE
-    * resend
-        *   MAIL_DEFAULT_SEND_FROM  
-          The sender's email name, such as: no-reply [no-reply@dify.ai](mailto:no-reply@dify.ai), not mandatory.
-        *   RESEND_API_KEY  
-          API-Key for the Resend email provider, can be obtained from API-Key.
-    * smtp
-        *   SMTP_SERVER  
-          SMTP server address
-        *   SMTP_PORT  
-            SMTP server port number
-        *   SMTP_USERNAME  
-            SMTP username
-        *   SMTP_PASSWORD  
-            SMTP password
-        *   SMTP_USE_TLS  
-            Whether to use TLS, default is false
-        *   MAIL_DEFAULT_SEND_FROM  
-            The sender's email name, such as: no-reply [no-reply@dify.ai](mailto:no-reply@dify.ai), not mandatory.
-
-    
-
-
-   
-
-#### Third-Party Authorization Settings
-
-Only available for cloud version.
-
-* GITHUB\_CLIENT\_ID: GitHub authorization login Client ID
-* GITHUB\_CLIENT\_SECRET: GitHub authorization login Client Secret
-* GOOGLE\_CLIENT\_ID: Google authorization login Client ID
-* GOOGLE\_CLIENT\_SECRET: Google authorization login Client Secret
-
-#### Platform Hosting Model Related Configuration
-
-Only available for cloud version, used for model hosting configuration.
-
-* HOSTED\_OPENAI\_API\_KEY: OpenAI hosted service API key
-* HOSTED\_OPENAI\_API\_BASE: OpenAI hosted service API base URL, default is empty, i.e. `https://api.openai.com/v1`
-* HOSTED\_OPENAI\_API\_ORGANIZATION: OpenAI hosted service organization ID, default is empty
-* HOSTED\_OPENAI\_TRIAL\_ENABLED: Enable OpenAI hosted trial service, default False
-* HOSTED\_OPENAI\_QUOTA\_LIMIT: OpenAI hosted service default trial quota (unit: call count), default 200 calls
-* HOSTED\_OPENAI\_PAID\_ENABLED: Enable OpenAI hosted paid service, default False
-* HOSTED\_OPENAI\_PAID\_STRIPE\_PRICE\_ID: OpenAI hosted paid service Stripe price ID
-* HOSTED\_OPENAI\_PAID\_INCREASE\_QUOTA: Increase quota amount after payment for OpenAI hosted paid service
-* HOSTED\_AZURE\_OPENAI\_ENABLED: Enable Azure OpenAI hosted service, default False
-* HOSTED\_AZURE\_OPENAI\_API\_KEY: Azure OpenAI hosted service API key
-* HOSTED\_AZURE\_OPENAI\_API\_BASE: Azure OpenAI hosted service API base URL
-* HOSTED\_AZURE\_OPENAI\_QUOTA\_LIMIT: Azure OpenAI hosted service default trial quota (unit: call count)
-* HOSTED\_ANTHROPIC\_API\_BASE: Anthropic hosted service API base URL, default is empty
-* HOSTED\_ANTHROPIC\_API\_KEY: Anthropic hosted service API key
-* HOSTED\_ANTHROPIC\_TRIAL\_ENABLED: Enable Anthropic hosted trial service, default False
-* HOSTED\_ANTHROPIC\_QUOTA\_LIMIT: Anthropic hosted service default trial quota (unit: tokens), default 600,000 tokens
-* HOSTED\_ANTHROPIC\_PAID\_ENABLED: Enable Anthropic hosted paid service, default False
-* HOSTED\_ANTHROPIC\_PAID\_STRIPE\_PRICE\_ID: Anthropic hosted paid service Stripe price ID
-* HOSTED\_ANTHROPIC\_PAID\_INCREASE\_QUOTA: Increase quota amount for Anthropic hosted paid service
-* HOSTED\_ANTHROPIC\_PAID\_MIN\_QUANTITY: Minimum purchase quantity for Anthropic hosted paid service
-* HOSTED\_ANTHROPIC\_PAID\_MAX\_QUANTITY: Maximum purchase quantity for Anthropic hosted paid service
-* STRIPE\_API\_KEY: Stripe's API key
-* STRIPE\_WEBHOOK\_SECRET: Stripe's Webhook secret
+* MAIL\_TYPE
+  * resend
+    * MAIL\_DEFAULT\_SEND\_FROM\
+      The sender's email name, such as: no-reply [no-reply@dify.ai](mailto:no-reply@dify.ai), not mandatory.
+    * RESEND\_API\_KEY\
+      API-Key for the Resend email provider, can be obtained from API-Key.
+  * smtp
+    * SMTP\_SERVER\
+      SMTP server address
+    * SMTP\_PORT\
+      SMTP server port number
+    * SMTP\_USERNAME\
+      SMTP username
+    * SMTP\_PASSWORD\
+      SMTP password
+    * SMTP\_USE\_TLS\
+      Whether to use TLS, default is false
+    * MAIL\_DEFAULT\_SEND\_FROM\
+      The sender's email name, such as: no-reply [no-reply@dify.ai](mailto:no-reply@dify.ai), not mandatory.
 
 #### Others
 
