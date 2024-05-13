@@ -158,12 +158,21 @@ VECTOR_STORE: weaviate
 flask vdb-migrarte # or docker exec -it docker-api-1 flask vdb-migrarte
 ```
 
-### 16. Why is SYS\_ADMIN permission needed?
+### 16. Why is SSRF_PROXY needed?
+You might noticed that the `SSRF_PROXY` environment variable is configured in the `docker-compose.yaml` file, this is because the local deployment version of Dify uses the `SSRF_PROXY` to prevent SSRF attacks. You can refer to [here](https://portswigger.net/web-security/ssrf) for more information about SSRF attacks.
 
-#### Why does the sandbox service need SYS\_ADMIN permission?
+In order to avoid unnecessary risks, we have configured a proxy for all services that may cause SSRF attacks, and force services such as Sandbox to only access the external network through the proxy, so as to ensure the security of your data and services, by default, this proxy will not intercept any local requests, but you can customize the behavior of the proxy by modifying the configuration file of `squid`.
 
-The sandbox service is based on `Seccomp` for sandbox isolation, but also, Docker is based on `Seccomp` for resource isolation. In Docker, Linux Seccomp BPF is disabled by default, which prevents the use of `Seccomp` in containers, so SYS\_ADMIN permission is required to enable `Seccomp`.
+#### How to customize the proxy behavior?
+In `docker/volumes/ssrf_proxy/squid.conf`, you can find the config file of the proxy, for example, you want to allow `192.168.101.0/24` to be accessed by the proxy, but you have a IP `192.168.101.19` which contains sensitive data, you don't want the users of your locally deployed dify to access this IP, but you want other IPs to access it, you can add the following rules to `squid.conf`:
 
-#### How does the sandbox service ensure security?
+```
+acl restricted_ip dst 192.168.101.19
+acl localnet src 192.168.101.0/24
 
-As for the security of the sandbox service, we disabled all `file system`, `network`, `IPC`, `PID`, `user`, `mount`, `UTS`, and system access capabilities of all processes in the sandbox to ensure that malicious code is not executed. At the same time, we also isolate the files and network in the container to ensure that even if the code is executed, it cannot harm the system.
+http_access deny restricted_ip
+http_access allow localnet
+http_access deny all
+```
+
+It's a simple example of course, you can customize the rules according to your needs. for more information about squid, you can refer to the [official documentation](http://www.squid-cache.org/Doc/config/).
