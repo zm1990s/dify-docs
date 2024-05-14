@@ -178,3 +178,4 @@ http_access deny all
 ```
 
 This is a basic example, and you can customize the rules to fit your specific needs. For more information about configuring `squid`, refer to the [official documentation](http://www.squid-cache.org/Doc/config/).
+
