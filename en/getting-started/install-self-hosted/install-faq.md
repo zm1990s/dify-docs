@@ -158,15 +158,17 @@ VECTOR_STORE: weaviate
 flask vdb-migrarte # or docker exec -it docker-api-1 flask vdb-migrarte
 ```
 
-### 16. Why is SSRF_PROXY needed?
-You might noticed that the `SSRF_PROXY` environment variable is configured in the `docker-compose.yaml` file, this is because the local deployment version of Dify uses the `SSRF_PROXY` to prevent SSRF attacks. You can refer to [here](https://portswigger.net/web-security/ssrf) for more information about SSRF attacks.
+### 16. Why is SSRF_PROXY Needed?
 
-In order to avoid unnecessary risks, we have configured a proxy for all services that may cause SSRF attacks, and force services such as Sandbox to only access the external network through the proxy, so as to ensure the security of your data and services, by default, this proxy will not intercept any local requests, but you can customize the behavior of the proxy by modifying the configuration file of `squid`.
+You may have noticed the `SSRF_PROXY` environment variable in the `docker-compose.yaml` file. This is crucial because the local deployment of Dify uses `SSRF_PROXY` to prevent Server-Side Request Forgery (SSRF) attacks. For more details on SSRF attacks, refer to [this resource](https://portswigger.net/web-security/ssrf).
 
-#### How to customize the proxy behavior?
-In `docker/volumes/ssrf_proxy/squid.conf`, you can find the config file of the proxy, for example, you want to allow `192.168.101.0/24` to be accessed by the proxy, but you have a IP `192.168.101.19` which contains sensitive data, you don't want the users of your locally deployed dify to access this IP, but you want other IPs to access it, you can add the following rules to `squid.conf`:
+To reduce potential risks, we have set up a proxy for all services that could be vulnerable to SSRF attacks. This proxy ensures that services like Sandbox can only access external networks through it, thereby protecting your data and services. By default, this proxy does not intercept any local requests. However, you can customize the proxy's behavior by modifying the `squid` configuration file.
 
-```
+#### How to Customize the Proxy Behavior?
+
+In the `docker/volumes/ssrf_proxy/squid.conf` file, you will find the configuration settings for the proxy. For example, if you want to allow the `192.168.101.0/24` network to be accessed by the proxy, but restrict access to an IP address `192.168.101.19` that contains sensitive data, you can add the following rules to `squid.conf`:
+
+```plaintext
 acl restricted_ip dst 192.168.101.19
 acl localnet src 192.168.101.0/24
 
@@ -175,4 +177,5 @@ http_access allow localnet
 http_access deny all
 ```
 
-It's a simple example of course, you can customize the rules according to your needs. for more information about squid, you can refer to the [official documentation](http://www.squid-cache.org/Doc/config/).
+This is a basic example, and you can customize the rules to fit your specific needs. For more information about configuring `squid`, refer to the [official documentation](http://www.squid-cache.org/Doc/config/).
+
