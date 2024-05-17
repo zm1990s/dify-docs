@@ -12,7 +12,7 @@
 * [Conversational app](https://github.com/langgenius/webapp-conversation)
 * [Text generation app](https://github.com/langgenius/webapp-text-generator)
 
-使用WebApp模板的最快捷方式是通过github点击 "**Use this template**" , 这相当于派生一个新的存储库. 然后您需要配置dify应用ID和API密钥, 比如:
+使用WebApp模板的最快捷方式是通过github点击 "**Use this template**/" , 这相当于派生一个新的存储库. 然后您需要配置dify应用ID和API密钥, 比如:
 
 ```javascript
 export const APP_ID = ''
