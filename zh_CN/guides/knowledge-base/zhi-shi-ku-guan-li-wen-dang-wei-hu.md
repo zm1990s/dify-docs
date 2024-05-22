@@ -87,3 +87,7 @@ Dify 知识库提供整套标准 API  ，开发者通过 API 调用对 知识库
 **Embedding 模型，**修改知识库的嵌入模型，修改 Embedding 模型将对知识库内的所有文档重新嵌入，原先的嵌入将会被删除。
 
 **检索设置**，[参考文档](chuang-jian-zhi-shi-ku-shang-chuan-wen-dang.md#jian-suo-she-zhi)
+
+### 命中测试
+
+🚧
