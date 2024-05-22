@@ -6,9 +6,9 @@
 
 知识库内已上传的每个文档都会以文本分段（Chunks）的形式进行存储，你可以在分段列表内查看每一个分段的具体文本内容。
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>查看已上传的文档分段</p></figcaption></figure>
 
-### 如何检查分段质量
+### 检查分段质量
 
 AI 知识库问答类应用的召回效果与文档分段的结果存在明显的相关关系，在将已有知识库与 Dify 上的 AI 应用关联之前，建议人工检查分段质量。
 
@@ -20,7 +20,7 @@ AI 知识库问答类应用的召回效果与文档分段的结果存在明显�
 * 过长的文本分段，导致语义噪音影响匹配准确性；
 * 明显的语义截断，在使用最大分段长度限制时会出现强制性的语义截断，导致召回时缺失内容；
 
-### 添加文档分段
+### 单个/批量添加文档分段
 
 在分段列表内点击 「 添加分段 」 ，可以在文档内自行添加一个或批量添加多个自定义分段。
 
@@ -28,19 +28,19 @@ AI 知识库问答类应用的召回效果与文档分段的结果存在明显�
 
 批量添加分段时，你需要先下载 CSV 格式的分段上传模板，并按照模板格式在 Excel 内编辑所有的分段内容，再将 CSV 文件保存后上传。
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>批量添加自定义分段</p></figcaption></figure>
 
 ### 编辑文档分段
 
 在分段列表内，你可以对已添加的分段内容直接进行编辑修改。包括分段的文本内容和关键词。
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>编辑文档分段</p></figcaption></figure>
 
 ### 知识库 API 管理
 
 Dify 知识库提供整套标准 API  ，开发者通过 API 调用对 知识库内的文档、分段进行增删改查等日常管理维护操作，请参考[知识库 API 文档](maintain-dataset-via-api.md)。
 
-<figure><img src="../../.gitbook/assets/image (180).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (180).png" alt=""><figcaption><p>知识库 API 管理</p></figcaption></figure>
 
 ### 元数据管理
 
@@ -50,7 +50,15 @@ Dify 知识库提供整套标准 API  ，开发者通过 API 调用对 知识库
 元数据过滤及引用来源功能当前版本尚未支持。
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (179).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (179).png" alt=""><figcaption><p>元数据管理</p></figcaption></figure>
+
+### 添加文档
+
+在「 知识库 > 文档列表 」 点击 「 添加文件 」，可以在已创建的知识库内上传新的文档。
+
+<figure><img src="../../.gitbook/assets/image (181).png" alt=""><figcaption><p>知识库上传新文档</p></figcaption></figure>
+
+
 
 ### 文档禁用和归档
 
@@ -61,6 +69,8 @@ Dify 知识库提供整套标准 API  ，开发者通过 API 调用对 知识库
 ### 知识库设置
 
 在知识库的左侧导航中点击**设置**，你可以改变知识库的以下设置项：
+
+<figure><img src="../../.gitbook/assets/image (182).png" alt=""><figcaption><p>知识库设置</p></figcaption></figure>
 
 **知识库名称**，定义一个名称用于识别一个知识库。
 
@@ -77,4 +87,3 @@ Dify 知识库提供整套标准 API  ，开发者通过 API 调用对 知识库
 **Embedding 模型，**修改知识库的嵌入模型，修改 Embedding 模型将对知识库内的所有文档重新嵌入，原先的嵌入将会被删除。
 
 **检索设置**，[参考文档](chuang-jian-zhi-shi-ku-shang-chuan-wen-dang.md#jian-suo-she-zhi)
-
