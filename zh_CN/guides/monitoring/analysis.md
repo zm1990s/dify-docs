@@ -2,7 +2,7 @@
 
 概览内显示了用量、活跃用户数和 LLM 调用消耗等，这使你可以持续改进应用运营的经济性，我们将逐步提供更多有用的可视化能力，请告诉我们你想要的。
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>概览—数据分析</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>概览—数据分析</p></figcaption></figure>
 
 **全部消息数（Total Messages）**，反映 AI 每天的互动总次数，每回答用户一个问题算一条 Message。提示词编排和调试的会话不计入。
 
