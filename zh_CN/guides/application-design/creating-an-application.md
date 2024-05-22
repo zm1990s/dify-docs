@@ -33,5 +33,5 @@
 <figure><img src="../../.gitbook/assets/image (172).png" alt=""><figcaption><p>导入 DSL 文件创建应用</p></figcaption></figure>
 
 {% hint style="info" %}
-Dify DSL 是由 Dify.AI 在 v0.6 版本之后定义的 AI 应用工程文件标准，该标准涵盖应用的基本描述、模型参数、编排配置等信息。
+Dify DSL 是由 Dify.AI 在 v0.6 版本之后定义的 AI 应用工程文件标准，文件格式为 YML。该标准涵盖应用的基本描述、模型参数、编排配置等信息。
 {% endhint %}
