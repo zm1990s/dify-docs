@@ -61,7 +61,7 @@
   * [创建知识库&上传文档](guides/knowledge-base/chuang-jian-zhi-shi-ku-shang-chuan-wen-dang.md)
   * [知识库管理&文档维护](guides/knowledge-base/zhi-shi-ku-guan-li-wen-dang-wei-hu.md)
   * [从 Notion 导入数据](guides/knowledge-base/sync-from-notion.md)
-  * [通过 API 维护数据集](guides/knowledge-base/maintain-dataset-via-api.md)
+  * [通过 API 维护知识库](guides/knowledge-base/maintain-dataset-via-api.md)
   * [外部数据工具](guides/knowledge-base/external\_data\_tool.md)
 * [工具](guides/gong-ju.md)
   * [快速接入工具](guides/tools/quick-tool-integration.md)
