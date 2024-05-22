@@ -1,4 +1,4 @@
-# 助手型应用
+# 聊天助手
 
 对话型应用采用一问一答模式与用户持续对话。
 
@@ -16,13 +16,13 @@
 
 在首页点击 “创建应用” 按钮创建应用。填上应用名称，应用类型选择**对话型应用**。
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 #### 第 2 步 编排应用
 
 应用成功后会自动跳转到应用概览页。点击左侧菜单：**提示词编排** 来编排应用。
 
-<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 **2.1 填写提示词**
 
@@ -34,33 +34,33 @@
 >
 > 当我回准备好了后，开始提问。
 
-![](<../../../.gitbook/assets/image (80).png>)
+![](<../../.gitbook/assets/image (80).png>)
 
 为了更好的体验，我们加上对话开场白：`你好，{{name}}。我是你的面试官，Bob。你准备好了吗？`
 
 添加开场白的方法是，点击左上角的 “添加功能” 按钮，打开 “对话开场白” 的功能：
 
-<figure><img src="../../../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
 
 然后编辑开场白：
 
-![](<../../../.gitbook/assets/image (28).png>)
+![](<../../.gitbook/assets/image (28).png>)
 
 #### 2.2 添加上下文
 
-如果应用想基于私有的上下文对话来生成内容。可以用我们[数据集](../../knowledge-base/)功能。在上下文中点 “添加” 按钮来添加数据集。
+如果应用想基于私有的上下文对话来生成内容。可以用我们[数据集](../knowledge-base/)功能。在上下文中点 “添加” 按钮来添加数据集。
 
-![](<../../../.gitbook/assets/image (108).png>)
+![](<../../.gitbook/assets/image (108).png>)
 
 **2.3 调试**
 
 我们在右侧填写 用户输入，输入内容进行调试。
 
-![](<../../../.gitbook/assets/image (67).png>)
+![](<../../.gitbook/assets/image (67).png>)
 
 如果结果不理想，可以调整提示词和模型参数。点右上角点 模型名称 来设置模型的参数：
 
-![](<../../../.gitbook/assets/image (76).png>)
+![](<../../.gitbook/assets/image (76).png>)
 
 我们支持模型 gpt-4。
 
@@ -72,6 +72,6 @@
 
 在概览页可以找到应用的分享地址。点 “预览按钮” 预览分享出去的应用。点 “分享” 按钮获得分享的链接地址。点 “设置” 按钮设置分享出去的应用信息。
 
-<figure><img src="../../../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
 
 如果想定制化分享出去的应用，可以 Fork 我们的开源的 [WebApp 的模版](https://github.com/langgenius/webapp-conversation)。基于模版改成符合你的情景与风格需求的应用。

@@ -1,4 +1,4 @@
-# 部署 API 扩展到 Cloudflare Workers
+# 使用 Cloudflare Workers 部署 API Tools
 
 ## 开始
 
@@ -40,22 +40,15 @@ const result = await fetch(url).then(res => res.text())
 ```bash
 npm run deploy
 ```
+
 部署成功之后，你会得到一个公网地址，你可以在 Dify 中添加这个地址作为 API Endpoint。请注意不要遗漏 `endpoint` 这个路径。
 
+<figure><img src="../../../.gitbook/assets/api_extension_edit.png" alt=""><figcaption><p>在 Dify 中添加 API Endpoint</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/api_extension_edit.png" alt="">
-<figcaption><p>
-在 Dify 中添加 API Endpoint
-</p></figcaption>
-</figure>
-
-<figure><img src="../../../../.gitbook/assets/app_tools_edit.png" alt="">
-<figcaption><p>
-在 App 编辑页面中添加上 API Tool
-</p></figcaption>
-</figure>
+<figure><img src="../../../.gitbook/assets/app_tools_edit.png" alt=""><figcaption><p>在 App 编辑页面中添加上 API Tool</p></figcaption></figure>
 
 ## 其他逻辑 TL;DR
+
 ### 关于 Bearer Auth
 
 ```typescript
@@ -66,6 +59,7 @@ import { bearerAuth } from "hono/bearer-auth";
     return auth(c, next);
 },
 ```
+
 我们的 Bearer 校验逻辑在如上代码中，我们使用了 `hono/bearer-auth` 这个包来实现 Bearer 校验。你可以在 `src/index.ts` 中使用 `c.env.TOKEN` 来获取 Token。
 
 ### 关于参数验证
@@ -91,8 +85,7 @@ const schema = z.object({
 
 ```
 
-我们这里使用了 `zod` 来定义参数的类型，你可以在 `src/index.ts` 中使用 `zValidator` 来校验参数。通过 ` const { point, params } = c.req.valid("json");` 来获取校验后的参数。 我们这里的 point 只有两个值，所以我们使用了 `z.union` 来定义。
-params 是一个可选的参数，所以我们使用了 `z.optional` 来定义。 其中会有一个 `inputs` 的参数，这个参数是一个 `Record<string, any>` 类型，这个类型表示一个 key 为 string，value 为 any 的对象。这个类型可以表示任意的对象，你可以在 `src/index.ts` 中使用 `params?.inputs?.count` 来获取 `count` 参数。
+我们这里使用了 `zod` 来定义参数的类型，你可以在 `src/index.ts` 中使用 `zValidator` 来校验参数。通过 `const { point, params } = c.req.valid("json");` 来获取校验后的参数。 我们这里的 point 只有两个值，所以我们使用了 `z.union` 来定义。 params 是一个可选的参数，所以我们使用了 `z.optional` 来定义。 其中会有一个 `inputs` 的参数，这个参数是一个 `Record<string, any>` 类型，这个类型表示一个 key 为 string，value 为 any 的对象。这个类型可以表示任意的对象，你可以在 `src/index.ts` 中使用 `params?.inputs?.count` 来获取 `count` 参数。
 
 ### 获取 Cloudflare Workers 的日志
 
@@ -102,6 +95,6 @@ wrangler tail
 
 ## 参考内容
 
-- [Cloudflare Workers](https://workers.cloudflare.com/)
-- [Cloudflare Workers CLI](https://developers.cloudflare.com/workers/cli-wrangler/install-update)
-- [Example GitHub Repository](https://github.com/crazywoola/dify-extension-workers)
+* [Cloudflare Workers](https://workers.cloudflare.com/)
+* [Cloudflare Workers CLI](https://developers.cloudflare.com/workers/cli-wrangler/install-update)
+* [Example GitHub Repository](https://github.com/crazywoola/dify-extension-workers)

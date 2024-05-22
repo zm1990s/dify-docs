@@ -1,10 +1,12 @@
 # 日志与标注
 
+🚧工作中
+
 {% hint style="warning" %}
 请确保您的应用在收集用户数据时遵守当地法规。通常的做法是发布隐私政策并征得用户的同意。
 {% endhint %}
 
-**日志（Logs）**功能用以观察与标记 Dify 应用的工作表现，Dify 为应用的全部交互过程记录了日志，无论你是通过 WebApp 或 API 调用的，如果你是 Prompt 工程师或 LLM 运营人员，它将为你提供可视化的 LLM 应用运营体验。
+\*\*日志（Logs）\*\*功能用以观察与标记 Dify 应用的工作表现，Dify 为应用的全部交互过程记录了日志，无论你是通过 WebApp 或 API 调用的，如果你是 Prompt 工程师或 LLM 运营人员，它将为你提供可视化的 LLM 应用运营体验。
 
 ### 使用日志控制台
 
@@ -22,7 +24,7 @@
 这些标记将在 Dify 的后续版本中供模型微调使用，以提升模型的准确性与回复风格，当前预览版仅支持标记。
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/app-log.png" alt=""><figcaption><p>标记日志以改进</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/app-log.png" alt=""><figcaption><p>标记日志以改进</p></figcaption></figure>
 
 点击一条日志会在界面右侧打开日志详情面板，在该面板中运营人员可以对一次互动进行标注：
 
@@ -31,4 +33,3 @@
 * 对改进的结果标记改进回复，这代表了你期望 AI 回复的文本
 
 注意，如果团队中的多位管理员对同一条日志进行标注，最后标注的记录将覆盖此前的标注。
-

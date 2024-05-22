@@ -9,7 +9,7 @@
 
 除了需要开发对应的模块能力，还需要遵照以下规范，以便 Dify 正确调用 API。
 
-<figure><img src="../../../../.gitbook/assets/api_based_01.png" alt=""><figcaption><p>基于 API 扩展</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/api_based_01.png" alt=""><figcaption><p>基于 API 扩展</p></figcaption></figure>
 
 ### API 规范 <a href="#usercontentapi-gui-fan" id="usercontentapi-gui-fan"></a>
 
@@ -230,7 +230,7 @@ API 返回为：
 
 1.  进入 [https://ngrok.com](https://ngrok.com) 官网，注册并下载 Ngrok 文件。
 
-    <figure><img src="../../../../.gitbook/assets/download.png" alt=""><figcaption><p>Download</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/download.png" alt=""><figcaption><p>Download</p></figcaption></figure>
 2. 下载完成后，进入下载目录，根据下方说明解压压缩包，并执行说明中的初始化脚本。
    * ```Shell
      $ unzip /path/to/ngrok.zip
@@ -238,7 +238,7 @@ API 返回为：
      ```
 3. 查看本地 API 服务的端口：
 
-<figure><img src="../../../../.gitbook/assets/8000.png" alt=""><figcaption><p>查看端口</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/8000.png" alt=""><figcaption><p>查看端口</p></figcaption></figure>
 
 并运行以下命令启动：
 
@@ -248,17 +248,16 @@ API 返回为：
 
     启动成功的样例如下：
 
-<figure><img src="../../../../.gitbook/assets/ngrock.png" alt=""><figcaption><p>Ngrok 启动</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ngrock.png" alt=""><figcaption><p>Ngrok 启动</p></figcaption></figure>
 
 4. 我们找到 Forwarding 中，如上图：`https://177e-159-223-41-52.ngrok-free.app`（此为示例域名，请替换为自己的）即为公网域名。
 
 * 按照上述的范例，我们把本地已经启动的服务端点暴露出去，将代码范例接口：`http://127.0.0.1:8000/api/dify/receive` 替换为 `https://177e-159-223-41-52.ngrok-free.app/api/dify/receive`
 
-此 API 端点即可公网访问。至此，我们即可在 Dify 配置该 API 端点进行本地调试代码，配置步骤请参考 [external\_data\_tool.md](../../../knowledge-base/external\_data\_tool.md "mention")。
-
+此 API 端点即可公网访问。至此，我们即可在 Dify 配置该 API 端点进行本地调试代码，配置步骤请参考 [external\_data\_tool.md](../../knowledge-base/external\_data\_tool.md "mention")。
 
 ### 使用 Cloudflare Workers 部署 API 扩展
 
 我们推荐你使用 Cloudflare Workers 来部署你的 API 扩展，因为 Cloudflare Workers 可以方便的提供一个公网地址，而且可以免费使用。
 
-[cloudflare\_workers.md](./cloudflare\_workers.md "mention")。
+[cloudflare\_workers.md](cloudflare\_workers.md "mention")。
