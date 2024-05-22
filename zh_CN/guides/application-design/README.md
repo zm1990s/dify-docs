@@ -10,7 +10,7 @@
 
 你可以任选**其中之一**或**全部**，来支撑你的 AI 应用开发。
 
-### 应用类型
+### 应用类型 <a href="#application_type" id="application_type"></a>
 
 Dify 中提供了四种应用类型：
 
