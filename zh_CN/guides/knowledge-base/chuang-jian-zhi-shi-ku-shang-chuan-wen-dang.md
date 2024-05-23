@@ -85,6 +85,25 @@ Dify 各版本的 ETL 方案选择：
 
 ### 索引方式
 
+### **ETL 可选配置**
+
+在 RAG 的生产级应用中，为了获得更好的数据召回效果，需要对多源数据进行预处理和清洗，即 ETL （_extract, transform, load_）。为了增强非结构化/半结构化数据的预处理能力，Dify 支持了可选的 ETL 方案：**Dify ETL** 和[ ](https://docs.unstructured.io/welcome)**Unstructured ETL** 。Unstructured 能够高效地提取并转换您的数据为干净的数据用于后续的步骤，具体信息可参考 [Unstructured 官网](https://unstructured.io/)。Dify 各版本的 ETL 方案选择：
+
+* SaaS 版不可选，默认直接使用 Unstructured ETL
+* 社区版可选，默认使用 Dify ETL ，可通过环境变量开启 Unstructured ETL
+
+提取文件格式支持上的差异如下：
+
+| DIFY Extractor                                 | Unstructured Extractor                                                   |
+| ---------------------------------------------- | ------------------------------------------------------------------------ |
+| txt、markdown、md、pdf、html、htm、xlsx、xls、docx、csv | txt、markdown、md、pdf、html、htm、xlsx、xls、docx、csv、eml、msg、pptx、ppt、xml、epub |
+
+{% hint style="info" %}
+不同的 ETL 方案在文件提取效果的方面也会存在差异，想了解更多关于 Unstructured ETL 的数据处理方式，请参考[官方文档](https://docs.unstructured.io/open-source/core-functionality/partitioning)。
+{% endhint %}
+
+### 索引方式
+
 你需要选择文本的**索引方式**来指定数据的匹配方式，索引策略往往与检索方式相关，你需要根据场景需求来选择合适的索引方式。
 
 **高质量模式：**将调用 OpenAI 的嵌入接口进行处理，以在用户查询时提供更高的准确度。
