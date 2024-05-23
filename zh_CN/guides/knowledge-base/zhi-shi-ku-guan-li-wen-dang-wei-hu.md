@@ -17,8 +17,16 @@ AI 知识库问答类应用的召回效果与文档分段的结果存在明显�
 检查分段质量时，一般需要关注以下几种情况：
 
 * 过短的文本分段，导致语义缺失；
+
+<figure><img src="../../.gitbook/assets/image (183).png" alt="" width="373"><figcaption><p>过短的文本分段</p></figcaption></figure>
+
 * 过长的文本分段，导致语义噪音影响匹配准确性；
+
+<figure><img src="../../.gitbook/assets/image (186).png" alt="" width="375"><figcaption><p>过长的文本分段</p></figcaption></figure>
+
 * 明显的语义截断，在使用最大分段长度限制时会出现强制性的语义截断，导致召回时缺失内容；
+
+<figure><img src="../../.gitbook/assets/image (185).png" alt="" width="357"><figcaption><p>明显的语义截断</p></figcaption></figure>
 
 ### 单个/批量添加文档分段
 
