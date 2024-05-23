@@ -6,7 +6,7 @@
 
 知识库内已上传的每个文档都会以文本分段（Chunks）的形式进行存储，你可以在分段列表内查看每一个分段的具体文本内容。
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>查看已上传的文档分段</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>查看已上传的文档分段</p></figcaption></figure>
 
 ### 检查分段质量
 
@@ -24,7 +24,7 @@ AI 知识库问答类应用的召回效果与文档分段的结果存在明显�
 
 在分段列表内点击 「 添加分段 」 ，可以在文档内自行添加一个或批量添加多个自定义分段。
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 批量添加分段时，你需要先下载 CSV 格式的分段上传模板，并按照模板格式在 Excel 内编辑所有的分段内容，再将 CSV 文件保存后上传。
 
@@ -88,6 +88,17 @@ Dify 知识库提供整套标准 API  ，开发者通过 API 调用对 知识库
 
 **检索设置**，[参考文档](chuang-jian-zhi-shi-ku-shang-chuan-wen-dang.md#jian-suo-she-zhi)
 
-### 命中测试
+### 召回测试
 
-🚧
+Dify 知识库内提供了文本召回测试的功能，用于调试不同检索方式及参数配置下的命中效果。
+
+在 「 源文本 」 内输入常见的用户问题，点击 「 测试 」 并在右侧的 「 召回段落 」 内查看召回结果。
+
+在 「 最近查询 」 内可以查看到历史的查询记录；若知识库已关联至应用内，由应用内触发的知识库查询也可以在这里查看记录。
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+点击源文本输入框右上角的图标可以更换当前知识库的检索方式和具体参数，**保存之后仅在召回测试的调试过程中生效**。在召回测试完成调试并确认更改知识库的检索参数时，需要在 「 [知识库设置 > 检索设置](zhi-shi-ku-guan-li-wen-dang-wei-hu.md#zhi-shi-ku-she-zhi) 」 中进行更改。
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
