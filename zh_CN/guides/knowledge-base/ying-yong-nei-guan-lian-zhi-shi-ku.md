@@ -1,8 +1,8 @@
-# 应用关联知识库
+# 应用内关联知识库
 
 ### 如何编排一个 AI 知识库应用
 
-已创建的知识库可以作为外部知识提供给大模型用于精确回复用户问题。你可以在 Dify 的[所有应用类型](../application-design/#application\_type)关联知识库。
+知识库可以作为外部知识提供给大模型用于精确回复用户问题。你可以在 Dify 的[所有应用类型](../application-design/#application\_type)内关联已创建的知识库。
 
 以聊天助手为例，使用流程如下：
 
@@ -61,3 +61,40 @@ N 选 1 召回由  Function Call/ReAct 进行驱动，每一个关联的知识�
 多路召回模式不依赖于模型的推理能力或知识库描述，该模式在多知识库检索时能够获得质量更高的召回效果，因此更推荐将召回模式设置为多路召回。
 
 ### 重排序（Rerank）
+
+重排序模型通过将候选文档列表与用户问题语义匹配度进行重新排序，从而改进语义排序的结果。其原理是计算用户问题与给定的每个候选文档之间的相关性分数，并返回按相关性从高到低排序的文档列表。
+
+<figure><img src="../../.gitbook/assets/image (128).png" alt=""><figcaption><p>混合检索+重排序</p></figcaption></figure>
+
+{% hint style="info" %}
+想了解更多关于 Rerank 的相关知识，请查阅扩展阅读[重排序](ying-yong-nei-guan-lian-zhi-shi-ku.md#zhong-pai-xu-rerank)。
+{% endhint %}
+
+#### 如何配置 Rerank 模型？
+
+Dify 目前已支持 Cohere Rerank 模型，通过进入“模型供应商-> Cohere”页面填入 Rerank 模型的 API 秘钥：
+
+<figure><img src="../../.gitbook/assets/image (112).png" alt=""><figcaption><p>在模型供应商内配置 Cohere Rerank 模型</p></figcaption></figure>
+
+如何获取 Cohere Rerank 模型？
+
+登录：[https://cohere.com/rerank](https://cohere.com/rerank)，在页内注册并申请 Rerank 模型的使用资格，获取 API 秘钥。
+
+{% hint style="info" %}
+除了支持 Cohere Rerank API ，你也可以在使用本地推理框架如 Ollama、Xinference，并在推理框架内部署本地 Rerank 模型例如： bge-reranker。
+{% endhint %}
+
+#### 设置 Rerank 模型
+
+通过进入“数据集->创建数据集->检索设置”页面并在添加 Rerank 设置。除了在创建数据集可以设置 Rerank ，你也可以在已创建的数据集设置内更改 Rerank 配置，在应用编排的数据集召回模式设置中更改 Rerank 配置。
+
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption><p>数据集检索模式中设置 Rerank 模型</p></figcaption></figure>
+
+**TopK**：用于设置 Rerank 后返回相关文档的数量。
+
+**Score 阈值**：用于设置 Rerank 后返回相关文档的最低分值。设置 Rerank 模型后，TopK 和 Score 阈值设置仅在 Rerank 步骤生效。
+
+通过进入“提示词编排->上下文->设置”页面中设置为多路召回模式时需开启 Rerank 模型。
+
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>数据集多路召回模式中设置 Rerank 模型</p></figcaption></figure>
+
