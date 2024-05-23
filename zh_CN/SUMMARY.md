@@ -65,7 +65,7 @@
   * [从 Notion 导入数据](guides/knowledge-base/sync-from-notion.md)
   * [通过 API 维护知识库](guides/knowledge-base/maintain-dataset-via-api.md)
   * [外部数据工具](guides/knowledge-base/external\_data\_tool.md)
-  * [RAG 召回效果检查点](guides/knowledge-base/rag-zhao-hui-xiao-guo-jian-cha-dian.md)
+  * [召回效果检查项](guides/knowledge-base/zhao-hui-xiao-guo-jian-cha-xiang.md)
 * [工具](guides/gong-ju.md)
   * [快速接入工具](guides/tools/quick-tool-integration.md)
   * [高级接入工具](guides/tools/advanced-tool-integration.md)
