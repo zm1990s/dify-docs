@@ -31,7 +31,7 @@
 
 * 单文档的上传大小限制为 15MB；
 * 单次批量上传文件个数上限为 20 个；
-* SaaS 版本的订阅计划限定了**批量上传个数、文档上传总数、向量存储**；
+* SaaS 版本的不同[订阅计划](https://dify.ai/pricing)限定了**批量上传个数、文档上传总数、向量存储**；
 
 ### 3 分段与清洗
 
@@ -63,18 +63,18 @@
 
 ### 4 ETL 可选配置
 
-在 RAG 的生产级应用中，为了获得更好的数据召回效果，需要对多源数据进行预处理和清洗，即 ETL （_extract, transform, load_）。为了增强非结构化/半结构化数据的预处理能力，Dify 支持了可选的 ETL 方案：**Dify ETL** 和[ ](https://docs.unstructured.io/welcome)**Unstructured ETL** 。
+在 RAG 的生产级应用中，为了获得更好的数据召回效果，需要对多源数据进行预处理和清洗，即 ETL （_extract, transform, load_）。为了增强非结构化/半结构化数据的预处理能力，Dify 支持了可选的 ETL 方案：**Dify ETL** 和[ ](https://docs.unstructured.io/welcome)[**Unstructured ETL** ](https://unstructured.io/)。
 
-Unstructured 能够高效地提取并转换您的数据为干净的数据用于后续的步骤，具体信息可参考 [Unstructured 官网](https://unstructured.io/)。
+> Unstructured 能够高效地提取并转换您的数据为干净的数据用于后续的步骤。
 
 Dify 各版本的 ETL 方案选择：
 
 * SaaS 版不可选，默认使用 Unstructured ETL；
 * 社区版可选，默认使用 Dify ETL ，可通过[环境变量](../../getting-started/install-self-hosted/environments.md#zhi-shi-ku-pei-zhi)开启 Unstructured ETL；
 
-提取文件格式支持上的差异如下：
+文件解析支持格式的差异：
 
-| DIFY Extractor                                 | Unstructured Extractor                                                   |
+| DIFY ETL                                       | Unstructured ETL                                                         |
 | ---------------------------------------------- | ------------------------------------------------------------------------ |
 | txt、markdown、md、pdf、html、htm、xlsx、xls、docx、csv | txt、markdown、md、pdf、html、htm、xlsx、xls、docx、csv、eml、msg、pptx、ppt、xml、epub |
 
@@ -92,7 +92,7 @@ Dify 各版本的 ETL 方案选择：
 
 **经济模式**：会使用关键词索引方式，降低了准确度但无需花费 Token。
 
-**Q\&A 模式（仅在社区版支持）：**Q\&A 分段模式功能，与上述普通的「Q to P」（问题匹配文本段落）匹配模式不同，它是采用「Q to Q」（问题匹配问题）匹配工作，在文档经过分段后，经过总结为每一个分段生成 Q\&A 匹配对，当用户提问时，系统会找出与之最相似的问题，然后返回对应的分段作为答案。这种方式更加精确，因为它直接针对用户问题进行匹配，可以更准确地获取用户真正需要的信息。
+**Q\&A 模式（仅社区版支持）：**Q\&A 分段模式功能，与上述普通的「Q to P」（问题匹配文本段落）匹配模式不同，它是采用「Q to Q」（问题匹配问题）匹配工作，在文档经过分段后，经过总结为每一个分段生成 Q\&A 匹配对，当用户提问时，系统会找出与之最相似的问题，然后返回对应的分段作为答案。这种方式更加精确，因为它直接针对用户问题进行匹配，可以更准确地获取用户真正需要的信息。
 
 在知识库上传文档时，系统将对文本进行分段，使得用户的提问（输入）能匹配到相关的文本段落（Q to P），最后输出结果。
 
