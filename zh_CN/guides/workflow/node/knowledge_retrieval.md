@@ -1,8 +1,20 @@
 # 知识检索
 
-知识库检索节点用于从 Dify 知识库中查询与用户问题相关的文本内容，可作为后续 LLM 的上下文进行回答。
+### 1 定义
 
-<figure><img src="../../../.gitbook/assets/output (3) (2).png" alt=""><figcaption></figcaption></figure>
+从知识库中检索与用户问题相关的文本内容，可作为下游 LLM 节点的上下文来使用。
+
+***
+
+### 2 场景
+
+常见情景：构建基于外部数据/知识的 AI 问答系统（RAG）。了解更多关于 RAG 的[基本概念](../../../learn-more/extended-reading/retrieval-augment/)。
+
+下图为一个最基础的知识库问答系统示例，该流程的执行逻辑为：知识库检索作为 LLM 节点的前置步骤，在用户问题传递至 LLM 节点之前，先在知识检索节点内将匹配用户问题最相关的文本内容并召回，随后在 LLM 节点内将用户问题与检索到的上下文一同作为输入，让 LLM 根据检索内容来回复问题。
+
+<figure><img src="../../../.gitbook/assets/image (193).png" alt=""><figcaption></figcaption></figure>
+
+
 
 配置知识库检索节点主要包含三个部分：
 
