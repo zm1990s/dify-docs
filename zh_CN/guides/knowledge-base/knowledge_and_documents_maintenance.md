@@ -1,4 +1,4 @@
-# 知识库管理&文档维护
+# 知识库及文档维护
 
 ### 1 查看文本分段
 
@@ -96,11 +96,11 @@
 
 **可见权限**，可选择 「 只有我 」 或 「 所有团队成员 」，不具有权限的人将无法查阅和编辑数据集。
 
-**索引模式**，[参考文档](chuang-jian-zhi-shi-ku-shang-chuan-wen-dang.md#suo-yin-fang-shi)
+**索引模式**，[参考文档](create\_knowledge\_and\_upload\_documents.md#suo-yin-fang-shi)
 
 **Embedding 模型，**修改知识库的嵌入模型，修改 Embedding 模型将对知识库内的所有文档重新嵌入，原先的嵌入将会被删除。
 
-**检索设置**，[参考文档](chuang-jian-zhi-shi-ku-shang-chuan-wen-dang.md#jian-suo-she-zhi)
+**检索设置**，[参考文档](create\_knowledge\_and\_upload\_documents.md#jian-suo-she-zhi)
 
 ***
 

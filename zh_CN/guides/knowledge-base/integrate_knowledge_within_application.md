@@ -1,4 +1,4 @@
-# 在应用内关联知识库
+# 在应用内集成知识库
 
 ### 1 创建知识库应用
 
@@ -72,7 +72,7 @@ N 选 1 召回依赖模型的推理能力，使用限制较多，计划在 2024 
 <figure><img src="../../.gitbook/assets/image (128).png" alt=""><figcaption><p>混合检索+重排序</p></figcaption></figure>
 
 {% hint style="info" %}
-想了解更多关于 Rerank 的相关知识，请查阅扩展阅读[重排序](zai-ying-yong-nei-guan-lian-zhi-shi-ku.md#zhong-pai-xu-rerank)。
+想了解更多关于 Rerank 的相关知识，请查阅扩展阅读[重排序](integrate\_knowledge\_within\_application.md#zhong-pai-xu-rerank)。
 {% endhint %}
 
 #### 如何配置 Rerank 模型？
