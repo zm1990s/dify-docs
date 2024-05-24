@@ -29,13 +29,13 @@
 
 **输出变量**
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt="" width="364"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (199).png" alt="" width="272"><figcaption><p>输出变量</p></figcaption></figure>
 
 知识检索的输出变量 `result` 为从知识库中检索到的相关文本分段。其变量数据结构中包含了分段内容、标题、链接、图标、元数据信息。
 
 **配置下游节点**
 
-在常见的对话类应用中，知识库检索的下游节点一般为 LLM 节点，知识检索的**输出变量** `result` 需要配置在 LLM 节点中的 **上下文变量** 内关联赋值。关联后你可以在系统提示词中的合适位置插入 **上下文变量**。
+在常见的对话类应用中，知识库检索的下游节点一般为 LLM 节点，知识检索的**输出变量** `result` 需要配置在 LLM 节点中的 **上下文变量** 内关联赋值。关联后你可以在提示词的合适位置插入 **上下文变量**。
 
 {% hint style="info" %}
 上下文变量是 LLM 节点内定义的特殊变量类型，用于在提示词内插入外部检索的文本内容。
