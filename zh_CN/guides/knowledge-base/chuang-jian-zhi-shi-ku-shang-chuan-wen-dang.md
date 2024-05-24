@@ -1,46 +1,43 @@
 # 创建知识库&上传文档
 
-🚧 维护中
+### 1 创建知识库
 
-### 创建知识库
-
-在 Dify 主导航栏中点击知识库，在该页面你可以看到已有的知识库。你可以点击**创建知识库**进入创建向导：
+在 Dify 主导航栏中点击知识库，在该页面你可以看到已有的知识库。你可以点击 **创建知识库** 进入创建向导：
 
 <figure><img src="../../.gitbook/assets/image (173).png" alt=""><figcaption><p>创建知识库</p></figcaption></figure>
 
-如果你已经准备好了文件，可以从上传文件开始;
+* 如果你已经准备好了文件，可以从上传文件开始;
+* 如果你还没有准备好文档，可以先创建一个空数据集;
 
-如果你还没有准备好文档，可以先创建一个空数据集;
-
-<figure><img src="../../.gitbook/assets/image (174).png" alt=""><figcaption><p>知识库创建</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (191).png" alt=""><figcaption><p>创建知识库</p></figcaption></figure>
 
 {% hint style="info" %}
 如果你在创建数据集时选择了使用外部数据源，该知识库的类型不可更改。这是为了防止单一知识库存在多数据源而造成的管理困难。如果你需要使用多个数据源，建议创建多个知识库。
 {% endhint %}
 
-### **上传文档**
+***
 
-**在知识库内上传文档的步骤：**
+### **2 上传文档**
 
-* 上传你的文件，通常是长文本文件或表格文件，支持批量
-* 分段与清洗，预览分段效果
-* 选择及配置索引和检索策略
-* 等待分段嵌入（通过 Embedding API）
-* 完成上传，可以在应用中使用了🎉！
+**知识库内上传文档的步骤：**
 
-{% hint style="info" %}
-批量文档上传仅在社区版和 SaaS 的付费订阅计划中支持；
+1. 从本地选择你需要上传的文档；
+2. 分段与清洗，预览效果；
+3. 选择及配置索引和检索策略；
+4. 等待分段嵌入；
+5. 完成上传，可以在应用中使用了🎉
 
-单文档的上传大小限制为 15MB；
+**上传文档的限制：**
 
-SaaS 版本中不同的订阅计划限定了文档上传个数和向量存储空间的上限；
-{% endhint %}
+* 单文档的上传大小限制为 15MB；
+* 单次批量上传文件个数上限为 20 个；
+* SaaS 版本的订阅计划限定了**批量上传个数、文档上传总数、向量存储**；
 
-### 分段与清洗
+### 3 分段与清洗
 
 **分段**：大语言模型存在有限的上下文窗口，通常需要将整段文本进行分段处理后，将与用户问题关联度最高的几个段落召回，即分段 TopK 召回模式。此外，在用户问题与文本分段进行语义匹配时，合适的分段大小将有助于匹配关联性最高的文本内容，减少信息噪音。
 
-**清洗：**为了保证文本召回的效果，通常需要在将数据传入模型之前对其进行清理。例如，如果输出中存在不需要的内容，可能会影响问题回复的质量。为了帮助用户解决这个问题， Dify 提供了多种清洗方法，可以帮助用户在将输出发送到下游应用程序之前对其进行清理。清洗步骤在分段之前。
+**清洗：**为了保证文本召回的效果，通常需要在将数据传入模型之前对其进行清理。例如，如果输出中存在不需要的字符或者空行，可能会影响问题回复的质量。为了帮助用户解决这个问题， Dify 提供了多种清洗方法，可以帮助用户在将输出发送到下游应用程序之前对其进行清理。
 
 分段与清洗支持两种配置策略
 
@@ -51,18 +48,20 @@ SaaS 版本中不同的订阅计划限定了文档上传个数和向量存储空
 
 在自定义模式下，用户可以根据不同的文档格式和场景要求来配置文本的分段和清洗策略。
 
-**分段规则配置：**
+**分段规则：**
 
-* 分段标识符，设置标识符如“\n”，系统将在文本中出现该标识符时分段
-* 分段最大长度，根据分段的文本字符数最大上限来进行分段，超出该长度时将强制分段
+* 分段标识符，设置标识符如“\n”，系统将在文本中出现该标识符时分段；
+* 分段最大长度，根据分段的文本字符数最大上限来进行分段，超出该长度时将强制分段；
 * 分段重叠长度，设置分段间的重叠字符数，建议设置为分段长度的 10-25%，有助于保留分段之间的语义相关性，在多分段召回时提高召回效果。
 
-**预处理规则配置：**
+**预处理规则：**
 
-* 替换连续的空格、换行符和制表符
-* 删除所有 URL 和电子邮件地址
+* 替换连续的空格、换行符和制表符；
+* 删除所有 URL 和电子邮件地址；
 
-### ETL 可选配置
+***
+
+### 4 ETL 可选配置
 
 在 RAG 的生产级应用中，为了获得更好的数据召回效果，需要对多源数据进行预处理和清洗，即 ETL （_extract, transform, load_）。为了增强非结构化/半结构化数据的预处理能力，Dify 支持了可选的 ETL 方案：**Dify ETL** 和[ ](https://docs.unstructured.io/welcome)**Unstructured ETL** 。
 
@@ -70,8 +69,8 @@ Unstructured 能够高效地提取并转换您的数据为干净的数据用于�
 
 Dify 各版本的 ETL 方案选择：
 
-* SaaS 版不可选，默认直接使用 Unstructured ETL
-* 社区版可选，默认使用 Dify ETL ，可通过[环境变量](../../getting-started/install-self-hosted/environments.md#zhi-shi-ku-pei-zhi)开启 Unstructured ETL
+* SaaS 版不可选，默认使用 Unstructured ETL；
+* 社区版可选，默认使用 Dify ETL ，可通过[环境变量](../../getting-started/install-self-hosted/environments.md#zhi-shi-ku-pei-zhi)开启 Unstructured ETL；
 
 提取文件格式支持上的差异如下：
 
@@ -83,26 +82,9 @@ Dify 各版本的 ETL 方案选择：
 不同的 ETL 方案在文件提取效果的方面也会存在差异，想了解更多关于 Unstructured ETL 的数据处理方式，请参考[官方文档](https://docs.unstructured.io/open-source/core-functionality/partitioning)。
 {% endhint %}
 
-### 索引方式
+***
 
-### **ETL 可选配置**
-
-在 RAG 的生产级应用中，为了获得更好的数据召回效果，需要对多源数据进行预处理和清洗，即 ETL （_extract, transform, load_）。为了增强非结构化/半结构化数据的预处理能力，Dify 支持了可选的 ETL 方案：**Dify ETL** 和[ ](https://docs.unstructured.io/welcome)**Unstructured ETL** 。Unstructured 能够高效地提取并转换您的数据为干净的数据用于后续的步骤，具体信息可参考 [Unstructured 官网](https://unstructured.io/)。Dify 各版本的 ETL 方案选择：
-
-* SaaS 版不可选，默认直接使用 Unstructured ETL
-* 社区版可选，默认使用 Dify ETL ，可通过环境变量开启 Unstructured ETL
-
-提取文件格式支持上的差异如下：
-
-| DIFY Extractor                                 | Unstructured Extractor                                                   |
-| ---------------------------------------------- | ------------------------------------------------------------------------ |
-| txt、markdown、md、pdf、html、htm、xlsx、xls、docx、csv | txt、markdown、md、pdf、html、htm、xlsx、xls、docx、csv、eml、msg、pptx、ppt、xml、epub |
-
-{% hint style="info" %}
-不同的 ETL 方案在文件提取效果的方面也会存在差异，想了解更多关于 Unstructured ETL 的数据处理方式，请参考[官方文档](https://docs.unstructured.io/open-source/core-functionality/partitioning)。
-{% endhint %}
-
-### 索引方式
+### 5 索引方式
 
 你需要选择文本的**索引方式**来指定数据的匹配方式，索引策略往往与检索方式相关，你需要根据场景需求来选择合适的索引方式。
 
@@ -120,7 +102,9 @@ Dify 各版本的 ETL 方案选择：
 
 <figure><img src="../../.gitbook/assets/image (109).png" alt=""><figcaption><p>Q to P 与 Q to Q 的索引模式区别</p></figcaption></figure>
 
-### 检索设置
+***
+
+### 6 检索设置
 
 在高质量索引模式下，Dify 提供了 3 种检索方案：
 
