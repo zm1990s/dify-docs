@@ -6,6 +6,8 @@
 
 <figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>查看已上传的文档分段</p></figcaption></figure>
 
+***
+
 ### 2 检查分段质量
 
 文档分段对于知识库应用的问答效果有明显影响，在将知识库与应用关联之前，建议人工检查分段质量。
@@ -26,6 +28,8 @@
 
 <figure><img src="../../.gitbook/assets/image (185).png" alt="" width="357"><figcaption><p>明显的语义截断</p></figcaption></figure>
 
+***
+
 ### 3 添加文本分段
 
 在分段列表内点击 「 添加分段 」 ，可以在文档内自行添加一个或批量添加多个自定义分段。
@@ -36,11 +40,15 @@
 
 <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>批量添加自定义分段</p></figcaption></figure>
 
+***
+
 ### 4 编辑文本分段
 
 在分段列表内，你可以对已添加的分段内容直接进行编辑修改。包括分段的文本内容和关键词。
 
 <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>编辑文档分段</p></figcaption></figure>
+
+***
 
 ### 5 元数据管理
 
@@ -52,6 +60,8 @@
 
 <figure><img src="../../.gitbook/assets/image (179).png" alt=""><figcaption><p>元数据管理</p></figcaption></figure>
 
+***
+
 ### 6 添加文档
 
 在「 知识库 > 文档列表 」 点击 「 添加文件 」，可以在已创建的知识库内上传新的文档或者 [Notion 页面](sync-from-notion.md)。
@@ -60,15 +70,17 @@
 
 <figure><img src="../../.gitbook/assets/image (181).png" alt=""><figcaption><p>知识库上传新文档</p></figcaption></figure>
 
+***
 
-
-### 文档禁用和归档
+### 7 文档禁用和归档
 
 **禁用**：数据集支持将暂时不想被索引的文档或分段进行禁用，在数据集文档列表，点击禁用按钮，则文档被禁用；也可以在文档详情，点击禁用按钮，禁用整个文档或某个分段，禁用的文档将不会被索引。禁用的文档点击启用，可以取消禁用。
 
 **归档**：一些不再使用的旧文档数据，如果不想删除可以将它进行归档，归档后的数据就只能查看或删除，不可以进行编辑。在数据集文档列表，点击归档按钮，则文档被归档，也可以在文档详情，归档文档。归档的文档将不会被索引。归档的文档也可以点击撤销归档。
 
-### 知识库设置
+***
+
+### 8 知识库设置
 
 在知识库的左侧导航中点击**设置**，你可以改变知识库的以下设置项：
 
@@ -90,7 +102,9 @@
 
 **检索设置**，[参考文档](chuang-jian-zhi-shi-ku-shang-chuan-wen-dang.md#jian-suo-she-zhi)
 
-### 知识库 API 管理
+***
+
+### 9 知识库 API 管理
 
 Dify 知识库提供整套标准 API  ，开发者通过 API 调用对知识库内的文档、分段进行增删改查等日常管理维护操作，请参考[知识库 API 文档](maintain-dataset-via-api.md)。
 
