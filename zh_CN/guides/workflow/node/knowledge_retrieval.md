@@ -18,7 +18,7 @@
 
 ### 3 如何配置
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>知识检索配置</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>知识检索配置</p></figcaption></figure>
 
 **配置流程：**
 
