@@ -49,7 +49,7 @@ LLM 是 Chatflow/Workflow 的核心节点，利用大语言模型的对话/生�
 
 <figure><img src="../../../.gitbook/assets/image (202).png" alt="" width="366"><figcaption><p>呼出变量插入菜单</p></figcaption></figure>
 
-### **提示词特殊变量**
+### **特殊变量说明**
 
 **上下文变量**
 
@@ -57,9 +57,9 @@ LLM 是 Chatflow/Workflow 的核心节点，利用大语言模型的对话/生�
 
 <figure><img src="../../../.gitbook/assets/image (205).png" alt=""><figcaption><p>上下文变量</p></figcaption></figure>
 
-在常见的知识库问答应用中，知识库检索的下游节点一般为 LLM 节点，知识检索的**输出变量** `result` 需要配置在 LLM 节点中的 **上下文变量** 内关联赋值。关联后你可以在提示词的合适位置插入 **上下文变量**。
+在常见的知识库问答应用中，知识库检索的下游节点一般为 LLM 节点，知识检索的**输出变量** `result` 需要配置在 LLM 节点中的 **上下文变量** 内关联赋值。关联后在提示词的合适位置插入 **上下文变量** ，可以将外部检索到的知识插入到提示词中。
 
-该变量除了可以作为 LLM 回复问题时的提示词上下文作为外部知识引入，另外由于其数据结构中包含了分段引用信息，同时可以支持应用端的 [**引用与归属**](../../knowledge-base/retrieval\_test\_and\_citation.md#id-2-yin-yong-yu-gui-shu) 功能。
+该变量除了可以作为 LLM 回复问题时的提示词上下文作为外部知识引入，由于其数据结构中包含了分段引用信息，同时可以支持应用端的 [**引用与归属**](../../knowledge-base/retrieval\_test\_and\_citation.md#id-2-yin-yong-yu-gui-shu) 功能。
 
 {% hint style="info" %}
 若上下文变量关联赋值的是上游节点的普通变量，例如开始节点的字符串类型变量，则上下文的变量同样可以作为外部知识引入，但 **引用与归属** 功能将会失效。
@@ -70,7 +70,7 @@ LLM 是 Chatflow/Workflow 的核心节点，利用大语言模型的对话/生�
 为了在文本补全类模型（例如 gpt-3.5-turbo-Instruct）内实现聊天型应用的对话记忆，Dify 在原[提示词专家模式（已下线）](../../application-design/prompt-engineering/prompt-engineering-1/)内设计了会话历史变量，该变量沿用至 Chatflow 的 LLM 节点内，用于在提示词中插入 AI 与用户之间的聊天历史，帮助 LLM 理解对话上文。
 
 {% hint style="info" %}
-会话历史变量仅在 Chatflow 中选择文本补全类模型中使用。
+会话历史变量应用并不广泛，仅在 Chatflow 中选择文本补全类模型时可以插入使用。
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image (204).png" alt=""><figcaption><p>插入会话历史变量</p></figcaption></figure>
