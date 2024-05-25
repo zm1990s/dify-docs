@@ -4,7 +4,9 @@
 
 调用大语言模型回答问题或者对自然语言进行处理。
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>LLM 节点</p></figcaption></figure>
+
+***
 
 ### 场景
 
@@ -20,18 +22,22 @@ LLM 是 Chatflow/Workflow 的核心节点，利用大语言模型的对话/生�
 
 选择合适的模型，编写提示词，你可以在 Chatflow/Workflow 中构建出强大、可靠的解决方案。
 
+***
+
 ### 如何配置
 
-配置 LLM 节点主要包括两个部分：
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>LLM 节点配置</p></figcaption></figure>
 
-1. 选择模型
-2. 编写系统提示词
+**配置步骤：**
 
-#### **配置模型**
+1. **选择模型**，Dify 提供了全球主流模型的[支持](../../../getting-started/readme/model-providers.md)，包括 OpenAI 的 GPT 系列、Anthropic 的 Claude 系列、Google 的 Gemini 系列等，选择一个模型取决于其推理能力、成本、响应速度、上下文窗口等因素，你需要根据场景需求和任务类型选择合适的模型。
+2. **配置模型参数**，模型参数用于控制模型的生成结果，例如温度、TopP，最大标记、回复格式等，为了方便选择系统同时提供了 3 套预设参数：创意，平衡和精确。
+3. **编写提示词**，LLM 节点提供了一个易用的提示词编排页面，选择聊天模型或补全模型，会显示不同的提示词编排结构。
+4. **高级设置**，可以开关记忆，设置记忆窗口，使用 Jinja-2 模版语言来进行更复杂的提示词等。
 
-在选择适合任务的模型之前，你需要在「系统设置—模型供应商」内完成模型配置。具体配置方式可以参考[模型配置说明](https://docs.dify.ai/v/zh-hans/guides/model-configuration)。选择好模型后可以对模型参数进行配置。
-
-<figure><img src="../../../.gitbook/assets/output (1) (1).png" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+如果你是初次使用 Dify ，在 LLM 节点选择模型之前，需要在 **系统设置—模型供应商** 内提前完成[模型配置](../../model-configuration/)。
+{% endhint %}
 
 #### **编写提示词**
 
