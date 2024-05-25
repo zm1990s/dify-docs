@@ -1,6 +1,6 @@
 # LLM
 
-### 定义
+定义
 
 调用大语言模型回答问题或者对自然语言进行处理。
 
@@ -26,7 +26,7 @@ LLM 是 Chatflow/Workflow 的核心节点，利用大语言模型的对话/生�
 
 ### 如何配置
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>LLM 节点配置</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (200).png" alt=""><figcaption><p>LLM 节点配置-选择模型</p></figcaption></figure>
 
 **配置步骤：**
 
@@ -41,30 +41,44 @@ LLM 是 Chatflow/Workflow 的核心节点，利用大语言模型的对话/生�
 
 #### **编写提示词**
 
-在 LLM 节点内，你可以自定义模型输入的提示词。如果选择对话型模型，你可以自定义系统提示词/用户消息/助手消息三部分的内容。
+在 LLM 节点内，你可以自定义模型输入提示词。如果选择聊天模型（Chat model），你可以自定义系统提示词（SYSTEM）/用户（USER）/助手（ASSISTANT）三部分内容。
 
-以知识库问答情景为例，在「上下文」中关联知识库检索节点的「结果」变量后，在提示词中插入「上下文」特殊变量即可将从知识库从检索到的文本内容作为模型输入的上下文背景信息。
+<figure><img src="../../../.gitbook/assets/image (203).png" alt="" width="352"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/output (2).png" alt=""><figcaption></figcaption></figure>
+在提示词编辑器中，你可以通过输入**“/”**或者**“{”**呼出**变量插入菜单**，将**特殊变量块**或者**上游节点变量**插入到提示词中作为上下文内容。
 
-在提示词编辑器中，你可以通过输入“/”或者“{”呼出变量插入菜单，将特殊变量块或者前置流程节点中的变量插入到提示词中作为上下文内容。
+<figure><img src="../../../.gitbook/assets/image (202).png" alt="" width="366"><figcaption><p>呼出变量插入菜单</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (151).png" alt="" width="375"><figcaption></figcaption></figure>
+### **提示词特殊变量**
 
-如果选择补全型模型，系统预置了提示词模板用于实现对话型应用，你可以自定义提示词的内容，在提示词合适的位置内输入“/”或者“{”插入特殊变量块：「会话历史」「上下文」来实现更丰富的会话功能。
+**上下文变量**
 
-<figure><img src="../../../.gitbook/assets/output (3).png" alt=""><figcaption></figcaption></figure>
+上下文变量是 LLM 节点内定义的特殊变量类型，用于在提示词内插入外部检索的文本内容。
 
-#### **记忆开关设置**
+<figure><img src="../../../.gitbook/assets/image (205).png" alt=""><figcaption><p>上下文变量</p></figcaption></figure>
 
-在对话型应用（Chatflow）中，LLM 节点会默认开启系统记忆设置，在多轮对话场景中，系统会将历史对话消息存储并在对话中传入模型。
+在常见的知识库问答应用中，知识库检索的下游节点一般为 LLM 节点，知识检索的**输出变量** `result` 需要配置在 LLM 节点中的 **上下文变量** 内关联赋值。关联后你可以在提示词的合适位置插入 **上下文变量**。
 
-在工作流应用（Workflow）中默认关闭系统记忆，且未提供记忆设置的选项。
+该变量除了可以作为 LLM 回复问题时的提示词上下文作为外部知识引入，另外由于其数据结构中包含了分段引用信息，同时可以支持应用端的 [**引用与归属**](../../knowledge-base/retrieval\_test\_and\_citation.md#id-2-yin-yong-yu-gui-shu) 功能。
 
-#### **记忆窗口设置**
+{% hint style="info" %}
+若上下文变量关联赋值的是上游节点的普通变量，例如开始节点的字符串类型变量，则上下文的变量同样可以作为外部知识引入，但 **引用与归属** 功能将会失效。
+{% endhint %}
 
-若关闭记忆窗口设置，系统将根据模型上下文窗口动态传入历史对话消息。开启记忆窗口设置后，你可以根据需求配置窗口传入历史对话消息的条数。
+**会话历史**
 
-#### **对话角色名设置**
+为了在文本补全类模型（例如 gpt-3.5-turbo-Instruct）内实现聊天型应用的对话记忆，Dify 在原[提示词专家模式（已下线）](../../application-design/prompt-engineering/prompt-engineering-1/)内设计了会话历史变量，该变量沿用至 Chatflow 的 LLM 节点内，用于在提示词中插入 AI 与用户之间的聊天历史，帮助 LLM 理解对话上文。
 
-由于模型在训练阶段的差异，不同模型对于角色名的指令遵循程度不同，如 Human/Assistant，Human/AI，人类/助手等等。为适配多模型的提示响应效果，系统提供了对话角色名的设置，修改对话角色名将会修改会话历史的角色前缀。
+{% hint style="info" %}
+会话历史变量仅在 Chatflow 中选择文本补全类模型中使用。
+{% endhint %}
+
+<figure><img src="../../../.gitbook/assets/image (204).png" alt=""><figcaption><p>插入会话历史变量</p></figcaption></figure>
+
+### 高级功能
+
+**记忆：**开启记忆后问题分类器的每次输入将包含对话中的聊天历史，以帮助 LLM 理解上文，提高对话交互中的问题理解能力。
+
+**记忆窗口：**记忆窗口关闭时，系统会根据模型上下文窗口动态过滤聊天历史的传递数量；打开时用户可以精确控制聊天历史的传递数量（对数）。
+
+**对话角色名设置：**由于模型在训练阶段的差异，不同模型对于角色名的指令遵循程度不同，如 Human/Assistant，Human/AI，人类/助手等等。为适配多模型的提示响应效果，系统提供了对话角色名的设置，修改对话角色名将会修改会话历史的角色前缀。
