@@ -49,6 +49,8 @@ LLM 是 Chatflow/Workflow 的核心节点，利用大语言模型的对话/生�
 
 <figure><img src="../../../.gitbook/assets/image (202).png" alt="" width="366"><figcaption><p>呼出变量插入菜单</p></figcaption></figure>
 
+***
+
 ### **特殊变量说明**
 
 **上下文变量**
@@ -75,6 +77,8 @@ LLM 是 Chatflow/Workflow 的核心节点，利用大语言模型的对话/生�
 
 <figure><img src="../../../.gitbook/assets/image (204).png" alt=""><figcaption><p>插入会话历史变量</p></figcaption></figure>
 
+***
+
 ### 高级功能
 
 **记忆：**开启记忆后问题分类器的每次输入将包含对话中的聊天历史，以帮助 LLM 理解上文，提高对话交互中的问题理解能力。
@@ -82,3 +86,7 @@ LLM 是 Chatflow/Workflow 的核心节点，利用大语言模型的对话/生�
 **记忆窗口：**记忆窗口关闭时，系统会根据模型上下文窗口动态过滤聊天历史的传递数量；打开时用户可以精确控制聊天历史的传递数量（对数）。
 
 **对话角色名设置：**由于模型在训练阶段的差异，不同模型对于角色名的指令遵循程度不同，如 Human/Assistant，Human/AI，人类/助手等等。为适配多模型的提示响应效果，系统提供了对话角色名的设置，修改对话角色名将会修改会话历史的角色前缀。
+
+**Jinja-2 模板：**LLM 的提示词编辑器内支持 Jinja-2 模板语言，允许你借助 Jinja2 这一强大的 Python 模板语言，实现轻量级数据转换和逻辑处理，参考[官方文档](https://jinja.palletsprojects.com/en/3.1.x/templates/)。
+
+&#x20;场景示例：**🚧**
