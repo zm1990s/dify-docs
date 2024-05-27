@@ -34,6 +34,8 @@
 
 
 
+
+
 ***
 
 ### 什么是列表内容
@@ -76,11 +78,27 @@
 
 ***
 
+### 支持返回列表的节点
+
+* 代码节点
+* 参数提取
+* 知识库检索
+* 迭代
+* 工具
+* HTTP 请求
+
 ### 如何获取列表格式的内容
 
 **使用 CODE 节点返回**
 
-
+<figure><img src="../../../.gitbook/assets/image (213).png" alt="" width="375"><figcaption><p>code 节点输出 array</p></figcaption></figure>
 
 **使用 参数提取 节点返回**
 
+<figure><img src="../../../.gitbook/assets/image (214).png" alt="" width="375"><figcaption><p>参数提取节点输出 array</p></figcaption></figure>
+
+**使用 知识检索 节点返回**
+
+<figure><img src="../../../.gitbook/assets/image (218).png" alt="" width="375"><figcaption><p>知识检索节点输出 array</p></figcaption></figure>
+
+工具节点
