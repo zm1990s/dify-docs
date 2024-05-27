@@ -14,7 +14,25 @@
 
 使用迭代节点可以实现更灵活的多步骤生成，充分发挥 Workflow 的能力。例如首先让 LLM 根据用户提供主题和摘要生成故事章节提纲，然后将故事章节提纲列作为输入，让 LLM 节点中进行多次迭代，直到生成完整的文故事。
 
-<figure><img src="../../../.gitbook/assets/image (206).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (207).png" alt=""><figcaption><p>长故事生成器</p></figcaption></figure>
+
+**配置步骤**
+
+1. 在开始节点配置故事标题（title）和大纲（outline）；
+
+<figure><img src="../../../.gitbook/assets/image (211).png" alt="" width="375"><figcaption><p>开始节点配置</p></figcaption></figure>
+
+1. 通过 Jinja-2 模板节点将故事标题与大纲转换为完整文本；
+
+<figure><img src="../../../.gitbook/assets/image (209).png" alt="" width="375"><figcaption><p>模板节点</p></figcaption></figure>
+
+3. 通过参数提取节点，将故事文本转换成为数组（Array）结构。定义提取参数为 `sections` ，参数类型为 `Array[Object]`,在指令内编写提取示例可以提高参数提取的效果。
+
+<figure><img src="../../../.gitbook/assets/image (210).png" alt="" width="375"><figcaption><p>参数提取</p></figcaption></figure>
+
+4. 将数组格式故事大纲作为迭代节点的输入，在 Iteration 内添加 LLM 节点处理
+
+
 
 ***
 
@@ -60,5 +78,9 @@
 
 ### 如何获取列表格式的内容
 
-**🚧** 维护中
+**使用 CODE 节点返回**
+
+
+
+**使用 参数提取 节点返回**
 
