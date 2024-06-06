@@ -24,6 +24,7 @@
   * [接入 OpenLLM 部署的本地模型](guides/model-configuration/openllm.md)
   * [接入 LocalAI 部署的本地模型](guides/model-configuration/localai.md)
   * [接入 Ollama 部署的本地模型](guides/model-configuration/ollama.md)
+  * [负载均衡](guides/model-configuration/fu-zai-jun-heng.md)
 * [构建](guides/application-design/README.md)
   * [创建应用](guides/application-design/creating-an-application.md)
   * [聊天助手](guides/application-design/conversation-application.md)
