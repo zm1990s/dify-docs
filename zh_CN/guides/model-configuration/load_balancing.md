@@ -26,8 +26,10 @@
 
 <figure><img src="../../.gitbook/assets/image (6).png" alt="" width="563"><figcaption><p>开启负载均衡</p></figcaption></figure>
 
-
-
 {% hint style="info" %}
 默认情况下，负载均衡使用 Round-robin 策略。如果触发速率限制，将应用 1 分钟的冷却时间。
 {% endhint %}
+
+你也可以从 **添加模型** 配置负载均衡，配置流程与上面一致。
+
+<figure><img src="../../.gitbook/assets/image.png" alt="" width="563"><figcaption><p>从添加模型配置负载均衡</p></figcaption></figure>
