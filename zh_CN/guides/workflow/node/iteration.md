@@ -134,6 +134,8 @@
 
 ### 如何将数组转换为文本
 
+迭代节点的输出变量为数组格式，无法直接输出。你可以使用一个简单的步骤将数组转换回文本。
+
 **使用代码节点转换**
 
 <figure><img src="../../../.gitbook/assets/image (1).png" alt="" width="334"><figcaption><p>代码节点转换</p></figcaption></figure>
