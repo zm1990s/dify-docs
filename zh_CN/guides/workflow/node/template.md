@@ -6,7 +6,9 @@
 
 ### 什么是 Jinja？
 
-> Jinja 是一个快速、表达力强、可扩展的模板引擎。模板中的特殊占位符允许编写类似 Python 语法的代码。然后将数据传递给模板以渲染最终文档。
+> Jinja is a fast, expressive, extensible templating engine.
+>
+> Jinja 是一个快速、表达力强、可扩展的模板引擎。
 
 —— [https://jinja.palletsprojects.com/en/3.1.x/](https://jinja.palletsprojects.com/en/3.1.x/)
 
