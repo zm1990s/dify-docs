@@ -6,7 +6,7 @@
 
 Dify 工作流内提供了丰富的[工具](../../gong-ju.md)选择，其中大多数工具的输入为结构化参数，参数提取器可以将用户的自然语言转换为工具可识别的参数，方便工具调用。
 
-工作流内的部分节点有特定的数据格式传入要求，如[迭代](iteration.md#ding-yi)节点的输入要求为数组格式，参数提取器可以方便的实现结构化参数的转换。
+工作流内的部分节点有特定的数据格式传入要求，如[迭代](iteration.md#ding-yi)节点的输入要求为数组格式，参数提取器可以方便的实现[结构化参数的转换](iteration.md#shi-li-1-chang-wen-zhang-die-dai-sheng-cheng-qi)。
 
 ***
 
@@ -16,7 +16,7 @@ Dify 工作流内提供了丰富的[工具](../../gong-ju.md)选择，其中大�
 
 在该示例中：Arxiv 论文检索工具的输入参数要求为 **论文作者** 或 **论文编号**，参数提取器从问题“这篇论文中讲了什么内容：2405.10739”中提取出论文编号 **2405.10739**，并作为工具参数进行精确查询。
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Arxiv 论文检索工具</p></figcaption></figure>
 
 2. **将文本转换为结构化数据**，如长故事迭代生成应用中，作为[迭代节点](iteration.md)的前置步骤，将文本格式的章节内容转换为数组格式，方便迭代节点进行多轮生成处理。
 
