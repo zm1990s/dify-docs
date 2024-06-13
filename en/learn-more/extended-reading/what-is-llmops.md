@@ -24,7 +24,7 @@ Before using an LLMOps platform like Dify, the process of developing application
 5. Model Fine-tuning: Independently manage the fine-tuning data preparation and training process, which can lead to inefficiencies and require more code.
 6. System and Operations: Technical personnel involvement or cost required for developing a management backend, increasing development and maintenance costs, and lacking support for collaboration and non-technical users.
 
-With the introduction of an LLMOps platform like Dify, the process of developing applications based on LLMs becomes more efficient, scalable, and secure. Here are the advantages of developing LLM applications using Dify:
+With the introduction of an LLMOps platform like Dify, the process of developing applications based on LLMs becomes more efficient, scalable, and secure. Here are the advantages of developing LLM applications using platforms like Dify:
 
 1. Data Preparation: The platform provides data collection and preprocessing tools, simplifying data cleaning and annotation tasks, and minimizing or even eliminating coding work.
 2. Prompt Engineering: WYSIWYG Prompt editing and debugging, allowing real-time optimization and adjustments based on user input data.
