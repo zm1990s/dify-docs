@@ -29,7 +29,6 @@
   * [创建应用](guides/application-design/creating-an-application.md)
   * [聊天助手](guides/application-design/conversation-application.md)
   * [Agent](guides/application-design/agent.md)
-  * [文本生成应用](guides/application-design/text-generation-application.md)
   * [提示词编排](guides/application-design/prompt-engineering/README.md)
     * [提示词专家模式（已下线）](guides/application-design/prompt-engineering/prompt-engineering-1/README.md)
       * [提示词初始模版参考](guides/application-design/prompt-engineering/prompt-engineering-1/prompt-engineering-template.md)
@@ -59,7 +58,6 @@
     * [检查清单](guides/workflow/debug\_and\_preview/checklist.md)
     * [运行历史](guides/workflow/debug\_and\_preview/history.md)
   * [应用发布](guides/workflow/publish.md)
-  * [导出/导入模板](guides/workflow/dao-chu-dao-ru-mo-ban.md)
 * [知识库](guides/knowledge-base/README.md)
   * [创建知识库&上传文档](guides/knowledge-base/create\_knowledge\_and\_upload\_documents.md)
   * [知识库及文档维护](guides/knowledge-base/knowledge\_and\_documents\_maintenance.md)
@@ -96,8 +94,7 @@
     * [敏感内容审查](guides/extension/code\_based\_extension/moderation.md)
 * [协同](guides/workspace/README.md)
   * [邀请与管理成员](guides/workspace/invite-and-manage-members.md)
-  * [发现](guides/workspace/app/README.md)
-    * [智聊](guides/workspace/app/chat.md)
+  * [发现](guides/workspace/app.md)
 
 ## 社区 <a href="#community" id="community"></a>
 
