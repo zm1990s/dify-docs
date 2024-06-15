@@ -90,8 +90,8 @@
     * [外部数据工具](guides/extension/code\_based\_extension/external\_data\_tool.md)
     * [敏感内容审查](guides/extension/code\_based\_extension/moderation.md)
 * [协同](guides/workspace/README.md)
-  * [邀请与管理成员](guides/workspace/invite-and-manage-members.md)
   * [发现](guides/workspace/app/README.md)
+  * [邀请与管理成员](guides/workspace/invite-and-manage-members.md)
 
 ## 社区 <a href="#community" id="community"></a>
 
