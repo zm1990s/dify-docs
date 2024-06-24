@@ -27,15 +27,15 @@ LangSmith 官网介绍：[https://www.langchain.com/langsmith](https://www.langc
 
 点击 Create API Key，创建一个项目凭据。
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>创建一个项目 API Key</p></figcaption></figure>
 
 选择 **Personal Access Token** ，用于后续的 API 身份校验。
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>创建一个 API Key</p></figcaption></figure>
 
 将创建的 API key 复制保存。
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption><p>复制 API Key</p></figcaption></figure>
 
 4. 在 Dify 应用内配置 LangSmith，打开需要监测的应用，在侧边菜单打开**监测**，在页面中选择**配置。**
 
@@ -46,6 +46,10 @@ LangSmith 官网介绍：[https://www.langchain.com/langsmith](https://www.langc
 点击配置后，将在 LangSmith 内创建的 **API Key** 和**项目名**粘贴到配置内并保存。
 
 <figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption><p>配置 LangSmith</p></figcaption></figure>
+
+{% hint style="info" %}
+配置项目名需要与 LangSmith 内设置的项目一致，若项目名不一致，数据同步时 LangSmith 会自动创建一个新的项目。
+{% endhint %}
 
 成功保存后可以在当前页面查看到状态，显示已启动即正在监测。
 
