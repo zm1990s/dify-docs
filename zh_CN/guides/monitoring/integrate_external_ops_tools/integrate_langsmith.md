@@ -15,11 +15,11 @@ LangSmith 官网介绍：[https://www.langchain.com/langsmith](https://www.langc
 1. 登录官网注册并登录 LangSmith：[https://www.langchain.com/langsmith](https://www.langchain.com/langsmith)
 2. 在 LangSmith 内创建项目，登录后在主页点击 **New Project** 创建一个自己的项目，**项目**将用于与 Dify 内的**应用**关联进行数据监测。
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>在 LangSmith 内创建项目</p></figcaption></figure>
 
 创建完成之后在 Projects 内可以查看到所有已创建的项目。
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption><p>在 LangSmith 内查看已创建项目</p></figcaption></figure>
 
 3. 创建项目凭据，在左侧边栏内找到项目设置 **Settings**。
 
