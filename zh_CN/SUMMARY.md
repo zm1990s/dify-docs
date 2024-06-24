@@ -83,7 +83,7 @@
 * [监测](guides/monitoring/README.md)
   * [集成外部 Ops 工具](guides/monitoring/integrate\_external\_ops\_tools/README.md)
     * [集成 LangSmith](guides/monitoring/integrate\_external\_ops\_tools/integrate\_langsmith.md)
-    * [集成 LangFuse](guides/monitoring/integrate\_external\_ops\_tools/integrate\_langfuse.md)
+    * [集成 Langfuse](guides/monitoring/integrate\_external\_ops\_tools/integrate\_langfuse.md)
   * [数据分析](guides/monitoring/analysis.md)
 * [扩展](guides/extension/README.md)
   * [API 扩展](guides/extension/api\_based\_extension/README.md)
