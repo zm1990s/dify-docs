@@ -12,7 +12,7 @@ LangSmith 官网介绍：[https://www.langchain.com/langsmith](https://www.langc
 
 ### 2 如何配置 LangSmith
 
-1. 登录官网注册并登录 LangSmith：[https://www.langchain.com/langsmith](https://www.langchain.com/langsmith)
+1. 在[官网注册](https://www.langchain.com/langsmith)并登录 LangSmith
 2. 在 LangSmith 内创建项目，登录后在主页点击 **New Project** 创建一个自己的项目，**项目**将用于与 Dify 内的**应用**关联进行数据监测。
 
 <figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>在 LangSmith 内创建项目</p></figcaption></figure>

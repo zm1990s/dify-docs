@@ -12,7 +12,7 @@ Langfuse 官网介绍：[https://langfuse.com/](https://langfuse.com/)
 
 ### 2 如何配置 LangFuse
 
-1. 登录[官网注册](https://langfuse.com/)并登录 Langfuse
+1. 在[官网注册](https://langfuse.com/)并登录 Langfuse
 2. 在 LangSmith 内创建项目，登录后在主页点击 **New** ，创建一个自己的项目，**项目**将用于与 Dify 内的**应用**关联进行数据监测。
 
 <figure><img src="../../../.gitbook/assets/image (249).png" alt=""><figcaption><p>在 LangFuse 内创建项目</p></figcaption></figure>
