@@ -57,9 +57,9 @@ LangSmith 官网介绍：[https://www.langchain.com/langsmith](https://www.langc
 
 ### 3 在 LangSmith 内查看监测数据
 
-配置完成后， Dify 内应用的调试或生产数据可以在 LangSmith 查看监测数据
+配置完成后， Dify 内应用的调试或生产数据可以在 LangSmith 查看监测数据。
 
-<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption><p>在 Dify 内调试数据</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption><p>在 Dify 内调试应用</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption><p>在 LangSmith 内查看监控数据</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption><p>在 LangSmith 内查看应用数据</p></figcaption></figure>
 

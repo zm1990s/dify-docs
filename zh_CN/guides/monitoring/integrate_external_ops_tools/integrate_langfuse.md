@@ -49,9 +49,9 @@ Langfuse 官网介绍：[https://langfuse.com/](https://langfuse.com/)
 
 ### 3 在 LangSmith 内查看监测数据
 
-配置完成后， Dify 内应用的调试或生产数据可以在 LangSmith 查看监测数据
+配置完成后， Dify 内应用的调试或生产数据可以在 LangSmith 查看监测数据。
 
 <figure><img src="../../../.gitbook/assets/image (259).png" alt=""><figcaption><p>在 Dify 内调试应用</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (258).png" alt=""><figcaption><p>在 LangFuse 内查看监控数据</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (258).png" alt=""><figcaption><p>在 LangFuse 内查看应用数据</p></figcaption></figure>
 
