@@ -15,7 +15,7 @@ LangSmith 官网介绍：[https://www.langchain.com/langsmith](https://www.langc
 1. 登录官网注册并登录 LangSmith：[https://www.langchain.com/langsmith](https://www.langchain.com/langsmith)
 2. 在 LangSmith 内创建项目，登录后在主页点击 **New Project** 创建一个自己的项目，**项目**将用于与 Dify 内的**应用**关联进行数据监测。
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>在 LangSmith 内创建项目</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>在 LangSmith 内创建项目</p></figcaption></figure>
 
 创建完成之后在 Projects 内可以查看到所有已创建的项目。
 
@@ -27,7 +27,7 @@ LangSmith 官网介绍：[https://www.langchain.com/langsmith](https://www.langc
 
 点击 **Create API Key**，创建一个项目凭据。
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>创建一个项目 API Key</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>创建一个项目 API Key</p></figcaption></figure>
 
 选择 **Personal Access Token** ，用于后续的 API 身份校验。
 
@@ -60,6 +60,8 @@ LangSmith 官网介绍：[https://www.langchain.com/langsmith](https://www.langc
 配置完成后， Dify 内应用的调试或生产数据可以在 LangSmith 查看监测数据。
 
 <figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption><p>在 Dify 内调试应用</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>在 LangSmith 内查看应用数据</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption><p>在 LangSmith 内查看应用数据</p></figcaption></figure>
 
