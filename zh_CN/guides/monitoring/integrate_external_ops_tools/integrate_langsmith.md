@@ -13,7 +13,7 @@ LangSmith 官网介绍：[https://www.langchain.com/langsmith](https://www.langc
 ### 2 如何配置 LangSmith
 
 1. 登录官网注册并登录 LangSmith：[https://www.langchain.com/langsmith](https://www.langchain.com/langsmith)
-2. 在 LangSmith 内创建项目，登录后在主页点击 New Project 创建一个自己的项目，**项目**将用于与 Dify 内的**应用**关联进行数据监测。
+2. 在 LangSmith 内创建项目，登录后在主页点击 **New Project** 创建一个自己的项目，**项目**将用于与 Dify 内的**应用**关联进行数据监测。
 
 <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
@@ -21,11 +21,11 @@ LangSmith 官网介绍：[https://www.langchain.com/langsmith](https://www.langc
 
 <figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-3. 创建项目凭据，在左侧边栏内找到项目设置 Setting
+3. 创建项目凭据，在左侧边栏内找到项目设置 **Settings**。
 
 <figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption><p>项目设置</p></figcaption></figure>
 
-点击 Create API Key，创建一个项目凭据。
+点击 **Create API Key**，创建一个项目凭据。
 
 <figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>创建一个项目 API Key</p></figcaption></figure>
 
@@ -51,7 +51,7 @@ LangSmith 官网介绍：[https://www.langchain.com/langsmith](https://www.langc
 配置项目名需要与 LangSmith 内设置的项目一致，若项目名不一致，数据同步时 LangSmith 会自动创建一个新的项目。
 {% endhint %}
 
-成功保存后可以在当前页面查看到状态，显示已启动即正在监测。
+成功保存后可以在当前页面查看监测状态。
 
 <figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption><p>查看配置状态</p></figcaption></figure>
 
