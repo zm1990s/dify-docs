@@ -8,6 +8,8 @@ Langfuse 是一个开源的 LLM 工程平台，可以帮助团队协作调试、
 Langfuse 官网介绍：[https://langfuse.com/](https://langfuse.com/)
 {% endhint %}
 
+***
+
 ### 2 如何配置 LangFuse
 
 1. 登录[官网注册](https://langfuse.com/)并登录 Langfuse
@@ -42,6 +44,8 @@ Langfuse 官网介绍：[https://langfuse.com/](https://langfuse.com/)
 成功保存后可以在当前页面查看到状态，显示已启动即正在监测。
 
 <figure><img src="../../../.gitbook/assets/image (257).png" alt=""><figcaption><p>查看配置状态</p></figcaption></figure>
+
+***
 
 ### 3 在 LangSmith 内查看监测数据
 
