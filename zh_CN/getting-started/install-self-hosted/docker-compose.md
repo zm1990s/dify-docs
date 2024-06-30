@@ -1,6 +1,6 @@
-# Docker Compose Deployment
+# Docker Compose 部署
 
-### Prerequisites
+### 前提条件
 
 | Operating System            | Software                                                             | Description                                                                                                                                                                                   |
 | -------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -22,6 +22,7 @@ git clone https://github.com/langgenius/dify.git
 
 ```Shell
 cd dify/docker
+cp .env.example .env
 docker compose up -d
 ```
 
@@ -59,7 +60,7 @@ docker-web-1        langgenius/dify-web:0.3.2          "/entrypoint.sh"         
 docker-worker-1     langgenius/dify-api:0.3.2          "/entrypoint.sh"         worker              4 seconds ago       Up 2 seconds        80/tcp, 5001/tcp
 ```
 
-### Upgrade Dify
+### 更新 Dify
 
 进入 dify 源代码的 docker 目录，按顺序执行以下命令：
 
@@ -70,6 +71,19 @@ docker compose down
 docker compose pull
 docker compose up -d
 ```
-### Access Dify
+### 访问 Dify
 
-访问 Difyll在浏览器中输入 `http://localhost` 访问 Dify。
+在浏览器中输入 `http://localhost` 访问 Dify。
+
+### 自定义配置
+
+编辑 `.env` 文件中的环境变量值。然后，重新启动 Dify：
+
+```bash
+
+```
+docker compose down
+docker compose up -d
+```
+
+完整的环境变量集合可以在 `docker/.env.example` 中找到。
