@@ -22,6 +22,7 @@ difyソースコードのdockerディレクトリに移動し、次のコマン�
 
 ```Shell
 cd dify/docker
+cp .env.example .env
 docker compose up -d
 ```
 
