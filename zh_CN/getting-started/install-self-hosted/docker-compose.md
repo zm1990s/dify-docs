@@ -71,7 +71,15 @@ docker compose down
 docker compose pull
 docker compose up -d
 ```
+
+#### 同步环境变量配置 (重要！)
+
+* 如果 `.env.example` 文件有更新，请务必同步修改您本地的 `.env` 文件。
+
+* 检查 `.env` 文件中的所有配置项，确保它们与您的实际运行环境相匹配。您可能需要将 `.env.example` 中的新变量添加到 `.env` 文件中，并更新已更改的任何值。
+
 ### 访问 Dify
+
 
 在浏览器中输入 `http://localhost` 访问 Dify。
 
