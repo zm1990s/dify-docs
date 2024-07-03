@@ -1,4 +1,4 @@
-# 目次
+# Table of contents
 
 ## 入門 <a href="#getting-started" id="getting-started"></a>
 
@@ -104,22 +104,22 @@
 
 ## もっと読む <a href="#learn-more" id="learn-more"></a>
 
-* [アプリケーションケース](learn-more/use-cases/README.md)
-  * [あなた専用のQAチャットボットのトレーニング方法](learn-more/use-cases/train-a-qa-chatbot-that-belongs-to-you.md)
+* [アプリケーションケース](learn-more/apurikshonksu/README.md)
+  * [あなた専用のQAチャットボットのトレーニング方法](learn-more/apurikshonksu/anatanoqachattobottonotorningu.md)
   * [コードなしでMidjourney プロンプトボットを作成する方法](learn-more/use-cases/create-a-midjoureny-prompt-word-robot-with-zero-code.md)
   * [Notion AI アシスタントを構築する](learn-more/use-cases/build-an-notion-ai-assistant.md)
   * [数分で業務データを持つ公式サイトのAIチャットボットを作成する方法](learn-more/use-cases/create-an-ai-chatbot-with-business-data-in-minutes.md)
-  * [フルセットのオープンソースツールを使用したLLMアプリケーションの実践：DifyでBaichuanオープンソースモデル機能を呼び出す](learn-more/use-cases/practical-implementation-of-building-llm-applications-using-a-full-set-of-open-source-tools.md)
-  * [DifyをWeChatエコシステムに統合する方法](learn-more/use-cases/dify-on-wechat.md)
+  * [フルセットのオープンソースツールを使用したLLMアプリケーションの実践：DifyでBaichuanオープンソースモデル機能を呼び出す](learn-more/apurikshonksu/furusettonopunssutsruwoshitallmapurikshonnodifydebaichuanpunssumoderuwobisu.md)
+  * [DifyをWeChatエコシステムに統合する方法](learn-more/apurikshonksu/difywowechatekoshisutemunisuru.md)
 * [拡張読書](learn-more/extended-reading/README.md)
   * [LLMOpsとは何ですか？](learn-more/extended-reading/what-is-llmops.md)
-  * [検索強化生成（RAG）](learn-more/extended-reading/retrieval-augment/README.md)
-    * [ハイブリッド検索](learn-more/extended-reading/retrieval-augment/hybrid-search.md)
-    * [リランク](learn-more/extended-reading/retrieval-augment/rerank.md)
-    * [リトリーバルモード](learn-more/extended-reading/retrieval-augment/retrieval.md)
-  * [プロンプトエンジニアリング](learn-more/extended-reading/prompt-engineering/README.md)
-    * [プロンプトエンジニアリングエキスパートモード（廃止）](learn-more/extended-reading/prompt-engineering/prompt-engineering-1/README.md)
-      * [プロンプト初期テンプレート参考](learn-more/extended-reading/prompt-engineering/prompt-engineering-1/prompt-engineering-template.md)
+  * [検索強化生成（RAG）](learn-more/extended-reading/jian-suo-qiang-hua-sheng-cheng-rag/README.md)
+    * [ハイブリッド検索](learn-more/extended-reading/jian-suo-qiang-hua-sheng-cheng-rag/haiburiddo.md)
+    * [リランク](learn-more/extended-reading/jian-suo-qiang-hua-sheng-cheng-rag/riranku.md)
+    * [リトリーバルモード](learn-more/extended-reading/jian-suo-qiang-hua-sheng-cheng-rag/ritorbarumdo.md)
+  * [プロンプトエンジニアリング](learn-more/extended-reading/puronputoenjiniaringu/README.md)
+    * [プロンプトエンジニアリングエキスパートモード（廃止）](learn-more/extended-reading/puronputoenjiniaringu/puronputoenjiniaringuekisuptomdo/README.md)
+      * [プロンプト初期テンプレート参考](learn-more/extended-reading/puronputoenjiniaringu/puronputoenjiniaringuekisuptomdo/puronputotenpurto.md)
 * [FAQ](learn-more/faq/README.md)
   * [ローカルデプロイに関するFAQ](learn-more/faq/install-faq.md)
   * [LLM設定と使用に関するFAQ](learn-more/faq/llms-use-faq.md)
@@ -127,6 +127,6 @@
 ## ポリシー <a href="#policies" id="policies"></a>
 
 * [オープンソースライセンス](policies/open-source.md)
-* [ユーザー契約](policies/agreement/README.md)
+* [ユーザー契約](policies/yz/README.md)
   * [利用規約](https://dify.ai/terms)
   * [プライバシーポリシー](https://dify.ai/privacy)
