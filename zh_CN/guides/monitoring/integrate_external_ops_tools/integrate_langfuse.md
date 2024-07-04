@@ -55,282 +55,295 @@ Langfuse 官网介绍：[https://langfuse.com/](https://langfuse.com/)
 
 <figure><img src="../../../.gitbook/assets/image (258).png" alt=""><figcaption><p>在 Langfuse 内查看应用数据</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>在 Langfuse 内查看应用数据</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption><p>在 Langfuse 内查看应用数据</p></figcaption></figure>
 
-### 4 监测数据清单  
+### 4 监测数据清单
 
 #### Workflow /Chatflow Trace信息
+
 **用于追踪workflow以及chatflow**
 
-| Workflow                            | LangFuse Trace        |
-|-------------------------------------|-----------------------|
-| workflow_app_log_id/workflow_run_id | id                    |
-| user_session_id                     | user_id               |
-| workflow_{id}                       | name                  |
-| start_time                          | start_time            |
-| end_time                            | end_time              |
-| inputs                              | input                 |
-| outputs                             | output                |
-| 模型token消耗相关                         | usage                 |
-| metadata                            | metadata              |
-| error                               | level                 |
-| error                               | status_message        |
-| [workflow]                          | tags                  |
-| conversation_id/workflow时无          | session_id            |
-| conversion_id                       | parent_observation_id |
- 
+| Workflow                                 | LangFuse Trace          |
+| ---------------------------------------- | ----------------------- |
+| workflow\_app\_log\_id/workflow\_run\_id | id                      |
+| user\_session\_id                        | user\_id                |
+| workflow\_{id}                           | name                    |
+| start\_time                              | start\_time             |
+| end\_time                                | end\_time               |
+| inputs                                   | input                   |
+| outputs                                  | output                  |
+| 模型token消耗相关                              | usage                   |
+| metadata                                 | metadata                |
+| error                                    | level                   |
+| error                                    | status\_message         |
+| \[workflow]                              | tags                    |
+| conversation\_id/workflow时无              | session\_id             |
+| conversion\_id                           | parent\_observation\_id |
+
 **Workflow Trace Info**
-- workflow_id - Workflow的唯一标识
-- conversation_id - 对话ID
-- workflow_run_id - 此次运行的ID
-- tenant_id - 租户ID
-- elapsed_time - 此次运行耗时
-- status - 运行状态
-- version - Workflow版本
-- total_tokens - 此次运行使用的token总数
-- file_list - 处理的文件列表
-- triggered_from - 触发此次运行的来源
-- workflow_run_inputs - 此次运行的输入数据
-- workflow_run_outputs - 此次运行的输出数据
-- error - 此次运行中发生的错误
-- query - 运行时使用的查询
-- workflow_app_log_id - Workflow应用日志ID
-- message_id - 关联的消息ID
-- start_time - 运行开始时间
-- end_time - 运行结束时间
-- workflow node executions - workflow节点运行信息
-- Metadata
-  - workflow_id - Workflow的唯一标识
-  - conversation_id - 对话ID
-  - workflow_run_id - 此次运行的ID
-  - tenant_id - 租户ID
-  - elapsed_time - 此次运行耗时
-  - status - 运行状态
-  - version - Workflow版本
-  - total_tokens - 此次运行使用的token总数
-  - file_list - 处理的文件列表
-  - triggered_from - 触发来源
+
+* workflow\_id - Workflow的唯一标识
+* conversation\_id - 对话ID
+* workflow\_run\_id - 此次运行的ID
+* tenant\_id - 租户ID
+* elapsed\_time - 此次运行耗时
+* status - 运行状态
+* version - Workflow版本
+* total\_tokens - 此次运行使用的token总数
+* file\_list - 处理的文件列表
+* triggered\_from - 触发此次运行的来源
+* workflow\_run\_inputs - 此次运行的输入数据
+* workflow\_run\_outputs - 此次运行的输出数据
+* error - 此次运行中发生的错误
+* query - 运行时使用的查询
+* workflow\_app\_log\_id - Workflow应用日志ID
+* message\_id - 关联的消息ID
+* start\_time - 运行开始时间
+* end\_time - 运行结束时间
+* workflow node executions - workflow节点运行信息
+* Metadata
+  * workflow\_id - Workflow的唯一标识
+  * conversation\_id - 对话ID
+  * workflow\_run\_id - 此次运行的ID
+  * tenant\_id - 租户ID
+  * elapsed\_time - 此次运行耗时
+  * status - 运行状态
+  * version - Workflow版本
+  * total\_tokens - 此次运行使用的token总数
+  * file\_list - 处理的文件列表
+  * triggered\_from - 触发来源
 
 #### Message Trace信息
+
 **用于追踪llm对话相关**
 
-| Message                        | LangFuse Generation/Trace |
-|--------------------------------|---------------------------|
-| message_id                     | id                        |
-| user_session_id                | user_id                   |
-| message_{id}                   | name                      |
-| start_time                     | start_time                |
-| end_time                       | end_time                  |
-| inputs                         | input                     |
-| outputs                        | output                    |
-| 模型token消耗相关                    | usage                     |
-| metadata                       | metadata                  |
-| error                          | level                     |
-| error                          | status_message            |
-| ["message", conversation_mode] | tags                      |
-| conversation_id                | session_id                |
-| conversion_id                  | parent_observation_id     |
+| Message                          | LangFuse Generation/Trace |
+| -------------------------------- | ------------------------- |
+| message\_id                      | id                        |
+| user\_session\_id                | user\_id                  |
+| message\_{id}                    | name                      |
+| start\_time                      | start\_time               |
+| end\_time                        | end\_time                 |
+| inputs                           | input                     |
+| outputs                          | output                    |
+| 模型token消耗相关                      | usage                     |
+| metadata                         | metadata                  |
+| error                            | level                     |
+| error                            | status\_message           |
+| \["message", conversation\_mode] | tags                      |
+| conversation\_id                 | session\_id               |
+| conversion\_id                   | parent\_observation\_id   |
 
 **Message Trace Info**
-- message_id - 消息ID
-- message_data - 消息数据
-- user_session_id - 用户的session_id
-- conversation_model - 对话模式
-- message_tokens - 消息中的令牌数
-- answer_tokens - 回答中的令牌数
-- total_tokens - 消息和回答中的总令牌数
-- error - 错误信息
-- inputs - 输入数据
-- outputs - 输出数据
-- file_list - 处理的文件列表
-- start_time - 开始时间
-- end_time - 结束时间
-- message_file_data - 消息关联的文件数据
-- conversation_mode - 对话模式
-- Metadata 
-  - conversation_id - 消息所属对话的ID
-  - ls_provider - 模型提供者
-  - ls_model_name - 模型ID
-  - status - 消息状态
-  - from_end_user_id - 发送用户的ID
-  - from_account_id - 发送账户的ID
-  - agent_based - 是否基于代理
-  - workflow_run_id - 工作流运行ID
-  - from_source - 消息来源
-  - message_id - 消息ID
+
+* message\_id - 消息ID
+* message\_data - 消息数据
+* user\_session\_id - 用户的session\_id
+* conversation\_model - 对话模式
+* message\_tokens - 消息中的令牌数
+* answer\_tokens - 回答中的令牌数
+* total\_tokens - 消息和回答中的总令牌数
+* error - 错误信息
+* inputs - 输入数据
+* outputs - 输出数据
+* file\_list - 处理的文件列表
+* start\_time - 开始时间
+* end\_time - 结束时间
+* message\_file\_data - 消息关联的文件数据
+* conversation\_mode - 对话模式
+* Metadata
+  * conversation\_id - 消息所属对话的ID
+  * ls\_provider - 模型提供者
+  * ls\_model\_name - 模型ID
+  * status - 消息状态
+  * from\_end\_user\_id - 发送用户的ID
+  * from\_account\_id - 发送账户的ID
+  * agent\_based - 是否基于代理
+  * workflow\_run\_id - 工作流运行ID
+  * from\_source - 消息来源
+  * message\_id - 消息ID
 
 #### Moderation Trace信息
+
 **用于追踪对话审查**
 
-| Moderation            | LangFuse Generation/Trace   |
-|-----------------------|-----------------------------|
-| user_id               | user_id                     |
-| moderation            | name                        |
-| start_time            | start_time                  |
-| end_time              | end_time                    |
-| inputs                | input                       |
-| outputs               | output                      |
-| metadata              | metadata                    |
-| [moderation]          | tags                        |
-| message_id            | parent_observation_id       |
+| Moderation    | LangFuse Generation/Trace |
+| ------------- | ------------------------- |
+| user\_id      | user\_id                  |
+| moderation    | name                      |
+| start\_time   | start\_time               |
+| end\_time     | end\_time                 |
+| inputs        | input                     |
+| outputs       | output                    |
+| metadata      | metadata                  |
+| \[moderation] | tags                      |
+| message\_id   | parent\_observation\_id   |
 
 **Message Trace Info**
-- message_id - 消息ID
-- user_id: 用户id
-- workflow_app_log_id workflow_app_log_id
-- inputs - 审查的输入数据
-- message_data - 消息数据
-- flagged - 是否被标记为需要注意的内容
-- action - 执行的具体行动
-- preset_response - 预设响应
-- start_time - 审查开始时间
-- end_time - 审查结束时间
-- Metadata
-  - message_id - 消息ID
-  - action - 执行的具体行动
-  - preset_response - 预设响应
+
+* message\_id - 消息ID
+* user\_id: 用户id
+* workflow\_app\_log\_id workflow\_app\_log\_id
+* inputs - 审查的输入数据
+* message\_data - 消息数据
+* flagged - 是否被标记为需要注意的内容
+* action - 执行的具体行动
+* preset\_response - 预设响应
+* start\_time - 审查开始时间
+* end\_time - 审查结束时间
+* Metadata
+  * message\_id - 消息ID
+  * action - 执行的具体行动
+  * preset\_response - 预设响应
 
 #### Suggested Question Trace信息
+
 **用于追踪建议问题**
 
-| Suggested Question         | LangFuse Generation/Trace   |
-|----------------------------|-----------------------------|
-| user_id                    | user_id                     |
-| suggested_question         | name                        |
-| start_time                 | start_time                  |
-| end_time                   | end_time                    |
-| inputs                     | input                       |
-| outputs                    | output                      |
-| metadata                   | metadata                    |
-| [suggested_question]       | tags                        |
-| message_id                 | parent_observation_id       |
-
+| Suggested Question     | LangFuse Generation/Trace |
+| ---------------------- | ------------------------- |
+| user\_id               | user\_id                  |
+| suggested\_question    | name                      |
+| start\_time            | start\_time               |
+| end\_time              | end\_time                 |
+| inputs                 | input                     |
+| outputs                | output                    |
+| metadata               | metadata                  |
+| \[suggested\_question] | tags                      |
+| message\_id            | parent\_observation\_id   |
 
 **Message Trace Info**
-- message_id - 消息ID
-- message_data - 消息数据
-- inputs - 输入的内容
-- outputs - 输出的内容
-- start_time - 开始时间
-- end_time - 结束时间
-- total_tokens - 令牌数量
-- status - 消息状态
-- error - 错误信息
-- from_account_id - 发送账户的ID
-- agent_based - 是否基于代理
-- from_source - 消息来源
-- model_provider - 模型提供者
-- model_id - 模型ID
-- suggested_question - 建议的问题
-- level - 状态级别
-- status_message - 状态信息
-- Metadata
-  - message_id - 消息ID
-  - ls_provider - 模型提供者
-  - ls_model_name - 模型ID
-  - status - 消息状态
-  - from_end_user_id - 发送用户的ID
-  - from_account_id - 发送账户的ID
-  - workflow_run_id - 工作流运行ID
-  - from_source - 消息来源
+
+* message\_id - 消息ID
+* message\_data - 消息数据
+* inputs - 输入的内容
+* outputs - 输出的内容
+* start\_time - 开始时间
+* end\_time - 结束时间
+* total\_tokens - 令牌数量
+* status - 消息状态
+* error - 错误信息
+* from\_account\_id - 发送账户的ID
+* agent\_based - 是否基于代理
+* from\_source - 消息来源
+* model\_provider - 模型提供者
+* model\_id - 模型ID
+* suggested\_question - 建议的问题
+* level - 状态级别
+* status\_message - 状态信息
+* Metadata
+  * message\_id - 消息ID
+  * ls\_provider - 模型提供者
+  * ls\_model\_name - 模型ID
+  * status - 消息状态
+  * from\_end\_user\_id - 发送用户的ID
+  * from\_account\_id - 发送账户的ID
+  * workflow\_run\_id - 工作流运行ID
+  * from\_source - 消息来源
 
 #### Dataset Retrieval Trace信息
-**用于追踪知识库检索**  
 
-| Dataset Retrieval         | LangFuse Generation/Trace   |
-|---------------------------|-----------------------------|
-| user_id                   | user_id                     |
-| dataset_retrieval         | name                        |
-| start_time                | start_time                  |
-| end_time                  | end_time                    |
-| inputs                    | input                       |
-| outputs                   | output                      |
-| metadata                  | metadata                    |
-| [dataset_retrieval]       | tags                        |
-| message_id                | parent_observation_id       |
+**用于追踪知识库检索**
+
+| Dataset Retrieval     | LangFuse Generation/Trace |
+| --------------------- | ------------------------- |
+| user\_id              | user\_id                  |
+| dataset\_retrieval    | name                      |
+| start\_time           | start\_time               |
+| end\_time             | end\_time                 |
+| inputs                | input                     |
+| outputs               | output                    |
+| metadata              | metadata                  |
+| \[dataset\_retrieval] | tags                      |
+| message\_id           | parent\_observation\_id   |
 
 **Dataset Retrieval Trace Info**
-- message_id - 消息ID
-- inputs - 输入内容
-- documents - 文档数据
-- start_time - 开始时间
-- end_time - 结束时间
-- message_data - 消息数据
-- Metadata
-  - message_id消息ID
-  - ls_provider模型提供者
-  - ls_model_name模型ID
-  - status消息状态
-  - from_end_user_id发送用户的ID
-  - from_account_id发送账户的ID
-  - agent_based是否基于代理
-  - workflow_run_id工作流运行ID
-  - from_source消息来源
+
+* message\_id - 消息ID
+* inputs - 输入内容
+* documents - 文档数据
+* start\_time - 开始时间
+* end\_time - 结束时间
+* message\_data - 消息数据
+* Metadata
+  * message\_id消息ID
+  * ls\_provider模型提供者
+  * ls\_model\_name模型ID
+  * status消息状态
+  * from\_end\_user\_id发送用户的ID
+  * from\_account\_id发送账户的ID
+  * agent\_based是否基于代理
+  * workflow\_run\_id工作流运行ID
+  * from\_source消息来源
 
 #### Tool Trace信息
+
 **用于追踪工具调用**
 
-| Tool                       | LangFuse Generation/Trace   |
-|----------------------------|-----------------------------|
-| user_id                    | user_id                     |
-| tool_name                  | name                        |
-| start_time                 | start_time                  |
-| end_time                   | end_time                    |
-| inputs                     | input                       |
-| outputs                    | output                      |
-| metadata                   | metadata                    |
-| ["tool", tool_name]        | tags                        |
-| message_id                 | parent_observation_id       |
+| Tool                  | LangFuse Generation/Trace |
+| --------------------- | ------------------------- |
+| user\_id              | user\_id                  |
+| tool\_name            | name                      |
+| start\_time           | start\_time               |
+| end\_time             | end\_time                 |
+| inputs                | input                     |
+| outputs               | output                    |
+| metadata              | metadata                  |
+| \["tool", tool\_name] | tags                      |
+| message\_id           | parent\_observation\_id   |
 
 **Tool Trace Info**
-- message_id消息ID
-- tool_name工具名称
-- start_time开始时间
-- end_time结束时间
-- tool_inputs工具输入
-- tool_outputs工具输出
-- message_data消息数据
-- error错误信息，如果存在
-- inputs消息的输入内容
-- outputs消息的回答内容
-- tool_config工具配置
-- time_cost时间成本
-- tool_parameters工具参数
-- file_url关联文件的URL
-- Metadata
-  - message_id消息ID
-  - tool_name工具名称
-  - tool_inputs工具输入
-  - tool_outputs工具输出
-  - tool_config工具配置
-  - time_cost时间成本
-  - error错误信息
-  - tool_parameters工具参数
-  - message_file_id消息文件ID
-  - created_by_role创建者角色
-  - created_user_id创建者用户ID
+
+* message\_id消息ID
+* tool\_name工具名称
+* start\_time开始时间
+* end\_time结束时间
+* tool\_inputs工具输入
+* tool\_outputs工具输出
+* message\_data消息数据
+* error错误信息，如果存在
+* inputs消息的输入内容
+* outputs消息的回答内容
+* tool\_config工具配置
+* time\_cost时间成本
+* tool\_parameters工具参数
+* file\_url关联文件的URL
+* Metadata
+  * message\_id消息ID
+  * tool\_name工具名称
+  * tool\_inputs工具输入
+  * tool\_outputs工具输出
+  * tool\_config工具配置
+  * time\_cost时间成本
+  * error错误信息
+  * tool\_parameters工具参数
+  * message\_file\_id消息文件ID
+  * created\_by\_role创建者角色
+  * created\_user\_id创建者用户ID
 
 #### Generate Name Trace信息
+
 **用于追踪会话标题生成**
 
-| Generate Name              | LangFuse Generation/Trace   |
-|----------------------------|-----------------------------|
-| user_id                    | user_id                     |
-| generate_name              | name                        |
-| start_time                 | start_time                  |
-| end_time                   | end_time                    |
-| inputs                     | input                       |
-| outputs                    | output                      |
-| metadata                   | metadata                    |
-| [generate_name]            | tags                        |
+| Generate Name     | LangFuse Generation/Trace |
+| ----------------- | ------------------------- |
+| user\_id          | user\_id                  |
+| generate\_name    | name                      |
+| start\_time       | start\_time               |
+| end\_time         | end\_time                 |
+| inputs            | input                     |
+| outputs           | output                    |
+| metadata          | metadata                  |
+| \[generate\_name] | tags                      |
 
 **Generate Name Trace Info**
-- conversation_id对话ID
-- inputs输入数据
-- outputs生成的会话名称
-- start_time开始时间
-- end_time结束时间
-- tenant_id租户ID
-- Metadata
-  - conversation_id对话ID
-  - tenant_id租户ID
+
+* conversation\_id对话ID
+* inputs输入数据
+* outputs生成的会话名称
+* start\_time开始时间
+* end\_time结束时间
+* tenant\_id租户ID
+* Metadata
+  * conversation\_id对话ID
+  * tenant\_id租户ID
