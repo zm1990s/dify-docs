@@ -46,7 +46,7 @@ When adding segments in bulk, you need to first download the CSV format segment 
 
 In the segment list, you can directly edit the content of the added segments, including the text content and keywords of the segments.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>Editing document segments</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption><p>Editing document segments</p></figcaption></figure>
 
 ***
 

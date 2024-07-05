@@ -49,7 +49,7 @@ If you need to export the generated content, you can click the download "button"
 
 Click the "Save" button below the generated results to save the running results. In the "Saved" tab, you can see all saved content.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Generate more similar results
 

@@ -64,7 +64,7 @@ Built-in variables for iteration: `items[object]` and `index[number]`.
 
 #### **Example 2: Long Article Iteration Generator (Another Arrangement)**
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Enter the story title and outline in the **Start Node**.
 * Use an **LLM Node** to generate subheadings and corresponding content for the article.
@@ -138,7 +138,7 @@ The output variable of the iteration node is in array format and cannot be direc
 
 **Convert Using a Code Node**
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="" width="334"><figcaption><p>Code Node Conversion</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt="" width="334"><figcaption><p>Code Node Conversion</p></figcaption></figure>
 
 ```python
 def main(articleSections: list):
@@ -150,7 +150,7 @@ def main(articleSections: list):
 
 **Convert Using a Template Node**
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt="" width="332"><figcaption><p>Template Node Conversion</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt="" width="332"><figcaption><p>Template Node Conversion</p></figcaption></figure>
 
 ```django
 {{ articleSections | join("\n") }}
