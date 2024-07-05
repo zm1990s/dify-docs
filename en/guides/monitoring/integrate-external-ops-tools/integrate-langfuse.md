@@ -1,4 +1,4 @@
-# Integrating Langfuse
+# Integrate LangFuse
 
 ### 1. What is Langfuse
 
@@ -55,4 +55,4 @@ After configuration, debugging or production data of the application in Dify can
 
 <figure><img src="../../../.gitbook/assets/image (258).png" alt=""><figcaption><p>Viewing application data in Langfuse</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Viewing application data in Langfuse</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Viewing application data in Langfuse</p></figcaption></figure>

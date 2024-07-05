@@ -1,4 +1,4 @@
-# Xinference
+# Integrate Local Models Deployed by Xinference
 
 [Xorbits inference](https://github.com/xorbitsai/inference) is a powerful and versatile library designed to serve language, speech recognition, and multimodal models, and can even be used on laptops. It supports various models compatible with GGML, such as chatglm, baichuan, whisper, vicuna, orca, etc. And Dify supports connecting to Xinference deployed large language model inference and embedding capabilities locally.
 
@@ -33,7 +33,7 @@ There are two ways to deploy Xinference, namely [local deployment](https://githu
 
     Visit `http://127.0.0.1:9997`, select the model and specification you need to deploy, as shown below:
 
-    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     As different models have different compatibility on different hardware platforms, please refer to [Xinference built-in models](https://inference.readthedocs.io/en/latest/models/builtin/index.html) to ensure the created model supports the current hardware platform.
 4.  Obtain the model UID

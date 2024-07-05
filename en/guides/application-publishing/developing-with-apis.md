@@ -15,7 +15,7 @@ Dify offers a "Backend-as-a-Service" API, providing numerous benefits to AI appl
 
 Choose an application, and find the API Access in the left-side navigation of the Apps section. On this page, you can view the API documentation provided by Dify and manage credentials for accessing the API.
 
-<figure><img src="../../../.gitbook/assets/API Access.png" alt=""><figcaption><p>API document</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/API Access.png" alt=""><figcaption><p>API document</p></figcaption></figure>
 
 You can create multiple access credentials for an application to deliver to different users or developers. This means that API users can use the AI capabilities provided by the application developer, but the underlying Prompt engineering, knowledge, and tool capabilities are encapsulated.
 
@@ -34,7 +34,7 @@ You can find the API documentation and example requests for this application in 
 For example, here is a sample call an API for text generation:
 
 {% tabs %}
-{% tab title="cURL" %} 
+{% tab title="cURL" %}
 ```
 curl --location --request POST 'https://api.dify.ai/v1/completion-messages' \
 --header 'Authorization: Bearer ENTER-YOUR-SECRET-KEY' \
@@ -47,7 +47,7 @@ curl --location --request POST 'https://api.dify.ai/v1/completion-messages' \
 ```
 {% endtab %}
 
-{% tab title="Python" %} 
+{% tab title="Python" %}
 ```python
 import requests
 import json
@@ -81,7 +81,7 @@ You can find the API documentation and example requests for this application in 
 For example, here is a sample call an API for chat-messages:
 
 {% tabs %}
-{% tab title="cURL" %} 
+{% tab title="cURL" %}
 ```
 curl --location --request POST 'https://api.dify.ai/v1/chat-messages' \
 --header 'Authorization: Bearer ENTER-YOUR-SECRET-KEY' \
@@ -97,7 +97,7 @@ curl --location --request POST 'https://api.dify.ai/v1/chat-messages' \
 ```
 {% endtab %}
 
-{% tab title="Python" %} 
+{% tab title="Python" %}
 ```python
 import requests
 import json

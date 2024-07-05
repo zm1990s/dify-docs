@@ -1,4 +1,4 @@
-# API Based Extension
+# API-Based Extension
 
 Developers can extend module capabilities through the API extension module. Currently supported module extensions include:
 
@@ -263,4 +263,4 @@ Now, this API endpoint is accessible publicly. You can configure this endpoint i
 
 We recommend that you use Cloudflare Workers to deploy your API extension, because Cloudflare Workers can easily provide a public address and can be used for free.
 
-[cloudflare\_workers.md](../../../tutorials/cloudflare\_workers.md "mention")
+[cloudflare-workers.md](cloudflare-workers.md "mention")

@@ -1,4 +1,4 @@
-# Expose API Extension on public Internet using Cloudflare Workers
+# Deploy API Tools with Cloudflare Workers
 
 ## Getting Started
 
@@ -43,9 +43,9 @@ npm run deploy
 
 After successful deployment, you will get a public internet address, which you can add in Dify as an API Endpoint. Please note not to miss the `endpoint` path.
 
-<figure><img src="../.gitbook/assets/api_extension_edit.png" alt=""><figcaption><p>Adding API Endpoint in Dify</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/api_extension_edit.png" alt=""><figcaption><p>Adding API Endpoint in Dify</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/app_tools_edit.png" alt=""><figcaption><p>Adding API Tool in the App edit page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/app_tools_edit.png" alt=""><figcaption><p>Adding API Tool in the App edit page</p></figcaption></figure>
 
 ## Other Logic TL;DR
 

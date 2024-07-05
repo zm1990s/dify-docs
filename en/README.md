@@ -1,4 +1,4 @@
-# Welcome to Dify!
+# Welcome to Dify
 
 Dify is an open-source large language model (LLM) application development platform. It combines the concepts of Backend-as-a-Service and LLMOps to enable developers to quickly build production-grade generative AI applications. Even non-technical personnel can participate in the definition and data operations of AI applications.
 
@@ -10,7 +10,7 @@ You can think of libraries like LangChain as toolboxes with hammers, nails, etc.
 
 Importantly, Dify is **open source**, co-created by a professional full-time team and community. You can self-deploy capabilities similar to Assistants API and GPTs based on any model, maintaining full control over your data with flexible security, all on an easy-to-use interface.
 
-> Our community users summarize their evaluation of Dify's products as simple, restrained, and rapid iteration.&#x20;
+> Our community users summarize their evaluation of Dify's products as simple, restrained, and rapid iteration.
 >
 > \- Lu Yu, Dify.AI CEO
 
@@ -31,5 +31,5 @@ The name Dify comes from Define + Modify, referring to defining and continuously
 
 * Read [**Quick Start**](https://docs.dify.ai/application/creating-an-application) for an overview of Dify’s application building workflow.
 * Learn how to [**self-deploy Dify** ](https://docs.dify.ai/getting-started/install-self-hosted)to your servers and [**integrate open source models**](https://docs.dify.ai/advanced/model-configuration)**.**
-* Understand Dify’s [**specifications and roadmap**](getting-started/readme/specifications-and-technical-features.md)**.**
+* Understand Dify’s [**specifications and roadmap**](getting-started/readme/features-and-specifications.md)**.**
 * [**Star us on GitHub**](https://github.com/langgenius/dify) and read our **Contributor Guidelines.**

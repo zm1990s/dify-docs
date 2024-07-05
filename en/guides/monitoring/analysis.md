@@ -2,7 +2,7 @@
 
 The **Overview -- Data Analysis** section displays metrics such as usage, active users, and LLM (Language Learning Model) invocation costs. This allows you to continuously improve the effectiveness, engagement, and cost-efficiency of your application operations. We will gradually provide more useful visualization capabilities, so please let us know what you need.
 
-<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>Overview—Data Analysis</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption><p>Overview—Data Analysis</p></figcaption></figure>
 
 ***
 
@@ -16,7 +16,7 @@ The number of unique users who have had effective interactions with the AI, defi
 
 **Average Session Interactions**
 
-Reflects the number of continuous interactions per session user. For example, if a user has a 10-round Q&A with the AI, it is counted as 10. This metric reflects user engagement. It is available only for conversational applications.
+Reflects the number of continuous interactions per session user. For example, if a user has a 10-round Q\&A with the AI, it is counted as 10. This metric reflects user engagement. It is available only for conversational applications.
 
 **Token Output Speed**
 
