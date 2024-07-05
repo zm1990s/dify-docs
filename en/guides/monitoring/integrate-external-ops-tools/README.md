@@ -10,11 +10,11 @@ While LLMs (Large Language Models) possess exceptional reasoning and text genera
 * **Debugging complexity** introduced by chain calls, agents, and tools
 * Understanding complex user intents
 
-Tools like LangSmith and Langfuse, known as LLMOps tools, provide comprehensive tracking and deep evaluation capabilities for LLM applications, offering developers complete lifecycle support from prototyping to production and operations.
+Tools like LangSmith and LangFuse, known as LLMOps tools, provide comprehensive tracking and deep evaluation capabilities for LLM applications, offering developers complete lifecycle support from prototyping to production and operations.
 
 * #### Prototyping Phase
 
-In the prototyping phase, LLM applications typically involve rapid experimentation with prompt testing, model selection, RAG (Retrieval-Augmented Generation) strategies, and other parameter combinations. Quickly understanding the model's execution performance is crucial in this stage. Integrating Langfuse allows tracking of every step of Dify application execution, providing clear visibility and debugging information, enabling developers to quickly pinpoint issues and reduce debugging time.
+In the prototyping phase, LLM applications typically involve rapid experimentation with prompt testing, model selection, RAG (Retrieval-Augmented Generation) strategies, and other parameter combinations. Quickly understanding the model's execution performance is crucial in this stage. Integrating LangFuse allows tracking of every step of Dify application execution, providing clear visibility and debugging information, enabling developers to quickly pinpoint issues and reduce debugging time.
 
 * **Testing Phase**
 
