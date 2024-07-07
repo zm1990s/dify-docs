@@ -15,4 +15,4 @@
 You can access the [DifySandbox](https://github.com/langgenius/dify-sandbox) repository to obtain the project source code and follow the project documentation for deployment and usage instructions.
 
 ### Contribution
-Please refer to the [Contribution Guide](./contribution.md) to learn how you can participate in the development of DifySandbox.
+Please refer to the [Contribution Guide](development/backend/sandbox/contribution.md) to learn how you can participate in the development of DifySandbox.

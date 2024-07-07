@@ -12,4 +12,4 @@
 プロジェクトのソースコードの入手や、導入・使用方法に関する詳細な情報については、[DifySandbox](https://github.com/langgenius/dify-sandbox)リポジトリをご覧ください。
 
 ### 貢献
-`DifySandbox`の開発に参加する方法については、[貢献ガイド](./contribution.md)をご参照ください。
+`DifySandbox`の開発に参加する方法については、[貢献ガイド](development/backend/sandbox/contribution.md)をご参照ください。
