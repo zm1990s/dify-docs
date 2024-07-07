@@ -64,7 +64,6 @@
   * [Sync Data from Website](guides/knowledge-base/sync-from-website.md)
   * [Maintain Knowledge Base via API](guides/knowledge-base/maintain-dataset-via-api.md)
   * [External Data Tool](guides/knowledge-base/external-data-tool.md)
-<!-- TODO: change gong-ju.md to tools/readme.md in cn en jp -->
 * [Tools](guides/tools/README.md)
   * [Quick Tool Integration](guides/tools/quick-tool-integration.md)
   * [Advanced Tool Integration](guides/tools/advanced-tool-integration.md)
@@ -85,7 +84,7 @@
   * [Data Analysis](guides/monitoring/analysis.md)
   * [Integrate External Ops Tools](guides/monitoring/integrate-external-ops-tools/README.md)
     * [Integrate LangSmith](guides/monitoring/integrate-external-ops-tools/integrate-langsmith.md)
-    * [Integrate LangFuse](guides/monitoring/integrate-external-ops-tools/integrate-langfuse.md)
+    * [Integrate Langfuse](guides/monitoring/integrate-external-ops-tools/integrate-langfuse.md)
 * [Extension](guides/extension/README.md)
   * [API-Based Extension](guides/extension/api-based-extension/README.md)
     * [External Data Tool](guides/extension/api-based-extension/external-data-tool.md)
@@ -103,7 +102,7 @@
 * [Seek Support](community/support.md)
 * [Become a Contributor](community/contribution.md)
 
-## Development <a href="#development" id="development"></a>
+## Development
 
 * [Backend](development/backend/README.md)
   * [DifySandbox](development/backend/sandbox/README.md)
