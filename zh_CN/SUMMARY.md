@@ -106,6 +106,7 @@
 
 * [后端](development/backend/README.md)
   * [DifySandbox](development/backend/sandbox/README.md)
+    * [贡献指南](development/backend/sandbox/contribution.md)
 
 ## 阅读更多 <a href="#learn-more" id="learn-more"></a>
 
