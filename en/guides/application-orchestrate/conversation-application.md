@@ -34,7 +34,7 @@ The prompt we are filling in here is:
 >
 > When I am ready, you can start asking questions.
 
-![](</en/.gitbook/assets/guides/application_orchestrate/conversation-application/image (38).png>)
+<!-- ![](</en/.gitbook/assets/guides/application_orchestrate/conversation-application/image (38).png>) TODO -->
 
 For a better experience, we will add an opening dialogue: `"Hello, {{name}}. I'm your interviewer, Bob. Are you ready?"`
 
