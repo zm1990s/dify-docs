@@ -97,6 +97,8 @@
 * [协同](guides/workspace/README.md)
   * [发现](guides/workspace/app/README.md)
   * [邀请与管理成员](guides/workspace/invite-and-manage-members.md)
+* [管理](guides/guan-li/README.md)
+  * [管理应用](guides/guan-li/guan-li-ying-yong.md)
 
 ## 社区 <a href="#community" id="community"></a>
 
