@@ -75,6 +75,7 @@
     * [Web App Settings](guides/application-publishing/launch-your-webapp-quickly/web-app-settings.md)
     * [Text Generator Application](guides/application-publishing/launch-your-webapp-quickly/text-generator.md)
     * [Conversation Application](guides/application-publishing/launch-your-webapp-quickly/conversation-application.md)
+    - [Embedding In Websites](guides/application-publishing/embedding-in-websites.md)
   * [Developing with APIs](guides/application-publishing/developing-with-apis.md)
   * [Re-develop Based on Frontend Templates](guides/application-publishing/based-on-frontend-templates.md)
 * [Annotation](guides/biao-zhu/README.md)
