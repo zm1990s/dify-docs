@@ -34,6 +34,8 @@ export const isShowPrompt = true
 export const promptTemplate = ''
 ```
 
+> The App ID can be obtained from the App's URL, where the long string characters is the unique App ID.
+
 Each WebApp Template provides a README file containing deployment instructions. Usually, WebApp Templates contain a lightweight backend service to ensure that developers' API keys are not directly exposed to users.
 
 These WebApp Templates can help you quickly build prototypes of AI applications and use all the capabilities of Dify. If you develop your own applications or new templates based on them, feel free to share with us.

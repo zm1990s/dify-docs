@@ -33,6 +33,8 @@ export const isShowPrompt = true
 export const promptTemplate = ''
 ````
 
+> App ID 可以在 App 的 URL 内获取，其中的长串英文字符为唯一的 App ID。
+
 每一种 WebApp 模版都提供了 README 文件，内含部署方式的说明。通常，WebApp 模版都包含了一个轻后端服务，这是为了确保开发者的 API KEY 不会直接暴露给用户。
 
 这些 WebApp 模版能够帮助你快速搭建起 AI 应用原型，并使用 Dify 的所有能力。如果你基于它们开发了自己的应用或新的模版，欢迎你与我们分享。
