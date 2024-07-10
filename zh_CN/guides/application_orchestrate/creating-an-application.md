@@ -8,11 +8,13 @@
 
 ### 从模板创建应用
 
-初次使用 Dify 时，你可能更希望从我们提供的应用模板开始以快速创建一个应用。你可以从导航选择 「工作室 」，在应用列表内选择 「从模版创建」
+初次使用 Dify 时，你可能对于应用创建比较陌生。为了帮助新手用户快速了解在 Dify 上能够构建哪些类型的应用，Dify 团队内的提示词工程师已经创建好了多场景、高质量的应用模板。
+
+你可以从导航选择 「工作室 」，在应用列表内选择 「从模版创建」。
 
 <figure><img src="../../.gitbook/assets/image (168).png" alt=""><figcaption><p>从模板创建应用</p></figcaption></figure>
 
-为了帮助新手用户快速了解在 Dify 上能够构建哪些类型的应用，Dify 团队的提示词工程师已经创建好了多场景、高质量的应用模板。
+任意选择某个模板，并将其添加至工作区。
 
 <figure><img src="../../.gitbook/assets/image (169).png" alt=""><figcaption><p>Dify 应用模板</p></figcaption></figure>
 
@@ -22,7 +24,9 @@
 
 <figure><img src="../../.gitbook/assets/image (167).png" alt=""><figcaption></figcaption></figure>
 
-初次创建应用时，你可能需要先理解 Dify 上 4 种不同应用类型的[基本概念](./#application\_type)。在创建应用时，你需要给应用起一个名字，并使用简介清晰的文字来描述此应用的用途，以方便后续应用在团队内的使用。
+初次创建应用时，你可能需要先理解 Dify 上 4 种不同应用类型的[基本概念](./#application\_type)，分别是聊天助手、文本生成应用、Agent 和工作流。
+
+创建应用时，你需要给应用起一个名字、选择合适的图标、使用简介清晰的文字来描述此应用的用途，以方便后续应用在团队内的使用。
 
 <figure><img src="../../.gitbook/assets/image (170).png" alt=""><figcaption><p>创建一个空白应用</p></figcaption></figure>
 
@@ -35,3 +39,4 @@
 {% hint style="info" %}
 Dify DSL 是由 Dify.AI 在 v0.6 版本之后定义的 AI 应用工程文件标准，文件格式为 YML。该标准涵盖应用的基本描述、模型参数、编排配置等信息。
 {% endhint %}
+
