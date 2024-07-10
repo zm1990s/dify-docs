@@ -48,3 +48,7 @@ AIの回答に移動すると、会話の内容をコピーしたり、回答に
 _使用するデバイス環境がマイクロフォンの使用を許可していることを確認してください。_
 
 <figure><img src="../../../.gitbook/assets/image (79).png" alt="" width="375"><figcaption></figcaption></figure>
+
+### 引用と帰属
+
+アプリ内で知識ベースの効果をテストする際、**ワークスペース -- 機能の追加 -- 引用と帰属** に移動し、引用と帰属機能をオンにすることができます。詳細については[「引用と帰属」](https://docs.dify.ai/v/japanese/guides/knowledge-base/retrieval_test_and_citation#id-2-yin-yong-yu-gui-shu)を参照してください。
