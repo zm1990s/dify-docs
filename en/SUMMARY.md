@@ -97,6 +97,8 @@
 * [Collaboration](guides/workspace/README.md)
   * [Discover](guides/workspace/app/README.md)
   * [Invite and Manage Members](guides/workspace/invite-and-manage-members.md)
+* [Management](guides/management/README.md)
+  * [Manage App](guides/management/manage-app.md)
 
 ## Community
 
