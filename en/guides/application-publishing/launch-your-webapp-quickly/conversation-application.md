@@ -48,3 +48,7 @@ If the "Speech-to-Text" feature is enabled during application orchestration, you
 _Please ensure that your device environment is authorized to use the microphone._
 
 <figure><img src="/en/.gitbook/assets/guides/application-publishing/launch-your-webapp-quickly/conversation-application/image (79).png" alt="" width="375"><figcaption></figcaption></figure>
+
+### References and Attributions
+
+When testing the knowledge base effect within the application, you can go to **Workspace -- Add Function -- Citation and Attribution** to enable the citation attribution feature. For detailed instructions, please refer to [Citation and Attribution](https://docs.dify.ai/guides/knowledge-base/retrieval-test-and-citation#id-2.-citation-and-attribution).
