@@ -72,8 +72,8 @@ docker-worker-1       langgenius/dify-api:0.6.13         "/bin/bash /entrypoi…
 
 ```bash
 cd dify/docker
-git pull origin main
 docker compose down
+git pull origin main
 docker compose pull
 docker compose up -d
 ```
