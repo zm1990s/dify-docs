@@ -85,7 +85,7 @@ docker compose up -d
 
 ### 访问 Dify
 
-在浏览器中输入 `http://localhost` 访问 Dify，输入邮箱和密码即可完成账户注册。
+在浏览器中输入 `http://localhost` 访问 Dify。
 
 ### 自定义配置
 
