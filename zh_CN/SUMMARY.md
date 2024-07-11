@@ -11,7 +11,7 @@
   * [本地源码启动](getting-started/install-self-hosted/local-source-code.md)
   * [单独启动前端 Docker 容器](getting-started/install-self-hosted/start-the-frontend-docker-container.md)
   * [环境变量说明](getting-started/install-self-hosted/environments.md)
-  * [常见问题](getting-started/install-self-hosted/chang-jian-wen-ti.md)
+  * [常见问题](getting-started/install-self-hosted/faq.md)
 
 ## 手册 <a href="#guides" id="guides"></a>
 
