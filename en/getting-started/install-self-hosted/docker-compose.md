@@ -76,8 +76,8 @@ Enter the docker directory of the dify source code and execute the following com
 
 ```bash
 cd dify/docker
-git pull origin main
 docker compose down
+git pull origin main
 docker compose pull
 docker compose up -d
 ```
