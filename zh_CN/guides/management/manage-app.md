@@ -2,7 +2,7 @@
 
 ### 编辑应用信息
 
-创建应用后，如果你想要修改应用名称或描述，那么可以点击应用左上角的 「编辑信息」 ，重新修改应用的图标、名称或描述。
+创建应用后，如果你想要修改应用名称或描述，可以点击应用左上角的 「编辑信息」 ，重新修改应用的图标、名称或描述。
 
 <figure><img src="../../.gitbook/assets/image (260).png" alt="zh-Hans-edit-app-info"><figcaption><p>编辑应用信息</p></figcaption></figure>
 
