@@ -1,4 +1,4 @@
-# Docker Compose Deployment
+# Deploy with Docker Compose
 
 ## Prerequisites
 
@@ -8,11 +8,9 @@
 | Linux platforms            | <p>Docker 19.03 or later<br>Docker Compose 1.25.1 or later</p> | Please refer to the [Docker installation guide](https://docs.docker.com/engine/install/) and [the Docker Compose installation guide](https://docs.docker.com/compose/install/) for more information on how to install Docker and Docker Compose, respectively.                                                                            |
 | Windows with WSL 2 enabled | Docker Desktop                                                 | We recommend storing the source code and other data that is bound to Linux containers in the Linux file system rather than the Windows file system. For more information, please refer to the [Docker Desktop installation guide for using the WSL 2 backend on Windows.](https://docs.docker.com/desktop/windows/install/#wsl-2-backend) |
 
-> [!IMPORTANT]
+> \[!IMPORTANT]
 >
 > Dify 0.6.12 has introduced significant enhancements to Docker Compose deployment, designed to improve your setup and update experience. For more information, read the [README.md](https://github.com/langgenius/dify/blob/main/docker/README.md).
-
-
 
 ### Clone Dify
 
@@ -37,14 +35,18 @@ docker compose up -d
 Deployment Results:
 
 ```bash
-[+] Running 7/7
- ✔ Container docker-web-1       Started                                                                                                                                                                                       1.0s 
- ✔ Container docker-redis-1     Started                                                                                                                                                                                       1.1s 
- ✔ Container docker-weaviate-1  Started                                                                                                                                                                                       0.9s 
- ✔ Container docker-db-1        Started                                                                                                                                                                                       0.0s 
- ✔ Container docker-worker-1    Started                                                                                                                                                                                       0.7s 
- ✔ Container docker-api-1       Started                                                                                                                                                                                       0.8s 
- ✔ Container docker-nginx-1     Started
+[+] Running 11/11
+ ✔ Network docker_ssrf_proxy_network  Created                                                                 0.1s 
+ ✔ Network docker_default             Created                                                                 0.0s 
+ ✔ Container docker-redis-1           Started                                                                 2.4s 
+ ✔ Container docker-ssrf_proxy-1      Started                                                                 2.8s 
+ ✔ Container docker-sandbox-1         Started                                                                 2.7s 
+ ✔ Container docker-web-1             Started                                                                 2.7s 
+ ✔ Container docker-weaviate-1        Started                                                                 2.4s 
+ ✔ Container docker-db-1              Started                                                                 2.7s 
+ ✔ Container docker-api-1             Started                                                                 6.5s 
+ ✔ Container docker-worker-1          Started                                                                 6.4s 
+ ✔ Container docker-nginx-1           Started                                                                 7.1s
 ```
 
 Finally, check if all containers are running successfully:
@@ -53,17 +55,19 @@ Finally, check if all containers are running successfully:
 docker compose ps
 ```
 
-This includes 3 core services: api / worker / web, and 4 dependent components: weaviate / db / redis / nginx.
+This includes 3 core services: `api / worker / web`, and 6 dependent components: `weaviate / db / redis / nginx / ssrf_proxy / sandbox` .
 
 ```bash
-NAME                IMAGE                              COMMAND                  SERVICE             CREATED             STATUS              PORTS
-docker-api-1        langgenius/dify-api:0.3.2          "/entrypoint.sh"         api                 4 seconds ago       Up 2 seconds        80/tcp, 5001/tcp
-docker-db-1         postgres:15-alpine                 "docker-entrypoint.s…"   db                  4 seconds ago       Up 2 seconds        0.0.0.0:5432->5432/tcp
-docker-nginx-1      nginx:latest                       "/docker-entrypoint.…"   nginx               4 seconds ago       Up 2 seconds        0.0.0.0:80->80/tcp
-docker-redis-1      redis:6-alpine                     "docker-entrypoint.s…"   redis               4 seconds ago       Up 3 seconds        6379/tcp
-docker-weaviate-1   semitechnologies/weaviate:1.18.4   "/bin/weaviate --hos…"   weaviate            4 seconds ago       Up 3 seconds        
-docker-web-1        langgenius/dify-web:0.3.2          "/entrypoint.sh"         web                 4 seconds ago       Up 3 seconds        80/tcp, 3000/tcp
-docker-worker-1     langgenius/dify-api:0.3.2          "/entrypoint.sh"         worker              4 seconds ago       Up 2 seconds        80/tcp, 5001/tcp
+NAME                  IMAGE                              COMMAND                   SERVICE      CREATED              STATUS                        PORTS
+docker-api-1          langgenius/dify-api:0.6.13         "/bin/bash /entrypoi…"   api          About a minute ago   Up About a minute             5001/tcp
+docker-db-1           postgres:15-alpine                 "docker-entrypoint.s…"   db           About a minute ago   Up About a minute (healthy)   5432/tcp
+docker-nginx-1        nginx:latest                       "sh -c 'cp /docker-e…"   nginx        About a minute ago   Up About a minute             0.0.0.0:80->80/tcp, :::80->80/tcp, 0.0.0.0:443->443/tcp, :::443->443/tcp
+docker-redis-1        redis:6-alpine                     "docker-entrypoint.s…"   redis        About a minute ago   Up About a minute (healthy)   6379/tcp
+docker-sandbox-1      langgenius/dify-sandbox:0.2.1      "/main"                   sandbox      About a minute ago   Up About a minute             
+docker-ssrf_proxy-1   ubuntu/squid:latest                "sh -c 'cp /docker-e…"   ssrf_proxy   About a minute ago   Up About a minute             3128/tcp
+docker-weaviate-1     semitechnologies/weaviate:1.19.0   "/bin/weaviate --hos…"   weaviate     About a minute ago   Up About a minute             
+docker-web-1          langgenius/dify-web:0.6.13         "/bin/sh ./entrypoin…"   web          About a minute ago   Up About a minute             3000/tcp
+docker-worker-1       langgenius/dify-api:0.6.13         "/bin/bash /entrypoi…"   worker       About a minute ago   Up About a minute             5001/tcp
 ```
 
 ### Upgrade Dify
@@ -81,7 +85,6 @@ docker compose up -d
 #### Sync Environment Variable Configuration (Important)
 
 * If the `.env.example` file has been updated, be sure to modify your local `.env` file accordingly.
-
 * Check and modify the configuration items in the `.env` file as needed to ensure they match your actual environment. You may need to add any new variables from `.env.example` to your `.env` file, and update any values that have changed.
 
 ### Access Dify
@@ -97,4 +100,4 @@ docker compose down
 docker compose up -d
 ```
 
-The full set of annotated environment variables along can be found under docker/.env.example. 
+The full set of annotated environment variables along can be found under docker/.env.example.

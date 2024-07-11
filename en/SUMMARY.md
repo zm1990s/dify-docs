@@ -11,6 +11,7 @@
   * [Start with Local Source Code](getting-started/install-self-hosted/local-source-code.md)
   * [Start Frontend Docker Container Separately](getting-started/install-self-hosted/start-the-frontend-docker-container.md)
   * [Environment Variables Explanation](getting-started/install-self-hosted/environments.md)
+  * [FAQs](getting-started/install-self-hosted/faqs.md)
 
 ## Guides
 
