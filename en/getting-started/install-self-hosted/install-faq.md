@@ -155,7 +155,7 @@ VECTOR_STORE: weaviate
 3. run the below command in your terminal or docker container
 
 ```
-flask vdb-migrarte # or docker exec -it docker-api-1 flask vdb-migrarte
+flask vdb-migrate # or docker exec -it docker-api-1 flask vdb-migrate
 ```
 
 ### 16. Why is SSRF_PROXY Needed?
