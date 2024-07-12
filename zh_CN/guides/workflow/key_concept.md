@@ -38,4 +38,4 @@
 1. End 节点属于 Workflow 的结束节点，仅可在流程结束时选择。
 2. Answer 节点属于 Chatflow ，用于流式输出文本内容，并支持在流程中间步骤输出。
 3. Chatflow 内置聊天记忆（Memory），用于存储和传递多轮对话的历史消息，可在 LLM 、问题分类等节点内开启，Workflow 无 Memory 相关配置，无法开启。
-4. Chatflow 的开始节点内置变量包括：`sys.query`，`sys.files`，`sys.conversation_id`，sys.user\_id。Workflow 的开始节点内置变量包括：`sys.files`，`sys_id`
+4. Chatflow 的开始节点内置变量包括：`sys.query`，`sys.files`，`sys.conversation_id`，`sys.user_id`。Workflow 的开始节点内置变量包括：`sys.files`，`sys_id`
