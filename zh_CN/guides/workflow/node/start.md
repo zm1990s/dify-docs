@@ -1,31 +1,31 @@
-# Start
+# 开始
 
-### Definition
+### 定义
 
-Define the initial parameters for starting a workflow.
+为启动工作流设置初始参数。
 
-You can customize the input variables for initiating the workflow in the start node. Every workflow requires a start node.
+在开始节点中，您可以自定义启动工作流的输入变量。每个工作流都需要一个开始节点。
 
-<figure><img src="/en/.gitbook/assets/guides/workflow/node/start/image (236).png" alt="" width="375"><figcaption><p>Workflow Start Node</p></figcaption></figure>
+<figure><img src="/en/.gitbook/assets/guides/workflow/node/start/image (236).png" alt="" width="375"><figcaption><p>工作流开始节点</p></figcaption></figure>
 
-The start node supports defining input variables of four types:
+开始节点支持定义四种类型输入变量：
 
-* Text
-* Paragraph
-* Dropdown Options
-* Number
-* File (coming soon)
+* 文本
+* 段落
+* 下拉选项
+* 数字
+* 文件（即将推出）
 
-<figure><img src="/en/.gitbook/assets/guides/workflow/node/start/output (2) (1).png" alt=""><figcaption><p>Configure Start Node Variables</p></figcaption></figure>
+<figure><img src="/en/.gitbook/assets/guides/workflow/node/start/output (2) (1).png" alt=""><figcaption><p>配置开始节点的变量</p></figcaption></figure>
 
-Once configured, the workflow will prompt for the values of the variables defined in the start node during execution.
+配置完成后，工作流在执行时将提示您提供开始节点中定义的变量值。
 
 <figure><img src="../../../.gitbook/assets/output (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-Tip: In Chatflow, the start node provides built-in system variables: `sys.query` and `sys.files`.
+Tip: 在Chatflow中，开始节点提供了内置系统变量：`sys.query` 和 `sys.files`。
 
-`sys.query` is used for user input questions in conversational applications.
+`sys.query` 用于对话应用中的用户输入问题。
 
-`sys.files` is used for file uploads in conversations, such as uploading an image, which needs to be used in conjunction with an image understanding model.
+`sys.files` 用于对话中的文件上传，如上传图片，这需要与图片理解模型配合使用。
 {% endhint %}
