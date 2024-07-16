@@ -20,7 +20,7 @@ Click the "Create Application" button on the homepage to create an application. 
 
 #### Step 2: Compose the Application
 
-After the application is successfully created, it will automatically redirect to the application overview page. Click on the left-hand menu: “**Prompt Eng.**” to compose the application.
+After the application is successfully created, it will automatically redirect to the application overview page. Click on the bottom menu: “**Prompt Eng.**” to compose the application.
 
 <figure><img src="/en/.gitbook/assets/guides/application_orchestrate/conversation-application/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
