@@ -30,7 +30,7 @@
 
 <figure><img src="../../.gitbook/assets/image (170).png" alt=""><figcaption><p>创建一个空白应用</p></figcaption></figure>
 
-### 从 DSL 文件创建
+### 通过 DSL 文件创建应用
 
 {% hint style="info" %}
 Dify DSL 是由 Dify.AI 所定义的 AI 应用工程文件标准，文件格式为 YML。该标准涵盖应用在 Dify 内的基本描述、模型参数、编排配置等信息。
