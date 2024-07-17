@@ -4,7 +4,7 @@ You can create applications in Dify's studio in three ways:
 
 * Create based on an application template (recommended for beginners)
 * Create a blank application
-* Import via a DSL file
+* Create application via DSL file (Local/Online)
 
 ### Creating an Application from a Template
 
@@ -32,11 +32,22 @@ When creating an application, you need to give it a name, choose an appropriate 
 
 ### Creating from a DSL File
 
-If you have obtained a template (DSL file) from the community or others, you can choose "Import DSL File" from the studio. After importing, all configuration information of the original application will be loaded directly.
-
-<figure><img src="../../.gitbook/assets/guides/application_orchestrate/creating-an-application/image (172).png" alt=""><figcaption><p>Create an application by importing a DSL file</p></figcaption></figure>
-
 {% hint style="info" %}
-Dify DSL is an AI application engineering file standard defined by Dify.AI in v0.6 and later. The file format is YML. This standard covers the basic description of the application, model parameters, orchestration configuration, and other information.
+Dify DSL is an AI application engineering file standard defined by Dify.AI. The file format is YML. This standard covers the basic description of the application, model parameters, orchestration configuration, and other information.
 {% endhint %}
 
+#### Import local DSL file
+
+If you have obtained a template (DSL file) from the community or others, you can choose "Import DSL File" from the studio. After importing, all configuration information of the original application will be loaded directly.
+
+<figure><img src="../../../img/en-import-dsl-file.png" alt=""><figcaption><p>Create an application by importing a DSL file</p></figcaption></figure>
+
+#### Import DSL file from URL
+
+You can also import DSL files via a URL, using the following link format:
+
+```URL
+https://example.com/your_dsl.yml
+```
+
+<figure><img src="../../../img/en-import-dsl-file-via-url.png" alt=""><figcaption><p>Create an application by importing a DSL file</p></figcaption></figure>

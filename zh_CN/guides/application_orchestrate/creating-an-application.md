@@ -4,7 +4,7 @@
 
 * 基于应用模板创建（新手推荐）
 * 创建一个空白应用
-* 通过 DSL 文件（本地/在线）创建
+* 通过 DSL 文件（本地/在线）创建应用
 
 ### 从模板创建应用
 
@@ -40,9 +40,14 @@ Dify DSL 是由 Dify.AI 所定义的 AI 应用工程文件标准，文件格式�
 
 如果你从社区或其它人那里获得了一个应用模版（DSL 文件），可以从工作室选择 「 导入DSL 文件 」。DSL 文件导入后将直接加载原应用的所有配置信息。
 
-<figure><img src="../../.gitbook/assets/image (172).png" alt=""><figcaption><p>导入 DSL 文件创建应用</p></figcaption></figure>
+<figure><img src="../../../img/import-dsl-file.png" alt=""><figcaption><p>导入 DSL 文件创建应用</p></figcaption></figure>
 
-{% hint style="info" %}
-Dify DSL 是由 Dify.AI 在 v0.6 版本之后定义的 AI 应用工程文件标准，文件格式为 YML。该标准涵盖应用的基本描述、模型参数、编排配置等信息。
-{% endhint %}
+#### URL 导入
 
+你也可以通过 URL 导入 DSL 文件，参考的链接格式：
+
+```URL
+https://example.com/your_dsl.yml
+```
+
+<figure><img src="../../../img/import-dsl-from-url.jpeg" alt=""><figcaption><p>通过 URL 导入 DSL 文件</p></figcaption></figure>
