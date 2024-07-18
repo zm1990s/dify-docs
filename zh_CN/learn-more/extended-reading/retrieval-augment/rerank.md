@@ -42,7 +42,7 @@ Dify 目前已支持 Cohere Rerank 模型，通过进入“模型供应商-> Coh
 
 \*\*TopK：\*\*用于设置 Rerank 后返回相关文档的数量。
 
-\*\*Score 阈值：\*\*用于设置 Rerank 后返回相关文档的最低分值。设置 Rerank 模型后，TopK 和 Score 阈值设置仅在 Rerank 步骤生效。\\
+\*\*Score 阈值：\*\*用于设置 Rerank 后返回相关文档的最低分值。设置 Rerank 模型后，TopK 和 Score 阈值设置仅在 Rerank 步骤生效。
 
 ### 数据集多路召回模式中设置 Rerank 模型
 

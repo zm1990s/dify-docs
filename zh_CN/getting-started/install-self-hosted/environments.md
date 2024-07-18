@@ -203,6 +203,8 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
     * `myscale`
     * `pinecone` (暂未开放)
     * `tidb_vector`
+    * `MyScale`
+    * `AnalyticDB`
 *   WEAVIATE\_ENDPOINT
 
     Weaviate 端点地址，如：`http://weaviate:8080`。
