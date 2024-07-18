@@ -70,7 +70,7 @@
 
 ![](../../../img/zh-multiple-models-2.png)
 
-> ⚠️ 使用多模型调试功能时，如果仅看到部分 AI 模型，这是因为暂未添加其它大模型的 Key。你可以在[“增加新供应商”](https://docs.dify.ai/v/zh-hans/guides/model-configuration/new-provider)内手动添加多个模型的 Key。
+> ⚠️ 使用多模型调试功能时，如果仅看到部分大模型，这是因为暂未添加其它大模型的 Key。你可以在[“增加新供应商”](https://docs.dify.ai/v/zh-hans/guides/model-configuration/new-provider)内手动添加多个模型的 Key。
 
 #### 发布应用
 
