@@ -9,6 +9,8 @@ A conditional branching node has three parts:
 * IF Condition: Select a variable, set the condition, and specify the value that satisfies the condition.
 * IF condition evaluates to `True`, execute the IF path.
 * IF condition evaluates to `False`, execute the ELSE path.
+* If the ELIF condition evaluates to `True`, execute the ELIF path;
+* If the ELIF condition evaluates to `False`, continue to evaluate the next ELIF path or execute the final ELSE path.
 
 **Condition Types**
 
@@ -25,12 +27,14 @@ A conditional branching node has three parts:
 
 ### Scenario
 
-<figure><img src="/en/.gitbook/assets/guides/workflow/node/ifelse/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../img/if-else-elif.png" alt=""><figcaption></figcaption></figure>
 
 Taking the above **Text Summary Workflow** as an example:
 
 * IF Condition: Select the `summarystyle` variable from the start node, with the condition **Contains** `technical`.
-* IF condition evaluates to `True`, execute the IF path, querying technical-related knowledge through the Knowledge Retrieval node and then responding via the LLM node (upper part of the diagram).
+* IF condition evaluates to `True`, follow the IF path by querying technology-related knowledge through the knowledge retrieval node, then respond via the LLM node (as shown in the upper half of the diagram);
+* IF condition evaluates to `False`, but an `ELIF` condition is added, where the input for the `summarystyle` variable **does not include** `technology`, yet the `ELIF` condition includes `science`, check if the condition in `ELIF` is `True`, then execute the steps defined within that path;
+* If the condition within `ELIF` is `False`, meaning the input variable contains neither `technology` nor `science`, continue to evaluate the next `ELIF` condition or execute the final `ELSE` path;
 * IF condition evaluates to `False`, i.e., the `summarystyle` variable input **does not contain** `technical`, execute the ELSE path, responding via the LLM2 node (lower part of the diagram).
 
 **Multiple Condition Judgments**
