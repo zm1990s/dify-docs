@@ -20,56 +20,60 @@
 
 #### 编排应用
 
-应用成功后会自动跳转到应用概览页。点击左侧菜单 **编排** 来编排应用。
+创建应用后会自动跳转到应用概览页。点击左侧菜单 **编排** 来编排应用。
 
-<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption><p>应用编排</p></figcaption></figure>
+<figure><img src="../../../img/zh-conversation-app.png" alt=""><figcaption><p>应用编排</p></figcaption></figure>
 
 **填写提示词**
 
-提示词用于对 AI 的回复做出一系列指令和约束。可插入表单变量，例如 `{{input}}`。提示词中的变量的值会替换成用户填写的值。
+提示词用于约束 AI 给出专业的回复，让回应更加精确。你可以借助内置的提示生成器，编写合适的提示词。提示词内支持插入表单变量，例如 `{{input}}`。提示词中的变量的值会替换成用户填写的值。
 
-我们在这里填写的提示词是：
+示例：
 
-> 我想让你担任\{{jobName\}}面试官。我将成为候选人，您将向我询问\{{jobName\}}开发工程师职位的面试问题。我希望你只作为面试官回答。不要一次写出所有的问题。我希望你只对我进行采访。问我问题，等待我的回答。不要写解释。像面试官一样一个一个问我，等我回答。
->
-> 当我回准备好了后，开始提问。
+1. 输入提示指令，要求给出一段面试场景的提示词。
+2. 右侧内容框将自动生成提示词。
+3. 你可以在提示词内插入自定义变量。
 
-![](<../../.gitbook/assets/image (80).png>)
+![](../../../img/zh-prompt-generator.png)
 
-为了更好的体验，我们加上对话开场白：`你好，{{name}}。我是你的面试官，Bob。你准备好了吗？`
-
-添加开场白的方法是，点击页面底部的 “添加功能” 按钮，打开 “对话开场白” 的功能：
+为了更好的用户体验，可以加上对话开场白：`你好，{{name}}。我是你的面试官，Bob。你准备好了吗？`。点击页面底部的 “添加功能” 按钮，打开 “对话开场白” 的功能：
 
 <figure><img src="../../.gitbook/assets/image (246).png" alt=""><figcaption></figcaption></figure>
 
-编辑开场白：
+编辑开场白时，还可以添加数个开场问题：
 
-![](<../../.gitbook/assets/image (28).png>)
+![](../../../img/zh-opening-remarks.png)
 
 #### 添加上下文
 
-如果应用想基于私有的上下文对话来生成内容。可以用我们[数据集](../knowledge-base/)功能。在上下文中点 “添加” 按钮来添加数据集。
+如果想要让 AI 的对话范围局限在[知识库](../knowledge-base/)内，例如企业内的客服话术规范，可以在“上下文”内引用知识库。
 
 ![](<../../.gitbook/assets/image (108).png>)
 
-#### **调试**
+#### 调试
 
-我们在右侧填写 用户输入，输入内容进行调试。
+在右侧填写用户输入项，输入内容进行调试。
 
-![](<../../.gitbook/assets/image (67).png>)
+![](../../../img/zh-conversation-debug.png)
 
-如果结果不理想，可以调整提示词和模型参数。点右上角点 模型名称 来设置模型的参数：
+如果回答结果不理想，可以调整提示词和底层模型。你也可以使用多个模型同步进行调试，搭配出合适的配置。
 
-![](<../../.gitbook/assets/image (76).png>)
+![](../../../img/zh-modify-model.png)
 
-**发布**
+**多个模型进行调试：**
 
-调试好应用后，点击右上角的 **“发布”** 按钮来保存当前的设置。
+如果使用单一模型调试时感到效率低下，你也可以使用**“多个模型进行调试”**功能，批量检视模型的回答效果。
 
-#### 分享应用
+![](../../../img/zh-multiple-models.png)
 
-在概览页可以找到应用的分享地址。点 “预览按钮” 预览分享出去的应用。点 “分享” 按钮获得分享的链接地址。点 “设置” 按钮设置分享出去的应用信息。
+最多支持同时添加 4 个大模型。
 
-<figure><img src="../../.gitbook/assets/image (54).png" alt="" width="375"><figcaption></figcaption></figure>
+![](../../../img/zh-multiple-models-2.png)
 
-如果想定制化分享出去的应用，可以 Fork 我们的开源的 [WebApp 的模版](https://github.com/langgenius/webapp-conversation)。基于模版改成符合你的情景与风格需求的应用。
+> ⚠️ 使用多模型调试功能时，如果仅看到部分大模型，这是因为暂未添加其它大模型的 Key。你可以在[“增加新供应商”](https://docs.dify.ai/v/zh-hans/guides/model-configuration/new-provider)内手动添加多个模型的 Key。
+
+#### 发布应用
+
+调试好应用后，点击右上角的 **“发布”** 按钮生成独立的 AI 应用。除了通过公开 URL 体验该应用，你也进行基于 APIs 的二次开发、嵌入至网站内等操作。详情请参考[发布](https://docs.dify.ai/v/zh-hans/guides/application-publishing)。
+
+如果想定制已发布的应用，可以 Fork 我们的开源的 [WebApp 的模版](https://github.com/langgenius/webapp-conversation)。基于模版改成符合你的情景与风格需求的应用。

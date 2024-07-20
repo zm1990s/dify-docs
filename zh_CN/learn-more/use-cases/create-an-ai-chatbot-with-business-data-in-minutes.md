@@ -16,7 +16,7 @@ Dify 是一个开源产品，你可以在 GitHub (https://github.com/langgenius/
 
 **申请 OpenAI 等模型厂商的 API key**
 
-AI 模型的消息调用需要消耗 token，Dify 提供了 OpenAI GPT 系列（200 次） 和 Antropic Claude（1000 次） 模型的消息免费调用使用额度，在你消耗完毕前，需要通过模型厂商的官方渠道申请你自己的 API key。在 Dify 的【设置】--【模型提供商】处可填入 key。
+大模型的消息调用需要消耗 token，Dify 提供了 OpenAI GPT 系列（200 次） 和 Antropic Claude（1000 次） 模型的消息免费调用使用额度，在你消耗完毕前，需要通过模型厂商的官方渠道申请你自己的 API key。在 Dify 的【设置】--【模型提供商】处可填入 key。
 
 #### 上传你的产品文档或知识库
 

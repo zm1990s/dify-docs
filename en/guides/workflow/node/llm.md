@@ -43,7 +43,11 @@ If you are using Dify for the first time, you need to complete the [model config
 
 In the LLM node, you can customize the model input prompts. If you select a chat model, you can customize the SYSTEM/User/ASSISTANT sections.
 
-<figure><img src="/en/.gitbook/assets/guides/workflow/node/llm/image (203).png" alt="" width="352"><figcaption></figcaption></figure>
+**Prompt Generator**
+
+If you're struggling to come up with effective system prompts (SYSTEM), you can use the Prompt Generator to quickly create prompts suitable for your specific business scenarios, leveraging AI capabilities.
+
+<figure><img src="../../../../img/en-prompt-generator.png" alt="" width="352"><figcaption></figcaption></figure>
 
 In the prompt editor, you can call out the **variable insertion menu** by typing **"/"** or **"{"** to insert **special variable blocks** or **upstream node variables** into the prompt as context content.
 
@@ -51,7 +55,7 @@ In the prompt editor, you can call out the **variable insertion menu** by typing
 
 ***
 
-### **Explanation of Special Variables**
+### Explanation of Special Variables
 
 **Context Variables**
 

@@ -2,7 +2,7 @@
 
 ### 定义
 
-调用大语言模型回答问题或者对自然语言进行处理。
+调用大语言模型回答问题或者处理自然语言。
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>LLM 节点</p></figcaption></figure>
 
@@ -43,7 +43,13 @@ LLM 是 Chatflow/Workflow 的核心节点，利用大语言模型的对话/生�
 
 在 LLM 节点内，你可以自定义模型输入提示词。如果选择聊天模型（Chat model），你可以自定义系统提示词（SYSTEM）/用户（USER）/助手（ASSISTANT）三部分内容。
 
-<figure><img src="../../../.gitbook/assets/image (203).png" alt="" width="352"><figcaption></figcaption></figure>
+<figure><img src="../../../../img/zh-node-llm.png" alt="" width="352"><figcaption></figcaption></figure>
+
+**提示生成器**
+
+如果在编写系统提示词（SYSTEM）时没有好的头绪，也可以使用提示生成器功能，借助 AI 能力快速生成适合实际业务场景的提示词。
+
+![](../../../../img/zh-node-llm-prompt-generator.png)
 
 在提示词编辑器中，你可以通过输入**“/”**或者**“{”**呼出**变量插入菜单**，将**特殊变量块**或者**上游节点变量**插入到提示词中作为上下文内容。
 
@@ -51,7 +57,7 @@ LLM 是 Chatflow/Workflow 的核心节点，利用大语言模型的对话/生�
 
 ***
 
-### **特殊变量说明**
+### 特殊变量说明
 
 **上下文变量**
 
@@ -88,5 +94,3 @@ LLM 是 Chatflow/Workflow 的核心节点，利用大语言模型的对话/生�
 **对话角色名设置：**由于模型在训练阶段的差异，不同模型对于角色名的指令遵循程度不同，如 Human/Assistant，Human/AI，人类/助手等等。为适配多模型的提示响应效果，系统提供了对话角色名的设置，修改对话角色名将会修改会话历史的角色前缀。
 
 **Jinja-2 模板：**LLM 的提示词编辑器内支持 Jinja-2 模板语言，允许你借助 Jinja2 这一强大的 Python 模板语言，实现轻量级数据转换和逻辑处理，参考[官方文档](https://jinja.palletsprojects.com/en/3.1.x/templates/)。
-
-&#x20;场景示例：**🚧**
