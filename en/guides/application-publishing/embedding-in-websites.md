@@ -22,6 +22,12 @@ window.difyChatbotConfig = {
     draggable: false,
     // Optional, The axis along which the button is allowed to be dragged, default is `both`, can be `x`, `y`, `both`
     dragAxis: 'both',
+    // Optional, An object of inputs that set in the dify chatbot
+    inputs: {
+        // key is the variable name
+        // e.g.
+        // name: "NAME"
+    }
 }
 ```
 
@@ -103,3 +109,28 @@ window.difyChatbotConfig = {
     },
 }
 ```
+
+### 3. Passing `inputs`
+
+There are four types of inputs supported:
+
+1. **`text-input`**: Accepts any value. The input string will be truncated if its length exceeds the maximum allowed length.
+2. **`paragraph`**: Similar to `text-input`, it accepts any value and truncates the string if it's longer than the maximum length.
+3. **`number`**: Accepts a number or a numerical string. If a string is provided, it will be converted to a number using the `Number` function.
+4. **`options`**: Accepts any value, provided it matches one of the pre-configured options.
+
+Example configuration:
+
+```javascript
+window.difyChatbotConfig = {
+    // Other configuration settings...
+    inputs: {
+        name: 'apple',
+    },
+}
+```
+
+Note: When using the embed.js script to create an iframe, each input value will be processed—compressed using GZIP and encoded in base64—before being appended to the URL.
+
+For example, the URL with processed input values will look like this:
+`http://localhost/chatbot/{token}?name=H4sIAKUlmWYA%2FwWAIQ0AAACDsl7gLuiv2PQEUNAuqQUAAAA%3D`

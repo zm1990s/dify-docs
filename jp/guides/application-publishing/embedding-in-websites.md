@@ -22,6 +22,12 @@ window.difyChatbotConfig = {
     draggable: false,
     // オプション：ボタンのドラッグを許可する軸、デフォルトは 'both'、'x'、'y'、'both' のいずれかを指定できます
     dragAxis: 'both',
+    // オプション:dify チャットボットに設定されている入力オブジェクト
+    inputs: {
+        // key は変数名です
+        // 例:
+        // name: "NAME"
+    }
 };
 ```
 
@@ -95,3 +101,27 @@ window.difyChatbotConfig = {
 
 `className` 属性を使用して CSS クラスを適用します。
 
+### 3. `inputs` の渡し方
+
+サポートされている入力タイプは4種類あります：
+
+1. **`text-input`**：任意の値を受け入れます。入力文字列の長さが許容される最大長を超える場合、切り詰められます。
+2. **`paragraph`**：`text-input` と同様に、任意の値を受け入れ、文字列が最大長を超える場合には切り詰められます。
+3. **`number`**：数値または数値の文字列を受け入れます。文字列が提供された場合、`Number` 関数を使用して数値に変換されます。
+4. **`options`**：事前に設定されたオプションのいずれかと一致する値を受け入れます。
+
+設定例：
+
+```javascript
+window.difyChatbotConfig = {
+    // 他の設定項目...
+    inputs: {
+        name: 'apple',
+    },
+}
+```
+
+注意: `embed.js` スクリプトを使用してiframeを作成する場合、各入力値はURLに追加される前にGZIPで圧縮され、base64でエンコードされます。
+
+例えば、処理された入力値を含むURLは以下のようになります：
+`http://localhost/chatbot/{token}?name=H4sIAKUlmWYA%2FwWAIQ0AAACDsl7gLuiv2PQEUNAuqQUAAAA%3D`

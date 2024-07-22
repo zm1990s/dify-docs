@@ -22,6 +22,13 @@ window.difyChatbotConfig = {
     draggable: false,
     // 可选项，允许拖动按钮的轴，默认为 `both`，可以是 `x`、`y`、`both`
     dragAxis: 'both',
+    // 可选项，在 dify 聊天机器人中设置的输入对象
+    inputs: {
+        // 键是变量名
+        // 例如：
+        // name: "NAME"
+    }
+
 };
 ```
 
@@ -103,3 +110,28 @@ window.difyChatbotConfig = {
     },
 };
 ```
+
+### 3. 传递 `inputs`
+
+支持四种类型的输入：
+
+1. **`text-input`**：接受任何值。如果输入字符串的长度超过允许的最大长度，将被截断。
+2. **`paragraph`**：类似于 `text-input`，接受任何值并在字符串长度超过最大长度时截断。
+3. **`number`**：接受数字或数字字符串。如果提供的是字符串，将使用 `Number` 函数将其转换为数字。
+4. **`options`**：接受任何值，前提是它匹配预先配置的选项之一。
+
+示例配置：
+
+```javascript
+window.difyChatbotConfig = {
+    // ... 其他配置
+    inputs: {
+        name: 'apple',
+    },
+}
+```
+
+注意：使用 embed.js 脚本创建 iframe 时，每个输入值将被处理——使用 GZIP 压缩并以 base64 编码——然后附加到 URL 上。
+
+例如，处理后的输入值 URL 将如下所示：
+`http://localhost/chatbot/{token}?name=H4sIAKUlmWYA%2FwWAIQ0AAACDsl7gLuiv2PQEUNAuqQUAAAA%3D`
