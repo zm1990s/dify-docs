@@ -10,7 +10,6 @@ Difyのアカウント情報やその他の情報をコミュニティに投稿�
 
 * [Github](https://github.com/langgenius/dify) 上でイシューを提出
 * [Discord](https://discord.gg/8Tpq4AcN9c)コミュニティに参加
-* [support@dify.ai](mailto:support@dify.ai) へメールを送信
 
 ### お問い合わせ
 
