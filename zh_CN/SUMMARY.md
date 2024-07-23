@@ -77,7 +77,7 @@
     * [文本生成型应用](guides/application-publishing/launch-your-webapp-quickly/text-generator.md)
     * [对话型应用](guides/application-publishing/launch-your-webapp-quickly/conversation-application.md)
   * [嵌入网站](guides/application-publishing/embedding-in-websites.md)
-  * [基于 APIs 开发](guides/application-publishing/embedding-in-websites.md)
+  * [基于 APIs 开发](guides/application-publishing/ji-yu-apis-kai-fa.md)
   * [基于前端组件再开发](guides/application-publishing/based-on-frontend-templates.md)
 * [标注](guides/biao-zhu/README.md)
   * [日志与标注](guides/biao-zhu/logs.md)
