@@ -1,6 +1,6 @@
 # 在应用内集成知识库
 
-### 1 创建知识库应用
+### 1 创建知识库
 
 知识库可以作为外部知识提供给大语言模型用于精确回复用户问题，你可以在 Dify 的[所有应用类型](../application\_orchestrate/#application\_type)内关联已创建的知识库。
 
@@ -17,27 +17,23 @@
 
 ***
 
-### 2 召回模式
+### 2 指定上下文所使用的召回模式
 
-进入 **上下文 -- 参数设置 -- 召回设置**，可以选择知识库的召回模式。
+如果当前应用的上下文涉及多个知识库，需要设置召回模式以使得检索的内容更加精确。进入 **上下文 -- 参数设置 -- 召回设置**，选择知识库的召回模式。
 
-**N 选 1 召回**，根据用户意图和知识库描述，由 LLM 自主判断选择最匹配的单个知识库来查询相关文本。
+- **N 选 1 召回（即将下线）**
 
-**多路召回**，根据用户意图同时匹配所有知识库，从多路知识库查询相关文本片段，经过重排序步骤，从多路查询结果中选择匹配用户问题的最佳结果，需配置 Rerank 模型 API。
+> 此方法无需配置 [Rerank](https://www.pinecone.io/learn/series/rag/rerankers/) 模型。受限于实际效果，该功能将在 2024 年第 3 季度下线。
 
-<figure><img src="../../.gitbook/assets/image (189).png" alt=""><figcaption></figcaption></figure>
+N 选 1 召回由  Function Call/ReAct 进行驱动，每一个关联的知识库作为工具函数，LLM 会自主选择与用户问题最匹配的 1 个知识库来进行查询，**推理依据为用户问题与知识库描述的语义的匹配程度**。
 
-**如何选择召回模式**
+召回效果主要受三个因素影响：
 
-N 选 1 召回由  Function Call/ReAct 进行驱动，每一个关联的知识库作为工具函数，LLM 会自主选择与用户问题最匹配的 1 个知识库来进行查询，**推理依据为用户问题与知识库描述的语义匹配性**。
+* **系统推理模型的能力** 部分模型对于 Function Call/ReAct 的指令遵循程度不稳定
+* **知识库描述是否清晰** 描述内容会影响 LLM 对用户问题与相关知识库的推理
+* **知识库的个数** 知识库过多会影响 LLM 的推理精确性，同时可能会超出推理模型的上下文窗口长度。
 
-因此 N 选 1 模式的召回效果主要受三个因素影响：
-
-* **系统推理模型的能力，**部分模型对于 Function Call/ReAct 的指令遵循程度不稳定
-* **知识库描述是否清晰**，描述内容会影响 LLM 对用户问题与相关知识库的推理
-* **知识库的个数**，知识库过多会影响 LLM 的推理精确性，同时可能会超出推理模型的上下文窗口长度。
-
-**N 选 1 模式的推荐配置方法：**选择效果更好的系统推理模型，关联尽量少的知识库，提供精确的知识库描述。
+**N 选 1 模式的推荐配置方法：** 选择效果更好的系统推理模型，关联尽量少的知识库，提供精确的知识库描述。
 
 用户上传知识库时，系统推理模型将自动为知识库生成一个摘要描述。为了在该模式下获得最佳的召回效果，你可以在“知识库->设置->知识库描述”中查看到系统默认创建的摘要描述，并检查该内容是否可以清晰的概括知识库的内容。
 
@@ -49,7 +45,13 @@ N 选 1 召回由  Function Call/ReAct 进行驱动，每一个关联的知识�
 N 选 1 召回依赖模型的推理能力，使用限制较多，计划在 2024 Q3 调整该模式的召回策略。
 {% endhint %}
 
-#### 多路召回模式（推荐） <a href="#duo-lu-zhao-hui-mo-shi" id="duo-lu-zhao-hui-mo-shi"></a>
+- **多路召回（推荐）**
+
+> 此方法需配置 [Rerank 模型](https://docs.dify.ai/v/zh-hans/getting-started/readme/features-and-specifications) ，检索效果更加精准。
+
+根据用户意图同时检索已添加至 **“上下文”** 的知识库，从多路知识库查询相关文本片段。经过文本重排序（Rerank）后，在多路查询结果中选择最能够匹配用户问题的结果。
+
+<figure><img src="../../.gitbook/assets/image (189).png" alt=""><figcaption></figcaption></figure>
 
 在多路召回模式下，检索器会在所有与应用关联的知识库中去检索与用户问题相关的文本内容，并将多路召回的相关文档结果合并，并通过后置的重排序（Rerank）步骤对检索召回的文档进行语义重排。
 
@@ -72,33 +74,33 @@ N 选 1 召回依赖模型的推理能力，使用限制较多，计划在 2024 
 <figure><img src="../../.gitbook/assets/image (128).png" alt=""><figcaption><p>混合检索+重排序</p></figcaption></figure>
 
 {% hint style="info" %}
-想了解更多关于 Rerank 的相关知识，请查阅扩展阅读[重排序](integrate\_knowledge\_within\_application.md#zhong-pai-xu-rerank)。
+想了解更多关于 Rerank 的相关知识，请查阅扩展阅读[重排序](https://www.pinecone.io/learn/series/rag/rerankers/)。
 {% endhint %}
 
-#### 如何配置 Rerank 模型？
+#### 配置 Rerank 模型 API
 
-Dify 目前已支持 Cohere Rerank 模型，通过进入“模型供应商-> Cohere”页面填入 Rerank 模型的 API 秘钥：
+Dify 目前支持多个 Rerank 模型，进入“模型供应商” 页填入 Rerank 模型的 API Key：
 
-<figure><img src="../../.gitbook/assets/image (112).png" alt=""><figcaption><p>在模型供应商内配置 Cohere Rerank 模型</p></figcaption></figure>
-
-如何获取 Cohere Rerank 模型？
-
-登录：[https://cohere.com/rerank](https://cohere.com/rerank)，在页内注册并申请 Rerank 模型的使用资格，获取 API 秘钥。
+<figure><img src="../../../img/rerank.png" alt=""><figcaption><p>在模型供应商内配置 Rerank 模型</p></figcaption></figure>
 
 {% hint style="info" %}
-除了支持 Cohere Rerank API ，你也可以在使用本地推理框架如 Ollama、Xinference，并在推理框架内部署本地 Rerank 模型例如： bge-reranker。
+除了配置在线 Rerank 模型外，你也可以在配置本地推理框架如 Ollama、Xinference，并在推理框架内部署本地 Rerank 模型例如： bge-reranker。
 {% endhint %}
 
-#### 设置 Rerank 模型
+#### 应用 Rerank 模型
 
-通过进入“数据集->创建数据集->检索设置”页面并在添加 Rerank 设置。除了在创建数据集可以设置 Rerank ，你也可以在已创建的数据集设置内更改 Rerank 配置，在应用编排的数据集召回模式设置中更改 Rerank 配置。
+进入“知识库->创建知识库->检索设置”页面并在添加 Rerank 设置。
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption><p>数据集检索模式中设置 Rerank 模型</p></figcaption></figure>
+除了在创建知识库时设置 Rerank 参数，你也可以在已创建的知识库设置内更改 Rerank 配置，或者是在应用编排的上下文召回模式设置中更改 Rerank 配置。
 
-**TopK**：用于设置 Rerank 后返回相关文档的数量。
+<figure><img src="../../../img/en-knowledgebase-rerank.png" alt="" width="563"><figcaption><p>数据集检索模式中设置 Rerank 模型</p></figcaption></figure>
+
+**TopK**：用于设置 Rerank 后返回相关文档的数量，筛选与用户问题较高相似度的文本片段，动态调整分段数量。
 
 **Score 阈值**：用于设置 Rerank 后返回相关文档的最低分值。设置 Rerank 模型后，TopK 和 Score 阈值设置仅在 Rerank 步骤生效。
 
-通过进入“提示词编排->上下文->设置”页面中设置为多路召回模式时需开启 Rerank 模型。
+**权重设置**：提供介于语义和关键词匹配之间的调整设置。
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>数据集多路召回模式中设置 Rerank 模型</p></figcaption></figure>
+进入“提示词编排->上下文->召回设置”页，指定 Rerank 设置。
+
+<figure><img src="../../../img/en-knowledgebase-rerank-setting.png" alt=""><figcaption><p>数据集多路召回模式中的 Rerank 设置</p></figcaption></figure>
