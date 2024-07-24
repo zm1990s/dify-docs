@@ -345,7 +345,7 @@ Dify supports the below model providers out-of-box:
         </tr>        
     </tbody>
 </table>
-```
+
 
 where (🛠️) ︎ denotes Function Calling and (👓) denotes support for vision.
 

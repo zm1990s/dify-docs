@@ -345,7 +345,7 @@ Dify 为以下模型提供商提供原生支持：
         </tr>        
     </tbody>
 </table>
-```
+
 
 
 其中 (🛠️) 代表支持 Function Calling，(👓) 代表视觉能力。
