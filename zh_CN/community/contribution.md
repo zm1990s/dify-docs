@@ -6,7 +6,7 @@
 
 这份指南，就像 Dify 本身一样，是一个不断改进的工作。如果有时它落后于实际项目，我们非常感谢你的理解，并欢迎任何反馈以供我们改进。
 
-在许可方面，请花一分钟阅读我们简短的[许可证和贡献者协议](./license)。社区还遵守[行为准则](https://github.com/langgenius/.github/blob/main/CODE_OF_CONDUCT.md)。
+在许可方面，请花一分钟阅读我们简短的[许可证和贡献者协议](./open-source)。社区还遵守[行为准则](https://github.com/langgenius/.github/blob/main/CODE_OF_CONDUCT.md)。
 
 ## 在开始之前
 
@@ -90,7 +90,7 @@ Dify由后端和前端组成。通过`cd api/`导航到后端目录，然后按�
 
 如果您要添加模型提供程序，请参考[此指南](https://github.com/langgenius/dify/blob/main/api/core/model_runtime/README.md)。
 
-如果您要向Agent或Workflow添加工具提供程序，请参考[此指南](./api/core/tools/README.md)。
+如果您要向Agent或Workflow添加工具提供程序，请参考[此指南](https://github.com/langgenius/dify/blob/main/api/core/tools/README.md)。
 
 为了帮助您快速了解您的贡献在哪个部分，以下是Dify后端和前端的简要注释大纲：
 
