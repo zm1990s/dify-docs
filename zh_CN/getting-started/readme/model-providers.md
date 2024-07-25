@@ -217,7 +217,7 @@ Dify 为以下模型提供商提供原生支持：
         </tr>
         <tr>
             <td align="center">阶跃星辰</td>
-            <td align="center">✔️</td>
+            <td align="center">✔️(🛠️)(👓)</td>
             <td align="center"></td>
             <td align="center"></td>
             <td align="center"></td>

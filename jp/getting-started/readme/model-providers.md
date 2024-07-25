@@ -217,7 +217,7 @@ Difyは以下のモデルプロバイダーをサポートしています：
         </tr>
         <tr>
             <td align="center">階躍星辰（カイヤクセイシン）</td>
-            <td align="center">✔️</td>
+            <td align="center">✔️(🛠️)(👓)</td>
             <td align="center"></td>
             <td align="center"></td>
             <td align="center"></td>
