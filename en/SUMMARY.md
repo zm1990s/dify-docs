@@ -5,13 +5,14 @@
 * [Welcome to Dify](README.md)
   * [Features and Specifications](getting-started/readme/features-and-specifications.md)
   * [List of Model Providers](getting-started/readme/model-providers.md)
-* [Cloud Services](getting-started/cloud.md)
-* [Community Edition](getting-started/install-self-hosted/README.md)
+* [Dify Community](getting-started/install-self-hosted/README.md)
   * [Deploy with Docker Compose](getting-started/install-self-hosted/docker-compose.md)
   * [Start with Local Source Code](getting-started/install-self-hosted/local-source-code.md)
   * [Start Frontend Docker Container Separately](getting-started/install-self-hosted/start-the-frontend-docker-container.md)
   * [Environment Variables Explanation](getting-started/install-self-hosted/environments.md)
   * [FAQs](getting-started/install-self-hosted/faqs.md)
+* [Dify Cloud](getting-started/cloud.md)
+* [Dify Premium on AWS](getting-started/dify-premium-on-aws.md)
 
 ## Guides
 
