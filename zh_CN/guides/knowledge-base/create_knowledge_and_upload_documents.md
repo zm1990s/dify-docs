@@ -116,6 +116,8 @@ Dify 各版本的 ETL 方案选择：
 
 #### **向量检索**
 
+> 该方式需在模型供应商内配置 Rerank API。
+
 定义：通过生成查询嵌入并查询与其向量表示最相似的文本分段。
 
 <figure><img src="../../.gitbook/assets/image (116).png" alt="" width="563"><figcaption><p>向量检索设置</p></figcaption></figure>
@@ -128,21 +130,29 @@ Rerank 模型：你可以在“模型供应商”页面配置 Rerank 模型的 A
 
 #### **全文检索**
 
+> 该方式需在模型供应商内配置 Rerank API。
+
 定义：索引文档中的所有词汇，从而允许用户查询任意词汇，并返回包含这些词汇的文本片段。
 
 <figure><img src="../../.gitbook/assets/image (122).png" alt="" width="563"><figcaption><p>全文检索设置</p></figcaption></figure>
 
 TopK：用于筛选与用户问题相似度最高的文本片段。系统同时会根据选用模型上下文窗口大小动态调整片段数量。系统默认值为 3 。
 
+Score 阈值：用于设置文本片段筛选的相似度阈值，即：只召回超过设置分数的文本片段。系统默认关闭该设置，即不会对召回的文本片段相似值过滤。打开后默认值为 0.5 。
+
 Rerank 模型：你可以在“模型供应商”页面配置 Rerank 模型的 API 秘钥之后，在检索设置中打开“Rerank 模型”，系统会在全文检索后对已召回的文档结果再一次进行语义重排序，优化排序结果。设置 Rerank 模型后，TopK 和 Score 阈值设置仅在 Rerank 步骤生效。
 
 #### **混合检索**
 
-同时执行全文检索和向量检索，并应用重排序步骤，从两类查询结果中选择匹配用户问题的最佳结果，需配置 Rerank 模型 API。
+定义：同时执行全文检索和向量检索，并应用重排序步骤，从两类查询结果中选择匹配用户问题的最佳结果。在此模式下可以指定权重设置（无需配置 Rerank API）或仅使用 Rerank 模型进行检索。
 
-<figure><img src="../../.gitbook/assets/image (118).png" alt="" width="563"><figcaption><p>混合检索设置</p></figcaption></figure>
+<figure><img src=".../../../../../img/zh-create-knowledge.png" alt="" width="563"><figcaption><p>混合检索设置</p></figcaption></figure>
+
+权重设置：提供介于语义和关键词匹配之间的调整设置。语义指的是在知识库内进行向量检索，关键词匹配指的是在知识库内进行全文检索（Full Text Search）。
 
 TopK：用于筛选与用户问题相似度最高的文本片段。系统同时会根据选用模型上下文窗口大小动态调整片段数量。系统默认值为 3 。
+
+Score 阈值：用于设置文本片段筛选的相似度阈值，即：只召回超过设置分数的文本片段。系统默认关闭该设置，即不会对召回的文本片段相似值过滤。打开后默认值为 0.5 。
 
 Rerank 模型：你可以在“模型供应商”页面配置 Rerank 模型的 API 秘钥之后，在检索设置中打开“Rerank 模型”，系统会在混合检索后对已召回的文档结果再一次进行语义重排序，优化排序结果。设置 Rerank 模型后，TopK 和 Score 阈值设置仅在 Rerank 步骤生效。
 
