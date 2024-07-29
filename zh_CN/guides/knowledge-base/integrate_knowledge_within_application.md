@@ -27,7 +27,7 @@ N 选 1 召回由  Function Call/ReAct 进行驱动，每一个关联的知识�
 
 <figure><img src="../../.gitbook/assets/image (190).png" alt=""><figcaption></figcaption></figure>
 
-虽然此方法无需配置 [Rerank](https://www.pinecone.io/learn/series/rag/rerankers/) 模型，但通过匹配知识库的关键词而实现的检索机制存在较大的误差。受限于实际效果，该功能将在 **2024 年第 3 季度下线**，推荐改用**多路召回**模式。
+虽然此方法无需配置 [Rerank](https://www.pinecone.io/learn/series/rag/rerankers/) 模型 API，但通过知识库的关键词仅能匹配单一知识库，导致检索结果可能存在较大误差。受限于实际效果，该功能将在 **2024 年第 3 季度下线**，推荐改用**多路召回**模式。
 
 在 N 选 1 模式下，召回效果主要受三个因素影响：
 
