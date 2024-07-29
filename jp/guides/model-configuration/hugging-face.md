@@ -34,7 +34,7 @@ DifyはHugging Face上のモデルを次の2つの方法で接続できます：
 
 `設定 > モデルプロバイダー > Hugging Face > モデルタイプ`のエンドポイントタイプでHosted Inference APIを選択します。以下の図のように設定します：
 
-<figure><img src="../../.gitbook/assets/image (103).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 APIトークンは記事の冒頭で設定したAPIキーです。モデル名は前のステップで取得したモデル名を入力します。
 

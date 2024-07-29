@@ -2,7 +2,7 @@
 
 Difyは大規模言語モデルに基づいたAIアプリケーション開発プラットフォームです。初めて使用する際には、Difyの**設定 -- モデルプロバイダー**ページで必要なモデルを追加および設定してください。
 
-<figure><img src="../../.gitbook/assets/image (165).png" alt=""><figcaption><p>設定-モデルプロバイダー</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 Difyは現在、OpenAIのGPTシリーズやAnthropicのClaudeシリーズなど、主流のモデルプロバイダーをサポートしています。異なるモデルの能力やパラメータの種類が異なるため、アプリケーションのニーズに応じて適切なモデルプロバイダーを選択できます。**Difyで以下のモデル能力を使用する前に、各モデルプロバイダーの公式サイトでAPIキーを取得する必要があります。**
 
@@ -10,16 +10,16 @@ Difyは現在、OpenAIのGPTシリーズやAnthropicのClaudeシリーズなど�
 
 Difyでは、モデルの使用シーンに応じて以下の4つのタイプに分類しています：
 
-1. **システム推論モデル**。アプリケーション内で使用されるのはこのタイプのモデルです。チャット、会話名生成、次の質問の提案でもこの推論モデルが使用されます。
+1.  **システム推論モデル**。アプリケーション内で使用されるのはこのタイプのモデルです。チャット、会話名生成、次の質問の提案でもこの推論モデルが使用されます。
 
     > サポートされているシステム推論モデルプロバイダー：[OpenAI](https://platform.openai.com/account/api-keys)、[Azure OpenAIサービス](https://azure.microsoft.com/en-us/products/ai-services/openai-service/)、[Anthropic](https://console.anthropic.com/account/keys)、Hugging Faceハブ、Replicate、Xinference、OpenLLM、[讯飞星火](https://www.xfyun.cn/solutions/xinghuoAPI)、[文心一言](https://console.bce.baidu.com/qianfan/ais/console/applicationConsole/application)、[通义千问](https://dashscope.console.aliyun.com/api-key\_management?spm=a2c4g.11186623.0.0.3bbc424dxZms9k)、[Minimax](https://api.minimax.chat/user-center/basic-information/interface-key)、ZHIPU(ChatGLM)
-2. **埋め込みモデル**。データセット内の分割された文書の埋め込みに使用されるのはこのタイプのモデルです。データセットを使用するアプリケーションでは、ユーザーの質問を埋め込み処理する際にもこのタイプのモデルが使用されます。
+2.  **埋め込みモデル**。データセット内の分割された文書の埋め込みに使用されるのはこのタイプのモデルです。データセットを使用するアプリケーションでは、ユーザーの質問を埋め込み処理する際にもこのタイプのモデルが使用されます。
 
     > サポートされている埋め込みモデルプロバイダー：OpenAI、ZHIPU(ChatGLM)、JinaAI
-3. [**リランクモデル**](https://docs.dify.ai/v/zh-hans/advanced/retrieval-augment/rerank)。**リランクモデルは検索能力を強化し、LLMの検索結果を改善するために使用されます。**
+3.  [**リランクモデル**](https://docs.dify.ai/v/zh-hans/advanced/retrieval-augment/rerank)。**リランクモデルは検索能力を強化し、LLMの検索結果を改善するために使用されます。**
 
     > サポートされているリランクモデルプロバイダー：Cohere、JinaAI
-4. **音声からテキストへのモデル**。対話型アプリケーションで音声をテキストに変換する際に使用されるのはこのタイプのモデルです。
+4.  **音声からテキストへのモデル**。対話型アプリケーションで音声をテキストに変換する際に使用されるのはこのタイプのモデルです。
 
     > サポートされている音声からテキストへのモデルプロバイダー：OpenAI
 
@@ -35,13 +35,13 @@ Difyクラウドサービスのユーザーには、異なるモデルの試用�
 
 Difyは使用シーンに応じて設定されたデフォルトモデルを選択します。`設定 > モデルプロバイダー`でデフォルトモデルを設定します。
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 ### モデルの接続設定
 
 Difyの`設定 > モデルプロバイダー`で接続するモデルを設定します。
 
-<figure><img src="../../.gitbook/assets/image-20231210143654461 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 モデルプロバイダーは2種類に分かれます：
 
@@ -73,4 +73,4 @@ Difyは[PKCS1\_OAEP](https://pycryptodome.readthedocs.io/en/latest/src/cipher/oa
 
 モデルの設定が完了したら、アプリケーションでこれらのモデルを使用できます：
 
-<figure><img src="../../.gitbook/assets/image (166).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>

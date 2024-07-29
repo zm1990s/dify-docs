@@ -1,4 +1,4 @@
-# カスタムモデルのインテグレーション
+# カスタマイズ可能モデルの追加
 
 ### イントロダクション
 
@@ -8,7 +8,7 @@
 
 事前定義モデルとは異なり、カスタムベンダーのインテグレーション時には常に以下の2つのパラメータが存在し、ベンダー yaml に定義する必要はありません。
 
-<figure><img src="../../.gitbook/assets/Feb 4,2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 前述したように、ベンダーは`validate_provider_credential`を実装する必要はなく、Runtimeがユーザーが選択したモデルタイプとモデル名に基づいて、対応するモデル層の`validate_credentials`を呼び出して検証を行います。
 
@@ -127,7 +127,7 @@ provider_credential_schema:
 
 `llm.py`内で、Xinference LLM クラスを作成し、`XinferenceAILargeLanguageModel`（任意の名前）と名付けて、`__base.large_language_model.LargeLanguageModel`基底クラスを継承し、以下のメソッドを実装します：
 
-* LLM 呼び出し
+*   LLM 呼び出し
 
     LLM 呼び出しのコアメソッドを実装し、ストリームレスポンスと同期レスポンスの両方をサポートします。
 
@@ -167,7 +167,7 @@ provider_credential_schema:
     def _handle_sync_response(self, **kwargs) -> LLMResult:
         return LLMResult(**response)
     ```
-* 予測トークン数の計算
+*   予測トークン数の計算
 
     モデルが予測トークン数の計算インターフェースを提供していない場合、直接0を返すことができます。
 
@@ -186,7 +186,7 @@ provider_credential_schema:
     ```
 
     時には、直接0を返す必要がない場合もあります。その場合は`self._get_num_tokens_by_gpt2(text: str)`を使用して予測トークン数を取得することができます。このメソッドは`AIModel`基底クラスにあり、GPT2のTokenizerを使用して計算を行いますが、代替方法として使用されるものであり、完全に正確ではありません。
-* モデルクレデンシャル検証
+*   モデルクレデンシャル検証
 
     ベンダークレデンシャル検証と同様に、ここでは個々のモデルについて検証を行います。
 
@@ -200,7 +200,7 @@ provider_credential_schema:
         :return:
         """
     ```
-* モデルパラメータスキーマ
+*   モデルパラメータスキーマ
 
     カスタムタイプとは異なり、yamlファイルでモデルがサポートするパラメータを定義していないため、動的にモデルパラメータのスキーマを生成する必要があります。
 
@@ -272,7 +272,7 @@ provider_credential_schema:
 
         return entity
     ```
-* 呼び出しエラーマッピングテーブル
+*   呼び出しエラーマッピングテーブル
 
     モデル呼び出し時にエラーが発生した場合、Runtimeが指定する`InvokeError`タイプにマッピングする必要があります。これにより、Difyは異なるエラーに対して異なる後続処理を行うことができます。
 
@@ -284,20 +284,21 @@ provider_credential_schema:
     * `InvokeAuthorizationError` 認証エラー
     * `InvokeBadRequestError` 不正なリクエストパラメータ
 
-    ```python
+    ````python
     @property
     def _invoke_error_mapping(self) -> dict[type[InvokeError], list[type[Exception]]]:
         """
         Map model invoke error to uni ```
--> dict[type[呼び出しエラー], list[type[例外]]]:
-        """
-        モデル呼び出しエラーを統一エラーにマッピングする
-        キーは呼び出し元に投げられるエラータイプ
-        バリューはモデルが投げるエラータイプであり、
-        呼び出し元に対して統一エラータイプに変換する必要があります。
+    ````
 
-        :return: 呼び出しエラーのマッピング
-        """
+\-> dict\[type\[呼び出しエラー], list\[type\[例外]]]: """ モデル呼び出しエラーを統一エラーにマッピングする キーは呼び出し元に投げられるエラータイプ バリューはモデルが投げるエラータイプであり、 呼び出し元に対して統一エラータイプに変換する必要があります。
+
+```
+    :return: 呼び出しエラーのマッピング
+    """
+```
+
 ```
 
 インターフェース方法の詳細については：[インターフェース](https://github.com/langgenius/dify/blob/main/api/core/model_runtime/docs/zh_Hans/interfaces.md)をご覧ください。具体的な実装例については、[llm.py](https://github.com/langgenius/dify-runtime/blob/main/lib/model_providers/anthropic/llm/llm.py)を参照してください。
+```

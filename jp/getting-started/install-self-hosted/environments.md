@@ -1,4 +1,4 @@
-# 環境変数説明
+# 環境変数の説明
 
 ### 公共変数
 
@@ -53,7 +53,7 @@ Flaskのデバッグモード。オンにすると、インターフェースで
 
 セッションクッキーを安全に署名し、データベース上の機密情報を暗号化するためのキー。初回起動時にこの変数を設定する必要があります。`openssl rand -base64 42`を使用して強力なキーを生成できます。
 
-#### DEPLOY_ENV
+#### DEPLOY\_ENV
 
 デプロイ環境。
 
@@ -92,7 +92,7 @@ dockerイメージまたはdocker-composeによる起動時にのみ有効です
 *   SERVER\_WORKER\_CLASS
 
     デフォルトはgevent。Windowsの場合、syncまたはsoloに切り替えることができます。
-*   GUNICORN_TIMEOUT
+*   GUNICORN\_TIMEOUT
 
     リクエスト処理のタイムアウト時間。デフォルト200。360に設定することをお勧めします。これにより、長時間のSSE接続をサポートできます。
 *   CELERY\_WORKER\_CLASS
@@ -185,10 +185,10 @@ dockerイメージまたはdocker-composeによる起動時にのみ有効です
 * S3\_ACCESS\_KEY：S3アクセスキー
 * S3\_SECRET\_KEY：S3シークレットキー
 * S3\_REGION：S3リージョン情報（例：us-east-1）
-* AZURE\_BLOB\_ACCOUNT_NAME: アカウント名（例：'difyai'）
-* AZURE\_BLOB\_ACCOUNT_KEY: アカウントキー（例：'difyai'）
-* AZURE\_BLOB\_CONTAINER_NAME: コンテナ名（例：'difyai-container'）
-* AZURE\_BLOB\_ACCOUNT\_URL: 'https://\<your_account_name>.blob.core.windows.net'
+* AZURE\_BLOB\_ACCOUNT\_NAME: アカウント名（例：'difyai'）
+* AZURE\_BLOB\_ACCOUNT\_KEY: アカウントキー（例：'difyai'）
+* AZURE\_BLOB\_CONTAINER\_NAME: コンテナ名（例：'difyai-container'）
+* AZURE\_BLOB\_ACCOUNT\_URL: 'https://\<your\_account\_name>.blob.core.windows.net'
 
 #### ベクトルデータベース設定
 
@@ -241,22 +241,21 @@ dockerイメージまたはdocker-composeによる起動時にのみ有効です
 *   MILVUS\_SECURE
 
     MilvusがSSL接続を使用するかどうか。デフォルトはfalse。
+*   TIDB\_VECTOR\_HOST
 
-* TIDB\_VECTOR\_HOST
+    TiDB Vectorホスト設定（例：`xxx.eu-central-1.xxx.tidbcloud.com`）
+*   TIDB\_VECTOR\_PORT
 
-  TiDB Vectorホスト設定（例：`xxx.eu-central-1.xxx.tidbcloud.com`）
-* TIDB\_VECTOR\_PORT
+    TiDB Vectorポート番号設定（例：`4000`）
+*   TIDB\_VECTOR\_USER
 
-  TiDB Vectorポート番号設定（例：`4000`）
-* TIDB\_VECTOR\_USER
+    TiDB Vectorユーザー設定（例：`xxxxxx.root`）
+*   TIDB\_VECTOR\_PASSWORD
 
-  TiDB Vectorユーザー設定（例：`xxxxxx.root`）
-* TIDB\_VECTOR\_PASSWORD
+    TiDB Vectorパスワード設定
+*   TIDB\_VECTOR\_DATABASE
 
-  TiDB Vectorパスワード設定
-* TIDB\_VECTOR\_DATABASE
-
-  TiDB Vectorデータベース設定（例：`dify`）
+    TiDB Vectorデータベース設定（例：`dify`）
 
 #### ナレッジベース設定
 
@@ -312,24 +311,19 @@ Notion統合設定。変数はNotion integrationを申請することで取得�
 * NOTION\_CLIENT\_ID
 * NOTION\_CLIENT\_SECRET
 
-#### メール関連設定
+#### メール関連の設定
 
 * MAIL\_TYPE
   * resend
-    * MAIL\_DEFAULT\_SEND\_FROM\\
-      送信者のメール名（例：no-reply [no-reply@dify.ai](mailto:no-reply@dify.ai)）、必須ではありません。
-    * RESEND\_API\_KEY\\
-      ResendメールプロバイダーのAPIキー。APIキーから取得できます。
+    * MAIL\_DEFAULT\_SEND\_FROM\ 送信者のメール名（例：no-reply [no-reply@dify.ai](mailto:no-reply@dify.ai)）、必須ではありません。
+    * RESEND\_API\_KEY\ ResendメールプロバイダーのAPIキー。APIキーから取得できます。
   * smtp
-    * SMTP\_SERVER\\
-      SMTPサーバーアドレス
-    * SMTP\_PORT\\
-      SMTPサーバ ，用于验证接口身份。
-
+    * SMTP\_SERVER\ SMTPサーバーアドレス
+    * SMTP\_PORT\ SMTPサーバ ，用于验证接口身份。
 * SESSION\_タイプ： セッションコンポーネントのタイプ
   *   redis（デフォルト）
 
-      これを選択した場合、下記の SESSION_REDIS_ で始まる環境変数を設定する必要があります。
+      これを選択した場合、下記の SESSION\_REDIS\_ で始まる環境変数を設定する必要があります。
   *   sqlalchemy
 
       これを選択した場合、現在のデータベース接続を使用し、sessions テーブルを使用してセッションレコードを読み書きします。
