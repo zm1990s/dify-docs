@@ -11,6 +11,7 @@
   * [ローカルソースコード起動](getting-started/install-self-hosted/local-source-code.md)
   * [フロントエンドDockerコンテナを単独起動](getting-started/install-self-hosted/start-the-frontend-docker-container.md)
   * [環境変数説明](getting-started/install-self-hosted/environments.md)
+* [Dify Premium](getting-started/dify-premium.md)
 
 ## 手冊 <a href="#guides" id="guides"></a>
 
