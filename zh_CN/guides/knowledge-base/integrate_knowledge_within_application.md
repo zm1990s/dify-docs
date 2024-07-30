@@ -21,13 +21,19 @@
 
 如果当前应用的上下文涉及多个知识库，需要设置召回模式以使得检索的内容更加精确。进入 **上下文 -- 参数设置 -- 召回设置**，选择知识库的召回模式。
 
-- **N 选 1 召回（即将下线）**
+- **N 选 1 召回（Legacy）**
 
-N 选 1 召回由  Function Call/ReAct 进行驱动，每一个关联的知识库作为工具函数，LLM 会自主选择与用户问题最匹配的 1 个知识库来进行查询，**推理依据为用户问题与知识库描述的语义的匹配程度**。
+> 该方法无需配置 Rerank 模型 API，
+
+N 选 1 召回由 Function Call/ReAct 进行驱动，每一个关联的知识库作为工具函数，LLM 会自主选择与用户问题最匹配的 1 个知识库来进行查询，**推理依据为用户问题与知识库描述的语义的匹配程度**。
+
+举例：A 应用的上下文关联了 K1、K2、K3 三个知识库。使用 N 选 1 召回策略后，用户在应用内输入和知识库有关的问题后，LLM 将检索这三个知识库的描述，匹配某个最适合的知识库再进行内容检索。
 
 <figure><img src="../../.gitbook/assets/image (190).png" alt=""><figcaption></figcaption></figure>
 
-虽然此方法无需配置 [Rerank](https://www.pinecone.io/learn/series/rag/rerankers/) 模型 API，但通过知识库的关键词仅能匹配单一知识库，导致检索结果可能存在较大误差。受限于实际效果，该功能将在 **2024 年第 3 季度下线**，推荐改用**多路召回**模式。
+虽然此方法无需配置 [Rerank](https://www.pinecone.io/learn/series/rag/rerankers/) 模型 API，但该召回策略仅匹配单个知识库，且匹配的目标知识库严重依赖于 LLM 对于知识库描述的理解，检索匹配知识库时可能会存在不合理的判断，导致检索到的结果可能不全面、不准确，从而无法提供高质量的查询结果。
+
+自 9 月份后，该策略将会被自动替换为**多路召回**，请提前进行修改。
 
 在 N 选 1 模式下，召回效果主要受三个因素影响：
 
@@ -43,65 +49,33 @@ N 选 1 召回由  Function Call/ReAct 进行驱动，每一个关联的知识�
 
 - **多路召回（推荐）**
 
-> 此方法需配置 [Rerank 模型](https://docs.dify.ai/v/zh-hans/getting-started/readme/features-and-specifications) ，检索效果更加精准。
+> 该设置通过 [Rerank 策略](https://www.pinecone.io/learn/series/rag/rerankers/)提供更加精准的内容检索能力。
 
-根据用户意图同时检索已添加至 **“上下文”** 的知识库，从多路知识库查询相关文本片段。经过文本重排序（Rerank）后，在多路查询结果中选择最能够匹配用户问题的结果。
-
-<figure><img src="../../.gitbook/assets/image (189).png" alt=""><figcaption></figcaption></figure>
-
-在多路召回模式下，检索器会在所有与应用关联的知识库中去检索与用户问题相关的文本内容，并将多路召回的相关文档结果合并，并通过后置的重排序（Rerank）步骤对检索召回的文档进行语义重排。
-
-以下是多路召回模式的技术流程图：
+在多路召回模式下，检索器会在所有与应用关联的知识库中去检索与用户问题相关的文本内容，并将多路召回的相关文档结果合并，以下是多路召回模式的技术流程图：
 
 <figure><img src="https://docs.dify.ai/~gitbook/image?url=https%3A%2F%2F1288284732-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FCdDIVDY6AtAz028MFT4d%252Fuploads%252Fgit-blob-9bb237ea9a2b4cc09637e951e696d5b52eb31033%252Fimage.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=0790e257848b5e6c45ce226109aa1c2f5d54bae1c04d1e14dec9fa6a46bdee17" alt=""><figcaption></figcaption></figure>
 
-{% hint style="info" %}
-多路召回模式下需要申请对应的 Rerank 模型的 API Key。
-{% endhint %}
+根据用户意图同时检索所有添加至 **“上下文”** 的知识库，在多个知识库内查询相关文本片段，选择所有和用户问题相匹配的内容，最后通过 Rerank 策略找到最适合的内容并回答用户。该方法的检索原理更为科学，这也意味着哪怕只有 1 个知识库，该方法也能够提供比 N 选 1 召回模式更加精准的内容回答效果。
 
-多路召回模式在多知识库检索时能够获得质量更高的召回效果，因此更**推荐将召回模式设置为多路召回**。
+举例：A 应用的上下文关联了 K1、K2、K3 三个知识库。使用多路召回策略后，用户输入问题后，在三个知识库内检索并汇总多条内容。最后通过 Rerank 策略确定与用户问题最相关，排分最高的内容，确保结果更加精准与可信。
 
-***
+<figure><img src="../../../img/zh-rag-multiple.png" alt=""><figcaption></figcaption></figure>
 
-### 3 重排序（Rerank）
+多路召回模式支持以下两种 Rerank 设置：
+
+- **权重设置（默认）**
+
+该设置无需配置 Rerank 模型，内容查询无需额外花费。提供介于语义和关键词匹配之间的调整设置。语义指的是在知识库内进行向量检索，关键词匹配指的是在知识库内进行全文检索（Full Text Search）。你可以根据内容检索的实际效果，在设置内调整两者之间的权重。
+
+-  **Rerank 模型**
+
+该方法需要在“模型供应商”内配置 Rerank 模型，内容查询可能会产生费用，但结果更加精准。Dify 目前支持多个 Rerank 模型，进入 “模型供应商” 页填入 Rerank 模型的 API Key。
+
+<figure><img src="../../../img/rerank.png" alt=""><figcaption><p>在模型供应商内配置 Rerank 模型</p></figcaption></figure>
 
 重排序模型通过将候选文档列表与用户问题语义匹配度进行重新排序，从而改进语义排序的结果。其原理是计算用户问题与给定的每个候选文档之间的相关性分数，并返回按相关性从高到低排序的文档列表。
 
 <figure><img src="../../.gitbook/assets/image (128).png" alt=""><figcaption><p>混合检索+重排序</p></figcaption></figure>
-
-#### 配置 Rerank 模型 API
-
-Dify 目前支持多个 Rerank 模型，进入 “模型供应商” 页填入 Rerank 模型的 API Key。
-
-<figure><img src="../../../img/rerank.png" alt=""><figcaption><p>在模型供应商内配置 Rerank 模型</p></figcaption></figure>
-
-{% hint style="info" %}
-除了配置在线 Rerank 模型外，你也可以在配置本地推理框架如 Ollama、Xinference，并在推理框架内部署本地 Rerank 模型例如： bge-reranker。
-{% endhint %}
-
-#### 使用 Rerank 模型增强知识库引用效果
-
-进入“编排->上下文->召回设置”页，调整召回设置。
-
-在知识库内使用 Rerank 模型有助于提升文本应用效果，详细说明请参考[《检索设置》](https://docs.dify.ai/v/zh-hans/guides/knowledge-base/create_knowledge_and_upload_documents#id-6-jian-suo-she-zhi)。
-
-你也可以在应用编排的上下文召回设置内调整 Rerank 设置，优化多个知识库之间的检索效果。
-
-![](../../../img/zh-app-rag.png)
-
-**权重设置**
-
-> 该设置无需添加 Rerank API。
-
-提供介于语义和关键词匹配之间的调整设置。语义指的是在知识库内进行向量检索，关键词匹配指的是在知识库内进行全文检索（Full Text Search）。你可以在设置内调整两者之间的权重。
-
---- 
-
-**Rerank 模型**
-
-> 该设置需要在[模型供应商](https://docs.dify.ai/v/zh-hans/getting-started/readme/model-providers)内添加 Rerank API。
-
-重排序模型将根据候选文档列表与用户问题语义匹配度进行重新排序，从而改进语义排序的结果。
 
 #### 可调参数
 
@@ -112,6 +86,8 @@ Dify 目前支持多个 Rerank 模型，进入 “模型供应商” 页填入 R
 - **Score 阈值**
   
   用于设置文本片段筛选的相似度阈值。
+
+多路召回模式在多知识库检索时能够获得质量更高的召回效果，因此更**推荐将召回模式设置为多路召回**。
 
 ### 常见问题
 
