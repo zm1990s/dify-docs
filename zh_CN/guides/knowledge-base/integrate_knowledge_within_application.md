@@ -93,7 +93,7 @@ N 选 1 召回由 Function Call/ReAct 进行驱动，每一个关联的知识库
 
 ### 多路召回与知识库索引的配置场景
 
-多路召回受知识库索引模式的影响而存在部分配置差异，你在使用多路召回时可能会遇到以下情况：
+多路召回受[知识库索引方式](https://docs.dify.ai/v/zh-hans/guides/knowledge-base/create_knowledge_and_upload_documents#id-5-suo-yin-fang-shi)的影响而存在部分配置差异，你在使用多路召回时可能会遇到以下情况：
 
 ![](../../../img/zh-rerank-multiple-embedding.png)
 
