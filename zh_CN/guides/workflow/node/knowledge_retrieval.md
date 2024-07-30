@@ -24,8 +24,10 @@
 
 1. 选择查询变量，用于作为输入来检索知识库中的相关文本分段，在常见的对话类应用中一般将开始节点的 `sys.query` 作为查询变量；
 2. 选择需要查询的知识库，可选知识库需要在 Dify 知识库内预先[创建](../../knowledge-base/create\_knowledge\_and\_upload\_documents.md#id-1-chuang-jian-zhi-shi-ku)；
-3. 配置[召回模式](../../../learn-more/extended-reading/retrieval-augment/retrieval.md)和[知识库设置](../../knowledge-base/knowledge\_and\_documents\_maintenance.md#id-8-zhi-shi-ku-she-zhi)；
+3. 指定[召回模式](../../../learn-more/extended-reading/retrieval-augment/retrieval.md)。自 9 月 1 日后，知识库的召回模式将自动切换为多路召回，不再建议使用 N 选 1 召回模式；
 4. 连接并配置下游节点，一般为 LLM 节点；
+
+> 建议将知识库的召回模式切换为多路召回，详细说明请
 
 **输出变量**
 
