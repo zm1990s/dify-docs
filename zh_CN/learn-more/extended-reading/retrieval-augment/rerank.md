@@ -22,7 +22,7 @@
 
 ### 如何配置 Rerank 模型？
 
-Dify 目前已支持 Cohere Rerank 模型，通过进入“模型供应商-> Cohere”页面填入 Rerank 模型的 API 秘钥：
+Dify 目前已支持 Cohere Rerank 模型，进入“模型供应商-> Cohere”页面填入 Rerank 模型的 API 秘钥：
 
 <figure><img src="../../../.gitbook/assets/image (112).png" alt=""><figcaption><p>在模型供应商内配置 Cohere Rerank 模型</p></figcaption></figure>
 
@@ -36,7 +36,7 @@ Dify 目前已支持 Cohere Rerank 模型，通过进入“模型供应商-> Coh
 
 ### 数据集检索模式中设置 Rerank 模型
 
-通过进入“数据集->创建数据集->检索设置”页面并在添加 Rerank 设置。除了在创建数据集可以设置 Rerank ，你也可以在已创建的数据集设置内更改 Rerank 配置，在应用编排的数据集召回模式设置中更改 Rerank 配置。
+进入“数据集->创建数据集->检索设置”页面并在添加 Rerank 设置。除了在创建数据集可以设置 Rerank ，你也可以在已创建的数据集设置内更改 Rerank 配置，在应用编排的数据集召回模式设置中更改 Rerank 配置。
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption><p>数据集检索模式中设置 Rerank 模型</p></figcaption></figure>
 
@@ -46,7 +46,7 @@ Dify 目前已支持 Cohere Rerank 模型，通过进入“模型供应商-> Coh
 
 ### 数据集多路召回模式中设置 Rerank 模型
 
-通过进入“提示词编排->上下文->设置”页面中设置为多路召回模式时需开启 Rerank 模型。
+进入“提示词编排->上下文->设置”页面中设置为多路召回模式时需开启 Rerank 模型。
 
 关于多路召回模式的说明：🔗
 
