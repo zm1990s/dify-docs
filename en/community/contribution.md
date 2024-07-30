@@ -6,7 +6,7 @@ We need to be nimble and ship fast given where we are, but we also want to make 
 
 This guide, like Dify itself, is a constant work in progress. We highly appreciate your understanding if at times it lags behind the actual project, and welcome any feedback for us to improve.
 
-In terms of licensing, please take a minute to read our short License and Contributor Agreement. The community also adheres to the [code of conduct](https://github.com/langgenius/.github/blob/main/CODE\_OF\_CONDUCT.md).
+In terms of licensing, please take a minute to read our short [License and Contributor Agreement](./open-source). The community also adheres to the [code of conduct](https://github.com/langgenius/.github/blob/main/CODE\_OF\_CONDUCT.md).
 
 ### Before you jump in
 
@@ -87,7 +87,10 @@ To validate your set up, head over to [http://localhost:3000](http://localhost:3
 
 ### Developing
 
-If you are adding a model provider, [this guide](https://github.com/langgenius/dify/blob/main/api/core/model\_runtime/README.md) is for you.
+If you are adding a model provider,[this guide](https://github.com/langgenius/dify/blob/main/api/core/model\_runtime/README.md) is for you.
+
+If you are adding tools used in Agent Assistants and Workflows, [this guide](https://github.com/langgenius/dify/blob/main/api/core/tools/README.md) is for you.
+
 
 To help you quickly navigate where your contribution fits, a brief, annotated outline of Dify's backend & frontend is as follows:
 

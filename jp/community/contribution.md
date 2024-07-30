@@ -6,7 +6,7 @@ Difyに貢献したいと思っていることには素晴らしいと思いま�
 
 このガイドは、Dify自体と同様に、常に改善されています。時折プロジェクトの実態よりも遅れることがあるかもしれませんが、ご理解と改善のためのフィードバックを心から歓迎します。
 
-ライセンスに関しては、時間を取って短い[ライセンスと貢献者協定](./license)を読んでください。また、コミュニティは[行動規範](https://github.com/langgenius/.github/blob/main/CODE_OF_CONDUCT.md)にも従います。
+ライセンスに関しては、時間を取って短い[ライセンスと貢献者協定](./open-source)を読んでください。また、コミュニティは[行動規範](https://github.com/langgenius/.github/blob/main/CODE_OF_CONDUCT.md)にも従います。
 
 ## 始める前に
 
@@ -90,7 +90,7 @@ Difyはバックエンドとフロントエンドで構成されています。`
 
 モデルを追加提供する場合は、[このガイド](https://github.com/langgenius/dify/blob/main/api/core/model_runtime/README.md)を参照してください。
 
-エージェントやワークフローにツールを追加提供する場合は、[このガイド](./api/core/tools/README.md)を参照してください。
+エージェントやワークフローにツールを追加提供する場合は、[このガイド](https://github.com/langgenius/dify/blob/main/api/core/tools/README.md)を参照してください。
 
 貢献する部分を迅速に理解できるように、以下にDifyのバックエンドとフロントエンドの簡単な注釈付きアウトラインを示します：
 

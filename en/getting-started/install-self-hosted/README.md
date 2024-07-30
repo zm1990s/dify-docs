@@ -1,6 +1,6 @@
-# Install (Self hosted)
+# Dify Community
 
-The Dify Self hosted Edition, which is the open-source on [GitHub](https://github.com/langgenius/dify), can be deployed in one of the following two ways:
+You can self-host Dify, which is open-source on [GitHub](https://github.com/langgenius/dify), in one of the following two ways:
 
 1. [Docker Compose Deployment](https://docs.dify.ai/getting-started/install-self-hosted/docker-compose)
 2. [Local Source Code Start](https://docs.dify.ai/getting-started/install-self-hosted/local-source-code)
