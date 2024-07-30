@@ -1,6 +1,6 @@
 # 在应用上下文内引用知识库
 
-### 应用内知识库的使用流程
+### 知识库的引用流程
 
 知识库可以作为外部知识提供给大语言模型用于精确回复用户问题，你可以在 Dify 的[所有应用类型](../application\_orchestrate/#application\_type)内关联已创建的知识库。
 
@@ -23,7 +23,7 @@
 
 #### N 选 1 召回（Legacy）
 
-> 该方法无需配置 Rerank 模型 API，
+> 该方法无需配置 Rerank 模型 API。
 
 N 选 1 召回由 Function Call/ReAct 进行驱动，每一个关联的知识库作为工具函数，LLM 会自主选择与用户问题最匹配的 1 个知识库来进行查询，**推理依据为用户问题与知识库描述的语义的匹配程度**。
 
@@ -31,7 +31,7 @@ N 选 1 召回由 Function Call/ReAct 进行驱动，每一个关联的知识库
 
 <figure><img src="../../.gitbook/assets/image (190).png" alt=""><figcaption></figcaption></figure>
 
-虽然此方法无需配置 [Rerank](https://www.pinecone.io/learn/series/rag/rerankers/) 模型 API，但该召回策略仅匹配单个知识库，且匹配的目标知识库严重依赖于 LLM 对于知识库描述的理解，检索匹配知识库时可能会存在不合理的判断，导致检索到的结果可能不全面、不准确，从而无法提供高质量的查询结果。
+虽然此方法无需配置 [Rerank](https://docs.dify.ai/v/zh-hans/learn-more/extended-reading/retrieval-augment/rerank) 模型，但该召回策略仅匹配单个知识库，且匹配的目标知识库严重依赖于 LLM 对于知识库描述的理解，检索匹配知识库时可能会存在不合理的判断，导致检索到的结果可能不全面、不准确，从而无法提供高质量的查询结果。
 
 自 9 月份后，该策略将会被自动替换为**多路召回**，请提前进行修改。
 
@@ -49,7 +49,7 @@ N 选 1 召回由 Function Call/ReAct 进行驱动，每一个关联的知识库
 
 #### 多路召回（推荐）
 
-> 该设置通过 [Rerank 策略](https://www.pinecone.io/learn/series/rag/rerankers/)提供更加精准的内容检索能力。
+> 该设置通过 [Rerank 策略](https://docs.dify.ai/v/zh-hans/learn-more/extended-reading/retrieval-augment/rerank)提供更加精准的内容检索能力。
 
 在多路召回模式下，检索器会在所有与应用关联的知识库中去检索与用户问题相关的文本内容，并将多路召回的相关文档结果合并，以下是多路召回模式的技术流程图：
 
@@ -65,13 +65,17 @@ N 选 1 召回由 Function Call/ReAct 进行驱动，每一个关联的知识库
 
 ##### 权重设置（默认）
 
-该设置无需配置 Rerank 模型，内容查询无需额外花费。提供介于语义和关键词匹配之间的调整设置。语义指的是在知识库内进行向量检索，关键词匹配指的是在知识库内进行全文检索（Full Text Search）。你可以根据内容检索的实际效果，在设置内调整两者之间的权重。
+该设置无需配置 Rerank 模型，内容查询无需额外花费。提供介于语义和关键词匹配之间的调整设置。语义指的是在知识库内进行向量检索（Vector Search），关键词匹配指的是在知识库内进行关键词的全文检索（Full Text Search）。你可以根据内容检索的实际效果，在设置内调整两者之间的权重。
+
+> 语义优先模式（向量检索）指的是比对用户问题与知识库内容中的向量距离。距离越近，匹配的概率越大。参考阅读：[《Dify：Embedding 技术与 Dify 数据集设计/规划》](https://mp.weixin.qq.com/s/vmY_CUmETo2IpEBf1nEGLQ)。
+
+相关阅读请参考《》
 
 ##### Rerank 模型
 
-该方法需要在“模型供应商”内配置 Rerank 模型，内容查询可能会产生费用，但结果更加精准。Dify 目前支持多个 Rerank 模型，进入 “模型供应商” 页填入 Rerank 模型的 API Key。
+该方法需要在“模型供应商”内配置 Rerank 模型，内容查询可能会产生费用，但结果更加精准。Dify 目前支持多个 Rerank 模型，进入 “模型供应商” 页填入 Rerank 模型（例如 Cohere、Jina 等模型）的 API Key。
 
-<figure><img src="../../../img/rerank.png" alt=""><figcaption><p>在模型供应商内配置 Rerank 模型</p></figcaption></figure>
+<figure><img src="../../../img/zh-rerank-model-api.png" alt=""><figcaption><p>在模型供应商内配置 Rerank 模型</p></figcaption></figure>
 
 重排序模型通过将候选文档列表与用户问题语义匹配度进行重新排序，从而改进语义排序的结果。其原理是计算用户问题与给定的每个候选文档之间的相关性分数，并返回按相关性从高到低排序的文档列表。
 
@@ -81,13 +85,49 @@ N 选 1 召回由 Function Call/ReAct 进行驱动，每一个关联的知识库
 
 - **TopK**
   
-  用于筛选与用户问题相似度最高的文本片段。系统同时会根据选用模型上下文窗口大小动态调整分段数量。
+  用于筛选与用户问题相似度最高的文本片段。系统同时会根据选用模型上下文窗口大小，动态调整分段数量。数值越高，预期被召回的文本分段数量越多。
 
 - **Score 阈值**
   
-  用于设置文本片段筛选的相似度阈值。
+  用于设置文本片段筛选的相似度阈值。向量检索的相似度分数需要超过设置的分数后才会被召回，数值越高，预期被召回的文本数量越少。
 
 多路召回模式在多知识库检索时能够获得质量更高的召回效果，因此更**推荐将召回模式设置为多路召回**。
+
+##### 多路召回与知识库索引的配置场景
+
+多路召回受知识库索引模式的影响而存在部分配置差异，你在使用多路召回时可能会遇到以下情况：
+
+![](../../../img/zh-rerank-multiple-embedding.png)
+
+- 所有已关联的知识库索引模式均为经济型
+
+    在该情况下，所有知识库使用了离线搜索引擎，内容的准确度上稍有降低。你可以选择启用 Rerank 模型来增强内容检索的准确性。
+
+    ![](../../../img/zh-multiple-rerank-economical.png)
+
+- 已关联的知识库的索引模式既有经济型，又有高质量模式，并且采用的 Embedding 模型也不相同
+
+    该情况的内容来源较为复杂，为了确保内容检索的准确度，要求配置 Rerank 模型确保内容检索的准确性。
+
+    ![](../../../img/zh-multiple-rerank-mixed.png)
+
+- 所有知识库均为高质量的索引模式，且使用了相同的 Embedding 模型
+  
+    1. 所有知识库都使用了向量检索，多路召回将默认使用“权重设置”，并且默认语义优先。
+   
+    ![](../../../img/zh-multiple-rerank-vetor-search.png)
+
+    ![](../../../img/zh-rerank-vector-first.png)
+
+    2. 所有知识库都使用了全文检索，多路召回将默认使用“权重设置”，并且默认关键词优先。
+   
+    ![](../../../img/zh-multiple-rerank-full-text-search.png)
+
+    ![](../../../img/zh-rerank-keyword-first.png)
+
+    3. 在二者混合的情况下，多路召回将默认使用“权重设置”，配置比例语义:关键词 = 0.7:0.3
+
+    ![](../../../img/zh-multiple-rerank-customize.png)
 
 ### 常见问题
 
