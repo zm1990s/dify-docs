@@ -1,6 +1,6 @@
 # 在应用上下文内引用知识库
 
-### 1 创建知识库
+### 应用内知识库的使用流程
 
 知识库可以作为外部知识提供给大语言模型用于精确回复用户问题，你可以在 Dify 的[所有应用类型](../application\_orchestrate/#application\_type)内关联已创建的知识库。
 
@@ -17,11 +17,11 @@
 
 ***
 
-### 2 引用知识库并指定召回模式
+### 关联知识库并指定召回模式
 
 如果当前应用的上下文涉及多个知识库，需要设置召回模式以使得检索的内容更加精确。进入 **上下文 -- 参数设置 -- 召回设置**，选择知识库的召回模式。
 
-- **N 选 1 召回（Legacy）**
+#### N 选 1 召回（Legacy）
 
 > 该方法无需配置 Rerank 模型 API，
 
@@ -47,13 +47,13 @@ N 选 1 召回由 Function Call/ReAct 进行驱动，每一个关联的知识库
 
 - 在知识库内上传文档内容时，系统推理模型将自动为知识库生成一个摘要描述。为了在该模式下获得最佳的召回效果，你可以在 “知识库->设置->知识库描述” 中查看到系统默认创建的摘要描述，并检查该内容是否可以清晰的概括知识库的内容。
 
-- **多路召回（推荐）**
+#### 多路召回（推荐）
 
 > 该设置通过 [Rerank 策略](https://www.pinecone.io/learn/series/rag/rerankers/)提供更加精准的内容检索能力。
 
 在多路召回模式下，检索器会在所有与应用关联的知识库中去检索与用户问题相关的文本内容，并将多路召回的相关文档结果合并，以下是多路召回模式的技术流程图：
 
-<figure><img src="https://docs.dify.ai/~gitbook/image?url=https%3A%2F%2F1288284732-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FCdDIVDY6AtAz028MFT4d%252Fuploads%252Fgit-blob-9bb237ea9a2b4cc09637e951e696d5b52eb31033%252Fimage.png%3Falt%3Dmedia&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=0790e257848b5e6c45ce226109aa1c2f5d54bae1c04d1e14dec9fa6a46bdee17" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../img/rerank-flow-chart.png" alt=""><figcaption></figcaption></figure>
 
 根据用户意图同时检索所有添加至 **“上下文”** 的知识库，在多个知识库内查询相关文本片段，选择所有和用户问题相匹配的内容，最后通过 Rerank 策略找到最适合的内容并回答用户。该方法的检索原理更为科学，这也意味着哪怕只有 1 个知识库，该方法也能够提供比 N 选 1 召回模式更加精准的内容回答效果。
 
@@ -63,11 +63,11 @@ N 选 1 召回由 Function Call/ReAct 进行驱动，每一个关联的知识库
 
 多路召回模式支持以下两种 Rerank 设置：
 
-- **权重设置（默认）**
+##### 权重设置（默认）
 
 该设置无需配置 Rerank 模型，内容查询无需额外花费。提供介于语义和关键词匹配之间的调整设置。语义指的是在知识库内进行向量检索，关键词匹配指的是在知识库内进行全文检索（Full Text Search）。你可以根据内容检索的实际效果，在设置内调整两者之间的权重。
 
--  **Rerank 模型**
+##### Rerank 模型
 
 该方法需要在“模型供应商”内配置 Rerank 模型，内容查询可能会产生费用，但结果更加精准。Dify 目前支持多个 Rerank 模型，进入 “模型供应商” 页填入 Rerank 模型的 API Key。
 
@@ -77,7 +77,7 @@ N 选 1 召回由 Function Call/ReAct 进行驱动，每一个关联的知识库
 
 <figure><img src="../../.gitbook/assets/image (128).png" alt=""><figcaption><p>混合检索+重排序</p></figcaption></figure>
 
-#### 可调参数
+##### 可调参数
 
 - **TopK**
   
@@ -91,10 +91,14 @@ N 选 1 召回由 Function Call/ReAct 进行驱动，每一个关联的知识库
 
 ### 常见问题
 
-引用多个知识库时，无法调整**权重设置**，提示以下错误：
+1. **引用多个知识库时，无法调整 **“权重设置”**，提示以下错误应如何处理？**
 
 ![](../../../img/zh-integrate-faq.png)
 
 出现此问题是因为上下文内所引用的多个知识库内所使用的嵌入模型（Embedding）不一致，为避免检索内容冲突而出现此提示。推荐设置在“模型供应商”内设置并启用 Rerank 模型，或者统一知识库的检索设置。
 
+2. **为什么在多路召回模式下找不到“权重设置”选项？**
 
+请检查你的知识库是否使用了“经济”型索引模式。如果是，那么将其切换为“高质量”索引模式。
+
+![](../../../img/zh-knowledgebase-eco.png)
