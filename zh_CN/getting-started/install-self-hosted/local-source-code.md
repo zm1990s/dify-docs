@@ -20,6 +20,7 @@ git clone https://github.com/langgenius/dify.git
 
 ```Bash
 cd docker
+cp middleware.env.example middleware.env
 docker compose -f docker-compose.middleware.yaml up -d
 ```
 
