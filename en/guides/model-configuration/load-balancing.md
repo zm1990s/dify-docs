@@ -6,7 +6,7 @@ In enterprise-level large-scale model API calls, high concurrent requests can ex
 
 You can enable this feature by navigating to **Model Provider -- Model List -- Configure Model Load Balancing** and adding multiple credentials (API keys) for the same model.
 
-<figure><img src="/en/.gitbook/assets/guides/model-configuration/load-balancing/image (2) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption><p>Model Load Balancing</p></figcaption></figure>
+<figure><img src="../../../img/load-balancing.png" alt="" width="563"><figcaption><p>Model Load Balancing</p></figcaption></figure>
 
 {% hint style="info" %}
 Model load balancing is a paid feature. You can enable it by [subscribing to SaaS paid services](../../getting-started/cloud.md#subscription-plan) or purchasing the enterprise edition.
@@ -14,7 +14,7 @@ Model load balancing is a paid feature. You can enable it by [subscribing to Saa
 
 The default API key is the credential added when initially configuring the model provider. You need to click **Add Configuration** to add different API keys for the same model to use the load balancing feature properly.
 
-<figure><img src="/en/.gitbook/assets/guides/model-configuration/load-balancing/image (3) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption><p>Configuring Load Balancing</p></figcaption></figure>
+<figure><img src="../../../img/load-balancing-1.png" alt="" width="563"><figcaption><p>Configuring Load Balancing</p></figcaption></figure>
 
 **At least one additional model credential** must be added to save and enable load balancing.
 
