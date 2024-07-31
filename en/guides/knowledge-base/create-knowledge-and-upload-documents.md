@@ -122,13 +122,11 @@ Definition: By generating query embeddings to search the most similar text chunk
 
 <figure><img src="/en/.gitbook/assets/guides/knowledge-base/vector-search.png" alt="" width="563"><figcaption><p>Vector Search Settings</p></figcaption></figure>
 
-TopK: Used to filter the text chunk most similar to the user’s query. The system will dynamically adjust the number of chunks based on the context window size of the selected model. The default value is 3.
+TopK: Used to filter the text chunk most similar to the user’s query. The system will dynamically adjust the number of chunks based on the context window size of the selected model. The default value is 3. The higher the value, the more text segments are expected to be recalled.
 
-Score threshold: Used to set the similarity threshold for filtering text fragments, i.e., only recall text fragments that exceed the set score. The system disables this setting by default, meaning no filtering is applied to the similarity values of the recalled text fragments. The default value is 0.5 when enabled.
+Score threshold: Used to set the similarity threshold for filtering text fragments, i.e., only recall text fragments that exceed the set score. The system disables this setting by default, meaning no filtering is applied to the similarity values of the recalled text fragments. The default value is 0.5 when enabled. The higher the value, the fewer texts are expected to be recalled.
 
-Rerank model: After configuring the API key for the Rerank model in the “Model Provider” page, you can
-
- enable the “Rerank model” in the retrieval settings. The system will semantically rerank the recalled document results after vector retrieval to optimize the ranking results. After setting the Rerank model, TopK and Score threshold settings only take effect in the Rerank step.
+Rerank model: After configuring the API key for the Rerank model in the “Model Provider” page, you can enable the “Rerank model” in the retrieval settings. The system will semantically rerank the recalled document results after vector retrieval to optimize the ranking results. After setting the Rerank model, TopK and Score threshold settings only take effect in the Rerank step.
 
 #### **Full-Text Search**
 
@@ -137,6 +135,8 @@ Definition: Indexing all terms in the document, allowing users to query any term
 <figure><img src="/en/.gitbook/assets/guides/knowledge-base/full-text-search.png" alt="" width="563"><figcaption><p>Full-Text Search Settings</p></figcaption></figure>
 
 TopK: Used to filter the text fragments most similar to the user’s query. The system will dynamically adjust the number of fragments based on the context window size of the selected model. The default value is 3.
+
+Score threshold: Used to set the similarity threshold for filtering text fragments, i.e., only recall text fragments that exceed the set score. The system disables this setting by default, meaning no filtering is applied to the similarity values of the recalled text fragments. The default value is 0.5 when enabled. The higher the value, the fewer texts are expected to be recalled.
 
 Rerank model: After configuring the API key for the Rerank model in the “Model Provider” page, you can enable the “Rerank model” in the retrieval settings. The system will semantically rerank the recalled document results after full-text retrieval to optimize the ranking results. After setting the Rerank model, TopK and Score threshold settings only take effect in the Rerank step.
 
@@ -147,5 +147,7 @@ Performs full-text and vector search simultaneously, with an additional rerankin
 <figure><img src="/en/.gitbook/assets/guides/knowledge-base/hybrid-search.png" alt="" width="563"><figcaption><p>Hybrid Search Settings</p></figcaption></figure>
 
 TopK: Used to filter the text fragments most similar to the user’s query. The system will dynamically adjust the number of fragments based on the context window size of the selected model. The default value is 3.
+
+Score threshold: Used to set the similarity threshold for filtering text fragments, i.e., only recall text fragments that exceed the set score. The system disables this setting by default, meaning no filtering is applied to the similarity values of the recalled text fragments. The default value is 0.5 when enabled. The higher the value, the fewer texts are expected to be recalled.
 
 Rerank model: After configuring the API key for the Rerank model in the “Model Provider” page, you can enable the “Rerank model” in the retrieval settings. The system will semantically rerank the recalled document results after hybrid retrieval to optimize the ranking results. After setting the Rerank model, TopK and Score threshold settings only take effect in the Rerank step.
