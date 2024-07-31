@@ -32,7 +32,7 @@ When users input different questions, the issue classifier will automatically cl
 
 ### 3. How to Configure
 
-<figure><img src="/en/.gitbook/assets/guides/workflow/node/question_classifier/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../img/question-classifier-1.png" alt=""><figcaption></figcaption></figure>
 
 **Configuration Steps:**
 

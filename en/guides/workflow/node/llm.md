@@ -4,7 +4,7 @@
 
 Invoke large language models to answer questions or process natural language.
 
-<figure><img src="/en/.gitbook/assets/guides/workflow/node/llm/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>LLM Node</p></figcaption></figure>
+<figure><img src="../../../../img/llm-node-1.png" alt=""><figcaption><p>LLM Node</p></figcaption></figure>
 
 ***
 
@@ -26,7 +26,7 @@ By selecting the appropriate model and writing prompts, you can build powerful a
 
 ### How to Configure
 
-<figure><img src="/en/.gitbook/assets/guides/workflow/node/llm/image (200).png" alt=""><figcaption><p>LLM Node Configuration - Model Selection</p></figcaption></figure>
+<figure><img src="../../../../img/llm-node-2.png" alt=""><figcaption><p>LLM Node Configuration - Model Selection</p></figcaption></figure>
 
 **Configuration Steps:**
 
@@ -51,7 +51,7 @@ If you're struggling to come up with effective system prompts (SYSTEM), you can 
 
 In the prompt editor, you can call out the **variable insertion menu** by typing **"/"** or **"{"** to insert **special variable blocks** or **upstream node variables** into the prompt as context content.
 
-<figure><img src="/en/.gitbook/assets/guides/workflow/node/llm/image (202).png" alt="" width="366"><figcaption><p>Calling Out the Variable Insertion Menu</p></figcaption></figure>
+<figure><img src="../../../../img/llm-node-3.png" alt="" width="366"><figcaption><p>Calling Out the Variable Insertion Menu</p></figcaption></figure>
 
 ***
 
@@ -61,7 +61,7 @@ In the prompt editor, you can call out the **variable insertion menu** by typing
 
 Context variables are a special type of variable defined within the LLM node, used to insert externally retrieved text content into the prompt.
 
-<figure><img src="/en/.gitbook/assets/guides/workflow/node/llm/image (205).png" alt=""><figcaption><p>Context Variables</p></figcaption></figure>
+<figure><img src="../../../../img/llm-node-4.png" alt=""><figcaption><p>Context Variables</p></figcaption></figure>
 
 In common knowledge base Q&A applications, the downstream node of knowledge retrieval is typically the LLM node. The **output variable** `result` of knowledge retrieval needs to be configured in the **context variable** within the LLM node for association and assignment. After association, inserting the **context variable** at the appropriate position in the prompt can incorporate the externally retrieved knowledge into the prompt.
 

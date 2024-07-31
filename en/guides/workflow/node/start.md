@@ -6,7 +6,7 @@ Define the initial parameters for starting a workflow.
 
 You can customize the input variables for initiating the workflow in the start node. Every workflow requires a start node.
 
-<figure><img src="/en/.gitbook/assets/guides/workflow/node/start/image (236).png" alt="" width="375"><figcaption><p>Workflow Start Node</p></figcaption></figure>
+<figure><img src="../../../../img/start-node.png" alt="" width="375"><figcaption><p>Workflow Start Node</p></figcaption></figure>
 
 The start node supports defining input variables of four types:
 
