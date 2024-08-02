@@ -27,7 +27,7 @@
 3. 指定[召回模式](../../../learn-more/extended-reading/retrieval-augment/retrieval.md)。自 9 月 1 日后，知识库的召回模式将自动切换为多路召回，不再建议使用 N 选 1 召回模式；
 4. 连接并配置下游节点，一般为 LLM 节点；
 
-> 建议将知识库的召回模式切换为多路召回，详细说明请
+> 建议将知识库的召回模式切换为多路召回，详细说明请参考[《在应用内集成知识库》](https://docs.dify.ai/v/zh-hans/guides/knowledge-base/integrate_knowledge_within_application)。
 
 **输出变量**
 
