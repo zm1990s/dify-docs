@@ -6,7 +6,7 @@ Difyに貢献したいと思っていることには素晴らしいと思いま�
 
 このガイドは、Dify自体と同様に、常に改善されています。時折プロジェクトの実態よりも遅れることがあるかもしれませんが、ご理解と改善のためのフィードバックを心から歓迎します。
 
-ライセンスに関しては、時間を取って短い[ライセンスと貢献者協定](./open-source)を読んでください。また、コミュニティは[行動規範](https://github.com/langgenius/.github/blob/main/CODE_OF_CONDUCT.md)にも従います。
+ライセンスに関しては、時間を取って短い[ライセンスと貢献者協定](https://github.com/langgenius/dify/blob/main/LICENSE)を読んでください。また、コミュニティは[行動規範](https://github.com/langgenius/.github/blob/main/CODE_OF_CONDUCT.md)にも従います。
 
 ## 始める前に
 
