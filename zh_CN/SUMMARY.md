@@ -58,7 +58,7 @@
     * [运行历史](guides/workflow/debug\_and\_preview/history.md)
   * [应用发布](guides/workflow/publish.md)
 * [知识库](guides/knowledge-base/README.md)
-  * [创建知识库&上传文档](guides/knowledge-base/chuang-jian-zhi-shi-ku-shang-chuan-wen-dang.md)
+  * [创建知识库&上传文档](guides/knowledge-base/create-knowledge-and-upload-documents.md)
   * [知识库及文档维护](guides/knowledge-base/knowledge\_and\_documents\_maintenance.md)
   * [在应用内集成知识库](guides/knowledge-base/integrate\_knowledge\_within\_application.md)
   * [召回测试/引用归属](guides/knowledge-base/retrieval\_test\_and\_citation.md)
