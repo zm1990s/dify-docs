@@ -144,7 +144,7 @@ Rerank Model: After configuring the API key for the Rerank model on the "Model P
 
 Definition: This process performs both full-text search and vector search simultaneously, incorporating a reordering step to select the best results that match the user's query from both types of search outcomes. In this mode, users can specify "weight settings" without needing to configure the Rerank model API, or they can opt for a Rerank model for retrieval.
 
-<figure><img src="/en/.gitbook/assets/guides/knowledge-base/hybrid-search.png" alt="" width="563"><figcaption><p>Hybrid Retrieval Setting</p></figcaption></figure>
+<figure><img src="../../../img/hybrid-search.png" alt="" width="563"><figcaption><p>Hybrid Retrieval Setting</p></figcaption></figure>
 
 Weight Settings: This feature enables users to set custom weights for semantic priority and keyword priority. Keyword search refers to performing a full-text search within the knowledge base, while semantic search involves vector search within the knowledge base.
 

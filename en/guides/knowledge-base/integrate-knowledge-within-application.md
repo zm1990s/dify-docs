@@ -2,7 +2,7 @@
 
 ### 1. Creating a Knowledge Base Application
 
-A knowledge base can be used as external knowledge to provide precise answers to user questions through a large language model. You can associate an existing knowledge base with any application type in Dify.
+A knowledge base can be used as external knowledge to provide precise answers to user questions through a large language model. You can associate an existing knowledge base with any [application type](https://docs.dify.ai/guides/application-orchestrate#application_type) in Dify.
 
 Taking a chat assistant as an example, the process is as follows:
 
@@ -63,7 +63,7 @@ In practical Q&A scenarios, the sources of content and retrieval methods for eac
 
 Considering the costs associated with using Rerank and the needs of the business, the multi-recall mode provides two Rerank settings:
 
-##### Weight Settings
+##### Weight Score
 
 This setting does not require the configuration of an external Rerank model, meaning that reordering content incurs **no extra costs**. You can select the most appropriate content matching strategy by adjusting the weight ratio sliders for semantics or keywords.
 
@@ -77,7 +77,7 @@ This setting does not require the configuration of an external Rerank model, mea
 
 - **Custom Keyword and Semantic Weights**
 
-  In addition to enabling only semantic or keyword retrieval modes, we offer flexible custom weight settings. You can determine the best weight ratio for your business scenario by continuously adjusting the weights of both.
+  In addition to enabling only semantic or keyword retrieval modes, we offer flexible custom Weight Score. You can determine the best weight ratio for your business scenario by continuously adjusting the weights of both.
 
 ##### Rerank Model
 
@@ -85,7 +85,7 @@ The Rerank model is an external scoring system that calculates the relevance sco
 
 While this method incurs some additional costs, it is more adept at handling complex knowledge base content, such as content that combines semantic queries and keyword matches, or cases involving multilingual returned content.
 
-Click here to learn more about the [reordering](https://docs.dify.ai/learn-more/extended-reading/retrieval-augment/rerank) mechanism.
+> Click here to learn more about the [Re-ranking](https://docs.dify.ai/learn-more/extended-reading/retrieval-augment/rerank) mechanism.
 
 Dify currently supports multiple Rerank models. Enter the API Key for the Rerank model (such as Cohere, Jina, etc.) on the "Model Provider" page.
 
@@ -105,33 +105,35 @@ The multi-recall mode can achieve higher quality recall results when retrieving 
 
 ### Frequently Asked Questions
 
+Here's the translation of the provided content:
+
 1. **How should I choose Rerank settings in multi-recall mode?**
 
-If users know the exact information or terminology, and keyword retrieval can accurately deliver matching results, it is advised to use the **keyword priority mode** in the "Weight Settings".
+If users know the exact information or terminology, and keyword retrieval can accurately deliver matching results, set the **Keyword to 1** in the "Weight Score".
 
-If the exact vocabulary does not appear in the knowledge base, or if there are cross-language queries, it is recommended to use the **semantic priority** mode in the "Weight Settings".
+If the exact vocabulary does not appear in the knowledge base, or if there are cross-language queries, it's recommended to set the **Semantic setting to 1** in the "Weight Score".
 
-If business personnel are familiar with the actual questioning scenarios of users and wish to actively adjust the ratio of semantics or keywords, it is advisable to use the **custom mode** in the "Weight Settings".
+If business personnel are familiar with the actual questioning scenarios of users and wish to actively adjust the ratio of semantics or keywords, it's recommended to adjust the ratio in the "Weight Score" themselves.
 
-If the content in the knowledge base is complex and cannot be matched by simple conditions such as semantics or keywords, while requiring precise answers, and if you are willing to incur additional costs, it is recommended to utilize the **Rerank model** for content retrieval.
+If the content in the knowledge base is complex and cannot be matched by simple conditions such as semantics or keywords, while requiring precise answers, and if you are willing to incur additional costs, it's recommended to use the **Rerank model** for content retrieval.
 
-2. **What should I do if I encounter issues finding the “Weight Settings” or the requirement to configure a Rerank model?**
+2. **What should I do if I encounter issues finding the “Weight Score” or the requirement to configure a Rerank model?**
 
-Here’s how the retrieval method of the knowledge base affects multi-recall:
+Here's how the knowledge base retrieval method affects multi-route recall:
 
-| Knowledge Base Index Mode | Knowledge Base Retrieval Settings | Embedding Model | Multi-recall Page Prompt | Reason |
+| **Knowledge Base Index Mode** | **Knowledge Base Retrieval Setting** | **Embedding Model** | **Multi-route Recall Page Prompt** | **Reason** |
 | --- | --- | --- | --- | --- |
-| Economy Type | Inverted Index | None | Weight configuration unavailable, Rerank model can be enabled | - |
-| High Quality Type | 1. All knowledge bases use vector retrieval | Same Embedding model | Defaults to "Weight Settings," semantic value of 1 | Rerank settings align with knowledge base retrieval settings
-| High Quality Type | 2. All knowledge bases use full-text retrieval | Same Embedding model | Defaults to "Weight Settings," keyword value of 1 | Rerank settings align with knowledge base retrieval settings |
-| High Quality Type | 3. A mix of both | Same Embedding model | Defaults to "Weight Settings" custom configuration, ratio of semantic:keyword = 0.7:0.3 | Knowledge base content combines semantics and keywords, allowing customization of weight settings |
-| Both Economy and High Quality | Different retrieval settings used | Different Embedding models | Rerank model needs to be enabled | Content sources are complex; enabling Rerank model is recommended to ensure quality of content return |
-| High Quality | Same/different retrieval settings used | Different Embedding models | Rerank model needs to be enabled | ontent sources are not uniform, making it impossible to sort by the same standard. Configuring the Rerank model is necessary to enhance retrieval accuracy. |
+| All Economic | Inverted index | None | Unable to use weight configuration, allows enabling Rerank model | - |
+| All High Quality | 1. All knowledge bases use vector retrieval | Same Embedding model | Default "Weight Score", semantic value is 1 | Rerank settings match knowledge base retrieval settings |
+| All High Quality | 2. All knowledge bases use full-text retrieval | Same Embedding model | Default "Weight Score", keyword value is 1 | Rerank settings match knowledge base retrieval settings |
+| All High Quality | 3. Mixed | Same Embedding model | Default custom configuration in "Weight Score", ratio of semantic:keyword = 0.7:0.3 | Knowledge base content source mixes semantics and keywords, allows business personnel to customize Weight Score |
+| Both Economic and High Quality | Different retrieval settings used | Different Embedding models | Requires enabling Rerank model | Content source is complex, suggested to enable Rerank model to ensure content return quality |
+| High Quality | Same/different retrieval settings used | Different Embedding models | Requires enabling Rerank model | Content source format in this situation is not uniform, cannot be sorted by the same standard. To ensure content retrieval accuracy, Rerank model configuration is required to enhance content retrieval accuracy. |
 
-3. **What should I do if I cannot adjust the “Weight Settings” when referencing multiple knowledge bases and an error message appears?**
+3. **What should I do if I cannot adjust the “Weight Score” when referencing multiple knowledge bases and an error message appears?**
 
 This issue occurs because the embedding models used in the multiple referenced knowledge bases are inconsistent, prompting this notification to avoid conflicts in retrieval content. It is advisable to set and enable the Rerank model in the "Model Provider" or unify the retrieval settings of the knowledge bases.
 
-4. **Why can't I find the “Weight Settings” option in multi-recall mode, and only see the Rerank model?**
+4. **Why can't I find the “Weight Score” option in multi-recall mode, and only see the Rerank model?**
 
-Please check whether your knowledge base is using the “Economy” index mode. If so, switch it to the “High Quality” index mode.
+Please check whether your knowledge base is using the “Economical” index mode. If so, switch it to the “High Quality” index mode.
