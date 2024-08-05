@@ -4,7 +4,7 @@ In **Studio -- Application Orchestration**, click **Add Feature** to open the ap
 
 The application toolbox provides various additional features for Dify's [applications](../#application_type):
 <!-- TODO CN IMG -->
-<figure><img src="/en/.gitbook/assets/guides/application_orchestrate/app_toolkits/content_moderation.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../img/content_moderation.png" alt=""><figcaption></figcaption></figure>
 
 ### Conversation Opening
 
@@ -22,13 +22,11 @@ Setting next step question suggestions allows the AI to generate 3 follow-up que
 
 When this feature is enabled, the large language model will cite content from the knowledge base when responding to questions. You can view specific citation details below the response, including the original text segment, segment number, and match score.
 
-For more details, please see [Citation and Attribution](../../knowledge-base/retrieval_test_and_citation.md#id-2-yin-yong-yu-gui-shu).
+For more details, please see [Citation and Attribution](https://docs.dify.ai/guides/knowledge-base/retrieval-test-and-citation#id-2.-citation-and-attribution).
 
 ### Content Moderation
 
 During interactions with AI applications, we often have stringent requirements regarding content safety, user experience, and legal regulations. In such cases, we need the "Sensitive Content Moderation" feature to create a better interaction environment for end users.
-
-For more details, please see [Sensitive Content Moderation](moderation-tool.md).
 
 ### Annotated Replies
 

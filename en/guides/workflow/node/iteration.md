@@ -12,27 +12,27 @@ The iteration step performs the same steps on each item in a list. To use iterat
 
 #### **Example 1: Long Article Iteration Generator**
 
-<figure><img src="/en/.gitbook/assets/guides//workflow/node/iteration/image (207).png" alt=""><figcaption><p>Long Story Generator</p></figcaption></figure>
+<figure><img src="../../../../img/long-article-iteration-generator.png" alt=""><figcaption><p>Long Story Generator</p></figcaption></figure>
 
 1. Enter the story title and outline in the **Start Node**.
-2. Use a **Code Node** to extract the complete content from user input.
-3. Use a **Parameter Extraction Node** to convert the complete content into an array format.
+2. Use a **Generate Subtitles and Outlines Node** to extract the complete content from user input.
+3. Use a **Extract Subtitles and Outlines Node** to convert the complete content into an array format.
 4. Use an **Iteration Node** to wrap an **LLM Node** and generate content for each chapter through multiple iterations.
-5. Add a **Direct Reply Node** inside the iteration node to achieve streaming output after each iteration.
+5. Add a **Direct Answer Node** inside the iteration node to achieve streaming output after each iteration.
 
 **Detailed Configuration Steps**
 
 1. Configure the story title (title) and outline (outline) in the **Start Node**.
 
-<figure><img src="/en/.gitbook/assets/guides//workflow/node/iteration/image (211).png" alt="" width="375"><figcaption><p>Start Node Configuration</p></figcaption></figure>
+<figure><img src="../../../../img/workflow-start-node.png" alt="" width="375"><figcaption><p>Start Node Configuration</p></figcaption></figure>
 
-2. Use a **Jinja-2 Template Node** to convert the story title and outline into complete text.
+2. Use a **Generate Subtitles and Outlines Node** to convert the story title and outline into complete text.
 
-<figure><img src="/en/.gitbook/assets/guides//workflow/node/iteration/image (209).png" alt="" width="375"><figcaption><p>Template Node</p></figcaption></figure>
+<figure><img src="../../../../img/workflow-generate-subtitles-node.png" alt="" width="375"><figcaption><p>Template Node</p></figcaption></figure>
 
-3. Use a **Parameter Extraction Node** to convert the story text into an array (Array) structure. The parameter to extract is `sections`, and the parameter type is `Array[Object]`.
+3. Use a **Extract Subtitles and Outlines Node** to convert the story text into an array (Array) structure. The parameter to extract is `sections`, and the parameter type is `Array[Object]`.
 
-<figure><img src="/en/.gitbook/assets/guides//workflow/node/iteration/image (210).png" alt="" width="375"><figcaption><p>Parameter Extraction</p></figcaption></figure>
+<figure><img src="../../../../img/workflow-extract-subtitles-and-outlines.png" alt="" width="375"><figcaption><p>Parameter Extraction</p></figcaption></figure>
 
 {% hint style="info" %}
 The effectiveness of parameter extraction is influenced by the model's inference capability and the instructions given. Using a model with stronger inference capabilities and adding examples in the **instructions** can improve the parameter extraction results.
@@ -40,11 +40,11 @@ The effectiveness of parameter extraction is influenced by the model's inference
 
 4. Use the array-formatted story outline as the input for the iteration node and process it within the iteration node using an **LLM Node**.
 
-<figure><img src="/en/.gitbook/assets/guides//workflow/node/iteration/image (220).png" alt="" width="375"><figcaption><p>Configure Iteration Node</p></figcaption></figure>
+<figure><img src="../../../../img/workflow-iteration-node.png" alt="" width="375"><figcaption><p>Configure Iteration Node</p></figcaption></figure>
 
 Configure the input variables `GenerateOverallOutline/output` and `Iteration/item` in the LLM Node.
 
-<figure><img src="/en/.gitbook/assets/guides//workflow/node/iteration/image (221).png" alt="" width="375"><figcaption><p>Configure LLM Node</p></figcaption></figure>
+<figure><img src="../../../../img/workflow-iteration-llm-node.png" alt="" width="375"><figcaption><p>Configure LLM Node</p></figcaption></figure>
 
 {% hint style="info" %}
 Built-in variables for iteration: `items[object]` and `index[number]`.
@@ -54,9 +54,9 @@ Built-in variables for iteration: `items[object]` and `index[number]`.
 `index[number]` represents the current iteration round;
 {% endhint %}
 
-5. Configure a **Direct Reply Node** inside the iteration node to achieve streaming output after each iteration.
+1. Configure a **Direct Reply Node** inside the iteration node to achieve streaming output after each iteration.
 
-<figure><img src="/en/.gitbook/assets/guides//workflow/node/iteration/image (223).png" alt="" width="375"><figcaption><p>Configure Answer Node</p></figcaption></figure>
+<figure><img src="../../../../img/workflow-configure-anwer-node.png" alt="" width="375"><figcaption><p>Configure Answer Node</p></figcaption></figure>
 
 6. Complete debugging and preview.
 
@@ -126,11 +126,12 @@ A list is a specific data type where elements are separated by commas and enclos
 
 **Return Using the CODE Node**
 
-<figure><img src="/en/.gitbook/assets/guides//workflow/node/iteration/image (213).png" alt="" width="375"><figcaption><p>CODE Node Outputting Array</p></figcaption></figure>
+<figure><img src="../../../../img/workflow-extract-subtitles-and-outlines.png" alt="" width="375"><figcaption><p>Parameter Extraction</p></figcaption></figure>
 
 **Return Using the Parameter Extraction Node**
 
-<figure><img src="/en/.gitbook/assets/guides//workflow/node/iteration/image (214).png" alt="" width="375"><figcaption><p>Parameter Extraction Node Outputting Array</p></figcaption></figure>
+<figure><img src="../../../../img/workflow-extract-subtitles-and-outlines.png" alt="" width="375"><figcaption><p>Parameter Extraction</p></figcaption></figure>
+
 
 ### How to Convert an Array to Text
 
@@ -150,7 +151,7 @@ def main(articleSections: list):
 
 **Convert Using a Template Node**
 
-<figure><img src="/en/.gitbook/assets/guides/workflow/node/iteration/image (3) (1) (1) (1) (1).png" alt="" width="332"><figcaption><p>Template Node Conversion</p></figcaption></figure>
+<figure><img src="../../../../img/workflow-template-node.png" alt="" width="332"><figcaption><p>Template Node Conversion</p></figcaption></figure>
 
 ```django
 {{ articleSections | join("/n") }}

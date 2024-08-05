@@ -20,11 +20,11 @@ The default API key is the credential added when initially configuring the model
 
 You can also **temporarily disable** or **delete** configured credentials.
 
-<figure><img src="/en/.gitbook/assets/guides/model-configuration/load-balancing/image (7) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../img/load-balancing-2.png" alt="" width="563"><figcaption></figcaption></figure>
 
 Once configured, all models with load balancing enabled will be displayed in the model list.
 
-<figure><img src="/en/.gitbook/assets/guides/model-configuration/load-balancing/image (6) (1) (1).png" alt="" width="563"><figcaption><p>Enabling Load Balancing</p></figcaption></figure>
+<figure><img src="../../../img/load-balancing-3.png" alt="" width="563"><figcaption><p>Enabling Load Balancing</p></figcaption></figure>
 
 {% hint style="info" %}
 By default, load balancing uses the Round-robin strategy. If the rate limit is triggered, a 1-minute cooldown period will be applied.
@@ -32,4 +32,4 @@ By default, load balancing uses the Round-robin strategy. If the rate limit is t
 
 You can also configure load balancing from **Add Model**, following the same process as above.
 
-<figure><img src="/en/.gitbook/assets/guides/model-configuration/load-balancing/image (4) (1) (1).png" alt="" width="563"><figcaption><p>Configuring Load Balancing from Add Model</p></figcaption></figure>
+<figure><img src="../../../img/load-balancing-4.png" alt="" width="563"><figcaption><p>Configuring Load Balancing from Add Model</p></figcaption></figure>

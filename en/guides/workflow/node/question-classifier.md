@@ -14,7 +14,7 @@ In a typical product customer service Q&A scenario, the issue classifier can ser
 
 The following diagram is an example workflow template for a product customer service scenario:
 
-<figure><img src="/en/.gitbook/assets/guides/workflow/node/question_classifier/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../img/question-classifier-scenarios.png" alt=""><figcaption></figcaption></figure>
 
 In this scenario, we set up three classification labels/descriptions:
 

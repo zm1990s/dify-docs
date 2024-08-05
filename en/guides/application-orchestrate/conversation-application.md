@@ -16,13 +16,13 @@ Here, we use a interviewer application as an example to introduce the way to com
 
 Click the "Create Application" button on the homepage to create an application. Fill in the application name, and select **"Chat App"** as the application type.
 
-<figure><img src="/en/.gitbook/assets/guides/application_orchestrate/conversation-application/image (245).png" alt=""><figcaption><p>Create Application</p></figcaption></figure>
+<figure><img src="../../../img/chat-app.png" alt=""><figcaption><p>Create Application</p></figcaption></figure>
 
 #### Step 2: Compose the Application
 
-After the application is successfully created, it will automatically redirect to the application overview page. Click on the bottom menu: “**Prompt Eng.**” to compose the application.
+After the application is successfully created, it will automatically redirect to the application overview page. Click on the button on the left menu: **"Orchestrate"** to compose the application.
 
-<figure><img src="/en/.gitbook/assets/guides/application_orchestrate/conversation-application/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../img/compose-the-app.png" alt=""><figcaption></figcaption></figure>
 
 **2.1 Fill in Prompts**
 
@@ -54,15 +54,15 @@ If an application wants to generate content based on private contextual conversa
 
 Enter user inputs on the right side and check the respond content.
 
-![](</en/.gitbook/assets/guides/application_orchestrate/conversation-application/image (67).png>)
+![](../../../img/debug.png)
 
 If the results are not satisfactory, you can adjust the prompts and model parameters. Click on the model name in the upper right corner to set the parameters of the model:
 
-![](</en/.gitbook/assets/guides/application_orchestrate/conversation-application/image (76).png>)
+![](../../../img/adjust-model-parameters.png)
 
 **Debugging with multiple models:**
 
-If debugging with a single model feels inefficient, you can utilize the **Debug as Multiple Models”** feature to batch-test the models’ response effectiveness.
+If debugging with a single model feels inefficient, you can utilize the **Debug as Multiple Models** feature to batch-test the models’ response effectiveness.
 
 ![](../../../img/multiple-models.png)
 

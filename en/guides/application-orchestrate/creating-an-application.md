@@ -12,7 +12,7 @@ When using Dify for the first time, you might be unfamiliar with creating applic
 
 You can select "Studio" from the navigation menu, then choose "Create from Template" in the application list.
 
-<figure><img src="../../.gitbook/assets/guides/application_orchestrate/creating-an-application/image (168).png" alt=""><figcaption><p>Create an application from a template</p></figcaption></figure>
+<figure><img src="../../../img/create-an-app.png" alt=""><figcaption><p>Create an application from a template</p></figcaption></figure>
 
 Select any template and click **Use this template.**
 
@@ -28,7 +28,7 @@ When creating an application for the first time, you might need to first underst
 
 When creating an application, you need to give it a name, choose an appropriate icon, and use clear and concise text to describe the purpose of this application, to facilitate its subsequent use within the team.
 
-<figure><img src="../../.gitbook/assets/guides/application_orchestrate/creating-an-application/image (170).png" alt=""><figcaption><p>Create a blank application</p></figcaption></figure>
+<figure><img src="../../../img/create-from-blank.png" alt=""><figcaption><p>Create a blank application</p></figcaption></figure>
 
 ### Creating from a DSL File
 
