@@ -30,11 +30,11 @@ These three configuration methods **can coexist**, meaning a provider can suppor
 
 Adding a new provider mainly involves several steps. Here is a brief outline to give you an overall understanding. Detailed steps will be introduced below.
 
-* Create a provider YAML file and write it according to the [Provider Schema](https://github.com/langgenius/dify/blob/main/api/core/model_runtime/docs/zh_Hans/schema.md).
+* Create a provider YAML file and write it according to the [Provider Schema](https://github.com/langgenius/dify/blob/main/api/core/model_runtime/docs/en_US/schema.md).
 * Create provider code and implement a `class`.
 * Create corresponding model type `modules` under the provider `module`, such as `llm` or `text_embedding`.
 * Create same-named code files under the corresponding model `module`, such as `llm.py`, and implement a `class`.
-* If there are predefined models, create same-named YAML files under the model `module`, such as `claude-2.1.yaml`, and write them according to the [AI Model Entity](https://github.com/langgenius/dify/blob/main/api/core/model_runtime/docs/zh_Hans/schema.md).
+* If there are predefined models, create same-named YAML files under the model `module`, such as `claude-2.1.yaml`, and write them according to the [AI Model Entity](https://github.com/langgenius/dify/blob/main/api/core/model_runtime/docs/en_US/schema.md).
 * Write test code to ensure functionality is available.
 
 #### Let's Get Started
@@ -79,7 +79,7 @@ provider_credential_schema:  # Provider credential rules, since Anthropic only s
       en_US: Enter your API URL
 ```
 
-If the connected provider offers customizable models, such as `OpenAI` which provides fine-tuned models, we need to add [`model_credential_schema`](https://github.com/langgenius/dify/blob/main/api/core/model_runtime/docs/zh_Hans/schema.md). Taking `OpenAI` as an example:
+If the connected provider offers customizable models, such as `OpenAI` which provides fine-tuned models, we need to add [`model_credential_schema`](https://github.com/langgenius/dify/blob/main/api/core/model_runtime/docs/en_US/schema.md). Taking `OpenAI` as an example:
 
 ```yaml
 model_credential_schema:
@@ -119,7 +119,7 @@ model_credential_schema:
       en_US: Enter your API Base
 ```
 
-You can also refer to the [YAML configuration information](https://github.com/langgenius/dify/blob/main/api/core/model_runtime/docs/zh_Hans/schema.md) in the directories of other providers under the `model_providers` directory.
+You can also refer to the [YAML configuration information](https://github.com/langgenius/dify/blob/main/api/core/model_runtime/docs/en_US/schema.md) in the directories of other providers under the `model_providers` directory.
 
 **Implement Provider Code**
 

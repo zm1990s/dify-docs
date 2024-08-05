@@ -303,4 +303,4 @@ In `llm.py`, create a Xinference LLM class, which we will name `XinferenceAILarg
       """
   ```
 
-For an explanation of interface methods, see: [Interfaces](https://github.com/langgenius/dify/blob/main/api/core/model_runtime/docs/zh_Hans/interfaces.md). For specific implementations, refer to: [llm.py](https://github.com/langgenius/dify-runtime/blob/main/lib/model_providers/anthropic/llm/llm.py).
+For an explanation of interface methods, see: [Interfaces](https://github.com/langgenius/dify/blob/main/api/core/model_runtime/docs/en_US/interfaces.md). For specific implementations, refer to: [llm.py](https://github.com/langgenius/dify-runtime/blob/main/lib/model_providers/anthropic/llm/llm.py).
