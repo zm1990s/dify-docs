@@ -91,7 +91,7 @@ Click **Settings** in the left navigation of the knowledge base to change the fo
 **Knowledge Base Description**: Used to describe the information represented by the documents in the knowledge base.
 
 {% hint style="info" %}
-When the recall mode of the knowledge base is N-Choose-1, the knowledge base is provided as a tool for LLM reasoning calls. The reasoning is based on the description of the knowledge base. If the description is empty, Dify's automatic indexing strategy will be used.
+When the recall mode of the knowledge base is N-To-1, the knowledge base is provided as a tool for LLM reasoning calls. The reasoning is based on the description of the knowledge base. If the description is empty, Dify's automatic indexing strategy will be used.
 {% endhint %}
 
 **Visibility Permissions**: You can choose "Only Me" or "All Team Members." People without permissions will not be able to view and edit the dataset.

@@ -20,6 +20,6 @@ Developers can customize the sensitive words they need to review, such as using 
 
 ## Moderation Extension
 
-Different enterprises often have their own mechanisms for sensitive word moderation. When developing their own AI applications, such as an internal knowledge base ChatBot, enterprises need to moderate the query content input by employees for sensitive words. For this purpose, developers can write an API extension based on their enterprise's internal sensitive word moderation mechanisms, specifically referring to [Broken link](broken-reference "mention"), which can then be called on Dify to achieve a high degree of customization and privacy protection for sensitive word review.
+Different enterprises often have their own mechanisms for sensitive word moderation. When developing their own AI applications, such as an internal knowledge base ChatBot, enterprises need to moderate the query content input by employees for sensitive words. For this purpose, developers can write an API extension based on their enterprise's internal sensitive word moderation mechanisms, which can then be called on Dify to achieve a high degree of customization and privacy protection for sensitive word review.
 
-<figure><img src="/en/.gitbook/assets/guides/application_orchestrate/app_toolkits/moderation4.png" alt=""><figcaption><p>Moderation Extension</p></figcaption></figure>
+<figure><img src="../../../../img/app_toolkits_moderation4.png" alt=""><figcaption><p>Moderation Extension</p></figcaption></figure>

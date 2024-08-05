@@ -20,11 +20,11 @@ Without variable aggregation, the branches of Classification 1 and Classificatio
 
 By adding variable aggregation, the outputs of the two knowledge retrieval nodes can be aggregated into a single variable.
 
-<figure><img src="/en/.gitbook/assets/guides/workflow/node/variable_assigner/image (225).png" alt=""><figcaption><p>Multi-Branch Aggregation after Issue Classification</p></figcaption></figure>
+<figure><img src="../../../../img/variable-aggregation.png" alt=""><figcaption><p>Multi-Branch Aggregation after Issue Classification</p></figcaption></figure>
 
 **Multi-Branch Aggregation after IF/ELSE Conditional Branching**
 
-<figure><img src="/en/.gitbook/assets/guides/workflow/node/variable_assigner/image (226).png" alt=""><figcaption><p>Multi-Branch Aggregation after Conditional Branching</p></figcaption></figure>
+<figure><img src="../../../../img/if-else-conditional.png" alt=""><figcaption><p>Multi-Branch Aggregation after Conditional Branching</p></figcaption></figure>
 
 ### 3 Format Requirements
 
