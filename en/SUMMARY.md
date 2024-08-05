@@ -20,6 +20,8 @@
   * [Add New Provider](guides/model-configuration/new-provider.md)
   * [Predefined Model Integration](guides/model-configuration/predefined-model.md)
   * [Custom Model Integration](guides/model-configuration/customizable-model.md)
+  * [Interfaces](guides/model-configuration/interfaces.md)
+  * [Schema](guides/model-configuration/schema.md)
   * [Integrate Open Source Models from Hugging Face](guides/model-configuration/hugging-face.md)
   * [Integrate Open Source Models from Replicate](guides/model-configuration/replicate.md)
   * [Integrate Local Models Deployed by Xinference](guides/model-configuration/xinference.md)
