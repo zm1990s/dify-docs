@@ -34,11 +34,11 @@ When checking segment quality, pay attention to the following situations:
 
 In the segment list, click "Add Segment" to add one or multiple custom segments to the document.
 
-<figure><img src="../../../img/image-add-segment" alt=""><figcaption></figcaption></figure><p>Add a chunk</p></figcaption></figure>
+<figure><img src="../../../img/add-a-chunk.png" alt=""><figcaption></figcaption></figure><p>Add a chunk</p></figcaption></figure>
 
 When adding segments in bulk, you need to first download the CSV format segment upload template, edit all the segment content in Excel according to the template format, save the CSV file, and then upload it.
 
-<figure><img src="/en/.gitbook/assets/guides/knowledge-base/bulk-add-custom-segment.png" alt=""><figcaption><p>Bulk adding custom segments</p></figcaption></figure>
+<figure><img src="../../../img/bulk-add-custom-segment.png" alt=""><figcaption><p>Bulk adding custom segments</p></figcaption></figure>
 
 ***
 
