@@ -7,12 +7,12 @@ Click on Knowledge in the main navigation bar of Dify. On this page, you can see
 <figure><img src="/en/.gitbook/assets/guides/knowledge-base/create-knowledge.png" alt=""><figcaption><p>Creating Knowledge</p></figcaption></figure>
 
 * If you have already prepared the files, you can start by uploading them;
-* If you have not prepared any documents yet, you can first create an empty dataset;
+* If you have not prepared any documents yet, you can first create an empty knowledge base;
 
-<figure><img src="/en/.gitbook/assets/guides/knowledge-base/create-knowledge-2.png" alt=""><figcaption><p>Creating Knowledge Base</p></figcaption></figure>
+<figure><img src="../../../img/create-knowledge-base-2.png" alt=""><figcaption><p>Creating Knowledge Base</p></figcaption></figure>
 
 {% hint style="info" %}
-If you choose to use an external data source when creating a dataset, the type of knowledge cannot be changed. This is to prevent difficulties in managing datasets caused by having multiple data sources in a single knowledge base. If you need to use multiple data sources, it is recommended to create multiple knowledge.
+If you choose to use an external data source when creating a knowledge base, the type of knowledge base cannot be changed. This is to prevent difficulties in managing knowledge base caused by having multiple data sources in a single knowledge base. If you need to use multiple data sources, it is recommended to create multiple knowledge base.
 {% endhint %}
 
 ***
@@ -44,7 +44,7 @@ Segmentation and cleaning support two configuration strategies:
 * Automatic mode (to be phased out)
 * Custom mode
 
-<figure><img src="/en/.gitbook/assets/guides/knowledge-base/custom-chunk-settings.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../img/knowledge-base-custom-mode.png" alt=""><figcaption></figcaption></figure>
 
 In custom mode, users can configure chunk settings and cleaning settings according to different document formats and scenario requirements.
 

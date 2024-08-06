@@ -1,4 +1,3 @@
-### Literal Translation
 # Knowledge Base
 
 The training data for large language models is generally based on publicly available data, and each training session requires a significant amount of computational power. This means that the knowledge of the models generally does not include private domain knowledge, and there is a certain delay in the public knowledge domain. To solve this problem, the current common solution is to use RAG (Retrieval-Augmented Generation) technology, which uses users' questions to match the most relevant external data, and after retrieving the relevant content, reorganize and insert the response back as the context of the model prompt.

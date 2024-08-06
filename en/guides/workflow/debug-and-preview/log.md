@@ -1,7 +1,7 @@
 # Conversation/Run Logs
 
-Clicking "View Log—Details" allows you to see a comprehensive overview of the run, including information on input/output, metadata, and more, in the details section.
+Clicking **"Run History - View Log — Details"** allows you to see a comprehensive overview of the run in the details section. This includes information on inputs and outputs, metadata, and other relevant data.
 
-<figure><img src="/en/.gitbook/assets/guides/workflow/debug_and_preview/log/output (8).png" alt=""><figcaption></figcaption></figure>
+This detailed information enables you to review various aspects of each node throughout the complete execution process of the workflow. You can examine inputs and outputs, analyze token consumption, evaluate runtime duration, and assess other pertinent metrics.
 
-Clicking "View Log—Trace" enables you to review the input/output, token consumption, runtime duration, etc., of each node throughout the complete execution process of the workflow.
+<figure><img src="../../../../img/conversation-logs.png" alt=""><figcaption></figcaption></figure>

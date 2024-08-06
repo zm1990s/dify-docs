@@ -22,13 +22,11 @@ Select any template and click **Use this template.**
 
 If you need to create a blank application on Dify, you can select "Studio" from the navigation and then choose "Create from Blank" in the application list.
 
-<figure><img src="../../.gitbook/assets/guides/application_orchestrate/creating-an-application/image (167).png" alt=""><figcaption></figcaption></figure>
-
 When creating an application for the first time, you might need to first understand the [basic concepts](./#application\_type) of the four different types of applications on Dify: Chatbot, Text Generator, Agent and Workflow.
 
-When creating an application, you need to give it a name, choose an appropriate icon, and use clear and concise text to describe the purpose of this application, to facilitate its subsequent use within the team.
-
 <figure><img src="../../../img/create-from-blank.png" alt=""><figcaption><p>Create a blank application</p></figcaption></figure>
+
+When selecting a specific application type, you can customize it by giving a name, choosing an appropriate icon, and providing a clear and concise description of its purpose. These details will help team members easily understand and use the application in the future.
 
 ### Creating from a DSL File
 
