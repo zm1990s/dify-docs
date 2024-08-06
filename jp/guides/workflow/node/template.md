@@ -18,15 +18,14 @@ Jinja2のPythonテンプレート言語を使って、データ変換やテキ�
 
 **例1：**複数の入力（記事のタイトル、紹介、内容）を一つの完全なテキストに結合する
 
-<figure><img src="../../../.gitbook/assets/image (158).png" alt="" width="375"><figcaption><p>テキストの結合</p></figcaption></figure>
+<figure><img src="../../../../img/jp-template.png" alt="" width="375"><figcaption><p>テキストの結合</p></figcaption></figure>
 
-**例2：**ナレッジリトリーバルノードで取得した情報およびその関連メタデータを、構造化されたMarkdown形式にまとめる
+**例2：** ナレッジリトリーバルノードで取得した情報およびその関連メタデータを、構造化されたMarkdown形式にまとめる
 
-{% code fullWidth="false" %}
-```Plain
+```
 {% raw %}
 {% for item in chunks %}
-### Chunk {{ loop.index }}.
+### Chunk {{ loop.index }}. 
 ### Similarity: {{ item.metadata.score | default('N/A') }}
 
 #### {{ item.title }}
@@ -38,8 +37,7 @@ Jinja2のPythonテンプレート言語を使って、データ変換やテキ�
 {% endfor %}
 {% endraw %}
 ```
-{% endcode %}
 
-<figure><img src="../../../.gitbook/assets/image (159).png" alt=""><figcaption><p>ナレッジリトリーバルノードの出力をMarkdownに変換</p></figcaption></figure>
+<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FCdDIVDY6AtAz028MFT4d%2Fuploads%2FOtGkLaz38v0FSzSBNuV2%2Fimage.png?alt=media&#x26;token=122965f8-9d70-4e57-b0e2-1fdaf1320275" alt=""><figcaption><p>ナレッジリトリーバルノードの出力をMarkdownに変換</p></figcaption></figure>
 
 Jinjaの[公式ドキュメント](https://jinja.palletsprojects.com/en/3.1.x/templates/)を参考にして、さまざまなタスクを実行するためのより複雑なテンプレートを作成することができます。

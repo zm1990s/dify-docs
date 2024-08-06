@@ -20,6 +20,8 @@
   * [增加新供应商](guides/model-configuration/new-provider.md)
   * [预定义模型接入](guides/model-configuration/predefined-model.md)
   * [自定义模型接入](guides/model-configuration/customizable-model.md)
+  * [接口方法](guides/model-configuration/interfaces.md)
+  * [配置规则](guides/model-configuration/schema.md)
   * [接入 Hugging Face 上的开源模型](guides/model-configuration/hugging-face.md)
   * [接入 Replicate 上的开源模型](guides/model-configuration/replicate.md)
   * [接入 Xinference 部署的本地模型](guides/model-configuration/xinference.md)
