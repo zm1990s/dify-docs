@@ -202,13 +202,13 @@ class CloudServiceModeration(Moderation):
         return False
 ```
 
-### 4. フロントエンド画面のプレビュー
+<!-- ### 4. フロントエンド画面のプレビュー
 
 上記の手順を実行し、サービスを起動すると、新しく追加されたカスタムタイプを確認できます。
 
-<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=ZmRiMDI5YTU3NGY5M2JmNmY0N2Y0NmEwMGIwNGI0N2VfOGRrVE5GV25BT3laRnVxYlhLMUFYRWZWbm9NVkp3YXJfVG9rZW46Q1JPS2I3bFU0b0NQY2l4YVlhUGNVSTNNblJkXzE2OTk0NTExMTc6MTY5OTQ1NDcxN19WNA" alt=""><figcaption><p>クラウドサービス</p></figcaption></figure>
+image todo -->
 
-### 5. 拡張機能のデバッグ
+### 4. 拡張機能のデバッグ
 
 ここまでで、Dify のアプリケーションオーケストレーション画面でカスタム `クラウドサービス` 内容審査拡張タイプを選択してデバッグすることができます。 ```python
 param {テキスト}: {大規模言語モデル}応答の{テキスト}

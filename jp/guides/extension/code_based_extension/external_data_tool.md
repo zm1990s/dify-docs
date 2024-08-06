@@ -127,13 +127,13 @@ class WeatherSearch(ExternalDataTool):
             return f'Weather in {city} is 0°C'
 ```
 
-### 4. **フロントエンドインターフェースのプレビュー**
+<!-- ### 4. **フロントエンドインターフェースのプレビュー**
 
 上記の手順を実行し、サービスを実行すると、新しいカスタムタイプが表示されます。
 
-<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=NDZkOTBjNjJmZDdkNTdkYTkxMDllNTgzMzA1MjE2MzBfM0FYYjFtWkE1bHVPdWdYQ0ZkNWNRdXBXbmhoMklkVW9fVG9rZW46SnZSVWIyN3Nkb09pZkV4NDZyM2NIckJtbnhnXzE2OTk0NTE5NjM6MTY5OTQ1NTU2M19WNA" alt=""><figcaption><p>ツールの追加</p></figcaption></figure>
+Image todo -->
 
-### 5. **拡張のデバッグ**
+### 4. **拡張のデバッグ**
 
 これで、Difyアプリケーションオーケストレーションインターフェースでカスタム`Weather Search`外部データツール拡張タイプを選択してデバッグできます。
 

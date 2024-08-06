@@ -202,13 +202,13 @@ class CloudServiceModeration(Moderation):
         return False
 ```
 
-### 4. 预览前端界面
+<!-- ### 4. 预览前端界面
 
 按照上面步骤执行，运行服务即可见新增的自定义类型。
 
-<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=ZmRiMDI5YTU3NGY5M2JmNmY0N2Y0NmEwMGIwNGI0N2VfOGRrVE5GV25BT3laRnVxYlhLMUFYRWZWbm9NVkp3YXJfVG9rZW46Q1JPS2I3bFU0b0NQY2l4YVlhUGNVSTNNblJkXzE2OTk0NTExMTc6MTY5OTQ1NDcxN19WNA" alt=""><figcaption><p>Cloud Service</p></figcaption></figure>
+图片待更新 -->
 
-### 5. 调试扩展
+### 4. 调试扩展
 
 至此，即可在 Dify 应用编排界面选择自定义的 `Cloud Service` 内容审查扩展类型进行调试。\
 

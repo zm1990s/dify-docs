@@ -127,13 +127,13 @@ class WeatherSearch(ExternalDataTool):
             return f'Weather in {city} is 0°C'
 ```
 
-### 4. **预览前端界面**
+<!-- ### 4. **预览前端界面**
 
 按照上面步骤执行，运行服务即可见新增的自定义类型。
 
-<figure><img src="https://langgenius.feishu.cn/space/api/box/stream/download/asynccode/?code=NDZkOTBjNjJmZDdkNTdkYTkxMDllNTgzMzA1MjE2MzBfM0FYYjFtWkE1bHVPdWdYQ0ZkNWNRdXBXbmhoMklkVW9fVG9rZW46SnZSVWIyN3Nkb09pZkV4NDZyM2NIckJtbnhnXzE2OTk0NTE5NjM6MTY5OTQ1NTU2M19WNA" alt=""><figcaption><p>Add Tool</p></figcaption></figure>
+图片待更新。 -->
 
-### 5. **调试扩展**
+### 4. **调试扩展**
 
 至此，即可在 Dify 应用编排界面选择自定义的 `Weather Search` 外部数据工具扩展类型进行调试。
 
