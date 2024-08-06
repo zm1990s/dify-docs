@@ -1,27 +1,28 @@
 # Integrating Knowledge Base within the Application
 
-### 1. Creating a Knowledge Base Application
+### Creating an Application Integrated with Knowledge Base
 
-A knowledge base can be used as external knowledge to provide precise answers to user questions through a large language model. You can associate an existing knowledge base with any [application type](https://docs.dify.ai/guides/application-orchestrate#application_type) in Dify.
+A **"Knowledge Base"** can be used as an external information source to provide precise answers to user questions via LLM. You can associate an existing knowledge base with any [application type](https://docs.dify.ai/guides/application-orchestrate#application_type) in Dify.
 
 Taking a chat assistant as an example, the process is as follows:
 
-1. Go to **Studio -- Create Application -- Create Chat Assistant**
-2. Enter **Context Settings**, click **Add**, and select the already created knowledge base
-3. In **Context Settings -- Parameter Settings**, configure the **Recall Strategy**
-4. Enable **Citation and Attribution** in **Add Features**
-5. In **Debug and Preview**, input user questions related to the knowledge base for debugging
-6. After debugging, **Save and Publish** as an AI knowledge base Q&A application
+1. Go to **Knowledge -- Create Knowledge -- Upload file**
+2. Go to **Studio -- Create Application -- Select Chatbot**
+3. Enter **Context**, click **Add**, and select one of the knowledge base created
+4. In **Context Settings -- Retrieval Setting**, configure the **Retrieval Setting**
+5. Enable **Citation and Attribution** in **Add Features**
+6. In **Debug and Preview**, input user questions related to the knowledge base for debugging
+7. After debugging, click **Publish** button to make an AI application based on your own knowledge!
 
 ***
 
-### Connecting Knowledge Bases and Specifying Recall Modes
+### Connecting Knowledge and Setting Retrieval Mode
 
-In applications that utilize multiple knowledge bases, it is essential to configure the recall mode to enhance the precision of retrieved content. To set the recall mode for the knowledge bases, go to **Context -- Parameter Settings -- Recall Settings**.
+In applications that utilize multiple knowledge bases, it is essential to configure the retrieval mode to enhance the precision of retrieved content. To set the retrieval mode for the knowledge bases, navigate to **Context -- Retrieval Settings -- Rerank Setting**.
 
-#### N-to-1 Recall (Legacy)
+#### N-to-1 Retrieval (Legacy)
 
-The N-to-1 recall method operates through Function Call/ReAct, where each linked knowledge base serves as a functional tool. The LLM autonomously selects the most relevant knowledge base that aligns with the user's query for the search, based on the **semantic similarity between the user's question and the knowledge base description**.
+The N-to-1 retrieval method operates through Function Call/ReAct, where each linked Knowledge Base serves as a functional tool. The LLM autonomously selects the most relevant knowledge base that aligns with the user's query for the search, based on the **semantic similarity between the user's question and the description of knowledge base**.
 
 The following diagram illustrates this principle:
 
@@ -31,9 +32,9 @@ For instance, in application A, if there are three associated knowledge bases K1
 
 ![](../../../img/en-n-to-1.png)
 
-Although this method does not require the configuration of a [Rerank](https://docs.dify.ai/learn-more/extended-reading/retrieval-augment/rerank) model, it only identifies one knowledge base. The effectiveness of this retrieval strategy relies heavily on the LLM's interpretation of the knowledge base description. This may lead to suboptimal judgments during the retrieval process, potentially resulting in incomplete or inaccurate answers, thereby impacting the quality of query outcomes.
+Although this method does not require the configuration of a [Rerank](https://docs.dify.ai/learn-more/extended-reading/retrieval-augment/rerank) model, it only identifies one knowledge base. The effectiveness of this retrieval strategy relies on the LLM's interpretation of the knowledge base description. This may lead to suboptimal judgments during the retrieval process, potentially resulting in incomplete or inaccurate answers, thereby impacting the quality of query outcomes.
 
-Starting in September, this approach will be automatically transitioned to **multi-route recall**, so please prepare accordingly.
+Starting in September, this approach will be automatically transitioned to **Multi-path retrieval** mode, so please switch it in advance.
 
 In N-to-1 mode, the effectiveness of retrieval is influenced by three primary factors:
 
@@ -45,27 +46,27 @@ In N-to-1 mode, the effectiveness of retrieval is influenced by three primary fa
 
 - Opt for a more effective system inference model, limit the number of associated knowledge bases, and provide clear descriptions for each knowledge base.
 
-- When uploading content to a knowledge base, the system inference model will automatically generate a summary description. To achieve the best retrieval results in this mode, review the system-generated summary in “Knowledge Base -> Settings -> Knowledge Base Description” to ensure it effectively summarizes the content of the knowledge base.
+- When uploading content file to a knowledge base, the system inference model will automatically generate a summary description. To achieve the best retrieval results in this mode, review the system-generated summary in “Knowledge Base -> Settings -> Knowledge Base Description” to ensure it effectively summarizes the content of the knowledge base.
 
-#### Multi-route Recall (Recommended)
+#### Multi-path Retrieval (Recommended)
 
-In the multi-route recall mode, the retriever scans all knowledge bases linked to the application for text content relevant to the user's question. The results are then consolidated. Below is the technical flowchart for the multi-route recall mode:
+In the multi-retrieval recall mode, the retriever scans all knowledge bases linked to the application for text content relevant to the user's question. The results are then consolidated. Below is the technical flowchart for the Multi-path Retrieval mode:
 
 <figure><img src="../../../img/rerank-flow-chart.png" alt=""><figcaption></figcaption></figure>
 
-This method simultaneously queries all knowledge bases listed in **"Context"**, seeking relevant text snippets across multiple knowledge bases, collecting all content that aligns with the user's question, and ultimately applying the Rerank strategy to identify the most appropriate content to respond to the user. This retrieval approach is more scientifically robust.
+This method simultaneously queries all knowledge bases connected in **"Context"**, seeking relevant text snippets across multiple knowledge bases, collecting all content that aligns with the user's question, and ultimately applying the Rerank strategy to identify the most appropriate content to respond to the user. This retrieval approach offers more comprehensive and accurate results by leveraging multiple knowledge bases simultaneously.
 
 <figure><img src="../../../img/en-rag-multiple.png" alt=""><figcaption></figcaption></figure>
 
-For example, in application A, with three knowledge bases K1, K2, and K3, when a user poses a question, multiple relevant pieces of content will be retrieved and combined from these knowledge bases. To ensure the most pertinent content is identified, the Rerank strategy is employed to find the content that best relates to the user's query, enhancing the precision and reliability of the results.
+For instance, in application A, with three knowledge bases K1, K2, and K3. When a user send a question, multiple relevant pieces of content will be retrieved and combined from these knowledge bases. To ensure the most pertinent content is identified, the Rerank strategy is employed to find the content that best relates to the user's query, enhancing the precision and reliability of the results.
 
 In practical Q&A scenarios, the sources of content and retrieval methods for each knowledge base may differ. To manage the mixed content returned from retrieval, the [Rerank strategy](https://docs.dify.ai/learn-more/extended-reading/retrieval-augment/rerank) acts as a refined sorting mechanism. It ensures that the candidate content aligns well with the user's question, optimizing the ranking of results across multiple knowledge bases to identify the most suitable content, thereby improving answer quality and overall user experience.
 
-Considering the costs associated with using Rerank and the needs of the business, the multi-recall mode provides two Rerank settings:
+Considering the costs associated with using Rerank and the needs of the business, the multi-path retrieval mode provides two Rerank settings:
 
-##### Weight Score
+##### Weighted Score
 
-This setting does not require the configuration of an external Rerank model, meaning that reordering content incurs **no extra costs**. You can select the most appropriate content matching strategy by adjusting the weight ratio sliders for semantics or keywords.
+This setting uses internal scoring mechanisms and does not require an external Rerank model, thus **avoiding any additional processing costs**. You can select the most appropriate content matching strategy by adjusting the weight ratio sliders for semantics or keywords.
 
 - **Semantic Value of 1**
 
@@ -85,9 +86,9 @@ The Rerank model is an external scoring system that calculates the relevance sco
 
 While this method incurs some additional costs, it is more adept at handling complex knowledge base content, such as content that combines semantic queries and keyword matches, or cases involving multilingual returned content.
 
-> Click here to learn more about the [Re-ranking](https://docs.dify.ai/learn-more/extended-reading/retrieval-augment/rerank) mechanism.
+> Click here to learn more about the [Re-ranking](https://docs.dify.ai/learn-more/extended-reading/retrieval-augment/rerank).
 
-Dify currently supports multiple Rerank models. Enter the API Key for the Rerank model (such as Cohere, Jina, etc.) on the "Model Provider" page.
+Dify currently supports multiple Rerank models. To use external Rerank models, you'll need to provide an API Key. Enter the API Key for the Rerank model (such as Cohere, Jina, etc.) on the "Model Provider" page.
 
 <figure><img src="../../../img/en-rerank-model-api.png" alt=""><figcaption><p>Configuring the Rerank model in the Model Provider</p></figcaption></figure>
 
@@ -99,7 +100,7 @@ Dify currently supports multiple Rerank models. Enter the API Key for the Rerank
 
 - **Score Threshold**
 
-  This parameter establishes the similarity threshold for filtering text segments. Only those segments with a vector retrieval similarity score exceeding the set threshold will be recalled. A higher threshold value results in fewer texts being recalled.
+  This parameter establishes the similarity threshold for filtering text segments. Only those segments with a vector retrieval similarity score exceeding the set threshold will be recalled. A higher threshold value results in fewer texts being recalled, but those recalled are likely to be more relevant. Adjust this parameter based on your specific needs for precision versus recall.
 
 The multi-recall mode can achieve higher quality recall results when retrieving from multiple knowledge bases; therefore, it is **recommended to set the recall mode to multi-recall**.
 
@@ -119,9 +120,9 @@ If the content in the knowledge base is complex and cannot be matched by simple 
 
 2. **What should I do if I encounter issues finding the “Weight Score” or the requirement to configure a Rerank model?**
 
-Here's how the knowledge base retrieval method affects multi-route recall:
+Here's how the knowledge base retrieval method affects Multi-path Retrieval:
 
-| **Knowledge Base Index Mode** | **Knowledge Base Retrieval Setting** | **Embedding Model** | **Multi-route Recall Page Prompt** | **Reason** |
+| **Knowledge Base Index Mode** | **Knowledge Base Retrieval Setting** | **Embedding Model** | **Multi-path Retrieval Page Prompt** | **Reason** |
 | --- | --- | --- | --- | --- |
 | All Economic | Inverted index | None | Unable to use weight configuration, allows enabling Rerank model | - |
 | All High Quality | 1. All knowledge bases use vector retrieval | Same Embedding model | Default "Weight Score", semantic value is 1 | Rerank settings match knowledge base retrieval settings |
