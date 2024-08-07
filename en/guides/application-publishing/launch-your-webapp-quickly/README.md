@@ -1,17 +1,15 @@
-# 发布应用
+# Publish as a Single-page Web App
 
-{% content-ref url="launch-your-webapp-quickly/" %}
-[launch-your-webapp-quickly](launch-your-webapp-quickly/)
+
+
+{% content-ref url="web-app-settings.md" %}
+[web-app-settings.md](web-app-settings.md)
 {% endcontent-ref %}
 
-{% content-ref url="embedding-in-websites.md" %}
-[embedding-in-websites.md](embedding-in-websites.md)
+{% content-ref url="text-generator.md" %}
+[text-generator.md](text-generator.md)
 {% endcontent-ref %}
 
-{% content-ref url="developing-with-apis.md" %}
-[developing-with-apis.md](developing-with-apis.md)
-{% endcontent-ref %}
-
-{% content-ref url="based-on-frontend-templates.md" %}
-[based-on-frontend-templates.md](based-on-frontend-templates.md)
+{% content-ref url="conversation-application.md" %}
+[conversation-application.md](conversation-application.md)
 {% endcontent-ref %}
