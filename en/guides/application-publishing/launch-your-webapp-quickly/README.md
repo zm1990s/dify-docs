@@ -1,6 +1,6 @@
 # Publish as a Single-page Web App
 
-One of the benefits of creating AI applications with Dify is that you can publish a Single-page AI web app accessible to all users on the internet within minutes. This Web App will operate based on your Prompt and orchestration settings.
+One of the benefits of creating AI applications with Dify is that you can publish a Single-page AI web app accessible to all users on the internet within minutes.
 
 - If you're using the self-hosted open-source version, the application will run on your server
 
@@ -9,7 +9,7 @@ One of the benefits of creating AI applications with Dify is that you can publis
 
 ### Publishing an AI Website
 
-On the **Monitoring** page, you can find the Web App management card. After enabling the access switch, you'll get a URL that can be publicly shared on the internet.
+Toggle the **"In service / Disabled"** switch, your Web App URL will be effective immediately publicly shared on the internet.
 
 <figure><img src="../../../../img/en-public-web-app.png" alt=""><figcaption></figcaption></figure>
 
@@ -29,7 +29,7 @@ We have pre-set Web App UI for the following two types of applications:
 
 ### Setting Up Your AI Site
 
-Click the **Settings** button on the Web App card to configure some options for the AI site. These will all be visible to users:
+You can modify the language, color theme, copyright ownership, privacy policy link, and disclaimer by clicking the "setting" button.
 
 ![](../../../../img/en-web-app-settings.png)
 
