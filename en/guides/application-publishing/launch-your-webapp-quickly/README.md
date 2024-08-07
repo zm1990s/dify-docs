@@ -13,7 +13,7 @@ On the **Monitoring** page, you can find the Web App management card. After enab
 
 <figure><img src="../../../../img/en-public-web-app.png" alt=""><figcaption></figcaption></figure>
 
-We have pre-set beautiful Web App UI for the following two types of applications:
+We have pre-set Web App UI for the following two types of applications:
 
 - **Text Generation (Preview)**
 
@@ -34,7 +34,7 @@ Click the **Settings** button on the Web App card to configure some options for 
 ![](../../../../img/en-web-app-settings.png)
 
 {% hint style="info" %}
-The Web App language currently supports: English, Chinese, Traditional Chinese, Portuguese, German, Japanese, Korean, Ukrainian, and Vietnamese. If you need to add more languages, you can submit an Issue on GitHub to seek support or submit a PR to contribute code.
+Currently, Web App supports multiple languages: English, Simplified Chinese, Traditional Chinese, Portuguese, German, Japanese, Korean, Ukrainian, and Vietnamese. If you want more languages to be supported, you can submit an Issue on GitHub to seek support or submit a PR to contribute code.
 {% hint style="info" %}
 
 {% content-ref url="web-app-settings.md" %}
@@ -43,4 +43,4 @@ The Web App language currently supports: English, Chinese, Traditional Chinese, 
 
 ### Embedding Your AI Site
 
-You can also embed and integrate Dify Web App into your website, blog, or any other web page. For more details, please take a refer to [Embedding In Websites](https://docs.dify.ai/guides/application-publishing/embedding-in-websites).
+You can also integrate Dify Web App into your own web project, blog, or any other web page. For more details, please take a refer to [Embedding In Websites](https://docs.dify.ai/guides/application-publishing/embedding-in-websites).
