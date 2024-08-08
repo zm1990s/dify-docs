@@ -9,7 +9,7 @@
 {% endcontent-ref %}
 
 {% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+[基于 APIs 开发](developing-with-apis.md)
 {% endcontent-ref %}
 
 {% content-ref url="based-on-frontend-templates.md" %}
