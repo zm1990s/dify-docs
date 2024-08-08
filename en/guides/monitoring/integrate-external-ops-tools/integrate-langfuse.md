@@ -33,17 +33,17 @@ Copy and save the **Secret Key**, **Public Key**, and **Host**.
 
 <figure><img src="/en/.gitbook/assets/guides/monitoring/image (254).png" alt=""><figcaption><p>Get API Key configuration</p></figcaption></figure>
 
-4. Configure Langfuse in Dify. Open the application you need to monitor, open **Monitoring** in the side menu, and select **Configure** on the page.
+4. Configure Langfuse in Dify. Open the application you need to monitor, open **Monitoring** in the side menu, and select **Tracing app performance** on the page.
 
-<figure><img src="/en/.gitbook/assets/guides/monitoring/image (255).png" alt=""><figcaption><p>Configure Langfuse</p></figcaption></figure>
+<figure><img src="../../../../img/tracing-app-performance-langfuse.png" alt=""><figcaption><p>Configure Langfuse</p></figcaption></figure>
 
 After clicking configure, paste the **Secret Key, Public Key, Host** created in Langfuse into the configuration and save.
 
-<figure><img src="/en/.gitbook/assets/guides/monitoring/image (256).png" alt=""><figcaption><p>Configure Langfuse</p></figcaption></figure>
+<figure><img src="../../../../img/config-langfuse.png" alt=""><figcaption><p>Configure Langfuse</p></figcaption></figure>
 
 Once successfully saved, you can view the status on the current page. If it shows as started, it is being monitored.
 
-<figure><img src="/en/.gitbook/assets/guides/monitoring/image (257).png" alt=""><figcaption><p>View configuration status</p></figcaption></figure>
+<figure><img src="../../../../img/monitored-by-langfuse.png" alt=""><figcaption><p>View configuration status</p></figcaption></figure>
 
 ***
 
@@ -51,9 +51,9 @@ Once successfully saved, you can view the status on the current page. If it show
 
 After configuration, debugging or production data of the application in Dify can be viewed in Langfuse.
 
-<figure><img src="/en/.gitbook/assets/guides/monitoring/image (259).png" alt=""><figcaption><p>Debugging applications in Dify</p></figcaption></figure>
+<figure><img src="../../../../img/debug-app-in-dify.png" alt=""><figcaption><p>Debugging Applications in Dify</p></figcaption></figure>
 
-<figure><img src="/en/.gitbook/assets/guides/monitoring/image (258).png" alt=""><figcaption><p>Viewing application data in Langfuse</p></figcaption></figure>
+<figure><img src="../../../../img/view-traces-in-langfuse.png" alt=""><figcaption><p>Viewing application data in Langfuse</p></figcaption></figure>
 
 <figure><img src="/en/.gitbook/assets/guides/monitoring/image.png" alt=""><figcaption><p>Viewing application data in Langfuse</p></figcaption></figure>
 
