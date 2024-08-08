@@ -1,8 +1,22 @@
 # 嵌入网站
 
-Dify 应用可以使用 iframe 嵌入到网站中。这允许你将 Dify 应用集成到你的网站、博客或任何其他网页中。
+Dify 支持将你的 AI 应用嵌入到业务网站中，你可以使用该能力在几分钟内制作具有业务数据的官网 AI 客服、业务知识问答等应用。点击 WebApp 卡片上的嵌入按钮，复制嵌入代码，粘贴到你网站的目标位置。
 
 当你在网站中使用 Dify 聊天机器人气泡按钮时，你可以自定义按钮的样式、位置和其他设置。
+
+*   **iframe 标签方式**
+
+    将 iframe 代码复制到你网站用于显示 AI 应用的标签中，如 `<div>`、`<section>` 等标签。
+
+*   **script 标签方式**
+
+    将 script 代码复制到你网站 `<head>` 或 `<body>` 标签中。
+
+    <figure><img src="../../.gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
+
+    如果将 script 代码粘贴到官网的 `<body>` 处，你将得到一个官网 AI 机器人：
+
+    <figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
 ## 自定义 Dify 聊天机器人气泡按钮
 
