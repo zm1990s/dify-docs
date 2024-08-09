@@ -55,8 +55,6 @@ After configuration, debugging or production data of the application in Dify can
 
 <figure><img src="../../../../img/view-traces-in-langfuse.png" alt=""><figcaption><p>Viewing application data in Langfuse</p></figcaption></figure>
 
-<figure><img src="/en/.gitbook/assets/guides/monitoring/image.png" alt=""><figcaption><p>Viewing application data in Langfuse</p></figcaption></figure>
-
 ***
 
 ### 4 List of monitoring data
@@ -74,12 +72,12 @@ After configuration, debugging or production data of the application in Dify can
 | end\_time                                | end\_time               |
 | inputs                                   | input                   |
 | outputs                                  | output                  |
-| 模型token消耗相关                          | usage                   |
+| Model token consumption                  | usage                   |
 | metadata                                 | metadata                |
 | error                                    | level                   |
 | error                                    | status\_message         |
 | \[workflow]                              | tags                    |
-| conversation\_id/workflow时无             | session\_id             |
+| \["message", conversation\_mode]             | session\_id             |
 | conversion\_id                           | parent\_observation\_id |
 
 **Workflow Trace Info**
@@ -128,7 +126,7 @@ After configuration, debugging or production data of the application in Dify can
 | end\_time                        | end\_time                 |
 | inputs                           | input                     |
 | outputs                          | output                    |
-| 模型token消耗相关                  | usage                     |
+| Model token consumption                  | usage                     |
 | metadata                         | metadata                  |
 | error                            | level                     |
 | error                            | status\_message           |
@@ -167,7 +165,7 @@ After configuration, debugging or production data of the application in Dify can
 
 #### Moderation Trace Information
 
-**用于追踪对话审查**
+**Used to track conversation moderation**
 
 | Moderation    | LangFuse Generation/Trace |
 | ------------- | ------------------------- |
@@ -200,7 +198,7 @@ After configuration, debugging or production data of the application in Dify can
 
 #### Suggested Question Trace Information
 
-**用于追踪建议问题**
+**Used to track suggested questions**
 
 | Suggested Question     | LangFuse Generation/Trace |
 | ---------------------- | ------------------------- |
@@ -243,9 +241,9 @@ After configuration, debugging or production data of the application in Dify can
   * workflow\_run\_id - Workflow ID of this runtime
   * from\_source - Message source
 
-#### Dataset Retrieval Trace信息
+#### Dataset Retrieval Trace Information
 
-**用于追踪知识库检索**
+**Used to track knowledge base retrieval**
 
 | Dataset Retrieval     | LangFuse Generation/Trace |
 | --------------------- | ------------------------- |
@@ -278,9 +276,9 @@ After configuration, debugging or production data of the application in Dify can
   * workflow\_run\_id - Workflow ID of this runtime
   * from\_source - Message Source
 
-#### Tool Trace信息
+#### Tool Trace Information
 
-**用于追踪工具调用**
+**Used to track tool invocation**
 
 | Tool                  | LangFuse Generation/Trace |
 | --------------------- | ------------------------- |
@@ -323,9 +321,9 @@ After configuration, debugging or production data of the application in Dify can
   * created\_by\_role - Created by role
   * created\_user\_id - Created user ID
 
-#### Generate Name Trace信息
+#### Generate Name Trace
 
-**用于追踪会话标题生成**
+**Used to track conversation title generation**
 
 | Generate Name     | LangFuse Generation/Trace |
 | ----------------- | ------------------------- |
