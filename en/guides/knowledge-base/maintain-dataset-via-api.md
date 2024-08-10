@@ -125,6 +125,14 @@ curl --location 'https://api.dify.ai/v1/datasets/{dataset_id}/documents/{documen
 --data '{"segments": [{"content": "1","answer": "1","keywords": ["a"]}]}'
 ```
 
+#### Delete Document Segment
+
+```
+curl --location --request DELETE 'https://api.dify.ai/v1/datasets/{dataset_id}/segments/{segment_id}' \
+--header 'Authorization: Bearer {api_key}' \
+--header 'Content-Type: application/json'
+```
+
 ### Error Messages
 
 * `document_indexing`: Document indexing failed

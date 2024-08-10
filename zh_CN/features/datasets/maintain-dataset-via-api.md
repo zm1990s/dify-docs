@@ -123,6 +123,13 @@ curl --location 'https://api.dify.ai/v1/datasets/{dataset_id}/documents/{documen
 --data '{"segments": [{"content": "1","answer": "1","keywords": ["a"]}]}'
 ```
 
+#### 删除文档分段
+
+```
+curl --location --request DELETE 'https://api.dify.dev/v1/datasets/{dataset_id}/documents/{document_id}/segments/{segment_id}' \
+--header 'Authorization: Bearer {api_key}' \
+--header 'Content-Type: application/json'
+```
 
 ### 报错信息
 
