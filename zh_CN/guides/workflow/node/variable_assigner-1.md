@@ -18,7 +18,7 @@
 
 **用户偏好记录**，在会话内记住用户语言偏好并在后续对话中持续使用该语言类型进行回复。
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (265).png" alt=""><figcaption></figcaption></figure>
 
 **配置流程：**
 
@@ -32,15 +32,16 @@
 
 **Checklist 打卡**，在会话内记住用户的 checklist 输入项并在后续对话中检查未完成项。
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (266).png" alt=""><figcaption></figcaption></figure>
 
 会话开始时 LLM 会要求用户检查 Checklist 是否都已填写。
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (267).png" alt=""><figcaption></figcaption></figure>
 
-会话过程中，根据用户已填写的信息，LLM 会每轮检查未填写的 Checklist，并提醒用户继续填写。
+会话过程中，根据用户已填写的信息，LLM 会每轮检查未填写的 Checklist，并提醒用户继续填写。\
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (268).png" alt=""><figcaption></figcaption></figure>
 
 **配置流程：**
 
@@ -60,7 +61,7 @@ Assigned Variable 指定变量：选择被赋值变量
 
 Set Variable 设置变量：选择需要赋值的变量
 
-上图赋值逻辑：将`Language Recognition/text`  赋值到 `language`&#x20;
+以上图为例，赋值逻辑：将`Language Recognition/text`  变量的值赋值到 `language` 变量中。
 
 **写入模式：**
 
