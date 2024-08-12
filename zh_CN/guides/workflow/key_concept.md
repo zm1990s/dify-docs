@@ -42,7 +42,7 @@
 
 **会话变量用于在同一个会话内临时存储信息，并允许在多轮对话内传递该信息**，如上下文、上传的文件、用户偏好等。例如你可以在对话首轮将用户的语言偏好存储到会话变量中，并在该会话的后续对话中让大语言模型使用该语言回复用户。
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 支持以下六种数据类型
 

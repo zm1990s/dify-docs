@@ -10,11 +10,11 @@ Dify 知识库通过集成 Firecrawl ，支持网页抓取并解析为 Markdown 
 
 首先需要在 DataSource 页面内配置 Firecrawl 的凭据。
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 登录 [Firecrawl 官网](https://www.firecrawl.dev/) 完成注册，获取 API Key 后填入并保存。
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 在知识库创建页选择 **Sync from website**，**填入需要抓取的网页 URL**。
 
@@ -26,4 +26,4 @@ Dify 知识库通过集成 Firecrawl ，支持网页抓取并解析为 Markdown 
 
 导入网页解析的文本后存储至知识库的文档中，查看导入结果。点击 **Add URL** 可以继续导入新的网页。
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>导入网页解析文本至知识库内</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>导入网页解析文本至知识库内</p></figcaption></figure>

@@ -14,17 +14,17 @@
 
 默认配置中的 API Key 为初次配置模型供应商时添加的凭据，您需要点击 **增加配置** 添加同一模型的不同 API Key 来正常使用负载均衡功能。
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption><p>配置负载均衡</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt="" width="563"><figcaption><p>配置负载均衡</p></figcaption></figure>
 
 **需要额外添加至少 1 个模型凭据**即可保存并开启负载均衡。
 
 你也可以将已配置的凭据**临时停用**或者**删除**。
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 配置完成后再模型列表内会显示所有已开启负载均衡的模型。
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt="" width="563"><figcaption><p>开启负载均衡</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1).png" alt="" width="563"><figcaption><p>开启负载均衡</p></figcaption></figure>
 
 {% hint style="info" %}
 默认情况下，负载均衡使用 Round-robin 策略。如果触发速率限制，将应用 1 分钟的冷却时间。
@@ -32,4 +32,4 @@
 
 你也可以从 **添加模型** 配置负载均衡，配置流程与上面一致。
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt="" width="563"><figcaption><p>从添加模型配置负载均衡</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt="" width="563"><figcaption><p>从添加模型配置负载均衡</p></figcaption></figure>

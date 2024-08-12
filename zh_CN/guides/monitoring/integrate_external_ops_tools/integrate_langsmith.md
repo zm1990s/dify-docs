@@ -20,35 +20,35 @@ LangSmith 官网介绍：[https://www.langchain.com/langsmith](https://www.langc
 
 在 LangSmith 内创建项目，登录后在主页点击 **New Project** 创建一个自己的项目，**项目**将用于与 Dify 内的**应用**关联进行数据监测。
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>在 LangSmith 内创建项目</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>在 LangSmith 内创建项目</p></figcaption></figure>
 
 创建完成之后在 Projects 内可以查看该项目。
 
-<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption><p>在 LangSmith 内查看已创建项目</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption><p>在 LangSmith 内查看已创建项目</p></figcaption></figure>
 
 #### 3. 创建项目凭据
 
 创建项目凭据，在左侧边栏内找到项目设置 **Settings**。
 
-<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p>项目设置</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption><p>项目设置</p></figcaption></figure>
 
 点击 **Create API Key**，创建一个项目凭据。
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>创建一个项目 API Key</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>创建一个项目 API Key</p></figcaption></figure>
 
 选择 **Personal Access Token** ，用于后续的 API 身份校验。
 
-<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>创建一个 API Key</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>创建一个 API Key</p></figcaption></figure>
 
 将创建的 API key 复制保存。
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption><p>复制 API Key</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>复制 API Key</p></figcaption></figure>
 
 #### 4. 将 LangSmith 集成至 Dify 平台
 
 在 Dify 应用内配置 LangSmith。打开需要监测的应用，在左侧边菜单内打开**监测**，点击页面内的**配置。**
 
-<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption><p>配置 LangSmith</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption><p>配置 LangSmith</p></figcaption></figure>
 
 点击配置后，将在 LangSmith 内创建的 **API Key** 和**项目名**粘贴到配置内并保存。
 

@@ -12,7 +12,7 @@
 
 选择智能助手的推理模型，智能助手的任务完成能力取决于模型推理能力，我们建议在使用智能助手时选择推理能力更强的模型系列如 gpt-4 以获得更稳定的任务完成效果。
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption><p>选择智能助手的推理模型</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>选择智能助手的推理模型</p></figcaption></figure>
 
 你可以在“提示词”中编写智能助手的指令，为了能够达到更优的预期效果，你可以在指令中明确它的任务目标、工作流程、资源和限制等。
 
@@ -26,7 +26,7 @@
 
 你可以直接使用 Dify 生态提供的第一方内置工具，或者轻松导入自定义的 API 工具（目前支持 OpenAPI / Swagger 和 OpenAI Plugin 规范）。
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>添加助手需要的工具</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>添加助手需要的工具</p></figcaption></figure>
 
 工具使用户可以在 Dify 上创建更强大的 AI 应用，如你可以为智能助理型应用（Agent）编排合适的工具，它可以通过任务推理、步骤拆解、调用工具完成复杂任务。另外工具也可以方便将你的应用与其他系统或服务连接，与外部环境交互，如代码执行、对专属信息源的访问等。
 
@@ -36,7 +36,7 @@
 
 在 Agent 配置中，你可以修改助手的迭代次数限制。
 
-<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption><p>Function Calling 模式</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption><p>Function Calling 模式</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption><p>ReAct 模式</p></figcaption></figure>
 
@@ -44,14 +44,14 @@
 
 您可以为智能助手配置一套会话开场白和开场问题，配置的对话开场白将在每次用户初次对话中展示助手可以完成什么样的任务，以及可以提出的问题示例。
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>配置会话开场白和开场问题</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>配置会话开场白和开场问题</p></figcaption></figure>
 
 ### 调试与预览
 
 编排完智能助手之后，你可以在发布成应用之前进行调试与预览，查看助手的任务完成效果。
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption><p>调试与预览</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption><p>调试与预览</p></figcaption></figure>
 
 ### 应用发布
 
-<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption><p>应用发布为 Webapp</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption><p>应用发布为 Webapp</p></figcaption></figure>

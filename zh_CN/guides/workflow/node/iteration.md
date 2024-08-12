@@ -150,7 +150,7 @@ def main(articleSections: list):
 
 **使用模板节点转换**
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt="" width="332"><figcaption><p>模板节点转换</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt="" width="332"><figcaption><p>模板节点转换</p></figcaption></figure>
 
 ```django
 {{ articleSections | join("\n") }}

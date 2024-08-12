@@ -55,7 +55,7 @@ Langfuse 官网介绍：[https://langfuse.com/](https://langfuse.com/)
 
 <figure><img src="../../../.gitbook/assets/image (258).png" alt=""><figcaption><p>在 Langfuse 内查看应用数据</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption><p>在 Langfuse 内查看应用数据</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p>在 Langfuse 内查看应用数据</p></figcaption></figure>
 
 ### 4 监测数据清单
 
