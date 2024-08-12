@@ -40,11 +40,15 @@
 
 ### [会话变量](#conversation-variables)
 
-**会话变量用于在同一个会话内临时存储信息，并允许在多轮对话内传递该信息**，如上下文、上传的文件、用户偏好等。例如你可以在对话首轮将用户的语言偏好存储到会话变量中，并在该会话的后续对话中让大语言模型使用该语言回复用户。
+> 会话变量仅适用于 Chatflow 类型（聊天助手 → 工作流编排）应用。
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+**会话变量允许应用开发者在同一个 Chatflow 会话内，指定需要被临时存储的特定信息，并确保在当前工作流内的多轮对话内都能够引用该信息**，如上下文、上传至对话框的文件（即将上线）、 用户在对话过程中所输入的偏好信息等。好比为 LLM 提供一个可以被随时查看的“备忘录”，避免因 LLM 记忆出错而导致的信息偏差。
 
-支持以下六种数据类型
+例如你可以将用户在首轮对话时输入的语言偏好存储至会话变量中，LLM 在回答时将参考会话变量中的信息，并在后续的对话中使用指定的语言回复用户。
+
+<figure><img src="../../../img/conversation-var.png" alt=""><figcaption></figcaption></figure>
+
+**会话变量**支持以下六种数据类型：
 
 * String 字符串
 * Number 数值
@@ -53,14 +57,13 @@
 * Array\[number] 数值数组
 * Array\[object] 对象数组
 
-会话变量具有一下特性：
+**会话变量**具有以下特性：
 
-* 会话变量仅在 Chatflow 应用类型内支持；
 * 会话变量可在大部分节点内全局引用；
-* 会话变量的写入需要使用[变量赋值](node/variable\_assigner-1.md)节点；
+* 会话变量的写入需要使用[变量赋值](https://docs.dify.ai/v/zh-hans/guides/workflow/node/variable_assigner-1)节点；
 * 会话变量为可读写变量；
 
-会话变量如何与变量赋值节点共同使用请参考[变量赋值](node/variable\_assigner-1.md)节点说明。
+关于如何将会话变量与变量赋值节点配合使用，请参考[变量赋值](node/variable\_assigner-1.md)节点说明。
 
 ***
 

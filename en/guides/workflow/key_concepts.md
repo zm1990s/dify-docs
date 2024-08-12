@@ -42,6 +42,35 @@ Environmental variables have the following characteristics:
 
 ***
 
+### [Conversation Variables]
+
+> Conversation variables are only applicable to Chatflow type (Chat Assistant → Workflow Orchestration) applications.
+
+**Conversation variables allow application developers to specify particular information that needs to be temporarily stored within the same Chatflow session, ensuring that this information can be referenced across multiple rounds of dialogue within the current workflow**. This can include context, files uploaded to the dialogue box (coming soon), user preferences input during the conversation, etc. It's like providing a "memo" for the LLM that can be checked at any time, avoiding information bias caused by LLM memory errors.
+
+For example, you can store the language preference input by the user in the first round of dialogue in a conversation variable. The LLM will refer to the information in the conversation variable when answering and use the specified language to reply to the user in subsequent dialogues.
+
+<figure><img src="../../../img/conversation-var.png" alt=""><figcaption></figcaption></figure>
+
+**Conversation variables** support the following six data types:
+
+* String
+* Number
+* Object
+* Array[string]
+* Array[number]
+* Array[object]
+
+**Conversation variables** have the following characteristics:
+
+* Conversation variables can be referenced globally within most nodes;
+* Writing to conversation variables requires using the [Variable Assignment](https://docs.dify.ai/v/zh-hans/guides/workflow/node/variable_assigner-1) node;
+* Conversation variables are read-write variables;
+
+For information on how to use conversation variables with the variable assignment node, please refer to the [Variable Assignment](node/variable_assigner-1.md) node description.
+
+---
+
 ### Chatflow and Workflow
 
 **Application Scenarios**
