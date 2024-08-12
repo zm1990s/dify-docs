@@ -68,7 +68,7 @@ LangSmith 官网介绍：[https://www.langchain.com/langsmith](https://www.langc
 
 <figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption><p>在 Dify 内调试应用</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>在 LangSmith 内查看应用数据</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>在 LangSmith 内查看应用数据</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption><p>在 LangSmith 内查看应用数据</p></figcaption></figure>
 

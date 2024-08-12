@@ -18,16 +18,16 @@
 
 ### 3 如何配置
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>知识检索配置</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>知识检索配置</p></figcaption></figure>
 
 **配置流程：**
 
 1. 选择查询变量，用于作为输入来检索知识库中的相关文本分段，在常见的对话类应用中一般将开始节点的 `sys.query` 作为查询变量；
-2. 选择需要查询的知识库，可选知识库需要在 Dify 知识库内预先[创建](../../knowledge-base/create-knowledge-and-upload-documents#id-1-chuang-jian-zhi-shi-ku)；
+2. 选择需要查询的知识库，可选知识库需要在 Dify 知识库内预先[创建](../../knowledge-base/create-knowledge-and-upload-documents/#id-1-chuang-jian-zhi-shi-ku)；
 3. 指定[召回模式](../../../learn-more/extended-reading/retrieval-augment/retrieval.md)。自 9 月 1 日后，知识库的召回模式将自动切换为多路召回，不再建议使用 N 选 1 召回模式；
 4. 连接并配置下游节点，一般为 LLM 节点；
 
-> 建议将知识库的召回模式切换为多路召回，详细说明请参考[《在应用内集成知识库》](https://docs.dify.ai/v/zh-hans/guides/knowledge-base/integrate_knowledge_within_application)。
+> 建议将知识库的召回模式切换为多路召回，详细说明请参考[《在应用内集成知识库》](https://docs.dify.ai/v/zh-hans/guides/knowledge-base/integrate\_knowledge\_within\_application)。
 
 **输出变量**
 

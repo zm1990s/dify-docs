@@ -34,7 +34,7 @@
 
 在分段列表内点击 「 添加分段 」 ，可以在文档内自行添加一个或批量添加多个自定义分段。
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 批量添加分段时，你需要先下载 CSV 格式的分段上传模板，并按照模板格式在 Excel 内编辑所有的分段内容，再将 CSV 文件保存后上传。
 
@@ -98,7 +98,7 @@
 
 **索引模式**，[参考文档](https://docs.dify.ai/v/zh-hans/guides/knowledge-base/create-knowledge-and-upload-documents#id-5-suo-yin-fang-shi)
 
-**Embedding 模型，**修改知识库的嵌入模型，修改 Embedding 模型将对知识库内的所有文档重新嵌入，原先的嵌入将会被删除。
+\*\*Embedding 模型，\*\*修改知识库的嵌入模型，修改 Embedding 模型将对知识库内的所有文档重新嵌入，原先的嵌入将会被删除。
 
 **检索设置**，[参考文档](https://docs.dify.ai/v/zh-hans/guides/knowledge-base/create-knowledge-and-upload-documents#id-6-jian-suo-she-zhi)
 
@@ -106,6 +106,6 @@
 
 ### 9 知识库 API 管理
 
-Dify 知识库提供整套标准 API  ，开发者通过 API 调用对知识库内的文档、分段进行增删改查等日常管理维护操作，请参考[知识库 API 文档](maintain-dataset-via-api.md)。
+Dify 知识库提供整套标准 API ，开发者通过 API 调用对知识库内的文档、分段进行增删改查等日常管理维护操作，请参考[知识库 API 文档](maintain-dataset-via-api.md)。
 
 <figure><img src="../../.gitbook/assets/image (180).png" alt=""><figcaption><p>知识库 API 管理</p></figcaption></figure>
