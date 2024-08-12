@@ -52,7 +52,7 @@
 
 点击节点右侧 ＋ 号，选择“变量赋值”节点，填写“赋值的变量”和“设置变量”。
 
-<figure><img src="../../../../img/language-variable-assigner.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../img/zh-language-variable-assigner.png" alt="" width="375"><figcaption></figcaption></figure>
 
 **设置变量：**
 
