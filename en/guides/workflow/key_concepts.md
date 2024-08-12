@@ -64,10 +64,10 @@ For example, you can store the language preference input by the user in the firs
 **Conversation variables** have the following characteristics:
 
 * Conversation variables can be referenced globally within most nodes;
-* Writing to conversation variables requires using the [Variable Assignment](https://docs.dify.ai/v/zh-hans/guides/workflow/node/variable_assigner-1) node;
+* Writing to conversation variables requires using the [Variable Assignment](https://docs.dify.ai/v/zh-hans/guides/workflow/node/variable_assignment) node;
 * Conversation variables are read-write variables;
 
-For information on how to use conversation variables with the variable assignment node, please refer to the [Variable Assignment](node/variable_assigner-1.md) node description.
+For information on how to use conversation variables with the variable assignment node, please refer to the [Variable Assignment](node/variable_assignment.md) node description.
 
 ---
 

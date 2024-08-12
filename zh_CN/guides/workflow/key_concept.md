@@ -60,7 +60,7 @@
 **会话变量**具有以下特性：
 
 * 会话变量可在大部分节点内全局引用；
-* 会话变量的写入需要使用[变量赋值](https://docs.dify.ai/v/zh-hans/guides/workflow/node/variable_assigner-1)节点；
+* 会话变量的写入需要使用[变量赋值](https://docs.dify.ai/v/zh-hans/guides/workflow/node/variable_assignment)节点；
 * 会话变量为可读写变量；
 
 关于如何将会话变量与变量赋值节点配合使用，请参考[变量赋值](node/variable\_assigner-1.md)节点说明。
