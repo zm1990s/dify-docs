@@ -48,7 +48,7 @@
     * [代码执行](guides/workflow/node/code.md)
     * [模板转换](guides/workflow/node/template.md)
     * [变量聚合](guides/workflow/node/variable\_assigner.md)
-    * [变量赋值](guides/workflow/node/bian-liang-fu-zhi.md)
+    * [变量赋值](guides/workflow/node/variable\_assigner-1.md)
     * [迭代](guides/workflow/node/iteration.md)
     * [参数提取](guides/workflow/node/parameter\_extractor.md)
     * [HTTP 请求](guides/workflow/node/http\_request.md)
