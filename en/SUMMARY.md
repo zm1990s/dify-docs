@@ -48,6 +48,7 @@
     * [Code Execution](guides/workflow/node/code.md)
     * [Template](guides/workflow/node/template.md)
     * [Variable Aggregator](guides/workflow/node/variable-assigner.md)
+    * [Variable Assigner](guides/workflow/node/variable-assignment.md)
     * [Iteration](guides/workflow/node/iteration.md)
     * [Parameter Extraction](guides/workflow/node/parameter-extractor.md)
     * [HTTP Request](guides/workflow/node/http-request.md)
