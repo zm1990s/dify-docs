@@ -46,7 +46,7 @@ Environmental variables have the following characteristics:
 
 > Conversation variables are only applicable to [Chatflow](#chatflow-and-workflow) App.
 
-**Conversation variables allow application developers to specify particular information that needs to be temporarily stored within the same Chatflow session, ensuring that this information can be referenced across multiple rounds of chatting within the current workflow**. This can include context, files uploaded to the dialogue (coming soon), user preferences input during the conversation, etc. It's like providing a "memo" for the LLM that can be checked at any time, avoiding information bias caused by LLM memory errors.
+**Conversation variables allow application developers to specify particular information that needs to be temporarily stored within the same Chatflow session, ensuring that this information can be referenced across multiple rounds of chatting within the current workflow**. This can include context, files uploaded to the chatting box(coming soon), user preferences input during the conversation, etc. It's like providing a "memo" for the LLM that can be checked at any time, avoiding information bias caused by LLM memory errors.
 
 For example, you can store the language preference input by the user in the first round of chatting in a conversation variable. The LLM will refer to the information in the conversation variable when answering and use the specified language to reply to the user in subsequent chats.
 
