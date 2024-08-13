@@ -61,7 +61,7 @@ Assigned Variable 指定变量：选择被赋值变量
 
 Set Variable 设置变量：选择需要赋值的变量
 
-以上图为例，赋值逻辑：将`Language Recognition/text`  变量的值赋值到 `language` 变量中。
+以上图为例，赋值逻辑：将 `Language Recognition/text`  变量的值赋值到 `language` 变量中。
 
 **写入模式：**
 
