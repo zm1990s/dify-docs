@@ -4,7 +4,7 @@
 
 变量赋值节点用于向可写入变量进行变量赋值，已支持以下可写入变量：
 
-- [会话变量](../key\_concept.md#hui-hua-bian-liang)。
+* [会话变量](../key\_concept.md#hui-hua-bian-liang)。
 
 用法：通过变量赋值节点，你可以将工作流内的变量赋值到会话变量中用于临时存储，并可以在后续对话中持续引用。
 
@@ -17,6 +17,91 @@
 通过变量赋值节点，你可以将会话过程中的**上下文、上传至对话框的文件（即将上线）、用户所输入的偏好信息**等通过变量赋值节点写入至会话变量，并在后续对话中引用已存储的信息导向不同的处理流程或者进行回复。
 
 **场景 1**
+
+**自动判断提取并存储对话中的记忆**，在会话内通过会话变量数组记录用户的重要信息，并在后续对话中使用这些记忆来个性化回复。
+
+示例：开始对话后，LLM会自动判断用户输入中是否包含需要记住的事实、偏好或记忆。如果有，LLM会先提取并存储这些信息，然后再用这些信息作为上下文来回答。如果没有新的信息需要记住，LLM会直接使用之前相关的记忆来回答问题。
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+**配置流程：**
+
+1. **设置会话变量**：首先设置一个会话变量数组 `memories`，类型为 array\[object]，用于存储用户的事实、偏好和记忆。
+2. **判断和提取记忆**：
+   * 添加一个条件判断节点，使用LLM来判断用户输入是否包含需要记住的新信息。
+   * 如果有新信息，走上分支，使用LLM节点提取这些信息。
+   * 如果没有新信息，走下分支，直接使用现有记忆回答。
+3. **变量赋值/写入**：
+   * 在上分支中，使用变量赋值节点，将提取出的新信息追加（append）到 `memories` 数组中。
+   * 使用转义功能将LLM输出的文本字符串转换为适合存储在array\[object]中的格式。
+4. **变量读取和使用**：
+   * 在后续的LLM节点中，将 `memories` 数组中的内容转换为字符串，并插入到LLM的提示中作为上下文。
+   * LLM使用这些记忆来生成个性化的回复。
+
+图中的code 节点代码如下：
+
+1. 将字符串转义为 object
+
+```python
+import json
+
+def main(arg1: str) -> object:
+    try:
+        # Parse the input JSON string
+        input_data = json.loads(arg1)
+        
+        # Extract the memory object
+        memory = input_data.get("memory", {})
+        
+        # Construct the return object
+        result = {
+            "facts": memory.get("facts", []),
+            "preferences": memory.get("preferences", []),
+            "memories": memory.get("memories", [])
+        }
+        
+        return {
+            "mem": result
+        }
+    except json.JSONDecodeError:
+        return {
+            "result": "Error: Invalid JSON string"
+        }
+    except Exception as e:
+        return {
+            "result": f"Error: {str(e)}"
+        }
+```
+
+2. 将 object 转义为字符串
+
+```python
+import json
+
+def main(arg1: list) -> str:
+    try:
+        # Assume arg1[0] is the dictionary we need to process
+        context = arg1[0] if arg1 else {}
+        
+        # Construct the memory object
+        memory = {"memory": context}
+        
+        # Convert the object to a JSON string
+        json_str = json.dumps(memory, ensure_ascii=False, indent=2)
+        
+        # Wrap the JSON string in <answer> tags
+        result = f"<answer>{json_str}</answer>"
+        
+        return {
+            "result": result
+        }
+    except Exception as e:
+        return {
+            "result": f"<answer>Error: {str(e)}</answer>"
+        }
+```
+
+**场景 2**
 
 **记录用户的初始偏好信息**，在会话内记住用户输入的语言偏好，在后续对话中持续使用该语言类型进行回复。
 
@@ -32,7 +117,7 @@
 
 **变量读取**：在后续对话轮次中 `language` 变量已存储用户语言偏好。在后续对话中，LLM 节点通过引用 language 变量，使用用户的偏好语言类型进行回复。
 
-**场景 2**
+**场景 3**
 
 **辅助 Checklist 检查**，在会话内通过会话变量记录用户的输入项，更新 Checklist 中的内容，并在后续对话中检查遗漏项。
 
