@@ -348,6 +348,48 @@ Notion integration configuration variables can be obtained by applying for Notio
     * MAIL\_DEFAULT\_SEND\_FROM\
       The sender's email name, such as: no-reply [no-reply@dify.ai](mailto:no-reply@dify.ai), not mandatory.
 
+#### ModelProvider & Tool Position Configuration
+
+Used to specify the model providers and tools that can be used in the app. These settings allow you to customize which tools and model providers are available, as well as their order and inclusion/exclusion in the app's interface.
+
+For a list of available [tools](https://github.com/langgenius/dify/blob/main/api/core/tools/provider/_position.yaml) and [model providers](https://github.com/langgenius/dify/blob/main/api/core/model_runtime/model_providers/_position.yaml), please refer to the provided links.
+
+* POSITION_TOOL_PINS
+
+    Pin specific tools to the top of the list, ensuring they appear first in the interface. (Use comma-separated values with **no spaces** between items.)
+
+    Example: `POSITION_TOOL_PINS=bing,google`
+
+* POSITION_TOOL_INCLUDES
+
+    Specify the tools to be included in the app. Only the tools listed here will be available for use. If not set, all tools will be included unless specified in POSITION_TOOL_EXCLUDES. (Use comma-separated values with **no spaces** between items.)
+
+    Example: `POSITION_TOOL_INCLUDES=bing,google`
+
+* POSITION_TOOL_EXCLUDES
+
+    Exclude specific tools from being displayed or used in the app. Tools listed here will be omitted from the available options, except for pinned tools. (Use comma-separated values with **no spaces** between items.)
+
+    Example: `POSITION_TOOL_EXCLUDES=yahoo,wolframalpha`
+
+* POSITION_PROVIDER_PINS
+
+    Pin specific model providers to the top of the list, ensuring they appear first in the interface. (Use comma-separated values with **no spaces** between items.)
+
+    Example: `POSITION_PROVIDER_PINS=openai,openllm`
+
+* POSITION_PROVIDER_INCLUDES
+
+    Specify the model providers to be included in the app. Only the providers listed here will be available for use. If not set, all providers will be included unless specified in POSITION_PROVIDER_EXCLUDES. (Use comma-separated values with **no spaces** between items.)
+
+    Example: `POSITION_PROVIDER_INCLUDES=cohere,upstage`
+
+* POSITION_PROVIDER_EXCLUDES
+
+    Exclude specific model providers from being displayed or used in the app. Providers listed here will be omitted from the available options, except for pinned providers. (Use comma-separated values with **no spaces** between items.)
+
+    Example: `POSITION_PROVIDER_EXCLUDES=openrouter,ollama`
+
 #### Others
 
 * INVITE\_EXPIRY\_HOURS: Member invitation link valid time (hours), Default: 72.
