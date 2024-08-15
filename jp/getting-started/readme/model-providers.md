@@ -139,7 +139,7 @@ Difyは以下のモデルプロバイダーをサポートしています：
             <td align="center">Hugging Face</td>
             <td align="center">✔️</td>
             <td align="center">✔️</td>
-            <td align="center"></td>
+            <td align="center">✔️</td>
             <td align="center"></td>
             <td align="center"></td>
         </tr>
@@ -238,7 +238,15 @@ Difyは以下のモデルプロバイダーをサポートしています：
             <td align="center"></td>
             <td align="center"></td>
             <td align="center"></td>
-        </tr>        
+        </tr>
+        <tr>
+            <td align="center">360 智脑</td>
+            <td align="center">✔️</td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
         <tr>
             <td align="center">deepseek</td>
             <td align="center">✔️(🛠️)</td>
@@ -258,7 +266,7 @@ Difyは以下のモデルプロバイダーをサポートしています：
         <tr>
             <td align="center">SILICONFLOW</td>
             <td align="center">✔️</td>
-            <td align="center"></td>
+            <td align="center">✔️</td>
             <td align="center"></td>
             <td align="center"></td>
             <td align="center"></td>

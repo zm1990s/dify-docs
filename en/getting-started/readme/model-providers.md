@@ -139,7 +139,7 @@ Dify supports the below model providers out-of-box:
             <td align="center">Hugging Face</td>
             <td align="center">✔️</td>
             <td align="center">✔️</td>
-            <td align="center"></td>
+            <td align="center">✔️</td>
             <td align="center"></td>
             <td align="center"></td>
         </tr>
@@ -238,6 +238,14 @@ Dify supports the below model providers out-of-box:
             <td align="center"></td>
             <td align="center"></td>
             <td align="center"></td>
+        </tr>
+        <tr>
+            <td align="center">360 Zhinao</td>
+            <td align="center">✔️</td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
         </tr>        
         <tr>
             <td align="center">deepseek</td>
@@ -258,7 +266,7 @@ Dify supports the below model providers out-of-box:
         <tr>
             <td align="center">SILICONFLOW</td>
             <td align="center">✔️</td>
-            <td align="center"></td>
+            <td align="center">✔️</td>
             <td align="center"></td>
             <td align="center"></td>
             <td align="center"></td>
