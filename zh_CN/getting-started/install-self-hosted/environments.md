@@ -355,9 +355,9 @@ Notion 集成配置，变量可通过申请 Notion integration 获取：[https:/
 
 #### 模型供应商 & 工具 位置配置
 
-用于指定应用中可以使用的模型供应商和工具。您可以自定义哪些工具和模型供应商可用，以及它们在应用程序界面中的顺序和包含/排除情况。
+用于指定应用中可以使用的模型供应商和工具。您可以自定义哪些工具和模型供应商可用，以及它们在应用界面中的顺序和包含/排除情况。
 
-详见可用的[工具](https://github.com/langgenius/dify/blob/main/api/core/tools/provider/_position.yaml) 和 [模型提供者](https://github.com/langgenius/dify/blob/main/api/core/model_runtime/model_providers/_position.yaml)。
+详见可用的[工具](https://github.com/langgenius/dify/blob/main/api/core/tools/provider/_position.yaml) 和 [模型供应商](https://github.com/langgenius/dify/blob/main/api/core/model_runtime/model_providers/_position.yaml)。
 
 * POSITION_TOOL_PINS
 
