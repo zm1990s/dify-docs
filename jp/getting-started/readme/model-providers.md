@@ -266,7 +266,7 @@ Difyは以下のモデルプロバイダーをサポートしています：
         <tr>
             <td align="center">SILICONFLOW</td>
             <td align="center">✔️</td>
-            <td align="center"></td>
+            <td align="center">✔️</td>
             <td align="center"></td>
             <td align="center"></td>
             <td align="center"></td>
