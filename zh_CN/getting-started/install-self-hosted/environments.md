@@ -353,6 +353,48 @@ Notion 集成配置，变量可通过申请 Notion integration 获取：[https:/
     * MAIL\_DEFAULT\_SEND\_FROM\
       发件人的电子邮件名称，例如：no-reply [no-reply@dify.ai](mailto:no-reply@dify.ai)，非必需。
 
+#### 模型供应商 & 工具 位置配置
+
+用于指定应用中可以使用的模型供应商和工具。您可以自定义哪些工具和模型供应商可用，以及它们在应用程序界面中的顺序和包含/排除情况。
+
+详见可用的[工具](https://github.com/langgenius/dify/blob/main/api/core/tools/provider/_position.yaml) 和 [模型提供者](https://github.com/langgenius/dify/blob/main/api/core/model_runtime/model_providers/_position.yaml)。
+
+* POSITION_TOOL_PINS
+
+    将列出的工具固定在列表顶部，确保它们在界面中置顶出现。（使用逗号分隔的值，**中间不留空格**。）
+
+    示例: `POSITION_TOOL_PINS=bing,google`
+
+* POSITION_TOOL_INCLUDES
+
+    指定要在应用中包含的工具。只有此处列出的工具才可用。如果未设置，则除非在 POSITION_TOOL_EXCLUDES 中指定，否则所有工具都会包含在内。（使用逗号分隔的值，**中间不留空格**。）
+
+    示例: `POSITION_TOOL_INCLUDES=bing,google`
+
+* POSITION_TOOL_EXCLUDES
+
+    排除在应用中显示或使用的特定工具。此处列出的工具将从可用选项中省略，除非它们被固定。（使用逗号分隔的值，**中间不留空格**。）
+
+    示例: `POSITION_TOOL_EXCLUDES=yahoo,wolframalpha`
+
+* POSITION_PROVIDER_PINS
+
+    将列出的模型供应商固定在列表顶部，确保它们在界面中置顶出现。（使用逗号分隔的值，**中间不留空格**。）
+
+    示例: `POSITION_PROVIDER_PINS=openai,openllm`
+
+* POSITION_PROVIDER_INCLUDES
+
+    指定要在应用中包含的模型供应商。只有此处列出的供应商才可用。如果未设置，则除非在 POSITION_PROVIDER_EXCLUDES 中指定，否则所有供应商都会包含在内。（使用逗号分隔的值，**中间不留空格**。）
+
+    示例: `POSITION_PROVIDER_INCLUDES=cohere,upstage`
+
+* POSITION_PROVIDER_EXCLUDES
+
+    排除在应用中显示特定模型供应商。此处列出的供应商将从可用选项中移除，除非它们被置顶。（使用逗号分隔的值，**中间不留空格**。）
+
+    示例: `POSITION_PROVIDER_EXCLUDES=openrouter,ollama`
+
 #### 其他
 
 * INVITE\_EXPIRY\_HOURS：成员邀请链接有效时间（小时），默认：72。
