@@ -139,7 +139,7 @@ Difyは以下のモデルプロバイダーをサポートしています：
             <td align="center">Hugging Face</td>
             <td align="center">✔️</td>
             <td align="center">✔️</td>
-            <td align="center"></td>
+            <td align="center">✔️</td>
             <td align="center"></td>
             <td align="center"></td>
         </tr>

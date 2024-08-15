@@ -139,7 +139,7 @@ Dify 为以下模型提供商提供原生支持：
             <td align="center">Hugging Face</td>
             <td align="center">✔️</td>
             <td align="center">✔️</td>
-            <td align="center"></td>
+            <td align="center">✔️</td>
             <td align="center"></td>
             <td align="center"></td>
         </tr>
@@ -238,6 +238,14 @@ Dify 为以下模型提供商提供原生支持：
             <td align="center"></td>
             <td align="center"></td>
             <td align="center"></td>
+        </tr>
+        <tr>
+            <td align="center">360 智脑</td>
+            <td align="center">✔️</td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
         </tr>        
         <tr>
             <td align="center">deepseek</td>
@@ -258,7 +266,7 @@ Dify 为以下模型提供商提供原生支持：
         <tr>
             <td align="center">SILICONFLOW</td>
             <td align="center">✔️</td>
-            <td align="center"></td>
+            <td align="center">✔️</td>
             <td align="center"></td>
             <td align="center"></td>
             <td align="center"></td>
