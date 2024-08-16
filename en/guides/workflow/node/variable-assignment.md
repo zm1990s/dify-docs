@@ -128,11 +128,9 @@ Example: Before the chatting, the user specifies "English" in the `language` inp
 
 **Variable reading**: In subsequent conversation rounds, the `language` variable has stored the user's language preference. The LLM node references the language variable to respond using the user's preferred language type.
 
-**Scenario 2**
+**Scenario 3**
 
 **Assisting with Checklist checks**: Record user inputs within the conversation using conversation variables, update the contents of the Checklist, and check for missing items in subsequent conversations.
-
-<figure><img src="../../../../img/conversation-var-scenario-2.png" alt=""><figcaption></figcaption></figure>
 
 Example: After starting the conversation, the LLM will ask the user to input items related to the Checklist in the chatting box. Once the user mentions content from the Checklist, it will be updated and stored in the Conversation Variable. The LLM will remind the user to continue supplementing missing items after each round of dialogue.
 
@@ -165,3 +163,4 @@ Taking the assignment logic in the above figure as an example: Assign the text o
 * Overwrite: Overwrite the content of the source variable to the target conversation variable
 * Append: When the specified variable is of Array type
 * Clear: Clear the content in the target conversation variable
+

@@ -22,7 +22,7 @@
 
 例えば：会話が始まると、LLMはユーザーの入力に必要な情報や好み、またはチャット履歴が含まれているかを自動的に判断します。情報が存在する場合、LLMはそれを先に抽出して保存し、コンテキストとして利用して応答します。もし新しい情報を覚える必要がない場合、LLMは以前の関連する記録を用いて個性化な応答を出します。
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../img/conversational-variables-scenario-01.png" alt=""><figcaption></figcaption></figure>
 
 **設定手順：**
 
@@ -134,8 +134,6 @@ def main(arg1: list) -> str:
 ***
 
 ### 3 操作方法
-
-<figure><img src="../../../../zh_CN/.gitbook/assets/image (7).png" alt="" width="375"><figcaption></figcaption></figure>
 
 **変数代入の使用：**
 
