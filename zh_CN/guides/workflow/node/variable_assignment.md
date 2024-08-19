@@ -22,7 +22,7 @@
 
 示例：开始对话后，LLM 会自动判断用户输入中是否包含需要记住的事实、偏好或历史记录。如果有，LLM 会先提取并存储这些信息，然后再用这些信息作为上下文来回答。如果没有新的信息需要保存，LLM 会直接使用之前相关的记忆来回答问题。
 
-<figure><img src="../../../.gitbook/assets/20240819-164517.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/中文.jpeg" alt=""><figcaption></figcaption></figure>
 
 **配置流程：**
 
