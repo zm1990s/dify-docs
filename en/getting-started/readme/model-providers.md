@@ -39,9 +39,17 @@ Dify supports the below model providers out-of-box:
             <td align="center">✔️</td>
         </tr>
         <tr>
+            <td align="center">Gemini</td>
+            <td align="center">✔️</td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>        
+        <tr>
             <td align="center">Google Cloud</td>
             <td align="center">✔️(👓)</td>
-            <td align="center"></td>
+            <td align="center">✔️</td>
             <td align="center"></td>
             <td align="center"></td>
             <td align="center"></td>
@@ -139,7 +147,7 @@ Dify supports the below model providers out-of-box:
             <td align="center">Hugging Face</td>
             <td align="center">✔️</td>
             <td align="center">✔️</td>
-            <td align="center">✔️</td>
+            <td align="center"></td>
             <td align="center"></td>
             <td align="center"></td>
         </tr>
@@ -194,7 +202,7 @@ Dify supports the below model providers out-of-box:
         <tr>
             <td align="center">Wenxin</td>
             <td align="center">✔️</td>
-            <td align="center"></td>
+            <td align="center">✔️</td>
             <td align="center"></td>
             <td align="center"></td>
             <td align="center"></td>
@@ -209,7 +217,7 @@ Dify supports the below model providers out-of-box:
         </tr>
         <tr>
             <td align="center">Tencent Cloud</td>
-            <td align="center">✔️</td>
+            <td align="center"></td>
             <td align="center"></td>
             <td align="center"></td>
             <td align="center">✔️</td>
@@ -316,7 +324,7 @@ Dify supports the below model providers out-of-box:
             <td align="center">✔️</td>
             <td align="center">✔️</td>
             <td align="center"></td>
-            <td align="center"></td>
+            <td align="center">✔️</td>
             <td align="center"></td>
         </tr>
         <tr>
@@ -346,6 +354,14 @@ Dify supports the below model providers out-of-box:
         <tr>
             <td align="center">Amazon Sagemaker</td>
             <td align="center">✔️</td>
+            <td align="center">✔️</td>
+            <td align="center">✔️</td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td align="center">Text Embedding Inference</td>
+            <td align="center"></td>
             <td align="center">✔️</td>
             <td align="center">✔️</td>
             <td align="center"></td>
