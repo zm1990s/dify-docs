@@ -34,7 +34,7 @@ Here's how various groups are leveraging Dify:
 1. **Startups**: Rapidly prototype and iterate on AI ideas, accelerating both successes and failures. Numerous teams have used Dify to build MVPs, secure funding, and win customer contracts.
 2. **Established Businesses**: Enhance existing applications with LLM capabilities. Use Dify's RESTful APIs to separate prompts from business logic, while utilizing our management interface to track data, costs, and usage.
 3. **Enterprise AI infrastructure**: Banks and tech companies are deploying Dify as an internal LLM gateway, facilitating GenAI adoption with centralized governance.
-4. **AI Enthusiasts and Learners**: Practice prompt engineering and explore agent technologies with ease. Over 60,000 developers built their first AI app on Dify even before GPTs were introduced.
+4. **AI Enthusiasts and Learners**: Practice prompt engineering and explore agent technologies with ease. Over 60,000 developers built their first AI app on Dify even before GPTs were introduced. Since then, our community has grown significantly, now boasting over 180,000 developers and supporting 59,000+ end users.
 
 Whether you're a startup founder, an enterprise developer, or an AI enthusiast, Dify is designed to meet your needs and accelerate your AI journey!
 
