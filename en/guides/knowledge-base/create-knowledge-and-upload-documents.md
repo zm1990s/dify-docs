@@ -122,9 +122,9 @@ Definition: By generating query embeddings to search the most similar text chunk
 
 <figure><img src="/en/.gitbook/assets/guides/knowledge-base/vector-search.png" alt="" width="563"><figcaption><p>Vector Search Settings</p></figcaption></figure>
 
-TopK: This parameter filters the text snippets that are most similar to the user's question. The system dynamically adjusts the number of snippets based on the context window size of the selected model. The default value is 3, meaning a higher value results in more text segments being retrieved.
+TopK: This parameter filters the text chucks that are most similar to the user's question. The system dynamically adjusts the number of snippets based on the context window size of the selected model. The default value is 3, meaning a higher value results in more text segments being retrieved.
 
-Score Threshold: This parameter sets the similarity threshold for filtering text snippets. Only text snippets that exceed the specified score will be recalled. By default, this setting is off, meaning there will be no filtering of similarity values for recalled text snippets. When enabled, the default value is 0.5. A higher value is likely to yield fewer recalled texts.
+Score Threshold: This parameter sets the similarity threshold for filtering text chucks. Only text chucks that exceed the specified score will be recalled. By default, this setting is off, meaning there will be no filtering of similarity values for recalled text chucks. When enabled, the default value is 0.5. A higher value is likely to yield fewer recalled texts.
 
 Rerank Model: After configuring the API key for the Rerank model on the "Model Provider" page, you can enable the “Rerank Model” in the retrieval settings. The system will then perform semantic reordering of the retrieved document results after hybrid retrieval, optimizing the ranking results. Once the Rerank model is established, the TopK and Score Threshold settings will only take effect during the reranking step.
 
@@ -134,9 +134,9 @@ Definition: Indexing all terms in the document, allowing users to query any term
 
 <figure><img src="/en/.gitbook/assets/guides/knowledge-base/full-text-search.png" alt="" width="563"><figcaption><p>Full-Text Search Settings</p></figcaption></figure>
 
-TopK: This parameter filters the text snippets that are most similar to the user's question. The system dynamically adjusts the number of snippets based on the context window size of the selected model. The default value is 3, meaning a higher value results in more text segments being retrieved.
+TopK: This parameter filters the text chucks that are most similar to the user's question. The system dynamically adjusts the number of snippets based on the context window size of the selected model. The default value is 3, meaning a higher value results in more text segments being retrieved.
 
-Score Threshold: This parameter sets the similarity threshold for filtering text snippets. Only text snippets that exceed the specified score will be recalled. By default, this setting is off, meaning there will be no filtering of similarity values for recalled text snippets. When enabled, the default value is 0.5. A higher value is likely to yield fewer recalled texts.
+Score Threshold: This parameter sets the similarity threshold for filtering text chucks. Only text chucks that exceed the specified score will be recalled. By default, this setting is off, meaning there will be no filtering of similarity values for recalled text chucks. When enabled, the default value is 0.5. A higher value is likely to yield fewer recalled texts.
 
 Rerank Model: After configuring the API key for the Rerank model on the "Model Provider" page, you can enable the “Rerank Model” in the retrieval settings. The system will then perform semantic reordering of the retrieved document results after hybrid retrieval, optimizing the ranking results. Once the Rerank model is established, the TopK and Score Threshold settings will only take effect during the reranking step.
 
@@ -160,8 +160,8 @@ This activates only the keyword search mode. It performs a full match against th
 
 In addition to enabling only semantic search or keyword search, we provide flexible custom weight settings. You can continuously adjust the weights of the two methods to identify the optimal weight ratio that suits your business scenario.
 
-TopK: This parameter filters the text snippets that are most similar to the user's question. The system dynamically adjusts the number of snippets based on the context window size of the selected model. The default value is 3, meaning a higher value results in more text segments being retrieved.
+TopK: This parameter filters the text chucks that are most similar to the user's question. The system dynamically adjusts the number of snippets based on the context window size of the selected model. The default value is 3, meaning a higher value results in more text segments being retrieved.
 
-Score Threshold: This parameter sets the similarity threshold for filtering text snippets. Only text snippets that exceed the specified score will be recalled. By default, this setting is off, meaning there will be no filtering of similarity values for recalled text snippets. When enabled, the default value is 0.5. A higher value is likely to yield fewer recalled texts.
+Score Threshold: This parameter sets the similarity threshold for filtering text chucks. Only text chucks that exceed the specified score will be recalled. By default, this setting is off, meaning there will be no filtering of similarity values for recalled text chucks. When enabled, the default value is 0.5. A higher value is likely to yield fewer recalled texts.
 
 Rerank Model: After configuring the API key for the Rerank model on the "Model Provider" page, you can enable the “Rerank Model” in the retrieval settings. The system will then perform semantic reordering of the retrieved document results after hybrid retrieval, optimizing the ranking results. Once the Rerank model is established, the TopK and Score Threshold settings will only take effect during the reranking step.

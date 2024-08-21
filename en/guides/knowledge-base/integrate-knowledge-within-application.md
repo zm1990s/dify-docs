@@ -54,7 +54,7 @@ In the multi-retrieval recall mode, the retriever scans all knowledge bases link
 
 <figure><img src="../../../img/rerank-flow-chart.png" alt=""><figcaption></figcaption></figure>
 
-This method simultaneously queries all knowledge bases connected in **"Context"**, seeking relevant text snippets across multiple knowledge bases, collecting all content that aligns with the user's question, and ultimately applying the Rerank strategy to identify the most appropriate content to respond to the user. This retrieval approach offers more comprehensive and accurate results by leveraging multiple knowledge bases simultaneously.
+This method simultaneously queries all knowledge bases connected in **"Context"**, seeking relevant text chucks across multiple knowledge bases, collecting all content that aligns with the user's question, and ultimately applying the Rerank strategy to identify the most appropriate content to respond to the user. This retrieval approach offers more comprehensive and accurate results by leveraging multiple knowledge bases simultaneously.
 
 <figure><img src="../../../img/en-rag-multiple.png" alt=""><figcaption></figcaption></figure>
 
