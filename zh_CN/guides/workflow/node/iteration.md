@@ -15,7 +15,7 @@
 <figure><img src="../../../.gitbook/assets/image (207).png" alt=""><figcaption><p>长故事生成器</p></figcaption></figure>
 
 1. 在 **开始节点** 内输入故事标题和大纲
-2. 使用 **LLM 节点=** 基于故事标题和大纲编写内容
+2. 使用 **LLM 节点=** 基于用户输入的故事标题和大纲，让 LLM 开始编写内容
 3. 使用 **参数提取节点** 将 LLM 输出的完整内容转换成数组格式
 4. 通过 **迭代节点** 包裹的 **LLM 节点** 循环多次生成各章节内容
 5. 将 **直接回复** 节点添加在迭代节点内部，实现在每轮迭代生成之后流式输出
@@ -140,6 +140,8 @@
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="334"><figcaption><p>代码节点转换</p></figcaption></figure>
 
+代码示例：
+
 ```python
 def main(articleSections: list):
     data = articleSections
@@ -151,6 +153,8 @@ def main(articleSections: list):
 **使用模板节点转换**
 
 <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt="" width="332"><figcaption><p>模板节点转换</p></figcaption></figure>
+
+代码示例：
 
 ```django
 {{ articleSections | join("\n") }}
