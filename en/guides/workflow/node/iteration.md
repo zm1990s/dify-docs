@@ -15,7 +15,7 @@ The iteration step performs the same steps on each item in a list. To use iterat
 <figure><img src="../../../../img/long-article-iteration-generator.png" alt=""><figcaption><p>Long Story Generator</p></figcaption></figure>
 
 1. Enter the story title and outline in the **Start Node**.
-2. Use a **Generate Subtitles and Outlines Node** to extract the complete content from user input.
+2. Use a **Generate Subtitles and Outlines Node** to use LLM to generate the complete content from user input.
 3. Use a **Extract Subtitles and Outlines Node** to convert the complete content into an array format.
 4. Use an **Iteration Node** to wrap an **LLM Node** and generate content for each chapter through multiple iterations.
 5. Add a **Direct Answer Node** inside the iteration node to achieve streaming output after each iteration.
@@ -141,6 +141,8 @@ The output variable of the iteration node is in array format and cannot be direc
 
 <figure><img src="/en/.gitbook/assets/guides//workflow/node/iteration/image (1) (1) (1) (1).png" alt="" width="334"><figcaption><p>Code Node Conversion</p></figcaption></figure>
 
+CODE Example:
+
 ```python
 def main(articleSections: list):
     data = articleSections
@@ -152,6 +154,8 @@ def main(articleSections: list):
 **Convert Using a Template Node**
 
 <figure><img src="../../../../img/workflow-template-node.png" alt="" width="332"><figcaption><p>Template Node Conversion</p></figcaption></figure>
+
+CODE Example:
 
 ```django
 {{ articleSections | join("/n") }}
