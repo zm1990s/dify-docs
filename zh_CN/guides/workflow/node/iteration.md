@@ -12,12 +12,12 @@
 
 #### **示例1：长文章迭代生成器**
 
-<figure><img src="../../../.gitbook/assets/image (207).png" alt=""><figcaption><p>长故事生成器</p></figcaption></figure>
+<figure><img src="../../../../img/iteration-story-generator.png" alt=""><figcaption><p>长故事生成器</p></figcaption></figure>
 
 1. 在 **开始节点** 内输入故事标题和大纲
-2. 使用 **LLM 节点=** 基于用户输入的故事标题和大纲，让 LLM 开始编写内容
-3. 使用 **参数提取节点** 将 LLM 输出的完整内容转换成数组格式
-4. 通过 **迭代节点** 包裹的 **LLM 节点** 循环多次生成各章节内容
+2. 使用 **子标题和大纲生成节点=** 基于用户输入的故事标题和大纲，让 LLM 开始编写内容
+3. 使用 **子标题和大纲提取节点** 将 LLM 输出的完整内容转换成数组格式
+4. 通过 **迭代节点** 中包裹的 **LLM 节点** 循环多次生成各章节内容
 5. 将 **直接回复** 节点添加在迭代节点内部，实现在每轮迭代生成之后流式输出
 
 **具体配置步骤**
@@ -26,11 +26,11 @@
 
 <figure><img src="../../../.gitbook/assets/image (211).png" alt="" width="375"><figcaption><p>开始节点配置</p></figcaption></figure>
 
-2. 通过 **LLM 节点** 基于故事标题与大纲撰写文本；
+2. 选择 **LLM 节点** 基于用户输入的故事标题和大纲，让 LLM 开始编写文本；
 
 <figure><img src="../../../../img/iteration-llm-node.png" alt="" width="375"><figcaption><p>模板节点</p></figcaption></figure>
 
-1. 通过 **参数提取节点**，将故事文本转换成为数组（Array）结构。提取参数为 `sections` ，参数类型为 `Array[Object]`
+3. 选择 **参数提取节点**，将故事文本转换成为数组（Array）结构。提取参数为 `sections` ，参数类型为 `Array[Object]`
 
 <figure><img src="../../../../img/zh-iteration-extract-node.png" alt="" width="375"><figcaption><p>参数提取</p></figcaption></figure>
 
