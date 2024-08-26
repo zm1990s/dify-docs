@@ -91,6 +91,7 @@ If you are adding a model provider,[this guide](https://github.com/langgenius/di
 
 If you are adding tools used in Agent Assistants and Workflows, [this guide](https://github.com/langgenius/dify/blob/main/api/core/tools/README.md) is for you.
 
+> **Note** : If you want to contribute to a new tool, please make sure you've left your contact information on the tool's 'YAML' file, and submitted a corresponding docs PR in the [Dify-docs](https://github.com/langgenius/dify-docs/tree/main/en/guides/tools/tool-configuration) repository.
 
 To help you quickly navigate where your contribution fits, a brief, annotated outline of Dify's backend & frontend is as follows:
 
