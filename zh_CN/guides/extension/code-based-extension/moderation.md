@@ -29,7 +29,7 @@
 
 ### 2.添加前端组件规范
 
-* `schema.json`，这里定义了前端组件规范，详细见 [.](./ "mention") 。
+* `schema.json`，这里定义了前端组件规范，详细见 [Broken link](broken-reference "mention") 。
 
 ```json
 {
@@ -202,16 +202,9 @@ class CloudServiceModeration(Moderation):
         return False
 ```
 
-<!-- ### 4. 预览前端界面
-
-按照上面步骤执行，运行服务即可见新增的自定义类型。
-
-图片待更新 -->
-
 ### 4. 调试扩展
 
-至此，即可在 Dify 应用编排界面选择自定义的 `Cloud Service` 内容审查扩展类型进行调试。\
-
+至此，即可在 Dify 应用编排界面选择自定义的 `Cloud Service` 内容审查扩展类型进行调试。\\
 
 ## 实现类模版
 
@@ -314,4 +307,4 @@ class CloudServiceModeration(Moderation):
     * `preset_response` 预设回复（仅当 action=direct\_output 返回）
     * `text` 覆写的 LLM 回答内容（仅当 action=overrided 返回）。
 
-\
+\\

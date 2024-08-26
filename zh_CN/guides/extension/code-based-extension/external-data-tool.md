@@ -31,7 +31,7 @@
 
 ### 2. **添加前端组件规范**
 
-* `schema.json`，这里定义了前端组件规范，详细见 [.](./ "mention")
+* `schema.json`，这里定义了前端组件规范，详细见 [Broken link](broken-reference "mention")
 
 ```json
 {
@@ -126,12 +126,6 @@ class WeatherSearch(ExternalDataTool):
         else:
             return f'Weather in {city} is 0°C'
 ```
-
-<!-- ### 4. **预览前端界面**
-
-按照上面步骤执行，运行服务即可见新增的自定义类型。
-
-图片待更新。 -->
 
 ### 4. **调试扩展**
 

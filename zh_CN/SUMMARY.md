@@ -37,6 +37,7 @@
     * [敏感内容审查](guides/application-orchestrate/app-toolkits/moderation-tool.md)
 * [工作流](guides/workflow/README.md)
   * [关键概念](guides/workflow/key-concept.md)
+  * [变量](guides/workflow/variables.md)
   * [节点说明](guides/workflow/node/README.md)
     * [开始](guides/workflow/node/start.md)
     * [结束](guides/workflow/node/end.md)
@@ -133,8 +134,6 @@
     * [重排序](learn-more/extended-reading/retrieval-augment/rerank.md)
     * [召回模式](learn-more/extended-reading/retrieval-augment/retrieval.md)
   * [提示词编排](learn-more/extended-reading/prompt-engineering/README.md)
-    <!-- * [提示词专家模式（已下线）](learn-more/extended-reading/prompt-engineering/prompt-engineering-1/README.md)
-      * [提示词初始模版参考](learn-more/extended-reading/prompt-engineering/prompt-engineering-1/prompt-engineering-template.md) -->
 * [常见问题](learn-more/faq/README.md)
   * [本地部署相关](learn-more/faq/install-faq.md)
   * [LLM 配置与使用](learn-more/faq/llms-use-faq.md)
