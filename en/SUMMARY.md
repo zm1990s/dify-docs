@@ -37,6 +37,7 @@
     * [Moderation Tool](guides/application-orchestrate/app-toolkits/moderation-tool.md)
 * [Workflow](guides/workflow/README.md)
   * [Key Concepts](guides/workflow/key-concepts.md)
+  * [Variables](guides/workflow/variables.md)
   * [Node Description](guides/workflow/node/README.md)
     * [Start](guides/workflow/node/start.md)
     * [End](guides/workflow/node/end.md)
