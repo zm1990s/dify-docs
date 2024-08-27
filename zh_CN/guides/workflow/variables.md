@@ -55,8 +55,6 @@ Chatflow 类型应用提供以下系统变量：
 
 例如你可以将用户在首轮对话时输入的语言偏好存储至会话变量中，LLM 在回答时将参考会话变量中的信息，并在后续的对话中使用指定的语言回复用户。
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>会话变量</p></figcaption></figure>
-
 <figure><img src="../../.gitbook/assets/会话变量.jpeg" alt=""><figcaption><p>会话变量</p></figcaption></figure>
 
 **会话变量**支持以下六种数据类型：
