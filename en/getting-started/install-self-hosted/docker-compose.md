@@ -50,13 +50,7 @@ git clone https://github.com/langgenius/dify.git
     docker-compose up -d
     ```
 
-Execute the the following docker compose command:
-
-```bash
-docker compose up -d
-```
-
-You should see output similar to the following, showing the status and port mappings of all containers:
+After executing the command, you should see output similar to the following, showing the status and port mappings of all containers:
 
 ```bash
 [+] Running 11/11

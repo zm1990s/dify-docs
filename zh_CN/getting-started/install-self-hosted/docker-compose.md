@@ -46,13 +46,7 @@ git clone https://github.com/langgenius/dify.git
     docker-compose up -d
     ```
 
-运行以下 Docker Compose 命令：
-
-```bash
-docker compose up -d
-```
-
-你应该会看到类似以下的输出，显示所有容器的状态和端口映射：
+运行命令后，你应该会看到类似以下的输出，显示所有容器的状态和端口映射：
 
 ```Shell
 [+] Running 11/11
