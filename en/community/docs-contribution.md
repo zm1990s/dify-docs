@@ -21,17 +21,17 @@ Alternatively, you can post the document link on our [Issues page](https://githu
 
 To contribute new documentation to our repository, please follow these steps:
 
-1. Clone the repository
+1. Fork the repository
 
-Use Git to clone the repository to your local:
+Fork the repository to your GitHub account, then clone the repository to your local:
 
 ```bash
-git clone https://github.com/langgenius/dify-docs.git
+git clone https://github.com/<your-github-account>/dify-docs.git
 ```
 
 > Note: You can also use GitHub's online code editor to submit new Markdown files directly in the appropriate directory.
 
-2. Locate the relevant document directory and add your file
+1. Locate the relevant document directory and add your file
 
 For instance, if you're contributing documentation for third-party tools, please add new `.md` files to the `/guides/tools/tool-configuration/` directory.
 

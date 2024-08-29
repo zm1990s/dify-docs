@@ -21,12 +21,12 @@ Dify 帮助文档是一个[开源项目](https://github.com/langgenius/dify-docs
 
 如果你想要提交新的文档至代码仓库中，请遵循以下步骤：
 
-1. 拉取代码仓库
+1. Fork 代码仓库
 
-使用 Git 拉取代码仓库至本地：
+首先将代码仓库 Fork 至你的 Github 账号内，然后使用 Git 拉取代码仓库至本地：
 
 ```bash
-git clone https://github.com/langgenius/dify-docs.git
+git clone https://github.com/<your-github-account>/dify-docs.git
 ```
 
 > 你也可以使用 Github 在线代码编辑器，在合适的目录内提交新的 md 文件。
