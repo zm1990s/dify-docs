@@ -110,6 +110,7 @@
 
 * [Seek Support](community/support.md)
 * [Become a Contributor](community/contribution.md)
+* [Contributing to Dify Documentation](community/docs-contribution.md)
 
 ## Development
 

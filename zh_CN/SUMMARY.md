@@ -110,6 +110,7 @@
 
 * [寻求支持](community/support.md)
 * [成为贡献者](community/contribution.md)
+* [为 Dify 文档做出贡献](community/docs-contribution.md)
 
 ## 研发 <a href="#development" id="development"></a>
 
