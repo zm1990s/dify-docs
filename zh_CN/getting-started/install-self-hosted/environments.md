@@ -189,6 +189,13 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 * AZURE\_BLOB\_ACCOUNT\_KEY: your-account-key 如 'difyai'
 * AZURE\_BLOB\_CONTAINER\_NAME: your-container-name 如 'difyai-container'
 * AZURE\_BLOB\_ACCOUNT\_URL: 'https://\<your\_account\_name>.blob.core.windows.net'
+* ALIYUN\_OSS\_BUCKET_NAME: your-bucket-name 如 'difyai'
+* ALIYUN\_OSS\_ACCESS_KEY: your-access-key 如 'difyai'
+* ALIYUN\_OSS\_SECRET_KEY: your-secret-key 如 'difyai'
+* ALIYUN\_OSS\_ENDPOINT: https://oss-ap-southeast-1-internal.aliyuncs.com # 参考文档: https://help.aliyun.com/zh/oss/user-guide/regions-and-endpoints
+* ALIYUN\_OSS\_REGION: ap-southeast-1 # 参考文档: https://help.aliyun.com/zh/oss/user-guide/regions-and-endpoints
+* ALIYUN\_OSS\_AUTH_VERSION: v4
+* ALIYUN\_OSS\_PATH: your-path # 路径不要使用斜线 "/" 开头，阿里云 OSS 不支持。参考文档: https://api.aliyun.com/troubleshoot?q=0016-00000005
 
 #### 向量数据库配置
 

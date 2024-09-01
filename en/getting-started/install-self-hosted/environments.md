@@ -211,6 +211,13 @@ Used to store uploaded data set files, team/tenant encryption keys, and other fi
 - AZURE_BLOB_ACCOUNT_KEY: your-account-key eg, 'difyai'
 - AZURE_BLOB_CONTAINER_NAME: your-container-name eg, 'difyai-container'
 - AZURE_BLOB_ACCOUNT_URL: 'https://\<your_account_name>.blob.core.windows.net'
+- ALIYUN_OSS_BUCKET_NAME: your-bucket-name eg, 'difyai'
+- ALIYUN_OSS_ACCESS_KEY: your-access-key eg, 'difyai'
+- ALIYUN_OSS_SECRET_KEY: your-secret-key eg, 'difyai'
+- ALIYUN_OSS_ENDPOINT: https://oss-ap-southeast-1-internal.aliyuncs.com # reference: https://www.alibabacloud.com/help/en/oss/user-guide/regions-and-endpoints
+- ALIYUN_OSS_REGION: ap-southeast-1 # reference: https://www.alibabacloud.com/help/en/oss/user-guide/regions-and-endpoints
+- ALIYUN_OSS_AUTH_VERSION: v4
+- ALIYUN_OSS_PATH: your-path # Don't start with '/'. OSS doesn't support leading slash in object names. reference: https://www.alibabacloud.com/help/en/oss/support/0016-00000005
 
 #### Vector Database Configuration
 
