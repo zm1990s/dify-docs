@@ -14,7 +14,7 @@
 
 ### 克隆 Dify 代码仓库
 
-克隆 Dify 源代码至本地。
+克隆 Dify 源代码至本地环境。
 
 ```bash
 git clone https://github.com/langgenius/dify.git
@@ -22,17 +22,35 @@ git clone https://github.com/langgenius/dify.git
 
 ### 启动 Dify
 
-进入 Dify 源代码的 docker 目录，执行一键启动命令：
+1. 进入 Dify 源代码的 Docker 目录
 
-```Shell
-cd dify/docker
-cp .env.example .env
-docker compose up -d
-```
+   ```bash
+   cd dify/docker
+   ```
 
-> 如果您的系统安装了 Docker Compose V2 而不是 V1，请使用 `docker compose` 而不是 `docker-compose`。通过`$ docker compose version`检查这是否为情况。在[这里](https://docs.docker.com/compose/#compose-v2-and-the-new-docker-compose-command)阅读更多信息。
+2. 复制环境配置文件
 
-部署结果示例：
+    ```bash
+   cp .env.example .env
+   ```
+
+3. 启动 Docker 容器
+
+    根据你系统上的 Docker Compose 版本，选择合适的命令来启动容器。你可以通过 `$ docker compose version` 命令检查版本，详细说明请参考 [Docker 官方文档](https://docs.docker.com/compose/#compose-v2-and-the-new-docker-compose-command)：
+
+    - 如果版本是 Docker Compose V2，使用以下命令：
+  
+    ```bash
+    docker compose up -d
+    ```
+
+    - 如果版本是 Docker Compose V1，使用以下命令：
+
+    ```bash
+    docker-compose up -d
+    ```
+
+运行命令后，你应该会看到类似以下的输出，显示所有容器的状态和端口映射：
 
 ```Shell
 [+] Running 11/11
@@ -55,7 +73,7 @@ docker compose up -d
 docker compose ps
 ```
 
-包括 3 个业务服务 `api / worker / web`，以及 6 个基础组件 `weaviate / db / redis / nginx / ssrf_proxy / sandbox` 。
+在这个输出中，你应该可以看到包括 3 个业务服务 `api / worker / web`，以及 6 个基础组件 `weaviate / db / redis / nginx / ssrf_proxy / sandbox` 。
 
 ```bash
 NAME                  IMAGE                              COMMAND                   SERVICE      CREATED              STATUS                        PORTS
@@ -69,6 +87,8 @@ docker-weaviate-1     semitechnologies/weaviate:1.19.0   "/bin/weaviate --hos…
 docker-web-1          langgenius/dify-web:0.6.13         "/bin/sh ./entrypoin…"   web          About a minute ago   Up About a minute             3000/tcp
 docker-worker-1       langgenius/dify-api:0.6.13         "/bin/bash /entrypoi…"   worker       About a minute ago   Up About a minute             5001/tcp
 ```
+
+通过这些步骤，你应该可以成功在本地安装 Dify。
 
 ### 更新 Dify
 
