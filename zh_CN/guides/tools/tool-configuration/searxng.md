@@ -1,6 +1,8 @@
 # SearXNG
 
-SearXNG 是一个免费的互联网元搜索引擎，整合了各种搜索服务的检索结果。用户不会被跟踪，搜索行为也不会被分析。现在你可以直接在 Dify 在 Dify 中使用此工具。
+> 工具作者 @Junytang。
+
+SearXNG 是一个免费的互联网元搜索引擎，整合了各种搜索服务的检索结果。用户不会被跟踪，搜索行为也不会被分析。现在你可以直接在 Dify 中使用此工具。
 
 下文将介绍如何在[社区版](https://docs.dify.ai/v/zh-hans/getting-started/install-self-hosted/docker-compose)使用 Docker 将 SearXNG 集成到 Dify。
 
