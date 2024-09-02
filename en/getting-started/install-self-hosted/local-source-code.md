@@ -2,6 +2,10 @@
 
 ## Prerequisites
 
+> Before installing Dify, make sure your machine meets the following minimum system requirements:
+> - CPU >= 2 Core
+> - RAM >= 4GB
+
 | Operating System           | Software                                                       | Explanation                                                                                                                                                                                                                                                                                                                               |
 | -------------------------- | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | macOS 10.14 or later       | Docker Desktop                                                 | Set the Docker virtual machine (VM) to use a minimum of 2 virtual CPUs (vCPUs) and 8 GB of initial memory. Otherwise, the installation may fail. For more information, please refer to the [Docker Desktop installation guide for Mac](https://docs.docker.com/desktop/mac/install/).                                                     |
