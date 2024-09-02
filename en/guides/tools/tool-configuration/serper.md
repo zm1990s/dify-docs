@@ -4,7 +4,7 @@
 
 Serper is a powerful real-time search engine tool API that provides structured data from Google search engine results. Here are the steps to configure and use the Serper search tool in Dify.
 
-## 1. Apply for Serp API Key
+## 1. Apply for Serper API Key
 
 Please apply for an API Key on the [Serper platform](https://serper.dev/signup).
 

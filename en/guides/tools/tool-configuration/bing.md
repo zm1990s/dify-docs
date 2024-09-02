@@ -6,13 +6,13 @@ The Bing search tool can help you obtain online search results when using LLM ap
 
 ## 1. Apply for Bing API Key
 
-Please apply for an API Key on the [Azure platform](https://platform.openai.com/).
+Please apply for an API Key on the [Azure platform](https://www.microsoft.com/en-us/bing/apis/bing-web-search-api).
 
 ## 2. Fill in the configuration in Dify
 
 In the Dify navigation page, click `Tools > Azure > Authorize` to fill in the API Key.
 
-![](../../../../img/zh-tools-bing.png)
+![](../../../../img/tools-bing.png)
 
 ## 3. Use the tool
 
