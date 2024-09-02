@@ -80,6 +80,7 @@
     * [StableDiffusion](guides/tools/tool-configuration/stable-diffusion.md)
     * [Dall-e](guides/tools/tool-configuration/dall-e.md)
     * [SearXNG](guides/tools/tool-configuration/searxng.md)
+    * [Serper](guides/tools/tool-configuration/serper.md)
 * [发布](guides/application-publishing/README.md)
   * [发布为公开 Web 站点](guides/application-publishing/launch-your-webapp-quickly/README.md)
     * [Web 应用的设置](guides/application-publishing/launch-your-webapp-quickly/web-app-settings.md)
