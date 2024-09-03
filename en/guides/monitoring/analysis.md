@@ -29,3 +29,7 @@ The number of likes per 1,000 messages, reflecting the proportion of users who a
 **Token Usage**
 
 Reflects the daily token expenditure for language model requests by the application, useful for cost control.
+
+**Total Conversations**
+
+Daily AI conversation count. A single conversation may contain multiple message exchanges; messages related to prompt engineering and debugging are not included.
