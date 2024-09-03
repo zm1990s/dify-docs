@@ -6,7 +6,7 @@ DALL-E is an AI image generator developed by OpenAI that generates images based 
 
 ## 1. Apply for OpenAI's API Key
 
-Please apply for an API Key at [OpenAI Platform](https://platform.openai.com/).
+Please apply for an API Key at [OpenAI Platform](https://platform.openai.com/), and ensure that your account has sufficient Credits.
 
 ## 2. Fill in the configuration in Dify
 
