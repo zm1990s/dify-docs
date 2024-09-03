@@ -6,7 +6,7 @@ DALL-E 是由 OpenAI 开发的一种基于文本提示生成图像的工具。Di
 
 ## 1. 申请 OpenAI 的 API Key
 
-请在 [OpenAI Platform](https://platform.openai.com/)申请 API Key。
+请在 [OpenAI Platform](https://platform.openai.com/)申请 API Key，并确保账户内有足够的 Credits。
 
 ## 2. 在 Dify 内填写配置
 
