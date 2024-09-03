@@ -79,6 +79,8 @@
     * [SearchApi](guides/tools/tool-configuration/searchapi.md)
     * [StableDiffusion](guides/tools/tool-configuration/stable-diffusion.md)
     * [Dall-e](guides/tools/tool-configuration/dall-e.md)
+    * [Perplexity Search](guides/tools/tool-configuration/perplexity.md)
+    * [AlphaVantage 股票分析](guides/tools/tool-configuration/alphavantage.md)
     * [SearXNG](guides/tools/tool-configuration/searxng.md)
     * [Serper](guides/tools/tool-configuration/serper.md)
     * [Perplexity Search](guides/tools/tool-configuration/perplexity.md)
