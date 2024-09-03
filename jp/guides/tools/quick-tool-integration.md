@@ -227,21 +227,14 @@ class GoogleProvider(BuiltinToolProviderController):
                     "credentials": credentials,
                 }
             ).invoke(
-                user_id=''
-``` <Translated Text>
-
-```
-"credentials": 資格情報,
-}
-).invoke(
-user_id='',
-tool_paramters={
-"query": "test",
-"result_type": "link"
-},
-)
-except 例外 as e:
-raise ツールプロバイダ資格情報検証エラー(str(e))
+                user_id='',
+                tool_parameters={
+                    "query": "test",
+                    "result_type": "link"
+                },
+            )
+        except Exception as e:
+            raise ToolProviderCredentialValidationError(str(e))
 ```
 
 ### 完成
