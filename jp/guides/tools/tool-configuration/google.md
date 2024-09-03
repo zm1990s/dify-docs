@@ -3,7 +3,7 @@
 > ツール作者 @Dify.
 Google 検索ツールは、LMS アプリを用いてオンライン検索結果を取得するができます。以下示されましたの手順フォローし、Google 検索ツールを設定する。
 
-## 1. SerpのAPIキーの申請する
+## 1. SerpのAPIキーを申請する
 
 [Serp](https://serpapi.com/dashboard) で API キーを申請してください。
 

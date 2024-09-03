@@ -5,7 +5,7 @@ DALL-E は、入力したテキストに基づいて画像を生成するツー�
 
 ## 1. OpenAIのAPIキーを申請する
 
-[OpenAI Platform](https://platform.openai.com/) でAPIキーを申請してください。
+[OpenAI Platform](https://platform.openai.com/) でAPIキーを申請し、アカウントに十分なクレジットがあることを確認してください。
 
 ## 2. Dify内で設定する
 

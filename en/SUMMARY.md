@@ -81,6 +81,7 @@
     * [Dall-e](guides/tools/tool-configuration/dall-e.md)
     * [SearXNG](guides/tools/tool-configuration/searxng.md)
     * [Serper](guides/tools/tool-configuration/serper.md)
+    * [Perplexity](guides/tools/tool-configuration/Perplexity.md)
 * [Publishing](guides/application-publishing/README.md)
   * [Publish as a Single-page Web App](guides/application-publishing/launch-your-webapp-quickly/README.md)
     * [Web App Settings](guides/application-publishing/launch-your-webapp-quickly/web-app-settings.md)
