@@ -83,7 +83,6 @@
     * [AlphaVantage](guides/tools/tool-configuration/alphavantage.md)
     * [SearXNG](guides/tools/tool-configuration/searxng.md)
     * [Serper](guides/tools/tool-configuration/serper.md)
-    * [Perplexity Search](guides/tools/tool-configuration/perplexity.md)
 * [Publishing](guides/application-publishing/README.md)
   * [Publish as a Single-page Web App](guides/application-publishing/launch-your-webapp-quickly/README.md)
     * [Web App Settings](guides/application-publishing/launch-your-webapp-quickly/web-app-settings.md)
