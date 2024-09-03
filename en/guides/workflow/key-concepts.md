@@ -4,7 +4,7 @@
 
 **Nodes are the key components of a workflow**. By connecting nodes with different functionalities, you can execute a series of operations within the workflow.
 
-For core workflow nodes, please refer to [Node Description](node/).
+For core workflow nodes, please refer to [Block Description](node/).
 
 ***
 
