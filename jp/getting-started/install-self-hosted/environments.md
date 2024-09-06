@@ -262,13 +262,13 @@ dockerイメージまたはdocker-composeによる起動時にのみ有効です
 
     Pineconeの環境（例：`us-east4-gcp`）。
 
-*   MILVUS\_HOST
+*   MILVUS\_URI
 
-    Milvusホストの設定。
+    MilvusのURI設定。例：http://localhost:19530 。Zilliz Cloudの場合は、URIとトークンを [パブリックエンドポイントとAPIキー](https://docs.zilliz.com/docs/on-zilliz-cloud-console#free-cluster-details) に調整してください。
 
-*   MILVUS\_PORT
+*   MILVUS\_TOKEN
 
-    Milvusポートの設定。
+    MilvusのTOKEN設定。デフォルトは空。
 
 *   MILVUS\_USER
 
@@ -277,10 +277,6 @@ dockerイメージまたはdocker-composeによる起動時にのみ有効です
 *   MILVUS\_PASSWORD
 
     Milvusパスワードの設定。デフォルトは空。
-
-*   MILVUS\_SECURE
-
-    MilvusがSSL接続を使用するかどうか。デフォルトはfalse。
 
 *   TIDB\_VECTOR\_HOST
 

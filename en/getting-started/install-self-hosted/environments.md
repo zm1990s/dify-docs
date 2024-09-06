@@ -265,13 +265,13 @@ Used to store uploaded data set files, team/tenant encryption keys, and other fi
 
   The environment where Pinecone is located, such as: `us-east4-gcp`
 
-- MILVUS_HOST
+- MILVUS_URI
 
-  Milvus host configuration.
+  Milvus uri configuration. e.g.http://localhost:19530. For Zilliz Cloud, adjust the uri and token to the [Public Endpoint and Api key](https://docs.zilliz.com/docs/on-zilliz-cloud-console#free-cluster-details).
 
-- MILVUS_PORT
+- MILVUS_TOKEN
 
-  Milvus port configuration.
+  Milvus token configuration, default is empty.
 
 - MILVUS_USER
 
@@ -280,10 +280,6 @@ Used to store uploaded data set files, team/tenant encryption keys, and other fi
 - MILVUS_PASSWORD
 
   Milvus password configuration, default is empty.
-
-- MILVUS_SECURE
-
-  Whether Milvus uses SSL connection, default is false.
 
 - MYSCALE_HOST
 
