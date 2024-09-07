@@ -146,21 +146,49 @@ dockerイメージまたはdocker-composeによる起動時にのみ有効です
 * REDIS\_USERNAME：Redisユーザー名。デフォルトは空
 * REDIS\_PASSWORD：Redisパスワード。デフォルトは空。パスワードを設定することを強くお勧めします。
 * REDIS\_USE\_SSL：SSLプロトコルを使用して接続するかどうか。デフォルトはfalse
+* REDIS\_USE\_SENTINEL：Redis Sentinelを使用してRedisサーバーに接続
+* REDIS\_SENTINELS：Sentinelノード、フォーマット：`<sentinel1_ip>:<sentinel1_port>,<sentinel2_ip>:<sentinel2_port>,<sentinel3_ip>:<sentinel3_port>`
+* REDIS\_SENTINEL\_SERVICE\_NAME：Sentinelサービス名、Master Nameと同じ
+* REDIS\_SENTINEL\_USERNAME：Sentinelのユーザー名
+* REDIS\_SENTINEL\_PASSWORD：Sentinelのパスワード
+* REDIS\_SENTINEL\_SOCKET\_TIMEOUT：Sentinelのタイムアウト、デフォルト値：0.1、単位：秒
+
 
 #### Celery 設定
 
 *   CELERY\_BROKER\_URL
 
-    フォーマットは以下の通りです。
+    フォーマットは以下の通りです（直接接続モード）
 
     <pre><code><strong>redis://&#x3C;redis_username>:&#x3C;redis_password>@&#x3C;redis_host>:&#x3C;redis_port>/&#x3C;redis_database>
     </strong><strong>  
     </strong></code></pre>
 
     例：`redis://:difyai123456@redis:6379/1`
+
+    Sentinelモード
+
+    <pre><code><strong>sentinel://&#x3C;sentinel_username>:&#x3C;sentinel_password>@&#x3C;sentinel_host>:&#x3C;sentinel_port>/&#x3C;redis_database>
+    </strong><strong>  
+    </strong></code></pre>
+
+    例：`sentinel://localhost:26379/1;sentinel://localhost:26380/1;sentinel://localhost:26381/1`
+
 *   BROKER\_USE\_SSL
 
     trueに設定した場合、SSLプロトコルを使用して接続します。デフォルトはfalse。
+
+*   CELERY\_USE\_SENTINEL
+
+    trueに設定すると、Sentinelモードが有効になります。デフォルトはfalse
+
+*   CELERY\_SENTINEL\_MASTER\_NAME
+
+    Sentinelのサービス名、すなわちMaster Name
+
+*   CELERY\_SENTINEL\_SOCKET\_TIMEOUT
+
+    Sentinelへの接続タイムアウト、デフォルト値：0.1、単位：秒
 
 #### CORS 設定
 

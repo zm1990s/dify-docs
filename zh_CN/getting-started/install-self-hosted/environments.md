@@ -131,21 +131,48 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 * REDIS\_USERNAME：Redis 用户名，默认为空
 * REDIS\_PASSWORD：Redis 密码，默认为空，强烈建议设置密码。
 * REDIS\_USE\_SSL：是否使用 SSL 协议进行连接，默认 false
+* REDIS\_USE\_SENTINEL：使用 Redis Sentinel 连接 Redis 服务器
+* REDIS\_SENTINELS：哨兵节点，格式：`<sentinel1_ip>:<sentinel1_port>,<sentinel2_ip>:<sentinel2_port>,<sentinel3_ip>:<sentinel3_port>`
+* REDIS\_SENTINEL\_SERVICE\_NAME：哨兵服务名，同 Master Name
+* REDIS\_SENTINEL\_USERNAME：哨兵的用户名
+* REDIS\_SENTINEL\_PASSWORD：哨兵的密码
+* REDIS\_SENTINEL\_SOCKET\_TIMEOUT：哨兵超时时间，默认值：0.1，单位：秒
 
 #### Celery 配置
 
 *   CELERY\_BROKER\_URL
 
-    格式如下
+    格式如下（直连模式）
 
     <pre><code><strong>redis://&#x3C;redis_username>:&#x3C;redis_password>@&#x3C;redis_host>:&#x3C;redis_port>/&#x3C;redis_database>
     </strong><strong>  
     </strong></code></pre>
 
     范例：`redis://:difyai123456@redis:6379/1`
+
+    哨兵模式
+
+    <pre><code><strong>sentinel://&#x3C;sentinel_username>:&#x3C;sentinel_password>@&#x3C;sentinel_host>:&#x3C;sentinel_port>/&#x3C;redis_database>
+    </strong><strong>  
+    </strong></code></pre>
+
+    范例：`sentinel://localhost:26379/1;sentinel://localhost:26380/1;sentinel://localhost:26381/1`
+    
 *   BROKER\_USE\_SSL
 
     若设置为 true，则使用 SSL 协议进行连接，默认 false
+
+*   CELERY\_USE\_SENTINEL
+
+    若设置为 true，则启用哨兵模式，默认 false
+
+*   CELERY_SENTINEL_MASTER_NAME
+
+    哨兵的服务名，即 Master Name
+
+*   CELERY_SENTINEL_SOCKET_TIMEOUT
+
+    哨兵连接超时时间，默认值：0.1，单位：秒
 
 #### CORS 配置
 

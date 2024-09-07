@@ -149,12 +149,19 @@ This Redis configuration is used for caching and for pub/sub during conversation
 - REDIS_USERNAME: Redis username, default is empty
 - REDIS_PASSWORD: Redis password, default is empty. It is strongly recommended to set a password.
 - REDIS_USE_SSL: Whether to use SSL protocol for connection, default is false
+- REDIS_USE_SENTINEL: Use Redis Sentinel to connect to Redis servers
+- REDIS_SENTINELS: Sentinel nodes, format: `<sentinel1_ip>:<sentinel1_port>,<sentinel2_ip>:<sentinel2_port>,<sentinel3_ip>:<sentinel3_port>`
+- REDIS_SENTINEL_SERVICE_NAME: Sentinel service name, same as Master Name
+- REDIS_SENTINEL_USERNAME: Username for Sentinel
+- REDIS_SENTINEL_PASSWORD: Password for Sentinel
+- REDIS_SENTINEL_SOCKET_TIMEOUT: Sentinel timeout, default value: 0.1, unit: seconds
+
 
 #### Celery Configuration
 
 - CELERY_BROKER_URL
 
-  Format as follows:
+  Format as follows(direct connection mode):
 
   ```
   redis://<redis_username>:<redis_password>@<redis_host>:<redis_port>/<redis_database>
@@ -162,9 +169,29 @@ This Redis configuration is used for caching and for pub/sub during conversation
 
   Example: `redis://:difyai123456@redis:6379/1`
 
+  Sentinel mode:
+
+  ```
+  sentinel://<sentinel_username>:<sentinel_password>@<sentinel_host>:<sentinel_port>/<redis_database>
+  ```
+
+  Example: `sentinel://localhost:26379/1;sentinel://localhost:26380/1;sentinel://localhost:26381/1`
+
 - BROKER_USE_SSL
 
   If set to true, use SSL protocol for connection, default is false
+
+- CELERY_USE_SENTINEL
+
+  If set to true, Sentinel mode will be enabled, default is false
+
+- CELERY_SENTINEL_MASTER_NAME
+
+  The service name of Sentinel, i.e., Master Name
+
+- CELERY_SENTINEL_SOCKET_TIMEOUT
+
+  Timeout for connecting to Sentinel, default value: 0.1, unit: seconds
 
 #### CORS Configuration
 
