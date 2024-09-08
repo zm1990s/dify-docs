@@ -23,7 +23,7 @@ If you choose to use an external data source when creating a knowledge base, the
 
 1. Select the document you need to upload from your local files;
 2. Segment and clean the document, and preview the effect;
-3. Choose and configure Index Mode and Retreival Settings;
+3. Choose and configure Index Mode and Retrieval Settings;
 4. Wait for the chunks to be embedded;
 5. Upload completed, now you can use it in your applications 🎉
 
