@@ -204,6 +204,9 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
     *   azure-blob
 
         Azure Blob 存储，若选择此项则需要设置下方 AZURE\_BLOB\_ 开头的配置。
+    *   huawei-obs
+
+        Huawei OBS 存储，若选择此项则需要设置下方 HUAWEI\_OBS\_ 开头的配置。
 *   STORAGE\_LOCAL\_PATH
 
     默认为 storage，即存储在当前目录的 storage 目录下。若使用 docker 或 docker-compose 进行部署，请务必将两个容器中 `/app/api/storage` 目录挂载到同一个本机目录，否则可能会出现文件找不到的报错。
@@ -223,6 +226,10 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 * ALIYUN\_OSS\_REGION: ap-southeast-1 # 参考文档: https://help.aliyun.com/zh/oss/user-guide/regions-and-endpoints
 * ALIYUN\_OSS\_AUTH_VERSION: v4
 * ALIYUN\_OSS\_PATH: your-path # 路径不要使用斜线 "/" 开头，阿里云 OSS 不支持。参考文档: https://api.aliyun.com/troubleshoot?q=0016-00000005
+* HUAWEI\_OBS\_BUCKET\_NAME: your-bucket-name 如 'difyai'
+* HUAWEI\_OBS\_SECRET\_KEY: your-secret-key 如 'difyai'
+* HUAWEI\_OBS\_ACCESS\_KEY: your-access-key 如 'difyai'
+* HUAWEI\_OBS\_SERVER: your-server-url # 参考文档: https://support.huaweicloud.com/sdk-python-devg-obs/obs_22_0500.html
 
 #### 向量数据库配置
 

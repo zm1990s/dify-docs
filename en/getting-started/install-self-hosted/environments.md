@@ -225,6 +225,10 @@ Used to store uploaded data set files, team/tenant encryption keys, and other fi
 
     Azure Blob object storage, if this option is selected, the following AZURE_BLOB\_ prefixed configurations need to be set.
 
+  - huawei-obs
+
+    Huawei OBS object storage, if this option is selected, the following HUAWEI_OBS\_ prefixed configurations need to be set.
+
 - STORAGE_LOCAL_PATH
 
   Default is storage, that is, it is stored in the storage directory of the current directory.
@@ -247,6 +251,10 @@ Used to store uploaded data set files, team/tenant encryption keys, and other fi
 - ALIYUN_OSS_REGION: ap-southeast-1 # reference: https://www.alibabacloud.com/help/en/oss/user-guide/regions-and-endpoints
 - ALIYUN_OSS_AUTH_VERSION: v4
 - ALIYUN_OSS_PATH: your-path # Don't start with '/'. OSS doesn't support leading slash in object names. reference: https://www.alibabacloud.com/help/en/oss/support/0016-00000005
+- HUAWEI_OBS_BUCKET_NAME: your-bucket-name eg, 'difyai'
+- HUAWEI_OBS_SECRET_KEY: your-secret-key eg, 'difyai'
+- HUAWEI_OBS_ACCESS_KEY: your-access-key eg, 'difyai'
+- HUAWEI_OBS_SERVER: your-server-url # reference: https://support.huaweicloud.com/sdk-python-devg-obs/obs_22_0500.html
 
 #### Vector Database Configuration
 
