@@ -4,25 +4,25 @@ Chatflow 和 Workflow 类型应用内的节点均可以通过可视化拖拉拽�
 
 <figure><img src="../../.gitbook/assets/image (272).png" alt=""><figcaption><p>上图为串行节点流、下图为并行节点流</p></figcaption></figure>
 
-### 串行设计
+## 串行设计
 
 该结构要求节点按照预设顺序依次执行，每个节点需等待前一个节点完成并输出结果后才能开始工作，有助于**确保任务按照逻辑顺序执行。**
 
 例如，在一个采用串行结构设计的“小说生成” AI 应用内，用户输入小说风格、节奏和角色后，LLM 按照顺序补全小说大纲、小说剧情和结尾；每个节点都基于前一个节点的输出结果展开工作，确保小说的风格一致性。
 
-#### 设计串行结构
+### 设计串行结构
 
 点击两个节点中间连线的 + 号即可在中间添加一个串行节点；按照顺序将节点依次串线连接，最后将线收拢至**“结束”节点**（Workflow）/ **“直接回复”节点**（Chatflow）完成设计。
 
 <figure><img src="../../.gitbook/assets/image (273).png" alt=""><figcaption><p>并行结构</p></figcaption></figure>
 
-#### 查看串行结构应用日志
+### 查看串行结构应用日志
 
 串行结构应用内的日志将按照顺序展示各个节点的运行情况。点击对话框右上角的 「查看日志-追踪」，查看工作流完整运行过程各节点的输入 / 输出、Token 消耗、运行时长等。
 
 <figure><img src="../../.gitbook/assets/image (275).png" alt=""><figcaption><p>并行结构应用日志</p></figcaption></figure>
 
-### 并行设计
+## 并行设计
 
 该设计模式允许多个节点在同一时间内共同执行，前置节点可以同时触发位于并行结构内的多个节点。并行结构内的节点不存在依赖关系，能够同时执行任务，更好地提升**节点的任务执行效率。**
 
@@ -30,7 +30,7 @@ Chatflow 和 Workflow 类型应用内的节点均可以通过可视化拖拉拽�
 
 <figure><img src="../../.gitbook/assets/image (271).png" alt=""><figcaption><p>并行设计</p></figcaption></figure>
 
-#### 新建并行结构
+### 新建并行结构
 
 你可以参考以下四种方式，通过新建节点或拖拽的方式创建并行结构。
 
@@ -68,7 +68,7 @@ Chatflow 和 Workflow 类型应用内的节点均可以通过可视化拖拉拽�
 
 <figure><img src="../../.gitbook/assets/image (280).png" alt=""><figcaption><p>Chatflow 应用中的并行结构</p></figcaption></figure>
 
-#### 设计并行结构应用
+### 设计并行结构应用
 
 下文将展示四种常见的并行节点设计思路。
 
@@ -100,7 +100,7 @@ Chatflow 和 Workflow 类型应用内的节点均可以通过可视化拖拉拽�
 
 <figure><img src="../../.gitbook/assets/image (286).png" alt=""><figcaption><p>迭代分支+并行</p></figcaption></figure>
 
-#### 查看并行结构应用日志
+### 查看并行结构应用日志
 
 包含并行结构的应用的运行日志支持以树状结构进行展示，你可以折叠并行节点组以更好地查看各个节点的运行日志。
 
