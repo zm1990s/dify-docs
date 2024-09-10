@@ -229,6 +229,10 @@ Used to store uploaded data set files, team/tenant encryption keys, and other fi
 
     Huawei OBS object storage, if this option is selected, the following HUAWEI_OBS\_ prefixed configurations need to be set.
 
+  - volcengine-tos
+
+    Volcengine TOS object storage, if this option is selected, the following VOLCENGINE_TOS\_ prefixed configurations need to be set.
+
 - STORAGE_LOCAL_PATH
 
   Default is storage, that is, it is stored in the storage directory of the current directory.
@@ -255,6 +259,11 @@ Used to store uploaded data set files, team/tenant encryption keys, and other fi
 - HUAWEI_OBS_SECRET_KEY: your-secret-key eg, 'difyai'
 - HUAWEI_OBS_ACCESS_KEY: your-access-key eg, 'difyai'
 - HUAWEI_OBS_SERVER: your-server-url # reference: https://support.huaweicloud.com/sdk-python-devg-obs/obs_22_0500.html
+- VOLCENGINE_TOS_BUCKET_NAME: your-bucket-name eg, 'difyai'
+- VOLCENGINE_TOS_SECRET_KEY: your-secret-key eg, 'difyai'
+- VOLCENGINE_TOS_ACCESS_KEY: your-access-key eg, 'difyai'
+- VOLCENGINE_TOS_REGION: your-region eg, 'cn-guangzhou' # reference: https://www.volcengine.com/docs/6349/107356
+- VOLCENGINE_TOS_ENDPOINT: your-endpoint eg, 'tos-cn-guangzhou.volces.com' # reference: https://www.volcengine.com/docs/6349/107356
 
 #### Vector Database Configuration
 
