@@ -10,7 +10,7 @@ In this pattern, nodes execute sequentially in a predefined order. Each node ini
 
 Consider a "Novel Generation" Workflow App implementing serial pattern: after the user inputs the novel style, rhythm, and characters, the LLM completes the novel outline, plot, and ending in sequence. Each node works based on the output of the previous node, ensuring consistency in the novel's style.
 
-### Designing a Serial Structure
+### Designing Serial Structure
 
 1. Click the `+` icon between two nodes to insert a new serial node.
 2. Sequentially link the nodes.
@@ -24,13 +24,13 @@ In a serial structure application, logs display node operations sequentially. Cl
 
 ![](../../../img/viewing-serial-structure-app-logs.png)
 
-## Parallel Node Design Pattern
+## Designing Parallel Structure
 
 This architectural pattern enables concurrent execution of multiple nodes. The preceding node can simultaneously trigger multiple nodes within the parallel structure. These parallel nodes operate independently, executing tasks concurrently and significantly enhancing overall workflow efficiency.
 
 Consider a translation workflow application implementing parallel architecture: Once the user inputs the source text, triggering the workflow, all nodes within the parallel structure simultaneously receive instructions from the preceding node. This allows for concurrent translation into multiple languages, significantly reducing overall processing time.
 
-### Parallel Node Design Pattern
+### Parallel Structure Design Pattern
 
 The following four methods demonstrate how to create a parallel structure through node addition or visual manipulation:
 
