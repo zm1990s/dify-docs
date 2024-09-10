@@ -52,6 +52,7 @@
     * [パラメータ抽出](guides/workflow/node/parameter-extractor.md)
     * [HTTPリクエスト](guides/workflow/node/http-request.md)
     * [ツール](guides/workflow/node/tools.md)
+  * [オーケストレートノード](guides/workflow/orchestrate-node.md)
   * [プレビューとデバッグ](guides/workflow/debug-and-preview/README.md)
     * [プレビューと実行](guides/workflow/debug-and-preview/yu-lan-yu-yun-hang.md)
     * [ステップ実行](guides/workflow/debug-and-preview/step-run.md)
