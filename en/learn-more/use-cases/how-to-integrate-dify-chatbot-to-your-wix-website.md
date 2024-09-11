@@ -36,7 +36,7 @@ Assuming you've already created a [Dify AI application](https://docs.dify.ai/v/z
 Here's an example of an iFrame code snippet for embedding a Dify Chatbot:
 
 ```bash
-<iframe src="https://udify.app/chatbot/1yS3gohroW1sKyLc" style="width: 100%; height: 100%; min-height: 700px" frameborder="0" allow="microphone"></iframe>
+<iframe src="https://udify.app/chatbot/ez1pf83HVV3JgWO4" style="width: 100%; height: 100%; min-height: 700px" frameborder="0" allow="microphone"></iframe>
 ```
 
 ![Insert Dify iFrame Code](../../../img/best-practice-insert-dify-iframe-code.png)
@@ -52,13 +52,13 @@ You can adjust the Dify Chatbot's button style, position, and other settings.
 Modify the `style` attribute in the iFrame code to customize the Chatbot button's appearance. For example:
 
 ```bash
-<iframe src="https://udify.app/chatbot/1yS3gohroW1sKyLc" style="width: 100%; height: 100%; min-height: 700px" frameborder="0" allow="microphone"></iframe>
+<iframe src="https://udify.app/chatbot/ez1pf83HVV3JgWO4" style="width: 100%; height: 100%; min-height: 700px" frameborder="0" allow="microphone"></iframe>
 
 # Add a 2-pixel wide solid black border: border: 2px solid #000
 
 →
 
-<iframe src="https://udify.app/chatbot/1yS3gohroW1sKyLc" style="width: 80%; height: 80%; min-height: 500px; border: 2px solid #000;" frameborder="0" allow="microphone"></iframe>
+<iframe src="https://udify.app/chatbot/ez1pf83HVV3JgWO4" style="width: 80%; height: 80%; min-height: 500px; border: 2px solid #000;" frameborder="0" allow="microphone"></iframe>
 ```
 
 This code adds a 2-pixel wide solid black border to the chatbot interface.
@@ -68,13 +68,13 @@ This code adds a 2-pixel wide solid black border to the chatbot interface.
 Adjust the button's position by modifying the `position` value in the `style` attribute. For example:
 
 ```bash
-<iframe src="https://udify.app/chatbot/1yS3gohroW1sKyLc" style="width: 100%; height: 100%; min-height: 700px" frameborder="0" allow="microphone"></iframe>
+<iframe src="https://udify.app/chatbot/ez1pf83HVV3JgWO4" style="width: 100%; height: 100%; min-height: 700px" frameborder="0" allow="microphone"></iframe>
 
 # Fix the Chatbot to the bottom right corner of the webpage, 20 pixels from the bottom and right edges.
 
 →
 
-<iframe src="https://udify.app/chatbot/1yS3gohroW1sKyLc" style="width: 100%; height: 100%; min-height: 700px; position: fixed; bottom: 20px; right: 20px;" frameborder="0" allow="microphone"></iframe>
+<iframe src="https://udify.app/chatbot/ez1pf83HVV3JgWO4" style="width: 100%; height: 100%; min-height: 700px; position: fixed; bottom: 20px; right: 20px;" frameborder="0" allow="microphone"></iframe>
 ```
 
 This code fixes the Chatbot to the bottom right corner of the webpage, 20 pixels from the bottom and right edges.
