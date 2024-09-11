@@ -50,7 +50,7 @@ git clone https://github.com/langgenius/dify.git
     docker-compose up -d
     ```
 
-运行命令后，你应该会看到类似以下的输出，显示所有容器的状态和端口映射：
+上記のコマンドを実行すると、すべてのコンテナの状態とポートマッピングを表示する以下のような出力が表示されるはずです：
 
 ```Shell
 [+] Running 11/11
@@ -86,7 +86,7 @@ docker-web-1        langgenius/dify-web:0.3.2          "/entrypoint.sh"         
 docker-worker-1     langgenius/dify-api:0.3.2          "/entrypoint.sh"         worker              4 seconds ago       Up 2 seconds        80/tcp, 5001/tcp
 ```
 
-これらの手順を通うしで、Difyをローカルでインストールでくます。
+これらの手順を通して、Difyをローカルでインストールできます。
 
 ### Difyの更新
 
