@@ -9,6 +9,12 @@ JSON Schema 是一种用于描述 JSON 数据结构的规范，开发者可以�
 
 > 如需了解更多关于 OpenAI 系列模型的结构化输出能力，请参考 [Structured Outputs](https://platform.openai.com/docs/guides/structured-outputs/introduction)。
 
+## Structured-outputs 用法
+
+1. 将 LLM 连接到系统中的工具、函数、数据等；在函数定义中设置 `strict: true`，当打开它时，结构化输出（Structured-outputs）功能可确保 LLM 为函数调用生成的参数与你在函数定义中提供的 JSON 架构完全匹配。
+
+2. LLM 回答用户时，按照 JSON Scheema 中的定义，以结构化内容格式输出。
+
 ## 在 Dify 中开启 JSON Schema
 
 将应用中的 LLM 切换至上述支持 JSON Schema 输出的模型，然后在设置表单开启 `JSON Schema` 并填写 JSON Schema 模板；同时开启 `response_format` 栏并切换至 `json_schema` 格式。
