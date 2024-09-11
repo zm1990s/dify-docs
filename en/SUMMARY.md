@@ -139,6 +139,7 @@
     * [Hybrid Search](learn-more/extended-reading/retrieval-augment/hybrid-search.md)
     * [Re-ranking](learn-more/extended-reading/retrieval-augment/rerank.md)
     * [Retrieval Modes](learn-more/extended-reading/retrieval-augment/retrieval.md)
+  * [How to Use JSON Schema Output in Dify?](learn-more/how-to-use-json-schema-in-dify.md)
 * [FAQ](learn-more/faq/README.md)
   * [Self-Host Related](learn-more/faq/install-faq.md)
   * [LLM Configuration and Usage](learn-more/faq/use-llms-faq.md)
