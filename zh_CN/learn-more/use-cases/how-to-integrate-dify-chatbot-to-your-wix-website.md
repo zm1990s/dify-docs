@@ -17,7 +17,7 @@ Wix 是一个非常流行的网站创建平台，它允许用户通过拖拽的�
   
   ![](../../../img/best-practice-wix-2.png)
 
-- 复制显示的 iFrame 代码，例如：
+- 选择合适的样式并复制显示的 iFrame 代码，例如：
 
 ![](../../../img/best-practice-wix-3.png)
 

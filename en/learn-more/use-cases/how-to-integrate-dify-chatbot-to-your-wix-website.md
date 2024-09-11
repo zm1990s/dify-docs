@@ -17,7 +17,7 @@ Assuming you've already created a [Dify AI application](https://docs.dify.ai/v/z
    
    ![Embed Into Site Option](../../../img/best-practice-wix-2.png)
 
-5. Copy the displayed iFrame code. For example:
+5. Select an appropriate style and copy the displayed iFrame code. For example:
 
    ![iFrame Code Example](../../../img/best-practice-wix-3.png)
 
