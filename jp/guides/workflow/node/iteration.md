@@ -56,7 +56,7 @@ LLM ノード内で入力変数 `GenerateOverallOutline/output` と `Iteration/i
 
 5. 反復ノード内に **直接応答ノード** を設定して、各反復生成の後にストリーム出力を実現。
 
-<figure><img src="../../../../img/workflow-configure-anwer-node.png" alt="" width="375"><figcaption><p>Answer ノードの設定</p></figcaption></figure>
+<figure><img src="../../../../img/workflow-configure-answer-node.png" alt="" width="375"><figcaption><p>Answer ノードの設定</p></figcaption></figure>
 
 6. 完全なデバッグとプレビュー
 

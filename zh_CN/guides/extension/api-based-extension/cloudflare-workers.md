@@ -26,13 +26,13 @@ TOKEN = "bananaiscool"
 这个 API 扩展会返回一个随机的 Breaking Bad 名言。你可以在 `src/index.ts` 中修改这个 API 扩展的逻辑。这个例子展示了与第三方 API 进行交互的方式。
 
 ```typescript
-// ⬇️ impliment your logic here ⬇️
+// ⬇️ implement your logic here ⬇️
 // point === "app.external_data_tool.query"
 // https://api.breakingbadquotes.xyz/v1/quotes
 const count = params?.inputs?.count ?? 1;
 const url = `https://api.breakingbadquotes.xyz/v1/quotes/${count}`;
 const result = await fetch(url).then(res => res.text())
-// ⬆️ impliment your logic here ⬆️
+// ⬆️ implement your logic here ⬆️
 ```
 
 这个仓库简化了除了业务逻辑之外所有的配置，你可以直接使用 `npm` 命令来部署你的 API 扩展。

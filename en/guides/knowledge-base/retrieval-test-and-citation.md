@@ -31,4 +31,4 @@ When testing the knowledge base effect within the application, you can go to **W
 
 After enabling the feature, when the large language model responds to a question by citing content from the knowledge base, you can view specific citation paragraph information below the response content, including **original segment text, segment number, matching degree**, etc. Clicking **Jump to Knowledge Base** above the cited segment allows quick access to the segment list in the knowledge base, facilitating developers in debugging and editing.
 
-<figure><img src="../../../img/view-citation-informatio.png" alt=""><figcaption><p>View Citation Information in Response Content</p></figcaption></figure>
+<figure><img src="../../../img/view-citation-information.png" alt=""><figcaption><p>View Citation Information in Response Content</p></figcaption></figure>

@@ -26,13 +26,13 @@ TOKEN = "bananaiscool"
 この API 拡張は、ランダムなブレイキング・バッドの名言を返します。`src/index.ts` 内でこの API 拡張のロジックを変更することができます。この例は、サードパーティの API とやり取りする方法を示しています。
 
 ```typescript
-// ⬇️ impliment your logic here ⬇️
+// ⬇️ Implement your logic here ⬇️
 // point === "app.external_data_tool.query"
 // https://api.breakingbadquotes.xyz/v1/quotes
 const count = params?.inputs?.count ?? 1;
 const url = `https://api.breakingbadquotes.xyz/v1/quotes/${count}`;
 const result = await fetch(url).then(res => res.text())
-// ⬆️ impliment your logic here ⬆️
+// ⬆️ implement your logic here ⬆️
 ```
 
 このレポジトリは、ビジネスロジック以外のすべての設定を簡素化しています。`npm` コマンドを使用して API 拡張をデプロイすることができます。

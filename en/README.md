@@ -21,7 +21,7 @@ As an open-source platform, Dify is co-created by a dedicated professional team 
 
 With Dify, you can:
 
-- Deploy capabilities simliar to Assistants API and GPTs using any model
+- Deploy capabilities similar to Assistants API and GPTs using any model
 - Maintain full control over your data with flexible security options
 - Leverage an intuitive interface for easy management and deployment
 
