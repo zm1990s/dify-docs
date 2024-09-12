@@ -109,11 +109,30 @@ docker compose up -d
 
 ### 访问 Dify
 
-在浏览器中输入 `http://localhost` 访问 Dify。
+你可以先前往管理员初始化页面设置设置管理员账户：
+
+```bash
+# 本地环境
+http://localhost/install
+
+# 服务器环境
+
+http://your_server_ip/install
+```
+
+Dify 主页面：
+
+```bash
+# 本地环境
+http://localhost
+
+# 服务器环境
+http://your_server_ip
+```
 
 ### 自定义配置
 
-编辑 `.env` 文件中的环境变量值。然后，重新启动 Dify：
+编辑 `.env` 文件中的环境变量值。然后重新启动 Dify：
 
 ```bash
 docker compose down

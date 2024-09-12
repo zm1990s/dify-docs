@@ -113,7 +113,25 @@ docker compose up -d
 
 ### Access Dify
 
-Finally, access [http://localhost/install](http://localhost/install) to use the deployed Dify.
+Access administrator initialization page to set up the admin account:
+
+```bash
+# Local environment
+http://localhost/install
+
+# Server environment
+http://your_server_ip/install
+```
+
+Dify web interface address:
+
+```bash
+# Local environment
+http://localhost
+
+# Server environment
+http://your_server_ip
+```
 
 ### Customize Dify
 
