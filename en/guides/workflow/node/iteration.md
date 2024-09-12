@@ -130,8 +130,7 @@ A list is a specific data type where elements are separated by commas and enclos
 
 **Return Using the Parameter Extraction Node**
 
-<figure><img src="../../../../img/workflow-extract-subtitles-and-outlines.png" alt="" width="375"><figcaption><p>Parameter Extraction</p></figcaption></figure>
-
+<figure><img src="../../../../img/workflow-parameter-extraction-node.png" alt="" width="375"><figcaption><p>Parameter Extraction</p></figcaption></figure>
 
 ### How to Convert an Array to Text
 
@@ -139,7 +138,7 @@ The output variable of the iteration node is in array format and cannot be direc
 
 **Convert Using a Code Node**
 
-<figure><img src="/en/.gitbook/assets/guides//workflow/node/iteration/image (1) (1) (1) (1).png" alt="" width="334"><figcaption><p>Code Node Conversion</p></figcaption></figure>
+<figure><img src="../../../../img/iteration-code-node-convert.png" alt="" width="334"><figcaption><p>Code Node Conversion</p></figcaption></figure>
 
 CODE Example:
 
