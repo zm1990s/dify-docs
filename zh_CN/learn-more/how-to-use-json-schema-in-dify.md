@@ -1,8 +1,8 @@
-# 如何在 Dify 中使用 JSON Scheema 输出功能？
+# 如何在 Dify 中使用 JSON Schema 输出功能？
 
 JSON Schema 是一种用于描述 JSON 数据结构的规范，开发者可以通过定义 JSON Schema 结构，指定 LLM 输出严格遵循定义内的数据或内容，例如生成清晰的文档或代码结构。
 
-## 支持 JSON Scheema 功能的模型
+## 支持 JSON Schema 功能的模型
 
 - `gpt-4o-mini-2024-07-18` and later
 - `gpt-4o-2024-08-06` and later
@@ -13,7 +13,7 @@ JSON Schema 是一种用于描述 JSON 数据结构的规范，开发者可以�
 
 1. 将 LLM 连接到系统中的工具、函数、数据等；在函数定义中设置 `strict: true`，当打开它时，结构化输出（Structured-outputs）功能可确保 LLM 为函数调用生成的参数与你在函数定义中提供的 JSON 架构完全匹配。
 
-2. LLM 回答用户时，按照 JSON Scheema 中的定义，以结构化内容格式输出。
+2. LLM 回答用户时，按照 JSON Schema 中的定义，以结构化内容格式输出。
 
 ## 在 Dify 中开启 JSON Schema
 
