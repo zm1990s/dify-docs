@@ -56,7 +56,7 @@ Built-in variables for iteration: `items[object]` and `index[number]`.
 
 1. Configure a **Direct Reply Node** inside the iteration node to achieve streaming output after each iteration.
 
-<figure><img src="../../../../img/workflow-configure-anwer-node.png" alt="" width="375"><figcaption><p>Configure Answer Node</p></figcaption></figure>
+<figure><img src="../../../../img/workflow-configure-answer-node.png" alt="" width="375"><figcaption><p>Configure Answer Node</p></figcaption></figure>
 
 6. Complete debugging and preview.
 
