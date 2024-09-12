@@ -60,11 +60,11 @@ Built-in variables for iteration: `items[object]` and `index[number]`.
 
 6. Complete debugging and preview.
 
-<figure><img src="/en/.gitbook/assets/guides//workflow/node/iteration/image (222).png" alt=""><figcaption><p>Generate by Iterating Through Story Chapters</p></figcaption></figure>
+<figure><img src="../../../../img/iteration-node-iteration-through-story-chapters.png" alt=""><figcaption><p>Generate by Iterating Through Story Chapters</p></figcaption></figure>
 
 #### **Example 2: Long Article Iteration Generator (Another Arrangement)**
 
-<figure><img src="../../../../zh_CN/.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../img/iteration-node-iteration-long-article-iteration-generator.png" alt=""><figcaption></figcaption></figure>
 
 * Enter the story title and outline in the **Start Node**.
 * Use an **LLM Node** to generate subheadings and corresponding content for the article.
