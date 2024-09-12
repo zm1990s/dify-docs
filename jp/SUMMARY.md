@@ -141,6 +141,7 @@
     * [リランク](learn-more/extended-reading/retrieval-augment/rerank.md)
     * [リトリーバルモード](learn-more/extended-reading/retrieval-augment/retrieval.md)
   * [プロンプトエンジニアリング](learn-more/extended-reading/prompt-engineering/README.md)
+  * [DifyでJSONスキーマ出力を使用する方法](learn-more/how-to-use-json-schema-in-dify.md)
     <!-- * [プロンプト専門モード（廃止）](learn-more/extended-reading/prompt-engineering/prompt-engineering-1/README.md)
       * [プロンプト初期テンプレート参考](learn-more/extended-reading/prompt-engineering/prompt-engineering-1/prompt-engineering-template.md) -->
 * [FAQ](learn-more/faq/README.md)
