@@ -471,7 +471,7 @@ API Url，用于**给前端**展示 Service API Base Url，传空则为同域。
 
 > ⚠️ 修改于 0.3.8，于 0.4.9 废弃，替代为 `APP_API_URL` 和 `APP_WEB_URL`。
 
-WebApp Url，用于声明**前端** API 后端地址，传空则为同域。范例：`https://app.dify.ai`
+WebApp Url，用于显示文件预览或下载 URL 到前端作为多模型输入，传空则为同域。范例：`https://udify.app/`
 
 #### Session 配置
 

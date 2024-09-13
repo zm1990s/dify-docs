@@ -20,7 +20,7 @@ The WebApp API backend URL, used to specify the backend URL for the front-end AP
 
 #### APP_WEB_URL
 
-The WebApp URL, used to display WebAPP API Base URL in the front-end. If left empty, it defaults to the same domain as the application. Example: `https://api.app.dify.ai`
+The WebApp URL, used to display File preview or download Url to the front-end or as Multi-model inputs; If left empty, it defaults to the same domain as the application. Example: `https://udify.app/`
 
 #### FILES_URL
 
@@ -506,7 +506,7 @@ API URL, used to display Service API Base URL to the front-end. If empty, it is 
 
 > ⚠️ Modified in 0.3.8, will be deprecated in 0.4.9, replaced by `APP_API_URL` and `APP_WEB_URL`.
 
-WebApp Url, used to display WebAPP API Base Url to the front-end. If empty, it is the same domain. Example: `https://api.app.dify.ai`
+WebApp Url, used to display WebAPP API Base Url to the front-end. If empty, it is the same domain. Example: `https://udify.app/`
 
 #### Session Configuration
 
