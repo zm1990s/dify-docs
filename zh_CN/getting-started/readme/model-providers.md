@@ -254,7 +254,15 @@ Dify 为以下模型提供商提供原生支持：
             <td align="center"></td>
             <td align="center"></td>
             <td align="center"></td>
-        </tr>        
+        </tr>
+        <tr>
+            <td align="center">Azure AI Studio</td>
+            <td align="center">✔️</td>
+            <td align="center"></td>
+            <td align="center">✔️</td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
         <tr>
             <td align="center">deepseek</td>
             <td align="center">✔️(🛠️)</td>

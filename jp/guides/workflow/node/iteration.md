@@ -56,15 +56,15 @@ LLM ノード内で入力変数 `GenerateOverallOutline/output` と `Iteration/i
 
 5. 反復ノード内に **直接応答ノード** を設定して、各反復生成の後にストリーム出力を実現。
 
-<figure><img src="../../../../img/workflow-configure-anwer-node.png" alt="" width="375"><figcaption><p>Answer ノードの設定</p></figcaption></figure>
+<figure><img src="../../../../img/workflow-configure-answer-node.png" alt="" width="375"><figcaption><p>Answer ノードの設定</p></figcaption></figure>
 
 6. 完全なデバッグとプレビュー
 
-<figure><img src="/en/.gitbook/assets/guides//workflow/node/iteration/image (222).png" alt=""><figcaption><p>ストーリー章ごとの多段反復生成</p></figcaption></figure>
+<figure><img src="../../../../img/iteration-node-iteration-through-story-chapters.png" alt=""><figcaption><p>ストーリー章ごとの多段反復生成</p></figcaption></figure>
 
 #### **例2：長文反復生成器（別の編成方法）**
 
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../img/iteration-node-iteration-long-article-iteration-generator.png" alt=""><figcaption></figcaption></figure>
 
 * **開始ノード** にタイトルとアウトラインを入力
 * **LLM ノード** を使用して小見出しと対応する内容を生成
@@ -126,11 +126,11 @@ LLM ノード内で入力変数 `GenerateOverallOutline/output` と `Iteration/i
 
 **CODE ノードを使用して返す**
 
-<figure><img src="../../../.gitbook/assets/image (213).png" alt="" width="375"><figcaption><p>code ノード出力 array</p></figcaption></figure>
+<figure><img src="../../../../img/workflow-extract-subtitles-and-outlines.png" alt="" width="375"><figcaption><p>code ノード出力 array</p></figcaption></figure>
 
 **パラメータ抽出ノードを使用して返す**
 
-<figure><img src="../../../.gitbook/assets/image (214).png" alt="" width="375"><figcaption><p>パラメータ抽出ノード出力 array</p></figcaption></figure>
+<figure><img src="../../../../img/workflow-parameter-extraction-node.png" alt="" width="375"><figcaption><p>パラメータ抽出ノード出力 array</p></figcaption></figure>
 
 ### 配列をテキストに変換する方法
 
@@ -138,7 +138,7 @@ LLM ノード内で入力変数 `GenerateOverallOutline/output` と `Iteration/i
 
 **コードノードを使用した変換**
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="334"><figcaption><p>コードノード変換</p></figcaption></figure>
+<figure><img src="../../../../img/iteration-code-node-convert.png" alt="" width="334"><figcaption><p>コードノード変換</p></figcaption></figure>
 
 ```python
 def main(articleSections: list):
@@ -150,7 +150,7 @@ def main(articleSections: list):
 
 **テンプレートノードを使用した変換**
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt="" width="332"><figcaption><p>テンプレートノード変換</p></figcaption></figure>
+<figure><img src="../../../../img/workflow-template-node.png" alt="" width="332"><figcaption><p>テンプレートノード変換</p></figcaption></figure>
 
 ```django
 {{ articleSections | join("\n") }}

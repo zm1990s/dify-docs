@@ -122,14 +122,7 @@ If the content in the knowledge base is complex and cannot be matched by simple 
 
 Here's how the knowledge base retrieval method affects Multi-path Retrieval:
 
-| **Knowledge Base Index Mode** | **Knowledge Base Retrieval Setting** | **Embedding Model** | **Multi-path Retrieval Page Prompt** | **Reason** |
-| --- | --- | --- | --- | --- |
-| All Economic | Inverted index | None | Unable to use weight configuration, allows enabling Rerank model | - |
-| All High Quality | 1. All knowledge bases use vector retrieval | Same Embedding model | Default "Weight Score", semantic value is 1 | Rerank settings match knowledge base retrieval settings |
-| All High Quality | 2. All knowledge bases use full-text retrieval | Same Embedding model | Default "Weight Score", keyword value is 1 | Rerank settings match knowledge base retrieval settings |
-| All High Quality | 3. Mixed | Same Embedding model | Default custom configuration in "Weight Score", ratio of semantic:keyword = 0.7:0.3 | Knowledge base content source mixes semantics and keywords, allows business personnel to customize Weight Score |
-| Both Economic and High Quality | Different retrieval settings used | Different Embedding models | Requires enabling Rerank model | Content source is complex, suggested to enable Rerank model to ensure content return quality |
-| High Quality | Same/different retrieval settings used | Different Embedding models | Requires enabling Rerank model | Content source format in this situation is not uniform, cannot be sorted by the same standard. To ensure content retrieval accuracy, Rerank model configuration is required to enhance content retrieval accuracy. |
+![](../../../img/integrate-knowledge-within-app.png)
 
 3. **What should I do if I cannot adjust the “Weight Score” when referencing multiple knowledge bases and an error message appears?**
 
