@@ -16,9 +16,9 @@ Difyでは、モデルの使用シーンに応じて以下の4つのタイプに
 2.  **埋め込みモデル**。データセット内の分割された文書の埋め込みに使用されるのはこのタイプのモデルです。データセットを使用するアプリケーションでは、ユーザーの質問を埋め込み処理する際にもこのタイプのモデルが使用されます。
 
     > サポートされている埋め込みモデルプロバイダー：OpenAI、ZHIPU(ChatGLM)、JinaAI
-3.  [**リランクモデル**](https://docs.dify.ai/v/ja-jp/learn-more/extended-reading/retrieval-augment/rerank)。**リランクモデルは検索能力を強化し、LLMの検索結果を改善するために使用されます。**
+3.  [**Rerankモデル**](https://docs.dify.ai/v/ja-jp/learn-more/extended-reading/retrieval-augment/rerank)。**Rerankモデルは検索能力を強化し、LLMの検索結果を改善するために使用されます。**
 
-    > サポートされているリランクモデルプロバイダー：Cohere、JinaAI
+    > サポートされているRerankモデルプロバイダー：Cohere、JinaAI
 4.  **音声からテキストへのモデル**。対話型アプリケーションで音声をテキストに変換する際に使用されるのはこのタイプのモデルです。
 
     > サポートされている音声からテキストへのモデルプロバイダー：OpenAI
