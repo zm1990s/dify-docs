@@ -138,7 +138,7 @@
   * [LLMOpsとは何ですか？](learn-more/extended-reading/what-is-llmops.md)
   * [検索強化生成（RAG）](learn-more/extended-reading/retrieval-augment/README.md)
     * [ハイブリッド検索](learn-more/extended-reading/retrieval-augment/hybrid-search.md)
-    * [リランク](learn-more/extended-reading/retrieval-augment/rerank.md)
+    * [Rerank](learn-more/extended-reading/retrieval-augment/rerank.md)
     * [リトリーバルモード](learn-more/extended-reading/retrieval-augment/retrieval.md)
   * [プロンプトエンジニアリング](learn-more/extended-reading/prompt-engineering/README.md)
   * [DifyでJSONスキーマ出力を使用する方法](learn-more/how-to-use-json-schema-in-dify.md)
