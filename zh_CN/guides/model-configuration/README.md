@@ -66,10 +66,10 @@ Dify 使用了 [PKCS1\_OAEP](https://pycryptodome.readthedocs.io/en/latest/src/c
 
 托管类型的供应商上面有很多第三方模型。接入模型需要一个个的添加。具体接入方式如下：
 
-* [Hugging Face](hugging-face.md)
-* [Replicate](replicate.md)
-* [Xinference](xinference.md)
-* [OpenLLM](openllm.md)
+* [Hugging Face](../../development/mo-xing-jie-ru/hugging-face.md)
+* [Replicate](../../development/mo-xing-jie-ru/replicate.md)
+* [Xinference](../../development/mo-xing-jie-ru/xinference.md)
+* [OpenLLM](../../development/mo-xing-jie-ru/openllm.md)
 
 ### 使用模型
 
