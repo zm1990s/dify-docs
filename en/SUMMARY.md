@@ -22,12 +22,6 @@
   * [Custom Model Integration](guides/model-configuration/customizable-model.md)
   * [Interfaces](guides/model-configuration/interfaces.md)
   * [Schema](guides/model-configuration/schema.md)
-  * [Integrate Open Source Models from Hugging Face](guides/model-configuration/hugging-face.md)
-  * [Integrate Open Source Models from Replicate](guides/model-configuration/replicate.md)
-  * [Integrate Local Models Deployed by Xinference](guides/model-configuration/xinference.md)
-  * [Integrate Local Models Deployed by OpenLLM](guides/model-configuration/openllm.md)
-  * [Integrate Local Models Deployed by LocalAI](guides/model-configuration/localai.md)
-  * [Integrate Local Models Deployed by Ollama](guides/model-configuration/ollama.md)
   * [Load Balancing](guides/model-configuration/load-balancing.md)
 * [Application Orchestration](guides/application-orchestrate/README.md)
   * [Create Application](guides/application-orchestrate/creating-an-application.md)
@@ -125,6 +119,13 @@
 * [Backend](development/backend/README.md)
   * [DifySandbox](development/backend/sandbox/README.md)
     * [Contribution Guide](development/backend/sandbox/contribution.md)
+* [Models Integration](development/models-integration/README.md)
+  * [Integrate Open Source Models from Hugging Face](development/models-integration/hugging-face.md)
+  * [Integrate Open Source Models from Replicate](development/models-integration/replicate.md)
+  * [Integrate Local Models Deployed by Xinference](development/models-integration/xinference.md)
+  * [Integrate Local Models Deployed by OpenLLM](development/models-integration/openllm.md)
+  * [Integrate Local Models Deployed by LocalAI](development/models-integration/localai.md)
+  * [Integrate Local Models Deployed by Ollama](development/models-integration/ollama.md)
 
 ## Learn More
 
