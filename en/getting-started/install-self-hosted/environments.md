@@ -86,6 +86,10 @@ Controls the version checking policy. If set to false, the system will not call 
 
 Currently, the version check interface based on CloudFlare Worker is not directly accessible in China. Setting this variable to an empty value will disable this API call.
 
+#### TEXT\_GENERATION\_TIMEOUT\_MS
+
+Default value: 60000 (milliseconds). Specifies the timeout for text generation and workflow processes. This setting prevents system-wide service disruptions caused by individual processes exceeding their allocated time.
+
 #### OPENAI_API_BASE
 
 Used to change the OpenAI base address, default is [https://api.openai.com/v1](https://api.openai.com/v1).
