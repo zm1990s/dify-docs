@@ -76,6 +76,10 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 
 是否开启检查版本策略，若设置为 false，则不调用 `https://updates.dify.ai` 进行版本检查。由于目前国内无法直接访问基于 CloudFlare Worker 的版本接口，设置该变量为空，可以屏蔽该接口调用。
 
+#### TEXT\_GENERATION\_TIMEOUT\_MS
+
+默认 60000，单位为 ms，用于指定文本生成和工作流的超时时间，防止因某些进程运行超时而导致整体服务不可用。
+
 #### 容器启动相关配置
 
 仅在使用 docker 镜像或者 docker-compose 启动时有效。
