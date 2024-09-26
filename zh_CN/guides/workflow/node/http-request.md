@@ -15,7 +15,7 @@
 
 你可以通过配置 HTTP 请求的包括 URL、请求头、查询参数、请求体内容以及认证信息等。&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt="" width="332"><figcaption><p>HTTP 请求配置</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt="" width="332"><figcaption><p>HTTP 请求配置</p></figcaption></figure>
 
 ***
 

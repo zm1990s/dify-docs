@@ -20,7 +20,7 @@ LangSmith 官网介绍：[https://www.langchain.com/langsmith](https://www.langc
 
 在 LangSmith 内创建项目，登录后在主页点击 **New Project** 创建一个自己的项目，**项目**将用于与 Dify 内的**应用**关联进行数据监测。
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>在 LangSmith 内创建项目</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>在 LangSmith 内创建项目</p></figcaption></figure>
 
 创建完成之后在 Projects 内可以查看该项目。
 
@@ -34,11 +34,11 @@ LangSmith 官网介绍：[https://www.langchain.com/langsmith](https://www.langc
 
 点击 **Create API Key**，创建一个项目凭据。
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>创建一个项目 API Key</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption><p>创建一个项目 API Key</p></figcaption></figure>
 
 选择 **Personal Access Token** ，用于后续的 API 身份校验。
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>创建一个 API Key</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption><p>创建一个 API Key</p></figcaption></figure>
 
 将创建的 API key 复制保存。
 
@@ -52,7 +52,7 @@ LangSmith 官网介绍：[https://www.langchain.com/langsmith](https://www.langc
 
 点击配置后，将在 LangSmith 内创建的 **API Key** 和**项目名**粘贴到配置内并保存。
 
-<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption><p>配置 LangSmith</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption><p>配置 LangSmith</p></figcaption></figure>
 
 {% hint style="info" %}
 配置项目名需要与 LangSmith 内设置的项目一致，若项目名不一致，数据同步时 LangSmith 会自动创建一个新的项目。
@@ -68,7 +68,7 @@ LangSmith 官网介绍：[https://www.langchain.com/langsmith](https://www.langc
 
 <figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption><p>在 Dify 内调试应用</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>在 LangSmith 内查看应用数据</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>在 LangSmith 内查看应用数据</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption><p>在 LangSmith 内查看应用数据</p></figcaption></figure>
 

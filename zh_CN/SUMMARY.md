@@ -58,11 +58,11 @@
   * [应用发布](guides/workflow/publish.md)
 * [知识库](guides/knowledge-base/README.md)
   * [创建知识库&上传文档](guides/knowledge-base/create-knowledge-and-upload-documents.md)
-  * [知识库及文档维护](guides/knowledge-base/knowledge-and-documents-maintenance.md)
-  * [在应用内集成知识库](guides/knowledge-base/integrate-knowledge-within-application.md)
-  * [召回测试/引用归属](guides/knowledge-base/retrieval-test-and-citation.md)
   * [从 Notion 导入数据](guides/knowledge-base/sync-from-notion.md)
   * [从网页导入数据](guides/knowledge-base/sync-from-website.md)
+  * [知识库管理与文档维护](guides/knowledge-base/knowledge-and-documents-maintenance.md)
+  * [在应用内集成知识库](guides/knowledge-base/integrate-knowledge-within-application.md)
+  * [召回测试/引用归属](guides/knowledge-base/retrieval-test-and-citation.md)
   * [通过 API 维护知识库](guides/knowledge-base/maintain-dataset-via-api.md)
   * [外部数据工具](guides/knowledge-base/wai-bu-shu-ju-gong-ju.md)
 * [工具](guides/tools/README.md)
@@ -106,7 +106,10 @@
   * [发现](guides/workspace/app/README.md)
   * [邀请与管理成员](guides/workspace/invite-and-manage-members.md)
 * [管理](guides/management/README.md)
-  * [管理应用](guides/management/manage-app.md)
+  * [应用管理](guides/management/app-management.md)
+  * [团队成员管理](guides/management/members-management.md)
+  * [个人账号管理](guides/management/personal-account-management.md)
+  * [订阅管理](guides/management/subscription-management.md)
 
 ## 社区 <a href="#community" id="community"></a>
 

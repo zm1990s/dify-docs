@@ -28,7 +28,7 @@ Dify 工作流内提供了丰富的[工具](https://docs.dify.ai/v/zh-hans/guide
 
 ### 3 如何配置
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 **配置步骤**
 
@@ -43,8 +43,8 @@ Dify 工作流内提供了丰富的[工具](https://docs.dify.ai/v/zh-hans/guide
 
 部分模型同时支持两种推理模式，通过函数/工具调用或是纯提示词的方式实现参数提取，在指令遵循能力上有所差别。例如某些模型在函数调用效果欠佳的情况下可以切换成提示词推理。
 
-* Function Call/Tool Call&#x20;
-* Prompt &#x20;
+* Function Call/Tool Call
+* Prompt
 
 **记忆**
 
@@ -55,6 +55,6 @@ Dify 工作流内提供了丰富的[工具](https://docs.dify.ai/v/zh-hans/guide
 * 提取定义的变量
 * 节点内置变量
 
-`__is_success Number 提取是否成功` 成功时值为 1，失败时值为 0。&#x20;
+`__is_success Number 提取是否成功` 成功时值为 1，失败时值为 0。
 
 `__reason String` 提取错误原因

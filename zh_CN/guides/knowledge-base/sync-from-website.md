@@ -22,8 +22,8 @@ Dify 知识库通过集成 Firecrawl ，支持网页抓取并解析为 Markdown 
 
 设置中的配置项包括：是否抓取子页面、抓取页面数量上限、页面抓取深度、排除页面、仅抓取页面、提取内容。完成配置后点击 **Run**，预览已解析的页面。
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>执行抓取</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>执行抓取</p></figcaption></figure>
 
 导入网页解析的文本后存储至知识库的文档中，查看导入结果。点击 **Add URL** 可以继续导入新的网页。
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>导入网页解析文本至知识库内</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>导入网页解析文本至知识库内</p></figcaption></figure>

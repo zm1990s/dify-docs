@@ -4,7 +4,6 @@ Workflow 和 Chatflow 类型应用由独立节点相构成。大部分节点设�
 
 如何用一种固定的符号**指代动态变化的内容？** 变量作为一种动态数据容器，能够存储和传递不固定的内容，在不同的节点内被相互引用，实现信息在节点间的灵活通信。
 
-
 ### **系统变量**
 
 系统变量指的是在 Chatflow / Workflow 应用内预设的系统级参数，可以被其它节点全局读取。系统级变量均以 `sys` 开头。
@@ -13,21 +12,17 @@ Workflow 和 Chatflow 类型应用由独立节点相构成。大部分节点设�
 
 Workflow 类型应用提供以下系统变量：
 
-<table><thead><tr><th>变量名称</th><th>数据类型</th><th width="297">说明</th><th>备注</th></tr></thead><tbody><tr><td><code>sys.files</code></td><td> Array[File]</td><td>文件参数，存储用户初始使用应用时上传的图片</td><td>图片上传功能需在应用编排页右上角的 “功能” 处开启</td></tr><tr><td><code>sys.user_id</code></td><td>String</td><td>用户 ID，每个用户在使用工作流应用时，系统会自动向用户分配唯一标识符，用以区分不同的对话用户</td><td></td></tr></tbody></table>
+<table><thead><tr><th>变量名称</th><th>数据类型</th><th width="297">说明</th><th>备注</th></tr></thead><tbody><tr><td><code>sys.files</code></td><td>Array[File]</td><td>文件参数，存储用户初始使用应用时上传的图片</td><td>图片上传功能需在应用编排页右上角的 “功能” 处开启</td></tr><tr><td><code>sys.user_id</code></td><td>String</td><td>用户 ID，每个用户在使用工作流应用时，系统会自动向用户分配唯一标识符，用以区分不同的对话用户</td><td></td></tr></tbody></table>
 
-
-
-<figure><img src="../../.gitbook/assets/image (2).png" alt="workflow-system-variable"><figcaption><p>Workflow 类型应用系统变量</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt="workflow-system-variable"><figcaption><p>Workflow 类型应用系统变量</p></figcaption></figure>
 
 #### Chatflow
 
 Chatflow 类型应用提供以下系统变量：
 
-<table><thead><tr><th>变量名称</th><th>数据类型</th><th width="283">说明</th><th>备注</th></tr></thead><tbody><tr><td><code>sys.query</code></td><td> String</td><td>用户在对话框中初始输入的内容</td><td></td></tr><tr><td><code>sys.files</code></td><td> Array[File]</td><td>用户在对话框内上传的图片</td><td>图片上传功能需在应用编排页右上角的 “功能” 处开启</td></tr><tr><td><code>sys.dialogue_count</code></td><td>Number</td><td><p>用户在与 Chatflow 类型应用交互时的对话轮数。每轮对话后自动计数增加 1，可以和 if-else 节点搭配出丰富的分支逻辑。</p><p></p><p>例如到第 X 轮对话时，回顾历史对话并给出分析</p></td><td></td></tr><tr><td><code>sys.conversation_id</code></td><td>String</td><td>对话框交互会话的唯一标识符，将所有相关的消息分组到同一个对话中，确保 LLM 针对同一个主题和上下文持续对话</td><td></td></tr><tr><td><code>sys.user_id</code></td><td>String</td><td>分配给每个应用用户的唯一标识符，用以区分不同的对话用户</td><td></td></tr></tbody></table>
+<table><thead><tr><th>变量名称</th><th>数据类型</th><th width="283">说明</th><th>备注</th></tr></thead><tbody><tr><td><code>sys.query</code></td><td>String</td><td>用户在对话框中初始输入的内容</td><td></td></tr><tr><td><code>sys.files</code></td><td>Array[File]</td><td>用户在对话框内上传的图片</td><td>图片上传功能需在应用编排页右上角的 “功能” 处开启</td></tr><tr><td><code>sys.dialogue_count</code></td><td>Number</td><td><p>用户在与 Chatflow 类型应用交互时的对话轮数。每轮对话后自动计数增加 1，可以和 if-else 节点搭配出丰富的分支逻辑。</p><p>例如到第 X 轮对话时，回顾历史对话并给出分析</p></td><td></td></tr><tr><td><code>sys.conversation_id</code></td><td>String</td><td>对话框交互会话的唯一标识符，将所有相关的消息分组到同一个对话中，确保 LLM 针对同一个主题和上下文持续对话</td><td></td></tr><tr><td><code>sys.user_id</code></td><td>String</td><td>分配给每个应用用户的唯一标识符，用以区分不同的对话用户</td><td></td></tr></tbody></table>
 
-
-
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Chatflow 类型应用系统变量</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Chatflow 类型应用系统变量</p></figcaption></figure>
 
 ### 环境变量
 
@@ -73,8 +68,6 @@ Chatflow 类型应用提供以下系统变量：
 * 会话变量为可读写变量；
 
 关于如何将会话变量与变量赋值节点配合使用，请参考[变量赋值](node/variable-assignment.md)节点说明。
-
-
 
 ### 注意事项
 
