@@ -106,6 +106,7 @@ cp ../.bots.yaml.example .bots.yaml
 本文中使用 docker 来演示如何快速启动服务，如果需要用源代码启动服务，请参考代码中 [README.md](https://github.com/zfanswer/dify-on-dingtalk/blob/main/README.md#env%25) 文件，两个文件的参数配置可参考其中的参数说明，也可按下边简易配置。
 
 `.env` 文件主要是配置全局变量的，内容示例如下：
+
 ```shell
 # 日志级别
 LOG_LEVEL=INFO
@@ -172,6 +173,7 @@ docker compose up -d
 2. 在搜索框中搜索机器人名称，在功能分类下找到机器人，点击进入私聊界面；
 
 私聊界面中直接对话即可，不需要再 `@` 了。
+
 <figure><img src="../../.gitbook/assets/dify-on-dingtalk/dify-on-dingtalk-demo.gif" alt=""><figcaption></figcaption></figure>
 
 ## 5. 后记
@@ -179,3 +181,4 @@ docker compose up -d
 到此为止，Dify 应用在钉钉上的集成已经完成，希望本文给你带来了帮助。
 
 如果你对 Dify-on-Dingtalk 的功能还有其他需求和期待，欢迎对[该项目](https://github.com/zfanswer/dify-on-dingtalk)进行贡献。
+
