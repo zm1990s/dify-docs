@@ -62,5 +62,5 @@ If you are a local deployment user, you need to start a sandbox service to ensur
 docker-compose -f docker-compose.middleware.yaml up -d
 ```
 
-## Limitations
+## Security Policies
 Both Python and JavaScript execution environments are strictly isolated (sandboxed) to ensure security. This means that developers cannot use functions that consume large amounts of system resources or may pose security risks, such as direct file system access, making network requests, or executing operating system-level commands. These limitations ensure the safe execution of the code while avoiding excessive consumption of system resources.
