@@ -20,10 +20,10 @@ Dify classifies models into 4 types, each for different uses:
     > Providers include [OpenAI](https://platform.openai.com/account/api-keys)、[Azure OpenAI Service](https://azure.microsoft.com/en-us/products/ai-services/openai-service/)、[Anthropic](https://console.anthropic.com/account/keys)、Hugging Face Hub、Replicate、Xinference、OpenLLM、[iFLYTEK SPARK](https://www.xfyun.cn/solutions/xinghuoAPI)、[WENXINYIYAN](https://console.bce.baidu.com/qianfan/ais/console/applicationConsole/application)、[TONGYI](https://dashscope.console.aliyun.com/api-key\_management?spm=a2c4g.11186623.0.0.3bbc424dxZms9k)、[Minimax](https://api.minimax.chat/user-center/basic-information/interface-key)、ZHIPU(ChatGLM) [Ollama](https://docs.dify.ai/tutorials/model-configuration/ollama)、[LocalAI](https://github.com/mudler/LocalAI)、.
 2.  **Embedding Models:** Employed for embedding segmented documents in knowledge and processing user queries in applications.
 
-    > Providers include OpenAI, ZHIPU (ChatGLM), Jina AI([Jina Embeddings 2](https://jina.ai/embeddings/)).
+    > Providers include OpenAI, ZHIPU (ChatGLM), Jina AI([Jina Embeddings](https://jina.ai/embeddings/)).
 3.  [**Rerank Models**](https://docs.dify.ai/advanced/retrieval-augment/rerank)**:** Enhance search capabilities in LLMs.
 
-    > Provider: Cohere.
+    > Providers include Cohere, Jina AI([Jina Reranker](https://jina.ai/reranker)).
 4.  **Speech-to-Text Models:** Convert spoken words to text in conversational applications.
 
     > Provider: OpenAI.
