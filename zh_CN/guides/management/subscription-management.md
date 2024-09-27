@@ -23,7 +23,7 @@
 
 <figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>更改付费方案</p></figcaption></figure>
 
-如果取消付费，团队将在账单周期结束后自动切换至 Sandbo/Free 版本。已超出的团队人数及团队资源将无法访问。
+如果取消付费，团队将在账单周期结束后自动切换至 Sandbox/Free 版本。已超出的团队人数及团队资源将无法访问。
 
 #### 2. 升级订阅计划后，团队的可用资源会有什么变化？
 
