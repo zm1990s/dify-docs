@@ -78,7 +78,7 @@
     * [AlphaVantage 股票分析](guides/tools/tool-configuration/alphavantage.md)
     * [SearXNG](guides/tools/tool-configuration/searxng.md)
     * [Serper](guides/tools/tool-configuration/serper.md)
-    * [SiliconFlow](guides/tools/tool-configuration/siliconflow.md)
+    * [SiliconFlow (支持Flux绘图)](guides/tools/tool-configuration/siliconflow-zhi-chi-flux-hui-tu.md)
 * [发布](guides/application-publishing/README.md)
   * [发布为公开 Web 站点](guides/application-publishing/launch-your-webapp-quickly/README.md)
     * [Web 应用的设置](guides/application-publishing/launch-your-webapp-quickly/web-app-settings.md)
