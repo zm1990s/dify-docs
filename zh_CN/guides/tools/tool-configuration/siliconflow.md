@@ -1,6 +1,6 @@
-# SiliconFlow (支持Flux绘图)
+# SiliconFlow (支持 Flux 绘图)
 
-> 工具作者 @Dify
+> 工具作者 @hjlarry
 
 SiliconCloud 基于优秀的开源基础模型，提供高性价比的 GenAI 服务。你可以通过 **SiliconFlow** 在 Dify 内调用 Flux 、Stable Diffusion 绘图模型，搭建你的专属 AI 绘图应用。以下是在 Dify 中配置 SiliconFlow 工具的步骤。
 
