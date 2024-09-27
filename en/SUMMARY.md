@@ -106,7 +106,10 @@
   * [Discover](guides/workspace/app/README.md)
   * [Invite and Manage Members](guides/workspace/invite-and-manage-members.md)
 * [Management](guides/management/README.md)
-  * [Manage App](guides/management/manage-app.md)
+  * [App Management](guides/management/app-management.md)
+  * [Team Members Management](guides/management/team-members-management.md)
+  * [Personal Account Management](guides/management/personal-account-management.md)
+  * [Subscription Management](guides/management/subscription-management.md)
 
 ## Community
 

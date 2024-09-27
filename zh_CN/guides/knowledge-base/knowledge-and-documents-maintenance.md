@@ -28,8 +28,6 @@ Dify 知识库提供整套标准 API ，开发者通过 API 调用对知识库�
 
 <figure><img src="../../.gitbook/assets/image (180).png" alt=""><figcaption><p>知识库 API 管理</p></figcaption></figure>
 
-
-
 ## 维护知识库中的文本
 
 ### 添加文档
