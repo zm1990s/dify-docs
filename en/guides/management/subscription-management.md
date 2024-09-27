@@ -21,7 +21,7 @@ Team owners and administrators can navigate to **Settings** → **Billing**, the
 * Upgrading from Professional to Team plan requires paying the difference for the current month and takes effect immediately.
 * Downgrading from Team to Professional plan takes effect immediately.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Changing the paid plan</p></figcaption></figure>
+<figure><img src="../../../zh_CN/.gitbook/assets/image (6).png" alt=""><figcaption><p>Changing the paid plan</p></figcaption></figure>
 
 Upon cancellation of the subscription plan, **the team will automatically transition to the Sandbox/Free plan at the end of the current billing cycle**. Subsequently, any team members and resources exceeding the Sandbox/Free plan limitations will become inaccessible.
 
@@ -32,7 +32,7 @@ Upon cancellation of the subscription plan, **the team will automatically transi
 | Team member limit | 1 | 3 | Unlimited |
 | Application limit | 10 | 50 | Unlimited |
 | Vector space capacity | 5MB | 200MB | 1GB |
-| [Marked replies](https://docs.dify.ai/guides/annotation/logs) for applications | 10 | 2000 | 5000 |
+| [Marked replies](https://docs.dify.ai/guides/biao-zhu/logs) for applications | 10 | 2000 | 5000 |
 | Document uploads for knowledge base | 50 | 500 | 1000 |
 | OpenAI conversation quota | 200 total | 5000 per month | 10000 per month |
 
