@@ -1,6 +1,6 @@
 # SiliconFlow (Flux AI Supported)
 
-> Tool author @Dify.
+> Tool author @hjlarry.
 
 SiliconFlow provides high-quality GenAI services based on excellent open-source foundation models. You can use SiliconFlow in Dify to call image generation models like Flux and Stable Diffusion, and build your own AI image generation application.
 
