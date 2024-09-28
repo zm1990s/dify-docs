@@ -108,7 +108,7 @@
   * [邀请与管理成员](guides/workspace/invite-and-manage-members.md)
 * [管理](guides/management/README.md)
   * [应用管理](guides/management/app-management.md)
-  * [团队成员管理](guides/management/members-management.md)
+  * [团队成员管理](guides/management/team-members-management.md)
   * [个人账号管理](guides/management/personal-account-management.md)
   * [订阅管理](guides/management/subscription-management.md)
 

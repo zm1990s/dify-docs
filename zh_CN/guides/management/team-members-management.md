@@ -2,7 +2,7 @@
 
 本文将介绍如何在 Dify 团队内管理成员。以下是各个 Dify 版本的团队成员上限。
 
-| Free | Professional | Team | 企业版 | 社区版  |
+| Sandbox / Free | Professional | Team | 社区版 | 企业版  |
 | ---- | ------------ | ---- | --- | ---- |
 | 1    |  3           |  不限制 | 不限制 |  不限制 |
 

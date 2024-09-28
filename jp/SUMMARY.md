@@ -56,7 +56,7 @@
   * [アプリ公開](guides/workflow/publish.md)
 * [ナレッジベース](guides/knowledge-base/README.md)
   * [ナレッジベース作成＆ドキュメントアップロード](guides/knowledge-base/create-knowledge-and-upload-documents.md)
-  * [ナレッジベースおよびドキュメントのメンテナンス](guides/knowledge-base/knowledge-and-documents-maintenance.md)
+  * [ナレッジベースとドキュメントの管理](guides/knowledge-base/knowledge-and-documents-maintenance.md)
   * [アプリ内でのナレッジベース統合](guides/knowledge-base/integrate-knowledge-within-application.md)
   * [リコールテスト/引用帰属](guides/knowledge-base/retrieval-test-and-citation.md)
   * [Notion からデータをインポート](guides/knowledge-base/sync-from-notion.md)
@@ -103,8 +103,11 @@
 * [コラボレーション](guides/workspace/README.md)
   * [発見](guides/workspace/app/README.md)
   * [メンバーの招待と管理](guides/workspace/invite-and-manage-members.md)
-* [アプリの管理](guides/management/README.md)
-  * [アプリの管理](guides/management/manage-app.md)
+* [管理](guides/management/README.md)
+  * [アプリの管理](guides/management/app-management.md)
+  * [チームメンバーの管理](guides/management/team-members-management.md)
+  * [個人アカウントの管理](guides/management/personal-account-management.md)
+  * [サブスクリプション管理](guides/management/subscription-management.md)
 
 ## コミュニティ <a href="#community" id="community"></a>
 
