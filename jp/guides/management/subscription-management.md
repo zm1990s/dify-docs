@@ -21,7 +21,7 @@ Difyの有料サービス（ProfessionalまたはTeamプラン）に加入後、
 - ProfessionalプランからTeamプランにアップグレードする際は、当月の差額を支払う必要があり、すぐに適用されます。
 - TeamプランからProfessionalプランにダウングレードする場合も、即座に適用されます。
 
-<figure><img src="../../../zh_CN/.gitbook/assets/image (6).png" alt=""><figcaption><p>有料プランの変更</p></figcaption></figure>
+<figure><img src="../../../img/subscription-management-02.jpeg" alt=""><figcaption><p>有料プランの変更</p></figcaption></figure>
 
 サブスクリプションプランをキャンセルすると、**チームは現在の請求サイクルの終了時に自動的にサンドボックス/無料プランに移行**し、その後はサンドボックス/無料プランの制限に従った利用となります。
 

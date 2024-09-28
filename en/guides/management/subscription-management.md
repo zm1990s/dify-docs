@@ -21,7 +21,7 @@ Team owners and administrators can navigate to **Settings** → **Billing**, the
 * Upgrading from Professional to Team plan requires paying the difference for the current month and takes effect immediately.
 * Downgrading from Team to Professional plan takes effect immediately.
 
-<figure><img src="../../../zh_CN/.gitbook/assets/image (6).png" alt=""><figcaption><p>Changing the paid plan</p></figcaption></figure>
+<figure><img src="../../../img/subscription-management-02.jpeg" alt=""><figcaption><p>Changing the paid plan</p></figcaption></figure>
 
 Upon cancellation of the subscription plan, **the team will automatically transition to the Sandbox/Free plan at the end of the current billing cycle**. Subsequently, any team members and resources exceeding the Sandbox/Free plan limitations will become inaccessible.
 
