@@ -112,6 +112,11 @@
   * [个人账号管理](guides/management/personal-account-management.md)
   * [订阅管理](guides/management/subscription-management.md)
 
+## 动手实验室 <a href="workshop" id="workshop"></a>
+
+* [初级](workshop/basic/README.md)
+  *[如何搭建 AI 图片生成应用](workshop/basic/build-ai-image-generation-app.md)
+
 ## 社区 <a href="#community" id="community"></a>
 
 * [寻求支持](community/support.md)
