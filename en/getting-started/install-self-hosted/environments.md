@@ -483,6 +483,8 @@ For a list of available [tools](https://github.com/langgenius/dify/blob/main/api
 #### Others
 
 - INVITE_EXPIRY_HOURS: Member invitation link valid time (hours), Default: 72.
+- HTTP\_REQUEST\_NODE_MAX\_TEXT\_SIZE：The maximum text size of the HTTP request node in the workflow, default 1MB。
+- HTTP\_REQUEST\_NODE\_MAX\_BINARY\_SIZE：The maximum binary size of HTTP request nodes in the workflow, default 10MB。
 
 ---
 

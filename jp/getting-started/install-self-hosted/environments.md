@@ -465,6 +465,8 @@ Notion統合設定。変数はNotion integrationを申請することで取得�
 #### 其他
 
 * INVITE\_EXPIRY\_HOURS：メンバーを招待するのリンクの有効期間（時），デフォルト：72。
+* HTTP\_REQUEST\_NODE_MAX\_TEXT\_SIZE：ワークフロー内のHTTPリクエストノードの最大テキストサイズ、デフォルト1MB。
+* HTTP\_REQUEST\_NODE\_MAX\_BINARY\_SIZE：ワークフロー内のHTTPリクエストノードの最大バイナリサイズ、デフォルト10MB。
 
 ***
 

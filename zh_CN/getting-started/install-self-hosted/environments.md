@@ -448,6 +448,8 @@ Notion 集成配置，变量可通过申请 Notion integration 获取：[https:/
 #### 其他
 
 * INVITE\_EXPIRY\_HOURS：成员邀请链接有效时间（小时），默认：72。
+* HTTP\_REQUEST\_NODE_MAX\_TEXT\_SIZE：workflow 工作流中 HTTP 请求节点的最大文本大小，默认 1MB。
+* HTTP\_REQUEST\_NODE\_MAX\_BINARY\_SIZE：workflow 工作流中 HTTP 请求节点的最大二进制大小，默认 10MB。
 
 ***
 
