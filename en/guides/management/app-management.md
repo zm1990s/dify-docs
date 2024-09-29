@@ -16,7 +16,19 @@ TODO 🚧
 
 ### Exporting Application
 
-Applications created in Dify can be exported in DSL format. You can freely import the configuration file into any Dify workspace.
+Applications created in Dify support export in DSL format files, allowing you to import the configuration files into other Dify teams freely. You can export DSL files using either of the following two methods:
+
+- Click "Export DSL" in the application menu button on the "Studio" page
+- After entering the application's orchestration page, click "Export DSL" in the upper left corner
+
+![](../../../img/export-dsl.png)
+
+The DSL file does not include the following sensitive information:
+
+- Authorization information for third-party tools, such as API Keys.
+- If environment variables contain `Secret`, a prompt will appear during export asking whether to allow the export of sensitive information.
+
+![](../../../img/export-dsl-secret.png)
 
 {% hint style="info" %}
 Dify DSL is an AI application engineering file standard defined by Dify.AI in v0.6 and later. The file format is YML. This standard covers the basic description of the application, model parameters, orchestration configuration, and other information.
