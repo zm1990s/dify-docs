@@ -14,13 +14,13 @@ Chatflow 和 Workflow 类型应用内的节点均可以通过可视化拖拉拽�
 
 点击两个节点中间连线的 + 号即可在中间添加一个串行节点；按照顺序将节点依次串线连接，最后将线收拢至**“结束”节点**（Workflow）/ **“直接回复”节点**（Chatflow）完成设计。
 
-<figure><img src="../../.gitbook/assets/image (273).png" alt=""><figcaption><p>并行结构</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (273).png" alt=""><figcaption><p>串行结构</p></figcaption></figure>
 
 ### 查看串行结构应用日志
 
 串行结构应用内的日志将按照顺序展示各个节点的运行情况。点击对话框右上角的 「查看日志-追踪」，查看工作流完整运行过程各节点的输入 / 输出、Token 消耗、运行时长等。
 
-<figure><img src="../../.gitbook/assets/image (275).png" alt=""><figcaption><p>并行结构应用日志</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (275).png" alt=""><figcaption><p>串行结构应用日志</p></figcaption></figure>
 
 ## 并行设计
 
