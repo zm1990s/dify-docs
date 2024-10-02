@@ -48,7 +48,7 @@ And then edit the opening remarks:
 
 If an application wants to generate content based on private contextual conversations, it can use our [knowledge](../knowledge-base/) feature. Click the "Add" button in the context to add a knowledge base.
 
-![](../../.gitbook/assets/context.png)
+![](../../../img/context.png)
 
 **2.3 Debugging**
 

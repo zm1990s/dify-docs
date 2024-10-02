@@ -6,9 +6,9 @@ Dify offers functionality to connect to external knowledge bases via API, provid
 
 Here are the detailed steps for connecting to external knowledge:
 
-## 1.  Create a Compliant External Knowledge Base API
+## 1. Create a Compliant External Knowledge Base API
 
-Create a compliant External Knowledge Base API before setting up the API service, please refer to Dify's [External Knowledge Base API](./external-knowledge-api.md) specifications to ensure successful integration between your external knowledge base and Dify.
+Create a compliant External Knowledge Base API before setting up the API service, please refer to Dify's [External Knowledge Base API](external-knowledge-api-documentation.md) specifications to ensure successful integration between your external knowledge base and Dify.
 
 ## 2. Add External Knowledge API
 
@@ -16,14 +16,9 @@ Create a compliant External Knowledge Base API before setting up the API service
 
 Navigate to the **"Knowledge"** page, click **"External Knowledge API"** in the upper right corner, then click **"Add External Knowledge API"**. Follow the page prompts to fill in the following information:
 
-* Name
-Customizable name to distinguish different external knowledge APIs;
-
-* API Endpoint
-The URL of the external knowledge base API endpoint, e.g., api-endpoint/retrieval; refer to the [External Knowledge API](./external-knowledge-api.md) for detailed instructions;
-
-* API Key
-Connection key for the external knowledge, refer to the [External Knowledge API](./external-knowledge-api.md) for detailed instructions.
+* Name Customizable name to distinguish different external knowledge APIs;
+* API Endpoint The URL of the external knowledge base API endpoint, e.g., api-endpoint/retrieval; refer to the [External Knowledge API](external-knowledge-api-documentation.md) for detailed instructions;
+* API Key Connection key for the external knowledge, refer to the [External Knowledge API](external-knowledge-api-documentation.md) for detailed instructions.
 
 <figure><img src="../../../img/connect-kb-1-en.png" alt=""><figcaption><p>Associate External Knowledge API</p></figcaption></figure>
 
@@ -36,20 +31,17 @@ Go to the **"Knowledge"** page, click **"Connect to an External Knowledge Base"*
 Fill in the following parameters:
 
 * **Knowledge base name & description**
+*   **External Knowledge API**
 
-* **External Knowledge API**
+    Select the external knowledge base API associated in step 2; Dify will call the text content stored in the external knowledge base through the API connection method.
+*   **External knowledge ID**
 
-  Select the external knowledge base API associated in step 2; Dify will call the text content stored in the external knowledge base through the API connection method.
+    Specify the particular external knowledge base ID to be associated, refer to the external knowledge base API definition for detailed instructions.
+*   **Retrieval Setting**
 
-* **External knowledge ID**
+    **Top K:** When a user sends a question, it will request the external knowledge API to obtain highly relevant content chunks. This parameter is used to filter text chunks with high similarity to the user's question. The default value is 3; the higher the value, the more text chunks with relevant similarities will be retrieval.
 
-  Specify the particular external knowledge base ID to be associated, refer to the external knowledge base API definition for detailed instructions.
-
-* **Retrieval Setting**
-
-  **Top K:** When a user sends a question, it will request the external knowledge API to obtain highly relevant content chunks. This parameter is used to filter text chunks with high similarity to the user's question. The default value is 3; the higher the value, the more text chunks with relevant similarities will be retrieval. 
-
-  **Score Threshold:** The similarity threshold for text chunk filtering, only recalling text chunks that exceed the set score. The default value is 0.5. A higher value indicates a higher requirement for similarity between the text and the question, expecting fewer recalled text chunks, and the results will be relatively more precise.
+    **Score Threshold:** The similarity threshold for text chunk filtering, only recalling text chunks that exceed the set score. The default value is 0.5. A higher value indicates a higher requirement for similarity between the text and the question, expecting fewer recalled text chunks, and the results will be relatively more precise.
 
 <figure><img src="../../../img/connect-kb-3-en.webp" alt=""><figcaption></figcaption></figure>
 
@@ -61,33 +53,31 @@ After connected with the external knowledge base, developers can simulate possib
 
 ## 5. Integrating External Knowledge base in Applications
 
-* **Chatbot / Agent** type application
+*   **Chatbot / Agent** type application
 
-  Associate the external knowledge base in the orchestration page within Chatbot / Agent type applications. 
+    Associate the external knowledge base in the orchestration page within Chatbot / Agent type applications.
 
 <figure><img src="../../../img/connect-kb-5-en.png" alt=""><figcaption><p>Chatbot / Agent</p></figcaption></figure>
 
-* **Chatflow / Workflow** type application
+*   **Chatflow / Workflow** type application
 
-  Add a **"Knowledge Retrieval"** node and select the external knowledge base.
+    Add a **"Knowledge Retrieval"** node and select the external knowledge base.
 
 <figure><img src="../../../img/connect-kb-6-en.png" alt=""><figcaption><p>Chatflow / Workflow</p></figcaption></figure>
 
-## 6.  Manage External Knowledge
+## 6. Manage External Knowledge
 
 Navigate to the **"Knowledge"** page, external knowledge base cards will list an **EXTERNAL** label in the upper right corner. Select the knowledge base needs to be modified, click **"Settings"** to modify the following information:
 
 * **Knowledge base name and description**
+*   **Permissions**
 
-* **Permissions**
+    Provide **"Only me"**, **"All team members"**, and **"Partial team members"** permission scope. Those without permission will not be able to access the knowledge base. If you choose to make the knowledge base public to other members, it means that other members also have the rights to view, edit, and delete the knowledge base.
+*   **Retrieval Setting**
 
-  Provide **"Only me"**, **"All team members"**, and **"Partial team members"** permission scope. Those without permission will not be able to access the knowledge base. If you choose to make the knowledge base public to other members, it means that other members also have the rights to view, edit, and delete the knowledge base.
+    **Top K:** When a user sends a question, it will request the external knowledge API to obtain highly relevant content segments. This parameter is used to filter text chunks with high similarity to the user's question. The default value is 3; the higher the value, the more text chunks with relevant similarities will be recalled.
 
-* **Retrieval Setting**
-
-  **Top K:** When a user sends a question, it will request the external knowledge API to obtain highly relevant content segments. This parameter is used to filter text chunks with high similarity to the user's question. The default value is 3; the higher the value, the more text chunks with relevant similarities will be recalled. 
-
-  **Score threshold:** The similarity threshold for text chunk filtering, only recalling text chunks that exceed the set score. The default value is 0.5. A higher value indicates a higher requirement for similarity between the text and the question, expecting fewer recalled text chunks, and the results will be relatively more precise. 
+    **Score threshold:** The similarity threshold for text chunk filtering, only recalling text chunks that exceed the set score. The default value is 0.5. A higher value indicates a higher requirement for similarity between the text and the question, expecting fewer recalled text chunks, and the results will be relatively more precise.
 
 The **"External Knowledge API"** and **"External Knowledge ID"** associated with the external knowledge base do not support modification. If modification is needed, please associate a new **"External Knowledge API"** and reset it.
 
@@ -99,8 +89,8 @@ The **"External Knowledge API"** and **"External Knowledge ID"** associated with
 
 Solutions corresponding to each error code in the return information:
 
-| Error Code | Result | Solutions |
-|------------|--------|-----------|
-|1001| Invalid Authorization header format | Please check the Authorization header format of the request |
-|1002| Authorization failed | Please check whether the API Key you entered is correct. |
-|2001| The knowledge is not exist | Please check the external repository |
+| Error Code | Result                              | Solutions                                                   |
+| ---------- | ----------------------------------- | ----------------------------------------------------------- |
+| 1001       | Invalid Authorization header format | Please check the Authorization header format of the request |
+| 1002       | Authorization failed                | Please check whether the API Key you entered is correct.    |
+| 2001       | The knowledge is not exist          | Please check the external repository                        |

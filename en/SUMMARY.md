@@ -66,7 +66,7 @@
   * [Maintain Knowledge Base via API](guides/knowledge-base/maintain-dataset-via-api.md)
   * [External Data Tool](guides/knowledge-base/external-data-tool.md)
   * [Connect to an External Knowledge Base](guides/knowledge-base/connect-external-knowledge-base.md)
-  * [External Knowledge API](guides/knowledge-base/external-knowledge-api.md)
+  * [External Knowledge API](guides/knowledge-base/external-knowledge-api-documentation.md)
 * [Tools](guides/tools/README.md)
   * [Quick Tool Integration](guides/tools/quick-tool-integration.md)
   * [Advanced Tool Integration](guides/tools/advanced-tool-integration.md)

@@ -7,7 +7,7 @@
       "post": {
         "summary": "Knowledge Retrieval API",
         "deprecated": false,
-        "description": "You can use API-Key in the Authorization HTTP Header to verify permissions, the authentication logic is defined by you in the retrieval API, as shown below:\n\n```text\nAuthorization: Bearer {API_KEY}\n```",
+        "description": "This API is used to connect to independently maintained knowledge bases within the team. For more operational guidance, please refer to [Connecting External Knowledge Bases](https://docs.dify.ai/guides/knowledge-base/connect-external-knowledge-base). You can use API-Key in the Authorization HTTP Header to verify permissions, the authentication logic is defined by you in the retrieval API, as shown below:\n\n```text\nAuthorization: Bearer {API_KEY}\n```",
         "tags": [],
         "requestBody": {
           "content": {
