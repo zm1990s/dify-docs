@@ -51,10 +51,14 @@ Dify 现支持**连接外部知识库**功能，通过 API 连接的方式，满
 
 ### 5. 在应用内集成外部知识库
 
-*   Chatbot / Agent 类型应用 在 Chatbot / Agent 类型应用内的编排页中关联外部知识库。&#x20;
+*   Chatbot / Agent 类型应用&#x20;
+
+    在 Chatbot / Agent 类型应用内的编排页中的 **“上下文”** 内，选中带有 `EXTERNAL` 标签的外部知识库。&#x20;
 
     <figure><img src="../../.gitbook/assets/image (357).png" alt=""><figcaption></figcaption></figure>
-*   Chatflow / Workflow 类型应用 添加 “知识检索” 节点，选中外部知识库。&#x20;
+*   Chatflow / Workflow 类型应用
+
+    在 Chatflow / Workflow 类型应用内添加 **“知识检索”** 节点，选中带有 `EXTERNAL` 标签的外部知识库。&#x20;
 
     <figure><img src="../../.gitbook/assets/image (358).png" alt=""><figcaption></figcaption></figure>
 
