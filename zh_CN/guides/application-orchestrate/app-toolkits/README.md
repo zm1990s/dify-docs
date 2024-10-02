@@ -2,37 +2,33 @@
 
 在 **工作室 -- 应用编排** 内点击 **添加功能**，打开应用工具箱
 
-应用工具箱为 Dify 的[应用](../#application_type)提供了不同的附加功能：
+应用工具箱为 Dify 的[应用](../#application\_type)提供了不同的附加功能：
 
-<figure><img src="../../../.gitbook/assets/image (237).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (288).png" alt=""><figcaption></figcaption></figure>
 
 ### 对话开场白
 
 在对话类应用中，AI 会主动说第一句话或者提出问题，你可以编辑开场白的内容包括开场问题。使用对话开场白可以引导用户提问，交代应用背景，降低对话提问的使用门槛。
 
-<figure><img src="../../../.gitbook/assets/image (240).png" alt=""><figcaption><p>对话开场白</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (291).png" alt=""><figcaption><p>对话开场白</p></figcaption></figure>
 
 ### 下一步问题建议
 
 设置下一步问题建议可以在每次对话交互后，让 AI 根据之前的对话内容继续生成 3 个提问，引导下一轮对话。
 
-<figure><img src="../../../.gitbook/assets/image (241).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (292).png" alt=""><figcaption></figcaption></figure>
 
 ### 文字转语音
 
 开启后可以将 AI 回复的内容转换成自然的语音播放。
 
-<figure><img src="../../../.gitbook/assets/image (242).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../.gitbook/assets/image (293).png" alt=""><figcaption></figcaption></figure>
 
 ### 语音转文字
 
 开启后可以在应用内录音并将语音自动转换成文本。
 
-<figure><img src="../../../.gitbook/assets/image (243).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../.gitbook/assets/image (294).png" alt=""><figcaption></figcaption></figure>
 
 ### 引用与归属
 
@@ -51,4 +47,3 @@
 标注回复功能通过人工编辑标注为应用提供了可定制的高质量问答回复能力。
 
 查看[标注回复](../../biao-zhu/annotation-reply.md)
-

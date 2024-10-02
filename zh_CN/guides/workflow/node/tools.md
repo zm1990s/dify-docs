@@ -13,11 +13,11 @@
 1. 对工具授权/创建自定义工具/将工作流发布为工具
 2. 配置工具输入和参数
 
-<figure><img src="../../../.gitbook/assets/image (231).png" alt="" width="258"><figcaption><p>工具选择</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (282).png" alt="" width="258"><figcaption><p>工具选择</p></figcaption></figure>
 
 工具节点可以连接其它节点，通过[变量](https://docs.dify.ai/v/zh-hans/guides/workflow/variables)处理和传递数据。
 
-<figure><img src="../../../.gitbook/assets/image (232).png" alt=""><figcaption><p>配置 Google 搜索工具检索外部知识</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (283).png" alt=""><figcaption><p>配置 Google 搜索工具检索外部知识</p></figcaption></figure>
 
 ### 将工作流应用发布为工具
 

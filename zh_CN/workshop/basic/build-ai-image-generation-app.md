@@ -6,17 +6,17 @@
 
 本文将使用图像生成模型，指导你使用 Dify 快速开发一个 AI 图片生成应用。
 
-![](../../../img/workshop/build-ai-image-generation-app-12.png)
+<figure><img src="../../.gitbook/assets/build-ai-image-generation-app-12-en.png" alt=""><figcaption></figcaption></figure>
 
-## 本实验中你将掌握的知识点
+### 本实验中你将掌握的知识点
 
-- 使用 Dify 构建 Agent 的方法
-- Agent 的基本概念
-- 提示词工程的基础知识
-- 工具的使用
-- 大模型的幻觉的概念
+* 使用 Dify 构建 Agent 的方法
+* Agent 的基本概念
+* 提示词工程的基础知识
+* 工具的使用
+* 大模型的幻觉的概念
 
-## 1. 获取和填入 Stablility API 密钥
+### 1. 获取和填入 Stablility API 密钥
 
 [点击这里](https://platform.stability.ai/account/keys) 即可跳转至 Stability 的 API 密钥管理页。
 
@@ -24,18 +24,20 @@
 
 进入管理页后，点击复制密钥即可。
 
-![](../../../img/workshop/build-ai-image-generation-app-1.png)
+<figure><img src="../../.gitbook/assets/build-ai-image-generation-app-1.png" alt=""><figcaption></figcaption></figure>
 
 接下来，你需要通过以下步骤把密钥填入 [Dify - 工具 - Stability](https://cloud.dify.ai/tools) 中：
 
-- 登录 Dify
-- 进入工具
-- 选择 Stability
-- 点击授权
-![](../../../img/workshop/build-ai-image-generation-app-2.png)
-- 填入密钥并保存
+* 登录 Dify
+* 进入工具
+* 选择 Stability
+* 点击授权&#x20;
 
-## 2. 配置模型供应商
+<figure><img src="../../.gitbook/assets/build-ai-image-generation-app-2.png" alt=""><figcaption></figcaption></figure>
+
+* 填入密钥并保存
+
+### 2. 配置模型供应商
 
 为了优化交互，我们需要LLM来将用户的指令具体化，也就是让LLM来撰写生成图片的提示词（Prompt）。接下来，我们按照如下的步骤在 Dify 配置模型供应商。
 
@@ -43,8 +45,9 @@ Free 版本的 Dify 提供了免费 200 条 OpenAI 的消息额度
 
 如果消息额度不够用，你可以参考下图步骤, 自定义其它模型供应商:
 
-点击**右上角头像 - 设置 - 模型供应商**
-![](../../../img/workshop/build-ai-image-generation-app-3.png)
+点击**右上角头像 - 设置 - 模型供应商**&#x20;
+
+<figure><img src="../../.gitbook/assets/build-ai-image-generation-app-3.png" alt=""><figcaption></figcaption></figure>
 
 如果尚未找到合适的模型供应商，groq 平台提供了 Llama 等 LLM 的免费调用额度。
 
@@ -54,17 +57,17 @@ Free 版本的 Dify 提供了免费 200 条 OpenAI 的消息额度
 
 回到**Dify - 模型供应商**，选择**groqcloud**，点击 **设置**。
 
-![](../../../img/workshop/build-ai-image-generation-app-4.png)
+<figure><img src="../../.gitbook/assets/build-ai-image-generation-app-4.png" alt=""><figcaption></figcaption></figure>
 
 粘贴 API Key 并保存。
 
-![](../../../img/workshop/build-ai-image-generation-app-5.png)
+<figure><img src="../../.gitbook/assets/build-ai-image-generation-app-5.png" alt=""><figcaption></figcaption></figure>
 
-## 3. 构建 Agent
+### 3. 构建 Agent
 
 回到**Dify - 工作室**，选择**创建空白应用**。
 
-![](../../../img/workshop/build-ai-image-generation-app-6.png)
+<figure><img src="../../.gitbook/assets/build-ai-image-generation-app-6.png" alt=""><figcaption></figcaption></figure>
 
 在本实验中，我们只需要了解 Agent 的基础用法即可。
 
@@ -72,29 +75,29 @@ Free 版本的 Dify 提供了免费 200 条 OpenAI 的消息额度
 **什么是 Agent**
 
 Agent 是一种模拟人类行为和能力的 AI 系统，它通过自然语言处理与环境交互，能够理解输入信息并生成相应的输出。Agent 还具有 "感知" 能力，可以处理和分析各种形式的数据。此外，Agent 能够调用和使用各种外部工具和 API 来完成任务，扩展其功能范围。这种设计使 Agent 能够更灵活地应对复杂情况，在一定程度上模拟人类的思考和行为模式。
-{% endhint %}
 
 因此，很多人都会将 Agent 称为“智能体”。
+{% endhint %}
 
 选择 **Agent**，填写名称即可。
 
-![](../../../img/workshop/build-ai-image-generation-app-7.png)
+<figure><img src="../../.gitbook/assets/build-ai-image-generation-app-7.png" alt=""><figcaption></figcaption></figure>
 
 接下来你会进入到如下图的 Agent 编排界面
 
-![](../../../img/workshop/build-ai-image-generation-app-8.png)
+<figure><img src="../../.gitbook/assets/build-ai-image-generation-app-8.png" alt=""><figcaption></figcaption></figure>
 
-首先，我们选择 LLM，本篇教程中我们使用 groq 提供的 Llama-3.1-70B 为例：
+我们选择 LLM，本篇教程中我们使用 groq 提供的 Llama-3.1-70B 为例：
 
-![](../../../img/workshop/build-ai-image-generation-app-9.png)
+<figure><img src="../../.gitbook/assets/build-ai-image-generation-app-9.png" alt=""><figcaption></figcaption></figure>
 
-接下来我们在**工具**中添加 AI 绘图工具 Stability：
+在**工具**中添加 AI 绘图工具 Stability：
 
-![](../../../img/workshop/build-ai-image-generation-app-10.png)
+<figure><img src="../../.gitbook/assets/build-ai-image-generation-app-10.png" alt=""><figcaption></figcaption></figure>
 
-![](../../../img/workshop/build-ai-image-generation-app-11.png)
+<figure><img src="../../.gitbook/assets/build-ai-image-generation-app-11.png" alt=""><figcaption></figcaption></figure>
 
-### 撰写提示词
+#### 撰写提示词
 
 提示词（Prompt）是 Agent 的灵魂，直接影响到输出的效果。通常来说越具体的提示词输出的效果越好，但是过冗长的提示词也会导致一些负面效果。
 
@@ -112,33 +115,33 @@ Agent 是一种模拟人类行为和能力的 AI 系统，它通过自然语言�
 
 例如：画一个女孩，手中拿着一本打开的书
 
-![](../../../img/workshop/build-ai-image-generation-app-12.png)
+<figure><img src="../../.gitbook/assets/build-ai-image-generation-app-12.png" alt=""><figcaption></figcaption></figure>
 
-### 不想撰写提示词？当然可以！
+#### 不想撰写提示词？当然可以！
 
 点击提示词的右上角**生成**。
 
-![](../../../img/workshop/prompt-gen-1.png)
+<figure><img src="../../.gitbook/assets/prompt-gen-1.png" alt=""><figcaption></figcaption></figure>
 
 在**指令**中输入你的需求，点击**生成**，右侧生成的提示词中会出现由AI生成的提示词。
 
-![](../../../img/workshop/prompt-gen-2.png)
+<figure><img src="../../.gitbook/assets/prompt-gen-2.png" alt=""><figcaption></figcaption></figure>
 
 不过，为了养成对提示词良好的理解，我们在初期最好不要依赖这一项功能。
 
-## 发布
+### 发布
 
 点击右上角的发布按钮，发布后选择**运行**就可以获得一个在线运行的 Agent 的网页。
 
-![](../../../img/workshop/build-ai-image-generation-app-13.png)
+<figure><img src="../../.gitbook/assets/build-ai-image-generation-app-13.png" alt=""><figcaption></figcaption></figure>
 
 复制这个网页的 URL，可以分享给其他好友使用。
 
-## 思考题 1：如何指定生成图片的画风？
+### 思考题 1：如何指定生成图片的画风？
 
 我们可以在用户输入的命令中加上画风的指令，例如：二次元风格，画一个女孩，手中拿着一本打开的书
 
-![](../../../img/workshop/build-ai-image-generation-app-14.png)
+<figure><img src="../../.gitbook/assets/build-ai-image-generation-app-14.png" alt=""><figcaption></figcaption></figure>
 
 但是如果我们希望风格默认都是二次元风格呢，那么我们加在系统提示词里就行了，因为我们之前了解到系统提示词是每次执行用户命令都会知晓的，优先级更高。
 
@@ -146,7 +149,7 @@ Agent 是一种模拟人类行为和能力的 AI 系统，它通过自然语言�
 根据用户的提示，使用工具 stability_text2image 绘画指定内容，画面是二次元风格
 ```
 
-## 思考题 2: 如何拒绝部分用户的某些请求？
+### 思考题 2: 如何拒绝部分用户的某些请求？
 
 在许多业务场景中，我们需要避免输出一些不合理的内容，但是 LLM 很多时候比较 “傻”，用户下指令时会照做不误，即使输出的内容是错的，这种模型为了努力回答用户而编造虚假内容的现象称为模型幻觉（Hallucinations），那么我们需要让模型必要的时候拒绝用户的请求。
 
@@ -162,11 +165,12 @@ Agent 是一种模拟人类行为和能力的 AI 系统，它通过自然语言�
 如果用户在请求和绘画无关的内容，回复：“对不起，我不明白你在说什么”
 ```
 
-例如，我们尝试提问：今晚吃什么
-![](../../../img/workshop/build-ai-image-generation-app-15.png)
+例如，我们尝试提问：今晚吃什么&#x20;
+
+<figure><img src="../../.gitbook/assets/build-ai-image-generation-app-15.png" alt=""><figcaption></figcaption></figure>
 
 在一些更正式的业务场景中，我们可以调用敏感词库来拒绝用户的请求。
 
 在**添加功能 - 内容审查**中添加关键词 “晚饭”，当用户输入关键词时，则 Agent 应用输出 “对不起，我不明白你在说什么”。
 
-![](../../../img/workshop/build-ai-image-generation-app-16.png)
+<figure><img src="../../.gitbook/assets/build-ai-image-generation-app-16.png" alt=""><figcaption></figcaption></figure>

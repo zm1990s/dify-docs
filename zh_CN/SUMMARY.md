@@ -64,7 +64,7 @@
   * [在应用内集成知识库](guides/knowledge-base/integrate-knowledge-within-application.md)
   * [召回测试/引用归属](guides/knowledge-base/retrieval-test-and-citation.md)
   * [通过 API 维护知识库](guides/knowledge-base/maintain-dataset-via-api.md)
-  * [外部数据工具](guides/knowledge-base/wai-bu-shu-ju-gong-ju.md)
+  * [外部知识库 API](guides/knowledge-base/external-knowledge-api-documentation.md)
 * [工具](guides/tools/README.md)
   * [快速接入工具](guides/tools/quick-tool-integration.md)
   * [高级接入工具](guides/tools/advanced-tool-integration.md)
@@ -104,7 +104,7 @@
     * [外部数据工具](guides/extension/code-based-extension/external-data-tool.md)
     * [敏感内容审查](guides/extension/code-based-extension/moderation.md)
 * [协同](guides/workspace/README.md)
-  * [发现](guides/workspace/app/README.md)
+  * [发现](guides/workspace/app.md)
   * [邀请与管理成员](guides/workspace/invite-and-manage-members.md)
 * [管理](guides/management/README.md)
   * [应用管理](guides/management/app-management.md)
@@ -112,10 +112,10 @@
   * [个人账号管理](guides/management/personal-account-management.md)
   * [订阅管理](guides/management/subscription-management.md)
 
-## 动手实验室 <a href="workshop" id="workshop"></a>
+## 动手实验室 <a href="#workshop" id="workshop"></a>
 
 * [初级](workshop/basic/README.md)
-  *[如何搭建 AI 图片生成应用](workshop/basic/build-ai-image-generation-app.md)
+  * [如何搭建 AI 图片生成应用](workshop/basic/build-ai-image-generation-app.md)
 
 ## 社区 <a href="#community" id="community"></a>
 
@@ -156,8 +156,8 @@
     * [混合检索](learn-more/extended-reading/retrieval-augment/hybrid-search.md)
     * [重排序](learn-more/extended-reading/retrieval-augment/rerank.md)
     * [召回模式](learn-more/extended-reading/retrieval-augment/retrieval.md)
-  * [提示词编排](learn-more/extended-reading/prompt-engineering/README.md)
-  * [如何在 Dify 中使用 JSON Scheema 输出功能？](learn-more/how-to-use-json-schema-in-dify.md)
+  * [提示词编排](learn-more/extended-reading/prompt-engineering.md)
+  * [如何在 Dify 中使用 JSON Scheema 输出功能？](learn-more/extended-reading/how-to-use-json-schema-in-dify.md)
 * [常见问题](learn-more/faq/README.md)
   * [本地部署相关](learn-more/faq/install-faq.md)
   * [LLM 配置与使用](learn-more/faq/llms-use-faq.md)

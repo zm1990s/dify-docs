@@ -8,7 +8,7 @@
 
 用法：通过变量赋值节点，你可以将工作流内的变量赋值到会话变量中用于临时存储，并可以在后续对话中持续引用。
 
-<figure><img src="../../../../img/zh-conversation-variable.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/zh-conversation-variable.png" alt="" width="375"><figcaption></figcaption></figure>
 
 ***
 
@@ -107,7 +107,7 @@ def main(arg1: list) -> str:
 
 示例：用户在对话开始前，在 `language` 输入框内指定了 “中文”，该语言将会被写入会话变量，LLM 在后续进行答复时会参考会话变量中的信息，在后续对话中持续使用“中文”进行回复。
 
-<figure><img src="../../../../img/zh-conversation-var-scenario-1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/zh-conversation-var-scenario-1.png" alt=""><figcaption></figcaption></figure>
 
 **配置流程：**
 
@@ -123,7 +123,7 @@ def main(arg1: list) -> str:
 
 示例：开始对话后，LLM 会要求用户在对话框内输入 Checklist 所涉及的事项，用户一旦提及了 Checklist 中的内容，将会更新并存储至会话变量内。LLM 会在每轮对话后提醒用户继续补充遗漏项。
 
-<figure><img src="../../../../img/conversation-var-scenario-2-1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/conversation-var-scenario-2-1.png" alt=""><figcaption></figcaption></figure>
 
 **配置流程：**
 
@@ -137,7 +137,7 @@ def main(arg1: list) -> str:
 
 点击节点右侧 ＋ 号，选择“变量赋值”节点，填写“赋值的变量”和“设置变量”。
 
-<figure><img src="../../../../img/zh-language-variable-assigner.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/zh-language-variable-assigner.png" alt="" width="375"><figcaption></figcaption></figure>
 
 **设置变量：**
 

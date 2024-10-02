@@ -29,18 +29,17 @@ RAG 检索环节中的主流方法是向量检索，即语义相关度匹配的�
 
 在混合检索中，你需要在数据库中提前建立向量索引和关键词索引，在用户问题输入时，分别通过两种检索器在文档中检索出最相关的文本。
 
-<figure><img src="../../../.gitbook/assets/image (127).png" alt="" width="563"><figcaption><p>混合检索</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (178).png" alt="" width="563"><figcaption><p>混合检索</p></figcaption></figure>
 
 “混合检索”实际上并没有明确的定义，本文以向量检索和关键词检索的组合为示例。如果我们使用其他搜索算法的组合，也可以被称为“混合检索”。比如，我们可以将用于检索实体关系的知识图谱技术与向量检索技术结合。
 
 不同的检索系统各自擅长寻找文本（段落、语句、词汇）之间不同的细微联系，这包括了精确关系、语义关系、主题关系、结构关系、实体关系、时间关系、事件关系等。可以说没有任何一种检索模式能够适用全部的情景。**混合检索通过多个检索系统的组合，实现了多个检索技术之间的互补。**
 
-
 ### **向量检索**
 
 定义：通过生成查询嵌入并查询与其向量表示最相似的文本分段。
 
-<figure><img src="../../../.gitbook/assets/image (116).png" alt="" width="563"><figcaption><p>向量检索设置</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (167).png" alt="" width="563"><figcaption><p>向量检索设置</p></figcaption></figure>
 
 **TopK：** 用于筛选与用户问题相似度最高的文本片段。系统同时会根据选用模型上下文窗口大小动态调整片段数量。系统默认值为 3 。
 
@@ -48,45 +47,40 @@ RAG 检索环节中的主流方法是向量检索，即语义相关度匹配的�
 
 **Rerank 模型：** 你可以在“模型供应商”页面配置 Rerank 模型的 API 秘钥之后，在检索设置中打开“Rerank 模型”，系统会在语义检索后对已召回的文档结果再一次进行语义重排序，优化排序结果。设置 Rerank 模型后，TopK 和 Score 阈值设置仅在 Rerank 步骤生效。
 
-
 ### **全文检索**
 
 定义：索引文档中的所有词汇，从而允许用户查询任意词汇，并返回包含这些词汇的文本片段。
 
-<figure><img src="../../../.gitbook/assets/image (122).png" alt="" width="563"><figcaption><p>全文检索设置</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (173).png" alt="" width="563"><figcaption><p>全文检索设置</p></figcaption></figure>
 
 **TopK：** 用于筛选与用户问题相似度最高的文本片段。系统同时会根据选用模型上下文窗口大小动态调整片段数量。系统默认值为 3 。
 
 **Rerank 模型：** 你可以在“模型供应商”页面配置 Rerank 模型的 API 秘钥之后，在检索设置中打开“Rerank 模型”，系统会在全文检索后对已召回的文档结果再一次进行语义重排序，优化排序结果。设置 Rerank 模型后，TopK 和 Score 阈值设置仅在 Rerank 步骤生效。
 
-
 ### **混合检索**
 
 同时执行全文检索和向量检索，并应用重排序步骤，从两类查询结果中选择匹配用户问题的最佳结果，需配置 Rerank 模型 API。
 
-<figure><img src="../../../.gitbook/assets/image (118).png" alt="" width="563"><figcaption><p>混合检索设置</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (169).png" alt="" width="563"><figcaption><p>混合检索设置</p></figcaption></figure>
 
 **TopK：** 用于筛选与用户问题相似度最高的文本片段。系统同时会根据选用模型上下文窗口大小动态调整片段数量。系统默认值为 3 。
 
 **Rerank 模型：** 你可以在“模型供应商”页面配置 Rerank 模型的 API 秘钥之后，在检索设置中打开“Rerank 模型”，系统会在混合检索后对已召回的文档结果再一次进行语义重排序，优化排序结果。设置 Rerank 模型后，TopK 和 Score 阈值设置仅在 Rerank 步骤生效。
 
-
 ### 创建数据集时设置检索模式
 
 进入“数据集->创建数据集”页面并在检索设置中设置不同的检索模式：
 
-<figure><img src="../../../.gitbook/assets/image (119).png" alt="" width="563"><figcaption><p>创建数据集时设置检索模式</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (170).png" alt="" width="563"><figcaption><p>创建数据集时设置检索模式</p></figcaption></figure>
 
 ### 数据集设置中修改检索模式
 
 进入“数据集->选择数据集->设置”页面中可以对已创建的数据集修改不同的检索模式。
 
-<figure><img src="../../../.gitbook/assets/image (120).png" alt="" width="563"><figcaption><p>数据集设置中修改检索模式</p></figcaption></figure>
-
-
+<figure><img src="../../../.gitbook/assets/image (171).png" alt="" width="563"><figcaption><p>数据集设置中修改检索模式</p></figcaption></figure>
 
 ### 提示词编排中修改检索模式
 
 进入“提示词编排->上下文->选择数据集->设置”页面中可以在创建应用时修改不同的检索模式。
 
-<figure><img src="../../../.gitbook/assets/image (121).png" alt=""><figcaption><p>提示词编排中修改检索模式</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (172).png" alt=""><figcaption><p>提示词编排中修改检索模式</p></figcaption></figure>

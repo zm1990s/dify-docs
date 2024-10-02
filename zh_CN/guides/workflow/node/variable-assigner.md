@@ -16,15 +16,15 @@
 
 未添加变量聚合，分类1 和 分类 2 分支经不同的知识库检索后需要重复定义下游的 LLM 和直接回复节点。
 
-<figure><img src="../../../.gitbook/assets/image (227).png" alt=""><figcaption><p>问题分类（无变量聚合）</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (278).png" alt=""><figcaption><p>问题分类（无变量聚合）</p></figcaption></figure>
 
 添加变量聚合，可以将两个知识检索节点的输出聚合为一个变量。
 
-<figure><img src="../../../.gitbook/assets/image (225).png" alt=""><figcaption><p>问题分类后的多路聚合</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (276).png" alt=""><figcaption><p>问题分类后的多路聚合</p></figcaption></figure>
 
 **IF/ELSE 条件分支后的多路聚合**
 
-<figure><img src="../../../.gitbook/assets/image (226).png" alt=""><figcaption><p>问题分类后的多路聚合</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (277).png" alt=""><figcaption><p>问题分类后的多路聚合</p></figcaption></figure>
 
 ### 3 格式要求
 

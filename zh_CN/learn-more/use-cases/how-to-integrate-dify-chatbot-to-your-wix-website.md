@@ -10,22 +10,21 @@ Wix 是一个非常流行的网站创建平台，它允许用户通过拖拽的�
 
 假设你已创建了一个 [Dify AI 应用](https://docs.dify.ai/v/zh-hans/guides/application-orchestrate/creating-an-application)，你可以通过以下步骤获取 Dify 应用的 iFrame 代码片段：
 
-- 登录你的 Dify 账户
-- 选择你想要嵌入的 Dify 应用
-- 点击右上角的“发布”按钮
-- 在发布页面中，选择 “Embed Into Site” 选项。
-  
-  ![](../../../img/best-practice-wix-2.png)
+* 登录你的 Dify 账户
+* 选择你想要嵌入的 Dify 应用
+* 点击右上角的“发布”按钮
+*   在发布页面中，选择 “Embed Into Site” 选项。
 
-- 选择合适的样式并复制显示的 iFrame 代码，例如：
+    ![](../../.gitbook/assets/best-practice-wix-2.png)
+* 选择合适的样式并复制显示的 iFrame 代码，例如：
 
-![](../../../img/best-practice-wix-3.png)
+![](../../.gitbook/assets/best-practice-wix-3.png)
 
 ## 2. 在 Wix 网站中嵌入 iFrame 代码片段
 
 登录 Wix 网站，打开你要编辑的网页。点击网页左侧蓝色的 `+` （Add Elements）按钮，然后选择 **Embed Code**，最后点击 **Embed HTML** 添加一个 HTML iFrame 元素到页面。
 
-![](../../../img/best-practice-add-html-iframe.png)
+![](../../.gitbook/assets/best-practice-add-html-iframe.png)
 
 在 `HTML Settings` 框内选择 `Code` 选项，复制并粘贴你在 Dify 应用中获取的 iFrame 代码片段，然后点击 **Update** 按钮进行保存并进行预览。
 
@@ -35,7 +34,7 @@ Wix 是一个非常流行的网站创建平台，它允许用户通过拖拽的�
 <iframe src="https://udify.app/chatbot/1yS3gohroW1sKyLc" style="width: 100%; height: 100%; min-height: 700px" frameborder="0" allow="microphone"></iframe>
 ```
 
-![](../../../img/best-practice-insert-dify-iframe-code.png)
+![](../../.gitbook/assets/best-practice-insert-dify-iframe-code.png)
 
 > ⚠️ 请确保 iFrame 代码中的地址以 HTTPS 开头，HTTP 地址将无法正常显示。
 
@@ -75,9 +74,9 @@ Wix 是一个非常流行的网站创建平台，它允许用户通过拖拽的�
 
 **1. iframe 方框内未正常显示内容应如何处理？**
 
-- 确保 URL 以 HTTPS 开头；
-- 检查 `iframe` 代码中是否有拼写错误；
-- 确认嵌入的内容符合 Wix 的安全政策；
+* 确保 URL 以 HTTPS 开头；
+* 检查 `iframe` 代码中是否有拼写错误；
+* 确认嵌入的内容符合 Wix 的安全政策；
 
 **2. iframe 内容被裁剪，内容显示不全应如何处理？**
 

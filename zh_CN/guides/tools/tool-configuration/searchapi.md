@@ -12,18 +12,18 @@ SearchApi 是一个强大的实时 SERP API，可提供来自 Google 搜索、Go
 
 在 Dify 导航页内轻点 `工具 > SearchApi > 去授权` 填写 API Key。
 
-![](../../../../img/zh-tool-searchapi.png)
+![](../../../.gitbook/assets/zh-tool-searchapi.png)
 
 ## 3. 使用工具
 
 你可以在以下应用类型中使用 SearchApi 工具。
 
-- **Chatflow / Workflow 应用**
+* **Chatflow / Workflow 应用**
 
 Chatflow 和 Workflow 应用均支持添加 `SearchApi` 系列工具节点，提供 Google Jobs API，Google News API，Google Search API，YouTube 脚本 API 四种工具。
 
-![](../../../../img/zh-tool-searchapi-flow.png)
+![](../../../.gitbook/assets/zh-tool-searchapi-flow.png)
 
-- **Agent 应用**
+* **Agent 应用**
 
 在 Agent 应用内选择需要添加的 `SearchApi` 工具，然后输入指令调用工具。

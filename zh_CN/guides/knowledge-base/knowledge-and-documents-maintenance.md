@@ -26,7 +26,7 @@
 
 Dify 知识库提供整套标准 API ，开发者通过 API 调用对知识库内的文档、分段进行增删改查等日常管理维护操作，请参考[知识库 API 文档](maintain-dataset-via-api.md)。
 
-<figure><img src="../../.gitbook/assets/image (180).png" alt=""><figcaption><p>知识库 API 管理</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (231).png" alt=""><figcaption><p>知识库 API 管理</p></figcaption></figure>
 
 ## 维护知识库中的文本
 
@@ -52,7 +52,7 @@ Dify 知识库提供整套标准 API ，开发者通过 API 调用对知识库�
 
 知识库内已上传的每个文档都会以文本分段（Chunks）的形式进行存储，你可以在分段列表内查看每一个分段的具体文本内容。
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>查看已上传的文档分段</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (88).png" alt=""><figcaption><p>查看已上传的文档分段</p></figcaption></figure>
 
 ***
 
@@ -66,15 +66,15 @@ Dify 知识库提供整套标准 API ，开发者通过 API 调用对知识库�
 
 * **过短的文本分段**，导致语义缺失；
 
-<figure><img src="../../.gitbook/assets/image (183).png" alt="" width="373"><figcaption><p>过短的文本分段</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (234).png" alt="" width="373"><figcaption><p>过短的文本分段</p></figcaption></figure>
 
 * **过长的文本分段**，导致语义噪音影响匹配准确性；
 
-<figure><img src="../../.gitbook/assets/image (186).png" alt="" width="375"><figcaption><p>过长的文本分段</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (237).png" alt="" width="375"><figcaption><p>过长的文本分段</p></figcaption></figure>
 
 * **明显的语义截断**，在使用最大分段长度限制时会出现强制性的语义截断，导致召回时缺失内容；
 
-<figure><img src="../../.gitbook/assets/image (185).png" alt="" width="357"><figcaption><p>明显的语义截断</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (236).png" alt="" width="357"><figcaption><p>明显的语义截断</p></figcaption></figure>
 
 ***
 
@@ -82,11 +82,11 @@ Dify 知识库提供整套标准 API ，开发者通过 API 调用对知识库�
 
 在分段列表内点击 「 添加分段 」 ，可以在文档内自行添加一个或批量添加多个自定义分段。
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure>
 
 批量添加分段时，你需要先下载 CSV 格式的分段上传模板，并按照模板格式在 Excel 内编辑所有的分段内容，再将 CSV 文件保存后上传。
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>批量添加自定义分段</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (92).png" alt=""><figcaption><p>批量添加自定义分段</p></figcaption></figure>
 
 ***
 
@@ -94,7 +94,7 @@ Dify 知识库提供整套标准 API ，开发者通过 API 调用对知识库�
 
 在分段列表内，你可以对已添加的分段内容直接进行编辑修改。包括分段的文本内容和关键词。
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>编辑文档分段</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (93).png" alt=""><figcaption><p>编辑文档分段</p></figcaption></figure>
 
 ***
 
@@ -106,4 +106,4 @@ Dify 知识库提供整套标准 API ，开发者通过 API 调用对知识库�
 元数据过滤及引用来源功能当前版本尚未支持。
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (179).png" alt=""><figcaption><p>元数据管理</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (230).png" alt=""><figcaption><p>元数据管理</p></figcaption></figure>

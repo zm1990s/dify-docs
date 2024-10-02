@@ -115,7 +115,7 @@ Query or prefix prompt is too long, you can reduce the preix prompt, or shrink t
 
 如下方表格示例，仅需保留第二行的表头，首行（表格1）为多余表头，需删掉。
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (135).png" alt=""><figcaption></figcaption></figure>
 
 ### 19. 买了 ChatGPT plus，为什么在 dify 里还不能使用 GPT4？
 
@@ -135,4 +135,3 @@ Dify 支持以下作为 Embedding 模型使用，只需在配置框中选择 `Em
 ### 21. 如何把自己创建的应用设置成应用模板？
 
 该功能为 Dify 官方提供的应用模板供云端版用户参考使用，暂未支持将自己创建的应用设置成应用模板。如您使用云端版，可 **添加到工作区** 或 **自定义** 修改后成为你自己的应用。如您使用社区版，需要为团队内创建更多的应用模板，您可咨询我们商业化团队获得付费的技术支持：`business@dify.ai`
-

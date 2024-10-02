@@ -241,5 +241,4 @@
 
 **Embedding 模型**是一种专门用于将文本向量化的大语言模型，它擅长将文本转换为密集的数值向量，有效捕捉语义信息。
 
-> 如需了解更多，请参考：[《Dify：Embedding 技术与 Dify 数据集设计/规划》](https://mp.weixin.qq.com/s/vmY\_CUmETo2IpEBf1nEGLQ)。\
->
+> 如需了解更多，请参考：[《Dify：Embedding 技术与 Dify 数据集设计/规划》](https://mp.weixin.qq.com/s/vmY\_CUmETo2IpEBf1nEGLQ)。

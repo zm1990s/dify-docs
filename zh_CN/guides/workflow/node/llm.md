@@ -4,7 +4,7 @@
 
 调用大语言模型回答问题或者处理自然语言。
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>LLM 节点</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (71).png" alt=""><figcaption><p>LLM 节点</p></figcaption></figure>
 
 ***
 
@@ -26,7 +26,7 @@ LLM 是 Chatflow/Workflow 的核心节点，利用大语言模型的对话/生�
 
 ### 如何配置
 
-<figure><img src="../../../.gitbook/assets/image (200).png" alt=""><figcaption><p>LLM 节点配置-选择模型</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (251).png" alt=""><figcaption><p>LLM 节点配置-选择模型</p></figcaption></figure>
 
 **配置步骤：**
 
@@ -43,17 +43,17 @@ LLM 是 Chatflow/Workflow 的核心节点，利用大语言模型的对话/生�
 
 在 LLM 节点内，你可以自定义模型输入提示词。如果选择聊天模型（Chat model），你可以自定义系统提示词（SYSTEM）/用户（USER）/助手（ASSISTANT）三部分内容。
 
-<figure><img src="../../../../img/zh-node-llm.png" alt="" width="352"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/zh-node-llm.png" alt="" width="352"><figcaption></figcaption></figure>
 
 **提示生成器**
 
 如果在编写系统提示词（SYSTEM）时没有好的头绪，也可以使用提示生成器功能，借助 AI 能力快速生成适合实际业务场景的提示词。
 
-![](../../../../img/zh-node-llm-prompt-generator.png)
+![](../../../.gitbook/assets/zh-node-llm-prompt-generator.png)
 
 在提示词编辑器中，你可以通过输入 **“/”** 或者 **“{”** 呼出 **变量插入菜单**，将 **特殊变量块** 或者 **上游节点变量** 插入到提示词中作为上下文内容。
 
-<figure><img src="../../../.gitbook/assets/image (202).png" alt="" width="366"><figcaption><p>呼出变量插入菜单</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (253).png" alt="" width="366"><figcaption><p>呼出变量插入菜单</p></figcaption></figure>
 
 ***
 
@@ -63,7 +63,7 @@ LLM 是 Chatflow/Workflow 的核心节点，利用大语言模型的对话/生�
 
 上下文变量是 LLM 节点内定义的特殊变量类型，用于在提示词内插入外部检索的文本内容。
 
-<figure><img src="../../../.gitbook/assets/image (205).png" alt=""><figcaption><p>上下文变量</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (256).png" alt=""><figcaption><p>上下文变量</p></figcaption></figure>
 
 在常见的知识库问答应用中，知识库检索的下游节点一般为 LLM 节点，知识检索的 **输出变量** `result` 需要配置在 LLM 节点中的 **上下文变量** 内关联赋值。关联后在提示词的合适位置插入 **上下文变量** ，可以将外部检索到的知识插入到提示词中。
 
@@ -81,7 +81,7 @@ LLM 是 Chatflow/Workflow 的核心节点，利用大语言模型的对话/生�
 会话历史变量应用并不广泛，仅在 Chatflow 中选择文本补全类模型时可以插入使用。
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (204).png" alt=""><figcaption><p>插入会话历史变量</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (255).png" alt=""><figcaption><p>插入会话历史变量</p></figcaption></figure>
 
 ***
 
