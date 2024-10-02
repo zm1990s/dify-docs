@@ -1,6 +1,6 @@
 # 连接外部知识库
 
-一些团队出于对内部资料的管理要求，或者对文本检索和召回的精确度的更高追求，倾向于自主研发 RAG 算法并自建知识库，或选择将知识库托管至云服务提供商（例如 [AWS Bedrock](https://aws.amazon.com/bedrock/)）。作为中立的 LLM 应用开发平台，Dify 致力于赋予开发者更大的知识库选择自主权。
+一些团队出于对内部资料的管理要求、或是对文本检索和召回的精确度的更高追求，倾向于自主研发 RAG 算法并维护独立知识库，或选择使用由云服务提供商的知识库服务（例如 [AWS Bedrock](https://aws.amazon.com/bedrock/)）。作为中立的 LLM 应用开发平台，Dify 致力于给予开发者更多知识库选择权。
 
 Dify 现支持**连接外部知识库**功能，通过 API 连接的方式，赋予开发者将托管在团队内的知识无缝融入 Dify 团队的 AI 应用生态系统的能力，进而提升 Dify 平台内 AI 应用的知识广度和深度。
 
@@ -49,13 +49,11 @@ Dify 现支持**连接外部知识库**功能，通过 API 连接的方式，赋
 
 ![](../../../img/connect-external-knowledge-04.png)
 
-
 ## 5. 在应用内集成外部知识库
 
 - Chatbot / Agent 类型应用
     在 Chatbot / Agent 类型应用内的编排页中关联外部知识库。
     ![](../../../img/connect-external-knowledge-05.png)
-
 
 - Chatflow / Workflow 类型应用
     添加 “知识检索” 节点，选中外部知识库。
