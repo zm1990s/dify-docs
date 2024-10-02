@@ -12,18 +12,18 @@ Please apply for an API Key at [SearchApi](https://www.searchapi.io/).
 
 In the Dify navigation page, click on `Tools > SearchApi > Go to authorize` to fill in the API Key.
 
-![](../../../../img/tool-searchapi.png)
+![](../../../.gitbook/assets/tool-searchapi.png)
 
 ## 3. Using the tool
 
 You can use the SearchApi tool in the following application types.
 
-- **Chatflow / Workflow applications**
+* **Chatflow / Workflow applications**
 
 Both Chatflow and Workflow applications support adding `SearchApi` series tool nodes, providing four tools: Google Jobs API, Google News API, Google Search API, and YouTube Scraper API.
 
-![](../../../../img/tool-searchapi-flow.png)
+![](../../../.gitbook/assets/tool-searchapi-flow.png)
 
-- **Agent applications**
+* **Agent applications**
 
 Select the `SearchApi` tool you need to add in the Agent application, then enter commands to call the tool.

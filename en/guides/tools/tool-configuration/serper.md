@@ -12,16 +12,16 @@ Please apply for an API Key on the [Serper platform](https://serper.dev/signup).
 
 In the Dify navigation page, click `Tools > Serper > Authorize` to fill in the API Key.
 
-![](../../../../img/tool-serper.png)
+![](../../../.gitbook/assets/tool-serper.png)
 
 ## 3. Using the tool
 
 You can use the Serper tool in the following application types.
 
-- **Chatflow / Workflow applications**
+* **Chatflow / Workflow applications**
 
 Both Chatflow and Workflow applications support adding `Serper` tool nodes.
 
-- **Agent applications**
+* **Agent applications**
 
 In Agent applications, select the `Serper` tool you want to add, then enter commands to call the tool.

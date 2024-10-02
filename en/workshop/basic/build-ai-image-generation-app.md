@@ -6,15 +6,15 @@ With the rise of image generation, many excellent image generation products have
 
 In this article, you will learn how to develop an AI image generation app using Dify.
 
-![](../../../img/workshop/build-ai-image-generation-app-12-en.png)
+![](../../.gitbook/assets/build-ai-image-generation-app-12-en.png)
 
 ## You Will Learn
 
-- Methods for building an Agent using Dify
-- Basic concepts of Agent
-- Fundamentals of prompt engineering
-- Tool usage
-- Concepts of large model hallucinations
+* Methods for building an Agent using Dify
+* Basic concepts of Agent
+* Fundamentals of prompt engineering
+* Tool usage
+* Concepts of large model hallucinations
 
 ## 1. Setting Stablility API Key
 
@@ -24,16 +24,18 @@ If you haven't registered yet, you will be asked to register before entering the
 
 After entering the management page, click `copy` to copy the key.
 
-![](../../../img/workshop/build-ai-image-generation-app-1.png)
+![](../../.gitbook/assets/build-ai-image-generation-app-1.png)
 
 Next, you need to fill in the key in [Dify - Tools - Stability](https://cloud.dify.ai/tools) by following these steps:
 
-- Log in to Dify
-- Enter Tools
-- Select Stability
-- Click Authorize
-![](../../../img/workshop/build-ai-image-generation-app-2-en.png)
-- Fill in the key and save
+* Log in to Dify
+* Enter Tools
+* Select Stability
+* Click `Authorize`
+
+&#x20;![](../../.gitbook/assets/build-ai-image-generation-app-2-en.png)
+
+* Fill in the key and save
 
 ## 2. Configure Model Providers
 
@@ -43,8 +45,7 @@ The Free version of Dify provides 200 free OpenAI message credits.
 
 If the message credits are insufficient, you can customize other model providers by following the steps in the image below:
 
-Click **Your Avatar - Settings - Model Provider**
-![](../../../img/workshop/build-ai-image-generation-app-3-en.png)
+Click **Your Avatar - Settings - Model Provider** ![](../../.gitbook/assets/build-ai-image-generation-app-3-en.png)
 
 If you haven't found a suitable model provider, the groq platform provides free call credits for LLMs like Llama.
 
@@ -52,19 +53,19 @@ Log in to [groq API Management Page](https://console.groq.com/keys)
 
 Click **Create API Key**, set a desired name, and copy the API Key.
 
-Back to **Dify - Model Providers**, select **groqcloud**, and click **Settings**.
+Back to **Dify - Model Providers**, select **groqcloud**, and click **Setup**.
 
-![](../../../img/workshop/build-ai-image-generation-app-4-en.png)
+![](../../.gitbook/assets/build-ai-image-generation-app-4-en.png)
 
 Paste the API Key and save.
 
-![](../../../img/workshop/build-ai-image-generation-app-5-en.png)
+![](../../.gitbook/assets/build-ai-image-generation-app-5-en.png)
 
 ## 3. Build an Agent
 
 Back to **Dify - Studio**, select **Create from Blank**.
 
-![](../../../img/workshop/build-ai-image-generation-app-6-en.png)
+![](../../.gitbook/assets/build-ai-image-generation-app-6-en.png)
 
 In this experiment, we only need to understand the basic usage of Agent.
 
@@ -76,21 +77,21 @@ An Agent is an AI system that simulates human behavior and capabilities. It inte
 
 Select **Agent**, fill in the name.
 
-![](../../../img/workshop/build-ai-image-generation-app-7-en.png)
+![](../../.gitbook/assets/build-ai-image-generation-app-7-en.png)
 
 Next, you will enter the Agent orchestration interface as shown below.
 
-![](../../../img/workshop/build-ai-image-generation-app-8-en.png)
+![](../../.gitbook/assets/build-ai-image-generation-app-8-en.png)
 
-First, we select the LLM. In this tutorial, we use Llama-3.1-70B provided by groq as an example:
+Select the LLM. Here we use Llama-3.1-70B provided by groq as an example:
 
-![](../../../img/workshop/build-ai-image-generation-app-9-en.png)
+![](../../.gitbook/assets/build-ai-image-generation-app-9-en.png)
 
-Next, we select Stability in **Tools**:
+Select Stability in **Tools**:
 
-![](../../../img/workshop/build-ai-image-generation-app-10-en.png)
+![](../../.gitbook/assets/build-ai-image-generation-app-10-en.png)
 
-![](../../../img/workshop/build-ai-image-generation-app-11-en.png)
+![](../../.gitbook/assets/build-ai-image-generation-app-11-en.png)
 
 ### Write Prompts
 
@@ -106,29 +107,29 @@ Let's start with the simplest prompts:
 Draw the specified content according to the user's prompt using stability_text2image.
 ```
 
-Each time the user inputs a command, the Agent will know this system-level instruction, thus understanding that when executing a user's drawing task, it needs to call a tool called stability.
+Each time the user inputs a command, the Agent will know this system-level instruction, thus understanding that when executing a user's drawing task, it needs to call stability tool.
 
 For example: Draw a girl holding an open book.
 
-![](../../../img/workshop/build-ai-image-generation-app-12-en.png)
+![](../../.gitbook/assets/build-ai-image-generation-app-12-en.png)
 
 ### Don't want to write prompts? Of course you can!
 
-Click **Generate** in the upper right corner of the prompt.
+Click **Generate** in the upper right corner of Instructions.
 
-![](../../../img/workshop/prompt-gen-1-en.png)
+![](../../.gitbook/assets/prompt-gen-1-en.png)
 
 Enter your requirements in the **Instructions** and click **Generate**. The generated prompts on the right will show AI-generated prompts.
 
-![](../../../img/workshop/prompt-gen-2-en.png)
+![](../../.gitbook/assets/prompt-gen-2-en.png)
 
 However, to develop a good understanding of prompts, we should not rely on this feature in the early stages.
 
 ## Publish
 
-Click the publish button in the upper right corner, and after publishing, select **Run** to get a web page for an online running Agent.
+Click the publish button in the upper right corner, and after publishing, select **Run App** to get a web page for an online running Agent.
 
-![](../../../img/workshop/build-ai-image-generation-app-13-en.png)
+![](../../.gitbook/assets/build-ai-image-generation-app-13-en.png)
 
 Copy the URL of this web page to share with other friends.
 
@@ -136,7 +137,7 @@ Copy the URL of this web page to share with other friends.
 
 We can add style instructions in the user's input command, for example: Anime style, draw a girl holding an open book.
 
-![](../../../img/workshop/build-ai-image-generation-app-14-en.png)
+![](../../.gitbook/assets/build-ai-image-generation-app-14-en.png)
 
 But if we want set the default style to anime style, we can add it to the system prompt because we previously learned that the system prompt is known each time the user command is executed and has a higher priority.
 
@@ -160,11 +161,10 @@ Draw the specified content according to the user's prompt using stability_text2i
 If the user requests content unrelated to drawing, reply: "Sorry, I don't understand what you're saying."
 ```
 
-For example, let's ask: What's for dinner tonight?
-![](../../../img/workshop/build-ai-image-generation-app-15-en.png)
+For example, let's ask: What's for dinner tonight? ![](../../.gitbook/assets/build-ai-image-generation-app-15-en.png)
 
 In some more formal business scenarios, we can call a sensitive word library to refuse user requests.
 
 Add the keyword "dinner" in **Add Feature - Content Moderation**. When the user inputs the keyword, the Agent app outputs "Sorry, I don't understand what you're saying."
 
-![](../../../img/workshop/build-ai-image-generation-app-16-en.png)
+![](../../.gitbook/assets/build-ai-image-generation-app-16-en.png)

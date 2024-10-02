@@ -1,4 +1,4 @@
-# Maintaining Knowledge Base via API
+# Maintain Knowledge Base via API
 
 > The authentication and invocation methods for the Knowledge Base API are consistent with the Application Service API. However, a single Knowledge Base API token generated has the authority to operate on all visible knowledge bases under the same account. Please pay attention to data security.
 
@@ -8,24 +8,24 @@ Leveraging the API for knowledge base maintenance significantly enhances data pr
 
 Key advantages include:
 
-- Automated Synchronization: Enables seamless integration between data systems and the Dify knowledge base, fostering efficient workflow construction.
-- Comprehensive Management: Offers functionalities such as knowledge base listing, document enumeration, and detailed querying, facilitating the development of custom data management interfaces.
-- Flexible Content Ingestion: Accommodates both plain text and file upload methodologies, supporting batch operations for addition and modification of content chunks.
-- Enhanced Productivity: Minimizes manual data handling requirements, thereby optimizing the overall user experience on the Dify platform.
+* Automated Synchronization: Enables seamless integration between data systems and the Dify knowledge base, fostering efficient workflow construction.
+* Comprehensive Management: Offers functionalities such as knowledge base listing, document enumeration, and detailed querying, facilitating the development of custom data management interfaces.
+* Flexible Content Ingestion: Accommodates both plain text and file upload methodologies, supporting batch operations for addition and modification of content chunks.
+* Enhanced Productivity: Minimizes manual data handling requirements, thereby optimizing the overall user experience on the Dify platform.
 
 ### How to Use
 
 Navigate to the knowledge base page, and you can switch to the **API ACCESS** page from the left navigation. On this page, you can view the dataset API documentation provided by Dify and manage the credentials for accessing the dataset API in **API Keys**.
 
-<figure><img src="../../../img/knowledge-base-api-token.png" alt=""><figcaption><p>Knowledge API Document</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/knowledge-base-api-token.png" alt=""><figcaption><p>Knowledge API Document</p></figcaption></figure>
 
 ### API Requesting Examples
 
-##### Create a document from text
+**Create a document from text**
 
 This api is based on an existing Knowledge and creates a new document through text based on this Knowledge.
 
-Request example: 
+Request example:
 
 ```json
 curl --location --request POST 'https://api.dify.ai/v1/datasets/{dataset_id}/document/create_by_text' \
@@ -34,7 +34,7 @@ curl --location --request POST 'https://api.dify.ai/v1/datasets/{dataset_id}/doc
 --data-raw '{"name": "text","text": "text","indexing_technique": "high_quality","process_rule": {"mode": "automatic"}}'
 ```
 
- Response example: 
+Response example:
 
 ```json
 {
@@ -70,7 +70,7 @@ curl --location --request POST 'https://api.dify.ai/v1/datasets/{dataset_id}/doc
 
 This api is based on an existing Knowledge and creates a new document through a file based on this Knowledge.
 
-Request example: 
+Request example:
 
 ```json
 curl --location --request POST 'https://api.dify.ai/v1/datasets/{dataset_id}/document/create_by_file' \
@@ -79,7 +79,7 @@ curl --location --request POST 'https://api.dify.ai/v1/datasets/{dataset_id}/doc
 --form 'file=@"/path/to/file"'
 ```
 
- Response example: 
+Response example:
 
 ```json
 {
@@ -118,7 +118,7 @@ curl --location --request POST 'https://api.dify.ai/v1/datasets/{dataset_id}/doc
 Only used to create an empty knowledge base.
 {% endhint %}
 
-Request example: 
+Request example:
 
 ```bash
 curl --location --request POST 'https://api.dify.ai/v1/datasets' \
@@ -127,7 +127,7 @@ curl --location --request POST 'https://api.dify.ai/v1/datasets' \
 --data-raw '{"name": "name", "permission": "only_me"}'
 ```
 
- Response example: 
+Response example:
 
 ```json
 {
@@ -153,14 +153,14 @@ curl --location --request POST 'https://api.dify.ai/v1/datasets' \
 
 #### Knowledge list
 
-Request example: 
+Request example:
 
 ```bash
 curl --location --request GET 'https://api.dify.ai/v1/datasets?page=1&limit=20' \
 --header 'Authorization: Bearer {api_key}'
 ```
 
- Response example: 
+Response example:
 
 ```json
 {
@@ -192,14 +192,14 @@ curl --location --request GET 'https://api.dify.ai/v1/datasets?page=1&limit=20' 
 
 #### Delete knowledge
 
-Request example: 
+Request example:
 
 ```json
 curl --location --request DELETE 'https://api.dify.ai/v1/datasets/{dataset_id}' \
 --header 'Authorization: Bearer {api_key}'
 ```
 
- Response example: 
+Response example:
 
 ```json
 204 No Content
@@ -209,7 +209,7 @@ curl --location --request DELETE 'https://api.dify.ai/v1/datasets/{dataset_id}' 
 
 This api is based on an existing Knowledge and updates the document through text based on this Knowledge
 
-Request example: 
+Request example:
 
 ```bash
 curl --location --request POST 'https://api.dify.ai/v1/datasets/{dataset_id}/documents/{document_id}/update_by_text' \
@@ -218,7 +218,7 @@ curl --location --request POST 'https://api.dify.ai/v1/datasets/{dataset_id}/doc
 --data-raw '{"name": "name","text": "text"}'
 ```
 
-Response example: 
+Response example:
 
 ```json
 {
@@ -254,7 +254,7 @@ Response example:
 
 This api is based on an existing Knowledge, and updates documents through files based on this Knowledge.
 
-Request example: 
+Request example:
 
 ```bash
 curl --location --request POST 'https://api.dify.ai/v1/datasets/{dataset_id}/documents/{document_id}/update_by_file' \
@@ -263,7 +263,7 @@ curl --location --request POST 'https://api.dify.ai/v1/datasets/{dataset_id}/doc
 --form 'file=@"/path/to/file"'
 ```
 
- Response example: 
+Response example:
 
 ```json
 {
@@ -295,17 +295,16 @@ curl --location --request POST 'https://api.dify.ai/v1/datasets/{dataset_id}/doc
 }
 ```
 
-
 #### Get document embedding status (progress)
 
-Request example: 
+Request example:
 
 ```bash
 curl --location --request GET 'https://api.dify.ai/v1/datasets/{dataset_id}/documents/{batch}/indexing-status' \
 --header 'Authorization: Bearer {api_key}'
 ```
 
- Response example: 
+Response example:
 
 ```json
 {
@@ -328,14 +327,14 @@ curl --location --request GET 'https://api.dify.ai/v1/datasets/{dataset_id}/docu
 
 #### Delete document
 
-Request example: 
+Request example:
 
 ```bash
 curl --location --request DELETE 'https://api.dify.ai/v1/datasets/{dataset_id}/documents/{document_id}' \
 --header 'Authorization: Bearer {api_key}'
 ```
 
- Response example: 
+Response example:
 
 ```bash
 {
@@ -345,14 +344,14 @@ curl --location --request DELETE 'https://api.dify.ai/v1/datasets/{dataset_id}/d
 
 #### Knowledge document list
 
-Request example: 
+Request example:
 
 ```bash
 curl --location --request GET 'https://api.dify.ai/v1/datasets/{dataset_id}/documents' \
 --header 'Authorization: Bearer {api_key}'
 ```
 
- Response example: 
+Response example:
 
 ```json
 {
@@ -385,7 +384,7 @@ curl --location --request GET 'https://api.dify.ai/v1/datasets/{dataset_id}/docu
 
 #### Add chunk
 
-Request example: 
+Request example:
 
 ```bash
 curl --location --request POST 'https://api.dify.ai/v1/datasets/{dataset_id}/documents/{document_id}/segments' \
@@ -394,7 +393,7 @@ curl --location --request POST 'https://api.dify.ai/v1/datasets/{dataset_id}/doc
 --data-raw '{"segments": [{"content": "1","answer": "1","keywords": ["a"]}]}'
 ```
 
- Response example: 
+Response example:
 
 ```json
 {
@@ -430,7 +429,7 @@ curl --location --request POST 'https://api.dify.ai/v1/datasets/{dataset_id}/doc
 
 ### Get documents chunks
 
-Request example: 
+Request example:
 
 ```bash
 curl --location --request GET 'https://api.dify.ai/v1/datasets/{dataset_id}/documents/{document_id}/segments' \
@@ -438,7 +437,7 @@ curl --location --request GET 'https://api.dify.ai/v1/datasets/{dataset_id}/docu
 --header 'Content-Type: application/json'
 ```
 
- Response example: 
+Response example:
 
 ```bash
 {
@@ -473,7 +472,7 @@ curl --location --request GET 'https://api.dify.ai/v1/datasets/{dataset_id}/docu
 
 ### Delete document segment
 
-Request example: 
+Request example:
 
 ```bash
 curl --location --request DELETE 'https://api.dify.ai/v1/datasets/{dataset_id}/documents/{document_id}/segments/{segment_id}' \
@@ -481,7 +480,7 @@ curl --location --request DELETE 'https://api.dify.ai/v1/datasets/{dataset_id}/d
 --header 'Content-Type: application/json'
 ```
 
- Response example: 
+Response example:
 
 ```bash
 {
@@ -491,7 +490,7 @@ curl --location --request DELETE 'https://api.dify.ai/v1/datasets/{dataset_id}/d
 
 ### Update document chunk
 
-Request example: 
+Request example:
 
 ```bash
 curl --location --request POST 'https://api.dify.ai/v1/datasets/{dataset_id}/documents/{document_id}/segments/{segment_id}' \
@@ -500,7 +499,7 @@ curl --location --request POST 'https://api.dify.ai/v1/datasets/{dataset_id}/doc
 --data-raw '{"segment": {"content": "1","answer": "1", "keywords": ["a"], "enabled": false}}'
 ```
 
- Response example: 
+Response example:
 
 ```bash
 {
@@ -533,20 +532,19 @@ curl --location --request POST 'https://api.dify.ai/v1/datasets/{dataset_id}/doc
 }
 ```
 
-
 ### Error message
 
-| code | status | message |
-|------|--------|---------|
-| no_file_uploaded | 400 | Please upload your file. |
-| too_many_files | 400 | Only one file is allowed. |
-| file_too_large | 413 | File size exceeded. |
-| unsupported_file_type | 415 | File type not allowed. Supported format: txt, markdown, md, pdf, html, html, xlsx, docx, csv |
-| high_quality_dataset_only | 400 | Current operation only supports 'high-quality' datasets. |
-| dataset_not_initialized | 400 | The dataset is still being initialized or indexing. Please wait a moment. |
-| archived_document_immutable | 403 | The archived document is not editable. |
-| dataset_name_duplicate | 409 | The dataset name already exists. Please modify your dataset name. |
-| invalid_action | 400 | Invalid action. |
-| document_already_finished | 400 | The document has been processed. Please refresh the page or go to the document details. |
-| document_indexing | 400 | The document is being processed and cannot be edited. |
-| invalid_metadata | 400 | The metadata content is incorrect. Please check and verify. |
+| code                          | status | message                                                                                      |
+| ----------------------------- | ------ | -------------------------------------------------------------------------------------------- |
+| no\_file\_uploaded            | 400    | Please upload your file.                                                                     |
+| too\_many\_files              | 400    | Only one file is allowed.                                                                    |
+| file\_too\_large              | 413    | File size exceeded.                                                                          |
+| unsupported\_file\_type       | 415    | File type not allowed. Supported format: txt, markdown, md, pdf, html, html, xlsx, docx, csv |
+| high\_quality\_dataset\_only  | 400    | Current operation only supports 'high-quality' datasets.                                     |
+| dataset\_not\_initialized     | 400    | The dataset is still being initialized or indexing. Please wait a moment.                    |
+| archived\_document\_immutable | 403    | The archived document is not editable.                                                       |
+| dataset\_name\_duplicate      | 409    | The dataset name already exists. Please modify your dataset name.                            |
+| invalid\_action               | 400    | Invalid action.                                                                              |
+| document\_already\_finished   | 400    | The document has been processed. Please refresh the page or go to the document details.      |
+| document\_indexing            | 400    | The document is being processed and cannot be edited.                                        |
+| invalid\_metadata             | 400    | The metadata content is incorrect. Please check and verify.                                  |

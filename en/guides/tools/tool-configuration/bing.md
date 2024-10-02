@@ -1,4 +1,4 @@
-# Bing Search
+# Bing
 
 > Tool author @Dify.
 
@@ -12,16 +12,16 @@ Please apply for an API Key on the [Azure platform](https://www.microsoft.com/en
 
 In the Dify navigation page, click `Tools > Azure > Authorize` to fill in the API Key.
 
-![](../../../../img/tools-bing.png)
+![](../../../.gitbook/assets/tools-bing.png)
 
 ## 3. Use the tool
 
 You can use the Bing tool in the following application types.
 
-- **Chatflow / Workflow applications**
+* **Chatflow / Workflow applications**
 
 Both Chatflow and Workflow applications support adding `Bing` tool nodes.
 
-- **Agent applications**
+* **Agent applications**
 
 Add the `Bing` tool in the Agent application, then enter the online search command to call this tool.

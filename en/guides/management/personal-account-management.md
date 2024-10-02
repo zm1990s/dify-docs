@@ -5,9 +5,7 @@
 To update your personal account information:
 
 1. Navigate to the Dify team homepage
-
 2. Click on your avatar in the upper right corner
-
 3. Select **"My Account"**
 
 You can modify the following details:
@@ -17,7 +15,7 @@ You can modify the following details:
 * Email
 * Password
 
-<figure><img src="../../../img/personal-account-management-01.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/personal-account-management-01.png" alt=""><figcaption></figcaption></figure>
 
 ### Integrations
 
@@ -46,8 +44,8 @@ Dify welcomes community volunteers to contribute additional language versions. V
 
 For team data security considerations, self-service online deletion of personal account information is not currently supported. If you need to completely delete your account, please include the following information in an email and send it to support@dify.ai.
 
-```text
+```
 Delete account: your-email
 ```
 
-<figure><img src="../../../img/personal-account-management-02.png" alt=""><figcaption><p>Deleting personal account</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/personal-account-management-02.png" alt=""><figcaption><p>Deleting personal account</p></figcaption></figure>

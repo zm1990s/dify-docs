@@ -65,6 +65,7 @@
   * [Sync Data from Website](guides/knowledge-base/sync-from-website.md)
   * [Maintain Knowledge Base via API](guides/knowledge-base/maintain-dataset-via-api.md)
   * [External Data Tool](guides/knowledge-base/external-data-tool.md)
+  * [External Knowledge API](guides/knowledge-base/external-knowledge-api.md)
 * [Tools](guides/tools/README.md)
   * [Quick Tool Integration](guides/tools/quick-tool-integration.md)
   * [Advanced Tool Integration](guides/tools/advanced-tool-integration.md)
@@ -104,7 +105,7 @@
     * [External Data Tool](guides/extension/code-based-extension/external-data-tool.md)
     * [Moderation](guides/extension/code-based-extension/moderation.md)
 * [Collaboration](guides/workspace/README.md)
-  * [Discover](guides/workspace/app/README.md)
+  * [Discover](guides/workspace/app.md)
   * [Invite and Manage Members](guides/workspace/invite-and-manage-members.md)
 * [Management](guides/management/README.md)
   * [App Management](guides/management/app-management.md)
@@ -112,9 +113,9 @@
   * [Personal Account Management](guides/management/personal-account-management.md)
   * [Subscription Management](guides/management/subscription-management.md)
 
-## Workshop <a href="workshop" id="workshop"></a>
+## Workshop
 
-* [Basic](workshop/README.md)
+* [Basic](workshop/basic/README.md)
   * [How to Build an AI Image Generation App](workshop/basic/build-ai-image-generation-app.md)
 
 ## Community
@@ -149,7 +150,7 @@
     * [Hybrid Search](learn-more/extended-reading/retrieval-augment/hybrid-search.md)
     * [Re-ranking](learn-more/extended-reading/retrieval-augment/rerank.md)
     * [Retrieval Modes](learn-more/extended-reading/retrieval-augment/retrieval.md)
-  * [How to Use JSON Schema Output in Dify?](learn-more/how-to-use-json-schema-in-dify.md)
+  * [How to Use JSON Schema Output in Dify?](learn-more/extended-reading/how-to-use-json-schema-in-dify.md)
 * [FAQ](learn-more/faq/README.md)
   * [Self-Host Related](learn-more/faq/install-faq.md)
   * [LLM Configuration and Usage](learn-more/faq/use-llms-faq.md)

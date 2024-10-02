@@ -10,7 +10,7 @@ After subscribing to Dify's paid services (Professional or Team plan), team owne
 
 On the billing page, you can view the usage statistics for various team resources.
 
-<figure><img src="../../../img/subscription-management-01.png" alt=""><figcaption><p>Team billing management</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/subscription-management-01.png" alt=""><figcaption><p>Team billing management</p></figcaption></figure>
 
 ### Frequently Asked Questions
 
@@ -21,28 +21,30 @@ Team owners and administrators can navigate to **Settings** → **Billing**, the
 * Upgrading from Professional to Team plan requires paying the difference for the current month and takes effect immediately.
 * Downgrading from Team to Professional plan takes effect immediately.
 
-<figure><img src="../../../img/subscription-management-02.jpeg" alt=""><figcaption><p>Changing the paid plan</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/subscription-management-02.jpeg" alt=""><figcaption><p>Changing the paid plan</p></figcaption></figure>
 
 Upon cancellation of the subscription plan, **the team will automatically transition to the Sandbox/Free plan at the end of the current billing cycle**. Subsequently, any team members and resources exceeding the Sandbox/Free plan limitations will become inaccessible.
 
 #### 2. What changes will occur to the team's available resources after upgrading the subscription plan?
 
-| Resource | Free | Professional | Team |
-|----------|------|--------------|------|
-| Team member limit | 1 | 3 | Unlimited |
-| Application limit | 10 | 50 | Unlimited |
-| Vector space capacity | 5MB | 200MB | 1GB |
-| [Marked replies](https://docs.dify.ai/guides/biao-zhu/logs) for applications | 10 | 2000 | 5000 |
-| Document uploads for knowledge base | 50 | 500 | 1000 |
-| OpenAI conversation quota | 200 total | 5000 per month | 10000 per month |
+| Resource                                                                     | Free      | Professional   | Team            |
+| ---------------------------------------------------------------------------- | --------- | -------------- | --------------- |
+| Team member limit                                                            | 1         | 3              | Unlimited       |
+| Application limit                                                            | 10        | 50             | Unlimited       |
+| Vector space capacity                                                        | 5MB       | 200MB          | 1GB             |
+| [Marked replies](https://docs.dify.ai/guides/biao-zhu/logs) for applications | 10        | 2000           | 5000            |
+| Document uploads for knowledge base                                          | 50        | 500            | 1000            |
+| OpenAI conversation quota                                                    | 200 total | 5000 per month | 10000 per month |
 
-Note: 
-- When upgrading from Free to Professional, all resources are increased as shown in the table.
-- When upgrading from Professional to Team, resources are further expanded, with some becoming unlimited.
+Note:
+
+* When upgrading from Free to Professional, all resources are increased as shown in the table.
+* When upgrading from Professional to Team, resources are further expanded, with some becoming unlimited.
 
 After upgrading the subscription plan:
-- The OpenAI conversation quota will be reset to the new limit for the current billing cycle.
-- Previously used computational resources (e.g., vector space usage, document uploads) will not be reset or removed.
+
+* The OpenAI conversation quota will be reset to the new limit for the current billing cycle.
+* Previously used computational resources (e.g., vector space usage, document uploads) will not be reset or removed.
 
 #### 3. What if I forget to renew subscription on time?
 

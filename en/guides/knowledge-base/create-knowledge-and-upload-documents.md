@@ -23,7 +23,7 @@ Click on Knowledge in the main navigation bar of Dify. On this page, you can see
 * The upload size limit for a single document is 15MB;
 * Different [subscription plans](https://dify.ai/pricing) for the SaaS version limit **batch upload numbers, total document uploads, and vector storage**;
 
-<figure><img src="../../../img/create-knowledge-base-2.png" alt=""><figcaption><p>Creating Knowledge Base</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/create-knowledge-base-2.png" alt=""><figcaption><p>Creating Knowledge Base</p></figcaption></figure>
 
 ***
 
@@ -52,7 +52,7 @@ Two strategies are supported:
 
 The Automated mode is designed for users unfamiliar with segmentation and preprocessing techniques. In this mode, Dify automatically segments and sanitizes content files, streamlining the document preparation process.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Automatic mode</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (93).png" alt=""><figcaption><p>Automatic mode</p></figcaption></figure>
 {% endtab %}
 
 {% tab title="Custom" %}
@@ -71,7 +71,7 @@ Custom mode is tailored for advanced users with specific text processing require
 * Replace consecutive spaces, newlines, and tabs.
 * Delete all URLs and email addresses.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Custom mode</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (95).png" alt=""><figcaption><p>Custom mode</p></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
@@ -91,13 +91,13 @@ In High-Quality mode, the system first leverages an configurable Embedding model
 
 The High-Quality indexing method offers three retrieval settings: vector retrieval, full-text retrieval, and hybrid retrieval. For more details on retrieval settings, please check ["Retrieval Settings"](create-knowledge-and-upload-documents.md#id-4-retrieval-settings).
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>High Quality</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (96).png" alt=""><figcaption><p>High Quality</p></figcaption></figure>
 {% endtab %}
 
 {% tab title="Economical" %}
 This mode employs an offline vector engine and keyword indexing, which reduces accuracy but eliminates additional token consumption and associated costs. The indexing method is limited to inverted indexing. For detailed specifications, please refer to the section below.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt="" width="375"><figcaption><p>Economical mode</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (97).png" alt="" width="375"><figcaption><p>Economical mode</p></figcaption></figure>
 {% endtab %}
 
 {% tab title="Q&A Mode (community version only)" %}
@@ -107,9 +107,9 @@ This methodology is preferred **because question texts typically exhibit complet
 
 Upon user inquiry, the system identifies the most semantically similar question and returns the corresponding text segment as the answer. This method offers enhanced precision as it directly matches against user queries, thereby more accurately retrieving the information users genuinely require.
 
-<figure><img src="../../.gitbook/assets/guides/knowledge-base/Q&#x26;A-pair.png" alt=""><figcaption><p>Texts summarized into multiple Q&#x26;A pairs in Q&#x26;A segment mode</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Q&#x26;A-pair.png" alt=""><figcaption><p>Texts summarized into multiple Q&#x26;A pairs in Q&#x26;A segment mode</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/guides/knowledge-base/q2p-and-q2q.png" alt=""><figcaption><p>Difference between Q to P and Q to Q indexing modes</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/q2p-and-q2q.png" alt=""><figcaption><p>Difference between Q to P and Q to Q indexing modes</p></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
@@ -129,7 +129,7 @@ In high-quality indexing mode, Dify offers three retrieval settings:
 
 **Definition**: The system vectorizes the user's input query to generate a query vector. It then computes the distance between this query vector and the text vectors in the knowledge base to identify the most semantically proximate text chunks.
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Vector Search Settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (99).png" alt=""><figcaption><p>Vector Search Settings</p></figcaption></figure>
 
 **Vector Search Settings：**
 
@@ -147,7 +147,7 @@ In high-quality indexing mode, Dify offers three retrieval settings:
 
 **Definition:** Indexing all terms in the document, allowing users to query any terms and return text fragments containing those terms.
 
-<figure><img src="../../.gitbook/assets/guides/knowledge-base/full-text-search.png" alt="" width="563"><figcaption><p>Full-Text Search Settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/full-text-search.png" alt="" width="563"><figcaption><p>Full-Text Search Settings</p></figcaption></figure>
 
 **Rerank Model**: After configuring the API key for the Rerank model on the "Model Provider" page, you can enable the “Rerank Model” in the retrieval settings. The system will then perform semantic reordering of the retrieved document results after hybrid retrieval, optimizing the ranking results. Once the Rerank model is established, the TopK and Score Threshold settings will only take effect during the reranking step.
 
@@ -163,7 +163,7 @@ In high-quality indexing mode, Dify offers three retrieval settings:
 
 **Definition:** This process performs both full-text search and vector search simultaneously, incorporating a reordering step to select the best results that match the user's query from both types of search outcomes. In this mode, users can specify "weight settings" without needing to configure the Rerank model API, or they can opt for a Rerank model for retrieval.
 
-<figure><img src="../../../img/hybrid-search.png" alt="" width="563"><figcaption><p>Hybrid Retrieval Setting</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/hybrid-search (1).png" alt="" width="563"><figcaption><p>Hybrid Retrieval Setting</p></figcaption></figure>
 
 **Weight Settings:** This feature enables users to set custom weights for semantic priority and keyword priority. Keyword search refers to performing a full-text search within the knowledge base, while semantic search involves vector search within the knowledge base.
 
@@ -203,7 +203,7 @@ An inverted index is an index structure designed for rapid keyword retrieval in 
 
 This parameter filters the text chucks that are most similar to the user's question. The system dynamically adjusts the number of snippets based on the context window size of the selected model. The default value is 3, meaning a higher value results in more text segments being retrieved.
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p>Inverted Index</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (100).png" alt=""><figcaption><p>Inverted Index</p></figcaption></figure>
 
 ***
 

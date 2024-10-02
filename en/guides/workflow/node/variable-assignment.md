@@ -4,11 +4,11 @@
 
 The variable assigner node is used to assign values to writable variables. Currently supported writable variables include:
 
-- [conversation variables](https://docs.dify.ai/guides/workflow/key-concepts#conversation-variables).
+* [conversation variables](https://docs.dify.ai/guides/workflow/key-concepts#conversation-variables).
 
 Usage: Through the variable assigner node, you can assign workflow variables to conversation variables for temporary storage, which can be continuously referenced in subsequent conversations.
 
-<figure><img src="../../../../img/variable-assigner.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/variable-assigner.png" alt="" width="375"><figcaption></figcaption></figure>
 
 ***
 
@@ -26,28 +26,22 @@ You can write the **context during the conversation, the file uploaded to the ch
 
 Example: After the conversation starts, LLM will automatically determine whether the user's input contains facts, preferences, or chat history that need to be remembered. If it has, LLM will first extract and store those information, then use it as context to respond. If there is no new information to remember, LLM will directly use the previously relevant memories to answer questions.
 
-![](../../../../img/conversation-variables-scenario-1.png)
+![](../../../.gitbook/assets/conversation-variables-scenario-1.png)
 
 **Configuration process:**
 
-1. **Set Conversation Variables:** 
-   
-   - First, set up a Conversation Variables array `memories`, of type array[object] to store user information, preferences, and chat history.
-
+1. **Set Conversation Variables:**
+   * First, set up a Conversation Variables array `memories`, of type array\[object] to store user information, preferences, and chat history.
 2. **Determine and Extract Memories:**
-   
-   - Add a Conditional Branching node, using LLM to determine whether the user's input contains new information that needs to be remembered.
-   - If there's new information, follow the upper branch and use an LLM node to extract this information.
-   - If there's no new information, go down the branch and directly use existing memories to answer.
-
+   * Add a Conditional Branching node, using LLM to determine whether the user's input contains new information that needs to be remembered.
+   * If there's new information, follow the upper branch and use an LLM node to extract this information.
+   * If there's no new information, go down the branch and directly use existing memories to answer.
 3. **Variable Assignment/Writing:**
-
-    - In the upper branch, use the variable assigner node to append the newly extracted information to the `memories` array.
-    - Use the escape function to convert the text string output by LLM into a format suitable for storage in an array[object].
-
+   * In the upper branch, use the variable assigner node to append the newly extracted information to the `memories` array.
+   * Use the escape function to convert the text string output by LLM into a format suitable for storage in an array\[object].
 4. **Variable Reading and Usage:**
-   - In subsequent LLM nodes, convert the contents of the `memories` array to a string and insert it into the prompt of LLM as context.
-   - Use these memories to generate personalized responses.
+   * In subsequent LLM nodes, convert the contents of the `memories` array to a string and insert it into the prompt of LLM as context.
+   * Use these memories to generate personalized responses.
 
 The code for the node in the upper diagram is as follows:
 
@@ -118,7 +112,7 @@ def main(arg1: list) -> str:
 
 Example: Before the chatting, the user specifies "English" in the `language` input box. This language will be written to the conversation variable, and the LLM will reference this information when responding, continuing to use "English" in subsequent conversations.
 
-<figure><img src="../../../../img/conversation-var-scenario-1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/conversation-var-scenario-1.png" alt=""><figcaption></figcaption></figure>
 
 **Configuration Guide:**
 
@@ -134,7 +128,7 @@ Example: Before the chatting, the user specifies "English" in the `language` inp
 
 Example: After starting the conversation, the LLM will ask the user to input items related to the Checklist in the chatting box. Once the user mentions content from the Checklist, it will be updated and stored in the Conversation Variable. The LLM will remind the user to continue supplementing missing items after each round of dialogue.
 
-<figure><img src="../../../../img/conversation-var-scenario-2-1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/conversation-var-scenario-2-1.png" alt=""><figcaption></figcaption></figure>
 
 **Configuration Process:**
 
@@ -148,7 +142,7 @@ Example: After starting the conversation, the LLM will ask the user to input ite
 
 Click the + sign on the right side of the node, select the "variable assigner" node, and fill in "Assigned Variable" and "Set Variable".
 
-<figure><img src="../../../../img/language-variable-assigner.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/language-variable-assigner.png" alt="" width="375"><figcaption></figcaption></figure>
 
 **Setting Variables:**
 
@@ -163,4 +157,3 @@ Taking the assignment logic in the above figure as an example: Assign the text o
 * Overwrite: Overwrite the content of the source variable to the target conversation variable
 * Append: When the specified variable is of Array type
 * Clear: Clear the content in the target conversation variable
-

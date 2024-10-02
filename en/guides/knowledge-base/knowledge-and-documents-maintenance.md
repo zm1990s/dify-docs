@@ -6,7 +6,7 @@
 
 On the Dify team homepage, click the "Knowledge Base" tab at the top, select the knowledge base you want to manage, then click **Settings** in the left navigation panel to make adjustments. You can modify the knowledge base name, description, visibility permissions, indexing mode, embedding model, and retrieval settings.
 
-<figure><img src="../../../img/knowledge-settings-01.png" alt=""><figcaption><p>Knowledge Base Settings</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/knowledge-settings-01.png" alt=""><figcaption><p>Knowledge Base Settings</p></figcaption></figure>
 
 **Knowledge Base Name**: Used to distinguish among different knowledge bases.
 
@@ -32,7 +32,7 @@ Users without appropriate permissions cannot access the knowledge base. When gra
 
 Dify Knowledge Base provides a complete set of standard APIs. Developers can use API calls to perform daily management and maintenance operations such as adding, deleting, modifying, and querying documents and chunks in the knowledge base. Please refer to the [Knowledge Base API Documentation](maintain-dataset-via-api.md).
 
-<figure><img src="../../../img/knowledge-base-api.png" alt=""><figcaption><p>Knowledge base API management</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/knowledge-base-api.png" alt=""><figcaption><p>Knowledge base API management</p></figcaption></figure>
 
 ## Maintaining Text in the Knowledge Base
 
@@ -40,7 +40,7 @@ Dify Knowledge Base provides a complete set of standard APIs. Developers can use
 
 Each document uploaded to the knowledge base is stored in the form of text chunks. You can view the specific text content of each chunks in the chunks list.
 
-<figure><img src="../../../img/viewing-uploaded-document-segments.png" alt=""><figcaption><p>Viewing uploaded document chunks</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/viewing-uploaded-document-segments.png" alt=""><figcaption><p>Viewing uploaded document chunks</p></figcaption></figure>
 
 ***
 
@@ -54,15 +54,15 @@ When checking chunk quality, pay attention to the following situations:
 
 * **Overly short text chunks**, leading to semantic loss;
 
-<figure><img src="../../../img/short-text-segments.png" alt="" width="373"><figcaption><p>Overly short text chunks</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/short-text-segments.png" alt="" width="373"><figcaption><p>Overly short text chunks</p></figcaption></figure>
 
 * **Overly long text chunks**, leading to semantic noise affecting matching accuracy;
 
-<figure><img src="../../../img/long-text-segments.png" alt="" width="375"><figcaption><p>Overly long text chunks</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/long-text-segments.png" alt="" width="375"><figcaption><p>Overly long text chunks</p></figcaption></figure>
 
 * **Obvious semantic truncation**, which occurs when using maximum segment length limits, leading to forced semantic truncation and missing content during recall;
 
-<figure><img src="../../../img/semantic-truncation.png" alt="" width="357"><figcaption><p>Obvious semantic truncation</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/semantic-truncation.png" alt="" width="357"><figcaption><p>Obvious semantic truncation</p></figcaption></figure>
 
 ***
 
@@ -70,11 +70,13 @@ When checking chunk quality, pay attention to the following situations:
 
 In the chunk list, click "Add Segment" to add one or multiple custom chunks to the document.
 
-<figure><img src="../../../img/add-a-chunk.png" alt=""><figcaption></figcaption></figure><p>Add a chunk</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/add-a-chunk.png" alt=""><figcaption></figcaption></figure>
+
+Add a chunk
 
 When adding chunks in bulk, you need to first download the CSV format chunk upload template, edit all the chunk content in Excel according to the template format, save the CSV file, and then upload it.
 
-<figure><img src="../../../img/bulk-add-custom-segment.png" alt=""><figcaption><p>Bulk adding custom chunks</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bulk-add-custom-segment (1).png" alt=""><figcaption><p>Bulk adding custom chunks</p></figcaption></figure>
 
 ***
 
@@ -82,7 +84,7 @@ When adding chunks in bulk, you need to first download the CSV format chunk uplo
 
 In the chunk list, you can directly edit the content of the added chunks, including the text content and keywords of the chunks.
 
-<figure><img src="../../../img/edit-segment.png" alt=""><figcaption><p>Editing document chunks</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/edit-segment (1).png" alt=""><figcaption><p>Editing document chunks</p></figcaption></figure>
 
 ***
 
@@ -94,7 +96,7 @@ In addition to marking metadata information from different source documents, suc
 The metadata filtering and citation source functions are not yet supported in the current version.
 {% endhint %}
 
-<figure><img src="../../../img/metadata.png" alt="" width="258"><figcaption><p>Add metadata</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/metadata.png" alt="" width="258"><figcaption><p>Add metadata</p></figcaption></figure>
 
 ***
 
@@ -104,7 +106,7 @@ In "Knowledge Base > Document List," click "Add File" to upload new documents or
 
 A knowledge base (Knowledge) is a collection of documents (Documents). Documents can be uploaded by developers or operators, or synchronized from other data sources (usually corresponding to a file unit in the data source).
 
-<figure><img src="../../../img/en-knowledge-add-document.png" alt=""><figcaption><p>Upload new document at Knowledge base</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/en-knowledge-add-document.png" alt=""><figcaption><p>Upload new document at Knowledge base</p></figcaption></figure>
 
 ***
 

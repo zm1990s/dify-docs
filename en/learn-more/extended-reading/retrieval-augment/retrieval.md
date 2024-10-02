@@ -1,22 +1,8 @@
-# Retrieval Mode
+# Retrieval Modes
 
 When users build AI applications with multiple knowledge bases, Dify's retrieval strategy will determine which content will be retrieved.
 
-<figure><img src="../../../../img/en-rag-multiple.png" alt=""><figcaption><p>retrieval Mode Settings</p></figcaption></figure>
-
-<!-- ### N-of-1 retrieval Mode
-
-Based on user intent and dataset descriptions, the Agent autonomously selects the single most relevant dataset to query for related text. This mode is suitable for applications with highly distinct datasets and fewer datasets. The N-of-1 retrieval mode relies on the model's inference capability, requiring the model to choose the most appropriate dataset based on user intent. During inference, datasets are treated as tools by the Agent, selected through intent inference, with the tool descriptions being the dataset descriptions.
-
-When users upload datasets, the system automatically creates a summary description for the dataset. To achieve optimal retrieval results in this mode, you can review the system-generated summary description in “Datasets -> Settings -> Dataset Description” and ensure it clearly summarizes the dataset content.
-
-Below is the technical flowchart for the N-of-1 retrieval mode:
-
-<figure><img src="../../../../zh_CN/.gitbook/assets/image (126).png" alt=""><figcaption><p>N-of-1 retrieval</p></figcaption></figure>
-
-Hence, if there are too many datasets or if the dataset descriptions are not sufficiently distinct, the retrieval effectiveness of this mode may be affected. This mode is more suitable for applications with fewer datasets.
-
-Tip: OpenAI Function Call now supports multiple tool calls. Dify will upgrade this mode to "N-of-M retrieval" in future versions. -->
+<figure><img src="../../../.gitbook/assets/en-rag-multiple.png" alt=""><figcaption><p>retrieval Mode Settings</p></figcaption></figure>
 
 ### Retrieval Setting
 
@@ -26,6 +12,6 @@ In multi-path retrieval mode, it's recommended that the Rerank model be configur
 
 Below is the technical flowchart for the multi-path retrieval mode:
 
-<figure><img src="../../../../img/rerank-flow-chart.png" alt=""><figcaption><p>Multi-Path retrieval</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/rerank-flow-chart.png" alt=""><figcaption><p>Multi-Path retrieval</p></figcaption></figure>
 
-Since multi-path retrieval mode does not rely on the model's inference capability or dataset descriptions, it can achieve higher-quality retrieval results when retrieving across multiple datasets. Additionally, incorporating a re-ranking step can effectively improve document retrieval effectiveness. Therefore, when creating knowledge base Q&A applications associated with multiple datasets, we recommend configuring the retrieval mode as multi-path retrieval.
+Since multi-path retrieval mode does not rely on the model's inference capability or dataset descriptions, it can achieve higher-quality retrieval results when retrieving across multiple datasets. Additionally, incorporating a re-ranking step can effectively improve document retrieval effectiveness. Therefore, when creating knowledge base Q\&A applications associated with multiple datasets, we recommend configuring the retrieval mode as multi-path retrieval.

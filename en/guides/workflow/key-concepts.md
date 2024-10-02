@@ -23,9 +23,9 @@ For core workflow nodes, please refer to [Block Description](node/).
 
 **Usage Entry Points**
 
-<figure><img src="../../.gitbook/assets/guides/workflow/key-concepts/output.png" alt=""><figcaption><p>Chatflow Entry</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/output (5).png" alt=""><figcaption><p>Chatflow Entry</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/guides/workflow/key-concepts/output (4).png" alt=""><figcaption><p>Workflow Entry</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/output (4) (1).png" alt=""><figcaption><p>Workflow Entry</p></figcaption></figure>
 
 **Differences in Available Nodes**
 

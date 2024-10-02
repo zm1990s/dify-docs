@@ -1,10 +1,10 @@
-# Team Member Management
+# Team Members Management
 
 This guide explains how to manage members within a Dify team. The team member limits for different Dify versions are below.
 
-| Sandbox / Free | Professional | Team | Community | Enterprise |
-| ---- | ------------ | ---- | ----------- | ------------------ |
-| 1    | 3            | Unlimited | Unlimited   | Unlimited          |
+| Sandbox / Free | Professional | Team      | Community | Enterprise |
+| -------------- | ------------ | --------- | --------- | ---------- |
+| 1              | 3            | Unlimited | Unlimited | Unlimited  |
 
 ### Adding Members
 
@@ -14,7 +14,7 @@ Only team owners have permission to invite team members.
 
 To add a member, the team owner can click on the avatar in the upper right corner, then select **"Members"** → **"Add"**. Enter the email address and assign member permissions to complete the process.
 
-<figure><img src="../../../img/team-members-management-01.png" alt=""><figcaption><p>Assigning permissions to team members</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/team-members-management-01.png" alt=""><figcaption><p>Assigning permissions to team members</p></figcaption></figure>
 
 Invited members can complete their registration through either a URL link or an email invitation.
 
@@ -45,7 +45,7 @@ Only team owners have permission to remove team members.
 
 To remove a member, click on the avatar in the upper right corner of the Dify team homepage, navigate to **"Settings"** → **"Members"**, select the member to be removed, and click **"Remove from team"**.
 
-<figure><img src="../../../img/team-members-management-02.png" alt=""><figcaption><p>Removing a member</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/team-members-management-02.png" alt=""><figcaption><p>Removing a member</p></figcaption></figure>
 
 ### Frequently Asked Questions
 

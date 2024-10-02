@@ -1,6 +1,6 @@
 # Collaboration
 
-Dify is a multi-user platform where workspaces are the basic units of team collaboration. Members of a workspace can create and edit applications and knowledge bases, and can also directly use public applications created by other team members in the [Discover](app/) area.
+Dify is a multi-user platform where workspaces are the basic units of team collaboration. Members of a workspace can create and edit applications and knowledge bases, and can also directly use public applications created by other team members in the [Discover](app.md) area.
 
 ### Login Methods
 

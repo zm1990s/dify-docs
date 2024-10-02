@@ -13,22 +13,20 @@ Assuming you've already created a [Dify AI application](https://docs.dify.ai/gui
 1. Log into your Dify account
 2. Select the Dify application you wish to embed
 3. Click the "Publish" button in the upper right corner
-4. On the publish page, choose the "Embed Into Site" option
-   
-   ![Embed Into Site Option](../../../img/best-practice-wix-2.png)
+4.  On the publish page, choose the "Embed Into Site" option
 
-5. Select an appropriate style and copy the displayed iFrame code. For example:
+    ![Embed Into Site Option](../../.gitbook/assets/best-practice-wix-2.png)
+5.  Select an appropriate style and copy the displayed iFrame code. For example:
 
-   ![iFrame Code Example](../../../img/best-practice-wix-3.png)
+    ![iFrame Code Example](../../.gitbook/assets/best-practice-wix-3.png)
 
 ## 2. Embedding the iFrame Code Snippet in Your Wix Site
 
 1. Log into your Wix website and open the page you want to edit
 2. Click the blue `+` (Add Elements) button on the left side of the page
-3. Select **Embed Code**, then click **Embed HTML** to add an HTML iFrame element to the page
+3.  Select **Embed Code**, then click **Embed HTML** to add an HTML iFrame element to the page
 
-   ![Add HTML iFrame](../../../img/best-practice-add-html-iframe.png)
-
+    ![Add HTML iFrame](../../.gitbook/assets/best-practice-add-html-iframe.png)
 4. In the `HTML Settings` box, select the `Code` option
 5. Paste the iFrame code snippet you obtained from your Dify application
 6. Click the **Update** button to save and preview your changes
@@ -39,7 +37,7 @@ Here's an example of an iFrame code snippet for embedding a Dify Chatbot:
 <iframe src="https://udify.app/chatbot/ez1pf83HVV3JgWO4" style="width: 100%; height: 100%; min-height: 700px" frameborder="0" allow="microphone"></iframe>
 ```
 
-![Insert Dify iFrame Code](../../../img/best-practice-insert-dify-iframe-code.png)
+![Insert Dify iFrame Code](../../.gitbook/assets/best-practice-insert-dify-iframe-code.png)
 
 > ⚠️ Ensure the address in the iFrame code begins with HTTPS. HTTP addresses will not display correctly.
 
@@ -83,9 +81,9 @@ This code fixes the Chatbot to the bottom right corner of the webpage, 20 pixels
 
 **1. iFrame Content Not Displaying**
 
-- Verify that the URL starts with HTTPS
-- Check for typos in the `iframe` code
-- Verify the embedded content complies with Wix's security policies
+* Verify that the URL starts with HTTPS
+* Check for typos in the `iframe` code
+* Verify the embedded content complies with Wix's security policies
 
 **2. iFrame Content is Cropped**
 
