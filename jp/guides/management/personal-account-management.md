@@ -5,10 +5,8 @@
 個人アカウント情報を更新するには、以下の手順に従ってください：
 
 1. Difyチームのホームページにアクセスします。
-
 2. 右上隅のアバターをクリックします。
-
-3. **「アカウント」**を選択します。
+3. \*\*「アカウント」\*\*を選択します。
 
 次の詳細を変更できます：
 
@@ -17,15 +15,15 @@
 * メールアドレス
 * パスワード
 
-<figure><img src="../../../img/personal-account-management-01.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/personal-account-management-01.png" alt=""><figcaption></figcaption></figure>
 
 ### 統合
 
-GitHubやGoogleアカウントのアカウントを利用しDifyチームにログインができます。これらを設定するには、Difyチームのホームページで右上隅のアバターをクリックし、**「統合」**を選択してください。
+GitHubやGoogleアカウントのアカウントを利用しDifyチームにログインができます。これらを設定するには、Difyチームのホームページで右上隅のアバターをクリックし、\*\*「統合」\*\*を選択してください。
 
 ### 表示言語の変更
 
-表示言語を変更するには、Difyチームのホームページで右上隅のアバターをクリックし、**「言語」**を選択します。Difyは以下の言語をサポートしています：
+表示言語を変更するには、Difyチームのホームページで右上隅のアバターをクリックし、\*\*「言語」\*\*を選択します。Difyは以下の言語をサポートしています：
 
 * 英語
 * 中国語(簡体字)
@@ -46,8 +44,8 @@ Difyはコミュニティのボランティアによる追加の言語バージ�
 
 データセキュリティの観点から、個人アカウント情報のオンラインでの自己削除は現在サポートされていません。アカウントを完全に削除する必要がある場合は、以下の情報をメールに記載し、support@dify.ai に送信してください。
 
-```text
+```
 Delete account: あなたのメールアドレス
 ```
 
-<figure><img src="../../../img/personal-account-management-02.png" alt=""><figcaption><p>個人アカウントの削除</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/personal-account-management-02.png" alt=""><figcaption><p>個人アカウントの削除</p></figcaption></figure>

@@ -24,7 +24,7 @@ Cohere Rerankの例を挙げると、アカウントを登録し、APIを申請�
 
 Difyは現在、Cohere Rerankモデルをサポートしており、「モデルプロバイダー-> Cohere」ページに進んで、RerankモデルのAPIキーを入力してください。
 
-<figure><img src="../../../../img/jp-rerank-cohere.png" alt=""><figcaption><p>Cohere Rerankモデルをモデルプロバイダー内に設定</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/jp-rerank-cohere.png" alt=""><figcaption><p>Cohere Rerankモデルをモデルプロバイダー内に設定</p></figcaption></figure>
 
 ### Cohere Rerank モデルの取得方法
 
@@ -34,7 +34,7 @@ Difyは現在、Cohere Rerankモデルをサポートしており、「モデル
 
 「データセット->データセットの作成->検索設定」ページに進み、Rerank設定を追加してください。データセットの作成時だけでなく、既存のデータセットの設定内でもRerankの構成を変更し、適用されたデータセットのリコールモード設定でRerankの構成を調整することができます。
 
-<figure><img src="../../../../img/jp-rerank-explore.png" alt="" width="563"><figcaption><p>データセット検索モードでのRerankモデルの設定</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/jp-rerank-explore.png" alt="" width="563"><figcaption><p>データセット検索モードでのRerankモデルの設定</p></figcaption></figure>
 
 **TopK：** Rerank後に返される関連ドキュメントの数を設定します。
 
@@ -46,4 +46,4 @@ Difyは現在、Cohere Rerankモデルをサポートしており、「モデル
 
 複数の召回モードについての詳細は、[複数リコール](https://docs.dify.ai/v/ja-jp/guides/knowledge-base/integrate-knowledge-within-application#rikru)を参照してください。
 
-<figure><img src="../../../../img/jp-rerank-setting.png" alt=""><figcaption><p>データセットのマルチウェイリコールモードでRerankモデルを設定します</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/jp-rerank-setting.png" alt=""><figcaption><p>データセットのマルチウェイリコールモードでRerankモデルを設定します</p></figcaption></figure>

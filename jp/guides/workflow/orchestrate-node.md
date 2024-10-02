@@ -2,7 +2,7 @@
 
 チャットフローおよびワークフローアプリケーションは、ビジュアルなドラッグアンドドロップ機能を通じてノードのオーケストレーションをサポートしており、シリアルおよびパラレルの2つのオーケストレーションデザインパターンがあります。
 
-![](../../../img/orchestrate-node.jpeg)
+![](../../.gitbook/assets/orchestrate-node.jpeg)
 
 ## シリアルノードのデザインパターン
 
@@ -16,13 +16,13 @@
 2. ノードを順次リンクします。
 3. すべてのパスを「End」ノードに収束させて、ワークフローを最終承認します。
 
-![](../../../img/orchestrate-node-serial-design.png)
+![](../../.gitbook/assets/orchestrate-node-serial-design.png)
 
 ### シリアル構造のアプリのログをチェックする
 
 シリアル構造のアプリは、ログが順次ノードの操作を表示します。会話ボックスの右上にある "View Logs - Tracing" を順にクリックすると、各ノードの入力、出力、トークン消費、実行時間を含む完全なワークフロープロセスが表示されます。
 
-![](../../../img/viewing-serial-structure-app-logs.png)
+![](../../.gitbook/assets/viewing-serial-structure-app-logs.png)
 
 ## パラレルノードのデザインパターン
 
@@ -34,33 +34,34 @@
 
 次の4つの方法は、ノードの追加やビジュアル操作を通じてパラレル構造を作成する方法を示しています：
 
-**方法1**  
+**方法1**\
 ノードの上にカーソルを合わせると「+」ボタンが表示されます。クリックすると、複数のノードが追加され、自動的にパラレル構造が形成されます。
 
-![](../../../img/orchestrate-node-parallel-design-method-1.png)
+![](../../.gitbook/assets/orchestrate-node-parallel-design-method-1.png)
 
-**方法2**  
+**方法2**\
 ノードから接続を延長するには、ノードの「+」ボタンをドラッグしてパラレル構造を作成します。
 
-![](../../../img/orchestrate-node-parallel-design-method-2.png)
+![](../../.gitbook/assets/orchestrate-node-parallel-design-method-2.png)
 
-**方法3**  
+**方法3**\
 キャンバス上に複数のノードがある場合は、ビジュアルにドラッグしてリンクし、パラレル構造を形成します。
 
-![](../../../img/orchestrate-node-parallel-design-method-3.png)
+![](../../.gitbook/assets/orchestrate-node-parallel-design-method-3.png)
 
-**方法4**  
+**方法4**\
 キャンバスベースの方法に加えて、ノードの右側パネルの「Next Step」セクションからノードを追加することで、パラレル構造を生成することもできます。このアプローチにより、自動的にパラレル構成が作成されます。
 
 ![](../../../img/orchestrate-node-parallel-design-method-4.jpeg)
 
 **注意:**
-- 任意のノードがパラレル構造の下流ノードとして機能します。
-- ワークフローアプリケーションには、単一かつ一意な「end」ノードが必要です。
-- チャットフローアプリケーションでは複数の「answer」ノードがサポートされます。これらのアプリケーションの各パラレル構造は、適切なコンテンツの出力を確保するために「answer」ノードで終了する必要があります。
-- すべてのパラレル構造は同時に実行されます。パラレル構造内のノードは、タスクを完了した後に結果を出力し、出力には順序関係がありません。パラレル構造が単純であればあるほど、結果の出力が速くなります。
 
-![](../../../img/orchestrate-node-chatflow-multi-answer.png)
+* 任意のノードがパラレル構造の下流ノードとして機能します。
+* ワークフローアプリケーションには、単一かつ一意な「end」ノードが必要です。
+* チャットフローアプリケーションでは複数の「answer」ノードがサポートされます。これらのアプリケーションの各パラレル構造は、適切なコンテンツの出力を確保するために「answer」ノードで終了する必要があります。
+* すべてのパラレル構造は同時に実行されます。パラレル構造内のノードは、タスクを完了した後に結果を出力し、出力には順序関係がありません。パラレル構造が単純であればあるほど、結果の出力が速くなります。
+
+![](../../.gitbook/assets/orchestrate-node-chatflow-multi-answer.png)
 
 ### パラレル構造の作り方
 
@@ -72,7 +73,7 @@
 
 パラレルブランチの上限は10です。
 
-![](../../../img/orchestrate-node-simple-parallel.png)
+![](../../.gitbook/assets/orchestrate-node-simple-parallel.png)
 
 #### 2. ネストされたパラレル
 
@@ -80,22 +81,22 @@
 
 ワークフローは、最大3層までのネスト関係をサポートします。
 
-![](../../../img/orchestrate-node-nested-parallel.png)
+![](../../.gitbook/assets/orchestrate-node-nested-parallel.png)
 
 #### 3. 条件分岐 + パラレル
 
 パラレル構造は条件分岐と組み合わせて使用することもできます。
 
-![](../../../img/orchestrate-node-conditional-branch-parallel.png)
+![](../../.gitbook/assets/orchestrate-node-conditional-branch-parallel.png)
 
 #### 4. イテレーション + パラレル
 
 このパターンは、イテレーションとパラレル構造を組み合わせたものです。
 
-![](../../../img/orchestrate-node-iteration-parallel.png)
+![](../../.gitbook/assets/orchestrate-node-iteration-parallel.png)
 
 ### パラレル構造のアプリのログをチェックする
 
 パラレル構造をもつアプリケーションは、ツリーのような形式でログを生成します。折りたたみ可能なパラレルノード グループにより、個々のノード ログを簡単に表示できます。
 
-![](../../../img/orchestrate-node-parallel-logs.png)
+![](../../.gitbook/assets/orchestrate-node-parallel-logs.png)

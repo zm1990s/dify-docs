@@ -6,7 +6,7 @@
 
 **モデルプロバイダー -- モデルリスト -- 負荷分散の設定** でこの機能を有効にし、同じモデルに複数の資格情報（APIキー）を追加することができます。
 
-<figure><img src="../../../img/jp-load_balancing_1.png" alt="" width="563"><figcaption><p>モデルを負荷分散する</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/jp-load_balancing_1.png" alt="" width="563"><figcaption><p>モデルを負荷分散する</p></figcaption></figure>
 
 {% hint style="info" %}
 モデル負荷分散は有料機能です。[SaaS有料サービスのサブスクリプション](../../getting-started/cloud.md#ding-yue-ji-hua)または企業版の購入を通じてこの機能を有効にすることができます。

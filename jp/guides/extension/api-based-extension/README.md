@@ -1,4 +1,4 @@
-# APIエクステンション
+# API 拡張
 
 開発者はAPIエクステンションを通じてモジュールの機能を拡張できます。現在、以下のモジュールがサポートされています：
 
@@ -9,7 +9,7 @@
 
 対応するモジュール機能を開発するだけでなく、DifyがAPIを正しく呼び出せるよう、以下の規範にも従う必要があります。
 
-<figure><img src="../../../../en/.gitbook/assets/guides/extension/api_based_extension/screenshot-20231128-104353.png" alt=""><figcaption><p>APIに基づくエクステンション</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/screenshot-20231128-104353.png" alt=""><figcaption><p>APIに基づくエクステンション</p></figcaption></figure>
 
 ### API規範 <a href="#usercontentapi-gui-fan" id="usercontentapi-gui-fan"></a>
 
@@ -21,10 +21,10 @@ POST {Your-API-Endpoint}
 
 #### ヘッダー <a href="#user-content-header" id="user-content-header"></a>
 
-| Header          | Value             | Desc                                                                  |
-| --------------- | ----------------- | --------------------------------------------------------------------- |
-| `コンテンツタイプ`  | アプリケーション/JSON  | リクエスト内容はJSON形式です。                                                        |
-| `認証` | ベアラー {api\_key} | APIキーはトークン形式で送信されます。`api_key`を解析し、提供されたAPIキーと一致するか確認してください。 |
+| Header     | Value           | Desc                                                        |
+| ---------- | --------------- | ----------------------------------------------------------- |
+| `コンテンツタイプ` | アプリケーション/JSON   | リクエスト内容はJSON形式です。                                           |
+| `認証`       | ベアラー {api\_key} | APIキーはトークン形式で送信されます。`api_key`を解析し、提供されたAPIキーと一致するか確認してください。 |
 
 #### リクエストボディ <a href="#user-content-request-body" id="user-content-request-body"></a>
 
@@ -194,11 +194,11 @@ POST https://fake-domain.com/api/dify/receive
     </strong></code></pre>
 4. DifyにこのAPIを設定します。
 
-<figure><img src="../../../../en/.gitbook/assets/guides/extension/api_based_extension/screenshot-20231128-104353.png" alt=""><figcaption><p>APIの設定</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/screenshot-20231128-104353.png" alt=""><figcaption><p>APIの設定</p></figcaption></figure>
 
 5. アプリでこのAPIエクステンションを選択します。
 
-<figure><img src="../../../../en/.gitbook/assets/guides/extension/api_based_extension/screenshot-20231128-104353 (1) (1).png" alt=""><figcaption><p>エクステンションの選択</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/screenshot-20231128-104353 (1) (1).png" alt=""><figcaption><p>エクステンションの選択</p></figcaption></figure>
 
 アプリのデバッグ時、Difyは設定されたAPIにリクエストを送り、以下の内容（例）を送信します：
 

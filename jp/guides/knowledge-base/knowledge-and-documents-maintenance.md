@@ -6,7 +6,7 @@
 
 Difyチームのホームページで、「ナレッジベース」タブをクリックし、管理したいナレッジベースを選択して、左のナビゲーションパネルで **設定** をクリックして調整を行います。ナレッジベースの名前、説明、表示権限、索引モード、埋め込みモデル、および検索設定を変更することができます。
 
-<figure><img src="../../../img/knowledge-settings-01.png" alt=""><figcaption><p>ナレッジベースの設定</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/knowledge-settings-01.png" alt=""><figcaption><p>ナレッジベースの設定</p></figcaption></figure>
 
 **ナレッジベースの名前**：異なるナレッジベースを区別するために使用されます。
 
@@ -32,7 +32,7 @@ Difyチームのホームページで、「ナレッジベース」タブをク�
 
 Difyナレッジベースは、標準APIの完全なセットを提供しています。開発者はAPI呼び出しを行うことで、ナレッジベース内のドキュメントやチャンクの追加、削除、変更、クエリなどの日常的な管理およびメンテナンス操作を実行できます。詳細については、[ナレッジベースAPIドキュメント](maintain-dataset-via-api.md)を参照してください。
 
-<figure><img src="../../../img/knowledge-base-api.png" alt=""><figcaption><p>ナレッジベースAPIの管理</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/knowledge-base-api.png" alt=""><figcaption><p>ナレッジベースAPIの管理</p></figcaption></figure>
 
 ## ナレッジベースにおけるテキストのメンテナンス
 
@@ -40,13 +40,13 @@ Difyナレッジベースは、標準APIの完全なセットを提供してい�
 
 ナレッジベースにアップロードされた各ドキュメントは、テキストチャンクの形式で保存されます。チャンクリストで各チャンクの具体的なテキストコンテンツを表示できます。
 
-<figure><img src="../../../img/viewing-uploaded-document-segments.png" alt=""><figcaption><p>アップロードされたドキュメントチャンクの表示</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/viewing-uploaded-document-segments.png" alt=""><figcaption><p>アップロードされたドキュメントチャンクの表示</p></figcaption></figure>
 
 ***
 
 ### チャンクのクオリティの確認
 
-ドキュメントチャンクの品質は、ナレッジベースアプリケーションのQ&Aパフォーマンスに大きく影響します。アプリケーションとナレッジベースを関連付ける前に、チャンクの品質を手動で確認することをお勧めします。
+ドキュメントチャンクの品質は、ナレッジベースアプリケーションのQ\&Aパフォーマンスに大きく影響します。アプリケーションとナレッジベースを関連付ける前に、チャンクの品質を手動で確認することをお勧めします。
 
 文字数、識別子、またはNLPセマンティックチャンクに基づく自動化されたチャンク方法は、大規模テキストチャンクの作業量を大幅に削減できますが、チャンクの品質は異なるドキュメント形式のテキスト構造やセマンティックコンテキストに関連しています。機械チャンクの欠点を効果的に補うためには、手動での確認と修正が有効です。
 
@@ -54,15 +54,15 @@ Difyナレッジベースは、標準APIの完全なセットを提供してい�
 
 * **過度に短いテキストチャンク**：意味の損失を引き起こす可能性があります；
 
-<figure><img src="../../../img/short-text-segments.png" alt="" width="373"><figcaption><p>過度に短いテキストチャンク</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/short-text-segments.png" alt="" width="373"><figcaption><p>過度に短いテキストチャンク</p></figcaption></figure>
 
 * **過度に長いテキストチャンク**：一致精度に影響を与える意味のノイズを引き起こす可能性があります；
 
-<figure><img src="../../../img/long-text-segments.png" alt="" width="375"><figcaption><p>過度に長いテキストチャンク</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/long-text-segments.png" alt="" width="375"><figcaption><p>過度に長いテキストチャンク</p></figcaption></figure>
 
 * **明らかなセマンティック切り捨て**：最大セグメント長制限を使用した際に発生し、強制的なセマンティック切り捨てやリコール中のコンテンツ欠落を引き起こす可能性があります；
 
-<figure><img src="../../../img/semantic-truncation.png" alt="" width="357"><figcaption><p>明らかなセマンティック切り捨て</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/semantic-truncation.png" alt="" width="357"><figcaption><p>明らかなセマンティック切り捨て</p></figcaption></figure>
 
 ***
 
@@ -70,11 +70,11 @@ Difyナレッジベースは、標準APIの完全なセットを提供してい�
 
 チャンクリストで「セグメントの追加」をクリックして、ドキュメントに1つまたは複数のカスタムチャンクを追加します。
 
-<figure><img src="../../../img/add-a-chunk.png" alt=""><figcaption><p>チャンクの追加</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/add-a-chunk.png" alt=""><figcaption><p>チャンクの追加</p></figcaption></figure>
 
 一括でチャンクを追加する場合は、まずCSV形式のチャンクアップロードテンプレートをダウンロードし、Excelでテンプレート形式に従ってすべてのチャンクコンテンツを編集し、CSVファイルを保存してからアップロードします。
 
-<figure><img src="../../../img/bulk-add-custom-segment.png" alt=""><figcaption><p>カスタムチャンクの一括追加</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bulk-add-custom-segment.png" alt=""><figcaption><p>カスタムチャンクの一括追加</p></figcaption></figure>
 
 ***
 
@@ -82,7 +82,7 @@ Difyナレッジベースは、標準APIの完全なセットを提供してい�
 
 テキストブロックの一覧では、追加したテキストブロックの内容を直接編集できます。これには、テキストの内容やテキストブロックのキーワードが含まれます。
 
-<figure><img src="../../../img/edit-segment.png" alt=""><figcaption><p>文書のテキストブロックを編集</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/edit-segment.png" alt=""><figcaption><p>文書のテキストブロックを編集</p></figcaption></figure>
 
 ***
 
@@ -94,7 +94,7 @@ Difyナレッジベースは、標準APIの完全なセットを提供してい�
 現在のバージョンでは、メタデータのフィルタリングおよび引用元の機能はサポートされていません。
 {% endhint %}
 
-<figure><img src="../../../img/metadata.png" alt="" width="258"><figcaption><p>メタデータを追加</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/metadata.png" alt="" width="258"><figcaption><p>メタデータを追加</p></figcaption></figure>
 
 ***
 
@@ -104,7 +104,7 @@ Difyナレッジベースは、標準APIの完全なセットを提供してい�
 
 ナレッジベース（Knowledge）は文書（Documents）の集合体です。文書は開発者や運営者によってアップロードされるほか、他のデータソースから同期することも可能です（通常はデータソース内のファイル単位に対応しています）。
 
-<figure><img src="../../../img/en-knowledge-add-document.png" alt=""><figcaption><p>ナレッジベースに新しい文書をアップロード</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/en-knowledge-add-document.png" alt=""><figcaption><p>ナレッジベースに新しい文書をアップロード</p></figcaption></figure>
 
 ***
 

@@ -16,13 +16,13 @@
 
 ホームページで「最初から作成」をクリックしてアプリケーションを作成します。アプリケーション名を入力し、アプリタイプは**チャットボット**を選択します。
 
-<figure><img src="../../../img/jp-create-chatbox.png" alt=""><figcaption><p>チャットボットの作成</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/jp-create-chatbox.png" alt=""><figcaption><p>チャットボットの作成</p></figcaption></figure>
 
 #### アプリケーションの編成
 
 アプリケーションを作成すると、自動的にアプリケーションの概要ページに移動します。左側のメニューから編成をクリックしてアプリケーションを編成します。
 
-<figure><img src="../../../img/jp-create-prompt.png" alt=""><figcaption><p>アプリケーションの編成</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/jp-create-prompt.png" alt=""><figcaption><p>アプリケーションの編成</p></figcaption></figure>
 
 **プロンプトの記入**
 
@@ -38,37 +38,37 @@
 
 オープニングダイアログを追加する方法は、底の「機能を追加」ボタンをクリックして、「会話の開始」機能を開きます：
 
-<figure><img src="../../../img/jp-conversation-remarkers.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/jp-conversation-remarkers.png" alt=""><figcaption></figcaption></figure>
 
 オープニングステートメントを編集する際に、いくつかのオープニング質問を追加することもできます：
 
-![](../../../img/jp-conversation-options.png)
+![](../../.gitbook/assets/jp-conversation-options.png)
 
 #### コンテキストの追加
 
 AIの対話範囲を[ナレッジベース](../knowledge-base/)内に制限したい場合、企業内のカスタマーサービス用語規準などを「コンテキスト」で参照することができます。
 
-![](../../../img/jp-context.png)
+![](../../.gitbook/assets/jp-context.png)
 
 #### デバッグ
 
 右側にユーザー入力項目を入力し、内容を入力してデバッグします。
 
-![](../../../img/jp-conversation-debug.png)
+![](../../.gitbook/assets/jp-conversation-debug.png)
 
 回答結果が望ましくない場合は、プロンプトやモデルを調整することができます。また、複数のモデルを同期してデバッグすることもでき、適切な構成を組み合わせることができます。
 
-![](../../../img/jp-modify-model.png)
+![](../../.gitbook/assets/jp-modify-model.png)
 
 **複数のモデルでのデバッグ：**
 
-単一モデルでのデバッグが効率的ではない場合、**「複数のモデルでのデバッグ」**機能を使用して、複数のモデルの回答効果を一括確認することもできます。
+単一モデルでのデバッグが効率的ではない場合、\*\*「複数のモデルでのデバッグ」\*\*機能を使用して、複数のモデルの回答効果を一括確認することもできます。
 
-![](../../../img/jp-multiple-models.png)
+![](../../.gitbook/assets/jp-multiple-models.png)
 
 最大4つの大きなモデルを同時に追加できます。
 
-![](../../../img/jp-multiple-models-2.png)
+![](../../.gitbook/assets/jp-multiple-models-2.png)
 
 > ⚠️ 複数モデルでデバッグ機能を使用する際に、一部の大きなモデルしか表示されない場合は、他の大きなモデルのキーが追加されていないためです。["新しいプロバイダーの追加"](https://docs.dify.ai/v/ja-jp/guides/model-configuration/new-provider)で、複数のモデルのキーを手動で追加できます。
 
@@ -80,6 +80,6 @@ AIの対話範囲を[ナレッジベース](../knowledge-base/)内に制限し�
 
 ### よくある質問
 
-**チャットアシスタント内にサードパーティツールを追加するにはどうすればよいですか? **
+\*\*チャットアシスタント内にサードパーティツールを追加するにはどうすればよいですか? \*\*
 
 チャット アシスタント タイプのアプリケーションは、サードパーティ ツールの追加をサポートしていません。[エージェント](https://docs.dify.ai/v/ja-jp/guides/application-orchestrate/agent) 内でサードパーティ ツールを追加できます。アプリケーション。

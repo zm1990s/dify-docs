@@ -1,4 +1,4 @@
-# ナレッジベースのAPI管理
+# APIによるデータセットの維持
 
 > 認証や呼び出し方法はサービスAPIと同様ですが、生成される各ナレッジベースAPIトークンには、現在のアカウントでアクセス可能なすべてのナレッジベースを操作する権限が付与されています。データの安全性には十分ご注意ください。
 
@@ -17,7 +17,7 @@ APIを利用してナレッジベースを管理することで、データ処�
 
 ナレッジベースページにアクセスし、左側のナビゲーションで **API** ページに切り替えます。このページでは、Difyが提供するナレッジベースAPIドキュメントを確認し、 **APIキー** でナレッジベースAPIにアクセスするための資格情報を管理できます。
 
-<figure><img src="../../../img/knowledge-base-api-token.png" alt=""><figcaption><p>Knowledge API ドキュメント</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/knowledge-base-api-token.png" alt=""><figcaption><p>Knowledge API ドキュメント</p></figcaption></figure>
 
 ### API呼び出しの例
 
@@ -290,7 +290,6 @@ curl --location --request POST 'https://api.dify.ai/v1/datasets/{dataset_id}/doc
 }
 ```
 
-
 #### **ドキュメント埋め込みステータス(進捗状況)の取得**
 
 入力例：
@@ -530,17 +529,17 @@ curl --location --request POST 'https://api.dify.ai/v1/datasets/{dataset_id}/doc
 
 ### エラーメッセージ
 
-| エラーメッセージ | エラーコード | 理由 |
-|------|--------|---------|
-| no_file_uploaded | 400 | ファイルをアップロードしてください |
-| too_many_files | 400 | 1つのファイルのみアップロードできます |
-| file_too_large | 413 | ファイルサイズが制限を超えています |
-| unsupported_file_type | 415 | サポートされていないファイルタイプです。現在、以下の形式のみをサポートしています：`txt`、 `markdown`、 `md`、 `pdf`、 `html`、 `xlsx`、 `docx`、 `csv` |
-| high_quality_dataset_only | 400 | 現在の操作は「高品質」のナレッジベースのみをサポートしています |
-| dataset_not_initialized | 400 | ナレッジベースはまだ初期化中またはインデックス中です。お待ちください |
-| archived_document_immutable | 403 | アーカイブされたドキュメントは編集できません |
-| dataset_name_duplicate | 409 | ナレッジベース名がすでに存在します。ナレッジベース名を変更してください |
-| invalid_action | 400 | 無効な操作です |
-| document_already_finished | 400 | ドキュメントの処理がすでに完了しています。ページを更新するか、ドキュメントの詳細を確認してください |
-| document_indexing | 400 | ドキュメントが処理中のため、編集できません |
-| invalid_metadata | 400 | メタデータの内容が正しくありません。確認して検証してください |
+| エラーメッセージ                      | エラーコード | 理由                                                                                                     |
+| ----------------------------- | ------ | ------------------------------------------------------------------------------------------------------ |
+| no\_file\_uploaded            | 400    | ファイルをアップロードしてください                                                                                      |
+| too\_many\_files              | 400    | 1つのファイルのみアップロードできます                                                                                    |
+| file\_too\_large              | 413    | ファイルサイズが制限を超えています                                                                                      |
+| unsupported\_file\_type       | 415    | サポートされていないファイルタイプです。現在、以下の形式のみをサポートしています：`txt`、 `markdown`、 `md`、 `pdf`、 `html`、 `xlsx`、 `docx`、 `csv` |
+| high\_quality\_dataset\_only  | 400    | 現在の操作は「高品質」のナレッジベースのみをサポートしています                                                                        |
+| dataset\_not\_initialized     | 400    | ナレッジベースはまだ初期化中またはインデックス中です。お待ちください                                                                     |
+| archived\_document\_immutable | 403    | アーカイブされたドキュメントは編集できません                                                                                 |
+| dataset\_name\_duplicate      | 409    | ナレッジベース名がすでに存在します。ナレッジベース名を変更してください                                                                    |
+| invalid\_action               | 400    | 無効な操作です                                                                                                |
+| document\_already\_finished   | 400    | ドキュメントの処理がすでに完了しています。ページを更新するか、ドキュメントの詳細を確認してください                                                      |
+| document\_indexing            | 400    | ドキュメントが処理中のため、編集できません                                                                                  |
+| invalid\_metadata             | 400    | メタデータの内容が正しくありません。確認して検証してください                                                                         |

@@ -13,22 +13,20 @@ Wixは人気のウェブサイト作成プラットフォームです。ドラ�
 1. Difyアカウントにログインします。
 2. 埋め込みたいDifyアプリケーションを選択します。
 3. ページ右上の「公開」ボタンをクリックします。
-4. 公開ページで「サイトに埋め込む」のオプションを選択します。
+4.  公開ページで「サイトに埋め込む」のオプションを選択します。
 
-   ![サイトに埋め込む](../../../img/best-practice-wix-2.png)
+    ![サイトに埋め込む](../../.gitbook/assets/best-practice-wix-2.png)
+5.  適切なスタイルを選択し、表示されるiFrameコードをコピーします。例：
 
-5. 適切なスタイルを選択し、表示されるiFrameコードをコピーします。例：
-
-   ![iFrameコード例](../../../img/best-practice-wix-3.png)
+    ![iFrameコード例](../../.gitbook/assets/best-practice-wix-3.png)
 
 ## 2. iFrameコードスニペットをWixサイトに埋め込む
 
 1. Wixウェブサイトにログインし、編集したいページを開きます。
 2. ページの左側にある青い`+`（要素の追加）ボタンをクリックします。
-3. **埋め込みコード**を選択し、**HTMLを埋め込む**をクリックして、ページにHTML iFrame要素を追加します。
+3.  **埋め込みコード**を選択し、**HTMLを埋め込む**をクリックして、ページにHTML iFrame要素を追加します。
 
-   ![HTML iFrameを追加](../../../img/best-practice-add-html-iframe.png)
-
+    ![HTML iFrameを追加](../../.gitbook/assets/best-practice-add-html-iframe.png)
 4. `HTML設定`ボックスで、`コード`オプションを選択します。
 5. Difyアプリケーションから取得したiFrameコードスニペットを貼り付けます。
 6. **更新**ボタンをクリックして変更内容を保存し、プレビューします。
@@ -39,7 +37,7 @@ Wixは人気のウェブサイト作成プラットフォームです。ドラ�
 <iframe src="https://udify.app/chatbot/ez1pf83HVV3JgWO4" style="width: 100%; height: 100%; min-height: 700px" frameborder="0" allow="microphone"></iframe>
 ```
 
-![Dify iFrameコードを挿入](../../../img/best-practice-insert-dify-iframe-code.png)
+![Dify iFrameコードを挿入](../../.gitbook/assets/best-practice-insert-dify-iframe-code.png)
 
 > ⚠️ iFrameコード内のアドレスがHTTPSで始まることを確認してください。HTTPアドレスは正しく表示されません。
 
@@ -83,9 +81,9 @@ iFrameコード内の`style`属性を変更することで、チャットボッ�
 
 **1. iFrameのコンテンツが表示されない**
 
-- URLがHTTPSで始まっていることを確認してください。
-- `iframe`コードに誤字がないか確認してください。
-- 埋め込まれたコンテンツがWixのセキュリティポリシーに準拠しているか確認してください。
+* URLがHTTPSで始まっていることを確認してください。
+* `iframe`コードに誤字がないか確認してください。
+* 埋め込まれたコンテンツがWixのセキュリティポリシーに準拠しているか確認してください。
 
 **2. iFrameのコンテンツが切り取られて表示される**
 

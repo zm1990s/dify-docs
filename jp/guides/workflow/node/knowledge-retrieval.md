@@ -1,4 +1,4 @@
-# ナレッジ検索
+# 知識検索
 
 ### 1 定義
 
@@ -12,13 +12,13 @@
 
 下図は最も基本的なナレッジベース質問応答アプリケーションの例です。このプロセスの実行ロジックは、ユーザーの質問がLLMノードに渡される前に、ナレッジ検索ノードでユーザーの質問に最も関連するテキスト内容を検索し、召喚することです。その後、LLMノード内でユーザーの質問と検索されたコンテキストを一緒に入力し、LLMが検索内容に基づいて質問に答えるようにします。
 
-<figure><img src="../../../../img/jp-knowledge-retrieval.png" alt=""><figcaption><p>ナレッジベース質問応答アプリケーションの例</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/jp-knowledge-retrieval.png" alt=""><figcaption><p>ナレッジベース質問応答アプリケーションの例</p></figcaption></figure>
 
 ***
 
 ### 3 どのように設定するか
 
-<figure><img src="../../../../img/jp-knowledge-retrieval-setting.png" alt=""><figcaption><p>ナレッジ検索の設定</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/jp-knowledge-retrieval-setting.png" alt=""><figcaption><p>ナレッジ検索の設定</p></figcaption></figure>
 
 **設定プロセス：**
 
@@ -29,7 +29,7 @@
 
 **出力変数**
 
-<figure><img src="../../../../img/jp-knowledge-retrieval-output.png" alt="" width="272"><figcaption><p>出力変数</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/jp-knowledge-retrieval-output.png" alt="" width="272"><figcaption><p>出力変数</p></figcaption></figure>
 
 ナレッジ検索の出力変数`result`は、ナレッジベースから検索された関連テキストセグメントです。この変数のデータ構造には、セグメント内容、タイトル、リンク、アイコン、メタデータ情報が含まれています。
 
@@ -43,6 +43,6 @@
 
 ユーザーが質問すると、関連するテキストがナレッジ検索で召喚された場合、そのテキスト内容がコンテキスト変数の値としてプロンプトに挿入され、LLMが質問に答えます。関連するテキストが検索されなかった場合、コンテキスト変数の値は空となり、LLMは直接ユーザーの質問に答えます。
 
-<figure><img src="../../../../img/jp-knowledge-retrieval-llm.png" alt=""><figcaption><p>下流LLMノードの設定</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/jp-knowledge-retrieval-llm.png" alt=""><figcaption><p>下流LLMノードの設定</p></figcaption></figure>
 
 この変数は、LLMが質問に答える際のプロンプトコンテキストとして外部ナレッジの参照に使用されるだけでなく、そのデータ構造にセグメントの引用情報が含まれているため、アプリケーション側の[**引用と帰属**](../../knowledge-base/retrieval-test-and-citation.md#id-2-yin-yong-yu-gui-shu)機能もサポートします。

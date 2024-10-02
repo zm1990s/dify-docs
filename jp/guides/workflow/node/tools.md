@@ -14,9 +14,9 @@
 
 また、より複雑なワークフローを編成し、それをツールとして公開することもできます。
 
-<figure><img src="../../../../img/jp-tool-list.png" alt="" width="258"><figcaption><p>ツール選択</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/jp-tool-list.png" alt="" width="258"><figcaption><p>ツール選択</p></figcaption></figure>
 
-<figure><img src="../../../../img/jp-tool-google-search.png" alt=""><figcaption><p>Google 検索ツールで外部知識を検索</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/jp-tool-google-search.png" alt=""><figcaption><p>Google 検索ツールで外部知識を検索</p></figcaption></figure>
 
 ツールノードの設定は一般的に2つのステップに分けられます：
 

@@ -1,4 +1,4 @@
-# 重要な概念
+# キーコンセプト
 
 ### ノード
 
@@ -23,9 +23,9 @@
 
 **使用方法**
 
-<figure><img src="../../../img/jp-create-chatbox-chatflow.png" alt=""><figcaption><p>チャットフロー入口</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/jp-create-chatbox-chatflow.png" alt=""><figcaption><p>チャットフロー入口</p></figcaption></figure>
 
-<figure><img src="../../../img/jp-create-workflow.png" alt=""><figcaption><p>ワークフロー入口</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/jp-create-workflow.png" alt=""><figcaption><p>ワークフロー入口</p></figcaption></figure>
 
 **利用可能なノードの違い**
 
