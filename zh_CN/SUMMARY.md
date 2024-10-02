@@ -64,7 +64,7 @@
   * [在应用内集成知识库](guides/knowledge-base/integrate-knowledge-within-application.md)
   * [召回测试/引用归属](guides/knowledge-base/retrieval-test-and-citation.md)
   * [通过 API 维护知识库](guides/knowledge-base/maintain-dataset-via-api.md)
-  * [连接外部知识库](guides/knowledge-base/connect-external-knowledge.md)
+  * [连接外部知识库](guides/knowledge-base/connect-external-knowledge-base.md)
   * [外部知识库 API](guides/knowledge-base/external-knowledge-api-documentation.md)
 * [工具](guides/tools/README.md)
   * [快速接入工具](guides/tools/quick-tool-integration.md)
