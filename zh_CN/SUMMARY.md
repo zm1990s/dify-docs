@@ -158,7 +158,7 @@
     * [重排序](learn-more/extended-reading/retrieval-augment/rerank.md)
     * [召回模式](learn-more/extended-reading/retrieval-augment/retrieval.md)
   * [提示词编排](learn-more/extended-reading/prompt-engineering.md)
-  * [如何在 Dify 中使用 JSON Scheema 输出功能？](learn-more/extended-reading/how-to-use-json-schema-in-dify.md)
+  * [如何使用 JSON Schema 让 LLM 输出遵循结构化格式的内容？](learn-more/extended-reading/how-to-use-json-schema-in-dify.md)
 * [常见问题](learn-more/faq/README.md)
   * [本地部署相关](learn-more/faq/install-faq.md)
   * [LLM 配置与使用](learn-more/faq/llms-use-faq.md)

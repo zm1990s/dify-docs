@@ -1,6 +1,6 @@
-# 如何在 Dify 中使用 JSON Scheema 输出功能？
+# 如何使用 JSON Schema 让 LLM 输出遵循结构化格式的内容？
 
-JSON Schema 是一种用于描述 JSON 数据结构的规范，开发者可以通过定义 JSON Schema 结构，指定 LLM 输出严格遵循定义内的数据或内容，例如生成清晰的文档或代码结构。
+JSON Schema 是一种用于描述 JSON 数据结构的规范，开发者可以通过定义 JSON Schema 结构，指定 LLM 输出严格遵循定义内的数据或内容，例如按照指定内容格式输出文档或代码结构。
 
 ## 支持 JSON Schema 功能的模型
 
@@ -9,12 +9,16 @@ JSON Schema 是一种用于描述 JSON 数据结构的规范，开发者可以�
 
 > 如需了解更多关于 OpenAI 系列模型的结构化输出能力，请参考 [Structured Outputs](https://platform.openai.com/docs/guides/structured-outputs/introduction)。
 
-## Structured-outputs 用法
+## 结构化输出用法
+
+以下是指定 LLM 结构化输出的用法路径：
 
 1. 将 LLM 连接到系统中的工具、函数、数据等；在函数定义中设置 `strict: true`，当打开它时，结构化输出（Structured-outputs）功能可确保 LLM 为函数调用生成的参数与你在函数定义中提供的 JSON 架构完全匹配。
 2. LLM 回答用户时，按照 JSON Schema 中的定义，以结构化内容格式输出。
 
-## 在 Dify 中开启 JSON Schema
+下文将简要介绍如何在 Dify 开启并使用 JSON Schema 功能。
+
+### 1. 开启 JSON Schema
 
 将应用中的 LLM 切换至上述支持 JSON Schema 输出的模型，然后在设置表单开启 `JSON Schema` 并填写 JSON Schema 模板；同时开启 `response_format` 栏并切换至 `json_schema` 格式。
 
@@ -24,7 +28,7 @@ LLM 生成的内容支持以下格式输出：
 
 * **Text:** 以文本格式输出
 
-## 定义 JSON Schema 模板
+### 2. 定义 JSON Schema 模板
 
 你可以参考以下 JSON Schema 格式并定义模板内容：
 
@@ -223,7 +227,7 @@ You are a UI generator AI. Convert the user input into a UI.
 * [additionalProperties：false](https://platform.openai.com/docs/guides/structured-outputs/additionalproperties-false-must-always-be-set-in-objects) 必须始终在对象中设置
 * 模式的根级别对象必须是一个对象
 
-## 附录
+## 参考阅读
 
 * [Introduction to Structured Outputs](https://cookbook.openai.com/examples/structured\_outputs\_intro)
 * [Structured Output](https://platform.openai.com/docs/guides/structured-outputs/json-mode?context=without\_parse)
