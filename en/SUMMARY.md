@@ -118,6 +118,8 @@
 
 * [Basic](workshop/basic/README.md)
   * [How to Build an AI Image Generation App](workshop/basic/build-ai-image-generation-app.md)
+* [Page](workshop/page/README.md)
+  * [Generating analysis of Twitter account using Chatflow Agent](workshop/page/generating-analysis-of-twitter-account-using-chatflow-agent.md)
 
 ## Community
 
