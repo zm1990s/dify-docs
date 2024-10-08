@@ -89,6 +89,10 @@
 
 外部知识库所关联的 **“外部知识库 API”** 和 **“外部知识 ID”** 不支持修改，如需修改请关联新的 “外部知识库 API” 并重新进行连接。
 
+### 连接示例
+
+[how-to-connect-aws-bderock.md](../../learn-more/use-cases/how-to-connect-aws-bderock.md "mention")
+
 ### 常见问题
 
 **连接外部知识库 API 时异常，出现报错如何处理？**
