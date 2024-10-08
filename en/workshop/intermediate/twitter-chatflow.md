@@ -33,9 +33,13 @@ Click to register: [crawlbase.com](https://crawlbase.com)
 
 Dify is an open-source LLM app development platform. You can choose cloud service or deploy it locally using docker compose.
 
-In this article, it’s fine if you don’t want to deploy it locally.
+In this article, If you don’t want to deploy it locally, register a free Dify Cloud sandbox account here: [https://cloud.dify.ai/signin](https://cloud.dify.ai/signin).&#x20;
 
-Please refer to [Dify - docs](https://docs.dify.ai/) for detailed guidance. The following are brief tutorials on how to deploy Dify:
+{% hint style="info" %}
+Dify Cloud Sandbox users get 200 free credits, equivalent to 200 GPT-3.5 messages or 20 GPT-4 messages. &#x20;
+{% endhint %}
+
+The following are brief tutorials on how to deploy Dify:
 
 #### Clone Dify
 
@@ -71,6 +75,8 @@ The initialized chatflow should be like:
 
 ## Add nodes to chatflow
 
+<figure><img src="../../.gitbook/assets/image (114).png" alt=""><figcaption><p>The final chatflow looks like this</p></figcaption></figure>
+
 ### Start node
 
 In start node, we can add some system variables at the beginning of a chat. In this article, we need a Twitter user’s ID as a string variable. Let’s name it `id` .
@@ -81,21 +87,20 @@ Click on Start node and add a new variable:
 
 ### Code node
 
-According to [Crawlbase docs](https://crawlbase.com/docs/crawling-api/scrapers/#twitter-profile), the variable `url` (this will be used in the following node) should be `https%3A%2F%2Ftwitter.com%2F` + `user id` , such as `https%3A%2F%2Ftwitter.com%2Felonmusk` for Elon Musk.
+According to [Crawlbase docs](https://crawlbase.com/docs/crawling-api/scrapers/#twitter-profile), the variable `url` (this will be used in the following node) should be `https://twitter.com/` + `user id` , such as `https://twitter.com/elonmusk` for Elon Musk.
 
-To convert the user ID into a complete URL, we can use the following Python code to integrate the prefix `https%3A%2F%2Ftwitter.com%2F` with the user ID:
+To convert the user ID into a complete URL, we can use the following Python code to integrate the prefix `https://twitter.com/` with the user ID:
 
 ```python
-
 def main(id: str) -> dict:
     return {
-        "url": "https%3A%2F%2Ftwitter.com%2F"+id,
+        "url": "https://twitter.com/"+id,
     }
 ```
 
 Add a code node and select python, and set input and output variable names:
 
-<figure><img src="../../.gitbook/assets/%E6%88%AA%E5%B1%8F2024-09-02_23.48.53.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/7d5de1cce4426f70f448402d7812bd040d681c225e49a2de66b59cbde66ba834.png" alt=""><figcaption></figcaption></figure>
 
 ### HTTP request node
 
@@ -115,7 +120,7 @@ By typing `/` , you can easily insert the API Key as a variable.
 
 Tap the start button of this node to check whether it works correctly:
 
-<figure><img src="../../.gitbook/assets/%E6%88%AA%E5%B1%8F2024-09-02_23.25.07.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/CleanShot 2024-10-07 at 21.44.50@2x.png" alt=""><figcaption></figcaption></figure>
 
 ### LLM node
 
