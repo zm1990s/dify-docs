@@ -21,7 +21,7 @@
 
 ![](../../.gitbook/assets/export-dsl.png)
 
-DSL 文件不包含第三方工具节点内已填写的授权信息，例如第三方服务的 API Key；如果环境变量中包含 `Secret`类型变量，导出文件时将提示是否允许导出该敏感信息。
+DSL 文件不包含自定义工具节点内已填写的授权信息，例如第三方服务的 API Key；如果环境变量中包含 `Secret`类型变量，导出文件时将提示是否允许导出该敏感信息。
 
 ![](../../.gitbook/assets/export-dsl-secret.png)
 
