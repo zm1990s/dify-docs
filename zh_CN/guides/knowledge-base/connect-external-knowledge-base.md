@@ -15,7 +15,7 @@
 * Dify 平台能够直接获取托管在云服务提供商知识库内的文本内容，开发者无需将内容重复搬运至 Dify 中的知识库；
 * Dify 平台能够直接获取自建知识库内经算法处理后的文本内容，开发者仅需关注自建知识库的信息检索机制，并不断优化与提升信息召回的准确度。
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>外部知识库连接原理</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>外部知识库连接原理</p></figcaption></figure>
 
 以下是连接外部知识的详细步骤：
 

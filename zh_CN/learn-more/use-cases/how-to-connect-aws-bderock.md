@@ -18,7 +18,7 @@
 
 Dify 平台尚不能直接连接 AWS Bedrock Knowledge Base，需要开发团队参考 Dify 关于外部知识库连接的 [API 定义](../../guides/knowledge-base/external-knowledge-api-documentation.md)，手动创建后端 API 服务，建立与 AWS Bedrock 的连接。具体架构示意图请参考：
 
-<figure><img src="../../.gitbook/assets/image (361).png" alt=""><figcaption><p> 构建后端 API 服务</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>构建后端 API 服务</p></figcaption></figure>
 
 你可以参考以下 2 个代码文件，构建后端服务 API。
 
@@ -160,7 +160,7 @@ class ExternalDatasetService:
 
 建立与外部知识库的连接后，开发者可以在 **“召回测试”** 中模拟可能的问题关键词，预览从 AWS Bedrock Knowledge Base 召回的文本分段。
 
-<figure><img src="https://docs.dify.ai/~gitbook/image?url=https%3A%2F%2F1288284732-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FCdDIVDY6AtAz028MFT4d%252Fuploads%252Ft5NpL8ya7e2aONazapVL%252Fimage.png%3Falt%3Dmedia%26token%3Dc80a2940-ee56-49ea-bbcd-5e6b6363ba0d&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=c106cf3d&#x26;sv=1" alt=""><figcaption><p>测试外部数据库的连接与召回</p></figcaption></figure>
+<figure><img src="broken-reference" alt=""><figcaption><p>测试外部数据库的连接与召回</p></figcaption></figure>
 
 若对于召回结果不满意，可以尝试修改召回参数或自行调整外部知识库的检索设置。
 
