@@ -11,7 +11,7 @@ In Dify, you can use some crawler tools, such as Jina, which can convert web pag
 
 Recently, [wordware.ai](https://www.wordware.ai/) has brought to our attention that we can use crawlers to scrape social media for LLM analysis, creating more interesting applications.
 
-However, knowing that X (formerly Twitter) stopped providing free API access on February 2, 2023, and has since upgraded its anti-crawling measures. Tools like Jina are unable to directly access X's content.
+However, knowing that X (formerly Twitter) stopped providing free API access on February 2, 2023, and has since upgraded its anti-crawling measures. Tools like Jina are unable to access X's content directly.
 
 > Starting February 9, we will no longer support free access to the Twitter API, both v2 and v1.1. A paid basic tier will be available instead 🧵
 >
@@ -40,7 +40,7 @@ Please refer to [Dify - docs](https://docs.dify.ai/) for detailed guidance. The 
 #### Clone Dify
 
 ```bash
-git clone [https://github.com/langgenius/dify.git](https://github.com/langgenius/dify.git)
+git clone https://github.com/langgenius/dify.git
 ```
 
 #### **Start Dify**
@@ -81,9 +81,9 @@ Click on Start node and add a new variable:
 
 ### Code node
 
-As the [Crawlbase docs](https://crawlbase.com/docs/crawling-api/scrapers/#twitter-profile) says, the variable `url` (this will be used in the following node) should be `https%3A%2F%[2Ftwitter.com](http://2ftwitter.com/)%2F` + `user id` , such as `https%3A%2F%[2Ftwitter.com](http://2ftwitter.com/)%2Felonmusk` for Elon Musk.
+According to [Crawlbase docs](https://crawlbase.com/docs/crawling-api/scrapers/#twitter-profile), the variable `url` (this will be used in the following node) should be `https%3A%2F%2Ftwitter.com%2F` + `user id` , such as `https%3A%2F%2Ftwitter.com%2Felonmusk` for Elon Musk.
 
-To convert the user ID into a complete URL, we can use the following Python code to integrate the prefix `https%3A%2F%[2Ftwitter.com](http://2ftwitter.com/)%2F` with the user ID:
+To convert the user ID into a complete URL, we can use the following Python code to integrate the prefix `https%3A%2F%2Ftwitter.com%2F` with the user ID:
 
 ```python
 
@@ -103,7 +103,7 @@ Based on the [Crawlbase docs](https://crawlbase.com/docs/crawling-api/scrapers/#
 
 <figure><img src="../../.gitbook/assets/%E6%88%AA%E5%B1%8F2024-09-02_19.43.21 (1).png" alt=""><figcaption></figcaption></figure>
 
-Importantly, for security reasons, it is best not to directly enter the token value as plain text, as this is not a good practice. Actually, in the latest version of Dify, we can set token values in **`Environment Variables`**. Click `env` - `Add Variable` to set the token value, so plain text will not appear in the node.
+Importantly, it is best not to directly enter the token value as plain text for security reasons, as this is not a good practice. Actually, in the latest version of Dify, we can set token values in **`Environment Variables`**. Click `env` - `Add Variable` to set the token value, so plain text will not appear in the node.
 
 Check [https://crawlbase.com/dashboard/account/docs](https://crawlbase.com/dashboard/account/docs) for your crawlbase API Key.
 
