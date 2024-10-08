@@ -160,8 +160,8 @@ class ExternalDatasetService:
 
 建立与外部知识库的连接后，开发者可以在 **“召回测试”** 中模拟可能的问题关键词，预览从 AWS Bedrock Knowledge Base 召回的文本分段。
 
-<figure><img src="broken-reference" alt=""><figcaption><p>测试外部数据库的连接与召回</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (366).png" alt=""><figcaption><p>测试外部数据库的连接与召回</p></figcaption></figure>
 
-若对于召回结果不满意，可以尝试修改召回参数或自行调整外部知识库的检索设置。
+若对于召回结果不满意，可以尝试修改召回参数或自行调整 AWS Bedrock Knowledge Base 的检索设置。
 
-<figure><img src="broken-reference" alt=""><figcaption><p>调整 AWS Bedrock Knowledge Base 文本处理参数</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (367).png" alt=""><figcaption><p>调整 AWS Bedrock Knowledge Base 文本处理参数</p></figcaption></figure>
