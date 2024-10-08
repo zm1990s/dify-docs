@@ -1,3 +1,8 @@
+---
+cover: ../../.gitbook/assets/%E7%94%BB%E6%9D%BF_1.png
+coverY: 0
+---
+
 # Generating analysis of Twitter account using Chatflow Agent
 
 ## Introduction
