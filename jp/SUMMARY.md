@@ -63,6 +63,8 @@
   * [ウェブサイトからデータをインポート](guides/knowledge-base/sync-from-website.md)
   * [APIによるデータセットの維持](guides/knowledge-base/maintain-dataset-via-api.md)
   * [外部データツール](guides/knowledge-base/external-data-tool.md)
+  * [外部ナレッジベースとの接続](guides/knowledge-base/connect-external-knowledge-base.md)
+  * [外部ナレッジベースAPI](guides/knowledge-base/external-knowledge-api-documentation.md)
 * [ツール](guides/tools/README.md)
   * [クイック統合ツール](guides/tools/quick-tool-integration.md)
   * [高度統合ツール](guides/tools/advanced-tool-integration.md)
@@ -109,6 +111,13 @@
   * [チームメンバーの管理](guides/management/team-members-management.md)
   * [個人アカウントの管理](guides/management/personal-account-management.md)
   * [サブスクリプション管理](guides/management/subscription-management.md)
+
+## ハンドオン工房 <a href="workshop" id="workshop"></a>
+
+* [初級編](workshop/basic/README.md)
+  * [ゼロからAI画像生成アプリを作る](workshop/basic/build-ai-image-generation-app.md)
+* [中級編](workshop/intermediate/README.md)
+  * [チャットストリームエージェントを使用して Twitter アカウントを分析する](workshop/intermediate/twitter-chatflow.md)
 
 ## コミュニティ <a href="#community" id="community"></a>
 
