@@ -90,9 +90,9 @@ def main() -> dict:
 
 这段代码包含以下问题：
 
-* 未经授权的文件访问： 代码试图读取 "/etc/passwd" 文件，这是 Unix/Linux 系统中存储用户账户信息的关键系统文件。
-* 敏感信息泄露： "/etc/passwd" 文件包含系统用户的重要信息，如用户名、用户 ID、组 ID、home 目录路径等。直接访问可能会导致信息泄露。
+* **未经授权的文件访问：** 代码试图读取 "/etc/passwd" 文件，这是 Unix/Linux 系统中存储用户账户信息的关键系统文件。
+* **敏感信息泄露：** "/etc/passwd" 文件包含系统用户的重要信息，如用户名、用户 ID、组 ID、home 目录路径等。直接访问可能会导致信息泄露。
 
 危险代码将会被 Cloudflare  WAF 自动拦截，你可以通过 “网页调试工具” 中的 “网络” 查看是否被拦截。
 
-<figure><img src="broken-reference" alt=""><figcaption><p>Cloudfare WAF 拦截</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (370).png" alt=""><figcaption><p> Cloudflare WAF</p></figcaption></figure>
