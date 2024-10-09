@@ -1,9 +1,11 @@
 ---
-cover: ../../../en/.gitbook/assets/%E7%94%BB%E6%9D%BF_1.png
+cover: ../../.gitbook/assets/twitter_LLM_Providers.webp
 coverY: 0
 ---
 
-# チャットフローエージェントを使用して Twitter アカウントを分析する
+# チャットストリームエージェントを使用して Twitter アカウントを分析する
+
+> 作者：Steven Lynn. Difyのテクニカルライター
 
 ## はじめに
 
@@ -15,7 +17,7 @@ Difyでは、WebページをLLM（大規模言語モデル）が読み取れるM
 
 > 2023年2月9日から、Twitter APIの無料アクセスは終了し、v2およびv1.1のサポートも行われなくなります。代わりに、有料の基本プランが提供されます。 🧵
 >
-> — Developers (@XDevelopers) [February 2, 2023](https://twitter.com/XDevelopers/status/1621026986784337922?ref_src=twsrc%5Etfw)
+> — Developers (@XDevelopers) [February 2, 2023](https://twitter.com/XDevelopers/status/1621026986784337922?ref\_src=twsrc%5Etfw)
 
 幸いなことに、DifyにはHTTPツールがあり、これを使用して外部のクローリングツールにHTTPリクエストを送信できます。それでは、始めていきましょう！
 
@@ -57,7 +59,15 @@ docker compose up -d
 
 アカウント設定にて、モデルプロバイダーを設定してください：
 
+<div>
+
 <figure><img src="../../../en/.gitbook/assets/%E6%88%AA%E5%B1%8F2024-09-03_08.51.29.png" alt=""><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="../../.gitbook/assets/twitter_LLM_Providers.webp" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 ## チャットフローの作成
 
@@ -65,11 +75,27 @@ docker compose up -d
 
 `空白から作成`をクリックして、新しいフローの作成を開始します：
 
+<div>
+
 <figure><img src="../../../en/.gitbook/assets/%E6%88%AA%E5%B1%8F2024-09-02_20.37.09.png" alt=""><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="../../.gitbook/assets/twitter_chatflow.webp" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 初期化されたチャットフローは以下のようになります：
 
+<div>
+
 <figure><img src="../../../en/.gitbook/assets/%E6%88%AA%E5%B1%8F2024-09-02_22.44.44.png" alt=""><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="../../.gitbook/assets/twitter_init.webp" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 ## チャットフローにノードを追加
 
@@ -81,7 +107,7 @@ docker compose up -d
 
 開始ノードをクリックして、新しい変数を追加します：
 
-<figure><img src="../../../en/.gitbook/assets/%E6%88%AA%E5%B1%8F2024-09-03_08.42.10.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/twitter_add_input.webp" alt=""><figcaption></figcaption></figure>
 
 ### コードノード
 
@@ -104,17 +130,41 @@ def main(id: str) -> dict:
 
 [Crawlbaseのドキュメント](https://crawlbase.com/docs/crawling-api/scrapers/#twitter-profile)によると、TwitterユーザーのプロフィールをHTTP形式でスクレイピングするには、以下の形式でHTTPリクエストノードを設定する必要があります：
 
-<figure><img src="../../../en/.gitbook/assets/%E6%88%AA%E5%B1%8F2024-09-02_19.43.21 (1).png" alt=""><figcaption></figcaption></figure>
+<div>
+
+<figure><img src="../../../en/.gitbook/assets/%E6%88%AA%E5%B1%8F2024-09-02_19.43.21%20(1).png" alt=""><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="../../.gitbook/assets/twitter_add_http.webp" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 セキュリティ上の観点から、トークン値を平文で直接入力することは避けるべきです。これは推奨されるベストプラクティスではありません。実際、Difyの最新バージョンでは、トークン値を**環境変数**に設定できるようになっています。`env`をクリックして`Add Variable`を選択し、トークン値を設定すると、ノードに平文が表示されなくなります。
 
 あなたのCrawlbase APIキーについては、[こちら](https://crawlbase.com/dashboard/account/docs)で確認できます。
 
+<div>
+
 <figure><img src="../../../en/.gitbook/assets/%E6%88%AA%E5%B1%8F2024-09-02_22.55.20.png" alt=""><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="../../.gitbook/assets/twitter_http_1.webp" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 `/`を入力することで、APIキーを簡単に変数として挿入できます。
 
+<div>
+
 <figure><img src="../../../en/.gitbook/assets/%E6%88%AA%E5%B1%8F2024-09-02_23.02.04.png" alt=""><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="../../.gitbook/assets/twitter_http_2.webp" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 このノードが正しく動作するか確認するために、ノードの開始ボタンをタップしてください：
 
@@ -128,17 +178,33 @@ def main(id: str) -> dict:
 
 以下はサンプルのシステムプロンプトです。
 
+<div>
+
 <figure><img src="../../../en/.gitbook/assets/%E6%88%AA%E5%B1%8F2024-09-02_23.35.38.png" alt=""><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="../../.gitbook/assets/twitter_llm.png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 ## テスト実行
 
 `プレビュー`をクリックしてテスト実行を開始し、`id`にTwitterユーザーIDを入力してください。
 
+<div>
+
 <figure><img src="../../../en/.gitbook/assets/%E6%88%AA%E5%B1%8F2024-09-02_23.41.03.png" alt=""><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="../../.gitbook/assets/twitter_llm_test.png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 例えば、Elon Muskのツイートを分析し、彼の口調で地球温暖化についてのツイートを書きたいと思います。
 
-<figure><img src="../../../en/.gitbook/assets/%E6%88%AA%E5%B1%8F2024-09-02_23.47.20.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/twitter_test_llm.png" alt=""><figcaption></figcaption></figure>
 
 これはElonらしいですか？笑
 
@@ -156,5 +222,5 @@ def main(id: str) -> dict:
 
 ## リンク
 
-* [X@dify_ai](https://x.com/dify_ai)
+* [X@dify\_ai](https://x.com/dify\_ai)
 * DifyのGitHubリポジトリ：[https://github.com/langgenius/dify](https://github.com/langgenius/dify)
