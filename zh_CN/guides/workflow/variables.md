@@ -1,3 +1,7 @@
+---
+description: 最近编辑：Allen, Dify Technical Writer
+---
+
 # 变量
 
 Workflow 和 Chatflow 类型应用由独立节点相构成。大部分节点设有输入和输出项，但每个节点的输入信息不一致，各个节点所输出的答复也不尽相同。
@@ -12,9 +16,11 @@ Workflow 和 Chatflow 类型应用由独立节点相构成。大部分节点设�
 
 Workflow 类型应用提供以下系统变量：
 
-<table><thead><tr><th>变量名称</th><th>数据类型</th><th width="297">说明</th><th>备注</th></tr></thead><tbody><tr><td><code>sys.files</code></td><td>Array[File]</td><td>文件参数，存储用户初始使用应用时上传的图片</td><td>图片上传功能需在应用编排页右上角的 “功能” 处开启</td></tr><tr><td><code>sys.user_id</code></td><td>String</td><td>用户 ID，每个用户在使用工作流应用时，系统会自动向用户分配唯一标识符，用以区分不同的对话用户</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="193">变量名称</th><th width="116">数据类型</th><th width="278">说明</th><th>备注</th></tr></thead><tbody><tr><td><p><code>sys.files</code></p><p><code>[LEGACY]</code></p></td><td>Array[File]</td><td>文件参数，存储用户初始使用应用时上传的图片</td><td>图片上传功能需在应用编排页右上角的 “功能” 处开启</td></tr><tr><td><code>sys.user_id</code></td><td>String</td><td>用户 ID，每个用户在使用工作流应用时，系统会自动向用户分配唯一标识符，用以区分不同的对话用户</td><td></td></tr><tr><td><code>sys.app_id</code></td><td>String</td><td> 应用 ID，系统会向每个 Workflow 应用分配一个唯一的标识符，用以区分不同的应用，并通过此参数记录当前应用的基本信息</td><td>面向具备开发能力的用户，通过此参数区别不同的 Workflow 应用</td></tr><tr><td><code>sys.workflow_id</code></td><td>String</td><td>Workflow ID，用于记录当前 Workflow 应用内所有节点的信息</td><td>可用于后续的监控面向具备开发能力的用户，可以通过此参数追踪并记录 Workflow 内的包含节点信息</td></tr><tr><td><code>sys.workflow_run_id</code></td><td>String</td><td>Workflow 应用运行 ID，用于记录 Workflow 应用中的运行情况。</td><td>可用于后续的监控与面向具备开发能力的用户，可以通过此参数追踪应用的历次运行情况</td></tr></tbody></table>
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt="workflow-system-variable"><figcaption><p>Workflow 类型应用系统变量</p></figcaption></figure>
+
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Workflow 类型应用系统变量</p></figcaption></figure>
 
 #### Chatflow
 
