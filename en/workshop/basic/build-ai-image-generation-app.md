@@ -45,7 +45,9 @@ The Free version of Dify provides 200 free OpenAI message credits.
 
 If the message credits are insufficient, you can customize other model providers by following the steps in the image below:
 
-Click **Your Avatar - Settings - Model Provider** ![](../../.gitbook/assets/build-ai-image-generation-app-3-en.png)
+Click **Your Avatar - Settings - Model Provider**
+
+<figure><img src="../../.gitbook/assets/build-ai-image-generation-app-3-en.png" alt=""><figcaption></figcaption></figure>
 
 If you haven't found a suitable model provider, the groq platform provides free call credits for LLMs like Llama.
 
@@ -161,7 +163,11 @@ Draw the specified content according to the user's prompt using stability_text2i
 If the user requests content unrelated to drawing, reply: "Sorry, I don't understand what you're saying."
 ```
 
-For example, let's ask: What's for dinner tonight? ![](../../.gitbook/assets/build-ai-image-generation-app-15-en.png)
+For example, let's ask: What's for dinner tonight?
+
+&#x20;
+
+<figure><img src="../../.gitbook/assets/build-ai-image-generation-app-15-en.png" alt=""><figcaption></figcaption></figure>
 
 In some more formal business scenarios, we can call a sensitive word library to refuse user requests.
 
