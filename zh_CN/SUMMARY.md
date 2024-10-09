@@ -117,8 +117,8 @@
 
 * [初级](workshop/basic/README.md)
   * [如何搭建 AI 图片生成应用](workshop/basic/build-ai-image-generation-app.md)
-* [中级](workshop/zhong-ji/README.md)
-  * [ChatFlow 实战：搭建 Twitter 账号分析助手](workshop/zhong-ji/twitter-chatflow.md)
+* [中级](workshop/intermediate/README.md)
+  * [ChatFlow 实战：搭建 Twitter 账号分析助手](workshop/intermediate/twitter-chatflow.md)
 
 ## 社区 <a href="#community" id="community"></a>
 
