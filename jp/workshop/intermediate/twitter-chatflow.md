@@ -1,5 +1,5 @@
 ---
-cover: ../../.gitbook/assets/twitter_LLM_Providers.webp
+cover: ../../.gitbook/assets/Cover.png
 coverY: 0
 ---
 
