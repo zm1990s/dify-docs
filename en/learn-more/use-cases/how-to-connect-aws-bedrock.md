@@ -1,6 +1,6 @@
 # How to connect with AWS Bedrock Knowledge Base？
 
-This article will briefly introduce how to connect the Dify platform with the AWS Bedrock knowledge base through the external knowledge base API, so that AI applications in the Dify platform can directly obtain content stored in the AWS Bedrock knowledge base and expand new information source channels.
+This article will briefly introduce how to connect the Dify platform with the AWS Bedrock knowledge base through the [external knowledge base API](https://docs.dify.ai/guides/knowledge-base/external-knowledge-api-documentation), so that AI applications in the Dify platform can directly obtain content stored in the AWS Bedrock knowledge base and expand new information source channels.
 
 ### Pre-preparation
 
@@ -8,20 +8,19 @@ This article will briefly introduce how to connect the Dify platform with the AW
 * Dify SaaS Service / Dify Community Version
 * Backend API Development Basics
 
-### 1. Register and create AWS Bedrock Knowledge Base
+### 1. Register and Create AWS Bedrock Knowledge Base
 
 Visit [AWS Bedrock](https://aws.amazon.com/bedrock/) and create the Knowledge Base service.
 
 <figure><img src="../../../en/.gitbook/assets/image (360).png" alt=""><figcaption><p>Create AWS Bedrock Knowledge Base</p></figcaption></figure>
 
-### 2. Build the backend API service
+### 2. Build the Backend API Service
 
-The Dify platform cannot directly connect to AWS Bedrock Knowledge Base. The development team needs to refer to Dify's [API definition](../../guides/knowledge-base/external-knowledge-api-documentation.md) on external knowledge base connection, manually create the backend API service, and establish a connection with AWS Bedrock. Please refer to the specific architecture diagram:
+The Dify platform cannot directly connect to AWS Bedrock Knowledge Base. The developer needs to refer to Dify's [API definition](../../guides/knowledge-base/external-knowledge-api-documentation.md) on external knowledge base connection, manually create the backend API service, and establish a connection with AWS Bedrock. Please refer to the specific architecture diagram:
 
-<figure><img src="../../../en/.gitbook/assets/image.png" alt=""><figcaption><p>Build the backend API service</p></figcaption></figure>
+<figure><img src="../../../zh_CN/.gitbook/assets/image (1).png" alt=""><figcaption><p>Build the backend API service</p></figcaption></figure>
 
-You can refer to the following 2 code.
-
+You can refer to the following 2 demo code.
 
 `knowledge.py`
 
@@ -112,57 +111,57 @@ class ExternalDatasetService:
         }
 ```
 
-During this process, you can construct the API interface address and the API Key for authentication and use them for subsequent connections.
+During the process, you can construct the API endpoint address and the API Key for authentication and use them for the next connections.
 
 ### 3. Get the AWS Bedrock Knowledge Base ID
 
-After log in to the AWS Bedrock Knowledge backend and get the ID of the created Knowledge Base, you can use this parameter to connect to the Dify platform in the [subsequent steps](how-to-connect-aws-bedrock.md#id-5.-lian-jie-wai-bu-zhi-shi-ku).
+After log in to the AWS Bedrock Knowledge backend and get the ID of the created Knowledge Base, you can use this parameter to connect to the Dify platform in the subsequent steps.
 
 <figure><img src="../../../zh_CN/.gitbook/assets/image (359).png" alt=""><figcaption><p>Get the AWS Bedrock Knowledge Base ID</p></figcaption></figure>
 
-### 4. Associate the external knowledge API
+### 4. Associate the External Knowledge API
 
-Go to the **"Knowledge Base"** page in the Dify platform, click **"External Knowledge Base API"** in the upper right corner, and tap **"Add External Knowledge Base API"**.
+Go to the **"Knowledge"** page in the Dify platform, click **"External Knowledge API"** in the upper right corner, and tap **"Add an External Knowledge API"**.
 
 Follow the prompts on the page and fill in the following information:
 
 * The name of the knowledge base. Custom names are allowed to distinguish different external knowledge APIs connected to the Dify platform;
-* API interface address, the connection address of the external knowledge base, which can be customized in [Step 2](how-to-connect-aws-bedrock.md#id-2.-gou-jian-hou-duan-api-fu-wu). Example `api-endpoint/retrieval`;
-* API Key, the external knowledge base connection key, which can be customized in [Step 2](how-to-connect-aws-bedrock.md#id-2.-gou-jian-hou-duan-api-fu-wu).
+* API endpoint address, the connection address of the external knowledge base, which can be customized in [Step 2](how-to-connect-aws-bedrock.md#id-2.build-the-backend-api-service). Example: `api-endpoint/retrieval`;
+* API Key, the external knowledge base connection key, which can be customized in [Step 2](how-to-connect-aws-bedrock.md#id-2.build-the-backend-api-service).
 
 <figure><img src="../../../zh_CN/.gitbook/assets/image (362).png" alt=""><figcaption></figcaption></figure>
 
-### 5. Connect to external knowledge base
+### 5. Connect to External Knowledge Base
 
-Go to the **“Knowledge base”** page, click **“Connect to external knowledge base”** below the add knowledge base card to jump to the parameter configuration page.
+Go to the **“Knowledge** page, click **“Connect to an External Knowledge Base”** below the add knowledge base card to jump to the parameter configuration page.
 
 <figure><img src="../../../zh_CN/.gitbook/assets/image (363).png" alt=""><figcaption></figcaption></figure>
 
 Fill in the following parameters:
 
 * **Knowledge base name and description**
-* **External knowledge base API**&#x20;
+* **External knowledge base API**
 
-Select the external knowledge base API associated in [Step 4](how-to-connect-aws-bedrock.md#id-4.-guan-lian-wai-bu-zhi-shi-api)
-* **External knowledge base ID**&#x20;
+Select the external knowledge base API associated in Step 4.
+* **External knowledge base ID**
 
-&#x20;Fill in the AWS Bedrock knowledge base ID obtained in [Step 3](how-to-connect-aws-bedrock.md#id-3.-huo-qu-aws-bedrock-knowledge-base-id)
+Fill in the AWS Bedrock knowledge base ID obtained in Step 3.
 * **Adjust recall settings**
 
-**Top K:** When a user asks a question, the external knowledge API will be requested to obtain the most relevant content segments. This parameter is used to filter text segments with high similarity to user questions. The default value is 3. The higher the value, the more relevant text segments will be recalled.
+**Top K:** When a user asks a question, the external knowledge API will be requested to obtain the most relevant content chunks. This parameter is used to filter text chunks with high similarity to user questions. The default value is 3. The higher the value, the more relevant text chunks will be recalled.
 
-**Score threshold: **The similarity threshold for text segment filtering. Only text segments with a score exceeding the set score will be recalled. The default value is 0.5. The higher the value, the higher the similarity required between the text and the question, the smaller the number of texts expected to be recalled, and the more accurate the result will be.
+**Score threshold:** The similarity threshold for text chunk filtering. Only text chunks with a score exceeding the set score will be recalled. The default value is 0.5. The higher the value, the higher the similarity required between the text and the question, the smaller the number of texts expected to be recalled, and the more accurate the result will be.
 
 <figure><img src="../../../zh_CN/.gitbook/assets/image (364).png" alt=""><figcaption></figcaption></figure>
 
 After the settings are completed, you can establish a connection with the external knowledge base API.
 
-### 6. Test external knowledge base connection and recall
+### 6. Test External Knowledge Base Connection and Retrieval
 
-After establishing a connection with an external knowledge base, developers can simulate possible question keywords in **"Recall Test"** and preview the text segments recalled from AWS Bedrock Knowledge Base.
+After establishing a connection with an external knowledge base, developers can simulate possible user's question keywords in **"Retrieval Test"** and preview the text chunks retrieval from the AWS Bedrock Knowledge Base.
 
-<figure><img src="../../../zh_CN/.gitbook/assets/image (366).png" alt=""><figcaption><p>Test the connection and recall of the external database</p></figcaption></figure>
+<figure><img src="../../../zh_CN/.gitbook/assets/image (366).png" alt=""><figcaption><p>Test the connection and retrieval of the external knowledge base</p></figcaption></figure>
 
-If you are not satisfied with the recall results, you can try to modify the recall parameters or adjust the search settings of AWS Bedrock Knowledge Base yourself.
+If you are not satisfied with the retrieval results, you can try to modify the retrieval parameters or adjust the retrieval settings of AWS Bedrock Knowledge Base.
 
-<figure><img src="../../../zh_CN/.gitbook/assets/image (367).png" alt=""><figcaption><p>Adjust the text processing parameters of AWS Bedrock Knowledge Base</p></figcaption></figure>
+<figure><img src="../../../zh_CN/.gitbook/assets/image (367).png" alt=""><figcaption><p>Adjust the text chunking parameters of AWS Bedrock Knowledge Base</p></figcaption></figure>
