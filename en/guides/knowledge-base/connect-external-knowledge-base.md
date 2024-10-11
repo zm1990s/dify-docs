@@ -1,8 +1,24 @@
 # Connect to an External Knowledge Base
 
-To enhance content retrieval accuracy, some teams opt to develop their own retrieval algorithms or host knowledge bases on cloud service providers (such as [AWS Bedrock](https://aws.amazon.com/bedrock/)). As a neutral LLM application development platform, Dify is committed to empowering developers with greater flexibility in choosing knowledge bases.
+> To make a distinction, knowledge bases independent of the Dify platform are collectively referred to as **"external knowledge bases"** in this article.
 
-Dify offers functionality to connect to external knowledge bases via API, providing developers with diverse options for knowledge base selection and content expansion. Text resources from external knowledge bases can be seamlessly integrated into Dify's AI application ecosystem, enhancing the breadth and depth of application knowledge.
+## Functional Introduction
+
+
+For developers with advanced content retrieval requirements, **the built-in knowledge base functionality and text retrieval mechanisms of the Dify platform may have limitations, particularly in terms of customizing recall results.**
+
+Due to the requirement of higher accuracy of text retrieval and recall, as well as the need to manage internal materials, some developer teams choose to independently develop RAG algorithms and independently maintain text retrieval systems, or uniformly host content to cloud vendors' knowledge base services (such as [AWS Bedrock](https://aws.amazon.com/bedrock/)).
+
+As a neutral platform for LLM application development, Dify is committed to providing developers with a wider range of options.
+
+The **Connect to External Knowledge Base** feature enables integration between the Dify platform and external knowledge bases. Through API services, AI applications can access a broader range of information sources. This capability offers two key advantages:
+
+
+* The Dify platform can directly obtain the text content hosted in the cloud service provider's knowledge base, so that developers do not need to repeatedly move the content to the knowledge base in Dify;
+
+* The Dify platform can directly obtain the text content processed by algorithms in the self-built knowledge base. Developers only need to focus on the information retrieval mechanism of the self-built knowledge base and continuously optimize and improve the accuracy of information retrieval.
+
+<figure><img src="../../../zh_CN/.gitbook/assets/image (1).png" alt=""><figcaption><p>Principle of external knowledge base connection</p></figcaption></figure>
 
 Here are the detailed steps for connecting to external knowledge:
 
@@ -41,7 +57,7 @@ Fill in the following parameters:
 
     **Top K:** When a user sends a question, it will request the external knowledge API to obtain highly relevant content chunks. This parameter is used to filter text chunks with high similarity to the user's question. The default value is 3; the higher the value, the more text chunks with relevant similarities will be retrieval.
 
-    **Score Threshold:** The similarity threshold for text chunk filtering, only recalling text chunks that exceed the set score. The default value is 0.5. A higher value indicates a higher requirement for similarity between the text and the question, expecting fewer recalled text chunks, and the results will be relatively more precise.
+    **Score Threshold:** The similarity threshold for text chunk filtering, only retrievaling text chunks that exceed the set score. The default value is 0.5. A higher value indicates a higher requirement for similarity between the text and the question, expecting fewer retrievaled text chunks, and the results will be relatively more precise.
 
 <figure><img src="../../../img/connect-kb-3-en.webp" alt=""><figcaption></figcaption></figure>
 
@@ -75,13 +91,17 @@ Navigate to the **"Knowledge"** page, external knowledge base cards will list an
     Provide **"Only me"**, **"All team members"**, and **"Partial team members"** permission scope. Those without permission will not be able to access the knowledge base. If you choose to make the knowledge base public to other members, it means that other members also have the rights to view, edit, and delete the knowledge base.
 *   **Retrieval Setting**
 
-    **Top K:** When a user sends a question, it will request the external knowledge API to obtain highly relevant content segments. This parameter is used to filter text chunks with high similarity to the user's question. The default value is 3; the higher the value, the more text chunks with relevant similarities will be recalled.
+    **Top K:** When a user sends a question, it will request the external knowledge API to obtain highly relevant content segments. This parameter is used to filter text chunks with high similarity to the user's question. The default value is 3; the higher the value, the more text chunks with relevant similarities will be retrievaled.
 
-    **Score threshold:** The similarity threshold for text chunk filtering, only recalling text chunks that exceed the set score. The default value is 0.5. A higher value indicates a higher requirement for similarity between the text and the question, expecting fewer recalled text chunks, and the results will be relatively more precise.
+    **Score threshold:** The similarity threshold for text chunk filtering, only retrievaling text chunks that exceed the set score. The default value is 0.5. A higher value indicates a higher requirement for similarity between the text and the question, expecting fewer retrievaled text chunks, and the results will be relatively more precise.
 
 The **"External Knowledge API"** and **"External Knowledge ID"** associated with the external knowledge base do not support modification. If modification is needed, please associate a new **"External Knowledge API"** and reset it.
 
 <figure><img src="../../../img/connect-kb-7-en.webp" alt=""><figcaption></figcaption></figure>
+
+### Connection Example
+
+[How to connect with AWS Bedrock Knowledge Base？](../../learn-more/use-cases/how-to-connect-aws-bedrock.md "mention")
 
 ## FAQ
 
