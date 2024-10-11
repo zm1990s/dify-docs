@@ -139,6 +139,7 @@
   * [接入 OpenLLM 部署的本地模型](development/models-integration/openllm.md)
   * [接入 LocalAI 部署的本地模型](development/models-integration/localai.md)
   * [接入 Ollama 部署的本地模型](development/models-integration/ollama.md)
+  * [接入 LiteLLM 代理的模型](development/models-integration/litellm.md)
 
 ## 阅读更多 <a href="#learn-more" id="learn-more"></a>
 
