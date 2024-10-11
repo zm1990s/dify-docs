@@ -35,7 +35,7 @@ model_list:
       api_base: https://openai-gpt-4-test-v-2.openai.azure.com/
 ```
 
-### Step 2. Start litellm proxy
+### Step 2. Start LiteLLM Proxy
 
 ```shell
 docker run \
