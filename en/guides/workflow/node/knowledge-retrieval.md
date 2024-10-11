@@ -12,7 +12,7 @@ Configuring the Knowledge Base Retrieval Node involves three main steps:
 
 **Selecting the Query Variable**
 
-In knowledge base retrieval scenarios, the query variable typically represents the user's input question. In the "Start" node of conversational applications, the system pre-sets "sys.query" as the user input variable. This variable can be used to query the knowledge base for text segments most closely related to the user's question.
+In knowledge base retrieval scenarios, the query variable typically represents the user's input question. In the "Start" node of conversational applications, the system pre-sets "sys.query" as the user input variable. This variable can be used to query the knowledge base for text chunks most closely related to the user's question. The maximum query content that the knowledge base is 200 characters;
 
 **Choosing the Knowledge Base for Query**
 
