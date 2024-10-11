@@ -23,7 +23,7 @@
 * 单文档的上传大小限制为 15MB；
 * SaaS 版本的不同[订阅计划](https://dify.ai/pricing)限定了**批量上传个数、文档上传总数、向量存储空间。**
 
-<figure><img src="broken-reference" alt=""><figcaption><p>创建知识库</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (371).png" alt=""><figcaption><p>创建知识库</p></figcaption></figure>
 
 ***
 
@@ -56,7 +56,7 @@
 
 自动模式适合对分段规则与预处理规则尚不熟悉的初级用户。在该模式下，Dify 将为你自动分段与清洗内容文件。
 
-<figure><img src="broken-reference" alt="Automatic segmentation and cleaning"><figcaption><p>自动分段与清洗</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (372).png" alt=""><figcaption><p>自动分段与清洗</p></figcaption></figure>
 {% endtab %}
 
 {% tab title="自定义" %}
@@ -75,7 +75,7 @@
 * 替换连续的空格、换行符和制表符；
 * 删除所有 URL 和电子邮件地址；
 
-<figure><img src="broken-reference" alt=""><figcaption><p>自定义</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (373).png" alt=""><figcaption><p>Custom mode</p></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
@@ -98,13 +98,13 @@
 
 高质量索引方式提供向量检索、全文检索和混合检索三种检索设置。关于更多检索设置的说明，请阅读 [检索设置](create-knowledge-and-upload-documents.md#id-4-jian-suo-she-zhi)。
 
-<figure><img src="broken-reference" alt=""><figcaption><p>高质量模式</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (374).png" alt=""><figcaption><p>高质量模式</p></figcaption></figure>
 {% endtab %}
 
 {% tab title="经济" %}
 使用离线的向量引擎与关键词索引方式，降低了准确度但无需额外花费 Token，产生费用。检索方式仅提供倒排索引，详细说明请阅读[下文](create-knowledge-and-upload-documents.md#dao-pai-suo-yin)。
 
-<figure><img src="broken-reference" alt="" width="375"><figcaption><p>经济模式</p></figcaption></figure>
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Q&A 模式（仅社区版支持）" %}
@@ -117,6 +117,8 @@
 <figure><img src="broken-reference" alt=""><figcaption><p>Q&#x26;A 分段模式下被总结成多个 Q&#x26;A 对的文本</p></figcaption></figure>
 
 <figure><img src="broken-reference" alt=""><figcaption><p>Q to P 与 Q to Q 的索引模式区别</p></figcaption></figure>
+
+
 {% endtab %}
 {% endtabs %}
 
@@ -209,6 +211,8 @@
 **TopK：**用于筛选与用户问题相似度最高的文本片段。系统同时会根据选用模型上下文窗口大小动态调整片段数量。系统默认值为 3 。数值越高，预期被召回的文本分段数量越多。
 
 <figure><img src="broken-reference" alt=""><figcaption><p>倒排索引</p></figcaption></figure>
+
+指定检索设置后，你可以参考 [retrieval-test-and-citation.md](retrieval-test-and-citation.md "mention") 查看关键词与内容块的匹配情况。
 
 ### 5 完成上传
 
