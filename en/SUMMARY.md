@@ -139,6 +139,7 @@
   * [Integrate Local Models Deployed by OpenLLM](development/models-integration/openllm.md)
   * [Integrate Local Models Deployed by LocalAI](development/models-integration/localai.md)
   * [Integrate Local Models Deployed by Ollama](development/models-integration/ollama.md)
+  * [Integrate Models on LiteLLM Proxy](development/models-integration/litellm.md)
 
 ## Learn More
 
