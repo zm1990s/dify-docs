@@ -82,7 +82,11 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 
 #### CSP_WHITELIST
 
-内容安全策略（CSP）白名单，默认不开启。在此变量中填写被放行的域名列表后将自动开启，有助于减少潜在的 XSS 攻击。
+内容安全策略（CSP）白名单，默认不开启。在此变量中填写被放行的域名列表后即视为开启，有助于减少潜在的 XSS 攻击。开启后，白名单将自动包含以下域名：
+
+```url
+*.sentry.io http://localhost:* http://127.0.0.1:* https://analytics.google.com https://googletagmanager.com https://api.github.com
+```
 
 #### 容器启动相关配置
 
