@@ -1,6 +1,6 @@
 # Contributing to Dify Documentation
 
-Dify documentation is an [open-source project](https://github.com/langgenius/dify-docs), and we welcome contributions. Whether you've spotted an issue while reading the docs or you're keen to contribute your own content, we encourage you to submit an issue or initiate a pull request on GitHub. We'll address your input promptly.
+Dify documentation is an [open-source project](https://github.com/langgenius/dify-docs), and we welcome contributions. Whether you've spotted an issue while reading the docs or you're keen to contribute your own content, we encourage you to submit an issue or initiate a pull request on GitHub. We'll address your PR promptly.
 
 ## How to Contribute
 

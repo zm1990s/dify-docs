@@ -1,6 +1,6 @@
 # 为 Dify 文档做出贡献
 
-Dify 帮助文档是一个[开源项目](https://github.com/langgenius/dify-docs)，我们欢迎任何形式的贡献。如果你在阅读文档时发现任何问题，亦或是想要为动手写作，贡献自己的一份力量，欢迎你在 Github 上提交 issue 或者直接发起 pull request，我们将尽快处理你的请求。
+Dify 帮助文档是一个[开源项目](https://github.com/langgenius/dify-docs)，我们欢迎任何形式的贡献。如果你在阅读文档时发现任何问题，亦或是想要动手写作，贡献自己的一份力量，欢迎你在 Github 上提交 issue 或者直接发起 pull request，我们将尽快处理你的请求。
 
 ## 如何提交贡献
 
