@@ -80,6 +80,14 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 
 默认 60000，单位为 ms，用于指定文本生成和工作流的超时时间，防止因某些进程运行超时而导致整体服务不可用。
 
+#### CSP_WHITELIST
+
+内容安全策略（CSP）白名单，默认不开启。在此变量中填写被放行的域名列表后即视为开启，有助于减少潜在的 XSS 攻击。开启后，白名单将自动包含以下域名：
+
+```url
+*.sentry.io http://localhost:* http://127.0.0.1:* https://analytics.google.com https://googletagmanager.com https://api.github.com
+```
+
 #### 容器启动相关配置
 
 仅在使用 docker 镜像或者 docker-compose 启动时有效。
