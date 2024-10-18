@@ -81,6 +81,26 @@ The conversation history variable is not widely used and can only be inserted wh
 
 <figure><img src="../../../.gitbook/assets/image (204).png" alt=""><figcaption><p>Inserting Conversation History Variable</p></figcaption></figure>
 
+**Model Parameters**
+
+The parameters of the model affect the output of the model. Different models have different parameters. The following figure shows the parameter list for `gpt-4`.
+
+<figure><img src="../../../.gitbook/assets/截屏2024-10-18 11.35.17.png" alt="" width="363"><figcaption></figcaption></figure>
+
+The main parameter terms are explained as follows:
+
+**Temperature**: Usually a value between 0-1, it controls randomness. The closer the temperature is to 0, the more certain and repetitive the results; the closer it is to 1, the more random the results.
+
+**Top P**: Controls the diversity of the results. The model selects from candidate words based on probability, ensuring that the cumulative probability does not exceed the preset threshold P.
+
+**Presence Penalty**: Used to reduce the repetitive generation of the same entity or information by imposing penalties on content that has already been generated, making the model inclined to generate new or different content. As the parameter value increases, greater penalties are applied in subsequent generations to content that has already been generated, lowering the likelihood of repeating content.
+
+**Frequency Penalty**: Imposes penalties on words or phrases that appear too frequently by reducing their probability of generation. With an increase in parameter value, greater penalties are imposed on frequently occurring words or phrases. Higher parameter values reduce the frequency of these words, thereby increasing the lexical diversity of the text.
+
+If you do not understand what these parameters are, you can choose to load presets and select from the three presets: Creative, Balanced, and Precise.
+
+<figure><img src="../../../.gitbook/assets/截屏2024-10-18 11.37.43.png" alt="" width="364"><figcaption></figcaption></figure>
+
 ***
 
 ### Advanced Features
@@ -92,5 +112,3 @@ The conversation history variable is not widely used and can only be inserted wh
 **Conversation Role Name Settings**: Due to differences in model training stages, different models adhere to role name instructions differently, such as Human/Assistant, Human/AI, Human/Assistant, etc. To adapt to the prompt response effects of multiple models, the system provides conversation role name settings. Modifying the role name will change the role prefix in the conversation history.
 
 **Jinja-2 Templates**: The LLM prompt editor supports Jinja-2 template language, allowing you to leverage this powerful Python template language for lightweight data transformation and logical processing. Refer to the [official documentation](https://jinja.palletsprojects.com/en/3.1.x/templates/).
-
-Scenario Example: **🚧**
