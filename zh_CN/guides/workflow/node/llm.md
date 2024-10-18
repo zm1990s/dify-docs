@@ -129,7 +129,7 @@ LLM 节点是 Chatflow/Workflow 的核心节点。该节点能够利用大语言
 上游节点的普通变量同样可以填写至上下文变量内，例如开始节点的字符串类型变量，但 **引用与归属** 功能将会失效。
 {% endhint %}
 
-* **读取文档文件**
+<!-- * **读取文档文件**
 
 想要让工作流应用具备读取读取文档内容的能力，例如搭建 ChatPDF 应用，可以参考以下步骤：
 
@@ -139,7 +139,7 @@ LLM 节点是 Chatflow/Workflow 的核心节点。该节点能够利用大语言
 
 如需了解更多，请参考 [文件上传](../file-upload.md)。
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>填写输出变量</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>填写输出变量</p></figcaption></figure> -->
 
 
 
