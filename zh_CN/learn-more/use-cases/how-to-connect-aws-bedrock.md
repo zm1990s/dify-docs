@@ -18,7 +18,7 @@
 
 Dify 平台尚不能直接连接 AWS Bedrock Knowledge Base，需要开发团队参考 Dify 关于外部知识库连接的 [API 定义](../../guides/knowledge-base/external-knowledge-api-documentation.md)，手动创建后端 API 服务，建立与 AWS Bedrock 的连接。具体架构示意图请参考：
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>构建后端 API 服务</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>构建后端 API 服务</p></figcaption></figure>
 
 你可以参考以下 2 个代码文件，构建后端服务 API。
 
@@ -131,7 +131,7 @@ class ExternalDatasetService:
 
 <figure><img src="../../.gitbook/assets/image (362).png" alt=""><figcaption></figcaption></figure>
 
-### 5.  连接外部知识库
+### 5. 连接外部知识库
 
 前往 **“知识库”** 页，点击添加知识库卡片下方的 **“连接外部知识库”** 跳转至参数配置页面。
 
@@ -140,17 +140,17 @@ class ExternalDatasetService:
 填写以下参数：
 
 * **知识库名称与描述**
-*   **外部知识库 API**&#x20;
+*   **外部知识库 API**
 
     选择在[第四步](how-to-connect-aws-bderock.md#id-4.-guan-lian-wai-bu-zhi-shi-api)中关联的外部知识库 API
-*   **外部知识库 ID**&#x20;
+*   **外部知识库 ID**
 
-    &#x20;填写在[第三步](how-to-connect-aws-bderock.md#id-3.-huo-qu-aws-bedrock-knowledge-base-id)中获取的 AWS Bedrock knowledge base ID
+    填写在[第三步](how-to-connect-aws-bderock.md#id-3.-huo-qu-aws-bedrock-knowledge-base-id)中获取的 AWS Bedrock knowledge base ID
 *   **调整召回设置**
 
-    **Top K：**用户发起提问时，将请求外部知识 API 获取相关性较高的内容分段。该参数用于筛选与用户问题相似度较高的文本片段。默认值为 3，数值越高，召回存在相关性的文本分段也就越多。
+    \*\*Top K：\*\*用户发起提问时，将请求外部知识 API 获取相关性较高的内容分段。该参数用于筛选与用户问题相似度较高的文本片段。默认值为 3，数值越高，召回存在相关性的文本分段也就越多。
 
-    **Score 阈值：**文本片段筛选的相似度阈值，只召回超过设置分数的文本片段，默认值为 0.5。数值越高说明对于文本与问题要求的相似度越高，预期被召回的文本数量也越少，结果也会相对而言更加精准。
+    \*\*Score 阈值：\*\*文本片段筛选的相似度阈值，只召回超过设置分数的文本片段，默认值为 0.5。数值越高说明对于文本与问题要求的相似度越高，预期被召回的文本数量也越少，结果也会相对而言更加精准。
 
 <figure><img src="../../.gitbook/assets/image (364).png" alt=""><figcaption></figcaption></figure>
 

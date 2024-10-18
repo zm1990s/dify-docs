@@ -10,7 +10,7 @@
 
 你可以在账单页查看团队内各项资源的使用情况。
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>团队账单管理</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>团队账单管理</p></figcaption></figure>
 
 ### 常见问题
 
@@ -21,7 +21,7 @@
 * 从 Professional 升级至 Team 需补足当月差额，立即生效。
 * 从 Team 降级至 Professional 立即生效。
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>更改付费方案</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>更改付费方案</p></figcaption></figure>
 
 如果取消订阅方案，**团队将在当月账单周期结束后**自动切换至 Sandbox/Free 版本。已超出的团队人数及团队资源将无法访问。
 
@@ -39,7 +39,7 @@
 
 知识库的文档上传数量：50 → 500
 
-OpenAI  的对话额度：总共 200 → 每月 5000
+OpenAI 的对话额度：总共 200 → 每月 5000
 
 ***
 
@@ -55,7 +55,7 @@ OpenAI  的对话额度：总共 200 → 每月 5000
 
 知识库的文档上传数量：500 → 1000
 
-OpenAI  的对话额度：每月 5000 → 每月 10000
+OpenAI 的对话额度：每月 5000 → 每月 10000
 
 升级订阅计划后，OpenAI 的对话额度将被重置；已使用的计算资源则不会重置。
 
@@ -70,4 +70,3 @@ OpenAI  的对话额度：每月 5000 → 每月 10000
 #### 5. 各个订阅版本间有什么区别？
 
 详细的功能对比请参考 [Dify 定价页](https://dify.ai/pricing)。
-

@@ -9,7 +9,7 @@
 * 邮箱
 * 密码
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 绑定登录方式
 
@@ -42,13 +42,4 @@ Dify 欢迎更多社区志愿者一同参与贡献更多语言版本，前往[ G
 删除账号：your-email
 ```
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption><p>删除个人账户</p></figcaption></figure>
-
-
-
-
-
-
-
-
-
+<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption><p>删除个人账户</p></figcaption></figure>

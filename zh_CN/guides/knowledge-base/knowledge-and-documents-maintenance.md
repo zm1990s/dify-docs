@@ -6,7 +6,7 @@
 
 在 Dify 团队首页中，点击顶部的 “知识库” tab 页，选择需要管理的知识库，轻点左侧导航中的**设置**进行调整。你可以调整知识库名称、描述、可见权限、索引模式、Embedding 模型和检索设置。
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p>知识库设置</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p>知识库设置</p></figcaption></figure>
 
 **知识库名称**，用于区分不同的知识库。
 
@@ -36,7 +36,7 @@ Dify 知识库提供整套标准 API ，开发者通过 API 调用对知识库�
 
 点击 「知识库」 > 「文档列表 ，然后轻点 「 添加文件 」，即可在已创建的知识库内上传新的文档。
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption><p>在知识库内上传新文档</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption><p>在知识库内上传新文档</p></figcaption></figure>
 
 ***
 
@@ -90,7 +90,7 @@ Dify 知识库提供整套标准 API ，开发者通过 API 调用对知识库�
 
 ***
 
-### ![](<../../.gitbook/assets/image (7).png>)编辑文本分段
+### ![](<../../.gitbook/assets/image (7) (1).png>)编辑文本分段
 
 在分段列表内，你可以对已添加的分段内容直接进行编辑修改。包括分段的文本内容和关键词。
 

@@ -1,12 +1,14 @@
 # 知识检索
 
-### 1 定义
+### 定义
 
 从知识库中检索与用户问题相关的文本内容，可作为下游 LLM 节点的上下文来使用。
 
+
+
 ***
 
-### 2 场景
+### 应用场景
 
 常见情景：构建基于外部数据/知识的 AI 问答系统（RAG）。了解更多关于 RAG 的[基本概念](../../../learn-more/extended-reading/retrieval-augment/)。
 
@@ -16,9 +18,7 @@
 
 ***
 
-### 3 如何配置
-
-<figure><img src="../../../.gitbook/assets/image (74).png" alt=""><figcaption><p>知识检索配置</p></figcaption></figure>
+### 配置指引
 
 **配置流程：**
 
@@ -27,7 +27,7 @@
 3. 指定[召回模式](../../../learn-more/extended-reading/retrieval-augment/retrieval.md)。自 9 月 1 日后，知识库的召回模式将自动切换为多路召回，不再建议使用 N 选 1 召回模式；
 4. 连接并配置下游节点，一般为 LLM 节点；
 
-> 建议将知识库的召回模式切换为多路召回，详细说明请参考[《在应用内集成知识库》](https://docs.dify.ai/v/zh-hans/guides/knowledge-base/integrate-knowledge-within-application)。
+<figure><img src="../../../.gitbook/assets/image (74).png" alt=""><figcaption><p>知识检索配置</p></figcaption></figure>
 
 **输出变量**
 

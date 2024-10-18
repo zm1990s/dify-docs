@@ -1,6 +1,6 @@
 # 结束
 
-### 1 定义
+### 定义
 
 定义一个工作流程结束的最终输出内容。每一个工作流在完整执行后都需要至少一个结束节点，用于输出完整执行的最终结果。
 
@@ -14,7 +14,7 @@ Chatflow 内不支持结束节点
 
 ***
 
-### 2 场景
+### 场景
 
 在以下[长故事生成工作流](iteration.md#shi-li-2-chang-wen-zhang-die-dai-sheng-cheng-qi-ling-yi-zhong-bian-pai-fang-shi)中，结束节点声明的变量 `Output` 为上游代码节点的输出，即该工作流会在 Code3 节点执行完成之后结束，并输出 Code3 的执行结果。
 
