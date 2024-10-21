@@ -88,7 +88,7 @@ file variables 和 array[file] variables 支持以下文件类型与格式：
 
 #### 1. 在“开始”节点添加文件变量
 
-在应用的[“开始”](node/start.md)节点内添加输入字段，选择**“单文件”**或**“文件列表”** 字段类型的变量。
+在应用的[“开始”](node/start.md)节点内添加输入字段，选择 **“单文件”** 或 **“文件列表”** 字段类型的变量。
 
 {% @arcade/embed flowId="TiLAgL3vgozVhuLBmob9" url="https://app.arcade.software/share/TiLAgL3vgozVhuLBmob9" %}
 
