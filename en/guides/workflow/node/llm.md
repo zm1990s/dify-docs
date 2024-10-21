@@ -2,7 +2,7 @@
 
 ### Definition
 
-Invoke large language models to answer questions or process natural language.
+Invokes the capabilities of large language models to process information input by users in the "Start" node (natural language, uploaded files, or images) and provide effective response information.
 
 <figure><img src="../../../.gitbook/assets/llm-node-1.png" alt=""><figcaption><p>LLM Node</p></figcaption></figure>
 
@@ -36,20 +36,20 @@ By selecting the appropriate model and writing prompts, you can build powerful a
 4. **Advanced Settings**: You can enable memory, set memory windows, and use the Jinja-2 template language for more complex prompts.
 
 {% hint style="info" %}
-If you are using Dify for the first time, you need to complete the [model configuration](../../model-configuration/) in **System Settings—Model Providers** before selecting a model in the LLM node.
+If you are using Dify for the first time, you need to complete the [model configuration](../../model-configuration/) in **System Settings-Model Providers** before selecting a model in the LLM node.
 {% endhint %}
 
 #### **Writing Prompts**
 
-In the LLM node, you can customize the model input prompts. If you select a chat model, you can customize the SYSTEM/User/ASSISTANT sections.
+In the LLM node, you can customize the model input prompts. If you select a chat model, you can customize the System/User/Assistant sections.
 
 **Prompt Generator**
 
-If you're struggling to come up with effective system prompts (SYSTEM), you can use the Prompt Generator to quickly create prompts suitable for your specific business scenarios, leveraging AI capabilities.
+If you're struggling to come up with effective system prompts (System), you can use the Prompt Generator to quickly create prompts suitable for your specific business scenarios, leveraging AI capabilities.
 
-<figure><img src="../../../.gitbook/assets/en-prompt-generator.png" alt="" width="352"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/en-prompt-generator.png" alt="" width="563"><figcaption></figcaption></figure>
 
-In the prompt editor, you can call out the **variable insertion menu** by typing **"/"** or **"{"** to insert **special variable blocks** or **upstream node variables** into the prompt as context content.
+In the prompt editor, you can call out the **variable insertion menu** by typing `/` or `{` to insert **special variable blocks** or **upstream node variables** into the prompt as context content.
 
 <figure><img src="../../../.gitbook/assets/llm-node-3.png" alt="" width="366"><figcaption><p>Calling Out the Variable Insertion Menu</p></figcaption></figure>
 
@@ -112,3 +112,36 @@ If you do not understand what these parameters are, you can choose to load prese
 **Conversation Role Name Settings**: Due to differences in model training stages, different models adhere to role name instructions differently, such as Human/Assistant, Human/AI, Human/Assistant, etc. To adapt to the prompt response effects of multiple models, the system provides conversation role name settings. Modifying the role name will change the role prefix in the conversation history.
 
 **Jinja-2 Templates**: The LLM prompt editor supports Jinja-2 template language, allowing you to leverage this powerful Python template language for lightweight data transformation and logical processing. Refer to the [official documentation](https://jinja.palletsprojects.com/en/3.1.x/templates/).
+
+***
+
+#### Use Cases
+
+* **Reading Knowledge Base Content**
+
+To enable workflow applications to read "[Knowledge Base](../../knowledge-base/)" content, such as building an intelligent customer service application, please follow these steps:
+
+1. Add a knowledge base retrieval node upstream of the LLM node;
+2. Fill in the **output variable** `result` of the knowledge retrieval node into the **context variable** of the LLM node;
+3. Insert the **context variable** into the application prompt to give the LLM the ability to read text within the knowledge base.
+
+<figure><img src="../../../.gitbook/assets/image (135).png" alt=""><figcaption></figcaption></figure>
+
+The `result` variable output by the Knowledge Retrieval Node also includes segmented reference information. You can view the source of information through the **Citation and Attribution** feature.
+
+{% hint style="info" %}
+Regular variables from upstream nodes can also be filled into context variables, such as string-type variables from the start node, but the **Citation and Attribution** feature will be ineffective.
+{% endhint %}
+
+* **Reading Document Files**
+
+To enable workflow applications to read document contents, such as building a ChatPDF application, you can follow these steps:
+
+* Add a file variable in the "Start" node;
+* Add a document extractor node upstream of the LLM node, using the file variable as an input variable;
+* Fill in the **output variable** `text` of the document extractor node into the prompt of the LLM node.
+
+For more information, please refer to [File Upload](../file-upload.md).
+
+<figure><img src="../../../.gitbook/assets/image (137).png" alt=""><figcaption><p>input system prompts</p></figcaption></figure>
+

@@ -4,7 +4,6 @@
 
 ## Functional Introduction
 
-
 For developers with advanced content retrieval requirements, **the built-in knowledge base functionality and text retrieval mechanisms of the Dify platform may have limitations, particularly in terms of customizing recall results.**
 
 Due to the requirement of higher accuracy of text retrieval and recall, as well as the need to manage internal materials, some developer teams choose to independently develop RAG algorithms and independently maintain text retrieval systems, or uniformly host content to cloud vendors' knowledge base services (such as [AWS Bedrock](https://aws.amazon.com/bedrock/)).
@@ -13,12 +12,10 @@ As a neutral platform for LLM application development, Dify is committed to prov
 
 The **Connect to External Knowledge Base** feature enables integration between the Dify platform and external knowledge bases. Through API services, AI applications can access a broader range of information sources. This capability offers two key advantages:
 
-
 * The Dify platform can directly obtain the text content hosted in the cloud service provider's knowledge base, so that developers do not need to repeatedly move the content to the knowledge base in Dify;
-
 * The Dify platform can directly obtain the text content processed by algorithms in the self-built knowledge base. Developers only need to focus on the information retrieval mechanism of the self-built knowledge base and continuously optimize and improve the accuracy of information retrieval.
 
-<figure><img src="../../../zh_CN/.gitbook/assets/image (1).png" alt=""><figcaption><p>Principle of external knowledge base connection</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (117).png" alt=""><figcaption><p>Principle of external knowledge base connection</p></figcaption></figure>
 
 Here are the detailed steps for connecting to external knowledge:
 
@@ -101,7 +98,7 @@ The **"External Knowledge API"** and **"External Knowledge ID"** associated with
 
 ### Connection Example
 
-[How to connect with AWS Bedrock Knowledge Base？](../../learn-more/use-cases/how-to-connect-aws-bedrock.md "mention")
+[how-to-connect-aws-bedrock.md](../../learn-more/use-cases/how-to-connect-aws-bedrock.md "mention")
 
 ## FAQ
 
