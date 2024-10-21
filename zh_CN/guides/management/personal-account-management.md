@@ -24,7 +24,7 @@ Dify 不同版本支持的登录方式如下：
 
 > 注意：重置密码功能仅在社区版提供
 
-<figure><img src="../../../img/personal-account-management-02.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../img/zh-personal-account-2.png" alt=""><figcaption></figcaption></figure>
 
 ### 绑定登录方式
 
