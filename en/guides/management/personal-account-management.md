@@ -1,5 +1,15 @@
 # Personal Account Management
 
+### Login Methods
+
+The login methods supported by different versions of Dify are as follows:
+
+<table><thead><tr><th width="166">Version</th><th>Login Method</th></tr></thead><tbody><tr><td>Community</td><td>Email and password</td></tr><tr><td>Cloud</td><td>GitHub account authorization, Google account authorization, email and verification code</td></tr></tbody></table>
+
+> Note: For Dify Cloud Service, if the email associated with a GitHub or Google account is the same as the email used to log in with a verification code, the system will automatically link them as the same account, avoiding the need for manual binding and preventing duplicate registrations.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 ### Modifying Personal Information
 
 To update your personal account information:
@@ -15,7 +25,9 @@ You can modify the following details:
 * Email
 * Password
 
-<figure><img src="../../.gitbook/assets/personal-account-management-01.png" alt=""><figcaption></figcaption></figure>
+> Note: The password reset feature is only available in the Community Version.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Integrations
 
@@ -48,4 +60,4 @@ For team data security considerations, self-service online deletion of personal 
 Delete account: your-email
 ```
 
-<figure><img src="../../.gitbook/assets/personal-account-management-02.png" alt=""><figcaption><p>Deleting personal account</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Delete personal account</p></figcaption></figure>

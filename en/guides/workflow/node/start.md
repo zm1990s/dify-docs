@@ -8,7 +8,7 @@ The **“Start”** node is a critical preset node in the [Chatflow / Workflow](
 
 On the Start node's settings page, you'll find two sections: **"Input Fields"** and preset **System Variables**.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Chatflow and Workflow</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Chatflow and Workflow</p></figcaption></figure>
 
 #### Input Field
 

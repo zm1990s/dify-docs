@@ -54,7 +54,7 @@ These two methods provide flexible file upload options for applications to meet 
 
 1. Click the **"Features"** button in the upper right corner of the Chatflow application to add more functionality to the application. After enabling this feature, application users can upload and update files at any time during the application dialogue. A maximum of 10 files can be uploaded simultaneously, with a size limit of 15MB per file.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>file upload</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (3).png" alt=""><figcaption><p>file upload</p></figcaption></figure>
 
 Enabling this feature does not grant LLMs the ability to directly read files. A **Document Extractor** is still needed to parse documents into text for LLM comprehension.
 
@@ -65,11 +65,11 @@ Enabling this feature does not grant LLMs the ability to directly read files. A 
 3. Add an LLM node and select the output variable of the Document Extractor node in the system prompt.
 4. Add an "Answer" node at the end, filling in the output variable of the LLM node.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (4).png" alt=""><figcaption></figcaption></figure>
 
 Once enabled, users can upload files and engage in conversations in the dialogue box. However, with this method, the LLM application does not have the ability to remember file contents, and files need to be uploaded for each conversation.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (3).png" alt=""><figcaption></figcaption></figure>
 
 If you want the LLM to remember file contents during conversations, please refer to Method 2.
 
@@ -79,13 +79,11 @@ If you want the LLM to remember file contents during conversations, please refer
 
 Add input fields in the application's "Start" node, choosing either **"Single File"** or **"File List"** as the field type for the variable.
 
-{% @arcade/embed flowId="73XlnhFQELlPKUWO6xZs" url="https://app.arcade.software/share/73XlnhFQELlPKUWO6xZs" %}
-
+{% @arcade/embed flowid="73XlnhFQELlPKUWO6xZs" url="https://app.arcade.software/share/73XlnhFQELlPKUWO6xZs" %}
 
 *   **Single File**
 
     Allows the application user to upload only one file.
-
 *   **File List**
 
     Allows the application user to batch upload multiple files at once.
