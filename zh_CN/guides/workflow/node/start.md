@@ -2,7 +2,7 @@
 
 ### 定义
 
-**"开始"**节点是每个工作流应用（Chatflow / Workflow）必备的预设节点，为后续工作流节点以及应用的正常流转提供必要的初始信息，例如应用使用者所输入的内容、以及[上传的文件](../file-upload.md)等。
+**"开始"** 节点是每个工作流应用（Chatflow / Workflow）必备的预设节点，为后续工作流节点以及应用的正常流转提供必要的初始信息，例如应用使用者所输入的内容、以及[上传的文件](../file-upload.md)等。
 
 ### 配置节点
 
@@ -14,7 +14,7 @@
 
 输入字段功能由应用开发者设置，通常用于让应用使用者主动补全更多信息。例如在周报应用中要求使用者按照格式预先提供更多背景信息，如姓名、工作日期区间、工作详情等。这些前置信息将有助于 LLM 生成质量更高的答复。
 
-{% @arcade/embed flowId="z9BJ3Gg8jwjxpdQAwOGf" url="https://app.arcade.software/share/z9BJ3Gg8jwjxpdQAwOGf" %}
+<!-- {% @arcade/embed flowId="z9BJ3Gg8jwjxpdQAwOGf" url="https://app.arcade.software/share/z9BJ3Gg8jwjxpdQAwOGf" %} -->
 
 支持以下六种类型输入变量，所有变量均可设置为必填项：
 
