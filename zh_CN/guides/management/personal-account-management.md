@@ -1,15 +1,30 @@
 # 个人账号管理
 
-### 修改个人信息
+## 登录方式
 
-如需修改个人账号的相关信息，请点击 Dify 团队首页右上角头像，轻点 **“我的账户”** 修改以下信息：
+Dify 不同版本支持的登录方式如下：
+
+| 版本 | 登录方式 |
+| :--- | :--- |
+| 社区版 | 邮箱与密码 |
+| 云服务 | GitHub 账户授权、Google 账户授权、邮箱与验证码 |
+
+> 注意：Dify 的云服务版本账户，如果 GitHub 或 Google 账户的绑定邮箱与使用邮箱验证码登录的邮箱相同，系统会自动将它们关联为同一账户，无需手动绑定，避免重复注册。
+
+![](../../../img/zh-personal-account-1.png)
+
+## 修改账号信息
+
+如需修改个人账号的相关信息，请点击 Dify 团队首页右上角头像，轻点 **“账户”** 修改以下信息：
 
 * 头像
 * 用户名
 * 邮箱
 * 密码
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+> 注意：重置密码功能仅在社区版提供
+
+<figure><img src="../../../img/personal-account-management-02.png" alt=""><figcaption></figcaption></figure>
 
 ### 绑定登录方式
 
@@ -42,4 +57,4 @@ Dify 欢迎更多社区志愿者一同参与贡献更多语言版本，前往[ G
 删除账号：your-email
 ```
 
-<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption><p>删除个人账户</p></figcaption></figure>
+<figure><img src="../../../img/zh-personal-account-3.png" alt=""><figcaption><p>删除个人账户</p></figcaption></figure>
