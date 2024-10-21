@@ -126,6 +126,7 @@
   * [如何搭建 AI 图片生成应用](workshop/basic/build-ai-image-generation-app.md)
   * [AI Agent 实战：搭建个人在线旅游助手](workshop/basic/travel-assistant.md)
 * [中级](workshop/intermediate/README.md)
+  * [使用文件上传搭建文章理解助手](workshop/intermediate/article-reader.md)
   * [ChatFlow 实战：搭建 Twitter 账号分析助手](workshop/intermediate/twitter-chatflow.md)
 
 ## 社区 <a href="#community" id="community"></a>
