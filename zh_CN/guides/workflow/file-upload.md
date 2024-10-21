@@ -156,5 +156,3 @@ file variables 和 array[file] variables 支持以下文件类型与格式：
 ### 进阶使用
 
 若希望应用能够支持上传多种文件，例如允许用户同时上传文档文件、图片和音视频文件，此时需要在 “开始节点” 中添加  “文件列表” 变量，并通过“列表操作”节点针对不同的文件类型进行处理。详细说明请参考[列表操作](node/list-operator.md)节点。
-
-<figure><img src="../../.gitbook/assets/image (378).png" alt=""><figcaption></figcaption></figure>
