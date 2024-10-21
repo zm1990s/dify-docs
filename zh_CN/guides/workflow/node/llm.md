@@ -2,15 +2,15 @@
 
 ### 定义
 
-调用大语言模型回答问题或者处理自然语言。
+调用大语言模型的能力，处理用户在 “开始” 节点中输入的信息（自然语言、上传的文件或图片），给出有效的回应信息。
 
 <figure><img src="../../../.gitbook/assets/image (71).png" alt=""><figcaption><p>LLM 节点</p></figcaption></figure>
 
 ***
 
-### 场景
+### 应用场景
 
-LLM 是 Chatflow/Workflow 的核心节点，利用大语言模型的对话/生成/分类/处理等能力，根据给定的提示词处理广泛的任务类型，并能够在工作流的不同环节使用。
+LLM 节点是 Chatflow/Workflow 的核心节点。该节点能够利用大语言模型的对话/生成/分类/处理等能力，根据给定的提示词处理广泛的任务类型，并能够在工作流的不同环节使用。
 
 * **意图识别**，在客服对话情景中，对用户问题进行意图识别和分类，导向下游不同的流程。
 * **文本生成**，在文章生成情景中，作为内容生成的节点，根据主题、关键词生成符合的文本内容。
@@ -24,36 +24,35 @@ LLM 是 Chatflow/Workflow 的核心节点，利用大语言模型的对话/生�
 
 ***
 
-### 如何配置
+### 配置示例
+
+在应用编辑页中，点击鼠标右键或轻点上一节点末尾的 + 号，添加节点并选择 LLM。
 
 <figure><img src="../../../.gitbook/assets/image (251).png" alt=""><figcaption><p>LLM 节点配置-选择模型</p></figcaption></figure>
 
 **配置步骤：**
 
 1. **选择模型**，Dify 提供了全球主流模型的[支持](../../../getting-started/readme/model-providers.md)，包括 OpenAI 的 GPT 系列、Anthropic 的 Claude 系列、Google 的 Gemini 系列等，选择一个模型取决于其推理能力、成本、响应速度、上下文窗口等因素，你需要根据场景需求和任务类型选择合适的模型。
-2. **配置模型参数**，模型参数用于控制模型的生成结果，例如温度、TopP，最大标记、回复格式等，为了方便选择系统同时提供了 3 套预设参数：创意，平衡和精确。
-3. **编写提示词**，LLM 节点提供了一个易用的提示词编排页面，选择聊天模型或补全模型，会显示不同的提示词编排结构。
-4. **高级设置**，可以开关记忆，设置记忆窗口，使用 Jinja-2 模版语言来进行更复杂的提示词等。
 
 {% hint style="info" %}
 如果你是初次使用 Dify ，在 LLM 节点选择模型之前，需要在 **系统设置—模型供应商** 内提前完成[模型配置](../../model-configuration/)。
 {% endhint %}
 
-#### **编写提示词**
+2. **配置模型参数**，模型参数用于控制模型的生成结果，例如温度、TopP，最大标记、回复格式等，为了方便选择系统同时提供了 3 套预设参数：创意，平衡和精确。如果你对以上参数并不熟悉，建议选择默认设置。若希望应用具备图片分析能力，请选择具备视觉能力的模型。
+3. **填写上下文（可选），**上下文可以理解为向 LLM 提供的背景信息，常用于填写[知识检索](knowledge-retrieval.md)的输出变量。
+4. **编写提示词**，LLM 节点提供了一个易用的提示词编排页面，选择聊天模型或补全模型，会显示不同的提示词编排结构。如果选择聊天模型（Chat model），你可以自定义系统提示词（SYSTEM）/用户（USER）/ 助手（ASSISTANT）三部分内容。
 
-在 LLM 节点内，你可以自定义模型输入提示词。如果选择聊天模型（Chat model），你可以自定义系统提示词（SYSTEM）/用户（USER）/助手（ASSISTANT）三部分内容。
+<figure><img src="../../../.gitbook/assets/zh-node-llm.png" alt="" width="352"><figcaption><p>编写提示词</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/zh-node-llm.png" alt="" width="352"><figcaption></figcaption></figure>
+如果在编写系统提示词（SYSTEM）时没有好的思路，也可以使用提示生成器功能，借助 AI 能力快速生成适合实际业务场景的提示词。
 
-**提示生成器**
-
-如果在编写系统提示词（SYSTEM）时没有好的头绪，也可以使用提示生成器功能，借助 AI 能力快速生成适合实际业务场景的提示词。
-
-![](../../../.gitbook/assets/zh-node-llm-prompt-generator.png)
+![提示生成器](../../../.gitbook/assets/zh-node-llm-prompt-generator.png)
 
 在提示词编辑器中，你可以通过输入 **“/”** 或者 **“{”** 呼出 **变量插入菜单**，将 **特殊变量块** 或者 **上游节点变量** 插入到提示词中作为上下文内容。
 
 <figure><img src="../../../.gitbook/assets/image (253).png" alt="" width="366"><figcaption><p>呼出变量插入菜单</p></figcaption></figure>
+
+5. **高级设置**，可以开关记忆功能并设置记忆窗口、开关 Vision 功能或者使用 Jinja-2 模版语言来进行更复杂的提示词等。
 
 ***
 
@@ -61,17 +60,13 @@ LLM 是 Chatflow/Workflow 的核心节点，利用大语言模型的对话/生�
 
 **上下文变量**
 
-上下文变量是 LLM 节点内定义的特殊变量类型，用于在提示词内插入外部检索的文本内容。
+上下文变量是一种特殊变量类型，用于向 LLM 提供背景信息，常用于在知识检索场景下使用。详细说明请参考[知识检索节点](knowledge-retrieval.md)。
 
-<figure><img src="../../../.gitbook/assets/image (256).png" alt=""><figcaption><p>上下文变量</p></figcaption></figure>
+**图片文件变量**
 
-在常见的知识库问答应用中，知识库检索的下游节点一般为 LLM 节点，知识检索的 **输出变量** `result` 需要配置在 LLM 节点中的 **上下文变量** 内关联赋值。关联后在提示词的合适位置插入 **上下文变量** ，可以将外部检索到的知识插入到提示词中。
+具备视觉能力的 LLM 可以通过变量读取应用使用者所上传的图片。开启 VISION 后，选择图片文件的输出变量完成设置。
 
-该变量除了可以作为 LLM 回复问题时的提示词上下文作为外部知识引入，由于其数据结构中包含了分段引用信息，同时可以支持应用端的 [**引用与归属**](../../knowledge-base/retrieval-test-and-citation.md#id-2-yin-yong-yu-gui-shu) 功能。
-
-{% hint style="info" %}
-若上下文变量关联赋值的是上游节点的普通变量，例如开始节点的字符串类型变量，则上下文的变量同样可以作为外部知识引入，但 **引用与归属** 功能将会失效。
-{% endhint %}
+<figure><img src="../../../.gitbook/assets/image (371).png" alt=""><figcaption><p>视觉上传功能</p></figcaption></figure>
 
 **会话历史**
 
@@ -113,3 +108,38 @@ LLM 是 Chatflow/Workflow 的核心节点，利用大语言模型的对话/生�
 **对话角色名设置：** 由于模型在训练阶段的差异，不同模型对于角色名的指令遵循程度不同，如 Human/Assistant，Human/AI，人类/助手等等。为适配多模型的提示响应效果，系统提供了对话角色名的设置，修改对话角色名将会修改会话历史的角色前缀。
 
 **Jinja-2 模板：** LLM 的提示词编辑器内支持 Jinja-2 模板语言，允许你借助 Jinja2 这一强大的 Python 模板语言，实现轻量级数据转换和逻辑处理，参考[官方文档](https://jinja.palletsprojects.com/en/3.1.x/templates/)。
+
+***
+
+### 使用案例
+
+* **读取知识库内容**
+
+想要让工作流应用具备读取 [“知识库”](../../knowledge-base/) 内容的能力，例如搭建智能客服应用，请参考以下步骤：
+
+1. 在 LLM 节点上游添加知识库检索节点；
+2. 将知识检索节点的 **输出变量** `result` 填写至 LLM 节点中的 **上下文变量** 内；
+3. 将 **上下文变量** 插入至应用提示词内，赋予 LLM 读取知识库内的文本能力。
+
+<figure><img src="../../../.gitbook/assets/image (256).png" alt=""><figcaption><p>上下文变量</p></figcaption></figure>
+
+[知识检索节点](knowledge-retrieval.md)输出的变量 `result` 还包含了分段引用信息，你可以通过  [**引用与归属**](../../knowledge-base/retrieval-test-and-citation.md#id-2-yin-yong-yu-gui-shu) 功能查看信息来源。
+
+{% hint style="info" %}
+上游节点的普通变量同样可以填写至上下文变量内，例如开始节点的字符串类型变量，但 **引用与归属** 功能将会失效。
+{% endhint %}
+
+* **读取文档文件**
+
+想要让工作流应用具备读取读取文档内容的能力，例如搭建 ChatPDF 应用，可以参考以下步骤：
+
+* 在 “开始” 节点内添加文件变量；
+* 在 LLM 节点上游添加文档提取器节点，将文件变量作为输入变量；
+* 将文档提取器节点的 **输出变量** `text` 填写至 LLM 节点中的提示词内。
+
+如需了解更多，请参考 [文件上传](../file-upload.md)。
+
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>填写系统提示词</p></figcaption></figure>
+
+
+
