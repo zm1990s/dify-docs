@@ -61,6 +61,7 @@
     * [Checklist](guides/workflow/debug-and-preview/checklist.md)
     * [Run History](guides/workflow/debug-and-preview/history.md)
   * [Application Publishing](guides/workflow/publish.md)
+  * [Bulletin:  Image Upload Replaced by File Upload](guides/workflow/bulletin.md)
 * [Knowledge Base](guides/knowledge-base/README.md)
   * [Create Knowledge Base & Upload Documents](guides/knowledge-base/create-knowledge-and-upload-documents.md)
   * [Knowledge Base and Document Maintenance](guides/knowledge-base/knowledge-and-documents-maintenance.md)
