@@ -1,6 +1,6 @@
 # Personal Account Management
 
-### Login Methods
+## Login Methods
 
 The login methods supported by different versions of Dify are as follows:
 
@@ -10,7 +10,7 @@ The login methods supported by different versions of Dify are as follows:
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-### Modifying Personal Information
+## Modifying Personal Information
 
 To update your personal account information:
 
@@ -33,7 +33,7 @@ You can modify the following details:
 
 You can link your GitHub and Google accounts as login methods for your Dify team. Click on your avatar in the upper right corner of the Dify team homepage, then click **"Integrations"** to set up these links.
 
-### Changing Interface Language
+### Changing Display Language
 
 To change the display language, click on your avatar in the upper right corner of the Dify team homepage, then click **"Language"**. Dify supports the following languages:
 
