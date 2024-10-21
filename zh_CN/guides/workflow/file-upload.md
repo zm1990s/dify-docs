@@ -143,7 +143,7 @@ file variables 和 array[file] variables 支持以下文件类型与格式：
 
 下面是一个示例配置：
 
-<figure><img src="../../../img/filevariables_in_llm.png" alt=""><figcaption><p>在LLM节点中直接使用文件变量</p></figcaption></figure>
+<figure><img src="../../../img/file-upload-qs-1.avif" alt=""><figcaption><p>在LLM节点中直接使用文件变量</p></figcaption></figure>
 
 需要注意的是，直接在 LLM 节点中使用文件变量时，我们需要确保文件变量仅包含图片文件，否则可能会导致错误。如果用户可能上传不同类型的文件，我们需要使用列表操作来进行过滤。
 
@@ -151,15 +151,10 @@ file variables 和 array[file] variables 支持以下文件类型与格式：
 
 将文件变量放置到 answer 节点或者 end 节点中，当应用运行到该节点都时候将会在会话框中提供文件下载卡片。点击卡片即可下载文件。
 
-<figure><img src="../../../img/filedownload.png" alt=""><figcaption><p>文件下载</p></figcaption></figure>
+<figure><img src="../../../img/file-upload-qs-2.avif" alt=""><figcaption><p>文件下载</p></figcaption></figure>
 
 ### 进阶使用
 
 若希望应用能够支持上传多种文件，例如允许用户同时上传文档文件、图片和音视频文件，此时需要在 “开始节点” 中添加  “文件列表” 变量，并通过“列表操作”节点针对不同的文件类型进行处理。详细说明请参考[列表操作](node/list-operator.md)节点。
 
 <figure><img src="../../.gitbook/assets/image (378).png" alt=""><figcaption></figcaption></figure>
-
-如需查看更多使用案例，请参考以下内容：
-
-动手实验室 - 使用文件上传搭建文章理解助手
-
