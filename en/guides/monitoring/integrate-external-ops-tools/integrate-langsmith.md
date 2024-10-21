@@ -18,7 +18,7 @@ For more details, please refer to [LangSmith](https://www.langchain.com/langsmit
 
 Create a project in LangSmith. After logging in, click **New Project** on the homepage to create your own project. The **project** will be used to associate with **applications** in Dify for data monitoring.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Create a project in LangSmith</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>Create a project in LangSmith</p></figcaption></figure>
 
 Once created, you can view all created projects in the Projects section.
 
@@ -32,11 +32,11 @@ Find the project settings **Settings** in the left sidebar.
 
 Click **Create API Key** to create project credentials.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>Create a project API Key</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (2).png" alt=""><figcaption><p>Create a project API Key</p></figcaption></figure>
 
 Select **Personal Access Token** for subsequent API authentication.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>Create an API Key</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption><p>Create an API Key</p></figcaption></figure>
 
 Copy and save the created API key.
 
@@ -68,7 +68,7 @@ Once configured, the debug or production data from applications within Dify can 
 
 When you switch to LangSmith, you can view detailed operation logs of Dify applications in the dashboard.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Viewing application data in LangSmith</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Viewing application data in LangSmith</p></figcaption></figure>
 
 Detailed LLM operation logs through LangSmith will help you optimize the performance of your Dify application.
 
