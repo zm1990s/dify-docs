@@ -1,6 +1,6 @@
-# Bulletin:  Image Upload Replaced by File Upload
+# Bulletin: Image Upload Replaced by File Upload
 
-The image upload feature has been integrated into the more comprehensive “File Upload” functionality. To avoid redundant features, we have decided to upgrade and adjust the “Features” for Workflow and Chatflow applications as follows:
+The image upload feature has been integrated into the more comprehensive [File Upload](file-upload.md) functionality. To avoid redundant features, we have decided to upgrade and adjust the “[Features](additional-features.md)” for Workflow and Chatflow applications as follows:
 
 * The image upload option in Chatflow’s “Features” has been removed and replaced by the new “File Upload” feature. Within the “File Upload” feature, you can select the image file type. Additionally, the image upload icon in the application dialog has been replaced with a file upload icon.
 
@@ -12,7 +12,9 @@ The image upload feature has been integrated into the more comprehensive “File
 
 ### Why Replace the “Image Upload” Feature?
 
-Previously, Dify only supported image file uploads. In the latest version, a more comprehensive file upload capability has been introduced, supporting documents, images, audio, video, and custom file formats. **Image uploading is now part of the broader “File Upload” feature.** When adding the file upload feature, developers can simply check the “image” file type to enable image uploads.
+Previously, Dify only supported image file uploads. In the latest version, a more comprehensive file upload capability has been introduced, supporting documents, images, audio, video, and custom file formats.&#x20;
+
+**Image uploading is now part of the broader “File Upload” feature.** When adding the file upload feature, developers can simply check the “image” file type to enable image uploads.
 
 To avoid confusion caused by redundant features, we have decided to replace the standalone image upload feature in Chatflow applications with the more comprehensive file upload capability, and no longer recommend enabling image upload for Workflow applications.
 
@@ -38,7 +40,7 @@ If you have already created Chatflow applications with the “Image Upload” fe
 
 <figure><img src="../../.gitbook/assets/image (142).png" alt=""><figcaption></figcaption></figure>
 
-If you wish to add the “Image Upload” feature to a Chatflow application, enable “File Upload” in the features and select only the “image” file type. Then enable the Vision feature in the LLM node and specify the sys.files variable. The upload entry will appear as a “paperclip” icon. For detailed instructions, refer to Additional Features.
+If you wish to add the “Image Upload” feature to a Chatflow application, enable “File Upload” in the features and select only the “image” file type. Then enable the Vision feature in the LLM node and specify the sys.files variable. The upload entry will appear as a “paperclip” icon. For detailed instructions, refer to [Additional Features](additional-features.md).
 
 <figure><img src="../../.gitbook/assets/image (143).png" alt=""><figcaption></figcaption></figure>
 
@@ -69,7 +71,7 @@ If you wish to enable the “Image Upload” feature for a Workflow application,
 
 #### 1. Will This Update Affect My Existing Applications?
 
-* Existing Chatflow applications will automatically migrate, seamlessly switching image upload capabilities to the file upload feature. The sys.files variable will still be used as the default Vision input. The image upload entry in the application interface will be replaced with a file upload entry.
+* Existing Chatflow applications will automatically migrate, seamlessly switching image upload capabilities to the file upload feature. The `sys.files` variable will still be used as the default Vision input. The image upload entry in the application interface will be replaced with a file upload entry.
 * Existing Workflow applications will not be affected for now. The `sys.files` variable and the image upload feature have been marked as `LEGACY`, but they can still be used. However, these `LEGACY` features will be deprecated in the future, and a manual update will be required at that time.
 
 #### 2. Do I Need to Update My Applications Immediately?
@@ -94,19 +96,15 @@ For Workflow applications:
 
 • Reference this file variable in subsequent nodes instead of using the LEGACY `sys.files` variable.
 
-
-
 #### We Value Your Feedback
 
 As a key member of the Dify community, your experience and feedback are crucial to us. We warmly invite you to:
 
-• Try the new file upload feature and experience its convenience and flexibility.
+1. Try the file upload feature and experience its convenience and flexibility.
+2.  Share your thoughts and suggestions via the following channels:
 
-• Share your thoughts and suggestions via the following channels:
+    • [GitHub](https://github.com/langgenius/dify)
 
-• [GitHub discussions](https://github.com/langgenius/dify)
-
-• [Discord channel](https://discord.com/invite/FngNHpbcY7)
+    • [Discord channel](https://discord.com/invite/FngNHpbcY7)
 
 Your feedback will help us continuously improve the product and provide a better experience for the entire community.
-
