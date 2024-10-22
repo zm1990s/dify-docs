@@ -61,7 +61,7 @@
     * [Checklist](guides/workflow/debug-and-preview/checklist.md)
     * [Run History](guides/workflow/debug-and-preview/history.md)
   * [Application Publishing](guides/workflow/publish.md)
-  * [Bulletin:  Image Upload Replaced by File Upload](guides/workflow/bulletin.md)
+  * [Bulletin: Image Upload Replaced by File Upload](guides/workflow/bulletin.md)
 * [Knowledge Base](guides/knowledge-base/README.md)
   * [Create Knowledge Base & Upload Documents](guides/knowledge-base/create-knowledge-and-upload-documents.md)
   * [Knowledge Base and Document Maintenance](guides/knowledge-base/knowledge-and-documents-maintenance.md)
@@ -126,6 +126,7 @@
 * [Basic](workshop/basic/README.md)
   * [How to Build an AI Image Generation App](workshop/basic/build-ai-image-generation-app.md)
 * [Intermediate](workshop/intermediate/README.md)
+  * [Build An Article Reader Using File Upload](workshop/intermediate/article-reader.md)
   * [Generating analysis of Twitter account using Chatflow Agent](workshop/intermediate/twitter-chatflow.md)
 
 ## Community
