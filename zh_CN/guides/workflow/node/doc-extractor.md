@@ -55,7 +55,7 @@ LLM 自身无法直接读取或解释文档的内容。因此需要将用户上�
 
 配置完成后，应用将具备文件上传功能，使用者可以上传 PDF 文件并展开对话。
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 如需了解如何在聊天对话中上传文件并与 LLM 互动，请参考 [附加功能](../additional-features.md)。

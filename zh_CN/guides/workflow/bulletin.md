@@ -4,7 +4,7 @@ description: 作者：Evanchen ,  Allen.
 
 # 变更公告：图片上传被替换为文件上传
 
-图片文件上传功能已被纳入至更加综合的“文件上传”功能中，为了避免出现功能重复，我们决定对 Workflow 和 Chatflow 应用的“附加功能”进行升级和调整：
+图片上传功能已被纳入至更加综合的[文件上传](file-upload.md)功能中，为了避免出现功能重复，我们决定对 Workflow 和 Chatflow 应用的“[附加功能](additional-features.md)”进行升级和调整：
 
 * 移除 Chatflow 应用“功能”中的图片上传选项，取而代之的是新的“文件上传”功能。你可以在“文件上传”功能内选择图片文件类型。同时，应用对话框中的图片上传 icon 也被替换为文件上传 icon。
 
@@ -41,7 +41,7 @@ Dify 此前仅支持上传图片文件。而在最新的版本中，已提供更
 
 <figure><img src="../../.gitbook/assets/image (388).png" alt=""><figcaption></figcaption></figure>
 
-如果你希望在 Chatflow 应用中添加“图片上传”功能，请在功能中开启“文件上传”，仅勾选“图片”类型。然后在 LLM 节点中启用 Vision 功能，并在其中填写 `sys.files` 变量。此时输入框将出现“回形针”的上传入口，详细说明请参考 附加功能。
+如果你希望在 Chatflow 应用中添加“图片上传”功能，请在功能中开启“文件上传”，仅勾选“图片”类型。然后在 LLM 节点中启用 Vision 功能，并在其中填写 `sys.files` 变量。此时输入框将出现“回形针”的上传入口，详细说明请参考 [附加功能](additional-features.md)。
 
 <figure><img src="../../.gitbook/assets/image (389).png" alt=""><figcaption></figcaption></figure>
 
@@ -59,7 +59,7 @@ Dify 此前仅支持上传图片文件。而在最新的版本中，已提供更
 
 已启用“图片上传”功能的 Chatflow 应用将自动完成切换，无需变更。
 
-如果你希望在 Chatflow 应用中添加“图片上传”功能，详细说明请参考 附加功能。
+如果你希望在 Chatflow 应用中添加“图片上传”功能，详细说明请参考[附加功能](additional-features.md)。
 
 * Workflow 应用
 
@@ -98,10 +98,8 @@ Dify 此前仅支持上传图片文件。而在最新的版本中，已提供更
 
 1. 尝试新的文件上传功能，体验其便捷性和灵活性。
 2. 通过以下渠道分享您的想法和建议：
-   * [GitHub discussion](https://github.com/langgenius/dify)
+   * [GitHub](https://github.com/langgenius/dify)
    * [Discord 频道](https://discord.gg/FngNHpbcY7)
 
 您的每一条反馈都将帮助我们不断完善产品，为整个社区带来更好的体验。
-
-Dify 团队
 

@@ -8,6 +8,8 @@ Workflow 和 Chatflow 应用均支持开启附加功能以增强使用者的交�
 
 ### Workflow
 
+> 不再推荐使用该方法为 Workflow 应用添加文件上传功能 建议
+
 Workflow 类型应用仅支持 **“图片上传”** 功能。开启后，Workflow 应用的使用页将出现图片上传入口。
 
 {% @arcade/embed flowId="DqlK9RV79K25ElxMq1BJ" url="https://app.arcade.software/share/DqlK9RV79K25ElxMq1BJ" %}
@@ -40,7 +42,6 @@ Chatflow 类型应用支持以下功能：
     支持以下文件类型：文档、图片、音频、视频以及其它文件类型。开启此功能后，应用使用者可以在应用对话的过程中随时上传并更新文件。最多支持同时上传 10 个文件，每个文件的大小上限为 15MB。
 
     <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p>文件上传功能</p></figcaption></figure>
-
 *   **引用和归属**
 
     常用于配合[“知识检索”](node/knowledge-retrieval.md)节点共同使用，显示 LLM 给出答复的参考源文档及归属部分。
@@ -87,7 +88,7 @@ LLM 并不具备直接读取文档文件的能力，因此需要使用 [文档�
 2. 添加 LLM 节点，启 VISION 功能并选择 `sys.files` 变量。
 3. 在末尾添加 “直接回复” 节点，填写 LLM 节点的输出变量。
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>开启视觉分析能力</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (2).png" alt=""><figcaption><p>开启视觉分析能力</p></figcaption></figure>
 
 * **混合文件类型**
 
