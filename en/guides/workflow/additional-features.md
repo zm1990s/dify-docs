@@ -57,7 +57,7 @@ This section will mainly introduce the specific usage of the **File Upload** fea
 
 **For application developers:**
 
-After enabling the file upload feature, the files uploaded by users will be stored in the `sys.files` variable. If a user uploads new files during the conversation, the files in this variable will be overwritten.
+After enabling the file upload feature, the files users send will be uploaded in the `sys.files` variable. It will be updated after the user sends a new message in the same conversation turn.
 
 Different types of files correspond to different application orchestration methods based on the uploaded file differences.
 
