@@ -10,10 +10,6 @@ After creating an application, if you want to modify the application name or des
 
 All applications support copying. Click "Duplicate" in the upper left corner of the application.
 
-### Switch to Workflow Orchestrate
-
-TODO 🚧
-
 ### Exporting Application
 
 Applications created in Dify support export in DSL format files, allowing you to import the configuration files into other Dify teams freely. You can export DSL files using either of the following two methods:
