@@ -15,4 +15,9 @@ docker compose up -d
 
 ### 2. 如果 workflow 太复杂超出节点上限如何处理？
 
-在社区版您可以在`web/app/components/workflow/constants.ts` 手动调整MAX\_TREE\_DEPTH 单条分支深度的上限，我们的默认值是 50，在这里要提醒自部署的情况下过深的分支可能会影响性能。
+在社区版您可以在`web/app/components/workflow/constants.ts` 手动调整 MAX\_TREE\_DEPTH 单条分支深度的上限，我们的默认值是 50，在这里要提醒自部署的情况下过深的分支可能会影响性能。
+
+### 3. 如何指定工作流各节点的运行时间？
+
+你可以在 `.env` 文件内修改 `TEXT_GENERATION_TIMEOUT_MS` 变量，调整各节点的运行时间，防止因某些进程运行超时而导致整体应用服务不可用。
+
