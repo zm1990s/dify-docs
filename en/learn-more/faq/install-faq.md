@@ -228,3 +228,7 @@ Find these two lines in the output:
 Remember the IP addresses. Then open the directory where you store the Dify source code, open `dify/docker/nginx/conf.d`, replace `http://api:5001` with `http://172.19.0.7:5001`, and replace `http://web:3000` with `http://172.19.0.5:3000`, then restart the Nginx container or reload the configuration.
 
 These IP addresses are _**examples**_, you must execute the command to get your own IP addresses, do not fill them in directly. You might need to reconfigure the IP addresses when restarting the relevant containers.
+
+### 21. How to modify the API service port number?
+
+The API service port is consistent with the one used by the Dify platform. You can reassign the running port by modifying the `nginx` configuration in the `docker-compose.yaml` file.
