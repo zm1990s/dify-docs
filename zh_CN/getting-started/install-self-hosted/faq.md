@@ -21,3 +21,38 @@ docker compose up -d
 
 你可以在 `.env` 文件内修改 `TEXT_GENERATION_TIMEOUT_MS` 变量，调整各节点的运行时间，防止因某些进程运行超时而导致整体应用服务不可用。
 
+### 4. 如何重置管理员密码？
+
+If you deployed using Docker Compose, you can reset the password with the following command while your Docker Compose is running:
+
+如果你通过 Docker Compose 部署，你可以运行以下 Docker Compose 命令行重置密码。
+
+```
+docker exec -it docker-api-1 flask reset-password
+```
+
+请按照提示输入邮箱地址和新密码，例如：
+
+```
+dify@my-pc:~/hello/dify/docker$ docker compose up -d
+[+] Running 9/9
+ ✔ Container docker-web-1         Started                                                              0.1s 
+ ✔ Container docker-sandbox-1     Started                                                              0.1s 
+ ✔ Container docker-db-1          Started                                                              0.1s 
+ ✔ Container docker-redis-1       Started                                                              0.1s 
+ ✔ Container docker-weaviate-1    Started                                                              0.1s 
+ ✔ Container docker-ssrf_proxy-1  Started                                                              0.1s 
+ ✔ Container docker-api-1         Started                                                              0.1s 
+ ✔ Container docker-worker-1      Started                                                              0.1s 
+ ✔ Container docker-nginx-1       Started                                                              0.1s 
+dify@my-pc:~/hello/dify/docker$ docker exec -it docker-api-1 flask reset-password
+None of PyTorch, TensorFlow >= 2.0, or Flax have been found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+sagemaker.config INFO - Not applying SDK defaults from location: /etc/xdg/sagemaker/config.yaml
+sagemaker.config INFO - Not applying SDK defaults from location: /root/.config/sagemaker/config.yaml
+Email: hello@dify.ai
+New password: newpassword4567
+Password confirm: newpassword4567
+Password reset successfully.
+```
+
+查看更多部署相关[常见问题](https://docs.dify.ai/getting-started/install-self-hosted/faqs)
