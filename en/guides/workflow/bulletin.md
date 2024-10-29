@@ -66,7 +66,6 @@ Existing Workflow applications will not be affected, but please complete the man
 
 If you wish to enable the “Image Upload” feature for a Workflow application, add a file variable in the [Start](node/start.md) node. Then, reference this file variable in subsequent nodes instead of using the `sys.files` variable.\
 
-
 ### FAQs:
 
 #### 1. Will This Update Affect My Existing Applications?
@@ -95,6 +94,10 @@ For Workflow applications:
 • Create a file-type variable in the “Start” node.
 
 • Reference this file variable in subsequent nodes instead of using the LEGACY `sys.files` variable.
+
+#### 4. How to handle missing image upload icons in previously published Chatflow applications?
+
+It is recommended to republish the application, and the file upload icon will appear in the application's chat box.
 
 #### We Value Your Feedback
 
