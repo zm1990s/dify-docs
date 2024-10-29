@@ -233,3 +233,7 @@ docker ps -q | xargs -n 1 docker inspect --format '{{ .Name }}: {{range .Network
 
 `.env`構成ファイルで`CSP_WHITELIST`パラメータを見つけて、製品の使用に関連するすべての URL や API リクエスト アドレスなど、許可できるドメイン名を入力します。
 この動きは、潜在的な XSS 攻撃を減らすのに役立ちます。 CSP に関する推奨事項の詳細については、[コンテンツ セキュリティ ポリシー](https://developer.mozilla.org/ja/docs/Web/HTTP/CSP) を参照してください。
+
+### 22. APIサービスのポート番号を変更する方法
+
+API サービスのポートは、Dify プラットフォームで使用されるポートと一致します。`docker-compose.yaml` ファイルの `nginx` 設定を変更することで、実行中のポートを再指定することができます。
