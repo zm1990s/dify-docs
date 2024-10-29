@@ -16,3 +16,7 @@ If you still haven't received the email, please check if the email service is wo
 ### 2. How to handle if the workflow is too complex and exceeds the node limit?
 
 In the community edition, you can manually adjust the MAX\_TREE\_DEPTH limit for single branch depth in `web/app/components/workflow/constants.ts.` Our default value is 50, and it's important to note that excessively deep branches may affect performance in self-hosted scenarios.
+
+### 3. How to specify the runtime for each workflow node?
+
+You can modify the `TEXT_GENERATION_TIMEOUT_MS` variable in the `.env` file to adjust the runtime for each node. This helps prevent overall application service unavailability caused by certain processes timing out.
