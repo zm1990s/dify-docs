@@ -231,4 +231,4 @@ These IP addresses are _**examples**_, you must execute the command to get your 
 
 ### 21. How to modify the API service port number?
 
-The API service port number is consistent with the one used by the Dify platform. You can reassign the running port by modifying the `nginx` configuration in the `docker-compose.yaml` file.
+The API service port is consistent with the one used by the Dify platform. You can reassign the running port by modifying the `nginx` configuration in the `docker-compose.yaml` file.
