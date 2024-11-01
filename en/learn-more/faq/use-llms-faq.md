@@ -139,6 +139,7 @@ Dify supports the following for use as Embedding models. Simply select the `Embe
 * OpenAI
 * Replicate
 * XInference
+* GPUStack
 
 ### 22. How to set an application I created as an application template?
 
