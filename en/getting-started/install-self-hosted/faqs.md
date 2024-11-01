@@ -53,6 +53,4 @@ Password confirm: newpassword4567
 Password reset successfully.
 ```
 
-View more [FAQs](https://docs.dify.ai/getting-started/install-self-hosted/faqs)
-
-[FAQs](https://docs.dify.ai/learn-more/faq/install-faq).
+Check more [FAQs](https://docs.dify.ai/getting-started/install-self-hosted/faqs).

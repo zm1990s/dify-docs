@@ -53,6 +53,4 @@ Password confirm: newpassword4567
 Password reset successfully.
 ```
 
-コミュニティ版 [よくある質問](https://docs.dify.ai/ja-jp/getting-started/install-self-hosted/faq)
-
-[よくある質問](https://docs.dify.ai/ja-jp/learn-more/faq/install-faq).
+コミュニティ版 [よくある質問](https://docs.dify.ai/ja-jp/getting-started/install-self-hosted/faq)。
