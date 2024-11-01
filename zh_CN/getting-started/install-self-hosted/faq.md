@@ -23,8 +23,6 @@ docker compose up -d
 
 ### 4. 如何重置管理员密码？
 
-If you deployed using Docker Compose, you can reset the password with the following command while your Docker Compose is running:
-
 如果你通过 Docker Compose 部署，你可以运行以下 Docker Compose 命令行重置密码。
 
 ```
@@ -55,4 +53,4 @@ Password confirm: newpassword4567
 Password reset successfully.
 ```
 
-查看更多部署相关[常见问题](https://docs.dify.ai/getting-started/install-self-hosted/faqs)
+查看更多部署相关[常见问题](https://docs.dify.ai/getting-started/install-self-hosted/faqs)。
