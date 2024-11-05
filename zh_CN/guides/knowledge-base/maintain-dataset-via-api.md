@@ -2,7 +2,7 @@
 
 > 鉴权、调用方式与应用 Service API 保持一致，不同之处在于，所生成的单个知识库 API token 具备操作当前账号下所有可见知识库的权限，请注意数据安全。
 
-### 使用知识库 API 的优势
+## 使用知识库 API 的优势
 
 通过 API 维护知识库可大幅提升数据处理效率，你可以通过命令行轻松同步数据，实现自动化操作，而无需在用户界面进行繁琐操作。
 
@@ -13,15 +13,17 @@
 * 灵活上传: 支持纯文本和文件上传方式,可针对分段（Chunks）内容的批量新增和修改操作；
 * 提高效率: 减少手动处理时间，提升 Dify 平台使用体验。
 
-### 如何使用
+## 如何使用
 
 进入知识库页面，在左侧的导航中切换至 **API** 页面。在该页面中你可以查看 Dify 提供的知识库 API 文档，并可以在 **API 密钥** 中管理可访问知识库 API 的凭据。
 
 <figure><img src="../../.gitbook/assets/dataset-api-token.png" alt=""><figcaption><p>Knowledge API Document</p></figcaption></figure>
 
-### API 调用示例
+## API 调用示例
 
-#### 通过文本创建文档
+### 通过文本创建文档
+
+此接口基于已存在知识库，在此知识库的基础上通过文本创建新的文档。
 
 输入示例：
 
@@ -64,7 +66,9 @@ curl --location --request POST 'https://api.dify.ai/v1/datasets/{dataset_id}/doc
 }
 ```
 
-#### 通过文件创建文档
+### 通过文件创建文档
+
+此接口基于已存在知识库，在此知识库的基础上通过文件创建新的文档。
 
 输入示例：
 
@@ -108,7 +112,7 @@ curl --location --request POST 'https://api.dify.ai/v1/datasets/{dataset_id}/doc
 
 ```
 
-#### **创建空知识库**
+### **创建空知识库**
 
 {% hint style="warning" %}
 仅用来创建空知识库
@@ -147,7 +151,7 @@ curl --location --request POST 'https://api.dify.ai/v1/datasets' \
 }
 ```
 
-#### **知识库列表**
+### **知识库列表**
 
 输入示例：
 
@@ -185,7 +189,7 @@ curl --location --request GET 'https://api.dify.ai/v1/datasets?page=1&limit=20' 
 }
 ```
 
-#### 删除知识库
+### 删除知识库
 
 输入示例：
 
@@ -198,51 +202,6 @@ curl --location --request DELETE 'https://api.dify.ai/v1/datasets/{dataset_id}' 
 
 ```json
 204 No Content
-```
-
-#### 通过文本更新文档
-
-此接口基于已存在知识库，在此知识库的基础上通过文本更新文档
-
-输入示例：
-
-```bash
-curl --location --request POST 'https://api.dify.ai/v1/datasets/{dataset_id}/documents/{document_id}/update_by_text' \
---header 'Authorization: Bearer {api_key}' \
---header 'Content-Type: application/json' \
---data-raw '{"name": "name","text": "text"}'
-```
-
-输出示例：
-
-```json
-{
-  "document": {
-    "id": "",
-    "position": 1,
-    "data_source_type": "upload_file",
-    "data_source_info": {
-      "upload_file_id": ""
-    },
-    "dataset_process_rule_id": "",
-    "name": "name.txt",
-    "created_from": "api",
-    "created_by": "",
-    "created_at": 1695308667,
-    "tokens": 0,
-    "indexing_status": "waiting",
-    "error": null,
-    "enabled": true,
-    "disabled_at": null,
-    "disabled_by": null,
-    "archived": false,
-    "display_status": "queuing",
-    "word_count": 0,
-    "hit_count": 0,
-    "doc_form": "text_model"
-  },
-  "batch": ""
-}
 ```
 
 #### 通过文件更新文档
@@ -291,7 +250,7 @@ curl --location --request POST 'https://api.dify.ai/v1/datasets/{dataset_id}/doc
 ```
 
 
-#### **获取文档嵌入状态（进度）**
+### **获取文档嵌入状态（进度）**
 
 输入示例：
 
@@ -528,8 +487,96 @@ curl --location --request POST 'https://api.dify.ai/v1/datasets/{dataset_id}/doc
 }
 ```
 
+### 检索知识库
+
+```bash
+curl --location --request GET 'https://api.dify.ai/v1/datasets/{dataset_id}/retrieve' \
+--header 'Authorization: Bearer {api_key}'\
+--header 'Content-Type: application/json'\
+--data-raw '{
+        "query": "test",
+        "retrieval_model": {
+            "search_method": "keyword_search",
+            "reranking_enable": false,
+            "reranking_mode": null,
+            "reranking_model": {
+                "reranking_provider_name": "",
+                "reranking_model_name": ""
+            },
+            "weights": null,
+            "top_k": 1,
+            "score_threshold_enabled": false,
+            "score_threshold": null
+        }
+    }'
+```
+
+```bash
+{
+  "query": {
+    "content": "test"
+  },
+  "records": [
+    {
+      "segment": {
+        "id": "7fa6f24f-8679-48b3-bc9d-bdf28d73f218",
+        "position": 1,
+        "document_id": "a8c6c36f-9f5d-4d7a-8472-f5d7b75d71d2",
+        "content": "Operation guide",
+        "answer": null,
+        "word_count": 847,
+        "tokens": 280,
+        "keywords": [
+          "install",
+          "java",
+          "base",
+          "scripts",
+          "jdk",
+          "manual",
+          "internal",
+          "opens",
+          "add",
+          "vmoptions"
+        ],
+        "index_node_id": "39dd8443-d960-45a8-bb46-7275ad7fbc8e",
+        "index_node_hash": "0189157697b3c6a418ccf8264a09699f25858975578f3467c76d6bfc94df1d73",
+        "hit_count": 0,
+        "enabled": true,
+        "disabled_at": null,
+        "disabled_by": null,
+        "status": "completed",
+        "created_by": "dbcb1ab5-90c8-41a7-8b78-73b235eb6f6f",
+        "created_at": 1728734540,
+        "indexing_at": 1728734552,
+        "completed_at": 1728734584,
+        "error": null,
+        "stopped_at": null,
+        "document": {
+          "id": "a8c6c36f-9f5d-4d7a-8472-f5d7b75d71d2",
+          "data_source_type": "upload_file",
+          "name": "readme.txt",
+          "doc_type": null
+        }
+      },
+      "score": 3.730463140527718e-05,
+      "tsne_position": null
+    }
+  ]
+}
+```
+
 
 ### 错误信息
+
+示例：
+
+```bash
+  {
+    "code": "no_file_uploaded",
+    "message": "Please upload your file.",
+    "status": 400
+  }
+```
 
 | 错误信息 | 错误码 | 原因描述 |
 |------|--------|---------|

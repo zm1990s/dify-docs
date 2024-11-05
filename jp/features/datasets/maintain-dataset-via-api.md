@@ -120,7 +120,7 @@ curl --location 'https://api.dify.ai/v1/datasets/{dataset_id}/documents/{documen
 #### 文書セグメントの削除
 
 ```
-curl --location --request DELETE 'https://api.dify.dev/v1/datasets/{dataset_id}/documents/{document_id}/segments/{segment_id}' \
+curl --location --request DELETE 'https://api.dify.ai/v1/datasets/{dataset_id}/documents/{document_id}/segments/{segment_id}' \
 --header 'Authorization: Bearer {api_key}' \
 --header 'Content-Type: application/json'
 ```

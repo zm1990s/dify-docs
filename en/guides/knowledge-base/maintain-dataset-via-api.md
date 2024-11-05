@@ -66,7 +66,48 @@ Response example:
 }
 ```
 
-#### Create documents from files
+### Create a Document from Text
+
+This API is based on an existing knowledge and creates a new document through text based on this knowledge.
+
+```bash
+curl --location --request POST 'https://api.dify.ai/v1/datasets/{dataset_id}/document/create-by-text' \
+--header 'Authorization: Bearer {api_key}' \
+--header 'Content-Type: application/json' \
+--data-raw '{"name": "text","text": "text","indexing_technique": "high_quality","process_rule": {"mode": "automatic"}}'
+```
+
+```bash
+{
+  "document": {
+    "id": "",
+    "position": 1,
+    "data_source_type": "upload_file",
+    "data_source_info": {
+        "upload_file_id": ""
+    },
+    "dataset_process_rule_id": "",
+    "name": "text.txt",
+    "created_from": "api",
+    "created_by": "",
+    "created_at": 1695690280,
+    "tokens": 0,
+    "indexing_status": "waiting",
+    "error": null,
+    "enabled": true,
+    "disabled_at": null,
+    "disabled_by": null,
+    "archived": false,
+    "display_status": "queuing",
+    "word_count": 0,
+    "hit_count": 0,
+    "doc_form": "text_model"
+  },
+  "batch": ""
+}
+```
+
+### Create documents from a file
 
 This api is based on an existing Knowledge and creates a new document through a file based on this Knowledge.
 
@@ -112,7 +153,7 @@ Response example:
 
 ```
 
-#### Create an empty Knowledge
+### Create an empty Knowledge base
 
 {% hint style="warning" %}
 Only used to create an empty knowledge base.
@@ -151,7 +192,7 @@ Response example:
 }
 ```
 
-#### Knowledge list
+### Get a knowledge base list
 
 Request example:
 
@@ -187,10 +228,9 @@ Response example:
   "total": 50,
   "page": 1
 }
-
 ```
 
-#### Delete knowledge
+### Delete a knowledge base
 
 Request example:
 
@@ -250,7 +290,7 @@ Response example:
 }
 ```
 
-#### Update a document from a file
+#### Update a document with a file
 
 This api is based on an existing Knowledge, and updates documents through files based on this Knowledge.
 
@@ -325,7 +365,7 @@ Response example:
 }
 ```
 
-#### Delete document
+#### Delete a document
 
 Request example:
 
@@ -342,7 +382,7 @@ Response example:
 }
 ```
 
-#### Knowledge document list
+#### Get the document list of a knowledge base
 
 Request example:
 
@@ -382,7 +422,7 @@ Response example:
 }
 ```
 
-#### Add chunk
+#### Add chunks to a document
 
 Request example:
 
@@ -427,7 +467,7 @@ Response example:
 
 ```
 
-### Get documents chunks
+### Get chunks from a document
 
 Request example:
 
@@ -470,7 +510,7 @@ Response example:
 }
 ```
 
-### Delete document segment
+### Delete a chunk in a document
 
 Request example:
 
@@ -488,7 +528,7 @@ Response example:
 }
 ```
 
-### Update document chunk
+### Update a chunk in a document
 
 Request example:
 
@@ -532,7 +572,100 @@ Response example:
 }
 ```
 
+### Retrieve Chunks from a Knowledge Base
+
+Request example:
+
+```bash
+curl --location --request GET 'https://api.dify.ai/v1/datasets/{dataset_id}/retrieve' \
+--header 'Authorization: Bearer {api_key}'\
+--header 'Content-Type: application/json'\
+--data-raw '{
+    "query": "test",
+    "retrieval_model": {
+        "search_method": "keyword_search",
+        "reranking_enable": false,
+        "reranking_mode": null,
+        "reranking_model": {
+            "reranking_provider_name": "",
+            "reranking_model_name": ""
+        },
+        "weights": null,
+        "top_k": 1,
+        "score_threshold_enabled": false,
+        "score_threshold": null
+    }
+}'
+```
+
+Response example:
+
+```bash
+{
+  "query": {
+    "content": "test"
+  },
+  "records": [
+    {
+      "segment": {
+        "id": "7fa6f24f-8679-48b3-bc9d-bdf28d73f218",
+        "position": 1,
+        "document_id": "a8c6c36f-9f5d-4d7a-8472-f5d7b75d71d2",
+        "content": "Operation guide",
+        "answer": null,
+        "word_count": 847,
+        "tokens": 280,
+        "keywords": [
+          "install",
+          "java",
+          "base",
+          "scripts",
+          "jdk",
+          "manual",
+          "internal",
+          "opens",
+          "add",
+          "vmoptions"
+        ],
+        "index_node_id": "39dd8443-d960-45a8-bb46-7275ad7fbc8e",
+        "index_node_hash": "0189157697b3c6a418ccf8264a09699f25858975578f3467c76d6bfc94df1d73",
+        "hit_count": 0,
+        "enabled": true,
+        "disabled_at": null,
+        "disabled_by": null,
+        "status": "completed",
+        "created_by": "dbcb1ab5-90c8-41a7-8b78-73b235eb6f6f",
+        "created_at": 1728734540,
+        "indexing_at": 1728734552,
+        "completed_at": 1728734584,
+        "error": null,
+        "stopped_at": null,
+        "document": {
+          "id": "a8c6c36f-9f5d-4d7a-8472-f5d7b75d71d2",
+          "data_source_type": "upload_file",
+          "name": "readme.txt",
+          "doc_type": null
+        }
+      },
+      "score": 3.730463140527718e-05,
+      "tsne_position": null
+    }
+  ]
+}
+```
+
 ### Error message
+
+Response example:
+
+```bash
+  {
+    "code": "no_file_uploaded",
+    "message": "Please upload your file.",
+    "status": 400
+  }
+
+```
 
 | code                          | status | message                                                                                      |
 | ----------------------------- | ------ | -------------------------------------------------------------------------------------------- |
