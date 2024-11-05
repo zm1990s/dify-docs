@@ -125,7 +125,7 @@ file variables 和 array\[file] variables 支持以下文件类型与格式：
 
 完成上述设置后，应用的使用者可以在 WebApp 内粘贴文件 URL 或上传本地文件，然后就文档内容与 LLM 展开互动。应用使用者可以在对话过程中随时替换文件，LLM 将获取最新的文件内容。
 
-<figure><img src="../../.gitbook/assets/image (5) (2).png" alt=""><figcaption><p>粘贴 URL 进行对话</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (2) (1).png" alt=""><figcaption><p>粘贴 URL 进行对话</p></figcaption></figure>
 
 **在 LLM 节点中引用文件变量**
 
@@ -151,6 +151,6 @@ file variables 和 array\[file] variables 支持以下文件类型与格式：
 
 若希望应用能够支持上传多种文件，例如允许用户同时上传文档文件、图片和音视频文件，此时需要在 “开始节点” 中添加 “文件列表” 变量，并通过“列表操作”节点针对不同的文件类型进行处理。详细说明请参考[列表操作](node/list-operator.md)节点。
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 如需查看更多使用案例，请参考：[动手实验室 - 使用文件上传搭建文章理解助手](../../workshop/intermediate/article-reader.md)

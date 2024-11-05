@@ -28,7 +28,7 @@ Jina Reader 和 Firecrawl 均是开源的网页解析工具，能将网页将其
 
 设置中的配置项包括：是否抓取子页面、抓取页面数量上限、页面抓取深度、排除页面、仅抓取页面、提取内容。完成配置后点击 **Run**，预览将要被抓取的目标页面链接。
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>执行抓取</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>执行抓取</p></figcaption></figure>
 
 导入网页解析的文本后存储至知识库的文档中，查看导入结果。点击 **Add URL** 可以继续导入新的网页。
 
@@ -50,7 +50,7 @@ Jina Reader 和 Firecrawl 均是开源的网页解析工具，能将网页将其
 
 <figure><img src="../../.gitbook/assets/dataset-creation-step2(jina).png" alt=""><figcaption><p>填写 Jina 配置</p></figcaption></figure>
 
-#### 使用  Jina Reader 抓取网页内容
+#### 使用 Jina Reader 抓取网页内容
 
 在知识库创建页选择 **Sync from website**，provider 选中 Jina Reader，填写需要抓取的目标 URL。
 

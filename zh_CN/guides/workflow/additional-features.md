@@ -4,7 +4,7 @@ Workflow 和 Chatflow 应用均支持开启附加功能以增强使用者的交�
 
 点击应用右上角的 **“功能”** 按钮即可为应用添加更多功能。
 
-{% @arcade/embed flowId="a0tbwuEIT5I3y5RdHsJp" url="https://app.arcade.software/share/a0tbwuEIT5I3y5RdHsJp" %}
+{% @arcade/embed flowid="a0tbwuEIT5I3y5RdHsJp" url="https://app.arcade.software/share/a0tbwuEIT5I3y5RdHsJp" %}
 
 ### Workflow
 
@@ -12,7 +12,7 @@ Workflow 和 Chatflow 应用均支持开启附加功能以增强使用者的交�
 
 Workflow 类型应用仅支持 **“图片上传”** 功能。开启后，Workflow 应用的使用页将出现图片上传入口。
 
-{% @arcade/embed flowId="DqlK9RV79K25ElxMq1BJ" url="https://app.arcade.software/share/DqlK9RV79K25ElxMq1BJ" %}
+{% @arcade/embed flowid="DqlK9RV79K25ElxMq1BJ" url="https://app.arcade.software/share/DqlK9RV79K25ElxMq1BJ" %}
 
 **用法：**
 
@@ -22,7 +22,7 @@ Workflow 类型应用仅支持 **“图片上传”** 功能。开启后，Workf
 
 最后在 END 节点内选择 LLM 节点的输出变量即可完成设置。
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption><p>开启视觉分析能力</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (2).png" alt=""><figcaption><p>开启视觉分析能力</p></figcaption></figure>
 
 ### Chatflow
 
@@ -41,7 +41,7 @@ Chatflow 类型应用支持以下功能：
 
     支持以下文件类型：文档、图片、音频、视频以及其它文件类型。开启此功能后，应用使用者可以在应用对话的过程中随时上传并更新文件。最多支持同时上传 10 个文件，每个文件的大小上限为 15MB。
 
-    <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p>文件上传功能</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (8) (2).png" alt=""><figcaption><p>文件上传功能</p></figcaption></figure>
 *   **引用和归属**
 
     常用于配合[“知识检索”](node/knowledge-retrieval.md)节点共同使用，显示 LLM 给出答复的参考源文档及归属部分。
@@ -57,7 +57,7 @@ Chatflow 类型应用支持以下功能：
 
 **对于应用使用者而言：** 已开启文件上传功能的 Chatflow 应用将会在对话框右侧出现 “回形针” 标识，点击后即可上传文件并与 LLM 交互。
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p>使用文件上传</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (2).png" alt=""><figcaption><p>使用文件上传</p></figcaption></figure>
 
 **对于应用开发者而言：**
 

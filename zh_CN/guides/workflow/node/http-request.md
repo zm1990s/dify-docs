@@ -37,5 +37,5 @@ HTTP 请求的返回值包括响应体、状态码、响应头和文件。值得
 
 配置示例如下：
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>通过 HTTP 节点发送文件</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption><p>通过 HTTP 节点发送文件</p></figcaption></figure>
 

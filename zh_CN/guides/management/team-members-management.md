@@ -14,7 +14,7 @@
 
 团队所有者点击右上角头像，然后轻点 **“成员”** → **“添加”**，输入邮箱，分配成员权限完成添加。
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>为团队成员分配权限</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>为团队成员分配权限</p></figcaption></figure>
 
 被邀请成员可以通过 URL 或邮箱进行注册。
 
@@ -45,7 +45,7 @@
 
 点击 Dify 团队首页右上角头像，前往 **“设置”** → **“成员”** ，选择需要被移除的成员的角色，轻点\*\*“移除团队”\*\*。
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>移除成员</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>移除成员</p></figcaption></figure>
 
 ### 常见问题
 

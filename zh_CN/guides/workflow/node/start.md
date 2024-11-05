@@ -41,7 +41,7 @@ Dify 内置的文档提取器节点只能够处理部分格式的文档文件。
 
 配置完成后，用户在使用应用前将按照输入项指引，向 LLM 提供必要信息。更多的信息将有助于 LLM 提升问答效率。
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 系统变量
 

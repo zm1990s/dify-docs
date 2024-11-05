@@ -18,7 +18,7 @@
 
 Dify 平台尚不能直接连接 AWS Bedrock Knowledge Base，需要开发团队参考 Dify 关于外部知识库连接的 [API 定义](../../guides/knowledge-base/external-knowledge-api-documentation.md)，手动创建后端 API 服务，建立与 AWS Bedrock 的连接。具体架构示意图请参考：
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>构建后端 API 服务</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>构建后端 API 服务</p></figcaption></figure>
 
 你可以参考以下 2 个代码文件，构建后端服务 API。
 

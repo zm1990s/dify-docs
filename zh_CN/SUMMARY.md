@@ -166,6 +166,7 @@
   * [如何连接 AWS Bedrock 知识库？](learn-more/use-cases/how-to-connect-aws-bedrock.md)
 * [扩展阅读](learn-more/extended-reading/README.md)
   * [什么是 LLMOps？](learn-more/extended-reading/what-is-llmops.md)
+  * [什么是数组变量？](learn-more/extended-reading/what-is-array-variable.md)
   * [检索增强生成（RAG）](learn-more/extended-reading/retrieval-augment/README.md)
     * [混合检索](learn-more/extended-reading/retrieval-augment/hybrid-search.md)
     * [重排序](learn-more/extended-reading/retrieval-augment/rerank.md)
