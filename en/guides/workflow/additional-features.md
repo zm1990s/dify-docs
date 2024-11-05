@@ -8,11 +8,11 @@ Click the **"Features"** button in the upper right corner of the application to 
 
 #### Workflow
 
+> Note: This method of adding file uploads to Workflow applications is deprecated. We recommend adding custom file variables on the start node instead.
+
 Workflow type applications only support the **"Image Upload"** feature. When enabled, an image upload entry will appear on the usage page of the Workflow application.
 
 {% @arcade/embed flowId="DqlK9RV79K25ElxMq1BJ" url="https://app.arcade.software/share/DqlK9RV79K25ElxMq1BJ" %}
-
-
 
 **Usage:**
 
