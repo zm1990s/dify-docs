@@ -70,7 +70,6 @@
   * [Sync Data from Notion](guides/knowledge-base/sync-from-notion.md)
   * [Sync Data from Website](guides/knowledge-base/sync-from-website.md)
   * [Maintain Knowledge Base via API](guides/knowledge-base/maintain-dataset-via-api.md)
-  * [External Data Tool](guides/knowledge-base/external-data-tool.md)
   * [Connect to an External Knowledge Base](guides/knowledge-base/connect-external-knowledge.md)
   * [External Knowledge API](guides/knowledge-base/external-knowledge-api-documentation.md)
 * [Tools](guides/tools/README.md)
