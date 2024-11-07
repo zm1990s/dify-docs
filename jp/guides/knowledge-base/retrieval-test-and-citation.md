@@ -31,4 +31,4 @@ Difyナレッジベースには、異なる検索方法とパラメータ設定�
 
 機能を有効にすると、大規模言語モデルが質問に回答する際にナレッジベースからの内容を引用した場合、返信内容の下に具体的な引用段落情報を確認できます。これには**元のパラグラフテキスト、パラグラフ番号、マッチ度**などが含まれます。引用段落上部の**ナレッジベースにジャンプ**をクリックすると、開発者がデバッグ編集を行いやすいように、そのパラグラフが含まれるナレッジベースのパラグラフリストに簡単にアクセスできます。
 
-<figure><img src="../../.gitbook/assets/view-citation-informatio.png" alt=""><figcaption><p>返信内容の引用情報を確認する</p></figcaption></figure>
+<figure><img src="../../../img/view-citation-information.png" alt=""><figcaption><p>返信内容の引用情報を確認する</p></figcaption></figure>
