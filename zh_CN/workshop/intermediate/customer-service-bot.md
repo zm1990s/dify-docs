@@ -183,3 +183,9 @@ LLM 需要根据用户的提问，调整回复，使得回复内容更加得体�
 
 <figure><img src="../../.gitbook/assets/截屏2024-11-07 14.11.53.png" alt=""><figcaption></figcaption></figure>
 
+## 思考题 3: 如何将客服机器人嵌入网页
+
+应用发布后，选择嵌入网页，选择一种合适的嵌入形式，将代码粘贴到网页的合适位置即可。
+
+{% @arcade/embed flowId="jzRqVty9I1aMtoYZjfHW" url="https://app.arcade.software/share/jzRqVty9I1aMtoYZjfHW" %}
+
