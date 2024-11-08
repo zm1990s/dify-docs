@@ -53,4 +53,13 @@ Password confirm: newpassword4567
 Password reset successfully.
 ```
 
-Check more [FAQs](https://docs.dify.ai/getting-started/install-self-hosted/faqs).
+### 5. How to Change the Port&#x20;
+
+If you're using Docker Compose, you can customize the access port by modifying the `.env` configuration file.&#x20;
+
+You need to modify the Nginx configuration:
+
+```json
+EXPOSE_NGINX_PORT=80
+EXPOSE_NGINX_SSL_PORT=443
+```

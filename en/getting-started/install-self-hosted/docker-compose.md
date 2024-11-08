@@ -3,14 +3,15 @@
 ## Prerequisites
 
 > Before installing Dify, make sure your machine meets the following minimum system requirements:
-> - CPU >= 2 Core
-> - RAM >= 4 GiB
+>
+> * CPU >= 2 Core
+> * RAM >= 4 GiB
 
-| Operating System           | Software                                                       | Explanation                                                                                                                                                                                                                                                                                                                               |
-| -------------------------- | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| macOS 10.14 or later       | Docker Desktop                                                 | Set the Docker virtual machine (VM) to use a minimum of 2 virtual CPUs (vCPUs) and 8 GB of initial memory. Otherwise, the installation may fail. For more information, please refer to the [Docker Desktop installation guide for Mac](https://docs.docker.com/desktop/mac/install/).                                                     |
+| Operating System           | Software                                                     | Explanation                                                                                                                                                                                                                                                                                                                               |
+| -------------------------- | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| macOS 10.14 or later       | Docker Desktop                                               | Set the Docker virtual machine (VM) to use a minimum of 2 virtual CPUs (vCPUs) and 8 GB of initial memory. Otherwise, the installation may fail. For more information, please refer to the [Docker Desktop installation guide for Mac](https://docs.docker.com/desktop/mac/install/).                                                     |
 | Linux platforms            | <p>Docker 19.03 or later<br>Docker Compose 1.28 or later</p> | Please refer to the [Docker installation guide](https://docs.docker.com/engine/install/) and [the Docker Compose installation guide](https://docs.docker.com/compose/install/) for more information on how to install Docker and Docker Compose, respectively.                                                                            |
-| Windows with WSL 2 enabled | Docker Desktop                                                 | We recommend storing the source code and other data that is bound to Linux containers in the Linux file system rather than the Windows file system. For more information, please refer to the [Docker Desktop installation guide for using the WSL 2 backend on Windows.](https://docs.docker.com/desktop/windows/install/#wsl-2-backend) |
+| Windows with WSL 2 enabled | Docker Desktop                                               | We recommend storing the source code and other data that is bound to Linux containers in the Linux file system rather than the Windows file system. For more information, please refer to the [Docker Desktop installation guide for using the WSL 2 backend on Windows.](https://docs.docker.com/desktop/windows/install/#wsl-2-backend) |
 
 > \[!IMPORTANT]
 >
@@ -26,29 +27,27 @@ git clone https://github.com/langgenius/dify.git
 
 ### Starting Dify
 
-1. Navigate to the Docker directory in the Dify source code
-
-   ```bash
-   cd dify/docker
-   ```
-
-2. Copy the environment configuration file
+1.  Navigate to the Docker directory in the Dify source code
 
     ```bash
-   cp .env.example .env
-   ```
+    cd dify/docker
+    ```
+2.  Copy the environment configuration file
 
-3. Start the Docker containers
+    ```bash
+    cp .env.example .env
+    ```
+3.  Start the Docker containers
 
     Choose the appropriate command to start the containers based on the Docker Compose version on your system. You can use the `$ docker compose version` command to check the version, and refer to the [Docker documentation](https://docs.docker.com/compose/install/) for more information:
 
-    - If you have Docker Compose V2, use the following command:
-  
+    * If you have Docker Compose V2, use the following command:
+
     ```bash
     docker compose up -d
     ```
 
-    - If you have Docker Compose V1, use the following command:
+    * If you have Docker Compose V1, use the following command:
 
     ```bash
     docker-compose up -d
@@ -143,3 +142,7 @@ docker compose up -d
 ```
 
 The full set of annotated environment variables along can be found under docker/.env.example.
+
+### Read More
+
+If you have any questions, please refer to [FAQs](faqs.md).
