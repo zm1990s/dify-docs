@@ -3,14 +3,15 @@
 ### 前提条件
 
 > 安装 Dify 之前, 请确保你的机器已满足最低安装要求：
-> - CPU >= 2 Core
-> - RAM >= 4 GiB
+>
+> * CPU >= 2 Core
+> * RAM >= 4 GiB
 
-| 操作系统                       | 软件                                                             | 描述                                                                                                                                                                                   |
-| -------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| macOS 10.14 or later       | Docker Desktop                                                 | 为 Docker 虚拟机（VM）至少分配 2 个虚拟 CPU(vCPU) 和 8GB 初始内存，否则安装可能会失败。有关更多信息，请参考 [《在 Mac 内安装 Docker 桌面端》](https://docs.docker.com/desktop/install/mac-install/)。                                 |
+| 操作系统                       | 软件                                                           | 描述                                                                                                                                                                                   |
+| -------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| macOS 10.14 or later       | Docker Desktop                                               | 为 Docker 虚拟机（VM）至少分配 2 个虚拟 CPU(vCPU) 和 8GB 初始内存，否则安装可能会失败。有关更多信息，请参考 [《在 Mac 内安装 Docker 桌面端》](https://docs.docker.com/desktop/install/mac-install/)。                                 |
 | Linux platforms            | <p>Docker 19.03 or later<br>Docker Compose 1.28 or later</p> | 请参阅[安装 Docker](https://docs.docker.com/engine/install/) 和[安装 Docker Compose](https://docs.docker.com/compose/install/) 以获取更多信息。                                                      |
-| Windows with WSL 2 enabled | <p>Docker Desktop<br></p>                                      | 我们建议将源代码和其他数据绑定到 Linux 容器中时，将其存储在 Linux 文件系统中，而不是 Windows 文件系统中。有关更多信息，请参阅[使用 WSL 2 后端在 Windows 上安装 Docker Desktop](https://docs.docker.com/desktop/windows/install/#wsl-2-backend)。 |
+| Windows with WSL 2 enabled | <p>Docker Desktop<br></p>                                    | 我们建议将源代码和其他数据绑定到 Linux 容器中时，将其存储在 Linux 文件系统中，而不是 Windows 文件系统中。有关更多信息，请参阅[使用 WSL 2 后端在 Windows 上安装 Docker Desktop](https://docs.docker.com/desktop/windows/install/#wsl-2-backend)。 |
 
 ### 克隆 Dify 代码仓库
 
@@ -22,29 +23,27 @@ git clone https://github.com/langgenius/dify.git
 
 ### 启动 Dify
 
-1. 进入 Dify 源代码的 Docker 目录
-
-   ```bash
-   cd dify/docker
-   ```
-
-2. 复制环境配置文件
+1.  进入 Dify 源代码的 Docker 目录
 
     ```bash
-   cp .env.example .env
-   ```
+    cd dify/docker
+    ```
+2.  复制环境配置文件
 
-3. 启动 Docker 容器
+    ```bash
+    cp .env.example .env
+    ```
+3.  启动 Docker 容器
 
     根据你系统上的 Docker Compose 版本，选择合适的命令来启动容器。你可以通过 `$ docker compose version` 命令检查版本，详细说明请参考 [Docker 官方文档](https://docs.docker.com/compose/#compose-v2-and-the-new-docker-compose-command)：
 
-    - 如果版本是 Docker Compose V2，使用以下命令：
-  
+    * 如果版本是 Docker Compose V2，使用以下命令：
+
     ```bash
     docker compose up -d
     ```
 
-    - 如果版本是 Docker Compose V1，使用以下命令：
+    * 如果版本是 Docker Compose V1，使用以下命令：
 
     ```bash
     docker-compose up -d
@@ -140,3 +139,7 @@ docker compose up -d
 ```
 
 完整的环境变量集合可以在 `docker/.env.example` 中找到。
+
+### 更多
+
+如果有疑问，请前往[常见问题](faq.md)帮助。

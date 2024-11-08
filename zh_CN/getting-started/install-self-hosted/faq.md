@@ -53,4 +53,17 @@ Password confirm: newpassword4567
 Password reset successfully.
 ```
 
-查看更多部署相关[常见问题](https://docs.dify.ai/getting-started/install-self-hosted/faqs)。
+### 5. 如何修改页面端口
+
+如果你使用 Docker Compose 部署，你可以通过修改`.env`配置来自定义 Dify 的访问端口。
+
+你需要修改 Nginx 相关配置：
+
+<pre><code><strong>NGINX_PORT=80
+</strong>NGINX_SSL_PORT=443
+
+
+EXPOSE_NGINX_PORT=80
+EXPOSE_NGINX_SSL_PORT=443
+</code></pre>
+
