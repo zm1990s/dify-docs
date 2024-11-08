@@ -59,10 +59,7 @@ Password reset successfully.
 
 你需要修改 Nginx 相关配置：
 
-```json
-NGINX_PORT=80
-NGINX_SSL_PORT=443
-
+```docker
 EXPOSE_NGINX_PORT=80
 EXPOSE_NGINX_SSL_PORT=443
 ```
