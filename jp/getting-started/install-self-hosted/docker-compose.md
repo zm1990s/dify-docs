@@ -1,16 +1,17 @@
-# Docker Compose 配備
+# Docker Compose デプロイ
 
 ### 前提条件
 
 > Dify インストール前に, マシンが最小インストール要件を満たしていることを確認してください：
-> - CPU >= 2 Core
-> - RAM >= 4 GiB
+>
+> * CPU >= 2 Core
+> * RAM >= 4 GiB
 
-| オペレーティング·システム      | ソフトウェア                                                             | 説明                                                                                                                                                                                     |
-| -------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| macOS 10.14またはそれ以降    | Docker Desktop                                                 | Docker仮想マシン (VM) を少なくとも2つの仮想CPU (vCPU) と8 GBの初期メモリを使用するように設定してください。そうしないと、インストールが失敗する可能性があります。詳細については[MacにDocker Desktopをインストール](https://docs.docker.com/desktop/mac/install/)を参照してください。 |
-| Linuxプラットフォーム       | <p>Docker 19.03以降<br>Docker Compose 1.28以降</p>          | 詳細については[Dockerのインストール](https://docs.docker.com/engine/install/)および[Docker Composeのインストール](https://docs.docker.com/compose/install/)を参照してください。 |
-| WSL 2を有効にしたWindows | <p>Docker Desktop<br></p>                                      | ソースコードやその他のデータをLinuxコンテナにバインドする際には、それらをWindowsファイルシステムではなくLinuxファイルシステムに保存することをお勧めします。詳細については[WSL 2バックエンドを使用してWindowsにDocker Desktopをインストール](https://docs.docker.com/desktop/windows/install/#wsl-2-backend)を参照してください。 |
+| オペレーティング·システム      | ソフトウェア                                         | 説明                                                                                                                                                                                                                     |
+| ------------------ | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| macOS 10.14またはそれ以降 | Docker Desktop                                 | Docker仮想マシン (VM) を少なくとも2つの仮想CPU (vCPU) と8 GBの初期メモリを使用するように設定してください。そうしないと、インストールが失敗する可能性があります。詳細については[MacにDocker Desktopをインストール](https://docs.docker.com/desktop/mac/install/)を参照してください。                               |
+| Linuxプラットフォーム      | <p>Docker 19.03以降<br>Docker Compose 1.28以降</p> | 詳細については[Dockerのインストール](https://docs.docker.com/engine/install/)および[Docker Composeのインストール](https://docs.docker.com/compose/install/)を参照してください。                                                                          |
+| WSL 2を有効にしたWindows | <p>Docker Desktop<br></p>                      | ソースコードやその他のデータをLinuxコンテナにバインドする際には、それらをWindowsファイルシステムではなくLinuxファイルシステムに保存することをお勧めします。詳細については[WSL 2バックエンドを使用してWindowsにDocker Desktopをインストール](https://docs.docker.com/desktop/windows/install/#wsl-2-backend)を参照してください。 |
 
 ### Difyのクローン
 
@@ -22,29 +23,27 @@ git clone https://github.com/langgenius/dify.git
 
 ### Difyの起動
 
-1. difyソースコードのdockerディレクトリに移動し、次のコマンドを実行してdifyを起動する：
+1.  difyソースコードのdockerディレクトリに移動し、次のコマンドを実行してdifyを起動する：
 
     ```bash
     cd dify/docker
     ```
-
-2. 環境配置ファイルをコピーする
+2.  環境配置ファイルをコピーする
 
     ```bash
     cp .env.example .env
     ```
-
-3. Docker コンテナを起動する
+3.  Docker コンテナを起動する
 
     システムにインストールしたDocker Composeのバージョンをベースに，相応しい命令を使ってコンテナを起動します。 `$ docker compose version`を通してdockerのバージョンをチェックできます，詳しくは [Docker ドキュメント](https://docs.docker.com/compose/#compose-v2-and-the-new-docker-compose-command)を参考してください：
 
-    - Docker Compose V2を使用する場合，以下の命令を入力する：
-  
+    * Docker Compose V2を使用する場合，以下の命令を入力する：
+
     ```bash
     docker compose up -d
     ```
 
-    - Docker Compose V1を使用する場合，以下の命令を入力する：
+    * Docker Compose V1を使用する場合，以下の命令を入力する：
 
     ```bash
     docker-compose up -d
@@ -103,7 +102,6 @@ docker compose up -d
 #### 環境変数設定の同期 (重要！)
 
 * `.env.example` ファイルが更新された場合は、必ずローカルの `.env` ファイルをそれに応じて修正してください。
-
 * `.env` ファイル内のすべての設定項目を確認し、実際の運用環境に合わせて修正してください。`.env.example` から `.env` ファイルに新しい変数を追加したり、変更された値を更新する必要があるかもしれません。
 
 ### Difyへのアクセス
@@ -138,3 +136,7 @@ docker compose up -d
 ```
 
 すべての環境変数は `docker/.env.example` にあります。
+
+### もっと&#x20;
+
+もし疑問がある、[よくある質問](faq.md)をご覧ください。

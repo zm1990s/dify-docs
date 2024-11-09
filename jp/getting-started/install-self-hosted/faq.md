@@ -53,4 +53,14 @@ Password confirm: newpassword4567
 Password reset successfully.
 ```
 
-コミュニティ版 [よくある質問](https://docs.dify.ai/ja-jp/getting-started/install-self-hosted/faq)。
+### 5. ポートの変更方法
+
+Docker Compose を使用してデプロイする場合、`.env` 設定を変更することで Dify のアクセスポートをカスタマイズできます。
+
+Nginx 関連の設定を変更する必要があります：
+
+```
+EXPOSE_NGINX_PORT=80
+EXPOSE_NGINX_SSL_PORT=443
+```
+
