@@ -8,19 +8,19 @@
 
 #### CONSOLE\_WEB\_URL
 
-控制台 web ** 前端 ** URL，用于拼接部分前端地址，以及 CORS 配置使用，传空则为同域。范例：`https://console.dify.ai`
+控制台 web **前端** URL，用于拼接部分前端地址，以及 CORS 配置使用，传空则为同域。范例：`https://console.dify.ai`
 
 #### SERVICE\_API\_URL
 
-Service API URL，用于 ** 给前端 ** 展示 Service API Base URL，传空则为同域。范例：`https://api.dify.ai`
+Service API URL，用于 **前端** 展示 Service API Base URL，传空则为同域。范例：`https://api.dify.ai`
 
 #### APP\_API\_URL
 
-WebApp API 后端 URL，用于声明 ** 前端 ** API 后端地址，传空则为同域。范例：`https://app.dify.ai`
+WebApp API 后端 URL，用于声明 **前端** API 后端地址，传空则为同域。范例：`https://app.dify.ai`
 
 #### APP\_WEB\_URL
 
-WebApp URL，用于预览文件、** 给前端 ** 展示下载用的 URL，以及作为多模型输入接口，传空则为同域。范例：`https://udify.app/`
+WebApp URL，用于预览文件、**前端** 展示下载用的 URL，以及作为多模型输入接口，传空则为同域。范例：`https://udify.app/`
 
 #### FILES\_URL
 
@@ -32,7 +32,7 @@ WebApp URL，用于预览文件、** 给前端 ** 展示下载用的 URL，以�
 
 #### MODE
 
-启动模式，仅使用 docker 启动时可用，源码启动无效。
+启动模式，仅使用 Docker 启动时可用，源码启动无效。
 
 *   api
 
@@ -70,7 +70,7 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 
 #### MIGRATION\_ENABLED
 
-当设置为 true 时，会在容器启动时自动执行数据库迁移，仅使用 docker 启动时可用，源码启动无效。源码启动需要在 api 目录手动执行 `flask db upgrade`。
+当设置为 true 时，会在容器启动时自动执行数据库迁移，仅使用 Docker 启动时可用，源码启动无效。源码启动需要在 api 目录手动执行 `flask db upgrade`。
 
 #### CHECK\_UPDATE\_URL
 
@@ -90,7 +90,7 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 
 #### 容器启动相关配置
 
-仅在使用 docker 镜像或者 docker-compose 启动时有效。
+仅在使用 Docker 镜像或者 Docker-compose 启动时有效。
 
 *   DIFY\_BIND\_ADDRESS
 
@@ -115,7 +115,7 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
     Celery worker 数量，默认为 1，按需设置。
 *   HTTP\_PROXY
 
-    HTTP 代理地址，用于解决国内无法访问 OpenAI、HuggingFace 的问题。注意，若代理部署在宿主机 (例如 `http://127.0.0.1:7890`)，此处代理地址应当和接入本地模型时一样，使用 docker 容器内部的宿主机地址（例如 `http://192.168.1.100:7890` 或 `http://172.17.0.1:7890`）。
+    HTTP 代理地址，用于解决国内无法访问 OpenAI、HuggingFace 的问题。注意，若代理部署在宿主机 (例如 `http://127.0.0.1:7890`)，此处代理地址应当和接入本地模型时一样，使用 Docker 容器内部的宿主机地址（例如 `http://192.168.1.100:7890` 或 `http://172.17.0.1:7890`）。
 *   HTTPS\_PROXY
 
     HTTPS 代理地址，用于解决国内无法访问 OpenAI、HuggingFace 的问题。同上。
@@ -224,7 +224,7 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
         Volcengine TOS 存储，若选择此项则需要设置下方 VOLCENGINE\_TOS\_ 开头的配置。
 *   STORAGE\_LOCAL\_PATH
 
-    默认为 storage，即存储在当前目录的 storage 目录下。若使用 docker 或 docker-compose 进行部署，请务必将两个容器中 `/app/api/storage` 目录挂载到同一个本机目录，否则可能会出现文件找不到的报错。
+    默认为 storage，即存储在当前目录的 storage 目录下。若使用 Docker 或 Docker-compose 进行部署，请务必将两个容器中 `/app/api/storage` 目录挂载到同一个本机目录，否则可能会出现文件找不到的报错。
 * S3\_ENDPOINT：S3 端点地址
 * S3\_BUCKET\_NAME：S3 桶名称
 * S3\_ACCESS\_KEY：S3 Access Key
@@ -255,7 +255,7 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 
 *   VECTOR\_STORE
 
-    ** 可使用的枚举类型包括：**
+    **可使用的枚举类型包括：**
 
     * `weaviate`
     * `qdrant`
@@ -399,7 +399,7 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
     每次上传文件数上限，默认 5 个。
 *   ETL\_TYPE
 
-    ** 可使用的枚举类型包括：**
+    **可使用的枚举类型包括：**
 
     *   dify
 
@@ -473,37 +473,37 @@ Notion 集成配置，变量可通过申请 Notion integration 获取：[https:/
 
 * POSITION_TOOL_PINS
 
-    将列出的工具固定在列表顶部，确保它们在界面中置顶出现。（使用逗号分隔的值，** 中间不留空格 **。）
+    将列出的工具固定在列表顶部，确保它们在界面中置顶出现。（使用逗号分隔的值，**中间不留空格**。）
 
     示例: `POSITION_TOOL_PINS=bing,google`
 
 * POSITION_TOOL_INCLUDES
 
-    指定要在应用中包含的工具。只有此处列出的工具才可用。如果未设置，则除非在 POSITION_TOOL_EXCLUDES 中指定，否则所有工具都会包含在内。（使用逗号分隔的值，** 中间不留空格 **。）
+    指定要在应用中包含的工具。只有此处列出的工具才可用。如果未设置，则除非在 POSITION_TOOL_EXCLUDES 中指定，否则所有工具都会包含在内。（使用逗号分隔的值，**中间不留空格**。）
 
     示例: `POSITION_TOOL_INCLUDES=bing,google`
 
 * POSITION_TOOL_EXCLUDES
 
-    排除在应用中显示或使用的特定工具。此处列出的工具将从可用选项中省略，除非它们被固定。（使用逗号分隔的值，** 中间不留空格 **。）
+    排除在应用中显示或使用的特定工具。此处列出的工具将从可用选项中省略，除非它们被固定。（使用逗号分隔的值，**中间不留空格**。）
 
     示例: `POSITION_TOOL_EXCLUDES=yahoo,wolframalpha`
 
 * POSITION_PROVIDER_PINS
 
-    将列出的模型供应商固定在列表顶部，确保它们在界面中置顶出现。（使用逗号分隔的值，** 中间不留空格 **。）
+    将列出的模型供应商固定在列表顶部，确保它们在界面中置顶出现。（使用逗号分隔的值，**中间不留空格**。）
 
     示例: `POSITION_PROVIDER_PINS=openai,openllm`
 
 * POSITION_PROVIDER_INCLUDES
 
-    指定要在应用中包含的模型供应商。只有此处列出的供应商才可用。如果未设置，则除非在 POSITION_PROVIDER_EXCLUDES 中指定，否则所有供应商都会包含在内。（使用逗号分隔的值，** 中间不留空格 **。）
+    指定要在应用中包含的模型供应商。只有此处列出的供应商才可用。如果未设置，则除非在 POSITION_PROVIDER_EXCLUDES 中指定，否则所有供应商都会包含在内。（使用逗号分隔的值，**中间不留空格**。）
 
     示例: `POSITION_PROVIDER_INCLUDES=cohere,upstage`
 
 * POSITION_PROVIDER_EXCLUDES
 
-    排除在应用中显示特定模型供应商。此处列出的供应商将从可用选项中移除，除非它们被置顶。（使用逗号分隔的值，** 中间不留空格 **。）
+    排除在应用中显示特定模型供应商。此处列出的供应商将从可用选项中移除，除非它们被置顶。（使用逗号分隔的值，**中间不留空格**。）
 
     示例: `POSITION_PROVIDER_EXCLUDES=openrouter,ollama`
 
@@ -533,7 +533,7 @@ Sentry DSN 地址，默认为空，为空时则所有监控信息均不上报 Se
 
 > ⚠️ 修改于 0.3.8，于 0.4.9 废弃，替代为 `SERVICE_API_URL`。
 
-API Url，用于 ** 给前端 ** 展示 Service API Base Url，传空则为同域。范例：`https://api.dify.ai`
+API Url，用于给前端展示 Service API Base Url，传空则为同域。范例：`https://api.dify.ai`
 
 #### APP\_URL
 
