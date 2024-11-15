@@ -35,7 +35,7 @@ Dify 支持接入 Ollama 部署的大型语言模型推理和 embedding 能力�
    
      此处需填写可访问到的 Ollama 服务地址。
    
-     若 Dify 为 docker 部署，建议填写局域网 IP 地址，如：`http://192.168.1.100:11434` 或 docker 宿主机 IP 地址，如：`http://172.17.0.1:11434`。
+     若 Dify 为 Docker 部署，建议填写局域网 IP 地址，例如：`http://192.168.1.100:11434` 或 Docker 容器的内部 IP 地址，例如：`http://host.docker.internal:11434`。
    
      若为本地源码部署，可填写 `http://localhost:11434`。
 
