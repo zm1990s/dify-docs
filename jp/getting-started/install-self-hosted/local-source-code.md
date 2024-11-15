@@ -20,7 +20,7 @@ Dify コードをクローン：
 git clone https://github.com/langgenius/dify.git
 ```
 
-ビジネスサービスを有効にする前に、PostgresSQL / Redis / Weaviate（ローカルにない場合）をデプロイする必要があります。以下のコマンドで起動できます：
+ビジネスサービスを有効にする前に、PostgreSQL / Redis / Weaviate（ローカルにない場合）をデプロイする必要があります。以下のコマンドで起動できます：
 
 ```Bash
 cd docker

@@ -20,7 +20,7 @@
 git clone https://github.com/langgenius/dify.git
 ```
 
-Before enabling business services, we need to first deploy PostgresSQL / Redis / Weaviate (if not locally available). We can start them with the following commands:
+Before enabling business services, we need to first deploy PostgreSQL / Redis / Weaviate (if not locally available). We can start them with the following commands:
 
 ```Bash
 cd docker

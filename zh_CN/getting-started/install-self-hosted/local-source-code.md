@@ -20,7 +20,7 @@ Clone Dify 代码：
 git clone https://github.com/langgenius/dify.git
 ```
 
-在启用业务服务之前，我们需要先部署 PostgresSQL / Redis / Weaviate（如果本地没有的话），可以通过以下命令启动：
+在启用业务服务之前，我们需要先部署 PostgreSQL / Redis / Weaviate（如果本地没有的话），可以通过以下命令启动：
 
 ```Bash
 cd docker
