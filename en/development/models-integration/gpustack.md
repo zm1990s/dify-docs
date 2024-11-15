@@ -26,9 +26,9 @@ Invoke-Expression (Invoke-WebRequest -Uri "https://get.gpustack.ai" -UseBasicPar
 
 Then you can follow the printed instructions to access the GPUStack UI.
 
-## Deploying Models
+## Deploying LLM
 
-We will use a large language model as an example:
+Using a LLM hosted on GPUStack as an example:
 
 1. In GPUStack UI, navigate to the "Models" page and click on "Deploy Model", choose `Hugging Face` from the dropdown.
 
@@ -62,4 +62,4 @@ We will use a large language model as an example:
 
 ![add-gpustack-llm](../../.gitbook/assets/add-gpustack-llm.png)
 
-For more information about GPUStack, please refer to: https://github.com/gpustack/gpustack
+For more information about GPUStack, please refer to [Github Repo](https://github.com/gpustack/gpustack).
