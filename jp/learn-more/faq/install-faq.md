@@ -73,7 +73,7 @@ FileNotFoundError: File not found
 
 ### 6. Notionを使用してインポート時に環境変数を設定する方法は？
 
-[**Notion 統合構成アドレス**](https://www.notion.so/my-integrations)\*\*。\*\*プライベート展開を行う場合は、次の構成を設定してください：
+[**Notion 統合構成アドレス**](https://www.notion.so/my-integrations)**。**プライベート展開を行う場合は、次の構成を設定してください：
 
 1. **`NOTION_INTEGRATION_TYPE`** ：この値は（**public/internal**）に設定する必要があります。Notion の OAuth リダイレクトアドレスは https のみをサポートするため、ローカル展開には Notion の内部統合を使用してください。
 2. **`NOTION_CLIENT_SECRET`** ： Notion OAuth クライアントシークレット（パブリック統合タイプ用）。
