@@ -36,18 +36,18 @@ docker compose -f docker-compose.middleware.yaml up -d
 
 #### 基本環境インストール
 
-サーバーの起動にはPython 3.10.xが必要です。Python環境の迅速なインストールには[pyenv](https://github.com/pyenv/pyenv)を使用することをお勧めします。
+サーバーの起動にはPython 3.11.xが必要です。Python環境の迅速なインストールには[pyenv](https://github.com/pyenv/pyenv)を使用することをお勧めします。
 
 追加のPythonバージョンをインストールするには、pyenv installを使用します。
 
 ```Bash
-pyenv install 3.10
+pyenv install 3.11
 ```
 
-"3.10" の Python 環境に切り替えるには、次のコマンドを使用します。
+"3.11" の Python 環境に切り替えるには、次のコマンドを使用します。
 
 ```Bash
-pyenv global 3.10
+pyenv global 3.11
 ```
 
 
@@ -73,7 +73,7 @@ pyenv global 3.10
     Dify APIサービスは依存関係を管理するために[Poetry](https://python-poetry.org/docs/)を使用します。環境を有効にするには、`poetry shell`を実行できます。
 
     ```
-    poetry env use 3.10
+    poetry env use 3.11
     poetry install
     ```
 5.  データベース移行を実行
