@@ -16,9 +16,12 @@
 
 <figure><img src="../../.gitbook/assets/team-members-management-01.png" alt=""><figcaption><p>チームメンバーへの権限の割り当て</p></figcaption></figure>
 
-追加されたメンバーは、URLリンクまたはメール招待を通じて登録を完了することができます。
+> コミュニティエディションでメール機能を有効にするには、チームオーナーがシステムの[環境変数](../../getting-started/install-self-hosted/environments)を設定してメールサービスをオンにする必要があります。
 
-> コミュニティエディションでは、メール機能を有効にするために、チームの所有者がシステムの[環境変数](https://docs.dify.ai/getting-started/install-self-hosted/environments)を介してメールサービスを構成し、アクティブ化する必要があります。
+- Difyに未登録の招待メンバーには、招待メールが送信されます。メール内のリンクをクリックすることで、登録を完了できます。
+- すでにDifyに登録済みの招待メンバーには、権限が自動で付与され、**招待メールは送信されません**。招待されたメンバーは、右上のメニューから新しいワークスペースに切り替えることができます。
+
+![](../../../img/switch-workspace.png)
 
 ### メンバーの権限
 
