@@ -2,11 +2,25 @@
 
 ### Definition
 
-Execute multiple steps on an array until all results are output.
+Sequentially performs the same operations on array elements until all results are outputted, functioning as a task batch processor. Iteration nodes typically work in conjunction with array variables.
 
-The iteration step performs the same steps on each item in a list. To use iteration, ensure that the input value is formatted as a list object. The iteration node allows AI workflows to handle more complex processing logic. It is a user-friendly version of the loop node, making some compromises in customization to allow non-technical users to quickly get started.
+For example, when processing long text translations, inputting all content directly into an LLM node may reach the single conversation limit. To address the issue, upstream nodes first split the long text into multiple chunks, then use iteration nodes to perform batch translations, thus avoiding the message limit of a single LLM conversation.
 
 ***
+
+### Functional Description
+
+Using iteration nodes requires input values to be formatted as list objects. The node sequentially processes all elements in the array variable from the iteration start node, applying identical processing steps to each element. Each processing cycle is called an iteration, culminating in the final output.
+
+An iteration node consists of three core components: **Input Variables**, **Iteration Workflow**, and **Output Variables**.
+
+**Input Variables:** Accepts only Array type data. For more details about array variables, take refer to [Extended Reading: What is an Arrays Variable?](broken-reference).
+
+**Iteration Workflow:** Supports multiple workflow nodes to orchestrate task sequences within the iteration node.
+
+**Output Variables:** Outputs only array variables (`Array[List]`). For other output formats, take refer to [Extended Reading: Array to Text Conversion](iteration.md#how-to-convert-an-array-to-text).
+
+<figure><img src="broken-reference" alt=""><figcaption><p>Iteration Node Functional Description</p></figcaption></figure>
 
 ### Scenarios
 
@@ -54,7 +68,7 @@ Built-in variables for iteration: `items[object]` and `index[number]`.
 `index[number]` represents the current iteration round;
 {% endhint %}
 
-1. Configure a **Direct Reply Node** inside the iteration node to achieve streaming output after each iteration.
+5. Configure a **Direct Reply Node** inside the iteration node to achieve streaming output after each iteration.
 
 <figure><img src="../../../.gitbook/assets/workflow-configure-anwer-node.png" alt="" width="375"><figcaption><p>Configure Answer Node</p></figcaption></figure>
 
@@ -73,66 +87,74 @@ Built-in variables for iteration: `items[object]` and `index[number]`.
 * Use a **Template Conversion** Node to convert the string array output from the iteration node back to a string.
 * Finally, add a **Direct Reply Node** to directly output the converted string.
 
-### What is Array Content
+***
 
-A list is a specific data type where elements are separated by commas and enclosed in `[` and `]`. For example:
+### Advanced Feature
 
-**Numeric:**
+#### Parallel Mode
 
-```
-[0,1,2,3,4,5]
-```
+The iteration node supports parallel processing, improving execution efficiency when enabled.
 
-**String:**
+<figure><img src="broken-reference" alt=""><figcaption><p>Enable parallel mode</p></figcaption></figure>
 
-```
-["Monday", "Tuesday", "Wednesday", "Thursday"]
-```
+Below illustrates the comparison between parallel and sequential execution in the iteration node.
 
-**JSON Object:**
+<figure><img src="broken-reference" alt=""><figcaption><p>Sequential and Parallel Processing Flow Diagram</p></figcaption></figure>
 
-```
-[
-    {
-        "name": "Alice",
-        "age": 30,
-        "email": "alice@example.com"
-    },
-    {
-        "name": "Bob",
-        "age": 25,
-        "email": "bob@example.com"
-    },
-    {
-        "name": "Charlie",
-        "age": 35,
-        "email": "charlie@example.com"
-    }
-]
-```
+Parallel mode supports up to 10 concurrent iterations. When processing more than 10 tasks, the first 10 elements execute simultaneously, with remaining tasks processed after the completion of the initial batch.
+
+{% hint style="info" %}
+Avoid placing Direct Answer, Variable Assignment, or Tool nodes within the iteration node to prevent potential errors.
+{% endhint %}
+
+* **Error response method**
+
+Iteration nodes process multiple tasks and may encounter errors during element processing. To prevent a single error from interrupting all tasks, configure the **Error Response Method**:
+
+* **Terminated**: Terminates the iteration node and outputs error messages when an exception is detected.
+* **Continue on error**: Ignores error messages and continues processing remaining elements. The output contains successful results with null values for errors.
+* **Remove abnormal output**: Ignores error messages and continues processing remaining elements. The output contains only successful results.
+
+Input and output variables maintain a one-to-one correspondence. For example:
+
+* Input: \[1, 2, 3]
+* Output: \[result-1, result-2, result-3]
+
+Error handling examples:
+
+* With **Continue on error**: \[result-1, null, result-3]
+* With **Remove abnormal output**: \[result-1, result-3]
 
 ***
 
-### Nodes Supporting Array Return
+### Reference
 
-* Code Node
-* Parameter Extraction
-* Knowledge Base Retrieval
-* Iteration
-* Tools
-* HTTP Request
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 
-### How to Obtain Array-Formatted Content
+***
 
-**Return Using the CODE Node**
+#### How to Obtain Array-Formatted Content
+
+Array variables can be generated via the following nodes as iteration node inputs:
+
+* [Code Node](code.md)
 
 <figure><img src="../../../.gitbook/assets/workflow-extract-subtitles-and-outlines.png" alt="" width="375"><figcaption><p>Parameter Extraction</p></figcaption></figure>
 
-**Return Using the Parameter Extraction Node**
+* [Parameter Extraction](parameter-extractor.md)
 
 <figure><img src="../../../.gitbook/assets/workflow-parameter-extraction-node.png" alt="" width="375"><figcaption><p>Parameter Extraction</p></figcaption></figure>
 
-### How to Convert an Array to Text
+* [Knowledge Base Retrieval](knowledge-retrieval.md)
+* [Iteration](iteration.md)
+* [Tools](tools.md)
+* [HTTP Request](http-request.md)
+
+***
+
+#### How to Convert an Array to Text
 
 The output variable of the iteration node is in array format and cannot be directly output. You can use a simple step to convert the array back to text.
 

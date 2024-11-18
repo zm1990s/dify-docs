@@ -127,6 +127,7 @@
   * [How to Build an AI Image Generation App](workshop/basic/build-ai-image-generation-app.md)
 * [Intermediate](workshop/intermediate/README.md)
   * [Build An Article Reader Using File Upload](workshop/intermediate/article-reader.md)
+  * [Building a Smart Customer Service Bot Using a Knowledge Base](workshop/intermediate/customer-service-bot.md)
   * [Generating analysis of Twitter account using Chatflow Agent](workshop/intermediate/twitter-chatflow.md)
 
 ## Community
