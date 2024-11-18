@@ -9,6 +9,7 @@
 * [コミュニティ版](getting-started/install-self-hosted/README.md)
   * [Docker Compose デプロイ](getting-started/install-self-hosted/docker-compose.md)
   * [ローカルソースコードで起動](getting-started/install-self-hosted/local-source-code.md)
+  * [aaPanelでのデプロイ方法](getting-started/install-self-hosted/bt-panel.md)
   * [フロントエンドDockerコンテナを単独起動](getting-started/install-self-hosted/start-the-frontend-docker-container.md)
   * [環境変数の説明](getting-started/install-self-hosted/environments.md)
   * [よくある質問](getting-started/install-self-hosted/faq.md)
@@ -106,7 +107,6 @@
     * [LangFuseを統合](guides/monitoring/integrate-external-ops-tools/integrate-langfuse.md)
 * [拡張](guides/extension/README.md)
   * [API 拡張](guides/extension/api-based-extension/README.md)
-    * [外部データツール](guides/extension/api-based-extension/dtatsru.md)
     * [Cloudflare Workers を使用した API ツールのデプロイ](guides/extension/api-based-extension/cloudflare-workers.md)
     * [コンテンツモデレーション](guides/extension/api-based-extension/moderation.md)
   * [コード拡張](guides/extension/code-based-extension/README.md)
@@ -149,6 +149,7 @@
   * [LocalAIでデプロイしたローカルモデルを統合](development/models-integration/localai.md)
   * [Ollamaでデプロイしたローカルモデルを統合](development/models-integration/ollama.md)
   * [LiteLLM Proxyを使用してモデルを統合する](development/models-integration/litellm.md)
+  * [GPUStackとの統合によるローカルモデルのデプロイ](development/models-integration/gpustack.md)
 
 ## もっと読む <a href="#learn-more" id="learn-more"></a>
 

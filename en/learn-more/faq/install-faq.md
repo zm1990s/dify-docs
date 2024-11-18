@@ -246,7 +246,7 @@ The API service port is consistent with the one used by the Dify platform. You c
 
 ### 22. How to Migrate from Local to Cloud Storage?
 
-To migrate files from local storage to cloud storage (e.g., AWS S3), you'll need to transfer data from the 'upload_files' and 'privkeys' folders. Follow these steps:
+To migrate files from local storage to cloud storage (e.g., Alibaba Cloud OSS), you'll need to transfer data from the 'upload_files' and 'privkeys' folders. Follow these steps:
 
 1. Configure Storage Settings
 

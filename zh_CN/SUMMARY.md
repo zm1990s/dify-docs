@@ -106,7 +106,6 @@
   * [数据分析](guides/monitoring/analysis.md)
 * [扩展](guides/extension/README.md)
   * [API 扩展](guides/extension/api-based-extension/README.md)
-    * [外部数据工具](guides/extension/api-based-extension/external-data-tool.md)
     * [使用 Cloudflare Workers 部署 API Tools](guides/extension/api-based-extension/cloudflare-workers.md)
     * [敏感内容审查](guides/extension/api-based-extension/moderation.md)
   * [代码扩展](guides/extension/code-based-extension/README.md)
@@ -150,6 +149,7 @@
   * [接入 LocalAI 部署的本地模型](development/models-integration/localai.md)
   * [接入 Ollama 部署的本地模型](development/models-integration/ollama.md)
   * [接入 LiteLLM 代理的模型](development/models-integration/litellm.md)
+  * [接入 GPUStack 进行本地模型部署](development/models-integration/gpustack.md)
 
 ## 阅读更多 <a href="#learn-more" id="learn-more"></a>
 

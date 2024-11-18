@@ -148,6 +148,7 @@
   * [Integrate Local Models Deployed by LocalAI](development/models-integration/localai.md)
   * [Integrate Local Models Deployed by Ollama](development/models-integration/ollama.md)
   * [Integrate Models on LiteLLM Proxy](development/models-integration/litellm.md)
+  * [Integrating with GPUStack for Local Model Deployment](development/models-integration/gpustack.md)
 
 ## Learn More
 

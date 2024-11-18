@@ -1,4 +1,4 @@
-# 集成 GPUStack 进行本地模型部署
+# 接入 GPUStack 进行本地模型部署
 
 [GPUStack](https://github.com/gpustack/gpustack) 是一个用于运行大语言模型（LLMs）的开源 GPU 集群管理器。
 

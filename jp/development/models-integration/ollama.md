@@ -31,7 +31,7 @@
 
         ここには、アクセス可能な Ollama サービスのアドレスを入力します。
 
-        Dify が docker でデプロイされている場合、ローカルネットワークの IP アドレス（例：`http://192.168.1.100:11434`）または docker ホストマシンの IP アドレス（例：`http://172.17.0.1:11434`）を入力することをお勧めします。
+        Dify が Docker でデプロイされている場合、ローカルネットワークの IP アドレス（例：`http://192.168.1.100:11434`）または Docker ホストマシンの IP アドレス（例：`http://172.17.0.1:11434`）を入力することをお勧めします。
 
         ローカルソースコードでデプロイされている場合は、`http://localhost:11434` を入力できます。
     * モデルタイプ：`対話`
@@ -78,7 +78,7 @@ httpconnectionpool(host=localhost, port=11434): max retries exceeded with url:/c
 2. Ollama アプリケーションを再起動します。
 3.  上記の手順が無効な場合は、次の方法を試してください：
 
-    問題は docker 内部で、docker のホストにアクセスするために `host.docker.internal` に接続する必要があるため、`localhost` を `host.docker.internal` に置き換えてサービスを設定します：
+    問題は Docker 内部で、docker のホストにアクセスするために `host.docker.internal` に接続する必要があるため、`localhost` を `host.docker.internal` に置き換えてサービスを設定します：
 
     ```bash
     http://host.docker.internal:11434

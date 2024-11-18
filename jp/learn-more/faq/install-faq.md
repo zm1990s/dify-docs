@@ -167,15 +167,15 @@ cd dify/docker
 docker compose up -d
 ```
 
-### 17. ベクトルデータベースをQdrantまたはMilvusに移行する方法
+### 17. ベクトルデータベースを他のベクトルデータベースに移行する方法
 
-Weaviate から Qdrant または Milvus にベクトルデータベースを移行する場合、データを移行する必要があります。以下はその手順です：
+Weaviate から他のベクトルデータベースにベクトルデータベースを移行する場合、データを移行する必要があります。以下はその手順です：
 
 1. ローカルソースコードから始める場合は、.envファイル内の環境変数を移行したいベクトルデータベースに変更してください。例：`VECTOR_STORE=qdrant`
 2. docker-composeから始める場合は、`docker-compose.yaml`ファイル内の環境変数を移行したいベクトルデータベースに変更し、apiとworkerの両方を修正する必要があります。例：
 
 ```
-# The type of vector store to use. Supported values are `weaviate`, `qdrant`, `milvus`.
+# The type of vector store to use. Supported values are `weaviate`, `qdrant`, `milvus`, `analyticdb``.
 VECTOR_STORE: weaviate
 ```
 
@@ -184,6 +184,12 @@ VECTOR_STORE: weaviate
 ```
 flask vdb-migrate # or docker exec -it docker-api-1 flask vdb-migrate
 ```
+
+**テスト済みのターゲット データベース:**
+
+- qdrant
+- milvus
+- analyticdb
 
 ### 18. SSRF_PROXYが必要な理由とは？
 
@@ -237,3 +243,33 @@ docker ps -q | xargs -n 1 docker inspect --format '{{ .Name }}: {{range .Network
 ### 22. APIサービスのポート番号を変更する方法
 
 API サービスのポートは、Dify プラットフォームで使用されるポートと一致します。`docker-compose.yaml` ファイルの `nginx` 設定を変更することで、実行中のポートを再指定することができます。
+
+### 23. ファイルをローカルストレージからクラウドストレージに移行する方法
+
+ファイルをローカルストレージからクラウドストレージ（例：Alibaba Cloud OSS）に移行するには、'upload_files'と'privkeys'ディレクトリからデータを移行する必要があります。以下の手順に従って操作してください：
+
+1. ストレージ設定を構成する
+
+   ローカルソースコードデプロイメントの方法：
+   - `.env`ファイルでストレージ設定を更新します
+   - `STORAGE_TYPE=aliyun-oss`を設定します
+   - Alibaba Cloud OSSの認証情報を設定します
+
+   Docker Composeデプロイメントの方法：
+   - `docker-compose.yaml`ファイルでストレージ設定を更新します
+   - `STORAGE_TYPE: aliyun-oss`を設定します
+   - Alibaba Cloud OSSの認証情報を設定します
+
+2. 移行コマンドを実行する
+
+   ローカルソースコードの場合：
+   ```bash
+   flask upload-private-key-file-to-cloud-storage
+   flask upload-local-files-to-cloud-storage
+   ```
+
+   Docker Composeの場合：
+   ```bash
+   docker exec -it docker-api-1 flask upload-private-key-file-to-cloud-storage
+   docker exec -it docker-api-1 flask upload-local-files-to-cloud-storage
+   ```
