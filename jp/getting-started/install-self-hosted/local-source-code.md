@@ -36,7 +36,7 @@ docker compose -f docker-compose.middleware.yaml up -d
 
 #### 基本環境インストール
 
-サーバーの起動にはPython 3.11.xが必要です。Python環境の迅速なインストールには[pyenv](https://github.com/pyenv/pyenv)を使用することをお勧めします。
+サーバーの起動にはPython 3.11 や 3.12 が必要です。Python環境の迅速なインストールには[pyenv](https://github.com/pyenv/pyenv)を使用することをお勧めします。
 
 追加のPythonバージョンをインストールするには、pyenv installを使用します。
 
