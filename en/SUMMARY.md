@@ -8,6 +8,7 @@
 * [Dify Community](getting-started/install-self-hosted/README.md)
   * [Deploy with Docker Compose](getting-started/install-self-hosted/docker-compose.md)
   * [Start with Local Source Code](getting-started/install-self-hosted/local-source-code.md)
+  * [Deploy with aaPanel](getting-started/install-self-hosted/bt-panel.md)
   * [Start Frontend Docker Container Separately](getting-started/install-self-hosted/start-the-frontend-docker-container.md)
   * [Environment Variables Explanation](getting-started/install-self-hosted/environments.md)
   * [FAQs](getting-started/install-self-hosted/faqs.md)
@@ -70,7 +71,6 @@
   * [Sync Data from Notion](guides/knowledge-base/sync-from-notion.md)
   * [Sync Data from Website](guides/knowledge-base/sync-from-website.md)
   * [Maintain Knowledge Base via API](guides/knowledge-base/maintain-dataset-via-api.md)
-  * [External Data Tool](guides/knowledge-base/external-data-tool.md)
   * [Connect to an External Knowledge Base](guides/knowledge-base/connect-external-knowledge.md)
   * [External Knowledge API](guides/knowledge-base/external-knowledge-api-documentation.md)
 * [Tools](guides/tools/README.md)
@@ -148,6 +148,7 @@
   * [Integrate Local Models Deployed by LocalAI](development/models-integration/localai.md)
   * [Integrate Local Models Deployed by Ollama](development/models-integration/ollama.md)
   * [Integrate Models on LiteLLM Proxy](development/models-integration/litellm.md)
+  * [Integrating with GPUStack for Local Model Deployment](development/models-integration/gpustack.md)
 
 ## Learn More
 

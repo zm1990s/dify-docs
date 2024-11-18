@@ -167,23 +167,34 @@ cd dify/docker
 docker compose up -d
 ```
 
-### 17. Migrate Vector Database to Qdrant or Milvus
+### 17. Migrate weaviate to another vector database
 
-If you want to migrate the vector database from Weaviate to Qdrant or Milvus, you need to migrate the data in the vector database. Here are the steps:
+To migrate from Weaviate to another vector database, follow these steps:
 
-1. If you start from local source code, modify the environment variables in the `.env` file to the vector database you want to migrate to. For example: `VECTOR_STORE=qdrant`
-2. If you start from docker-compose, modify the environment variables in the `docker-compose.yaml` file to the vector database you want to migrate to, both api and worker need to be modified. For example:
+1. For local source code deployment:
+   - Update the vector database setting in the `.env` file
+   - Example: Set `VECTOR_STORE=qdrant` to migrate to Qdrant
+
+2. For Docker Compose deployment:
+   - Update the vector database settings in `docker-compose.yaml`
+   - Make sure to modify both API and worker service configurations
 
 ```
-# The type of vector store to use. Supported values are `weaviate`, `qdrant`, `milvus`.
+# The type of vector store to use. Supported values are `weaviate`, `qdrant`, `milvus`, `analyticdb`.
 VECTOR_STORE: weaviate
 ```
 
-3. Execute the following command
+3. Execute the below command in your terminal or docker container
 
 ```
 flask vdb-migrate # or docker exec -it docker-api-1 flask vdb-migrate
 ```
+
+**Tested target database:**
+
+- qdrant
+- milvus
+- analyticdb
 
 ### 18. Why is SSRF_PROXY needed?
 
@@ -232,3 +243,33 @@ These IP addresses are _**examples**_, you must execute the command to get your 
 ### 21. How to modify the API service port number?
 
 The API service port is consistent with the one used by the Dify platform. You can reassign the running port by modifying the `nginx` configuration in the `docker-compose.yaml` file.
+
+### 22. How to Migrate from Local to Cloud Storage?
+
+To migrate files from local storage to cloud storage (e.g., Alibaba Cloud OSS), you'll need to transfer data from the 'upload_files' and 'privkeys' folders. Follow these steps:
+
+1. Configure Storage Settings
+
+   For local source code deployment:
+   - Update storage settings in `.env` file
+   - Set `STORAGE_TYPE=aliyun-oss`
+   - Configure Alibaba Cloud OSS credentials
+
+   For Docker Compose deployment:
+   - Update storage settings in `docker-compose.yaml`
+   - Set `STORAGE_TYPE: aliyun-oss`
+   - Configure Alibaba Cloud OSS credentials
+
+2. Execute Migration Commands
+
+   For local source code:
+   ```bash
+   flask upload-private-key-file-to-cloud-storage
+   flask upload-local-files-to-cloud-storage
+   ```
+
+   For Docker Compose:
+   ```bash
+   docker exec -it docker-api-1 flask upload-private-key-file-to-cloud-storage
+   docker exec -it docker-api-1 flask upload-local-files-to-cloud-storage
+   ```

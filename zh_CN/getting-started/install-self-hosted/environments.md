@@ -12,15 +12,15 @@
 
 #### SERVICE\_API\_URL
 
-Service API URL，用于**给前端**展示 Service API Base URL，传空则为同域。范例：`https://api.dify.ai`
+Service API URL，用于 **前端** 展示 Service API Base URL，传空则为同域。范例：`https://api.dify.ai`
 
 #### APP\_API\_URL
 
-WebApp API 后端 URL，用于声明**前端** API 后端地址，传空则为同域。范例：`https://app.dify.ai`
+WebApp API 后端 URL，用于声明 **前端** API 后端地址，传空则为同域。范例：`https://app.dify.ai`
 
 #### APP\_WEB\_URL
 
-WebApp URL，用于预览文件、**给前端**展示下载用的 URL，以及作为多模型输入接口，传空则为同域。范例：`https://udify.app/`
+WebApp URL，用于预览文件、**前端** 展示下载用的 URL，以及作为多模型输入接口，传空则为同域。范例：`https://udify.app/`
 
 #### FILES\_URL
 
@@ -32,7 +32,7 @@ WebApp URL，用于预览文件、**给前端**展示下载用的 URL，以及�
 
 #### MODE
 
-启动模式，仅使用 docker 启动时可用，源码启动无效。
+启动模式，仅使用 Docker 启动时可用，源码启动无效。
 
 *   api
 
@@ -51,7 +51,7 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 
 #### SECRET\_KEY
 
-一个用于安全地签名会话 cookie 并在数据库上加密敏感信息的密钥。初次启动需要设置改变量。可以运行`openssl rand -base64 42`生成一个强密钥。
+一个用于安全地签名会话 cookie 并在数据库上加密敏感信息的密钥。初次启动需要设置改变量。可以运行 `openssl rand -base64 42` 生成一个强密钥。
 
 #### DEPLOY\_ENV
 
@@ -70,7 +70,7 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 
 #### MIGRATION\_ENABLED
 
-当设置为 true 时，会在容器启动时自动执行数据库迁移，仅使用 docker 启动时可用，源码启动无效。源码启动需要在 api 目录手动执行 `flask db upgrade`。
+当设置为 true 时，会在容器启动时自动执行数据库迁移，仅使用 Docker 启动时可用，源码启动无效。源码启动需要在 api 目录手动执行 `flask db upgrade`。
 
 #### CHECK\_UPDATE\_URL
 
@@ -90,7 +90,7 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 
 #### 容器启动相关配置
 
-仅在使用 docker 镜像或者 docker-compose 启动时有效。
+仅在使用 Docker 镜像或者 Docker-compose 启动时有效。
 
 *   DIFY\_BIND\_ADDRESS
 
@@ -100,7 +100,7 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
     API 服务绑定端口号，默认 5001。
 *   SERVER\_WORKER\_AMOUNT
 
-    API 服务 Server worker 数量，即 gevent worker 数量，公式：`cpu 核心数 x 2 + 1`可参考：https://docs.gunicorn.org/en/stable/design.html#how-many-workers
+    API 服务 Server worker 数量，即 gevent worker 数量，公式：`cpu 核心数 x 2 + 1` 可参考：https://docs.gunicorn.org/en/stable/design.html#how-many-workers
 *   SERVER\_WORKER\_CLASS
 
     默认为 gevent，若为 windows，可以切换为 sync 或 solo。
@@ -115,7 +115,7 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
     Celery worker 数量，默认为 1，按需设置。
 *   HTTP\_PROXY
 
-    HTTP 代理地址，用于解决国内无法访问 OpenAI、HuggingFace 的问题。注意，若代理部署在宿主机(例如`http://127.0.0.1:7890`)，此处代理地址应当和接入本地模型时一样，使用docker容器内部的宿主机地址（例如`http://192.168.1.100:7890`或`http://172.17.0.1:7890`）。
+    HTTP 代理地址，用于解决国内无法访问 OpenAI、HuggingFace 的问题。注意，若代理部署在宿主机 (例如 `http://127.0.0.1:7890`)，此处代理地址应当和接入本地模型时一样，使用 Docker 容器内部的宿主机地址（例如 `http://192.168.1.100:7890` 或 `http://172.17.0.1:7890`）。
 *   HTTPS\_PROXY
 
     HTTPS 代理地址，用于解决国内无法访问 OpenAI、HuggingFace 的问题。同上。
@@ -197,11 +197,11 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 
     WebAPP CORS 跨域策略，默认为 `*`，即所有域名均可访问。
 
-详细配置可参考：[跨域/身份相关指南](https://docs.dify.ai/v/zh-hans/learn-more/faq/install-faq#id-3.-an-zhuang-shi-hou-wu-fa-deng-lu-deng-lu-cheng-gong-dan-hou-xu-jie-kou-jun-ti-shi-401)
+详细配置可参考：[跨域 / 身份相关指南](https://docs.dify.ai/v/zh-hans/learn-more/faq/install-faq#id-3.-an-zhuang-shi-hou-wu-fa-deng-lu-deng-lu-cheng-gong-dan-hou-xu-jie-kou-jun-ti-shi-401)
 
 #### 文件存储配置
 
-用于存储数据集上传的文件、团队/租户的加密密钥等等文件。
+用于存储数据集上传的文件、团队 / 租户的加密密钥等等文件。
 
 *   STORAGE\_TYPE
 
@@ -224,7 +224,7 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
         Volcengine TOS 存储，若选择此项则需要设置下方 VOLCENGINE\_TOS\_ 开头的配置。
 *   STORAGE\_LOCAL\_PATH
 
-    默认为 storage，即存储在当前目录的 storage 目录下。若使用 docker 或 docker-compose 进行部署，请务必将两个容器中 `/app/api/storage` 目录挂载到同一个本机目录，否则可能会出现文件找不到的报错。
+    默认为 storage，即存储在当前目录的 storage 目录下。若使用 Docker 或 Docker-compose 进行部署，请务必将两个容器中 `/app/api/storage` 目录挂载到同一个本机目录，否则可能会出现文件找不到的报错。
 * S3\_ENDPOINT：S3 端点地址
 * S3\_BUCKET\_NAME：S3 桶名称
 * S3\_ACCESS\_KEY：S3 Access Key
@@ -265,6 +265,7 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
     * `pinecone` (暂未开放)
     * `tidb_vector`
     * `analyticdb`
+    * `couchbase`
 *   WEAVIATE\_ENDPOINT
 
     Weaviate 端点地址，如：`http://weaviate:8080`。
@@ -291,10 +292,10 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
     Pinecone 所在的额环境，如：`us-east4-gcp`
 *   MILVUS\_URI
 
-    Milvus的URI配置。例如：http://localhost:19530。对于Zilliz Cloud，请将URI和令牌调整为 [Public Endpoint and Api key](https://docs.zilliz.com/docs/on-zilliz-cloud-console#free-cluster-details) 。
+    Milvus 的 URI 配置。例如：http://localhost:19530。对于 Zilliz Cloud，请将 URI 和令牌调整为 [Public Endpoint and Api key](https://docs.zilliz.com/docs/on-zilliz-cloud-console#free-cluster-details) 。
 *   MILVUS\_TOKEN
 
-    Milvus token 配置, 默认为空。
+    Milvus token 配置，默认为空。
 *   MILVUS\_USER
 
     Milvus user 配置，默认为空。
@@ -318,7 +319,7 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
     MyScale 数据库配置，默认为 `default`。
 *   MYSCALE\_FTS\_PARAMS
 
-    MyScale 全文搜索配置, 如需多语言支持，请参考 [MyScale 文档](https://myscale.com/docs/en/text-search/#understanding-fts-index-parameters)，默认为空（仅支持英语）。
+    MyScale 全文搜索配置，如需多语言支持，请参考 [MyScale 文档](https://myscale.com/docs/en/text-search/#understanding-fts-index-parameters)，默认为空（仅支持英语）。
 
 * TIDB\_VECTOR\_HOST
 
@@ -338,35 +339,55 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 
 *   ANALYTICDB_KEY_ID
 
-    用于阿里云OpenAPI认证的访问密钥ID。请阅读 [Analyticdb 文档](https://help.aliyun.com/zh/analyticdb/analyticdb-for-postgresql/support/create-an-accesskey-pair) 来创建您的AccessKey。
+    用于阿里云 OpenAPI 认证的访问密钥 ID。请阅读 [Analyticdb 文档](https://help.aliyun.com/zh/analyticdb/analyticdb-for-postgresql/support/create-an-accesskey-pair) 来创建您的 AccessKey。
 
 *   ANALYTICDB_KEY_SECRET
 
-    用于阿里云OpenAPI认证的访问密钥秘密。
+    用于阿里云 OpenAPI 认证的访问密钥秘密。
 
 *   ANALYTICDB_INSTANCE_ID
 
-    您的AnalyticDB实例的唯一标识符，例如 `gp-xxxxxx`。请阅读 [Analyticdb 文档](https://help.aliyun.com/zh/analyticdb/analyticdb-for-postgresql/getting-started/create-an-instance-1) 来创建您的实例。
+    您的 AnalyticDB 实例的唯一标识符，例如 `gp-xxxxxx`。请阅读 [Analyticdb 文档](https://help.aliyun.com/zh/analyticdb/analyticdb-for-postgresql/getting-started/create-an-instance-1) 来创建您的实例。
 
 *   ANALYTICDB_REGION_ID
 
-    AnalyticDB实例所在区域的标识符，例如 `cn-hangzhou`。
+    AnalyticDB 实例所在区域的标识符，例如 `cn-hangzhou`。
 
 *   ANALYTICDB_ACCOUNT
 
-    用于连接AnalyticDB实例的账户名称。请阅读 [Analyticdb 文档](https://help.aliyun.com/zh/analyticdb/analyticdb-for-postgresql/getting-started/createa-a-privileged-account) 来创建账户。
+    用于连接 AnalyticDB 实例的账户名称。请阅读 [Analyticdb 文档](https://help.aliyun.com/zh/analyticdb/analyticdb-for-postgresql/getting-started/createa-a-privileged-account) 来创建账户。
 
 *   ANALYTICDB_PASSWORD
 
-    用于连接AnalyticDB实例的账户密码。
+    用于连接 AnalyticDB 实例的账户密码。
 
 *   ANALYTICDB_NAMESPACE
 
-    在AnalyticDB实例内要操作的命名空间(schema)，例如 `dify`。如果此命名空间不存在，将自动创建。
+    在 AnalyticDB 实例内要操作的命名空间 (schema)，例如 `dify`。如果此命名空间不存在，将自动创建。
 
 *   ANALYTICDB_NAMESPACE_PASSWORD
 
-    命名空间(schema)的密码。如果命名空间不存在，将使用此密码进行创建。
+    命名空间 (schema) 的密码。如果命名空间不存在，将使用此密码进行创建。
+
+-   COUCHBASE_CONNECTION_STRING
+
+    Couchbase 集群的连接 string 字符串
+
+-   COUCHBASE_USER
+
+    数据库用户名
+
+-   COUCHBASE_PASSWORD
+
+    数据库密码
+
+-   COUCHBASE_BUCKET_NAME
+
+     Bucket 名称
+
+-   COUCHBASE_SCOPE_NAME
+
+     Scope 名称
 
 #### 知识库配置
 
@@ -446,9 +467,9 @@ Notion 集成配置，变量可通过申请 Notion integration 获取：[https:/
 
 #### 模型供应商 & 工具 位置配置
 
-用于指定应用中可以使用的模型供应商和工具。您可以自定义哪些工具和模型供应商可用，以及它们在应用界面中的顺序和包含/排除情况。
+用于指定应用中可以使用的模型供应商和工具。您可以自定义哪些工具和模型供应商可用，以及它们在应用界面中的顺序和包含 / 排除情况。
 
-详见可用的[工具](https://github.com/langgenius/dify/blob/main/api/core/tools/provider/_position.yaml) 和 [模型供应商](https://github.com/langgenius/dify/blob/main/api/core/model_runtime/model_providers/_position.yaml)。
+详见可用的 [工具](https://github.com/langgenius/dify/blob/main/api/core/tools/provider/_position.yaml) 和 [模型供应商](https://github.com/langgenius/dify/blob/main/api/core/model_runtime/model_providers/_position.yaml)。
 
 * POSITION_TOOL_PINS
 
@@ -512,7 +533,7 @@ Sentry DSN 地址，默认为空，为空时则所有监控信息均不上报 Se
 
 > ⚠️ 修改于 0.3.8，于 0.4.9 废弃，替代为 `SERVICE_API_URL`。
 
-API Url，用于**给前端**展示 Service API Base Url，传空则为同域。范例：`https://api.dify.ai`
+API Url，用于给前端展示 Service API Base Url，传空则为同域。范例：`https://api.dify.ai`
 
 #### APP\_URL
 

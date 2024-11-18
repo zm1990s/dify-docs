@@ -31,7 +31,7 @@
 
         Enter the base URL where the Ollama service is accessible.
 
-        If Dify is deployed using docker, consider using the local network IP address, e.g., `http://192.168.1.100:11434` or the docker host machine IP address, e.g., `http://172.17.0.1:11434`.
+        If Dify is deployed using Docker, consider using the local network IP address, e.g., `http://192.168.1.100:11434` or `http://host.docker.internal:11434` to access the service.
 
         For local source code deployment, use `http://localhost:11434`.
     * Model Type: `Chat`

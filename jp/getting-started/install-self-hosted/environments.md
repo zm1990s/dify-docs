@@ -279,6 +279,7 @@ dockerイメージまたはdocker-composeによる起動時にのみ有効です
     * `pinecone`（現在未公開）
     * `tidb_vector`
     * `analyticdb`
+    * `couchbase`
 *   WEAVIATE\_ENDPOINT
 
     Weaviateエンドポイントアドレス（例：`http://weaviate:8080`）。
@@ -377,6 +378,26 @@ dockerイメージまたはdocker-composeによる起動時にのみ有効です
 *   ANALYTICDB\_NAMESPACE\_PASSWORD
 
     namespace(schema)のパスワードです。このnamespaceが存在しない場合、このパスワードで作成されます。
+
+*   COUCHBASE_CONNECTION_STRING
+
+    クラスターへのCouchbase接続文字列です。
+
+*   COUCHBASE_USER
+
+    データベースユーザーのユーザー名です。
+
+*   COUCHBASE_PASSWORD
+
+    データベースユーザーのパスワードです。
+
+*   COUCHBASE_BUCKET_NAME
+
+    使用するバケットの名前です。
+
+*   COUCHBASE_SCOPE_NAME
+
+    使用するスコープの名前です。
 
 #### ナレッジベース設定
 
