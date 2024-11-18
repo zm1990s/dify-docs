@@ -16,9 +16,12 @@ To add a member, the team owner can click on the avatar in the upper right corne
 
 <figure><img src="../../.gitbook/assets/team-members-management-01.png" alt=""><figcaption><p>Assigning permissions to team members</p></figcaption></figure>
 
-Invited members can complete their registration through either a URL link or an email invitation.
-
 > For Community Edition, enabling email functionality requires the team owner to configure and activate the email service via system [environment variables](https://docs.dify.ai/getting-started/install-self-hosted/environments).
+
+- If the invited member has not registered with Dify, they will receive an invitation email. They can complete registration by clicking the link in the email.
+- If the invited member is already registered with Dify, permissions will be automatically assigned and **no invitation email will be sent**. The invited member can switch to the new workspace via the menu in the top right corner.
+
+![](../../../img/switch-workspace.png)
 
 ### Member Permissions
 
