@@ -9,10 +9,10 @@
 <figure><img src="../../.gitbook/assets/image (60).png" alt="" width="563"><figcaption><p>模型负载均衡</p></figcaption></figure>
 
 {% hint style="info" %}
-模型负载均衡为付费特性，您可以通过[订阅 SaaS 付费服务](../../getting-started/cloud.md#ding-yue-ji-hua)或者购买企业版来开启该功能。
+模型负载均衡为付费特性，你可以通过[订阅 SaaS 付费服务](../../getting-started/cloud.md#ding-yue-ji-hua)或者购买企业版来开启该功能。
 {% endhint %}
 
-默认配置中的 API Key 为初次配置模型供应商时添加的凭据，您需要点击 **增加配置** 添加同一模型的不同 API Key 来正常使用负载均衡功能。
+默认配置中的 API Key 为初次配置模型供应商时添加的凭据，你需要点击 **增加配置** 添加同一模型的不同 API Key 来正常使用负载均衡功能。
 
 <figure><img src="../../.gitbook/assets/image (61).png" alt="" width="563"><figcaption><p>配置负载均衡</p></figcaption></figure>
 

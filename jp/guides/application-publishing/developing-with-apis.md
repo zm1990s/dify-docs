@@ -123,7 +123,7 @@ data = {
 
 response = requests.post(url, headers=headers, data=json.dumps(data))
 
-print(response.json())
+print(response.text())
 ```
 {% endtab %}
 {% endtabs %}

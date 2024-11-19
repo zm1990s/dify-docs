@@ -65,7 +65,7 @@ Dify 支持接入 Ollama 部署的大型语言模型推理和 embedding 能力�
 
 ## FAQ
 
-### ⚠️ 如果您使用Docker部署Dify和Ollama，您可能会遇到以下错误:
+### ⚠️ 如果你使用Docker部署Dify和Ollama，你可能会遇到以下错误:
 
 ```
 httpconnectionpool(host=127.0.0.1, port=11434): max retries exceeded with url:/cpi/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8562812c20>: fail to establish a new connection:[Errno 111] Connection refused'))
@@ -73,7 +73,7 @@ httpconnectionpool(host=127.0.0.1, port=11434): max retries exceeded with url:/c
 httpconnectionpool(host=localhost, port=11434): max retries exceeded with url:/cpi/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8562812c20>: fail to establish a new connection:[Errno 111] Connection refused'))
 ```
 
-这个错误是因为 Docker 容器无法访问 Ollama 服务。localhost 通常指的是容器本身，而不是主机或其他容器。要解决此问题，您需要将 Ollama 服务暴露给网络。
+这个错误是因为 Docker 容器无法访问 Ollama 服务。localhost 通常指的是容器本身，而不是主机或其他容器。要解决此问题，你需要将 Ollama 服务暴露给网络。
 
 ### 在Mac上设置环境变量
 
@@ -119,13 +119,13 @@ httpconnectionpool(host=localhost, port=11434): max retries exceeded with url:/c
 
 ### 在Windows上设置环境变量
 
-在Windows上，Ollama继承了您的用户和系统环境变量。
+在Windows上，Ollama继承了你的用户和系统环境变量。
 
 1. 首先通过任务栏点击Ollama退出程序
 
 2. 从控制面板编辑系统环境变量
 
-3. 为您的用户账户编辑或新建变量，比如`OLLAMA_HOST`、`OLLAMA_MODELS`等。
+3. 为你的用户账户编辑或新建变量，比如`OLLAMA_HOST`、`OLLAMA_MODELS`等。
 
 4. 点击OK/应用保存
 

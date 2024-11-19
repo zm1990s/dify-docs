@@ -21,7 +21,7 @@ _**请注意：图片和文件暂不支持导入，表格类数据会被转换�
 
 ### 同步 Notion 数据
 
-如果您的 Notion 内容有修改，您可以直接在 Dify 数据集 **文档列表页**中点击 **同步** 即可进行数据一键同步，该步骤是需要消耗 Token。
+如果你的 Notion 内容有修改，你可以直接在 Dify 数据集 **文档列表页**中点击 **同步** 即可进行数据一键同步，该步骤是需要消耗 Token。
 
 <figure><img src="../../.gitbook/assets/sync-notion.png" alt=""><figcaption><p>同步 Notion 内容</p></figcaption></figure>
 
@@ -31,7 +31,7 @@ Notion集成分为**内部集成**（internal integration）和**外部集成**�
 
 ### 1、**使用 internal 集成方式**
 
-首先，在集成的设置页面中[创建集成](https://www.notion.so/my-integrations)。默认情况下，所有集成都以内部集成开始；内部集成将与您选择的工作区相关联，因此您需要是工作区所有者才能创建集成。
+首先，在集成的设置页面中[创建集成](https://www.notion.so/my-integrations)。默认情况下，所有集成都以内部集成开始；内部集成将与你选择的工作区相关联，因此你需要是工作区所有者才能创建集成。
 
 具体操作步骤：
 
@@ -39,7 +39,7 @@ Notion集成分为**内部集成**（internal integration）和**外部集成**�
 
 <figure><img src="../../.gitbook/assets/image (137).png" alt=""><figcaption></figcaption></figure>
 
-创建集成后，您可以根据需要在 Capabilities 选项卡下更新其设置，并在 Secrets 下点击 “Show” 按钮然后复制 Secrets。
+创建集成后，你可以根据需要在 Capabilities 选项卡下更新其设置，并在 Secrets 下点击 “Show” 按钮然后复制 Secrets。
 
 <figure><img src="../../.gitbook/assets/image (138).png" alt=""><figcaption></figcaption></figure>
 
@@ -51,11 +51,11 @@ Notion集成分为**内部集成**（internal integration）和**外部集成**�
 
 ### 2、**使用 Public 集成方式**
 
-**需要将 internal 集成升级为 public 集成**，导航到集成的 Distribution 页面，然后切换开关以公开集成。将开关切换到公共设置，您需要在下面的 Organization Information 表单中填写其他信息，包括您的公司名称、网站和重定向 URL 等信息，然后点击“Submit”按钮。
+**需要将 internal 集成升级为 public 集成**，导航到集成的 Distribution 页面，然后切换开关以公开集成。将开关切换到公共设置，你需要在下面的 Organization Information 表单中填写其他信息，包括你的公司名称、网站和重定向 URL 等信息，然后点击“Submit”按钮。
 
 <figure><img src="../../.gitbook/assets/image (139).png" alt=""><figcaption></figcaption></figure>
 
-在集成的设置页面中成功公开集成后，您将能够在密钥选项卡中访问集成的密钥：
+在集成的设置页面中成功公开集成后，你将能够在密钥选项卡中访问集成的密钥：
 
 <figure><img src="../../.gitbook/assets/image (140).png" alt=""><figcaption></figcaption></figure>
 

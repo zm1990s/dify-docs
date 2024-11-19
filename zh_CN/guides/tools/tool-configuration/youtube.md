@@ -4,11 +4,11 @@
 
 [Youtube](https://www.youtube.com/) 是最大的在线视频分享平台。目前 Dify.ai 有两个相关工具 `Video Statisctics` 和 `Free YouTube Transcript API`，可通过输入网址或关键字来分析视频信息。
 
-## 1. 确保您允许使用 Google Cloud Service
+## 1. 确保你允许使用 Google Cloud Service
 
-> 如果您没有帐户，请转到 [Google 凭据网站](https://console.cloud.google.com/apis/credentials) 并按照其说明创建帐户。
+> 如果你没有帐户，请转到 [Google 凭据网站](https://console.cloud.google.com/apis/credentials) 并按照其说明创建帐户。
 
-如果您有帐户，请转到 API 和服务页面并单击“创建凭据 -> API 密钥”以创建 API 密钥。
+如果你有帐户，请转到 API 和服务页面并单击“创建凭据 -> API 密钥”以创建 API 密钥。
 
 ![](/img/en-google-api.jpg)
 

@@ -27,7 +27,7 @@
 ![](../../../.gitbook/assets/web-app-settings.png)
 
 {% hint style="info" %}
-界面语言目前已支持：英文，中文，繁体中文，葡萄牙语，德语，日本语，韩语，乌克兰语，越南语。如果您需要增加更多语言，可以在 GitHub 内提交 Issue[ 寻求支持](../../../community/support.md)或者提交 PR 贡献代码。
+界面语言目前已支持：英文，中文，繁体中文，葡萄牙语，德语，日本语，韩语，乌克兰语，越南语。如果你需要增加更多语言，可以在 GitHub 内提交 Issue[ 寻求支持](../../../community/support.md)或者提交 PR 贡献代码。
 {% endhint %}
 
 ***

@@ -8,7 +8,7 @@ Dify Premium 是一款 [AWS AMI](https://docs.aws.amazon.com/zh\_cn/AWSEC2/lates
 
 ### 设置
 
-如果这是您第一次访问 Dify，请输入管理员初始化密码（设置为你的 EC2 实例 ID）以开始设置过程。
+如果这是你第一次访问 Dify，请输入管理员初始化密码（设置为你的 EC2 实例 ID）以开始设置过程。
 
 部署 AMI 后，通过 EC2 控制台中找到的实例公有 IP 访问 Dify（默认使用 HTTP 端口 80）。
 

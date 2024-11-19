@@ -74,7 +74,7 @@ LLM 生成的内容支持以下格式输出：
 步骤指导：
 
 1. 定义基本信息：
-  - 设置 `name`：为您的 schema 起一个描述性的名称。
+  - 设置 `name`：为你的 schema 起一个描述性的名称。
   - 添加 `description`：简要说明 schema 的用途。
   - 设置 `strict`: true：确保严格模式。
 

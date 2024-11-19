@@ -6,9 +6,9 @@
 
 随着世界通过消息应用程序变得越来越紧密地连接在一起，聊天机器人已成为企业与客户进行更个人化交流的关键工具。
 
-随着人工智能的崛起，聊天机器人变得更聪明，更个性化，更直观。在本文中，我们将向您展示如何使用使用Dify和Twilio将其与WhatsApp集成。
+随着人工智能的崛起，聊天机器人变得更聪明，更个性化，更直观。在本文中，我们将向你展示如何使用使用Dify和Twilio将其与WhatsApp集成。
 
-您将首先使用FastAPI 接入Dify设置后端，然后，您将集成Twilio的WhatsApp消息API，允许客户与您的WhatsApp聊天机器人开始对话。
+你将首先使用FastAPI 接入Dify设置后端，然后，你将集成Twilio的WhatsApp消息API，允许客户与你的WhatsApp聊天机器人开始对话。
 
 使用Localtunnel，将FastAPI本地主机放在互联网上，使其可以供Twilio API通信。
 
@@ -16,7 +16,7 @@
 
 * 安裝好Docker 和Docker Compose
 * Twilio帐户： 在[這裡](https://www.twilio.com/try-twilio) 創建一個免費Twilio帳戶
-* 一部安装了WhatsApp的智能手机，用于测试您的AI聊天机器人
+* 一部安装了WhatsApp的智能手机，用于测试你的AI聊天机器人
 * 对FastAPI的基本理解，这是一个使用Python 3.6+构建API的框架
 
 ## 3. 创建Dify基础编排聊天助手应用 （節錄自[手摸手教你把 Dify 接入微信生态](dify-on-wechat.md))
@@ -70,9 +70,9 @@
 
 <figure><img src="../../.gitbook/assets/twilio1.png" alt=""><figcaption></figcaption></figure>
 
-## 5. 创建您的聊天机器人
+## 5. 创建你的聊天机器人
 
-在这一部分，您将使用FastAPI和Twilio编写一个基本的聊天机器人的代码。
+在这一部分，你将使用FastAPI和Twilio编写一个基本的聊天机器人的代码。
 
 #### 5.1 下載代碼
 
@@ -112,7 +112,7 @@ dify-whatsapp-1  | INFO:     Application startup complete.
 
 #### 5.4 使用Localtunnel 將本地项目放到公网访问
 
-Twilio需要向您的后端发送消息，您需要在公共服务器上托管您的应用。一个简单的方法是使用localtunnel。
+Twilio需要向你的后端发送消息，你需要在公共服务器上托管你的应用。一个简单的方法是使用localtunnel。
 
 让FastAPI应用继续在9000端口运行，并在另一个终端窗口运行以下localtunnel命令：
 
@@ -120,13 +120,13 @@ Twilio需要向您的后端发送消息，您需要在公共服务器上托管�
 npx localtunnel --port 9000
 ```
 
-上述命令在您的本地服务器（运行在9000端口）和localtunnel创建的公共域之间建立了一个连接。一旦您有了localtunnel转发URL，任何来自客户端对该URL的请求都会自动被定向到您的FastAPI后端。
+上述命令在你的本地服务器（运行在9000端口）和localtunnel创建的公共域之间建立了一个连接。一旦你有了localtunnel转发URL，任何来自客户端对该URL的请求都会自动被定向到你的FastAPI后端。
 
 <figure><img src="../../.gitbook/assets/lt1.png" alt=""><figcaption></figcaption></figure>
 
 #### 5.5 代码解释
 
-**5.5.1 检查该号码是否已在白名单中，不在白名单的用户直接返回“您未注册此服务。”**
+**5.5.1 检查该号码是否已在白名单中，不在白名单的用户直接返回“你未注册此服务。”**
 
 ```python
 enrolled_numbers = ['+14155238886']
@@ -186,29 +186,29 @@ conversation_ids = {}
     merged_answer = ''.join(answer)  
 ```
 
-## 6. 配置您的Twilio沙箱以供WhatsApp使用
+## 6. 配置你的Twilio沙箱以供WhatsApp使用
 
 #### 6.1 打开WhatsApp沙盒
 
-要使用Twilio的消息API使聊天机器人能与WhatsApp用户通信，您需要配置Twilio沙箱以供WhatsApp使用。以下是操作方法：
+要使用Twilio的消息API使聊天机器人能与WhatsApp用户通信，你需要配置Twilio沙箱以供WhatsApp使用。以下是操作方法：
 
 转到[Twilio控制台](https://console.twilio.com/)并在左侧面板上选择消息选项卡。
 
-在“试试看”下，点击“发送WhatsApp消息”。您将默认进入沙盒选项卡，您会看到一个电话号码“+14155238886”，旁边有一个加入的代码，右边有一个二维码。
+在“试试看”下，点击“发送WhatsApp消息”。你将默认进入沙盒选项卡，你会看到一个电话号码“+14155238886”，旁边有一个加入的代码，右边有一个二维码。
 
 <figure><img src="../../.gitbook/assets/twilio2.png" alt=""><figcaption></figcaption></figure>
 
-要启用Twilio测试环境，将此代码的文本作为WhatsApp消息发送到显示的电话号码。如果您正在使用网络版本，可以点击超链接将您引导到WhatsApp聊天。
+要启用Twilio测试环境，将此代码的文本作为WhatsApp消息发送到显示的电话号码。如果你正在使用网络版本，可以点击超链接将你引导到WhatsApp聊天。
 
 #### 6.2 配置WhatsApp沙盒
 
 在“沙盒”选项卡旁边，选择“沙盒设置”选项卡。
 
-复制您的localtunnel URL并附加/message。将其粘贴到“当消息进入时”旁边的框中：
+复制你的localtunnel URL并附加/message。将其粘贴到“当消息进入时”旁边的框中：
 
 Twilio沙盒webhook 完整的URL应如下所示：https://breezy-humans-help.loca.lt/message。
 
-您将在FastAPI应用程序中配置的端点是/message，如上所述。聊天机器人的逻辑将在此端点上。
+你将在FastAPI应用程序中配置的端点是/message，如上所述。聊天机器人的逻辑将在此端点上。
 
 完成后，按“保存”按钮。
 
@@ -216,7 +216,7 @@ Twilio沙盒webhook 完整的URL应如下所示：https://breezy-humans-help.loc
 
 ## 7. WhatsApp測試
 
-掃6.1 頁面的二維碼進入WhatsApp 沙盒環境，然後发送WhatsApp消息，并等待您的AI聊天机器人的回复。尝试向AI聊天机器人提问您可以向Dify 聊天助手提问的任何问题。
+掃6.1 頁面的二維碼進入WhatsApp 沙盒環境，然後发送WhatsApp消息，并等待你的AI聊天机器人的回复。尝试向AI聊天机器人提问你可以向Dify 聊天助手提问的任何问题。
 
 <figure><img src="../../.gitbook/assets/whatsapp1.jpg" alt=""><figcaption></figcaption></figure>
 

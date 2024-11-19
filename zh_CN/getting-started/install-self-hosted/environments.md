@@ -339,7 +339,7 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 
 *   ANALYTICDB_KEY_ID
 
-    用于阿里云 OpenAPI 认证的访问密钥 ID。请阅读 [Analyticdb 文档](https://help.aliyun.com/zh/analyticdb/analyticdb-for-postgresql/support/create-an-accesskey-pair) 来创建您的 AccessKey。
+    用于阿里云 OpenAPI 认证的访问密钥 ID。请阅读 [Analyticdb 文档](https://help.aliyun.com/zh/analyticdb/analyticdb-for-postgresql/support/create-an-accesskey-pair) 来创建你的 AccessKey。
 
 *   ANALYTICDB_KEY_SECRET
 
@@ -347,7 +347,7 @@ Flask 调试模式，开启可在接口输出 trace 信息，方便调试。
 
 *   ANALYTICDB_INSTANCE_ID
 
-    您的 AnalyticDB 实例的唯一标识符，例如 `gp-xxxxxx`。请阅读 [Analyticdb 文档](https://help.aliyun.com/zh/analyticdb/analyticdb-for-postgresql/getting-started/create-an-instance-1) 来创建您的实例。
+    你的 AnalyticDB 实例的唯一标识符，例如 `gp-xxxxxx`。请阅读 [Analyticdb 文档](https://help.aliyun.com/zh/analyticdb/analyticdb-for-postgresql/getting-started/create-an-instance-1) 来创建你的实例。
 
 *   ANALYTICDB_REGION_ID
 
@@ -467,7 +467,7 @@ Notion 集成配置，变量可通过申请 Notion integration 获取：[https:/
 
 #### 模型供应商 & 工具 位置配置
 
-用于指定应用中可以使用的模型供应商和工具。您可以自定义哪些工具和模型供应商可用，以及它们在应用界面中的顺序和包含 / 排除情况。
+用于指定应用中可以使用的模型供应商和工具。你可以自定义哪些工具和模型供应商可用，以及它们在应用界面中的顺序和包含 / 排除情况。
 
 详见可用的 [工具](https://github.com/langgenius/dify/blob/main/api/core/tools/provider/_position.yaml) 和 [模型供应商](https://github.com/langgenius/dify/blob/main/api/core/model_runtime/model_providers/_position.yaml)。
 

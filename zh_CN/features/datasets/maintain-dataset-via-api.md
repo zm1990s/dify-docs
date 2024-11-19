@@ -3,14 +3,14 @@
 > 身份验证、调用方法和应用服务API保持一致。区别在于知识API令牌可以对所有知识库进行操作.
 
 ### 使用 Knowledge API 的好处
-* 同步您的数据系统以分散Knowledge以创建强大的工作流.
+* 同步你的数据系统以分散Knowledge以创建强大的工作流.
 * 提供知识列表和文档列表API以及详细查询接口, 目的是为了便于生成自己的数据管理页.
-* 为了简化您的同步进程，支持纯文本和  文件上传 / 更新文档 以及批量新增和修改.
+* 为了简化你的同步进程，支持纯文本和  文件上传 / 更新文档 以及批量新增和修改.
 * 提高Dify软件和服务的可见性，缩短手动处理文档和同步的时间.
 
 ### 如何使用
 
-请转到知识页面，您可以在左侧导航中切换到API页面。在此页面上，您可以查看dify提供的API文档并管理用于访问Knowledge API的凭据.
+请转到知识页面，你可以在左侧导航中切换到API页面。在此页面上，你可以查看dify提供的API文档并管理用于访问Knowledge API的凭据.
 
 <figure><img src="../../.gitbook/assets/dataset-api-token.png" alt=""><figcaption><p>Knowledge API Document</p></figcaption></figure>
 
