@@ -31,5 +31,5 @@ docker-compose -f docker-compose.yaml -f docker-compose.override.yaml up -d
 
 ```
 docker-compose down
-ocker-compose -f docker-compose.yaml -f docker-compose.override.yaml up -d
+docker-compose -f docker-compose.yaml -f docker-compose.override.yaml up -d
 ```
