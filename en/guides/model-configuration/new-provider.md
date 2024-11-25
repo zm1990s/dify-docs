@@ -67,7 +67,7 @@ provider_credential_schema:  # Provider credential rules, since Anthropic only s
     type: secret-input  # Form type, secret-input here represents an encrypted information input box, only displaying masked information when editing.
     required: true  # Whether it is required
     placeholder:  # PlaceHolder information
-      zh_Hans: 在此输入您的 API Key
+      zh_Hans: 在此输入你的 API Key
       en_US: Enter your API Key
   - variable: anthropic_api_url
     label:
@@ -75,7 +75,7 @@ provider_credential_schema:  # Provider credential rules, since Anthropic only s
     type: text-input  # Form type, text-input here represents a text input box
     required: false
     placeholder:
-      zh_Hans: 在此输入您的 API URL
+      zh_Hans: 在此输入你的 API URL
       en_US: Enter your API URL
 ```
 
@@ -97,7 +97,7 @@ model_credential_schema:
     type: secret-input
     required: true
     placeholder:
-      zh_Hans: 在此输入您的 API Key
+      zh_Hans: 在此输入你的 API Key
       en_US: Enter your API Key
   - variable: openai_organization
     label:
@@ -106,7 +106,7 @@ model_credential_schema:
     type: text-input
     required: false
     placeholder:
-      zh_Hans: 在此输入您的组织 ID
+      zh_Hans: 在此输入你的组织 ID
       en_US: Enter your Organization ID
   - variable: openai_api_base
     label:
@@ -115,7 +115,7 @@ model_credential_schema:
     type: text-input
     required: false
     placeholder:
-      zh_Hans: 在此输入您的 API Base
+      zh_Hans: 在此输入你的 API Base
       en_US: Enter your API Base
 ```
 

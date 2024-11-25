@@ -14,7 +14,7 @@ Notion 是一个强大的知识管理工具。它的灵活性和可扩展性使�
 
 ### 如何使用Dify创建自己的AI助手?
 
-训练Notion AI助手的过程非常简单。您只需要按照如下步骤操作:
+训练Notion AI助手的过程非常简单。你只需要按照如下步骤操作:
 
 1.登录 Dify。
 
@@ -40,13 +40,13 @@ Notion 是一个强大的知识管理工具。它的灵活性和可扩展性使�
 
 ![login-2](https://pan.wsyfin.com/f/G6ziA/login-2.png)
 
-#### 3. 与 Notion 和您的数据集进行连接 <a href="#id-3-connect-with-notion-and-datasets" id="id-3-connect-with-notion-and-datasets"></a>
+#### 3. 与 Notion 和你的数据集进行连接 <a href="#id-3-connect-with-notion-and-datasets" id="id-3-connect-with-notion-and-datasets"></a>
 
 选择 "Sync from Notion"，然后点击 "Connect" 按钮。
 
 ![connect-with-notion-1](https://pan.wsyfin.com/f/J6WsK/connect-with-notion-1.png)
 
-然后，您将被重定向到 Notion 登录页面。使用您的 Notion 帐户登录。使用您的 Notion 帐户登录。
+然后，你将被重定向到 Notion 登录页面。使用你的 Notion 帐户登录。使用你的 Notion 帐户登录。
 
 ![connect-with-notion-2](https://pan.wsyfin.com/f/KrEi4/connect-with-notion-2.png)
 
@@ -94,39 +94,39 @@ Notion 是一个强大的知识管理工具。它的灵活性和可扩展性使�
 
 <figure><img src="../../.gitbook/assets/image (42) (1).png" alt=""><figcaption></figcaption></figure>
 
-现在您可以在“概览”中单击公共 URL 聊天与您自己的 AI 助手！
+现在你可以在“概览”中单击公共 URL 聊天与你自己的 AI 助手！
 
 <figure><img src="../../.gitbook/assets/image (27) (1).png" alt=""><figcaption></figcaption></figure>
 
-### 通过API集成到您的项目中​
+### 通过API集成到你的项目中​
 
 通过 Dify 打造的每个 AI 应用程序都可以通过其 API 进行访问。这种方法允许开发人员直接利用前端应用程序中强大的大型语言模型（LLM）的特性，提供真正的“后端即服务”（BaaS）体验。
 
-通过无缝的 API 集成，您可以方便地调用您的 Notion AI 应用程序，无需复杂的配置。
+通过无缝的 API 集成，你可以方便地调用你的 Notion AI 应用程序，无需复杂的配置。
 
-在概览页面上点击「API 参考」按钮。您可以将其作为您应用程序的 API 文档参考。
+在概览页面上点击「API 参考」按钮。你可以将其作为你应用程序的 API 文档参考。
 
 ![using-api-1](https://pan.wsyfin.com/f/wp0Cy/using-api-1.png)
 
 #### 1. 生成 API 密钥 <a href="#id-1-generate-api-secret-key" id="id-1-generate-api-secret-key"></a>
 
-为了安全起见，建议生成 API 密钥以访问您的 AI 应用。
+为了安全起见，建议生成 API 密钥以访问你的 AI 应用。
 
 ![using-api-2](https://pan.wsyfin.com/f/xk2Fx/using-api-2.png)
 
 #### 2.检索会话ID <a href="#id-2-retrieve-conversation-id" id="id-2-retrieve-conversation-id"></a>
 
-与 AI 应用程序聊天后，您可以从“Logs & Ann.”页面检索会话 ID。
+与 AI 应用程序聊天后，你可以从“Logs & Ann.”页面检索会话 ID。
 
 ![using-api-3](https://pan.wsyfin.com/f/yPXHL/using-api-3.png)
 
 #### 3. 调用API <a href="#id-3-invoke-api" id="id-3-invoke-api"></a>
 
-您可以在API文档上运行示例请求代码来调用终端中的AI应用程序。
+你可以在API文档上运行示例请求代码来调用终端中的AI应用程序。
 
 记住替换代码中的SECRET KEY和conversation\_id。
 
-您可以在第一次输入空的conversation\_id，在收到包含conversation\_id的响应后将其替换。
+你可以在第一次输入空的conversation\_id，在收到包含conversation\_id的响应后将其替换。
 
 ```
 curl --location --request POST 'https://api.dify.ai/v1/chat-messages' \
@@ -141,11 +141,11 @@ curl --location --request POST 'https://api.dify.ai/v1/chat-messages' \
 }'
 ```
 
-在终端中发送请求，您将获得成功的响应。
+在终端中发送请求，你将获得成功的响应。
 
 ![using-api-4](https://pan.wsyfin.com/f/zpnI4/using-api-4.png)
 
-如果您想继续此聊天，请将请求代码的`conversation_id`替换为您从响应中获得的`conversation_id`。
+如果你想继续此聊天，请将请求代码的`conversation_id`替换为你从响应中获得的`conversation_id`。
 
 你可以在`"Logs & Ann "`页面查看所有的对话记录。
 
@@ -159,6 +159,6 @@ curl --location --request POST 'https://api.dify.ai/v1/chat-messages' \
 
 ### 总结
 
-在本教程中，我们不仅学会了如何将您的 Notion 数据导入到 Dify 中，还学会了如何使用 API 将其与您的项目集成。
+在本教程中，我们不仅学会了如何将你的 Notion 数据导入到 Dify 中，还学会了如何使用 API 将其与你的项目集成。
 
-Dify 是一个用户友好的 LLMOps 平台，旨在赋予更多人创建可持续的 AI 原生应用程序的能力。通过为各种应用类型设计的可视化编排，Dify 提供了可供使用的应用程序，可以帮助您利用数据打造独特的 AI 助手。如果您有任何疑问，请随时与我们联系。
+Dify 是一个用户友好的 LLMOps 平台，旨在赋予更多人创建可持续的 AI 原生应用程序的能力。通过为各种应用类型设计的可视化编排，Dify 提供了可供使用的应用程序，可以帮助你利用数据打造独特的 AI 助手。如果你有任何疑问，请随时与我们联系。

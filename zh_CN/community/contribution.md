@@ -14,13 +14,13 @@
 
 ### 功能请求：
 
-* 如果您要提出新的功能请求，请解释所提议的功能的目标，并尽可能提供详细的上下文。[@perzeusss](https://github.com/perzeuss) 制作了一个很好的 [功能请求助手](https://udify.app/chat/MK2kVSnw1gakVwMX)，可以帮助您起草需求。随时尝试一下。
+* 如果你要提出新的功能请求，请解释所提议的功能的目标，并尽可能提供详细的上下文。[@perzeusss](https://github.com/perzeuss) 制作了一个很好的 [功能请求助手](https://udify.app/chat/MK2kVSnw1gakVwMX)，可以帮助你起草需求。随时尝试一下。
 
-* 如果您想从现有问题中选择一个，请在其下方留下评论表示您的意愿。
+* 如果你想从现有问题中选择一个，请在其下方留下评论表示你的意愿。
 
-相关方向的团队成员将参与其中。如果一切顺利，他们将批准您开始编码。在此之前，请不要开始工作，以免我们提出更改导致您的工作付诸东流。
+相关方向的团队成员将参与其中。如果一切顺利，他们将批准你开始编码。在此之前，请不要开始工作，以免我们提出更改导致你的工作付诸东流。
 
-根据所提议的功能所属的领域不同，您可能需要与不同的团队成员交流。以下是我们团队成员目前正在从事的各个领域的概述：
+根据所提议的功能所属的领域不同，你可能需要与不同的团队成员交流。以下是我们团队成员目前正在从事的各个领域的概述：
 
   | Member                                                       | Scope                                                |
   | ------------------------------------------------------------ | ---------------------------------------------------- |
@@ -84,17 +84,17 @@ Dify 由后端和前端组成。通过 `cd api/` 导航到后端目录，然后�
 
 ### 5. 在浏览器中访问 Dify
 
-为了验证您的设置，打开浏览器并访问 [http://localhost:3000](http://localhost:3000)（默认或您自定义的 URL 和端口）。现在您应该看到 Dify 正在运行。
+为了验证你的设置，打开浏览器并访问 [http://localhost:3000](http://localhost:3000)（默认或你自定义的 URL 和端口）。现在你应该看到 Dify 正在运行。
 
 ## 开发
 
-如果您要添加模型提供程序，请参考 [此指南](https://github.com/langgenius/dify/blob/main/api/core/model_runtime/README.md)。
+如果你要添加模型提供程序，请参考 [此指南](https://github.com/langgenius/dify/blob/main/api/core/model_runtime/README.md)。
 
-如果您要向 Agent 或 Workflow 添加工具提供程序，请参考 [此指南](https://github.com/langgenius/dify/blob/main/api/core/tools/README_CN.md)。
+如果你要向 Agent 或 Workflow 添加工具提供程序，请参考 [此指南](https://github.com/langgenius/dify/blob/main/api/core/tools/README_CN.md)。
 
 > **注意**：如果你想要贡献新的工具，请确保已在工具的 `YAML` 文件内留下了你的联系方式，并且在 [Dify-docs](https://github.com/langgenius/dify-docs/tree/main/en/guides/tools/tool-configuration) 帮助文档代码仓库中提交了对应的文档 PR。
 
-为了帮助您快速了解您的贡献在哪个部分，以下是 Dify 后端和前端的简要注释大纲：
+为了帮助你快速了解你的贡献在哪个部分，以下是 Dify 后端和前端的简要注释大纲：
 
 ### 后端
 
