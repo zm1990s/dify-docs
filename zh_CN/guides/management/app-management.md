@@ -10,6 +10,7 @@
 
 应用均支持复制操作，点击应用左上角的 「复制」。
 
+
 ### 导出应用
 
 在 Dify 内创建的应用均支持以 DSL 格式进行导出，你可以自由地将配置文件导入至任意 Dify 团队。
@@ -28,6 +29,15 @@ DSL 文件不包含自定义工具节点内已填写的授权信息，例如第�
 {% hint style="info" %}
 Dify DSL 格式文件是 Dify.AI 定义的 AI 应用工程文件标准，文件格式为 YML。该标准涵盖应用的基本描述、模型参数、编排配置等信息。
 {% endhint %}
+
+### 导入应用
+
+将 DSL 文件上传至 Dify 平台内即可完成 Dify 应用的导入。导入 DSL 文件时会进行版本检查，如果导入较低版本的 DSL 文件将进行提示。
+
+- 对于 SaaS 用户而言，在 SaaS 平台导出的 DSL 文件版本为最新版本。
+- 对于社区版用户而言，建议参考[更新 Dify](https://docs.dify.ai/zh-hans/getting-started/install-self-hosted/docker-compose#geng-xin-dify)更新社区版以导出更高版本的 DSL 文件，避免潜在的兼容性问题。
+
+![](https://assets-docs.dify.ai/2024/11/487d2c1cc8b86666feb35ea8a346c053.png)
 
 ### 删除应用
 
