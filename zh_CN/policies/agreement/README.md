@@ -2,7 +2,7 @@
 
 ### 关于数据安全
 
-Dify 非常重视你的数据安全，已获得 SOC 2 Type 1 认证，并且正处于 SOC 2 Type 1 的窗口期。除此之外，我们正在推进获得 ISO 27001 和 GDPR 认证。
+Dify 非常重视你的数据安全，已获得 SOC 2 Type 1 认证，并且正处于 SOC 2 Type 2 的窗口期。除此之外，我们正在推进获得 ISO 27001 和 GDPR 认证。
 
 有关 Dify 安全措施和协议的完整信息，请参考 [Dify Trust Center](https://security.dify.ai/) 上的官方安全政策。Dify Trust Center 应被视为安全相关信息的主要和权威来源。
 
