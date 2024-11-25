@@ -66,4 +66,4 @@ APIトークンは記事の冒頭で設定したAPIキーです。`テキスト�
 
 <figure><img src="../../.gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>
 
-> 注意：埋め込みの「ユーザー名 / 組織名」は、Hugging Faceの[Inference Endpoints](https://huggingface.co/docs/inference-endpoints/guides/access)のデプロイ方法に基づいて、「[ユーザー名](https://huggingface.co/settings/account)」または「[組織名](https://ui.endpoints.huggingface.co/)」を入力する必要があります。
+> 注意点：埋め込みの「ユーザー名 / 組織名」は、Hugging Faceの[Inference Endpoints](https://huggingface.co/docs/inference-endpoints/guides/access)のデプロイ方法に基づいて、「[ユーザー名](https://huggingface.co/settings/account)」または「[組織名](https://ui.endpoints.huggingface.co/)」を入力する必要があります。

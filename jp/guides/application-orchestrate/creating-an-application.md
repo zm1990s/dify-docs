@@ -51,3 +51,5 @@ https://example.com/your_dsl.yml
 ```
 
 <figure><img src="../../.gitbook/assets/jp-url-import.png" alt=""><figcaption><p>URL経由でDSLファイルをインポート</p></figcaption></figure>
+
+> DSLファイルを取り込む際には、バージョンが自動で確認されます。バージョン間に大きな違いがあると、互換性に問題が生じる恐れがあります。この件につきましては、[アプリケーション管理：インポート](https://docs.dify.ai/guides/management/app-management#importing-application)セクションで詳細をご覧いただけます。

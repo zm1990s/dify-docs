@@ -154,7 +154,7 @@
 
 ## もっと読む <a href="#learn-more" id="learn-more"></a>
 
-* [ユースケース](learn-more/use-cases/README.md)
+* [活用事例](learn-more/use-cases/README.md)
   * [あなた専用のQAチャットボットのトレーニング方法](learn-more/use-cases/train-a-qa-chatbot-that-belongs-to-you.md)
   * [コードなしでMidjourney プロンプトボットを作成する方法](learn-more/use-cases/create-a-midjoureny-prompt-word-robot-with-zero-code.md)
   * [Notion AI アシスタントを構築する](learn-more/use-cases/build-an-notion-ai-assistant.md)

@@ -50,6 +50,14 @@ DifyではエージェントアシスタントにFunction Calling（関数呼び
 
 <figure><img src="../../.gitbook/assets/jp-agent-7.png" alt=""><figcaption><p>会話のオープニングとオープニング質問を設定</p></figcaption></figure>
 
+### ファイルのアップロード
+
+Claude 3.5 Sonnet (https://docs.anthropic.com/en/docs/build-with-claude/pdf-support) や Gemini 1.5 Pro (https://ai.google.dev/api/files) など、一部のLLMはファイル処理に標準対応しています。各LLMのウェブサイトで、ファイルのアップロード機能について詳しくご確認ください。
+
+ファイルの読み込みに対応したLLMを選択し、「Document」を有効にしてください。これにより、チャットボットは複雑な設定なしでファイルの内容を理解し、利用できるようになります。
+
+![](https://assets-docs.dify.ai/2024/11/9f0b7a3c67b58c0bd7926501284cbb7d.png)
+
 ### デバッグとプレビュー
 
 エージェントアシスタントの編成が完了したら、アプリとして公開する前にデバッグとプレビューを行い、アシスタントのタスク完了効果を確認できます。
