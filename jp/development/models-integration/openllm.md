@@ -11,7 +11,7 @@ DifyはローカルデプロイされたOpenLLMモデルの推論能力をサポ
 ```bash
 docker run --rm -it -p 3333:3000 ghcr.io/bentoml/openllm start facebook/opt-1.3b --backend pt
 ```
-> 注意：ここで使用されている facebook/opt-1.3b モデルはあくまで例示であり、効果が不十分な場合があります。実際の状況に応じて適切なモデルを選択してください。詳細なモデルについては、[サポートされているモデル一覧](https://github.com/bentoml/OpenLLM#-supported-models)を参照してください。
+> 注意点：ここで使用されている facebook/opt-1.3b モデルはあくまで例示であり、効果が不十分な場合があります。実際の状況に応じて適切なモデルを選択してください。詳細なモデルについては、[サポートされているモデル一覧](https://github.com/bentoml/OpenLLM#-supported-models)を参照してください。
 
 モデルのデプロイが完了したら、Difyでモデルを接続して使用することができます。
 

@@ -50,6 +50,14 @@ AIの対話範囲を[ナレッジベース](../knowledge-base/)内に制限し�
 
 ![](../../.gitbook/assets/jp-context.png)
 
+### ファイルのアップロード
+
+Claude 3.5 Sonnet (https://docs.anthropic.com/en/docs/build-with-claude/pdf-support) や Gemini 1.5 Pro (https://ai.google.dev/api/files) など、一部のLLMはファイル処理に標準対応しています。各LLMのウェブサイトで、ファイルのアップロード機能について詳しくご確認ください。
+
+ファイルの読み込みに対応したLLMを選択し、「Document」を有効にしてください。これにより、チャットボットは複雑な設定なしでファイルの内容を理解し、利用できるようになります。
+
+![](https://assets-docs.dify.ai/2024/11/823399d85e8ced5068dc9da4f693170e.png)
+
 #### デバッグ
 
 右側にユーザー入力項目を入力し、内容を入力してデバッグします。
