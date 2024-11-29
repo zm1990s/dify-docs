@@ -75,6 +75,10 @@ Chatflow 类型应用提供以下系统变量：
 
 关于如何将会话变量与变量赋值节点配合使用，请参考[变量赋值](node/variable-assigner.md)节点说明。
 
+如果想要查看会话变量值在应用对话时的变化情况，点击 Chatflow 应用预览页上方的会话变量 icon 进行查看。
+
+![](https://assets-docs.dify.ai/2024/11/cc8067fa4c96436f037f8210ebe3f65c.png)
+
 ### 注意事项
 
 * 为避免变量名重复，节点命名不可重复
