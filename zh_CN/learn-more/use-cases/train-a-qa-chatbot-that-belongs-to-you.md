@@ -30,33 +30,29 @@ _注：CODING DevOps 是腾讯云旗下的一站式研发管理平台及云原�
 
 你可以简单地将 Dify 理解为是一个能够帮助你进行数据清理和文档训练的地方。咱们也给狗屁通（GPT）补补课，手动给它补上缺失的语料。把它从通用型聊天机器人，变成你的专业问答机器人。是的，从侃大山到对答如流，这中间的鸿沟不是一点半点，需要强大的理解、归纳总结能力。不过这正是狗屁通（GPT）的强项。
 
-###
-
 ### **注册并生成应用**
 
-现在，我们打开 Dify 并注册一个聊天机器人，我们在这里选择“对话型应用”。
+现在，我们打开 Dify 并注册一个聊天机器人，我们在这里选择“聊天助手”。
 
-<figure><img src="../../.gitbook/assets/640-2.png" alt=""><figcaption></figcaption></figure>
+![](https://assets-docs.dify.ai/2024/11/8f25c739e69de061496637f08334dd1b.png)
 
-Duang，一个聊天机器人就做好了。
+填写基础的名称和描述，选择某个 LLM 来提供对话服务。点击发布，Duang，一个聊天机器人就做好了。访问左侧的“监测”，你可以看到这个应用的在线地址。
 
-<figure><img src="../../.gitbook/assets/640-3.png" alt=""><figcaption></figcaption></figure>
+![](https://assets-docs.dify.ai/2024/11/15e39d55291a97e59e8349a2f84302ee.png)
 
-访问这个链接就可以看到一个聊天机器人了。但是，它现在也只是一个**通用型聊天机器人**，离商业可用的**专用型问答机器人**还差一个语料的距离。
+但是，它现在也只是一个**通用型聊天机器人**，离商业可用的**专用型问答机器人**还差一个语料的距离。
 
 <figure><img src="../../.gitbook/assets/640-4.png" alt=""><figcaption></figcaption></figure>
 
-###
-
 ### **准备语料**
 
-Dify 提供了一个名叫“数据集”的功能，这里就是我们上传语料的地方。
+Dify 提供了一个名&#x53EB;**“知识库”**&#x7684;功能，这里就是我们上传语料的地方。
 
-<figure><img src="../../.gitbook/assets/640-5.png" alt=""><figcaption></figcaption></figure>
+![](https://assets-docs.dify.ai/2024/11/46204d061fe14ada59735229a85e8d1a.png)
 
-现在点击“创建数据集”选项，上传你的文本内容。
+现在点击“创建知识库”选项，上传你的文本内容。
 
-<figure><img src="../../.gitbook/assets/640-6.png" alt=""><figcaption></figcaption></figure>
+![](https://assets-docs.dify.ai/2024/11/1f35dc6c1b4ee2c307e024fb9755d417.png)
 
 目前 Dify 仅支持上传单个文件，文件格式支持 TXT、HTML、MarkDown、PDF。
 
@@ -70,11 +66,9 @@ _是的没错，你也可以把电子书上传进来，用 AI 帮助你提炼书
 
 <figure><img src="../../.gitbook/assets/640-8.png" alt=""><figcaption></figcaption></figure>
 
-试着运行这个脚本，oh，输入路径后就成功生成了一篇总合文档！如果你想了解如何让 AI 给你写代码，不妨阅读[《如何用狗屁通（GPT ）解决一个套娃问题》](http://mp.weixin.qq.com/s?\_\_biz=MzU2Njg1NDA3Mw==\&mid=2247484248\&idx=1\&sn=50809b40f520c767483e1a7b0eefb9c1\&chksm=fca76b8ecbd0e298e627140d63e7b3383d226ab293a2e8fefa04b5a1ee12f187520560ec1579\&scene=21#wechat\_redirect)。
+试着运行这个脚本，oh，输入路径后就成功生成了一篇总合文档！如果你想了解如何让 AI 给你写代码，不妨阅读[《如何用狗屁通（GPT ）解决一个套娃问题》](http://mp.weixin.qq.com/s?__biz=MzU2Njg1NDA3Mw==\&mid=2247484248\&idx=1\&sn=50809b40f520c767483e1a7b0eefb9c1\&chksm=fca76b8ecbd0e298e627140d63e7b3383d226ab293a2e8fefa04b5a1ee12f187520560ec1579\&scene=21#wechat_redirect)。
 
 <figure><img src="../../.gitbook/assets/640-9.png" alt=""><figcaption></figcaption></figure>
-
-###
 
 ### **开始训练**
 
@@ -82,11 +76,9 @@ _是的没错，你也可以把电子书上传进来，用 AI 帮助你提炼书
 
 <figure><img src="../../.gitbook/assets/640.jpg" alt=""><figcaption></figcaption></figure>
 
-数据自动分段与清洗完成后，在刚创建的应用设置中的上下文，关联这一篇文档。为了保证响应速度和成本控制，这里直接用 3.5 模型。
+数据自动分段与清洗完成后，在刚创建的应用设置中的上下文，关联这一篇文档。为了保证响应速度和成本控制，这里直接用 gpt-4o 模型。
 
-<figure><img src="../../.gitbook/assets/640-1.jpg" alt=""><figcaption></figcaption></figure>
-
-###
+![](https://assets-docs.dify.ai/2024/11/5878266c7a7c8729e44fb660b8108393.png)
 
 ### **训练成功**
 
@@ -110,6 +102,6 @@ _是的没错，你也可以把电子书上传进来，用 AI 帮助你提炼书
 
 现在，AI 可以深入到产品内部，变成妥妥的产品专家。只要有优秀的文档，所有公司都可以打造出专用型问答机器人。
 
-武力对等才会有真正的平权。如果你对我的实践过程同样感兴趣，可以来体验一下我做好的机器人，地址：[https://udify.app/chat/F2Y4bKEWbuCb1FTC](https://udify.app/chat/F2Y4bKEWbuCb1FTC)
+武力对等才会有真正的平权。如果你对我的实践过程同样感兴趣，可以来体验一下我做好的机器人。访问[此地址](https://udify.app/chat/F2Y4bKEWbuCb1FTC)。
 
 不妨也来 Dify 平台训练属于你自己的机器人。做一个考试问答机器人？出题机器人？
