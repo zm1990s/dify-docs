@@ -67,20 +67,20 @@ RAG 检索环节中的主流方法是向量检索，即语义相关度匹配的�
 
 **Rerank 模型：** 你可以在“模型供应商”页面配置 Rerank 模型的 API 秘钥之后，在检索设置中打开“Rerank 模型”，系统会在混合检索后对已召回的文档结果再一次进行语义重排序，优化排序结果。设置 Rerank 模型后，TopK 和 Score 阈值设置仅在 Rerank 步骤生效。
 
-### 创建数据集时设置检索模式
+### 创建知识库时设置检索模式
 
-进入“数据集->创建数据集”页面并在检索设置中设置不同的检索模式：
+进入“知识库->创建知识库”页面并在检索设置中设置不同的检索模式：
 
-<figure><img src="../../../.gitbook/assets/image (170).png" alt="" width="563"><figcaption><p>创建数据集时设置检索模式</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (170).png" alt="" width="563"><figcaption><p>创建知识库时设置检索模式</p></figcaption></figure>
 
-### 数据集设置中修改检索模式
+### 知识库设置中修改检索模式
 
-进入“数据集->选择数据集->设置”页面中可以对已创建的数据集修改不同的检索模式。
+进入“知识库->选择知识库->设置”页面中可以对已创建的知识库修改不同的检索模式。
 
-<figure><img src="../../../.gitbook/assets/image (171).png" alt="" width="563"><figcaption><p>数据集设置中修改检索模式</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (171).png" alt="" width="563"><figcaption><p>知识库设置中修改检索模式</p></figcaption></figure>
 
 ### 提示词编排中修改检索模式
 
-进入“提示词编排->上下文->选择数据集->设置”页面中可以在创建应用时修改不同的检索模式。
+进入“提示词编排->上下文->选择知识库->设置”页面中可以在创建应用时修改不同的检索模式。
 
 <figure><img src="../../../.gitbook/assets/image (172).png" alt=""><figcaption><p>提示词编排中修改检索模式</p></figcaption></figure>

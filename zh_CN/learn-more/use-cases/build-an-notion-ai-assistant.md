@@ -18,9 +18,9 @@ Notion 是一个强大的知识管理工具。它的灵活性和可扩展性使�
 
 1.登录 Dify。
 
-2.创建一个数据集。
+2.创建一个知识库。
 
-3.将 Notion 和数据集连接起来。
+3.将 Notion 和知识库连接起来。
 
 4.开始训练。
 
@@ -34,13 +34,13 @@ Notion 是一个强大的知识管理工具。它的灵活性和可扩展性使�
 
 ![login-1](https://pan.wsyfin.com/f/ERGcp/login-1.png)
 
-#### 2.创建新的数据集 <a href="#id-2-create-a-new-datasets" id="id-2-create-a-new-datasets"></a>
+#### 2.创建新的知识库 <a href="#id-2-create-a-new-datasets" id="id-2-create-a-new-datasets"></a>
 
 点击顶部侧边栏的 "Knowledge" 按钮，然后点击 "Create Knowledge" 按钮。
 
 ![login-2](https://pan.wsyfin.com/f/G6ziA/login-2.png)
 
-#### 3. 与 Notion 和你的数据集进行连接 <a href="#id-3-connect-with-notion-and-datasets" id="id-3-connect-with-notion-and-datasets"></a>
+#### 3. 与 Notion 和你的知识库进行连接 <a href="#id-3-connect-with-notion-and-datasets" id="id-3-connect-with-notion-and-datasets"></a>
 
 选择 "Sync from Notion"，然后点击 "Connect" 按钮。
 
@@ -74,11 +74,11 @@ Notion 是一个强大的知识管理工具。它的灵活性和可扩展性使�
 
 #### 5. 创建你自己的 AI 应用程序[​](https://wsyfin.com/notion-dify#5-create-your-own-ai-application) <a href="#id-5-create-your-own-ai-application" id="id-5-create-your-own-ai-application"></a>
 
-你需要创建一个AI应用，然后连接刚刚创建的数据集。返回到仪表板，然后点击“创建新应用”按钮。建议直接使用聊天应用。
+你需要创建一个AI应用，然后连接刚刚创建的知识库。返回到仪表板，然后点击“创建新应用”按钮。建议直接使用聊天应用。
 
 ![create-app-1](https://pan.wsyfin.com/f/QWRHo/create-app-1.png)
 
-选择“Prompt Eng.”并在“context”中添加你的 Notion 数据集。
+选择“Prompt Eng.”并在“context”中添加你的 Notion 知识库。
 
 ![create-app-2](https://pan.wsyfin.com/f/R6DT5/create-app-2.png)
 

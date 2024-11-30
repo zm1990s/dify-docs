@@ -34,6 +34,25 @@ Dify Knowledge Base provides a complete set of standard APIs. Developers can use
 
 <figure><img src="../../.gitbook/assets/knowledge-base-api.png" alt=""><figcaption><p>Knowledge base API management</p></figcaption></figure>
 
+### Document Disable and Archive
+
+**Disable**: The dataset supports disabling documents or chunks that are temporarily not to be indexed. In the dataset document list, click the disable button to disable the document. You can also disable an entire document or a specific chunk in the document details. Disabled documents will not be indexed. Click enable on the disabled documents to cancel the disable status.
+
+**Archive**: Old document data that is no longer in use can be archived if you do not want to delete it. Archived data can only be viewed or deleted, not edited. In the dataset document list, click the archive button to archive the document. You can also archive documents in the document details. Archived documents will not be indexed. Archived documents can also be unarchived.
+
+{% hint style=“info” %}
+Note:
+
+If there are documents in your knowledge base that haven’t been updated or retrieved for a while, the system will disable inactive documents to ensure optimal performance.
+
+You can enable them in the knowledge base anytime to restore access.
+
+	• For Sandbox/Free users, inactive knowledge bases will be automatically disabled **after 7 days**.
+	• For Professional/Team users, inactive knowledge bases will be automatically disabled **after 30 days**.
+{% endhint %}
+
+***
+
 ## Maintaining Text in the Knowledge Base
 
 ### Viewing Text Chunks
@@ -110,10 +129,4 @@ A knowledge base (Knowledge) is a collection of documents (Documents). Documents
 
 ***
 
-### Document Disable and Archive
 
-**Disable**: The dataset supports disabling documents or chunks that are temporarily not to be indexed. In the dataset document list, click the disable button to disable the document. You can also disable an entire document or a specific chunk in the document details. Disabled documents will not be indexed. Click enable on the disabled documents to cancel the disable status.
-
-**Archive**: Old document data that is no longer in use can be archived if you do not want to delete it. Archived data can only be viewed or deleted, not edited. In the dataset document list, click the archive button to archive the document. You can also archive documents in the document details. Archived documents will not be indexed. Archived documents can also be unarchived.
-
-***
