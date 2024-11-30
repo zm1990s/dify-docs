@@ -135,9 +135,9 @@ def main(arg1: list) -> str:
 
 ## 使用变量赋值节点
 
-点击节点右侧 `＋` 号，选择 **“变量赋值”** 节点，配置需要被赋值的变量。变量赋值节点支持同时为多个变量赋值。
+点击节点右侧 `＋` 号，选择 **“变量赋值”** 节点，配置需要被赋值的变量与源变量。变量赋值节点支持同时为多个变量赋值。
 
-<figure><img src="https://assets-docs.dify.ai/2024/11/1be866e3f19fed6a607764b15d1bbedd.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/2024/11/ee15dee864107ba5a93b459ebdfc32cf.png" alt="" width="375"><figcaption></figcaption></figure>
 
 ### 设置变量
 
