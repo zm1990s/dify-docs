@@ -8,13 +8,13 @@ The variable assigner node is used to assign values to writable variables. Curre
 
 Usage: Through the variable assigner node, you can assign workflow variables to conversation variables for temporary storage, which can be continuously referenced in subsequent conversations.
 
-<figure><img src="../../../.gitbook/assets/variable-assigner.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/2024/11/83d0b9ef4c1fad947b124398d472d656.png" alt="" width="375"><figcaption></figcaption></figure>
 
 ***
 
 ### Usage Scenario Examples
 
-Using the variable assigner node, you can write context from the conversation process, files uploaded to the dialog box (coming soon), and user preference information into conversation variables. These stored variables can then be referenced in subsequent conversations to direct different processing flows or formulate responses.
+Using the variable assigner node, you can write context from the conversation process, files uploaded to the dialog box, and user preference information into conversation variables. These stored variables can then be referenced in subsequent conversations to direct different processing flows or formulate responses.
 
 **Scenario 1**
 
@@ -140,20 +140,41 @@ Example: After starting the conversation, the LLM will ask the user to input ite
 
 ### Using the Variable Assigner Node
 
-Click the + sign on the right side of the node, select the "variable assigner" node, and fill in "Assigned Variable" and "Set Variable".
+Click the `+` icon on the right side of the node and select the **“Variable Assignment”** node. Configure the target variables and their corresponding source variables. This node allows you to assign values to multiple variables simultaneously.
 
-<figure><img src="../../../.gitbook/assets/language-variable-assigner.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/2024/11/ee15dee864107ba5a93b459ebdfc32cf.png" alt="" width="375"><figcaption></figcaption></figure>
 
 **Setting Variables:**
 
-Assigned Variable: Select the variable to be assigned, i.e., specify the target conversation variable that needs to be assigned.
+Variable: Select the variable to be assigned, i.e., specify the target conversation variable that needs to be assigned.
 
 Set Variable: Select the variable to assign, i.e., specify the source variable that needs to be converted.
 
-Taking the assignment logic in the above figure as an example: Assign the text output item `Language Recognition/text` from the previous node to the conversation variable `language`.
+The variable assignment logic illustrated in the image above assigns the user’s language preference, specified on the initial page `Start/language`, to the system-level conversation variable `language`.
 
-**Write Mode:**
+### **Operation Modes for Specifying Variables**
 
-* Overwrite: Overwrite the content of the source variable to the target conversation variable
-* Append: When the specified variable is of Array type
-* Clear: Clear the content in the target conversation variable
+The data type of the target variable determines its operation method. Below are the operation modes for different variable types:
+
+1.	Target variable data type: `String`
+	•	**Overwrite**: Directly overwrite the target variable with the source variable.
+	•	**Clear**: Clear the contents of the selected target variable.
+	•	**Set**: Manually assign a value without requiring a source variable.
+
+2.	Target variable data type: `Number`
+	•	**Overwrite**: Directly overwrite the target variable with the source variable.
+	•	**Clear**: Clear the contents of the selected target variable.
+	•	**Set**: Manually assign a value without requiring a source variable.
+	•	**Arithmetic**: Perform addition, subtraction, multiplication, or division on the target variable.
+
+3.	Target variable data type: `Object`
+	•	**Overwrite**: Directly overwrite the target variable with the source variable.
+	•	**Clear**: Clear the contents of the selected target variable.
+	•	**Set**: Manually assign a value without requiring a source variable.
+
+4.	Target variable data type: `Array`
+	•	**Overwrite**: Directly overwrite the target variable with the source variable.
+	•	**Clear**: Clear the contents of the selected target variable.
+	•	**Append**: Add a new element to the array in the target variable.
+	•	**Extend**: Add a new array to the target variable, effectively adding multiple elements at once.
+

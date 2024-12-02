@@ -96,7 +96,7 @@ FileNotFoundError: File not found
 
 127.0.0.1 是容器内部地址， Dify 配置的服务器地址需要宿主机局域网 IP 地址。
 
-### 11. 本地部署版如何解决数据集文档上传的大小限制和数量限制。
+### 11. 本地部署版如何解决知识库文档上传的大小限制和数量限制。
 
 可参考官网[环境变量说明文档](https://docs.dify.ai/v/zh-hans/getting-started/install-self-hosted/environments)去配置。
 

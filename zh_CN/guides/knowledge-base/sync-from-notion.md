@@ -4,14 +4,14 @@ Dify 知识库支持从 Notion 导入，并设置 **同步** 使得数据在 Not
 
 ### 授权验证
 
-1. 在创建数据集，选择数据源时，点击 **同步自 Notion 内容-- 去绑定，根据提示完成授权验证。**
+1. 在创建知识库，选择数据源时，点击 **同步自 Notion 内容-- 去绑定，根据提示完成授权验证。**
 2. 你也可以：进入 **设置 -- 数据来源 -- 添加数据源** 中点击 Notion 来源 **绑定** ，完成授权验证。
 
 <figure><img src="../../.gitbook/assets/image (46) (1).png" alt=""><figcaption><p>绑定 Notion</p></figcaption></figure>
 
 ### 导入 Notion 数据
 
-完成验证授权后，进入创建数据集页面，点击 \*\*同步自 Notion 内容 ，\*\*选择需要的授权页面进行导入。
+完成验证授权后，进入创建知识库页面，点击 \*\*同步自 Notion 内容 ，\*\*选择需要的授权页面进行导入。
 
 ### 进行分段和清洗
 
@@ -21,7 +21,7 @@ _**请注意：图片和文件暂不支持导入，表格类数据会被转换�
 
 ### 同步 Notion 数据
 
-如果你的 Notion 内容有修改，你可以直接在 Dify 数据集 **文档列表页**中点击 **同步** 即可进行数据一键同步，该步骤是需要消耗 Token。
+如果你的 Notion 内容有修改，你可以直接在 Dify 知识库 **文档列表页**中点击 **同步** 即可进行数据一键同步，该步骤是需要消耗 Token。
 
 <figure><img src="../../.gitbook/assets/sync-notion.png" alt=""><figcaption><p>同步 Notion 内容</p></figcaption></figure>
 
@@ -67,4 +67,4 @@ Notion集成分为**内部集成**（internal integration）和**外部集成**�
 
 **NOTION\_CLIENT\_ID**=you-client-id
 
-配置完成后，即可在数据集中操作 Notion 的数据导入及同步功能。
+配置完成后，即可在知识库中操作 Notion 的数据导入及同步功能。

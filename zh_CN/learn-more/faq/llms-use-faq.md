@@ -13,7 +13,7 @@ Dify 支持 OpenAI 的自定义 API 域名能力，支持任何兼容 OpenAI 的
 
 因为在自然语言处理中，较长的文本输出通常需要更长的计算时间和更多的计算资源。因此，限制输出文本的长度可以在一定程度上降低计算成本和计算时间。例如设置：max\_tokens=500 ，表示最多只考虑输出文本的前 500 个 token，而超过这个长度的部分将会被丢弃。这样做的目的是保证输出文本的长度不会超过 LLM 的接受范围，同时还可以充分利用计算资源，提高模型的运行效率。另一方面，更多的情况是，限制 max\_tokens 能够增加 prompt 的长度，如 gpt-3.5-turbo 的限制为 4097 tokens，如果设置 max\_tokens=4000，那么 prompt 就只剩下 97 tokens 可用，如果超过就会报错。
 
-### **4. 数据集长文本如何切分比较合理？**
+### **4. 知识库长文本如何切分比较合理？**
 
 在一些自然语言处理应用中，通常会将文本按照段落或者句子进行切分，以便更好地处理和理解文本中的语义和结构信息。最小切分单位取决于具体的任务和技术实现。例如：
 
@@ -22,7 +22,7 @@ Dify 支持 OpenAI 的自定义 API 域名能力，支持任何兼容 OpenAI 的
 
 最后，还需要进行实验和评估来确定最合适的 embedding 技术和切分单位。可以在测试集上 / 命中测试比较不同技术和切分单位的性能表现，并选择最优的方案。
 
-### 5. 我们在获取数据集分段时用的什么距离函数？
+### 5. 我们在获取知识库分段时用的什么距离函数？
 
 我们使用[余弦相似度](https://en.wikipedia.org/wiki/Cosine\_similarity)。距离函数的选择通常无关紧要。OpenAI 嵌入被归一化为长度 1，这意味着：
 
@@ -86,7 +86,7 @@ Query or prefix prompt is too long, you can reduce the preix prompt, or shrink t
 
 默认的模型可以在 **设置 - 模型供应商** 处配置，目前支持 OpenAI / Azure OpenAl / Anthropic 等模型厂商的文本生成型模型，同时支持 Hugging Face/ Replicate / xinference 上托管的开源模型的接入。
 
-### 13. 在社区版中，数据集开启 **Q\&A 分段模式**一直显示排队中，是什么原因？
+### 13. 在社区版中，知识库开启 **Q\&A 分段模式**一直显示排队中，是什么原因？
 
 请检查你所使用的 Embedding 模型 api-key 是否达到了速率限制。
 
@@ -97,9 +97,9 @@ Query or prefix prompt is too long, you can reduce the preix prompt, or shrink t
 * 浏览器清除缓存（Cookies、Session Storage 和 Local Storage），如果是手机里使用则清除对应 APP 的缓存，重新访问；
 * 二是重新生成一个 App 网址，重新网址进入即可。
 
-### 15. 数据集文档上传的大小限制有哪些？
+### 15. 知识库文档上传的大小限制有哪些？
 
-目前数据集文档上传单个文档最大是 15MB，总文档数量限制 100 个。如你本地部署版本需要调整修改该限制，请参考[文档](https://docs.dify.ai/v/zh-hans/getting-started/faq/install-faq#11.-ben-di-bu-shu-ban-ru-he-jie-jue-shu-ju-ji-wen-dang-shang-chuan-de-da-xiao-xian-zhi-he-shu-liang)。
+目前知识库文档上传单个文档最大是 15MB，总文档数量限制 100 个。如你本地部署版本需要调整修改该限制，请参考[文档](https://docs.dify.ai/v/zh-hans/getting-started/faq/install-faq#11.-ben-di-bu-shu-ban-ru-he-jie-jue-shu-ju-ji-wen-dang-shang-chuan-de-da-xiao-xian-zhi-he-shu-liang)。
 
 ### 16. 为什么选择了 Claude 模型，还是会消耗 OpenAI 的费用？
 
@@ -107,9 +107,9 @@ Query or prefix prompt is too long, you can reduce the preix prompt, or shrink t
 
 ### 17. 有什么方式能控制更多地使用上下文数据而不是模型自身生成能力吗？
 
-是否使用数据集，会和数据集的描述有关系，尽可能把数据集描述写清楚，具体可参考[此文档编写技巧](https://docs.dify.ai/v/zh-hans/advanced/datasets)。
+是否使用知识库，会和知识库的描述有关系，尽可能把知识库描述写清楚，具体可参考[此文档编写技巧](https://docs.dify.ai/v/zh-hans/advanced/datasets)。
 
-### 18. 上传数据集文档是 Excel，该如何更好地分段？
+### 18. 上传知识库文档是 Excel，该如何更好地分段？
 
 首行设置表头，后面每行显示内容，不要有其他多余的表头设置，不要设置复杂格式的表格内容。
 

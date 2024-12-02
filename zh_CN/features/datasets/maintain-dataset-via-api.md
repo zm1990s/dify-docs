@@ -19,7 +19,7 @@
 **`POST /datasets`**
 
 {% hint style="warning" %}
-仅用于创建空数据集
+仅用于创建空知识库
 {% endhint %}
 
 ```

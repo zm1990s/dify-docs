@@ -106,7 +106,7 @@ pyenv global 3.11
     ```
 7.  启动 Worker 服务
 
-    用于消费异步队列任务，如数据集文件导入、更新数据集文档等异步操作。 Linux / MacOS 启动：
+    用于消费异步队列任务，如知识库文件导入、更新知识库文档等异步操作。 Linux / MacOS 启动：
 
     ```
     celery -A app.celery worker -P gevent -c 1 -Q dataset,generation,mail,ops_trace --loglevel INFO

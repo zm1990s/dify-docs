@@ -75,6 +75,10 @@ For example, you can store the language preference input by the user in the firs
 
 About how to use conversation variables with the Variable Assigner node, please refer to the [Variable Assigner](node/variable-assignment.md).
 
+To track changes in conversation variable values during debugging the application, click the conversation variable icon at the top of the Chatflow application preview page.
+
+![](https://assets-docs.dify.ai/2024/11/cc8067fa4c96436f037f8210ebe3f65c.png)
+
 ### Notice
 
 * To avoid variable name duplication, node naming must not be repeated
