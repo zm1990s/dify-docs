@@ -157,22 +157,26 @@ The variable assignment logic illustrated in the image above assigns the user’
 The data type of the target variable determines its operation method. Below are the operation modes for different variable types:
 
 1.	Target variable data type: `String`
+
 	•	**Overwrite**: Directly overwrite the target variable with the source variable.
 	•	**Clear**: Clear the contents of the selected target variable.
 	•	**Set**: Manually assign a value without requiring a source variable.
 
 2.	Target variable data type: `Number`
+
 	•	**Overwrite**: Directly overwrite the target variable with the source variable.
 	•	**Clear**: Clear the contents of the selected target variable.
 	•	**Set**: Manually assign a value without requiring a source variable.
 	•	**Arithmetic**: Perform addition, subtraction, multiplication, or division on the target variable.
 
 3.	Target variable data type: `Object`
+
 	•	**Overwrite**: Directly overwrite the target variable with the source variable.
 	•	**Clear**: Clear the contents of the selected target variable.
 	•	**Set**: Manually assign a value without requiring a source variable.
 
 4.	Target variable data type: `Array`
+
 	•	**Overwrite**: Directly overwrite the target variable with the source variable.
 	•	**Clear**: Clear the contents of the selected target variable.
 	•	**Append**: Add a new element to the array in the target variable.
