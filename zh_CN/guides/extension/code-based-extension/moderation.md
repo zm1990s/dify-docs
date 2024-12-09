@@ -29,7 +29,8 @@
 
 ### 2.添加前端组件规范
 
-* `schema.json`，这里定义了前端组件规范，详细见 [Broken link](broken-reference "mention") 。
+* `schema.json`，定义前端组件，详细请参考[前端组件规范](https://docs.dify.ai/zh-hans/guides/extension/code-based-extension "mention")
+
 
 ```json
 {
