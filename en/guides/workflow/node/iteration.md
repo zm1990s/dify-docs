@@ -14,13 +14,13 @@ Using iteration nodes requires input values to be formatted as list objects. The
 
 An iteration node consists of three core components: **Input Variables**, **Iteration Workflow**, and **Output Variables**.
 
-**Input Variables:** Accepts only Array type data. For more details about array variables, take refer to [Extended Reading: What is an Arrays Variable?](broken-reference).
+**Input Variables:** Accepts only Array type data.
 
 **Iteration Workflow:** Supports multiple workflow nodes to orchestrate task sequences within the iteration node.
 
-**Output Variables:** Outputs only array variables (`Array[List]`). For other output formats, take refer to [Extended Reading: Array to Text Conversion](iteration.md#how-to-convert-an-array-to-text).
+**Output Variables:** Outputs only array variables (`Array[List]`). 
 
-<figure><img src="broken-reference" alt=""><figcaption><p>Iteration Node Functional Description</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/2024/12/7c94bccbb6f8dc4570c69c2bf02ec6d3.png" alt=""><figcaption><p>Iteration Node Functional Description</p></figcaption></figure>
 
 ### Scenarios
 
@@ -95,11 +95,11 @@ Built-in variables for iteration: `items[object]` and `index[number]`.
 
 The iteration node supports parallel processing, improving execution efficiency when enabled.
 
-<figure><img src="broken-reference" alt=""><figcaption><p>Enable parallel mode</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/2024/12/516af5e7427fce9a58fa9d9b583230d4.png" alt=""><figcaption><p>Enable parallel mode</p></figcaption></figure>
 
 Below illustrates the comparison between parallel and sequential execution in the iteration node.
 
-<figure><img src="broken-reference" alt=""><figcaption><p>Sequential and Parallel Processing Flow Diagram</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/2024/12/2656dec26d6357556a280fcd69ccd9a7.png" alt=""><figcaption><p>Sequential and Parallel Processing Flow Diagram</p></figcaption></figure>
 
 Parallel mode supports up to 10 concurrent iterations. When processing more than 10 tasks, the first 10 elements execute simultaneously, with remaining tasks processed after the completion of the initial batch.
 
@@ -128,12 +128,6 @@ Error handling examples:
 ***
 
 ### Reference
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-***
 
 #### How to Obtain Array-Formatted Content
 

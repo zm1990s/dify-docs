@@ -93,5 +93,5 @@ This code snippet has the following issues:
 
 Dangerous code will be automatically blocked by Cloudflare WAF. You can check if it's been blocked by looking at the "Network" tab in your browser's "Web Developer Tools".
 
-<figure><img src="broken-reference" alt=""><figcaption><p>Cloudflare WAF</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/2024/12/ad4dc065c4c567c150ab7fa7bfd123a3.png" alt=""><figcaption><p>Cloudflare WAF</p></figcaption></figure>
 
