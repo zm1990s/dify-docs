@@ -122,6 +122,8 @@ If you do not understand what these parameters are, you can choose to load prese
 
 **Jinja-2 Templates**: The LLM prompt editor supports Jinja-2 template language, allowing you to leverage this powerful Python template language for lightweight data transformation and logical processing. Refer to the [official documentation](https://jinja.palletsprojects.com/en/3.1.x/templates/).
 
+**Error Handling**: Provides diverse node error handling strategies that can throw error messages when the current node fails without interrupting the main process, or continue completing tasks through backup paths. For detailed information, please refer to the [Error Handling](https://docs.dify.ai/guides/workflow/error-handling).
+
 ***
 
 #### Use Cases
@@ -154,3 +156,13 @@ For more information, please refer to [File Upload](../file-upload.md).
 
 <figure><img src="../../../.gitbook/assets/image (137).png" alt=""><figcaption><p>input system prompts</p></figcaption></figure>
 
+* **Error Handling**
+
+When processing information, LLM nodes may encounter errors such as input text exceeding token limits or missing key parameters. Developers can follow these steps to configure exception branches, enabling contingency plans when node errors occur to avoid interrupting the entire flow:
+
+1. Enable "Error Handling" in the LLM node
+2. Select and configure an error handling strategy
+
+<figure><img src="https://assets-docs.dify.ai/2024/12/f7109ce5e87c0e0a81248bb2672c7667.png" alt=""><figcaption><p>input system prompts</p></figcaption></figure>
+
+For more information about exception handling methods, please refer to the [Error Handling](https://docs.dify.ai/guides/workflow/error-handling).
