@@ -47,8 +47,8 @@ If there are documents in your knowledge base that haven’t been updated or ret
 
 You can enable them in the knowledge base anytime to restore access.
 
-	• For Sandbox/Free users, inactive knowledge bases will be automatically disabled **after 7 days**.
-	• For Professional/Team users, inactive knowledge bases will be automatically disabled **after 30 days**.
+	• For Sandbox/Free users, inactive knowledge bases will be automatically disabled after 7 days.
+	• For Professional/Team users, inactive knowledge bases will be automatically disabled after 30 days.
 {% endhint %}
 
 ***

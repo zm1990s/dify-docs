@@ -157,13 +157,9 @@ LLM 节点处理信息时有可能会遇到输入文本超过 Token 限制，未
 1. 在 LLM 节点启用 “异常处理”
 2. 选择异常处理方案并进行配置
 
-需了解更多应对异常的处理办法，请参考[异常处理](https://docs.dify.ai/guides/workflow/error-handling)。
+如需了解更多应对异常的处理办法，请参考[异常处理](https://docs.dify.ai/guides/workflow/error-handling)。
 
 ![Error handling](https://assets-docs.dify.ai/2024/12/48c666959a491aa87c2232c444794dc5.png)
-
-如
-
-
 
 
 

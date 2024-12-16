@@ -46,6 +46,6 @@ HTTP 节点处理信息时有可能会遇到网络请求超时、请求限制等
 1. 在 HTTP 节点启用 “异常处理”
 2. 选择异常处理方案并进行配置
 
-需了解更多应对异常的处理办法，请参考[异常处理](https://docs.dify.ai/guides/workflow/error-handling)。
+需了解更多应对异常的处理办法，请参考[异常处理](https://docs.dify.ai/zh-hans/guides/workflow/error-handling)。
 
 ![](https://assets-docs.dify.ai/2024/12/91daa86d9770390ab2a41d6d0b6ed1e7.png)

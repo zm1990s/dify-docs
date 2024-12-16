@@ -1,12 +1,12 @@
 # Tools
 
-### Definition
-
 The workflow provides a rich selection of tools, categorized into three types:
 
 * **Built-in Tools**: Tools provided by Dify.
 * **Custom Tools**: Tools imported or configured via the OpenAPI/Swagger standard format.
 * **Workflows**: Workflows that have been published as tools.
+
+## Add and Use the Tool Node
 
 Before using built-in tools, you may need to **authorize** the tools.
 
@@ -24,3 +24,18 @@ Configuring a tool node generally involves two steps:
 2. Configuring the tool's input and parameters.
 
 For more information on how to create custom tools and configure them, please refer to the [Tool Configuration Guide](https://docs.dify.ai/guides/tools).
+
+### Advanced Features
+
+Tool nodes may encounter errors during information processing that could interrupt the workflow. Developers can follow these steps to configure fail branches, enabling contingency plans when nodes encounter exceptions, avoiding workflow interruptions.
+
+1. Enable "Error Handling" in the tool node
+2. Select and configure an error-handling strategy
+
+![](https://assets-docs.dify.ai/2024/12/39dc3b5881d9a5fe35b877971f70d3a6.png)
+
+For more information about exception handling approaches, please refer to [Error Handling](https://docs.dify.ai/guides/workflow/error-handling).
+
+## Publishing Workflow Applications as Tools
+
+Workflow applications can be published as tools and used by nodes in other workflows. For information about creating custom tools and tool configuration, please refer to the [Tool Configuration Guide](https://docs.dify.ai/guides/tools).

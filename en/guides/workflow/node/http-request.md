@@ -39,3 +39,13 @@ Here is a configuration example:
 
 <figure><img src="../../../.gitbook/assets/image (145).png" alt=""><figcaption><p>http-node-send-file</p></figcaption></figure>
 
+### Advanced Features
+
+When processing information, HTTP nodes may encounter exceptional situations such as network request timeouts or request limits. Application developers can follow these steps to configure fail branches, enabling contingency plans when nodes encounter exceptions and avoiding workflow interruptions.
+
+1. Enable "Error Handling" in the HTTP node
+2. Select and configure an error handling strategy
+
+For more information about exception handling approaches, please refer to [Error Handling](https://docs.dify.ai/zh-hans/guides/workflow/error-handling).
+
+![](https://assets-docs.dify.ai/2024/12/91daa86d9770390ab2a41d6d0b6ed1e7.png)

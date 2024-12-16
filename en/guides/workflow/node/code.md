@@ -73,6 +73,17 @@ docker-compose -f docker-compose.middleware.yaml up -d
 
 Both Python and JavaScript execution environments are strictly isolated (sandboxed) to ensure security. This means that developers cannot use functions that consume large amounts of system resources or may pose security risks, such as direct file system access, making network requests, or executing operating system-level commands. These limitations ensure the safe execution of the code while avoiding excessive consumption of system resources.
 
+### Advanced Features
+
+When processing information, code nodes may encounter code execution exceptions. Developers can follow these steps to configure fail branches, enabling contingency plans when nodes encounter exceptions, thus avoiding workflow interruptions.
+
+1. Enable "Error Handling" in the code node
+2. Select and configure an error handling strategy
+
+![Code Error handling](https://assets-docs.dify.ai/2024/12/58f392734ce44b22cd8c160faf28cd14.png)
+
+For more information about exception handling approaches, please refer to [Error Handling](https://docs.dify.ai/zh-hans/guides/workflow/error-handling).
+
 ### FAQ
 
 **Why can't I save the code it in the code node?**
