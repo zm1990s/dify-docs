@@ -2,7 +2,7 @@
 
 在 **工作室 -- 应用编排** 内点击 **添加功能**，打开应用工具箱
 
-应用工具箱为 Dify 的[应用](../#application\_type)提供了不同的附加功能：
+应用工具箱为 Dify 的[应用](../#application_type)提供了不同的附加功能：
 
 <figure><img src="../../../.gitbook/assets/image (288).png" alt=""><figcaption></figcaption></figure>
 
@@ -46,4 +46,4 @@
 
 标注回复功能通过人工编辑标注为应用提供了可定制的高质量问答回复能力。
 
-查看[标注回复](../../biao-zhu/annotation-reply.md)
+查看[标注回复](../../annotation/annotation-reply.md)

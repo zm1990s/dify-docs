@@ -69,7 +69,6 @@ LLM 节点是 Chatflow/Workflow 的核心节点。该节点能够利用大语言
 
 <figure><img src="../../../.gitbook/assets/image (371).png" alt=""><figcaption><p>视觉上传功能</p></figcaption></figure>
 
-
 **文件变量**
 
 部分 LLMs（例如 [Claude 3.5 Sonnet](https://docs.anthropic.com/en/docs/build-with-claude/pdf-support)）已支持直接处理并分析文件内容，因此系统提示词已允许输入文件变量。为了避免潜在异常，应用开发者在使用该文件变量前需前往 LLM 官网确认 LLM 支持何种文件类型。
@@ -117,6 +116,8 @@ LLM 节点是 Chatflow/Workflow 的核心节点。该节点能够利用大语言
 
 **Jinja-2 模板：** LLM 的提示词编辑器内支持 Jinja-2 模板语言，允许你借助 Jinja2 这一强大的 Python 模板语言，实现轻量级数据转换和逻辑处理，参考[官方文档](https://jinja.palletsprojects.com/en/3.1.x/templates/)。
 
+**异常处理**：提供多样化的节点错误处理策略，能够在当前节点发生错误时抛出故障信息而不中断主流程；或通过备用路径继续完成任务。详细说明请参考[异常处理](https://docs.dify.ai/guides/workflow/error-handling)。
+
 ***
 
 ### 使用案例
@@ -148,3 +149,21 @@ LLM 节点是 Chatflow/Workflow 的核心节点。该节点能够利用大语言
 如需了解更多，请参考[文件上传](../file-upload.md)。
 
 <figure><img src="../../../.gitbook/assets/image (2) (2).png" alt=""><figcaption><p>填写系统提示词</p></figcaption></figure>
+
+* **异常处理**
+
+LLM 节点处理信息时有可能会遇到输入文本超过 Token 限制，未填写关键参数等错误。应用开发者可以参考以下步骤配置异常分支，在节点出现异常时启用应对方案，而避免中断整个流程。
+
+1. 在 LLM 节点启用 “异常处理”
+2. 选择异常处理方案并进行配置
+
+需了解更多应对异常的处理办法，请参考[异常处理](https://docs.dify.ai/guides/workflow/error-handling)。
+
+![Error handling](https://assets-docs.dify.ai/2024/12/48c666959a491aa87c2232c444794dc5.png)
+
+如
+
+
+
+
+

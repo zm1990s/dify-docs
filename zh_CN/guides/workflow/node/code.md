@@ -75,6 +75,17 @@ docker-compose -f docker-compose.middleware.yaml up -d
 
 无论是 Python3 还是 Javascript 代码执行器，它们的执行环境都被严格隔离（沙箱化），以确保安全性。这意味着开发者不能使用那些消耗大量系统资源或可能引发安全问题的功能，例如直接访问文件系统、进行网络请求或执行操作系统级别的命令。这些限制保证了代码的安全执行，同时避免了对系统资源的过度消耗。
 
+### 高级功能
+
+代码节点处理信息时有可能会遇到代码执行异常的情况。应用开发者可以参考以下步骤配置异常分支，在节点出现异常时启用应对方案，而避免中断整个流程。
+
+1. 在代码节点启用 “异常处理”
+2. 选择异常处理方案并进行配置
+
+![Code Error handling](https://assets-docs.dify.ai/2024/12/58f392734ce44b22cd8c160faf28cd14.png)
+
+需了解更多应对异常的处理办法，请参考[异常处理](https://docs.dify.ai/guides/workflow/error-handling)。
+
 ### 常见问题
 
 **在代码节点内填写代码后为什么无法保存？**
@@ -93,6 +104,6 @@ def main() -> dict:
 * **未经授权的文件访问：** 代码试图读取 "/etc/passwd" 文件，这是 Unix/Linux 系统中存储用户账户信息的关键系统文件。
 * **敏感信息泄露：** "/etc/passwd" 文件包含系统用户的重要信息，如用户名、用户 ID、组 ID、home 目录路径等。直接访问可能会导致信息泄露。
 
-危险代码将会被 Cloudflare  WAF 自动拦截，你可以通过 “网页调试工具” 中的 “网络” 查看是否被拦截。
+危险代码将会被 Cloudflare WAF 自动拦截，你可以通过 “网页调试工具” 中的 “网络” 查看是否被拦截。
 
-<figure><img src="../../../.gitbook/assets/image (370).png" alt=""><figcaption><p> Cloudflare WAF</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (370).png" alt=""><figcaption><p>Cloudflare WAF</p></figcaption></figure>
