@@ -14,11 +14,11 @@
 
 迭代节点的结构通常包含**输入变量**、**迭代工作流**、**输出变量**三个功能单元。
 
-**输入变量：**仅接受 Array 数组变量类型数据。如果你不了解什么是数组变量，请阅读 [扩展阅读：数组](../../../learn-more/extended-reading/what-is-array-variable.md)。
+**输入变量：**&#x4EC5;接受 Array 数组变量类型数据。如果你不了解什么是数组变量，请阅读 [扩展阅读：数组](../../../learn-more/extended-reading/what-is-array-variable.md)。
 
-**迭代工作流：**你可以在迭代节点中使用多个工作流节点，编排不同的任务步骤。
+**迭代工作流：**&#x4F60;可以在迭代节点中使用多个工作流节点，编排不同的任务步骤。
 
-**输出变量：**仅支持输出数组变量 `Array[List]`。如果你想要输出其它变量格式，请阅读 [扩展阅读：如何将数组转换为文本](iteration.md#ru-he-jiang-shu-zu-zhuan-huan-wei-wen-ben)。
+**输出变量：**&#x4EC5;支持输出数组变量 `Array[List]`。如果你想要输出其它变量格式，请阅读 [扩展阅读：如何将数组转换为文本](iteration.md#ru-he-jiang-shu-zu-zhuan-huan-wei-wen-ben)。
 
 <figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>迭代节点原理图</p></figcaption></figure>
 
@@ -117,9 +117,9 @@
 
 迭代节点的输入变量与输出变量相对应。例如输入变量为 \[1,2,3] ，则输出变量同样为 \[result-1, result-2, result-3]。
 
-如果选择了**忽略错误并继续，**异常情况的输出值为 null 值，例如 \[result-1, null, result-3]；
+如果选择了**忽略错误并继续，**&#x5F02;常情况的输出值为 null 值，例如 \[result-1, null, result-3]；
 
-如果选择了**移除错误输出，**将不会输出异常变量，例如 \[result-1, result-3]。
+如果选择了**移除错误输出，**&#x5C06;不会输出异常变量，例如 \[result-1, result-3]。
 
 ### 扩展阅读
 
