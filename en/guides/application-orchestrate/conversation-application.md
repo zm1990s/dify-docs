@@ -16,13 +16,13 @@ Here, we use a interviewer application as an example to introduce the way to com
 
 Click the "Create Application" button on the homepage to create an application. Fill in the application name, and select **"Chat App"** as the application type.
 
-<figure><img src="../../.gitbook/assets/chat-app.png" alt=""><figcaption><p>Create Application</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/en/application-orchestrate/ec579af36914d43f3b02fae246d83ced.webp" alt=""><figcaption><p>Create Application</p></figcaption></figure>
 
 #### Step 2: Compose the Application
 
 After the application is successfully created, it will automatically redirect to the application overview page. Click on the button on the left menu: **"Orchestrate"** to compose the application.
 
-<figure><img src="../../.gitbook/assets/compose-the-app.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/en/application-orchestrate/462987770273f6747dffcd630306c983.webp" alt=""><figcaption></figcaption></figure>
 
 **2.1 Fill in Prompts**
 
@@ -38,17 +38,17 @@ For a better experience, we will add an opening dialogue: `"Hello, {{name}}. I'm
 
 To add the opening dialogue, click the "Add Feature" button in the upper left corner, and enable the "Conversation remarkers" feature:
 
-<figure><img src="../../.gitbook/assets/conversation-remarkers.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/en/application-orchestrate/d5c6f07c517c0eeca9611d2add158fe6.webp" alt=""><figcaption></figcaption></figure>
 
 And then edit the opening remarks:
 
-![](../../.gitbook/assets/conversation-options.png)
+![](https://assets-docs.dify.ai/img/en/application-orchestrate/92f7d07aaa4c86c9e8b59286af602635.webp)
 
 **2.2 Adding Context**
 
 If an application wants to generate content based on private contextual conversations, it can use our [knowledge](../knowledge-base/) feature. Click the "Add" button in the context to add a knowledge base.
 
-![](../../../img/context.png)
+![](https://assets-docs.dify.ai/img/en/application-orchestrate/729377b24c0e96977be70d52215c6053.webp)
 
 **2.3 Uploading Documentation File**
 
@@ -63,21 +63,21 @@ Select an LLM that supports file reading and enable the "Documentation" feature.
 
 Enter user inputs on the right side and check the respond content.
 
-![](../../.gitbook/assets/debug.png)
+![](https://assets-docs.dify.ai/img/en/application-orchestrate/0a7d50796925831c52decc4eccc069a0.webp)
 
 If the results are not satisfactory, you can adjust the prompts and model parameters. Click on the model name in the upper right corner to set the parameters of the model:
 
-![](../../.gitbook/assets/adjust-model-parameters.png)
+![](https://assets-docs.dify.ai/img/en/application-orchestrate/97051afb0f6a32ad77d8489eb734ffde.webp)
 
 **Debugging with multiple models:**
 
 If debugging with a single model feels inefficient, you can utilize the **Debug as Multiple Models** feature to batch-test the models’ response effectiveness.
 
-![](../../.gitbook/assets/multiple-models.png)
+![](https://assets-docs.dify.ai/img/en/application-orchestrate/aaba66d00033137b3e0affacab502a93.webp)
 
 Supports adding up to 4 LLMs at the same time.
 
-![](../../.gitbook/assets/multiple-models-2.png)
+![](https://assets-docs.dify.ai/img/en/application-orchestrate/66eeff0b9f27dab3d0e5ad28273982ab.webp)
 
 > ⚠️ When using the multi-model debugging feature, if only some large models are visible, it is because other large models’ keys have not been added yet. You can manually add multiple models’ keys in [“Add New Provider”](https://docs.dify.ai/guides/model-configuration/new-provider).
 

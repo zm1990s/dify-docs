@@ -15,7 +15,7 @@
 * メールアドレス
 * パスワード
 
-<figure><img src="../../.gitbook/assets/personal-account-management-01.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/jp/management/f0aeeba24f1474ec8bf767be8a7928f1.webp" alt=""><figcaption></figcaption></figure>
 
 ### ログインをバインドする方法
 
@@ -48,4 +48,4 @@ Difyはコミュニティのボランティアによる追加の言語バージ�
 Delete account: あなたのメールアドレス
 ```
 
-<figure><img src="../../.gitbook/assets/personal-account-management-02.png" alt=""><figcaption><p>個人アカウントの削除</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/jp/management/e8599fcd86cd71fe5aa60c6eed73a78e.webp" alt=""><figcaption><p>個人アカウントの削除</p></figcaption></figure>

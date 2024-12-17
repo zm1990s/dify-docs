@@ -24,11 +24,11 @@ In applications that utilize multiple knowledge bases, it is essential to config
 
 The retriever scans all knowledge bases linked to the application for text content relevant to the user's question. The results are then consolidated. Below is the technical flowchart for the Multi-path Retrieval mode:
 
-<figure><img src="../../.gitbook/assets/rerank-flow-chart.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/en/knowledge-base/cf9b4d10e65ad7d0e42b9c69045da709.webp" alt=""><figcaption></figcaption></figure>
 
 This method simultaneously queries all knowledge bases connected in **"Context"**, seeking relevant text chucks across multiple knowledge bases, collecting all content that aligns with the user's question, and ultimately applying the Rerank strategy to identify the most appropriate content to respond to the user. This retrieval approach offers more comprehensive and accurate results by leveraging multiple knowledge bases simultaneously.
 
-<figure><img src="../../.gitbook/assets/en-rag-multiple.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/en/knowledge-base/200496cb1677e73dab28007c74b044a9.webp" alt=""><figcaption></figcaption></figure>
 
 For instance, in application A, with three knowledge bases K1, K2, and K3. When a user send a question, multiple relevant pieces of content will be retrieved and combined from these knowledge bases. To ensure the most pertinent content is identified, the Rerank strategy is employed to find the content that best relates to the user's query, enhancing the precision and reliability of the results.
 
@@ -60,7 +60,7 @@ While this method incurs some additional costs, it is more adept at handling com
 
 Dify currently supports multiple Rerank models. To use external Rerank models, you'll need to provide an API Key. Enter the API Key for the Rerank model (such as Cohere, Jina AI, etc.) on the "Model Provider" page.
 
-<figure><img src="../../.gitbook/assets/en-rerank-model-api.png" alt=""><figcaption><p>Configuring the Rerank model in the Model Provider</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/en/knowledge-base/6b959d7417b18420b68da01fdd0ba2a5.webp" alt=""><figcaption><p>Configuring the Rerank model in the Model Provider</p></figcaption></figure>
 
 **Adjustable Parameters**
 
@@ -91,7 +91,7 @@ If the content in the knowledge base is complex and cannot be matched by simple 
 
 Here's how the knowledge base retrieval method affects Multi-path Retrieval:
 
-<figure><img src="../../.gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/en/knowledge-base/edaf51316fa078c33deb10cf1273250a.webp" alt=""><figcaption></figcaption></figure>
 
 3. **What should I do if I cannot adjust the “Weight Score” when referencing multiple knowledge bases and an error message appears?**
 

@@ -13,11 +13,11 @@
 1. ツールの認証を行う／カスタムツールを作成する／ワークフローをツールとして公開する
 2. ツールの入力とパラメータを設定する
 
-<figure><img src="../../../.gitbook/assets/workflow-tool.png" alt="" width="258"><figcaption><p>ツールの選択</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/jp/node/811f23e35ec17b63c064a688f44a325f.webp" alt="" width="258"><figcaption><p>ツール選択</p></figcaption></figure>
 
 ツールノードは、他のノードと接続が可能であり、[変数](../variables.md)を介してデータの処理と受け渡しを行います。
 
-<figure><img src="../../../.gitbook/assets/workflow-google-search-tool.png" alt=""><figcaption><p>Google検索ツールを利用して外部情報を検索する例</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/jp/node/5805cbddf07ad8d47d9a0134aa277bb3.webp" alt=""><figcaption><p>Google 検索ツールで外部知識を検索</p></figcaption></figure>
 
 ### ワークフローアプリをツールとして公開
 

@@ -6,7 +6,7 @@
 
 On the Dify team homepage, click the "Knowledge Base" tab at the top, select the knowledge base you want to manage, then click **Settings** in the left navigation panel to make adjustments. You can modify the knowledge base name, description, visibility permissions, indexing mode, embedding model, and retrieval settings.
 
-<figure><img src="../../.gitbook/assets/knowledge-settings-01.png" alt=""><figcaption><p>Knowledge Base Settings</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/en/knowledge-base/5a0dedb352d4bc6062569247556c5392.webp" alt=""><figcaption><p>Knowledge Base Settings</p></figcaption></figure>
 
 **Knowledge Base Name**: Used to distinguish among different knowledge bases.
 
@@ -32,7 +32,7 @@ Users without appropriate permissions cannot access the knowledge base. When gra
 
 Dify Knowledge Base provides a complete set of standard APIs. Developers can use API calls to perform daily management and maintenance operations such as adding, deleting, modifying, and querying documents and chunks in the knowledge base. Please refer to the [Knowledge Base API Documentation](maintain-dataset-via-api.md).
 
-<figure><img src="../../.gitbook/assets/knowledge-base-api.png" alt=""><figcaption><p>Knowledge base API management</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/en/knowledge-base/a07a4767059318f569d146c027e49776.webp" alt=""><figcaption><p>Knowledge base API management</p></figcaption></figure>
 
 ### Document Disable and Archive
 
@@ -59,7 +59,7 @@ You can enable them in the knowledge base anytime to restore access.
 
 Each document uploaded to the knowledge base is stored in the form of text chunks. You can view the specific text content of each chunks in the chunks list.
 
-<figure><img src="../../.gitbook/assets/viewing-uploaded-document-segments.png" alt=""><figcaption><p>Viewing uploaded document chunks</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/en/knowledge-base/db537f0d9ed4caa23e2461d89553a98e.webp" alt=""><figcaption><p>Viewing uploaded document chunks</p></figcaption></figure>
 
 ***
 
@@ -73,15 +73,15 @@ When checking chunk quality, pay attention to the following situations:
 
 * **Overly short text chunks**, leading to semantic loss;
 
-<figure><img src="../../.gitbook/assets/short-text-segments.png" alt="" width="373"><figcaption><p>Overly short text chunks</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/en/knowledge-base/69c9e7e30c0f58e73eb23567132ef7ca.webp" alt="" width="373"><figcaption><p>Overly short text chunks</p></figcaption></figure>
 
 * **Overly long text chunks**, leading to semantic noise affecting matching accuracy;
 
-<figure><img src="../../.gitbook/assets/long-text-segments.png" alt="" width="375"><figcaption><p>Overly long text chunks</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/en/knowledge-base/70a12803a99d851ed377dcac93412ae0.webp" alt="" width="375"><figcaption><p>Overly long text chunks</p></figcaption></figure>
 
 * **Obvious semantic truncation**, which occurs when using maximum segment length limits, leading to forced semantic truncation and missing content during recall;
 
-<figure><img src="../../.gitbook/assets/semantic-truncation.png" alt="" width="357"><figcaption><p>Obvious semantic truncation</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/en/knowledge-base/62f3dab5d8d4ee98bf551ccdac00817f.webp" alt="" width="357"><figcaption><p>Obvious semantic truncation</p></figcaption></figure>
 
 ***
 
@@ -89,13 +89,13 @@ When checking chunk quality, pay attention to the following situations:
 
 In the chunk list, click "Add Segment" to add one or multiple custom chunks to the document.
 
-<figure><img src="../../.gitbook/assets/add-a-chunk.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/en/knowledge-base/a2cf10b9b338c4b1a4df2dbfc0faf76c.webp" alt=""><figcaption></figcaption></figure>
 
 Add a chunk
 
 When adding chunks in bulk, you need to first download the CSV format chunk upload template, edit all the chunk content in Excel according to the template format, save the CSV file, and then upload it.
 
-<figure><img src="../../.gitbook/assets/bulk-add-custom-segment (1).png" alt=""><figcaption><p>Bulk adding custom chunks</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/en/knowledge-base/afefc85fdb6086e0297b8e05149b8b4e.webp" alt=""><figcaption><p>Bulk adding custom chunks</p></figcaption></figure>
 
 ***
 
@@ -103,7 +103,7 @@ When adding chunks in bulk, you need to first download the CSV format chunk uplo
 
 In the chunk list, you can directly edit the content of the added chunks, including the text content and keywords of the chunks.
 
-<figure><img src="../../.gitbook/assets/edit-segment (1).png" alt=""><figcaption><p>Editing document chunks</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/en/knowledge-base/7bf3f6a93120ac927e726e560ad7c0c0.webp" alt=""><figcaption><p>Editing document chunks</p></figcaption></figure>
 
 ***
 
@@ -115,7 +115,7 @@ In addition to marking metadata information from different source documents, suc
 The metadata filtering and citation source functions are not yet supported in the current version.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/metadata.png" alt="" width="258"><figcaption><p>Add metadata</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/en/knowledge-base/bee56473aebec9ab7f76e3ffad6f8ffc.webp" alt="" width="258"><figcaption><p>Add metadata</p></figcaption></figure>
 
 ***
 
@@ -125,7 +125,7 @@ In "Knowledge Base > Document List," click "Add File" to upload new documents or
 
 A knowledge base (Knowledge) is a collection of documents (Documents). Documents can be uploaded by developers or operators, or synchronized from other data sources (usually corresponding to a file unit in the data source).
 
-<figure><img src="../../.gitbook/assets/en-knowledge-add-document.png" alt=""><figcaption><p>Upload new document at Knowledge base</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/en/knowledge-base/9dfda194c7cae05523cf1c2cd878b101.webp" alt=""><figcaption><p>Upload new document at Knowledge base</p></figcaption></figure>
 
 ***
 

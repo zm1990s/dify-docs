@@ -1,6 +1,6 @@
 # 接入 Ollama 部署的本地模型
 
-![ollama](../../.gitbook/assets/ollama.png)
+![ollama](https://assets-docs.dify.ai/img/zh_CN/models-integration/056f1628bdbecb16b7cbb44ecf5c652f.webp)
 
 [Ollama](https://github.com/jmorganca/ollama) 是一个本地推理框架客户端，可一键部署如 Llama 2, Mistral, Llava 等大型语言模型。
 Dify 支持接入 Ollama 部署的大型语言模型推理和 embedding 能力。
@@ -27,7 +27,7 @@ Dify 支持接入 Ollama 部署的大型语言模型推理和 embedding 能力�
 
    在 `设置 > 模型供应商 > Ollama` 中填入：
 
-   ![](../../.gitbook/assets/ollama-config-zh.png)
+   ![](https://assets-docs.dify.ai/img/zh_CN/models-integration/e8268ff48931c174b90779da8380a8a0.webp)
 
    - 模型名称：`llava`
    
@@ -59,7 +59,7 @@ Dify 支持接入 Ollama 部署的大型语言模型推理和 embedding 能力�
 
 4. 使用 Ollama 模型
 
-   ![](../../.gitbook/assets/ollama-use-model.png)
+   ![](https://assets-docs.dify.ai/img/zh_CN/models-integration/8b6a9961866857f0b36545fcdc9a50bc.webp)
 
    进入需要配置的 App 提示词编排页面，选择 Ollama 供应商下的 `llava` 模型，配置模型参数后即可使用。
 

@@ -7,7 +7,7 @@ Dify 知识库支持从 Notion 导入，并设置 **同步** 使得数据在 Not
 1. 在创建知识库，选择数据源时，点击 **同步自 Notion 内容-- 去绑定，根据提示完成授权验证。**
 2. 你也可以：进入 **设置 -- 数据来源 -- 添加数据源** 中点击 Notion 来源 **绑定** ，完成授权验证。
 
-<figure><img src="../../.gitbook/assets/image (46) (1).png" alt=""><figcaption><p>绑定 Notion</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/zh_CN/knowledge-base/490c9891620c024f61e98d115d9d1151.webp" alt=""><figcaption><p>绑定 Notion</p></figcaption></figure>
 
 ### 导入 Notion 数据
 
@@ -23,7 +23,7 @@ _**请注意：图片和文件暂不支持导入，表格类数据会被转换�
 
 如果你的 Notion 内容有修改，你可以直接在 Dify 知识库 **文档列表页**中点击 **同步** 即可进行数据一键同步，该步骤是需要消耗 Token。
 
-<figure><img src="../../.gitbook/assets/sync-notion.png" alt=""><figcaption><p>同步 Notion 内容</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/zh_CN/knowledge-base/f7dc4869b92b5083bc85c411b95706ab.webp" alt=""><figcaption><p>同步 Notion 内容</p></figcaption></figure>
 
 ### 社区版 Notion 的集成配置方法
 
@@ -37,11 +37,11 @@ Notion集成分为**内部集成**（internal integration）和**外部集成**�
 
 点击“**New integration**”按钮，类型默认是 **Internal**（不可修改），选择关联的空间，输入集成名称并上传 logo 后，点击“Submit”，集成创建成功。
 
-<figure><img src="../../.gitbook/assets/image (137).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/zh_CN/knowledge-base/a560c828fea533e89ad7338ec32d5cb3.webp" alt=""><figcaption></figcaption></figure>
 
 创建集成后，你可以根据需要在 Capabilities 选项卡下更新其设置，并在 Secrets 下点击 “Show” 按钮然后复制 Secrets。
 
-<figure><img src="../../.gitbook/assets/image (138).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/zh_CN/knowledge-base/47e9610ca2036a0569a3e1e9a7a7eb5d.webp" alt=""><figcaption></figcaption></figure>
 
 复制后回到 Dify 源代码下，在 **.env** 文件里配置相关环境变量，环境变量如下：
 
@@ -53,11 +53,11 @@ Notion集成分为**内部集成**（internal integration）和**外部集成**�
 
 **需要将 internal 集成升级为 public 集成**，导航到集成的 Distribution 页面，然后切换开关以公开集成。将开关切换到公共设置，你需要在下面的 Organization Information 表单中填写其他信息，包括你的公司名称、网站和重定向 URL 等信息，然后点击“Submit”按钮。
 
-<figure><img src="../../.gitbook/assets/image (139).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/zh_CN/knowledge-base/65818ad8198396626d23791397ede90e.webp" alt=""><figcaption></figcaption></figure>
 
 在集成的设置页面中成功公开集成后，你将能够在密钥选项卡中访问集成的密钥：
 
-<figure><img src="../../.gitbook/assets/image (140).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/zh_CN/knowledge-base/b7aacbaddbfb61ca799ac37557444422.webp" alt=""><figcaption></figcaption></figure>
 
 回到 Dify 源代码下，在 **.env** 文件里配置相关环境变量，环境变量如下：
 

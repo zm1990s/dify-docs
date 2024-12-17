@@ -30,17 +30,17 @@ Log in to the [Firecrawl website](https://www.firecrawl.dev/) to complete regist
 
 On the knowledge base creation page, select **Sync from website**, choose Firecrawl as the provider, and enter the target URL to be crawled.
 
-<figure><img src="../../.gitbook/assets/image (102).png" alt=""><figcaption><p>Web scraping configuration</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/en/knowledge-base/e3c8fe6f322b63f0ed337f14a72169a0.webp" alt=""><figcaption><p>Web scraping configuration</p></figcaption></figure>
 
 The configuration options include: Whether to crawl sub-pages, Page crawling limit, Page scraping max depth, Excluded paths, Include only paths, and Content extraction scope. After completing the configuration, click **Run** to preview the parsed pages.
 
-<figure><img src="../../.gitbook/assets/image (103).png" alt=""><figcaption><p>Execute scraping</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/en/knowledge-base/72b65da1665eb863060f3a04478554cb.webp" alt=""><figcaption><p>Execute scraping</p></figcaption></figure>
 
 #### 3. Review import results
 
 After importing the parsed text from the webpage, it is stored in the knowledge base documents. View the import results and click **Add URL** to continue importing new web pages.
 
-<figure><img src="../../.gitbook/assets/image (104).png" alt=""><figcaption><p>Importing parsed web text into the knowledge base</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/en/knowledge-base/c47cce032317a3736f137f98737e3abd.webp" alt=""><figcaption><p>Importing parsed web text into the knowledge base</p></figcaption></figure>
 
 ***
 
@@ -50,24 +50,24 @@ After importing the parsed text from the webpage, it is stored in the knowledge 
 
 Click on the avatar in the upper right corner, then go to the **DataSource** page, and click the **Configure** button next to Jina Reader.
 
-<figure><img src="../../.gitbook/assets/image (105).png" alt=""><figcaption><p>Configuring Jina Reader</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/en/knowledge-base/7d0875c589e1d58e278639bb57c3f0d2.webp" alt=""><figcaption><p>Configuring Jina Reader</p></figcaption></figure>
 
 Log in to the [Jina Reader website](https://jina.ai/reader/), complete registration, obtain the API Key, then fill it in and save.
 
-<figure><img src="../../.gitbook/assets/image (106).png" alt=""><figcaption><p>Fill in Jina configuration</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/en/knowledge-base/5e2da7fb31eae4015e54a9fd29983539.webp" alt=""><figcaption><p>Fill in Jina configuration</p></figcaption></figure>
 
 #### 2. Using Jina Reader to Crawl Web Content&#x20;
 
 On the knowledge base creation page, select Sync from website, choose Jina Reader as the provider, and enter the target URL to be crawled.
 
-<figure><img src="../../.gitbook/assets/image (107).png" alt=""><figcaption><p>Web Crawling Configuration </p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/en/knowledge-base/f186a78e2117024d9f91ea44aad350f1.webp" alt=""><figcaption><p>Web Crawling Configuration </p></figcaption></figure>
 
 Configuration options include: whether to crawl subpages, maximum number of pages to crawl, and whether to use sitemap for crawling. After completing the configuration, click the **Run** button to preview the page links to be crawled.
 
-<figure><img src="../../.gitbook/assets/image (109).png" alt=""><figcaption><p>Executing the Crawl</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/en/knowledge-base/3fb63bee8f943396f02a3c359b65cd26.webp" alt=""><figcaption><p>Executing the Crawl</p></figcaption></figure>
 
 Import the parsed text from web pages and store it in the knowledge base documents, then view the import results. To continue adding web pages, click the Add URL button on the right to import new web pages.
 
-<figure><img src="../../.gitbook/assets/image (110).png" alt=""><figcaption><p>Importing parsed web text into the knowledge base</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/en/knowledge-base/713ef5e1ce4b131c98893721d62d4174.webp" alt=""><figcaption><p>Importing parsed web text into the knowledge base</p></figcaption></figure>
 
 After crawling is complete, the content from the web pages will be incorporated into the knowledge base.

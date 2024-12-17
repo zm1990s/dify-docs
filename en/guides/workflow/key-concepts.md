@@ -23,9 +23,9 @@ For core workflow nodes, please refer to [Block Description](node/).
 
 **Usage Entry Points**
 
-<figure><img src="../../.gitbook/assets/output (5).png" alt=""><figcaption><p>Chatflow Entry</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/en/workflow/91b3395b204e1abbab88a02332dc8382.webp" alt=""><figcaption><p>Chatflow Entry</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/output (4) (1).png" alt=""><figcaption><p>Workflow Entry</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/en/workflow/8c83a0e2b6a2f1e6ad6e943f9f1d8454.webp" alt=""><figcaption><p>Workflow Entry</p></figcaption></figure>
 
 **Differences in Available Nodes**
 

@@ -1,6 +1,6 @@
 # Ollamaでデプロイしたローカルモデルを統合
 
-![ollama](../../.gitbook/assets/ollama.png)
+![ollama](https://assets-docs.dify.ai/img/jp/models-integration/056f1628bdbecb16b7cbb44ecf5c652f.webp)
 
 [Ollama](https://github.com/jmorganca/ollama) は、Llama 2、Mistral、Llava などの大型言語モデルをワンクリックでデプロイできるローカル推論フレームワーククライアントです。 Dify は、Ollama でデプロイした大型言語モデルの推論および埋め込み機能への接続をサポートしています。
 
@@ -24,7 +24,7 @@
 
     `設定 > モデル供給元 > Ollama` に以下を入力します：
 
-    ![](../../.gitbook/assets/jp-ollama-config.png)
+    ![](https://assets-docs.dify.ai/img/jp/models-integration/c20477ab802caab62fb0e1e4bbeb42b3.webp)
 
     * モデル名称：`llava`
     *   基本 URL：`http://<your-ollama-endpoint-domain>:11434`
@@ -50,7 +50,7 @@
     埋め込みモデルの接続方法も LLM と似ています。モデルタイプを Text Embedding に変更するだけです。
 4.  Ollama モデルの使用
 
-    ![](../../.gitbook/assets/jp-ollama-use-model.png)
+    ![](https://assets-docs.dify.ai/img/jp/models-integration/93cce9e0468622bd859f5ba86402b7e8.webp)
 
     設定が必要なアプリのプロンプト編成ページに移動し、Ollama 供給元の `llava` モデルを選択し、モデルパラメーターを設定した後に使用できます。
 

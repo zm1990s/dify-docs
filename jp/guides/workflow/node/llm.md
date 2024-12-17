@@ -4,7 +4,7 @@
 
 大規模言語モデルを活用して質問に回答したり、自然言語を処理したりします。
 
-<figure><img src="../../../.gitbook/assets/jp-llm-detail.png" alt=""><figcaption><p>LLM ノード</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/jp/node/821791bfcf8042a9c84e88c305ed0227.webp" alt=""><figcaption><p>LLM ノード</p></figcaption></figure>
 
 ***
 
@@ -29,7 +29,7 @@ LLM は チャットフロー/ワークフロー の中心的なノードであ�
 
 エディットページで、前のノードの末尾を右クリックするか、+ボタンを軽くタップして新しいノードを追加し、LLMを選択します。
 
-<figure><img src="../../../.gitbook/assets/jp-llm-model.png" alt=""><figcaption><p>LLM ノード設定 - モデル選択</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/jp/node/de911b7046d73aa13bbe5176512de32a.webp" alt=""><figcaption><p>LLM ノード設定 - モデル選択</p></figcaption></figure>
 
 **設定手順：**
 
@@ -45,15 +45,15 @@ Difyを初めて使用する場合は、LLMノードでモデルを選択する�
 
 4. **プロンプトの作成**：LLMノードには使いやすいプロンプト編集ページがあり、チャットモデルまたはコンプリートモデルを選択することで異なるプロンプト編集構造が表示されます。チャットモデル（Chat model）を選択した場合、システムプロンプト（SYSTEM）、ユーザー（USER）、アシスタント（ASSISTANT）の3つのセクションをカスタマイズできます。
 
-<figure><img src="../../../.gitbook/assets/jp-llm-customize.png" alt="" width="352"><figcaption><p>プロンプトの作成</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/jp/node/3b7cb90b35f97754427c4d9c4784cabb.webp" alt="" width="352"><figcaption><p>プロンプトの作成</p></figcaption></figure>
 
 システムプロンプト（SYSTEM）を作成する際にアイデアが浮かばない場合は、プロンプトジェネレーター機能を使用して、実際のビジネスシナリオに適したプロンプトを迅速に生成することができます。
 
-![プロンプトジェネレーター](../../../.gitbook/assets/jp-node-llm-prompt-generator.png)
+![プロンプトジェネレーター](https://assets-docs.dify.ai/img/jp/node/c82da1e15a4f12e3e77c968ff6acfabf.webp)
 
 プロンプトエディターでは、**“/”** または **“{”** を入力することで **変数挿入メニュー**を呼び出し、**特殊変数ブロック**や **上流ノードの変数**をプロンプトに挿入してコンテキスト内容として使用できます。
 
-<figure><img src="../../../.gitbook/assets/jp-llm-variable.png" alt="" width="366"><figcaption><p>変数挿入メニューを呼び出す</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/jp/node/2b240194a0275f55182748b093c401b6.webp" alt="" width="366"><figcaption><p>変数挿入メニューを呼び出す</p></figcaption></figure>
 
 5. **上級的な設定**：メモリ機能をオンにしたり、メモリウィンドウを設定したり、ビジョン機能を有効にしたり、Jinja-2テンプレート言語を使ってより複雑なプロンプトを作成したりできます。
 
@@ -87,13 +87,13 @@ Difyを初めて使用する場合は、LLMノードでモデルを選択する�
 会話履歴変数の使用は広範ではなく、チャットフロー 内でテキスト補完モデルを選択した場合にのみ使用できます。
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/jp-llm-with-histories.png" alt=""><figcaption><p>会話履歴変数の挿入</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/jp/node/6c4160c406757207d6ce5019719432e7.webp" alt=""><figcaption><p>会話履歴変数の挿入</p></figcaption></figure>
 
 **モデルパラメーター**
 
 モデルのパラメータはモデルの出力に影響を与えます。異なるモデルには異なるパラメータがあります。以下の図は`gpt-4`のパラメータリストです。
 
-<figure><img src="../../../.gitbook/assets/jp-llm-model-provider-1.png" alt="" width="363"><figcaption></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/jp/node/cee2ea295ce7c01a42bb87ecda08adad.webp" alt="" width="363"><figcaption></figcaption></figure>
 
 主要なパラメータ用語は以下のように説明されています：
 
@@ -107,7 +107,7 @@ Difyを初めて使用する場合は、LLMノードでモデルを選択する�
 
 これらのパラメータが何であるか理解できない場合は、プリセットを読み込んで、「クリエイティブ」、「バランス」、「正確」の3つのプリセットから選択することができます。
 
-<figure><img src="../../../.gitbook/assets/jp-llm-model-provider-2.png" alt="" width="367"><figcaption></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/jp/node/713c97f72f4e20d412b9854f51b1e4f8.webp" alt="" width="367"><figcaption></figcaption></figure>
 
 ***
 
@@ -135,7 +135,7 @@ Difyを初めて使用する場合は、LLMノードでモデルを選択する�
 2. 知識検索ノードの **出力変数** `result` をLLMノードの **コンテキスト変数** に入力します；
 3. **コンテキスト変数** をアプリケーションのプロンプトに挿入し、LLMがナレッジベース内のテキスト内容を読み取れるようにします。
 
-<figure><img src="../../../../en/.gitbook/assets/image (135).png" alt=""><figcaption><p>コンテキスト変数</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/jp/node/edd43570e47a040564aa95ae0cad01c6.webp" alt=""><figcaption><p>コンテキスト変数</p></figcaption></figure>
 
 [知識検索ノード](knowledge-retrieval.md) の出力変数 `result` には引用情報も含まれており、[**引用と帰属**](../../knowledge-base/retrieval-test-and-citation.md#id-2-yin-yong-yu-gui-shu) 機能を使用して情報の出所を確認できます。
 

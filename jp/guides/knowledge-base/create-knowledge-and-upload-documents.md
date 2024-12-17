@@ -4,12 +4,12 @@
 
 Difyのメインナビゲーションバーからナレッジベースをクリックすると、既存のナレッジベースが表示されます。**ナレッジベースの作成**をクリックして作成ウィザードに進みます：
 
-<figure><img src="../../.gitbook/assets/jp-create-knowledge-base.png" alt=""><figcaption><p>ナレッジベースの作成</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/jp/knowledge-base/9b17fcdc7d0b4dfb3f8a80747558c1db.webp" alt=""><figcaption><p>ナレッジベースの作成</p></figcaption></figure>
 
 * ファイルが準備できている場合は、ファイルのアップロードから始めてください。
 * まだ文書が準備できていない場合は、空のデータセットを作成してください。
 
-<figure><img src="../../.gitbook/assets/jp-create-knowledge-base-2.png" alt=""><figcaption><p>ナレッジベースの作成</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/jp/knowledge-base/5e093d9dbcf1a062d575ef2c3d8f8d27.webp" alt=""><figcaption><p>ナレッジベースの作成</p></figcaption></figure>
 
 {% hint style="info" %}
 データセット作成時に外部データソースを選択した場合、そのナレッジベースのタイプは変更できません。これは、単一のナレッジベースで複数のデータソースを使用することによる管理の困難を防ぐためです。複数のデータソースを使用する場合、複数のナレッジベースを作成することをお勧めします。
@@ -44,7 +44,7 @@ Difyのメインナビゲーションバーからナレッジベースをクリ�
 * 自動モード（近日廃止予定）
 * カスタムモード
 
-<figure><img src="../../.gitbook/assets/jp-text-clinic.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/jp/knowledge-base/2eb095cd3dad41da53d94134eef32bff.webp" alt=""><figcaption></figcaption></figure>
 
 カスタムモードでは、ユーザーは異なるドキュメント形式やシナリオ要件に応じてテキストのセグメンテーションとクリーニング戦略を設定できます。
 
@@ -98,9 +98,9 @@ Difyの各バージョンでのETLソリューションの選択：
 
 > 質問テキストは完全な文法構造を持つ自然言語であり、文書検索タスクのいくつかのキーワードとは異なります。そのため、Q to Q（質問から質問へのマッチング）のモードは、意味とマッチングをより明確にし、頻度の高い類似した質問シナリオにも対応します。
 
-<figure><img src="../../.gitbook/assets/en-kb-qa.jpeg" alt=""><figcaption><p>Q&#x26;Aセグメンテーションモードで複数のQ&#x26;Aペアにまとめられたテキスト</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/jp/knowledge-base/c549b0066ada3dc2b3e525ccb20cffa6.webp" alt=""><figcaption><p>Q&#x26;Aセグメンテーションモードで複数のQ&#x26;Aペアにまとめられたテキスト</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (109).png" alt=""><figcaption><p>Q to PとQ to Qのインデックス方式の違い</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/jp/knowledge-base/39a68524f3be94e2fbcaeedd5e9a6347.webp" alt=""><figcaption><p>Q to PとQ to Qのインデックス方式の違い</p></figcaption></figure>
 
 ***
 
@@ -118,7 +118,7 @@ Difyの各バージョンでのETLソリューションの選択：
 
 定義：クエリ埋め込みを生成し、そのベクトル表現に最も類似したテキストセグメントを検索します。
 
-<figure><img src="../../.gitbook/assets/jp-kb-vector-search.png" alt="" width="563"><figcaption><p>ベクトル検索の設定</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/jp/knowledge-base/6d3aba425a3c39cac831a5f2c0f439d2.webp" alt="" width="563"><figcaption><p>ベクトル検索の設定</p></figcaption></figure>
 
 トップK：ユーザーの質問と最も類似したテキストセグメントを選択するために使用されます。システムは、選択したモデルのコンテキストウィンドウサイズに応じてセグメント数を動的に調整します。システムのデフォルト値は3です。数値が高いほど、期待されるテキストセグメントの数が増えます。
 
@@ -130,7 +130,7 @@ Rerankモデル：「モデルプロバイダー」ページでRerankモデル�
 
 定義：すべての単語を文書の索引に入れ、ユーザーが任意の単語をクエリとして実行し、その単語を含むテキストスニペットを返します。
 
-<figure><img src="../../.gitbook/assets/jp-kb-full-search.png" alt="" width="563"><figcaption><p>全文検索の設定</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/jp/knowledge-base/da7defc6b2ef12029e2d296d8fde418a.webp" alt="" width="563"><figcaption><p>全文検索の設定</p></figcaption></figure>
 
 トップK：ユーザーの質問と最も類似したテキストセグメントを選択するために使用されます。システムは、選択したモデルのコンテキストウィンドウサイズに応じてセグメント数を動的に調整します。システムのデフォルト値は3です。数値が高いほど、期待されるテキストセグメントの数が増えます。
 
@@ -142,7 +142,7 @@ Rerankモデル：「モデルプロバイダー」ページでRerankモデル�
 
 定義：全文検索とベクトル検索を同時に実行して、Rerankを適用し、2つのクエリ結果からユーザーの質問に最適な結果を選出します。このモードでは、重み設定を指定でき、Rerankモデルのみを使用して検索を行うことができます（Rerank APIの構成は必要ありません）。
 
-<figure><img src="../../.gitbook/assets/jp-kb-mix-search.png" alt="" width="563"><figcaption><p>ハイブリッド检索の设置</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/jp/knowledge-base/fe7c62eed36fca1318b8e2358899ebec.webp" alt="" width="563"><figcaption><p>ハイブリッド检索の设置</p></figcaption></figure>
 
 重み付け設定：ユーザーは、セマンティック優先度やキーワード優先度にカスタムの重みを設定することが可能です。キーワード検索は、ナレッジベース内の全文検索を意味し、セマンティック検索はベクトル検索を指します。
 

@@ -4,11 +4,11 @@
 
 Dify 知识库内提供了文本召回测试的功能，用于调试不同检索方式及参数配置下的召回效果。你可以在 **源文本** 输入框输入常见的用户问题，点击 **测试** 并在右侧的 **召回段落** 查看召回结果。在 **最近查询** 内可以查看到历史的查询记录；若知识库已关联至应用内，由应用内触发的知识库查询也可以在此查看记录。
 
-<figure><img src="../../.gitbook/assets/image (86).png" alt=""><figcaption><p>召回测试</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/zh_CN/knowledge-base/05b869376108ebfcf47eaec146c0b456.webp" alt=""><figcaption><p>召回测试</p></figcaption></figure>
 
 点击源文本输入框右上角的图标可以更换当前知识库的检索方式和具体参数，**保存之后仅在召回测试的调试过程中生效**。在召回测试完成调试并确认更改知识库的检索参数时，需要在 [知识库设置 > 检索设置](create-knowledge-and-upload-documents/#id-6-jian-suo-she-zhi) 中进行更改。
 
-<figure><img src="../../.gitbook/assets/image (87).png" alt=""><figcaption><p>召回测试-检索设置</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/zh_CN/knowledge-base/537aa5fc6a1045b4eff34a6d35fedac8.webp" alt=""><figcaption><p>召回测试-检索设置</p></figcaption></figure>
 
 **召回测试建议步骤：**
 
@@ -27,8 +27,8 @@ Dify 知识库内提供了文本召回测试的功能，用于调试不同检索
 
 在应用内测试知识库效果时，你可以进入 **工作室 -- 添加功能 -- 引用归属**，打开引用归属功能。
 
-<figure><img src="../../.gitbook/assets/citation-and-attribution.png" alt=""><figcaption><p>打开引用与归属功能</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/zh_CN/knowledge-base/ce727a0267ceaefaf7c0191bf97ea621.webp" alt=""><figcaption><p>打开引用与归属功能</p></figcaption></figure>
 
 开启功能后，当 LLM 引用知识库内容来回答问题时，可以在回复内容下面查看到具体的引用段落信息，包括**原始分段文本、分段序号、匹配度**等。点击引用分段上方的 **跳转至知识库**，可以快捷访问该分段所在的知识库分段列表，方便开发者进行调试编辑。
 
-<figure><img src="../../.gitbook/assets/image (84).png" alt=""><figcaption><p>查看回复内容的引用信息</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/zh_CN/knowledge-base/7798c9309d1624071eb7b505e9a9b8a1.webp" alt=""><figcaption><p>查看回复内容的引用信息</p></figcaption></figure>

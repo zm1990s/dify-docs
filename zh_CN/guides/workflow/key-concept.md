@@ -22,7 +22,7 @@
 
 常见的交互路径：给出指令 → 生成内容 → 就内容进行多次讨论 → 重新生成结果 → 结束
 
-<figure><img src="../../.gitbook/assets/output.png" alt=""><figcaption><p>Chatflow 入口</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/zh_CN/workflow/91b3395b204e1abbab88a02332dc8382.webp" alt=""><figcaption><p>Chatflow 入口</p></figcaption></figure>
 
 ### Workflow
 
@@ -32,7 +32,7 @@
 
 常见的交互路径：给出指令 → 生成内容 → 结束
 
-<figure><img src="../../.gitbook/assets/output (4).png" alt=""><figcaption><p>Workflow 入口</p></figcaption></figure>
+<figure><img src="https://assets-docs.dify.ai/img/zh_CN/workflow/8c83a0e2b6a2f1e6ad6e943f9f1d8454.webp" alt=""><figcaption><p>Workflow 入口</p></figcaption></figure>
 
 **应用类型差异**
 
