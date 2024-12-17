@@ -12,6 +12,12 @@ from tqdm import tqdm
 import time
 import logging
 
+from dotenv import load_dotenv
+
+# 加载环境变量
+load_dotenv()
+
+
 # 配置日志
 logging.basicConfig(
     level=logging.INFO,
@@ -23,11 +29,19 @@ logging.basicConfig(
 )
 
 # S3配置
-S3_ENDPOINT = 'https://305dbc7da819eb47bb3f3f3bc8927046.r2.cloudflarestorage.com'
-S3_ACCESS_KEY = 'cab6da8bc1afc482c908870a079dc995'
-S3_SECRET_KEY = '9dd9cfc5e24bc207c42994d494bde5212b832b821690812f07b3d4f0c665639a'
-S3_BUCKET = 'assets-doc'
-CDN_DOMAIN = 'https://assets-docs.dify.ai'
+
+S3_ENDPOINT = os.getenv('S3_ENDPOINT')
+S3_ACCESS_KEY = os.getenv('S3_ACCESS_KEY')
+S3_SECRET_KEY = os.getenv('S3_SECRET_KEY')
+S3_BUCKET = os.getenv('S3_BUCKET')
+CDN_DOMAIN = os.getenv('CDN_DOMAIN')
+
+# 验证必要的环境变量
+required_env_vars = ['S3_ENDPOINT', 'S3_ACCESS_KEY', 'S3_SECRET_KEY', 'S3_BUCKET', 'CDN_DOMAIN']
+missing_vars = [var for var in required_env_vars if not os.getenv(var)]
+if missing_vars:
+    raise ValueError(f"缺少必要的环境变量: {', '.join(missing_vars)}\n请复制 .env.example 为 .env 并填写配置")
+
 
 # 进度文件路径模板
 PROGRESS_FILE_TEMPLATE = 'conversion_progress_{lang}.yaml'
