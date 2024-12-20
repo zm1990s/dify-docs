@@ -24,11 +24,11 @@
 
 <figure><img src="../../.gitbook/assets/image (218).png" alt=""><figcaption></figcaption></figure>
 
-初次创建应用时，你可能需要先理解 Dify 上 4 种不同应用类型的[基本概念](./#application\_type)，分别是聊天助手、文本生成应用、Agent 和工作流。
+初次创建应用时，你可能需要先理解 Dify 上 4 种不同应用类型的[基本概念](./#application_type)，分别是聊天助手、文本生成应用、Agent 和工作流。
 
 创建应用时，你需要给应用起一个名字、选择合适的图标，或者上传喜爱的图片用作图标、使用简介清晰的文字来描述此应用的用途，以方便后续应用在团队内的使用。
 
-<figure><img src="../../.gitbook/assets/image (221).png" alt=""><figcaption><p>创建一个空白应用</p></figcaption></figure>
+{% embed url="https://www.motionshot.app/walkthrough/6764d2457da8e718d658d81a/embed?fullscreen=1&hideAsSteps=1&hideCopy=1&hideDownload=1&hideSteps=1" %}
 
 ### 通过 DSL 文件创建应用
 
@@ -46,7 +46,7 @@ Dify DSL 是由 Dify.AI 所定义的 AI 应用工程文件标准，文件格式�
 
 你也可以通过 URL 导入 DSL 文件，参考的链接格式：
 
-```URL
+```url
 https://example.com/your_dsl.yml
 ```
 

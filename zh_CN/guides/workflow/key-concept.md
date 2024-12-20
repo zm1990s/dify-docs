@@ -22,9 +22,9 @@
 
 常见的交互路径：给出指令 → 生成内容 → 就内容进行多次讨论 → 重新生成结果 → 结束
 
-<figure><img src="../../.gitbook/assets/output.png" alt=""><figcaption><p>Chatflow 入口</p></figcaption></figure>
+![Chatflow 入口](https://assets-docs.dify.ai/2024/12/224b6bcd750ff0b83e3a5dac5cf24d7d.png)
 
-### Workflow
+### 工作流（Workflow）
 
 **适用场景：**
 
@@ -32,11 +32,11 @@
 
 常见的交互路径：给出指令 → 生成内容 → 结束
 
-<figure><img src="../../.gitbook/assets/output (4).png" alt=""><figcaption><p>Workflow 入口</p></figcaption></figure>
+![](https://assets-docs.dify.ai/2024/12/26a9fc809854fe51d946c148587fc1cf.png)
 
 **应用类型差异**
 
-1. End 节点属于 Workflow 的结束节点，仅可在流程结束时选择。
-2. Answer 节点属于 Chatflow ，用于流式输出文本内容，并支持在流程中间步骤输出。
-3. Chatflow 内置聊天记忆（Memory），用于存储和传递多轮对话的历史消息，可在 LLM 、问题分类等节点内开启，Workflow 无 Memory 相关配置，无法开启。
-4. Chatflow 的开始节点内置变量包括：`sys.query`，`sys.files`，`sys.conversation_id`，`sys.user_id`。Workflow 的开始节点内置变量包括：`sys.files`，`sys.user_id`
+1. [End 节点](node/end.md)属于 Workflow 的结束节点，仅可在流程结束时选择。
+2. [Answer 节点](node/answer.md)属于 Chatflow ，用于流式输出文本内容，并支持在流程中间步骤输出。
+3. Chatflow 内置聊天记忆（Memory），用于存储和传递多轮对话的历史消息，可在 [LLM](node/llm.md) 、[问题分类](node/question-classifier.md)等节点内开启，Workflow 无 Memory 相关配置，无法开启。
+4. Chatflow 的开始节点内置变量包括：`sys.query`，`sys.files`，`sys.conversation_id`，`sys.user_id`。Workflow 的开始节点内置变量包括：`sys.files`，`sys.user_id` ，详见[变量](key-concept.md#bian-liang)。

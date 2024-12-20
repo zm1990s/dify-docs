@@ -11,7 +11,7 @@
 **字符串型：**
 
 ```
-["monday", "Tuesday", "Wednesday", "Thursday"]
+["Monday", "Tuesday", "Wednesday", "Thursday"]
 ```
 
 **JSON 对象：**

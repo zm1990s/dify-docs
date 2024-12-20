@@ -16,7 +16,7 @@
 
 在首页点击 “创建应用” 按钮创建应用。填上应用名称，应用类型选择**聊天助手**。
 
-<figure><img src="../../.gitbook/assets/image (296).png" alt=""><figcaption><p>创建聊天助手</p></figcaption></figure>
+![](https://assets-docs.dify.ai/2024/12/572b246b74431dd550c5b61d9215dbaa.png)
 
 #### 编排应用
 
