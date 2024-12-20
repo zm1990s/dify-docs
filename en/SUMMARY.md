@@ -36,7 +36,7 @@
   * [Node Description](guides/workflow/node/README.md)
     * [Start](guides/workflow/node/start.md)
     * [End](guides/workflow/node/end.md)
-    * [Direct Reply](guides/workflow/node/answer.md)
+    * [Answer](guides/workflow/node/answer.md)
     * [LLM](guides/workflow/node/llm.md)
     * [Knowledge Retrieval](guides/workflow/node/knowledge-retrieval.md)
     * [Question Classifier](guides/workflow/node/question-classifier.md)

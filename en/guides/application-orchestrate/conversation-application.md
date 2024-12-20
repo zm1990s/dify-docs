@@ -14,9 +14,9 @@ Here, we use a interviewer application as an example to introduce the way to com
 
 #### Step 1 Create an application
 
-Click the "Create Application" button on the homepage to create an application. Fill in the application name, and select **"Chat App"** as the application type.
+Click the "Create Application" button on the homepage to create an application. Fill in the application name, and select **"Chatbot"**.
 
-<figure><img src="../../.gitbook/assets/chat-app.png" alt=""><figcaption><p>Create Application</p></figcaption></figure>
+![](https://assets-docs.dify.ai/2024/12/4b257b8437c22a582a603fee787ee372.png)
 
 #### Step 2: Compose the Application
 
@@ -57,7 +57,6 @@ Some LLMs now natively support file processing, such as [Claude 3.5 Sonnet](http
 Select an LLM that supports file reading and enable the "Documentation" feature. This enables the Chatbot to recognize files without complex configurations.
 
 ![](https://assets-docs.dify.ai/2024/11/823399d85e8ced5068dc9da4f693170e.png)
-
 
 **2.4 Debugging**
 

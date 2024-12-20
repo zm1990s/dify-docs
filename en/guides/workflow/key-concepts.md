@@ -23,13 +23,13 @@ For core workflow nodes, please refer to [Block Description](node/).
 
 **Usage Entry Points**
 
-<figure><img src="../../.gitbook/assets/output (5).png" alt=""><figcaption><p>Chatflow Entry</p></figcaption></figure>
+![Chatflow](https://assets-docs.dify.ai/2024/12/befca8ff01ac5dccf4d32bcab08b8a11.png)
 
-<figure><img src="../../.gitbook/assets/output (4) (1).png" alt=""><figcaption><p>Workflow Entry</p></figcaption></figure>
+![Workflow](https://assets-docs.dify.ai/2024/12/56521297208916676acaf1c59e968e41.png)
 
 **Differences in Available Nodes**
 
-1. The End node is an ending node for Workflow and can only be selected at the end of the process.
-2. The Answer node is specific to Chatflow, used for streaming text output, and can output at intermediate steps in the process.
+1. The [End node](node/end.md) is an ending node for Workflow and can only be selected at the end of the process.
+2. The [Answer node](node/answer.md) is specific to Chatflow, used for streaming text output, and can output at intermediate steps in the process.
 3. Chatflow has built-in chat memory (Memory) for storing and passing multi-turn conversation history, which can be enabled in nodes like LLM and question classifiers. Workflow does not have Memory-related configurations and cannot enable them.
-4. Built-in variables for Chatflow's start node include: `sys.query`, `sys.files`, `sys.conversation_id`, `sys.user_id`. Built-in variables for Workflow's start node include: `sys.files`, `sys_id`.
+4. Built-in variables for Chatflow's [start node](node/start.md) include: `sys.query`, `sys.files`, `sys.conversation_id`, `sys.user_id`. Built-in [variables](variables.md) for Workflow's start node include: `sys.files`, `sys_id`.

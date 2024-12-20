@@ -1,8 +1,4 @@
----
-description: Answer
----
-
-# Direct Reply
+# Answer
 
 Defining Reply Content in a Chatflow Process. In a text editor, you have the flexibility to determine the reply format. This includes crafting a fixed block of text, utilizing output variables from preceding steps as the reply content, or merging custom text with variables for the response.
 
