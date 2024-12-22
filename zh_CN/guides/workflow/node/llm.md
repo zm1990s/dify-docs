@@ -116,6 +116,13 @@ LLM 节点是 Chatflow/Workflow 的核心节点。该节点能够利用大语言
 
 **Jinja-2 模板：** LLM 的提示词编辑器内支持 Jinja-2 模板语言，允许你借助 Jinja2 这一强大的 Python 模板语言，实现轻量级数据转换和逻辑处理，参考[官方文档](https://jinja.palletsprojects.com/en/3.1.x/templates/)。
 
+**错误重试**：节点的部分异常情况可以通过简单地重新运行解决。开启错误重试功能后，节点将在发生错误的时候按照预设策略进行自动重试。支持配置以下重试策略：
+
+- 重试次数
+- 重试间隔
+
+![](https://assets-docs.dify.ai/2024/12/dfb43c1cbbf02cdd36f7d20973a5529b.png)
+
 **异常处理**：提供多样化的节点错误处理策略，能够在当前节点发生错误时抛出故障信息而不中断主流程；或通过备用路径继续完成任务。详细说明请参考[异常处理](https://docs.dify.ai/guides/workflow/error-handling)。
 
 ***
