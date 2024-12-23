@@ -27,6 +27,17 @@ For more information on how to create custom tools and configure them, please re
 
 ### Advanced Features
 
+**Retry on Failure**
+
+For some exceptions that occur in the node, it is usually sufficient to retry the node again. When the error retry function is enabled, the node will automatically retry according to the preset strategy when an error occurs. You can adjust the maximum number of retries and the interval between each retry to set the retry strategy.
+
+- The maximum number of retries is 10
+- The maximum retry interval is 5000 ms
+
+![](https://assets-docs.dify.ai/2024/12/34867b2d910d74d2671cd40287200480.png)
+
+**Error Handling**
+
 Tool nodes may encounter errors during information processing that could interrupt the workflow. Developers can follow these steps to configure fail branches, enabling contingency plans when nodes encounter exceptions, avoiding workflow interruptions.
 
 1. Enable "Error Handling" in the tool node

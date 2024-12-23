@@ -33,6 +33,16 @@ The following four types of nodes have added error-handling feature. Click on th
 * [Code](../node/code.md)
 * [Tools](../node/tools.md)
 
+**Retry on Failure**
+
+Some exceptions can be resolved by retrying the node. In this case, you can enable the **Retry on Failure** feature in the node and set the number of max retries and the retry interval.
+
+![](https://assets-docs.dify.ai/2024/12/18097e4c94b67a79150b967fc50f9f43.png)
+
+If an error is still reported after retrying the node, the next process will be run according to the predefined strategy in the Error Handling feature.
+
+**Error Handling**
+
 The error handling feature provides the following three options:
 
 • **None**: Do not handle the exception, directly throw the node's error message and interrupt the entire process.&#x20;
