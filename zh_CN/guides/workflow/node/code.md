@@ -81,6 +81,9 @@ docker-compose -f docker-compose.middleware.yaml up -d
 
 针对节点发生的部分异常情况，通常情况下再次重试运行节点即可解决。开启错误重试功能后，节点将在发生错误的时候按照预设策略进行自动重试。你可以调整最大重试次数和每次重试间隔以设置重试策略。
 
+- 最大重试次数为 10 次
+- 最大重试间隔时间为 5000 ms
+
 ![](https://assets-docs.dify.ai/2024/12/9fdd5525a91dc925b79b89272893becf.png)
 
 **异常处理**

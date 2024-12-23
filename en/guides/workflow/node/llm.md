@@ -122,6 +122,13 @@ If you do not understand what these parameters are, you can choose to load prese
 
 **Jinja-2 Templates**: The LLM prompt editor supports Jinja-2 template language, allowing you to leverage this powerful Python template language for lightweight data transformation and logical processing. Refer to the [official documentation](https://jinja.palletsprojects.com/en/3.1.x/templates/).
 
+**Retry on Failure**: For some exceptions that occur in the node, it is usually sufficient to retry the node again. When the error retry function is enabled, the node will automatically retry according to the preset strategy when an error occurs. You can adjust the maximum number of retries and the interval between each retry to set the retry strategy.
+
+- The maximum number of retries is 10
+- The maximum retry interval is 5000 ms
+
+![](https://assets-docs.dify.ai/2024/12/dfb43c1cbbf02cdd36f7d20973a5529b.png)
+
 **Error Handling**: Provides diverse node error handling strategies that can throw error messages when the current node fails without interrupting the main process, or continue completing tasks through backup paths. For detailed information, please refer to the [Error Handling](https://docs.dify.ai/guides/workflow/error-handling).
 
 ***

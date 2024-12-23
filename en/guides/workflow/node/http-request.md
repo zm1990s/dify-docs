@@ -41,6 +41,17 @@ Here is a configuration example:
 
 ### Advanced Features
 
+**Retry on Failure**
+
+For some exceptions that occur in the node, it is usually sufficient to retry the node again. When the error retry function is enabled, the node will automatically retry according to the preset strategy when an error occurs. You can adjust the maximum number of retries and the interval between each retry to set the retry strategy.
+
+- The maximum number of retries is 10
+- The maximum retry interval is 5000 ms
+
+![](https://assets-docs.dify.ai/2024/12/2e7c6080c0875e31a074c2a9a4543797.png)
+
+**Error Handling**
+
 When processing information, HTTP nodes may encounter exceptional situations such as network request timeouts or request limits. Application developers can follow these steps to configure fail branches, enabling contingency plans when nodes encounter exceptions and avoiding workflow interruptions.
 
 1. Enable "Error Handling" in the HTTP node
